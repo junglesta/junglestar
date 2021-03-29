@@ -1,6 +1,7 @@
 {% include ascii_art_junglestar_banner.html %}
 
 <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,49 +10,25 @@
 
   <meta name="version" content="{{ site.version }}">
 
-  {% if page.sitemap == false %}
+  {% if page.sitemap == 'false' %}
     <meta name="robots" content="noindex,nofollow,nosnippet">
   {% endif %}
 
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
-  {% comment %}
-  <!-- https://fonts.gstatic.com is the font file origin -->
-  <!-- It may not have the same origin as the CSS file (https://fonts.googleapis.com) -->
-  {% endcomment %}
-
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin />
- 
-  {% comment %}
-  <!-- We use the full link to the CSS file in the rest of the tags -->
-  {% endcomment %}
-
-  <link rel="preload"
-        as="style"
-        href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" />
- 
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
-        media="print" onload="this.media='all'" />
- 
-  <noscript>
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" />
-  </noscript>
+  {% include font_load.html %}
 
   {% capture inline_css %}
     {% include main.scss %}
   {% endcapture %}
   <style>{{ inline_css | scssify }}</style>
 
-  {% include favico.html %}
-
-  {% include open_graph.html %}
-
   <meta name="google-site-verification" content="{{site.google.verify}}" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  {% include favico.html %}
+
+  {% include open_graph.html %}
 
 </head>

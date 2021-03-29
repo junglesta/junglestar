@@ -3,10 +3,9 @@
 
   {% include head.html %}
 
-  <body class="{% if page.title %}{{ page.title | slugify }}{% endif %} page {% if page.is_home %} home{% endif %} {% if page.layout == "product" %}product_page{% endif %}">
+  <body class="default_layout {% if page.title %}{{ page.title | slugify }}{% endif %} page {% if page.is_home %} home{% endif %} {% if page.layout == "product" %}product_page{% endif %}">
 
     <div class="main">
-
 
       <span id="top"></span>
 
@@ -15,7 +14,6 @@
       {% include header.html %}
 
       {{ content }}
-
 
     </div>
 

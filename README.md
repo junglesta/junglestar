@@ -9,3 +9,14 @@
 - Naman Kalkhuria: [Clean Theme](http://knaman2609.github.io/clean/)
 - [jekyll](http://jekyllrb.com)
 - [the net...](http://www...)
+
+
+## htmlproofer
+
+```
+htmlproofer --help
+```
+
+```
+bundle exec htmlproofer ./_site --check-html --disable-external --check-favicon --check-html --check-opengraph --allow-hash-href --check-sri --report_missing_doctype --report-eof-tags --report-invalid-tags --report-mismatched-tags --report-script-embeds
+```

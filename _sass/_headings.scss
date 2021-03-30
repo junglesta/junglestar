@@ -1,3 +1,9 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
 h1,
 h2,
 h3,
@@ -17,33 +23,40 @@ h6 {
   }
 }
 
-h1 {
+h1,
+.h1 {
   //@include responsive-font(5vw, $heading1, $heading1*1.2, $heading1);
   @include responsive-font($heading1_responsive, $heading1_min, $heading1_max);
   line-height: 1.1;
 }
 
-h2 {
+h2,
+.h2 {
   @include responsive-font($heading2_responsive, $heading2_min, $heading2_max);
   line-height: 1.1;
 }
 
-h3 {
+h3,
+.h3 {
   @include responsive-font($heading3_responsive, $heading3_min, $heading3_max);
   line-height: 1.1;
 }
 
-h4 {
+h4,
+.h4 {
   @include responsive-font($heading4_responsive, $heading4_min, $heading4_max);
   line-height: 1.1;
 }
 
-h5 {
+h5,
+.h5 {
   @include responsive-font($heading5_responsive, $heading5_min, $heading5_max);
   line-height: 1;
 }
 
-h6 {
+h6,
+.h6
+ {
   @include responsive-font($heading6_responsive, $heading6_min, $heading6_max);
   line-height: 1;
 }

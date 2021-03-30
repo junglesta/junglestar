@@ -48,6 +48,26 @@ $card_shadow--hover: 0px 0px 8px 0px rgba($shadow_color,0.12), 0px 8px 8px 0px r
 //material design reference: .mdc-elevation--z4
 $main_shadow: 0px 2px 4px -1px rgba($shadow_color, 0.2), 0px 4px 5px 0px rgba($shadow_color, 0.14), 0px 1px 10px 0px rgba($shadow_color, 0.12);
 
+
+//box-shadows
+$shadow--smooth:
+0 2.2px 3.6px -15px rgba(0, 0, 0, 0.031),
+0 6px 12.8px -15px rgba(0, 0, 0, 0.039),
+0 14.5px 30.9px -15px rgba(0, 0, 0, 0.045),
+0 48px 80px -15px rgba(0, 0, 0, 0.07);
+
+$shadow--short:
+0 1px 1.4px rgba(0, 0, 0, 0.03),
+0 2.6px 3.5px rgba(0, 0, 0, 0.037),
+0 5.3px 7.1px rgba(0, 0, 0, 0.041),
+0 11px 14.6px rgba(0, 0, 0, 0.046),
+0 30px 40px rgba(0, 0, 0, 0.07);
+
+
+//text-shadows
+$shadow--text: 1px 3px 10px rgba(20, 20, 20, 0.4);
+$shadow--transition: box-shadow .2s ease;
+
 $transition_shadow: box-shadow 0.2s ease;
 
 $product_category_1: hsla(117, 100%, 81%, .75); //food

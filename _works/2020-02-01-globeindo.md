@@ -9,4 +9,4 @@ ico_name: globeindo
 permalink: /works/globeindo/
 ---
 
-Online Store using Shopify platform.
+GLobe Indonesia online Store on Shopify platform.

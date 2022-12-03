@@ -1,7 +1,7 @@
 footer {
   position: sticky;
   bottom: 0;
-  
+
   font-size: 1rem;
   min-height: 100vh;
   padding-top: $spacing_unit;
@@ -97,4 +97,11 @@ footer {
       border: 1px solid white;
     }
   }
+}
+
+
+.footer_block_carbonbadge {
+  position: absolute;
+  bottom: 1rem;
+  margin:0 auto;
 }

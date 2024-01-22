@@ -1,81 +1,68 @@
 <footer class="flex flex_cols flex_align_center flex_justify_center flex_align_content_center">
-
-  <a title="clicking this link will send you back to this junglestar.org homepage" href="/" class="footer_icon action_button back_home">
-
-    {% include svg/use.html id="icn--logo_white" class="logo" alt="click to go back to the homepage" %}
-
+  <a
+    title="clicking this link will send you back to this junglestar.org homepage"
+    href="/"
+    class="footer_icon action_button back_home">
+    {% include svg/use.html id="icn--logo_white" class="logo" alt="click to go back to the homepage"
+    %}
   </a>
 
   <div class="footer_block">
-
     <div class="action_title revealed">Junglestar</div>
 
     <div class="footer_block_pages" role="menu">
-      {% for item in site.services %}
-        {% if item.footer_listed %}
-
-          {% if page.url contains item.url %}
-            {% unless item.publish == "notyet" %}
-            <a class="menu_item active center" role="menuitem" title="{{ item.title }}" href="{{ item.url | prepend: site.baseurl }}">
-              <span class="">{{ item.title }}</span>
-            </a>
-            {% endunless %}
-          {% else %}
-            {% unless item.publish == "notyet" %}
-            <a class="menu_item center" role="menuitem" title="{{ item.title }}" href="{{ item.url | prepend: site.baseurl }}">
-              <span class="page_title">{{ item.title }}</span>
-            </a>
-            {% endunless %}
-          {% endif %}
-
-        {% endif %}
-      {% endfor %}
-
-
-      {% for item in site.offer %}
-        {% if item.footer_listed %}
-
-          {% if page.url contains item.url %}
-            {% unless item.publish == "notyet" %}
-            <a class="menu_item active center" role="menuitem" title="{{ item.title }}" href="{{ item.url | prepend: site.baseurl }}">
-              <span class="">{{ item.title }}</span>
-            </a>
-            {% endunless %}
-          {% else %}
-            {% unless item.publish == "notyet" %}
-            <a class="menu_item center" role="menuitem" title="{{ item.title }}" href="{{ item.url | prepend: site.baseurl }}">
-              <span class="page_title">{{ item.title }}</span>
-            </a>
-            {% endunless %}
-          {% endif %}
-
-        {% endif %}
-      {% endfor %}
-
-
-
+      {% for item in site.services %} {% if item.footer_listed %} {% if page.url contains item.url
+      %} {% unless item.publish == "notyet" %}
+      <a
+        class="menu_item active center"
+        role="menuitem"
+        title="{{ item.title }}"
+        href="{{ item.url | prepend: site.baseurl }}">
+        <span class="">{{ item.title }}</span>
+      </a>
+      {% endunless %} {% else %} {% unless item.publish == "notyet" %}
+      <a
+        class="menu_item center"
+        role="menuitem"
+        title="{{ item.title }}"
+        href="{{ item.url | prepend: site.baseurl }}">
+        <span class="page_title">{{ item.title }}</span>
+      </a>
+      {% endunless %} {% endif %} {% endif %} {% endfor %} {% for item in site.offer %} {% if
+      item.footer_listed %} {% if page.url contains item.url %} {% unless item.publish == "notyet"
+      %}
+      <a
+        class="menu_item active center"
+        role="menuitem"
+        title="{{ item.title }}"
+        href="{{ item.url | prepend: site.baseurl }}">
+        <span class="">{{ item.title }}</span>
+      </a>
+      {% endunless %} {% else %} {% unless item.publish == "notyet" %}
+      <a
+        class="menu_item center"
+        role="menuitem"
+        title="{{ item.title }}"
+        href="{{ item.url | prepend: site.baseurl }}">
+        <span class="page_title">{{ item.title }}</span>
+      </a>
+      {% endunless %} {% endif %} {% endif %} {% endfor %}
     </div>
 
     <div class="footer_block_contacts">
-
       <a title="send us an email" class="action_button mail" href="mailto:{{ site.email }}">
-
         <span class="action_title revealed">get in touch</span>
 
         <span class="action_title reveal_on_hover">send email</span>
 
         {% include svg/use.html id="icn--email" class="email" %}
-
       </a>
 
       <div class="flex_item qr white">
-
         <div class="action_title">phone link</div>
 
         {% include svg/use.html id="icn--qr" class="qr" %}
-
       </div>
-
     </div>
 
     <div class="footer_block_carbonbadge">
@@ -83,6 +70,8 @@
       <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
     </div>
 
+    <p class="fontsizefixed centertext">
+      &copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.org | All rights reserved
+    </p>
   </div>
-
 </footer>

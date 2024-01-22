@@ -1,32 +1,32 @@
 # The current release
-version:           1.0.0
+version: 1.1.0
 
 # Site settings
-title:             Junglestar
-email:             info@junglestar.org
-description:       "It's a jungle out there. DIY is not enough. Junglestar is a small, flexible web agency. We design, code, deploy. We offer quality solutions at reasonable prices." # 160 char max
-baseurl:           "" #"/clean" # the subpath of your site, e.g. /blog/
-url:               "https://junglestar.org" # the base hostname & protocol for your site
-twitter_username:  rokmatwit
-github_username:   toybreaker
+title: junglestar
+email: info@junglestar.org
+description: "It's a jungle out there. DIY is not enough. Junglestar is a small, flexible web agency. We design, code, deploy. We offer quality solutions at reasonable prices." # 160 char max
+baseurl: '' #"/clean" # the subpath of your site, e.g. /blog/
+url: 'https://junglestar.org' # the base hostname & protocol for your site
+twitter_username: rokmatwit
+github_username: toybreaker
 
-permalink:         /:title/
+permalink: /:title/
 
 # Setup
 sass:
-  sass_dir:        _sass
-  style:           :compressed
+  sass_dir: _sass
+  style: :compressed
   # style:         :expanded
 
 # Exclude these files from your production _site
 exclude:
- - Gemfile
- - Gemfile.lock
- - LICENSE
- - gulpfile.js
- - package.json
- - DS_Store
- - Icon
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - gulpfile.js
+  - package.json
+  - DS_Store
+  - Icon
 
 # the following exclude is necessary to make Travis CI work:
 # https://github.com/jekyll/jekyll/issues/5267
@@ -34,48 +34,47 @@ exclude:
 # exclude:         ["vendor"]
 
 owner:
- name:             Junglestar
- avatar_url:       #
- email:            rokmabox@gmail.com
- link:             https://junglestar.org
- disqus-shortname:
- twitter:          #
- facebook:         #
- github:           junglesta
+  name: Junglestar
+  avatar_url: #
+  email: rokmabox@gmail.com
+  link: https://junglestar.org
+  disqus-shortname:
+  twitter: #
+  facebook: #
+  github: junglesta
 
 google:
-  plus:            #username
-  analytics:       G-LHHLWSBG3Z
-  verify:          Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
+  plus: #username
+  analytics: G-LHHLWSBG3Z
+  verify: Rt71Q1qGvbUviohh6n8KmtRoGUd-XeuuuKLBjCMvHO8
 
 plugins:
- - html-proofer
- - jekyll-seo-tag
- - jekyll-redirect-from
- - jekyll-sitemap
+  - html-proofer
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-sitemap
 
 #Use html-proofer with this terminal command:
 # bundle exec htmlproofer ./_site --check-html --disable-external --check-favicon --check-html --check-opengraph --allow-hash-href --check-sri --report_missing_doctype --report-eof-tags --report-invalid-tags --report-mismatched-tags --report-script-embeds
 
 collections:
- offer:
-  output:          true
-  permalink:       /:title/
- products:
- works:
-  output:          true
-  permalink:       /works/:title/
- content:
- services:
-  output:          true
-  permalink:       /:title/
- about:
- design:
-
+  offer:
+    output: true
+    permalink: /:title/
+  products:
+  works:
+    output: true
+    permalink: /works/:title/
+  content:
+  services:
+    output: true
+    permalink: /:title/
+  about:
+  design:
 
 defaults:
   - scope:
-      path:        ""
-      type:        products
+      path: ''
+      type: products
     values:
-      layout:      default # change this to get the layout needed
+      layout: default # change this to get the layout needed

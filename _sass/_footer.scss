@@ -1,50 +1,50 @@
 footer {
   position: sticky;
-  bottom: 0;
+  bottom  : 0;
 
-  font-size: 1rem;
-  min-height: 100vh;
-  padding-top: $spacing_unit;
+  font-size     : 1rem;
+  min-height    : 100vh;
+  padding-top   : $spacing_unit;
   padding-bottom: $spacing_unit;
-  color: white;
+  color         : white;
 
   a {
     font-size: 1.2rem;
-    color: white;
+    color    : white;
 
   }
 
   svg {
     display: block;
-    height: 100px;
+    height : 100px;
   }
 
 }
 
 .action_title {
   text-transform: uppercase;
-  font-size: 1.2rem;
-  text-align: center;
-  width: 100%;
-  color: transparentize($white, .4);
-  margin-bottom: $spacing_unit--static/2;
+  font-size     : 1.2rem;
+  text-align    : center;
+  width         : 100%;
+  color         : transparentize($white, .4);
+  margin-bottom : $spacing_unit--static/2;
 }
 
 .action_button {
-  text-align: center;
-  display: block;
-  border: 0 none;
-  padding: 0;
-  margin: 0;
+  text-align   : center;
+  display      : block;
+  border       : 0 none;
+  padding      : 0;
+  margin       : 0;
   margin-bottom: $spacing_unit--static/2;
-  text-align: center;
+  text-align   : center;
 
 
   span {
-    display: block;
+    display    : block;
     line-height: 1;
-    padding: 0;
-    margin: 0;
+    padding    : 0;
+    margin     : 0;
   }
 
   .reveal_on_hover {
@@ -52,10 +52,10 @@ footer {
   }
 
   &:hover {
-    text-decoration: none;
-    outline: 0 none;
+    text-decoration : none;
+    outline         : 0 none;
     background-color: transparent;
-    opacity: 0.85;
+    opacity         : 0.85;
 
     .reveal_on_hover {
       display: block;
@@ -73,17 +73,18 @@ footer {
 
 .back_home {
   // a
-  color: white;
+  color     : white;
   text-align: center;
 }
 
 
 .footer_block {
-  display: flex;
-  margin: 0 auto;
-  max-width: 70%;
-  flex-direction: column;
-  align-items: center;
+  display          : flex;
+  // margin        : 0 auto;
+  // max-width     : 70%;
+  flex-direction   : column;
+  align-items      : center;
+  filter           : grayscale(100%);
 }
 
 .footer_block_pages {
@@ -92,7 +93,8 @@ footer {
   a {
     display: block;
     padding: 4px 10px;
-    border: 1px solid transparent;
+    border : 1px solid transparent;
+
     &:hover {
       border: 1px solid white;
     }
@@ -101,7 +103,8 @@ footer {
 
 
 .footer_block_carbonbadge {
-  position: absolute;
-  bottom: 1rem;
-  margin:0 auto;
+  padding-top: 1rem;
+  align-self : right;
+  transform  : scale(.75);
+  opacity    : 0.55;
 }

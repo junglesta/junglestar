@@ -1,14 +1,28 @@
 {
-  "name": "a",
+  "name": "j25",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "format": "biome format --write ./src",
+    "lint": "biome lint ./src",
+    "dev": "astro dev --open",
+    "check": "astro check --watch & astro dev",
+    "build": "astro build --force",
+    "buildv": "astro build --verbose",
+    "builddev": "astro build --devOutput",
+    "buildwithtest": "astro check && tsc --noEmit && astro build",
+    "astro": "astro",
+    "upg": "npx @astrojs/upgrade"
   },
   "dependencies": {
-    "astro": "^5.13.5"
-  }
+    "astro": "^5.13.5",
+    "@astrojs/check": "^0.9.4",
+    "sharp": "^0.34.3",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.2"
+  },
+  "packageManager": "pnpm@10.11.1"
 }

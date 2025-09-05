@@ -1,0 +1,199 @@
+/* ========================================
+   FILE: src/styles/layers/print.css
+   Print styles - LAST layer for override
+   ======================================== */
+
+@layer print {
+    @media print {
+        /* Base print styles */
+        body,
+        html {
+            height: auto;
+            background-color: white !important;
+        }
+
+        body {
+            text-rendering: optimizeLegibility;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body p {
+            line-height: 1.35;
+        }
+
+        /* Print only elements */
+        .print_only {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 1svh;
+            margin-bottom: 2svh;
+        }
+
+        .print_title {
+            font-size: 4.8svh;
+            line-height: 1;
+        }
+
+        .print_footer {
+            font-size: 2.08svh;
+        }
+
+        /* Layout adjustments */
+        .site_header {
+            min-height: 0;
+            padding: 0;
+        }
+
+        .top_pad_big {
+            padding-top: 1.6svh;
+        }
+
+        .product_grid {
+            width: 100vw !important;
+            flex-direction: row;
+            margin: 0 auto;
+            padding: 0.32svh 0;
+        }
+
+        /* Card styles for print */
+        .card {
+            font-size: 2.08svh;
+            background-color: transparent;
+            float: left;
+            min-width: auto;
+            max-width: 33vw !important;
+            margin: 0.32svh;
+            padding: 0.32svh;
+            box-shadow: none;
+            border: 0.16svh solid rgba(0, 0, 0, 0.24);
+        }
+
+        .card p {
+            margin-bottom: 0.48svh;
+        }
+
+        .card > * {
+            margin-top: 0.8svh;
+            margin-bottom: 0.8svh;
+            padding-top: 0.8svh;
+            padding-bottom: 0.8svh;
+        }
+
+        .card:hover {
+            transform: none;
+            background-color: transparent;
+        }
+
+        .card h3 {
+            min-height: 0;
+            height: auto;
+        }
+
+        /* Typography for print */
+        h1,
+        h2,
+        h3,
+        h4 {
+            line-height: 1.3;
+            padding-top: 0.32svh;
+            padding-bottom: 0.32svh;
+        }
+
+        h1 {
+            font-size: 3.84svh;
+        }
+        h2 {
+            font-size: 3.2svh;
+        }
+        h3 {
+            font-size: 2.56svh;
+        }
+        h4 {
+            font-size: 2.4svh;
+        }
+
+        /* Element specific adjustments */
+        .selling_points {
+            font-size: 2.24svh;
+            line-height: 1.15;
+        }
+
+        .checkmark {
+            line-height: 1.25;
+        }
+
+        .checkmark:before {
+            width: 0.32svh;
+            height: 0.32svh;
+            border-width: 0 0.32svh 0.32svh 0;
+            transform: rotate(45deg);
+            padding-right: 0.64svh;
+            padding-bottom: 1.28svh;
+            margin-right: 1.6svh;
+        }
+
+        /* Hide elements in print */
+        .button_row,
+        .card:before,
+        .mean_icon,
+        .scrolltarget,
+        .site_title,
+        .starting_at a,
+        footer {
+            display: none !important;
+        }
+
+        /* Page break controls */
+        .card,
+        .post_link,
+        .post_list li,
+        a,
+        blockquote,
+        code,
+        figure,
+        hr,
+        li,
+        ol,
+        pre,
+        table,
+        tr,
+        ul {
+            page-break-inside: avoid !important;
+            break-inside: avoid !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            page-break-after: avoid !important;
+            break-after: avoid !important;
+            page-break-inside: avoid !important;
+            break-inside: avoid !important;
+        }
+
+        img {
+            page-break-after: auto;
+            page-break-before: auto;
+            page-break-inside: avoid !important;
+            break-inside: avoid !important;
+        }
+
+        /* Utility classes for page breaks */
+        .page_break,
+        .page_break_before {
+            page-break-before: always !important;
+            break-before: page !important;
+            page-break-after: always !important;
+            break-after: page !important;
+        }
+
+        .no_print {
+            display: none !important;
+        }
+    }
+}

@@ -1,0 +1,384 @@
+/* ========================================
+   FILE: src/styles/layers/components.css
+   ======================================== */
+
+@layer components {
+    /* Typography components */
+
+    blockquote,
+    dl,
+    figure,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ol,
+    p,
+    pre,
+    ul {
+        margin-bottom: calc(var(--spacing_unit) / 2);
+    }
+
+    /* Headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        margin: 0;
+        padding: 0;
+        padding-top: 1.5svh;
+        padding-bottom: 1.5svh;
+        font-weight: 600;
+        line-height: 1.44;
+    }
+
+    @media (min-width: 600px) {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+        }
+    }
+
+    .offer_content h2,
+    .offer_content h3,
+    .section h2,
+    .section h3 {
+        color: var(--brand_color);
+    }
+
+    h1,
+    .h1 {
+        font-size: clamp(
+            var(--heading1_min),
+            var(--heading1_responsive),
+            var(--heading1_max)
+        );
+        line-height: 1.1;
+    }
+
+    h2,
+    .h2 {
+        font-size: clamp(
+            var(--heading2_min),
+            var(--heading2_responsive),
+            var(--heading2_max)
+        );
+        line-height: 1.1;
+    }
+
+    h3,
+    .h3 {
+        font-size: clamp(
+            var(--heading3_min),
+            var(--heading3_responsive),
+            var(--heading3_max)
+        );
+        line-height: 1.1;
+    }
+
+    h4,
+    .h4 {
+        font-size: clamp(
+            var(--heading4_min),
+            var(--heading4_responsive),
+            var(--heading4_max)
+        );
+        line-height: 1.1;
+    }
+
+    h5,
+    .h5 {
+        font-size: clamp(
+            var(--heading5_min),
+            var(--heading5_responsive),
+            var(--heading5_max)
+        );
+        line-height: 1;
+    }
+
+    h6,
+    .h6 {
+        font-size: clamp(
+            var(--heading6_min),
+            var(--heading6_responsive),
+            var(--heading6_max)
+        );
+        line-height: 1;
+    }
+
+    /* Strong text */
+    strong {
+        font-weight: 600;
+    }
+
+    /* Links */
+    a {
+        color: var(--link_color);
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 0.2svh;
+    }
+
+    /* Blockquotes */
+    blockquote {
+        color: var(--grey_color);
+        border-left: 0.4svh solid var(--grey_color_light);
+        padding-left: calc(var(--spacing_unit) / 2);
+        letter-spacing: -0.1svh;
+        font-style: italic;
+    }
+
+    blockquote > :last-child {
+        margin-bottom: 0;
+    }
+
+    /* Code blocks */
+    pre {
+        font-family: "Open Sans", sans-serif;
+        max-width: 54svh;
+        display: block;
+        font-size: 0.875em;
+        font-family: Consolas, monospace;
+        color: var(--grey_color_dark);
+        line-height: 1.3em;
+        margin: 0 auto;
+        padding: 0 1svh;
+    }
+
+    code {
+        background: #fafafd;
+        padding: 0.063em;
+        border: 0.063em solid #dedede;
+    }
+
+    /* Cards */
+    .card {
+        font-size: 1.6svh;
+        z-index: 10;
+        background-color: hsla(0, 0%, 95%, 1);
+        cursor: pointer;
+        border-radius: 0.4svh;
+        display: block;
+        position: relative;
+        width: 90%;
+        min-width: 90%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.6svh;
+        padding-right: 1.6svh;
+        box-shadow: var(--card_shadow);
+        transition: var(--transition_shadow);
+    }
+
+    @media (min-width: 1024px) {
+        .card {
+            display: inline-block;
+            margin: 0;
+            min-width: var(--big_card_width);
+            max-width: var(--big_card_width);
+        }
+    }
+
+    .card:focus,
+    .card:hover {
+        box-shadow: var(--card_shadow_hover);
+    }
+
+    .card:active {
+        transform: translateY(0.025svh);
+    }
+
+    .card h1 {
+        text-align: center;
+        text-transform: uppercase;
+        height: 15%;
+    }
+
+    .card h2,
+    .card h3 {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .card h3 {
+        height: 20%;
+        min-height: 6svh;
+    }
+
+    .card p {
+        margin-left: calc(var(--spacing_unit) / 2);
+        margin-right: calc(var(--spacing_unit) / 2);
+    }
+
+    .card > * {
+        margin-top: 4.8svh;
+    }
+
+    /* Card bestseller/bestvalue badges */
+    .card.bestseller:before,
+    .card.bestvalue:before {
+        content: "";
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        display: block;
+        right: 0;
+        width: 10svh;
+        height: 10svh;
+    }
+
+    .card.bestseller:before {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 566.93 566.93'%3E %3Cpath fill='%232D6AB2' d='M0 0h358.536L566.93 210.536V566.93'/%3E %3Cpath d='M339.91 115.778c-.512.74-1.32 1.576-2.427 2.513s-2.003 1.64-2.683 2.09c-.683.46-1.334.88-1.96 1.28-.624.4-1.248.74-1.872 1.02-4.033 1.65-8.205 2.13-12.52 1.45-1.648-.28-3.266-.74-4.855-1.36s-3.21-1.36-4.854-2.21c-.86-.4-1.67-.89-2.43-1.49-.77-.59-1.52-1.15-2.26-1.66-.34-.23-.64-.47-.9-.72s-.56-.49-.9-.72c-.29-.17-.53-.41-.73-.72-.2-.31-.5-.55-.9-.72-.28-.17-.54-.4-.77-.68-.23-.28-.49-.56-.77-.85l-24.84-24.9c-.97-.96-1.73-1.82-2.3-2.55-.57-.73-.65-1.59-.26-2.55.28-.63.9-1.39 1.87-2.3.96-.91 1.76-1.67 2.38-2.3l49.99-49.99c.68-.68 1.39-1.42 2.13-2.21s1.47-1.28 2.21-1.45c.62-.17 1.33-.03 2.13.42.17.05.29.15.38.29.08.14.21.24.38.3l25.38 25.38c.39.39.81.78 1.23 1.14.42.37.78.75 1.06 1.15.17.39.42.71.76.94.34.23.62.51.85.85l.51.51c.22.46.54.85.93 1.19.39.34.74.76 1.02 1.28.34.57.69 1.1 1.06 1.58s.72 1.01 1.06 1.58c.68 1.48 1.32 2.88 1.92 4.22.59 1.33 1 2.68 1.23 4.05.34 1.93.28 3.86-.17 5.79-.46 1.93-1.23 3.89-2.3 5.88-.29.51-.61.98-.98 1.41-.37.42-.73.92-1.07 1.49-.17.28-.39.52-.64.72-.26.2-.47.44-.64.73-.11.23-.31.46-.6.68-.29.23-.52.37-.68.43l-.77.77c-.17.17-.39.36-.64.56-.26.2-.44.35-.55.47-.51.29-.94.57-1.28.86-.35.28-.71.51-1.11.68-2.79 1.31-5.43 2.02-7.92 2.13-.8 0-1.57-.09-2.3-.26-.74-.17-1.51-.2-2.3-.08-.23 0-.51.03-.85.08-.35.06-.6.29-.77.69-.34.57-.36 1.32-.04 2.26.31.94.55 1.78.72 2.52.51 2.56.57 5 .17 7.33-.4 2.22-1.22 4.46-2.47 6.73-.28.63-.64 1.21-1.06 1.75-.43.54-.81 1.09-1.15 1.66l-.94.94zm-14.563-11.838c.906-.682 1.717-1.576 2.428-2.684.707-1.106 1.176-2 1.404-2.682 1.24-2.84 1.1-5.82-.43-8.943-.69-1.24-1.58-2.48-2.68-3.7-1.11-1.22-2.29-2.45-3.54-3.7l-9.62-9.63c-.23 0-.37-.05-.43-.17-.06-.11-.14-.23-.26-.34-.85-.51-1.59-.68-2.22-.51-.74.17-1.46.61-2.17 1.32l-2 2-7.58 7.58c-.68.69-1.37 1.39-2.05 2.13-.68.74-1.08 1.45-1.19 2.13-.06.51.1 1.1.47 1.75s.86 1.32 1.49 2c.62.68 1.29 1.35 2 2 .71.66 1.32 1.24 1.83 1.75 1.7 1.71 3.33 3.37 4.89 4.99 1.56 1.62 3.15 3.04 4.77 4.26 1.61 1.22 3.22 2.15 4.81 2.77 1.59.63 3.24.77 4.94.43.74-.17 1.49-.47 2.26-.89.76-.42 1.54-.86 2.34-1.32l.51-.51z' fill='%23FFF'/%3E %3C/svg%3E");
+    }
+
+    /* Buttons */
+    .button {
+        font-size: 120%;
+        background-color: var(--white);
+        display: inline-block;
+        width: auto;
+        line-height: 5.12svh;
+        margin-right: calc(var(--vertical_rhythm_small) / 2);
+        margin-bottom: calc(var(--vertical_rhythm_small) / 2);
+        border-radius: 0.64svh;
+        padding: 0.8svh 2.4svh;
+        box-shadow: var(--card_shadow);
+        color: var(--brand_color);
+        border: 0.32svh solid var(--brand_color);
+        margin: var(--vertical_rhythm) auto;
+        font-weight: 600;
+    }
+
+    .button:focus,
+    .button:hover {
+        cursor: pointer;
+        background-color: var(--button_focus_bg);
+        transform: translateY(0.024svh);
+    }
+
+    .button:active {
+        background-color: var(--button_focus_bg);
+        transform: translateY(0.04svh);
+    }
+
+    .button_dark {
+        background-color: var(--black);
+        color: var(--white);
+        border: 0.32svh solid var(--white);
+    }
+
+    .button_dark:focus,
+    .button_dark:hover {
+        cursor: pointer;
+        background-color: var(--brand_color);
+        border: 0.32svh solid var(--brand_color);
+    }
+
+    .button_row {
+        padding-top: calc(var(--vertical_rhythm_small) / 8);
+        padding-bottom: calc(var(--vertical_rhythm_small) / 2);
+        width: 100%;
+        display: block;
+    }
+
+    /* Footer */
+    footer {
+        position: sticky;
+        bottom: 0;
+        font-size: 1.6svh;
+        min-height: 100vh;
+        padding-top: var(--spacing_unit);
+        padding-bottom: var(--spacing_unit);
+        color: var(--white);
+    }
+
+    footer a {
+        font-size: 1.92svh;
+        color: var(--white);
+    }
+
+    footer svg {
+        display: block;
+        height: 10svh;
+    }
+
+    .footer_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        filter: grayscale(100%);
+    }
+
+    .footer_block_pages {
+        margin-bottom: calc(var(--spacing_unit) * 2);
+    }
+
+    .footer_block_pages a {
+        display: block;
+        padding: 0.64svh 1.6svh;
+        border: 0.16svh solid transparent;
+    }
+
+    .footer_block_pages a:hover {
+        border: 0.16svh solid var(--white);
+    }
+
+    .footer_icon {
+        padding-top: calc(var(--spacing_unit) * 2);
+    }
+
+    /* Checkmark */
+    .checkmark {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .checkmark:before {
+        content: "";
+        display: inline-block;
+        width: 0.48svh;
+        height: 0.96svh;
+        border: solid limegreen;
+        border-width: 0 0.32svh 0.32svh 0;
+        transform: rotate(45deg);
+        padding-right: 1.28svh;
+        padding-bottom: 1.6svh;
+        margin-right: 2.56svh;
+    }
+
+    .selling_points {
+        font-size: 1.5svh;
+        margin-bottom: var(--spacing_unit);
+        max-width: 40svh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

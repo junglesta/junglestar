@@ -1,0 +1,94 @@
+/* ========================================
+   FILE: src/styles/layers/reset.css
+   ======================================== */
+
+@layer reset {
+    /* Reset margins and paddings */
+    blockquote,
+    body,
+    dd,
+    dl,
+    figure,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    ol,
+    p,
+    pre,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Universal reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* HTML and Body */
+    body,
+    html {
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    figure > img {
+        display: block;
+    }
+
+    /* Lists */
+    ol,
+    ul {
+        margin-left: var(--spacing_unit, 3svh);
+    }
+
+    li > ul,
+    li > ol {
+        margin-bottom: 0;
+    }
+
+    /* Links */
+    a {
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 0.2svh;
+    }
+
+    /* External link indicator */
+    a:not(.action_button)[target="_blank"]:after {
+        content: "↗";
+        font-size: 80%;
+        display: inline;
+        color: currentColor;
+    }
+
+    /* Icons */
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .icon > svg {
+        display: inline-block;
+        width: 1.6svh;
+        height: 1.6svh;
+        vertical-align: middle;
+    }
+}

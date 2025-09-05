@@ -16,8 +16,9 @@
     "upg": "npx @astrojs/upgrade"
   },
   "dependencies": {
-    "astro": "^5.13.5",
     "@astrojs/check": "^0.9.4",
+    "astro": "^5.13.5",
+    "prettier-plugin-astro": "^0.14.1",
     "sharp": "^0.34.3",
     "typescript": "^5.9.2"
   },

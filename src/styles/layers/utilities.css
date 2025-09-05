@@ -1,0 +1,201 @@
+/* ========================================
+   FILE: src/styles/layers/utilities.css
+   ======================================== */
+
+@layer utilities {
+    /* Flexbox utilities */
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex_cols {
+        flex-direction: column;
+    }
+
+    .flex_rows {
+        flex-direction: row;
+    }
+
+    .flex_align_center {
+        align-items: center;
+    }
+
+    .flex_align_baseline {
+        align-items: baseline;
+    }
+
+    .flex_wrap {
+        flex-wrap: wrap;
+    }
+
+    .flex_justify_center {
+        justify-content: center;
+    }
+
+    .flex_align_content_center {
+        align-content: center;
+    }
+
+    .flex_col_bp1_row {
+        flex-direction: column;
+    }
+
+    @media (min-width: 820px) {
+        .flex_col_bp1_row {
+            flex-direction: row;
+        }
+    }
+
+    .flex_row_bp1_col {
+        flex-direction: row;
+    }
+
+    @media (min-width: 820px) {
+        .flex_row_bp1_col {
+            flex-direction: column;
+        }
+    }
+
+    .flex_cols_max {
+        flex-direction: column;
+    }
+
+    @media (min-width: 1024px) {
+        .flex_cols_max {
+            flex-direction: row;
+        }
+    }
+
+    .flex_align_self_start {
+        align-self: flex-start;
+    }
+
+    /* Color utilities */
+    .color_black {
+        color: var(--black) !important;
+    }
+
+    .color_white {
+        color: var(--white) !important;
+    }
+
+    .brand_color {
+        color: var(--brand_color);
+    }
+
+    /* SVG utilities */
+    svg.outlined {
+        fill: transparent;
+        stroke-width: 0.8svh;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+    }
+
+    @media (min-width: 600px) {
+        svg.outlined {
+            stroke-width: 0.6svh;
+        }
+    }
+
+    @media (min-width: 820px) {
+        svg.outlined {
+            stroke-width: 0.5svh;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        svg.outlined {
+            stroke-width: 0.4svh;
+        }
+    }
+
+    svg.brand_color {
+        stroke: var(--brand_color);
+    }
+
+    svg.white_color {
+        stroke: var(--white);
+    }
+
+    /* Background utilities */
+    .light_bg,
+    .page_content.light_bg {
+        background-color: rgba(195, 218, 241, 1);
+    }
+
+    .dark_bg,
+    .page_content.dark_bg {
+        background-color: var(--black);
+    }
+
+    .dark_bg .text {
+        color: var(--white);
+    }
+
+    /* Spacing utilities */
+    .center {
+        text-align: center;
+    }
+
+    .top_pad {
+        padding-top: var(--spacing_unit);
+    }
+
+    .top_pad_big {
+        padding-top: var(--spacing_unit_big);
+    }
+
+    .top_padded {
+        padding-top: 11.5svh;
+    }
+
+    .text {
+        padding-top: calc(var(--spacing_unit) / 2);
+    }
+
+    /* Layout utilities */
+    .full_height {
+        min-height: 100vh;
+    }
+
+    /* Print only - hidden on screen */
+    .print_only {
+        display: none;
+    }
+
+    /* Clearfix */
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Target fade animation */
+    :target {
+        animation: target_fade 3s 1;
+    }
+
+    @keyframes target_fade {
+        0% {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        100% {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+
+    /* Weight utilities */
+    .weight600 {
+        font-weight: 600;
+    }
+
+    .weight800 {
+        font-weight: 600;
+    }
+
+    .weight900 {
+        font-weight: 600;
+    }
+}

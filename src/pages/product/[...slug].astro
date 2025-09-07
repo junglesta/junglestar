@@ -1,0 +1,146 @@
+---
+// src/pages/product/[...slug].astro
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+
+// Generate routes for all product pages
+export async function getStaticPaths() {
+    const products = await getCollection("product");
+
+    // Generate paths for both English and Indonesian versions
+    const paths = [];
+
+    products.forEach((product) => {
+        // English version
+        if (product.data.english) {
+            paths.push({
+                params: { slug: product.slug },
+                props: { product, language: "english" },
+            });
+        }
+
+        // Indonesian version
+        if (product.data.indonesia) {
+            paths.push({
+                params: { slug: `id/${product.slug}` },
+                props: { product, language: "indonesia" },
+            });
+        }
+    });
+
+    return paths;
+}
+
+const { product, language } = Astro.props;
+const { Content } = await product.render();
+
+// Get the correct language content
+const content =
+    language === "indonesia" ? product.data.indonesia : product.data.english;
+
+if (!content) {
+    return Astro.redirect("/404");
+}
+
+// Language toggle URL
+const otherLang = language === "english" ? "indonesia" : "english";
+const otherLangUrl =
+    language === "english"
+        ? `/product/id/${product.slug}`
+        : `/product/${product.slug.replace("id/", "")}`;
+const hasOtherLang = product.data[otherLang];
+---
+
+<Layout title={content.title} description={content.header} language={language}>
+    <div class="wrapper">
+        {/* Language toggle */}
+        {
+            hasOtherLang && (
+                <div class="language_toggle">
+                    <a href={otherLangUrl} class="button button_dark">
+                        {language === "english"
+                            ? "🇮🇩 Bahasa Indonesia"
+                            : "🇬🇧 English"}
+                    </a>
+                </div>
+            )
+        }
+
+        <div class="product_content section">
+            <h1 class="header_title">{content.header}</h1>
+            <h2 class="h3">{content.title}</h2>
+
+            {
+                product.data.type && (
+                    <div class="product_type">
+                        <span class="badge">{product.data.type}</span>
+                    </div>
+                )
+            }
+
+            <div class="content">
+                {/* Render paragraphs if they exist */}
+                {content.paragraph1 && <p>{content.paragraph1}</p>}
+                {content.paragraph2 && <p>{content.paragraph2}</p>}
+                {content.paragraph3 && <p>{content.paragraph3}</p>}
+                {content.paragraph4 && <p>{content.paragraph4}</p>}
+                {content.paragraph5 && <p>{content.paragraph5}</p>}
+                {content.paragraph6 && <p>{content.paragraph6}</p>}
+                {content.paragraph7 && <p>{content.paragraph7}</p>}
+
+                {/* Also render markdown content if available */}
+                <Content />
+            </div>
+
+            <div class="button_row">
+                <a href="/contact" class="button">
+                    {language === "english" ? "Get Started" : "Mulai Sekarang"}
+                </a>
+                <a href="/product" class="button button_dark">
+                    {
+                        language === "english"
+                            ? "View All Products"
+                            : "Lihat Semua Produk"
+                    }
+                </a>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .language_toggle {
+        text-align: right;
+        margin-bottom: var(--spacing_unit);
+    }
+
+    .product_type {
+        text-align: center;
+        margin: var(--spacing_unit) 0;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 0.5svh 1.5svh;
+        background: var(--brand_color);
+        color: var(--white);
+        border-radius: 0.5svh;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.9em;
+    }
+
+    .content {
+        margin: var(--spacing_unit_big) 0;
+    }
+
+    .content p {
+        margin-bottom: var(--spacing_unit);
+        line-height: 1.8;
+    }
+
+    .product_content h1,
+    .product_content h2 {
+        text-align: center;
+    }
+</style>

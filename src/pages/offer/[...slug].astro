@@ -1,0 +1,167 @@
+---
+// src/pages/offer/[...slug].astro
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import SvgIcon from "@components/SvgIcon.astro";
+
+// Generate routes for all offer pages
+export async function getStaticPaths() {
+    const offers = await getCollection("offer");
+
+    return offers.map((offer) => ({
+        params: { slug: offer.slug },
+        props: { offer },
+    }));
+}
+
+const { offer } = Astro.props;
+const { Content } = await offer.render();
+
+// Extract data from frontmatter
+const {
+    title,
+    description,
+    subtitle,
+    language,
+    header,
+    subheader,
+    svgicon,
+    product_group,
+    prices_rp,
+    show_agent_prices,
+    slogan,
+    print_imperatif,
+    print_title,
+    print_subtitle,
+    print_footer,
+} = offer.data;
+---
+
+<Layout
+    title={title}
+    description={description}
+    language="english"
+    subtitle={subtitle}
+    slogan={slogan}
+>
+    <div class="wrapper">
+        {/* Print-only header */}
+        {
+            print_title && (
+                <div class="print_only">
+                    <h1 class="print_title">{print_title}</h1>
+                    {print_subtitle && <h2>{print_subtitle}</h2>}
+                    {print_imperatif && (
+                        <p class="print_imperatif">{print_imperatif}</p>
+                    )}
+                </div>
+            )
+        }
+
+        {/* Main content header */}
+        <div class="offer_content section">
+            {header && <h1 class="header_title">{header}</h1>}
+            {subheader && <h2 class="h3 header_title">{subheader}</h2>}
+
+            {/* SVG icon if specified */}
+            {
+                svgicon && (
+                    <div class="offer_icon">
+                        <SvgIcon name={svgicon} class="large_icon" />
+                    </div>
+                )
+            }
+
+            {/* Product group badge */}
+            {
+                product_group && (
+                    <div class="product_group">
+                        <span class="badge">{product_group}</span>
+                    </div>
+                )
+            }
+
+            {/* Main content from markdown */}
+            <div class="content">
+                <Content />
+            </div>
+
+            {/* Pricing information */}
+            {
+                prices_rp && (
+                    <div class="pricing_section">
+                        <h3>Pricing Information</h3>
+                        {show_agent_prices && (
+                            <p class="agent_price_notice">
+                                Special agent pricing available
+                            </p>
+                        )}
+                    </div>
+                )
+            }
+
+            {/* Call to action */}
+            <div class="button_row">
+                <a href="/contact" class="button">Get This Offer</a>
+                <a href="/offer" class="button button_dark">View All Offers</a>
+            </div>
+        </div>
+
+        {/* Print footer */}
+        {
+            print_footer && (
+                <div class="print_only print_footer">
+                    <p>{print_footer}</p>
+                </div>
+            )
+        }
+    </div>
+</Layout>
+
+<style>
+    .offer_icon {
+        text-align: center;
+        margin: var(--spacing_unit) 0;
+    }
+
+    .offer_icon :global(.large_icon) {
+        width: 10svh;
+        height: 10svh;
+    }
+
+    .product_group {
+        text-align: center;
+        margin: var(--spacing_unit) 0;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 0.5svh 1.5svh;
+        background: var(--brand_color);
+        color: var(--white);
+        border-radius: 0.5svh;
+        font-weight: 600;
+    }
+
+    .pricing_section {
+        background: var(--grey_color_light);
+        padding: var(--spacing_unit);
+        border-radius: 0.5svh;
+        margin: var(--spacing_unit) 0;
+    }
+
+    .agent_price_notice {
+        font-style: italic;
+        color: var(--brand_color);
+    }
+
+    .content {
+        margin: var(--spacing_unit) 0;
+    }
+
+    .content :global(h1),
+    .content :global(h2),
+    .content :global(h3) {
+        color: var(--brand_color);
+    }
+</style>

@@ -1,0 +1,126 @@
+---
+// src/components/Footer.astro
+import { getCollection } from "astro:content";
+
+// Fetch collections
+const services = await getCollection("services");
+const offers = await getCollection("offer");
+
+// Filter for footer items
+const footerServices = services.filter((item) => item.data.footer_listed);
+const footerOffers = offers.filter((item) => item.data.footer_listed);
+
+// Site configuration
+const currentYear = new Date().getFullYear();
+const siteEmail = "info@junglestar.org";
+const siteName = "Junglestar";
+
+// Helper to check if current page
+const currentPath = Astro.url.pathname;
+---
+
+<footer
+    class="flex flex_cols flex_align_center flex_justify_center flex_align_content_center"
+>
+    <a
+        title="clicking this link will send you back to this junglestar.org homepage"
+        href="/"
+        class="footer_icon action_button back_home"
+    >
+        <!-- Logo SVG - you can import this as a component or inline it -->
+        <svg
+            class="logo"
+            viewBox="0 0 400 400"
+            aria-label="click to go back to the homepage"
+        >
+            <path
+                fill="white"
+                d="M328.813 60.47L328.78 224.3c-.006 43.783-11.565 75.953-34.648 96.506-23.096 20.562-53.638 31.03-91.638 31.43-38.827.4-69.976-9.04-93.463-28.317-23.496-19.284-35.235-44.104-35.228-74.486.003-13.4 6.537-20.18 19.618-20.315 13.89-.144 20.838 4.912 20.835 15.163 0 22.482 7.86 40.15 23.593 53.008 15.72 12.85 36.863 19.146 63.433 18.87 27.783-.29 49.23-8.007 64.355-23.153 15.116-15.146 22.688-37.906 22.693-68.28l.036-192.883C261.95 17.906 231.884 10 200 10 95.233 10 10 95.234 10 200.002 10 304.77 95.233 390 200 390c104.766 0 190-85.23 190-189.998 0-55.104-23.588-104.795-61.187-139.533zM56.593 184.72l52.3-49.918-12.416-70.414 64.732 33.195L225.88 64.28l-12.297 70.435 52.39 49.832-72.33 10.334-32.296 64.1-32.408-64.044-72.35-10.215z"
+            ></path>
+        </svg>
+    </a>
+
+    <div class="footer_block">
+        <div class="action_title revealed">{siteName}</div>
+
+        <div class="footer_block_pages" role="menu">
+            {
+                footerServices.map((item) => {
+                    const itemUrl = `/services/${item.slug}`;
+                    const isActive = currentPath.includes(itemUrl);
+
+                    return (
+                        <a
+                            class={`menu_item center ${isActive ? "active" : ""}`}
+                            role="menuitem"
+                            title={item.data.title}
+                            href={itemUrl}
+                        >
+                            <span class="page_title">{item.data.title}</span>
+                        </a>
+                    );
+                })
+            }
+
+            {
+                footerOffers.map((item) => {
+                    const itemUrl = `/offer/${item.slug}`;
+                    const isActive = currentPath.includes(itemUrl);
+
+                    return (
+                        <a
+                            class={`menu_item center ${isActive ? "active" : ""}`}
+                            role="menuitem"
+                            title={item.data.title}
+                            href={itemUrl}
+                        >
+                            <span class="page_title">{item.data.title}</span>
+                        </a>
+                    );
+                })
+            }
+        </div>
+
+        <div class="footer_block_contacts">
+            <a
+                title="send us an email"
+                class="action_button mail"
+                href={`mailto:${siteEmail}`}
+            >
+                <span class="action_title revealed">get in touch</span>
+                <span class="action_title reveal_on_hover">send email</span>
+
+                <!-- Email icon SVG -->
+                <svg class="email" viewBox="0 0 24 24">
+                    <path
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    ></path>
+                </svg>
+            </a>
+
+            <div class="flex_item qr white">
+                <div class="action_title">phone link</div>
+
+                <!-- QR code SVG - replace with actual QR code -->
+                <svg class="qr" viewBox="0 0 100 100">
+                    <rect x="10" y="10" width="30" height="30" fill="white"
+                    ></rect>
+                    <rect x="60" y="10" width="30" height="30" fill="white"
+                    ></rect>
+                    <rect x="10" y="60" width="30" height="30" fill="white"
+                    ></rect>
+                </svg>
+            </div>
+        </div>
+
+        <p class="fontsizefixed centertext">
+            &copy; {currentYear}
+            {siteName}.org | All rights reserved
+        </p>
+    </div>
+</footer>
+
+<style>
+    /* Component-specific styles can go here if needed */
+    /* Your global styles already handle most of the styling */
+</style>

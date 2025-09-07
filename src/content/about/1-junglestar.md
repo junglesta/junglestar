@@ -1,5 +1,4 @@
 ---
-
 title: junglestar
 description: "We are a SMALL, FLEXIBLE WEB AGENCY. We help companies and individuals organise their communication. We take care of information architecture, screen design, deploy. We can help develop your CONTENT MARKETING STRATEGY. We grow relationships with clients."
 language: english

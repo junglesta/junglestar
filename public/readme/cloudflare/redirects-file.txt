@@ -1,0 +1,24 @@
+# Redirects from old Jekyll URLs to new Astro URLs
+# This works for both Netlify and Cloudflare Pages
+
+# Remove .html extensions
+/index.html         /                   301
+/about.html         /about              301
+/design.html        /design             301
+/content.html       /content            301
+/offer.html         /offer              301
+/services.html      /services           301
+/contact.html       /contact            301
+
+# Common Jekyll patterns
+/about/index.html   /about              301
+/design/index.html  /design             301
+/content/index.html /content            301
+/offer/index.html   /offer              301
+
+# Preserve any old service/offer URLs
+/services/*         /services/:splat    301
+/offer/*            /offer/:splat       301
+
+# 404 fallback
+/*                  /404.html           404

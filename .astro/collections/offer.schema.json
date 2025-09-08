@@ -4,7 +4,13 @@
     "offer": {
       "type": "object",
       "properties": {
+        "name": {
+          "type": "string"
+        },
         "title": {
+          "type": "string"
+        },
+        "type": {
           "type": "string"
         },
         "description": {
@@ -14,13 +20,43 @@
           "type": "string",
           "default": "english"
         },
-        "header": {
+        "permalink": {
           "type": "string"
         },
-        "subheader": {
+        "question": {
           "type": "string"
         },
-        "svgicon": {
+        "bestseller": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "bestvalue": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "footer_listed": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "prices_rp": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "show_agent_prices": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "publish": {
           "type": "string"
         },
         "subtitle": {
@@ -29,19 +65,16 @@
         "product_group": {
           "type": "string"
         },
-        "footer_listed": {
-          "type": "boolean"
-        },
-        "permalink": {
+        "slogan": {
           "type": "string"
         },
-        "prices_rp": {
-          "type": "boolean"
+        "header": {
+          "type": "string"
         },
-        "show_agent_prices": {
-          "type": "boolean"
+        "subheader": {
+          "type": "string"
         },
-        "slogan": {
+        "svgicon": {
           "type": "string"
         },
         "print_imperatif": {
@@ -55,6 +88,174 @@
         },
         "print_footer": {
           "type": "string"
+        },
+        "english": {
+          "type": "object",
+          "properties": {
+            "product": {
+              "type": "object",
+              "properties": {
+                "group": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "subname": {
+                  "type": "string"
+                },
+                "desc": {
+                  "type": "string"
+                },
+                "starting_at": {
+                  "type": "string"
+                },
+                "starting_at_rp": {
+                  "type": "string"
+                },
+                "starting_at_agent": {
+                  "type": "string"
+                },
+                "agent_gets": {
+                  "type": "string"
+                },
+                "demo_url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "selling_points": {
+                  "type": "object",
+                  "properties": {
+                    "sp01": {
+                      "type": "string"
+                    },
+                    "sp02": {
+                      "type": "string"
+                    },
+                    "sp03": {
+                      "type": "string"
+                    },
+                    "sp04": {
+                      "type": "string"
+                    },
+                    "sp05": {
+                      "type": "string"
+                    },
+                    "sp06": {
+                      "type": "string"
+                    },
+                    "sp07": {
+                      "type": "string"
+                    },
+                    "sp08": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "group",
+                "name",
+                "type",
+                "desc",
+                "starting_at",
+                "starting_at_rp"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "product"
+          ],
+          "additionalProperties": false
+        },
+        "indonesia": {
+          "type": "object",
+          "properties": {
+            "product": {
+              "type": "object",
+              "properties": {
+                "group": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "subname": {
+                  "type": "string"
+                },
+                "desc": {
+                  "type": "string"
+                },
+                "starting_at": {
+                  "type": "string"
+                },
+                "starting_at_rp": {
+                  "type": "string"
+                },
+                "starting_at_agent": {
+                  "type": "string"
+                },
+                "agent_gets": {
+                  "type": "string"
+                },
+                "demo_url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "selling_points": {
+                  "type": "object",
+                  "properties": {
+                    "sp01": {
+                      "type": "string"
+                    },
+                    "sp02": {
+                      "type": "string"
+                    },
+                    "sp03": {
+                      "type": "string"
+                    },
+                    "sp04": {
+                      "type": "string"
+                    },
+                    "sp05": {
+                      "type": "string"
+                    },
+                    "sp06": {
+                      "type": "string"
+                    },
+                    "sp07": {
+                      "type": "string"
+                    },
+                    "sp08": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "group",
+                "name",
+                "type",
+                "desc",
+                "starting_at",
+                "starting_at_rp"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "product"
+          ],
+          "additionalProperties": false
         },
         "$schema": {
           "type": "string"

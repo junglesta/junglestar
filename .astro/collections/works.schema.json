@@ -23,8 +23,12 @@
         "ico_name": {
           "type": "string"
         },
-        "permalink": {
-          "type": "string"
+        "featured": {
+          "type": "boolean",
+          "default": false
+        },
+        "order": {
+          "type": "number"
         },
         "$schema": {
           "type": "string"
@@ -32,7 +36,9 @@
       },
       "required": [
         "title",
-        "category"
+        "category",
+        "tag",
+        "redir"
       ],
       "additionalProperties": false
     }

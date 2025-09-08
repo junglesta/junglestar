@@ -12,9 +12,9 @@
         --base_line_height: 1.5;
 
         /* Responsive spacing with SVH */
-        --spacing_unit: clamp(1.5svh, 3svh, 3svh);
-        --spacing_unit_big: clamp(4svh, 8svh, 8svh);
-        --spacing_unit_static: 2svh;
+        --space: clamp(1.5svh, 3svh, 3svh);
+        --space_big: clamp(4svh, 8svh, 8svh);
+        --space_static: 2svh;
 
         /* Vertical rhythm */
         --vertical_rhythm: 3.2svh;

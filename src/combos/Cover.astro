@@ -1,0 +1,34 @@
+---
+// src/components/Cover.astro
+import Intro from "@components/Intro.astro";
+import Hi from "@components/Hi.astro";
+---
+
+<style>
+    .cover {
+        display: block;
+        align-items: center;
+
+        min-height: 100vh;
+        height: 100vh !important;
+
+        background-size: cover;
+        background-color: #0069cc;
+        color: var(--white);
+    }
+</style>
+<header class="cover js_scrollto01">
+    <Hi />
+    <div class="wrapper wrapper--slim">
+        <Intro />
+
+        <div class="cover__title">
+            <div class="btn">
+                <div class="name center"><h1>JUNGLESTAR</h1></div>
+                <div class="desc">
+                    We believe in making life easy for you and your customers.
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

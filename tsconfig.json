@@ -8,6 +8,7 @@
       "@root/*": ["src/*"],
       //one level deep
       "@components/*": ["src/components/*"],
+      "@combos/*": ["src/combos/*"],
       "@layouts/*": ["src/layouts/*"],
       "@utils*": ["src/utils/*"],
       "@styles/*": ["src/styles/*"],

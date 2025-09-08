@@ -1,5 +1,4 @@
 ---
-
 title: "Junglestar offer agent"
 product_group: design
 description: ""

@@ -1,0 +1,38 @@
+---
+#this page has no standalone output, it just get sucked into the offer page
+name: custom
+title: amazing custom design
+type: #streetbiz, socialmedia or empty
+description: "We are a small, flexible, web agency. We offer top quality custom designed websites at reasonable prices. We grow relationships with clients."
+permalink: /offer/custom/
+question: "&quot;Yes I want this,<br>that and also...&quot;"
+publish: true
+# Marketing flags
+bestseller: #true or empty (bestseller+bestvalue=cannot)
+bestvalue: #true or empty
+
+# product details
+product:
+  group: design
+  name: Awesome Design
+  type: "All-included package"
+  subname: "Customised design for your needs. Name, Hosting and SSL included."
+  desc: "We craft a special design for your brand, produce & develop a well thought user experiences by embracing your existing look and brand identity."
+  starting_at: "3.990"
+  starting_at_rp: "14.900.000"
+  starting_at_agent: "11.900.000"
+  agent_gets: "3.000.000"
+  demo_url: https://binocle.it/?ref=junglestar
+selling_points:
+  sp01: Responsive full website.
+  sp02: Social media friendly.
+  sp03: SEO optimised.
+  sp04: Domain name.
+  sp05: Hosting on global CDN.
+  sp06: Secure SLL/https.
+  sp07: Data entry.
+  sp08: Editing system for collaborators.
+  sp09: Customised architecture & functionalities.
+  sp10: Your Company look & feel!
+  sp11: Sustainable Web Design to help fight Climate Change.
+---

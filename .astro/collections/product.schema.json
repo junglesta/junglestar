@@ -10,6 +10,12 @@
         "type": {
           "type": "string"
         },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
         "english": {
           "type": "object",
           "properties": {

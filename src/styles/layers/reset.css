@@ -55,7 +55,7 @@
     /* Lists */
     ol,
     ul {
-        margin-left: var(--spacing_unit, 3svh);
+        margin-left: var(--space, 3svh);
     }
 
     li > ul,

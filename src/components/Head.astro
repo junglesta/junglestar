@@ -1,89 +1,116 @@
 ---
 // src/components/Head.astro
-export interface Props {
-  title: string;
-  description?: string;
-  sitemap?: boolean;
-}
+//
+import { ClientRouter } from "astro:transitions";
 
-const { 
-  title, 
-  description = 'Sustainable Web Design to help fight Climate Change',
-  sitemap = true 
+export interface Props {
+    title: string;
+    description?: string;
+    sitemap?: boolean;
+}
+const {
+    title,
+    description = "Sustainable Web Design to help fight Climate Change",
+    sitemap = true,
 } = Astro.props;
 
 // Site configuration
-const siteUrl = import.meta.env.SITE || 'https://junglestar.org';
+const siteUrl = import.meta.env.SITE || "https://junglestar.org";
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
-const ogImage = new URL('/assets/junglestar_logo.png', siteUrl).href;
+const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
 ---
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>{title}</title>
-  
-  <meta name="version" content="0.0.1">
-  
-  {!sitemap && (
-    <meta name="robots" content="noindex,nofollow,nosnippet">
-  )}
-  
-  <meta name="description" content={description}>
-  
-  <!-- Font Loading -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link 
-    rel="preload" 
-    as="style" 
-    href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" 
-  />
-  <link 
-    rel="stylesheet" 
-    href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
-    media="print" 
-    onload="this.media='all'" 
-  />
-  <noscript>
-    <link 
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" 
+    <title>{title}</title>
+
+    <meta name="version" content="0.0.1" />
+
+    {!sitemap && <meta name="robots" content="noindex,nofollow,nosnippet" />}
+
+    <meta name="description" content={description} />
+
+    <ClientRouter />
+
+    <!-- Font Loading -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        rel="preload"
+        as="style"
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
     />
-  </noscript>
-  
-  <link rel="canonical" href={canonicalUrl}>
-  
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/assets/favicons/site.webmanifest">
-  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#0069cc">
-  <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-  <meta name="apple-mobile-web-app-title" content="Junglestar">
-  <meta name="application-name" content="Junglestar">
-  <meta name="msapplication-TileColor" content="#0069cc">
-  <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png">
-  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#0069cc">
-  
-  <!-- Open Graph -->
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content={title}>
-  <meta property="og:image" content={ogImage}>
-  <meta property="og:description" content={description}>
-  <meta property="og:url" content={canonicalUrl}>
-  <meta property="og:site_name" content="Junglestar">
-  
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@rokmatwit">
-  <meta name="twitter:creator" content="@rokmatwit">
-  <meta name="twitter:image:src" content={ogImage}>
-  <meta name="twitter:title" content={title}>
-  <meta name="twitter:description" content={description}>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+        media="print"
+        onload="this.media='all'"
+    />
+    <noscript>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+        />
+    </noscript>
+
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/assets/favicons/favicon-32x32.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="/assets/favicons/android-chrome-192x192.png"
+    />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <link
+        rel="mask-icon"
+        href="/assets/favicons/safari-pinned-tab.svg"
+        color="#0069cc"
+    />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <meta name="apple-mobile-web-app-title" content="Junglestar" />
+    <meta name="application-name" content="Junglestar" />
+    <meta name="msapplication-TileColor" content="#0069cc" />
+    <meta
+        name="msapplication-TileImage"
+        content="/assets/favicons/mstile-144x144.png"
+    />
+    <meta
+        name="msapplication-config"
+        content="/assets/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#0069cc" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={title} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="Junglestar" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rokmatwit" />
+    <meta name="twitter:creator" content="@rokmatwit" />
+    <meta name="twitter:image:src" content={ogImage} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
 </head>

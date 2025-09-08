@@ -1,0 +1,220 @@
+{
+  "$ref": "#/definitions/pricing",
+  "definitions": {
+    "pricing": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "description": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string",
+          "default": "english"
+        },
+        "permalink": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "question": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "publish": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bestseller": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "bestvalue": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "product": {
+          "type": "object",
+          "properties": {
+            "group": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "type": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "subname": {
+              "type": "string"
+            },
+            "desc": {
+              "type": "string"
+            },
+            "starting_at": {
+              "type": "string"
+            },
+            "starting_at_rp": {
+              "type": "string"
+            },
+            "starting_at_agent": {
+              "type": "string"
+            },
+            "agent_gets": {
+              "type": "string"
+            },
+            "demo_url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "group",
+            "name",
+            "desc",
+            "starting_at",
+            "starting_at_rp"
+          ],
+          "additionalProperties": false
+        },
+        "selling_points": {
+          "type": "object",
+          "properties": {
+            "sp01": {
+              "type": "string"
+            },
+            "sp02": {
+              "type": "string"
+            },
+            "sp03": {
+              "type": "string"
+            },
+            "sp04": {
+              "type": "string"
+            },
+            "sp05": {
+              "type": "string"
+            },
+            "sp06": {
+              "type": "string"
+            },
+            "sp07": {
+              "type": "string"
+            },
+            "sp08": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "subtitle": {
+          "type": "string"
+        },
+        "product_group": {
+          "type": "string"
+        },
+        "slogan": {
+          "type": "string"
+        },
+        "header": {
+          "type": "string"
+        },
+        "subheader": {
+          "type": "string"
+        },
+        "svgicon": {
+          "type": "string"
+        },
+        "print_imperatif": {
+          "type": "string"
+        },
+        "print_title": {
+          "type": "string"
+        },
+        "print_subtitle": {
+          "type": "string"
+        },
+        "print_footer": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "product"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

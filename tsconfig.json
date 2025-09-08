@@ -17,7 +17,7 @@
       "@fav/*": ["src/assets/favicons/*"],
       "@p/*": ["src/assets/p/*"],
       "@pdf/*": ["src/assets/pdf/*"],
-      "@svg/*": ["src/assets/svgs/*"]
+      "@svgs/*": ["src/assets/svgs/*"]
     }
   }
 }

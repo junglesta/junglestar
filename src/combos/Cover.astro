@@ -5,6 +5,10 @@ import Hi from "@components/Hi.astro";
 ---
 
 <style>
+    .site_name {
+        font-weight: 200 !important;
+        font-size: 200%;
+    }
     .cover_wrapper {
         display: flex;
         flex-direction: column;
@@ -13,7 +17,6 @@ import Hi from "@components/Hi.astro";
         padding: var(--space);
         min-height: 100svh;
         height: 100svh;
-
         background-size: cover;
         background-color: #0069cc;
         color: var(--white);
@@ -23,7 +26,7 @@ import Hi from "@components/Hi.astro";
 <header class="cover_wrapper js_scrollto01">
     <Hi />
     <Intro />
-    <h1 class="center title">JUNGLESTAR</h1>
+    <h1 class="center site_name">JUNGLESTAR</h1>
     <div class="center desc">
         We believe in making life easy for you and your customers.
     </div>

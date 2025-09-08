@@ -9,68 +9,6 @@
         flex-direction: row;
     }
 
-    .flex_cols {
-        flex-direction: column;
-    }
-
-    .flex_rows {
-        flex-direction: row;
-    }
-
-    .flex_align_center {
-        align-items: center;
-    }
-
-    .flex_align_baseline {
-        align-items: baseline;
-    }
-
-    .flex_wrap {
-        flex-wrap: wrap;
-    }
-
-    .flex_justify_center {
-        justify-content: center;
-    }
-
-    .flex_align_content_center {
-        align-content: center;
-    }
-
-    .flex_col_bp1_row {
-        flex-direction: column;
-    }
-
-    @media (min-width: 820px) {
-        .flex_col_bp1_row {
-            flex-direction: row;
-        }
-    }
-
-    .flex_row_bp1_col {
-        flex-direction: row;
-    }
-
-    @media (min-width: 820px) {
-        .flex_row_bp1_col {
-            flex-direction: column;
-        }
-    }
-
-    .flex_cols_max {
-        flex-direction: column;
-    }
-
-    @media (min-width: 1024px) {
-        .flex_cols_max {
-            flex-direction: row;
-        }
-    }
-
-    .flex_align_self_start {
-        align-self: flex-start;
-    }
-
     /* Color utilities */
     .color_black {
         color: var(--black) !important;
@@ -165,13 +103,6 @@
         display: none;
     }
 
-    /* Clearfix */
-    .clearfix:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
     /* Target fade animation */
     :target {
         animation: target_fade 3s 1;
@@ -184,18 +115,5 @@
         100% {
             background-color: rgba(0, 0, 0, 0);
         }
-    }
-
-    /* Weight utilities */
-    .weight600 {
-        font-weight: 600;
-    }
-
-    .weight800 {
-        font-weight: 600;
-    }
-
-    .weight900 {
-        font-weight: 600;
     }
 }

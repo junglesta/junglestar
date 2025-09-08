@@ -1,4 +1,4 @@
-<svg class="jeistar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-10 -10 1020 1020" id="hi-there" onclick="hi.reset().play();">
+ <svg class="jeistar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-10 -10 1020 1020" id="hi-there" onclick="hi.reset().play();">
 
   <path
     class="circlej"

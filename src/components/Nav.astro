@@ -9,7 +9,7 @@ const currentPath = Astro.url.pathname;
     .nav_footer {
         display: flex;
         flex-direction: column;
-        gap: calc(var(--space|) * 3);
+        gap: calc(var(--spaceI) / 2);
         margin-block: 24svw;
         text-align: right;
     }
@@ -22,7 +22,7 @@ const currentPath = Astro.url.pathname;
         title="Design and development"
         href="/design/"
     >
-        <span class="page_title">Design and development</span>
+        <span class="page_title">Communication Design</span>
     </a>
 
     <a
@@ -31,7 +31,7 @@ const currentPath = Astro.url.pathname;
         title="Content production and management"
         href="/content/"
     >
-        <span class="page_title">Content production and management</span>
+        <span class="page_title">Content production</span>
     </a>
 
     <a
@@ -40,6 +40,6 @@ const currentPath = Astro.url.pathname;
         title="Packages offer"
         href="/offer/"
     >
-        <span class="page_title">Packages offer</span>
+        <span class="page_title">Website Pricing</span>
     </a>
 </nav>

@@ -129,7 +129,7 @@
                     font-family: var(--font_family);
                     font-size: var(--font_size);
                     line-height: var(--line_height);
-                    font-weight: 400;
+                    font-weight: var(--weight);
                     color: var(--text_color);
                     background-color: var(--brand_color);
                     position: relative;
@@ -224,7 +224,7 @@
 
                 @media (min-width: 600px) {
                     .section {
-                        padding: var(--space|) var(--space_);
+                        padding: var(--spaceI) var(--space_);
                     }
                 }
 
@@ -255,7 +255,7 @@
                     padding: 0;
                     padding-top: 1.5svh;
                     padding-bottom: 1.5svh;
-                    font-weight: 600;
+                    font-weight: var(--weight);
                     line-height: 1.44;
                 }
 
@@ -266,7 +266,7 @@
                     h4,
                     h5,
                     h6 {
-                        font-weight: 400;
+                        font-weight: var(--weight);
                     }
                 }
 
@@ -440,7 +440,7 @@
                     color: var(--brand_color);
                     border: 0.32svh solid var(--brand_color);
                     margin: var(--vertical_rhythm) auto;
-                    font-weight: 600;
+                    font-weight: var(--weight);
                 }
 
                 .button:focus,
@@ -662,15 +662,15 @@
 
                 /* Weight utilities */
                 .weight600 {
-                    font-weight: 600;
+                    font-weight: var(--weight);
                 }
 
                 .weight800 {
-                    font-weight: 600;
+                    font-weight: var(--weight);
                 }
 
                 .weight900 {
-                    font-weight: 600;
+                    font-weight: var(--weight);
                 }
             }
 

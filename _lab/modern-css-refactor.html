@@ -72,9 +72,9 @@
             @layer tokens {
                 :root {
                     /* Typography */
-                    --base_font_family: "Titillium Web", sans-serif;
-                    --base_font_size: 1.8svh;
-                    --base_line_height: 1.5;
+                    --font_family: "Titillium Web", sans-serif;
+                    --font_size: 1.8svh;
+                    --line_height: 1.5;
 
                     /* Spacing with SVH */
                     --space: clamp(1.5svh, 3svh, 3svh);
@@ -126,9 +126,9 @@
             /* ===== LAYOUT LAYER ===== */
             @layer layout {
                 body {
-                    font-family: var(--base_font_family);
-                    font-size: var(--base_font_size);
-                    line-height: var(--base_line_height);
+                    font-family: var(--font_family);
+                    font-size: var(--font_size);
+                    line-height: var(--line_height);
                     font-weight: 400;
                     color: var(--text_color);
                     background-color: var(--brand_color);
@@ -137,19 +137,19 @@
 
                 @media (min-width: 600px) {
                     body {
-                        font-size: calc(var(--base_font_size) * 1.1);
+                        font-size: calc(var(--font_size) * 1.1);
                     }
                 }
 
                 @media (min-width: 820px) {
                     body {
-                        font-size: calc(var(--base_font_size) * 1.15);
+                        font-size: calc(var(--font_size) * 1.15);
                     }
                 }
 
                 @media (min-width: 1024px) {
                     body {
-                        font-size: calc(var(--base_font_size) * 1.2);
+                        font-size: calc(var(--font_size) * 1.2);
                     }
                 }
 
@@ -224,7 +224,7 @@
 
                 @media (min-width: 600px) {
                     .section {
-                        padding: var(--space_block) var(--space_inline);
+                        padding: var(--space|) var(--space_);
                     }
                 }
 

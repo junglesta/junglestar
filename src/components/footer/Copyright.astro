@@ -2,13 +2,14 @@
 // Site configuration
 const currentYear = new Date().getFullYear();
 const siteName = "Junglestar";
+import * as repoData from "package.json";
 ---
 
 <div class="copy">
     <p class="center">
         <small>
-            &copy; {currentYear}
-            {siteName}.org | All rights reserved</small
+            &copy; 2012-{currentYear}
+            {siteName}.org | v{repoData.version} | All rights reserved</small
         >
     </p>
 </div>

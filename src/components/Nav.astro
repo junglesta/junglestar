@@ -7,6 +7,9 @@ const currentPath = Astro.url.pathname;
 
 <style>
     .nav_footer {
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--space|) * 3);
         margin-block: 24svw;
         text-align: right;
     }

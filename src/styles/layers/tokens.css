@@ -6,16 +6,15 @@
 @layer tokens {
     :root {
         /* Typography */
-        --base_font_family: "Titillium Web", sans-serif;
-        --base_font_size: 2.55svh;
-        --small_font_size: calc(var(--base_font_size) * 0.875);
-        --base_line_height: 1.5;
+        --font_family: "Titillium Web", sans-serif;
+        --font_size: calc((2svh + 2svw));
+        --line_height: 1.5;
 
         /* Fize space */
-        --space--vertical_rhythm: 3rem;
+        --stone: 3rem;
         /* Dynamic spaces */
-        --space_block: 2.75svh;
-        --space_inline: 2.75svw;
+        --space|: 2.75svh;
+        --space_: 2.75svw;
 
         /* Colors */
         --black: #000000;

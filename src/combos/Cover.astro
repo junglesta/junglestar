@@ -5,30 +5,26 @@ import Hi from "@components/Hi.astro";
 ---
 
 <style>
-    .cover {
-        display: block;
+    .cover_wrapper {
+        display: flex;
+        flex-direction: column;
         align-items: center;
-
-        min-height: 100vh;
-        height: 100vh !important;
+        justify-content: center;
+        padding: var(--space);
+        min-height: 100svh;
+        height: 100svh;
 
         background-size: cover;
         background-color: #0069cc;
         color: var(--white);
     }
 </style>
-<header class="cover js_scrollto01">
-    <Hi />
-    <div class="wrapper wrapper--slim">
-        <Intro />
 
-        <div class="cover__title">
-            <div class="btn">
-                <div class="name center"><h1>JUNGLESTAR</h1></div>
-                <div class="desc">
-                    We believe in making life easy for you and your customers.
-                </div>
-            </div>
-        </div>
+<header class="cover_wrapper js_scrollto01">
+    <Hi />
+    <Intro />
+    <h1 class="center title">JUNGLESTAR</h1>
+    <div class="center desc">
+        We believe in making life easy for you and your customers.
     </div>
 </header>

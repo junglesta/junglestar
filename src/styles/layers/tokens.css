@@ -7,14 +7,14 @@
     :root {
         /* Typography */
         --base_font_family: "Titillium Web", sans-serif;
-        --base_font_size: 1.8svh;
+        --base_font_size: 2.55svh;
         --small_font_size: calc(var(--base_font_size) * 0.875);
         --base_line_height: 1.5;
 
         /* Responsive spacing with SVH */
-        --space: clamp(1.5svh, 3svh, 3svh);
-        --space_big: clamp(4svh, 8svh, 8svh);
-        --space_static: 2svh;
+        --space: 1.75svh;
+        --space_big: 3svh;
+        --space_static: 3rem;
 
         /* Vertical rhythm */
         --vertical_rhythm: 3.2svh;
@@ -24,9 +24,12 @@
         --black: #000000;
         --white: #ffffff;
         --background_color: #e6e6e6;
-        --brand_color: #0069cc;
-        --brand_color_invert: #ff9633;
-        --brand_color_complementary: #cc6600;
+        /*--brand_color: #0069cc;*/
+        --brand_color: oklch(0.5286 0.1735 254.92);
+        /*--brand_color_invert: #ff9633;*/
+        --brand_color_invert: oklch(0.7687 0.1641 58.66);
+        /*--brand_color_complementary: #cc6600;*/
+        --brand_color_complementary: oklch(0.6201 0.156454 53.4649);
 
         --text_color: #111111;
         --link_color: var(--brand_color);

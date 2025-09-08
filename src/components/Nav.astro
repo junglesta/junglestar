@@ -1,5 +1,42 @@
 ---
 // src/components/Nav.astro
+
+// Helper to check if current page
+const currentPath = Astro.url.pathname;
 ---
 
-<nav></nav>
+<style>
+    .nav_footer {
+        margin-block: 24svw;
+        text-align: right;
+    }
+</style>
+
+<nav class="wrapper nav_footer" role="menu">
+    <a
+        class="menu_item center"
+        role="menuitem"
+        title="Design and development"
+        href="/design/"
+    >
+        <span class="page_title">Design and development</span>
+    </a>
+
+    <a
+        class="menu_item center"
+        role="menuitem"
+        title="Content production and management"
+        href="/content/"
+    >
+        <span class="page_title">Content production and management</span>
+    </a>
+
+    <a
+        class="menu_item center"
+        role="menuitem"
+        title="Packages offer"
+        href="/offer/"
+    >
+        <span class="page_title">Packages offer</span>
+    </a>
+</nav>

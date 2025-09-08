@@ -1,12 +1,12 @@
 ---
 // src/components/Footer.astro
 import Nav from "@components/Nav.astro";
+import Copyright from "@footer/Copyright.astro";
 import Logo from "@svgs/logo_stroke.svg";
+import * as siteData from "@data/site.json";
+import * as repoData from "package.json";
 
-// Site configuration
-const currentYear = new Date().getFullYear();
 const siteEmail = "info@junglestar.org";
-const siteName = "Junglestar";
 ---
 
 <style>
@@ -18,7 +18,8 @@ const siteName = "Junglestar";
         position: sticky;
         bottom: 0;
         min-height: 100vh;
-        padding-block: var(--space);
+        padding-block: var(--space_block);
+        padding-inline: var(--space_inline);
         color: var(--white);
         display: flex;
         flex-direction: column;
@@ -40,7 +41,7 @@ const siteName = "Junglestar";
             padding: calc(var(--space) * 2);
         }
         .qr {
-            padding: var(--space);
+            padding: var(--space_block) var(--space_inline);
             font-size: 75%;
             width: 100svw;
             display: flex;
@@ -53,7 +54,7 @@ const siteName = "Junglestar";
         }
 
         .mail {
-            padding: var(--space);
+            padding: var(--space_block) var(--space_inline);
             display: flex;
             flex-direction: column;
             justify-content: start;
@@ -98,7 +99,7 @@ const siteName = "Junglestar";
         class="footer_icon action_button back_home"
     >
         <Logo />
-        <div class="action_title revealed site_name">{siteName}</div>
+        <div class="action_title revealed site_name">{siteData.brand}</div>
     </a>
 
     <Nav />
@@ -127,12 +128,5 @@ const siteName = "Junglestar";
         <span class="">SCAN ME!</span>
     </div>
 
-    <div class="copy">
-        <p class="center">
-            <small>
-                &copy; {currentYear}
-                {siteName}.org | All rights reserved</small
-            >
-        </p>
-    </div>
+    <Copyright />
 </footer>

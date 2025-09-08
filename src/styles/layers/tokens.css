@@ -11,14 +11,11 @@
         --small_font_size: calc(var(--base_font_size) * 0.875);
         --base_line_height: 1.5;
 
-        /* Responsive spacing with SVH */
-        --space: 1.75svh;
-        --space_big: 3svh;
-        --space_static: 3rem;
-
-        /* Vertical rhythm */
-        --vertical_rhythm: 3.2svh;
-        --vertical_rhythm_small: 1.6svh;
+        /* Fize space */
+        --space--vertical_rhythm: 3rem;
+        /* Dynamic spaces */
+        --space_block: 2.75svh;
+        --space_inline: 2.75svw;
 
         /* Colors */
         --black: #000000;

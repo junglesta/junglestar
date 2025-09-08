@@ -1,6 +1,8 @@
 ---
 // src/components/Head.astro
-//
+
+import * as siteData from "@data/site.json";
+import * as repoData from "package.json";
 import { ClientRouter } from "astro:transitions";
 
 export interface Props {
@@ -27,7 +29,7 @@ const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
 
     <title>{title}</title>
 
-    <meta name="version" content="0.0.1" />
+    <meta name="version" content={repoData.version} />
 
     {!sitemap && <meta name="robots" content="noindex,nofollow,nosnippet" />}
 
@@ -113,4 +115,6 @@ const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
     <meta name="twitter:image:src" content={ogImage} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+
+    <slot name="head" />
 </head>

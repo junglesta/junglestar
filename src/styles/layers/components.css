@@ -260,18 +260,16 @@
 
     /* Buttons */
     .button {
-        font-size: 120%;
-        background-color: var(--white);
+        font-size: inherit;
         display: inline-block;
         width: auto;
-        line-height: 5.12svh;
+        line-height: 1.4;
         margin-right: calc(var(--vertical_rhythm_small) / 2);
         margin-bottom: calc(var(--vertical_rhythm_small) / 2);
         border-radius: 0.64svh;
         padding: 0.8svh 2.4svh;
-        box-shadow: var(--card_shadow);
         color: var(--brand_color);
-        border: 0.32svh solid var(--brand_color);
+        border: 2px solid var(--white);
         margin: var(--vertical_rhythm) auto;
         font-weight: 600;
     }

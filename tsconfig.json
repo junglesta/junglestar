@@ -13,11 +13,13 @@
       "@utils*": ["src/utils/*"],
       "@styles/*": ["src/styles/*"],
       "@assets/*": ["src/assets/*"],
+      "@data/*": ["src/data/*"],
       //two levels deep
       "@fav/*": ["src/assets/favicons/*"],
       "@p/*": ["src/assets/p/*"],
       "@pdf/*": ["src/assets/pdf/*"],
-      "@svgs/*": ["src/assets/svgs/*"]
+      "@svgs/*": ["src/assets/svgs/*"],
+      "@footer/*": ["src/components/footer/*"]
     }
   }
 }

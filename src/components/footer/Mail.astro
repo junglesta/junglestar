@@ -2,33 +2,10 @@
 import * as siteData from "@data/site.json";
 ---
 
-<style>
-    .mail {
-        padding: var(--spaceI) var(--space_);
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        width: fit-content;
-        svg {
-            width: max-content;
-        }
-    }
-
-    .contacts {
-        width: 100svw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-</style>
-<div class="contacts">
-    <a class="mail" href={`mailto:${siteData.email}`} title="send us an email">
-        <svg class="email center" viewBox="0 0 24 24">
-            <path
-                fill="currentColor"
-                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-            ></path>
-        </svg>
-        <small class="revealed">Get in touch.</small>
-    </a>
-</div>
+<a
+    class="CTAbutton mail button"
+    href={`mailto:${siteData.email}`}
+    title="send us an email"
+>
+    <small class="">Get In Touch Mail</small>
+</a>

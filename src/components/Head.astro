@@ -1,6 +1,5 @@
 ---
 // src/components/Head.astro
-
 import * as siteData from "@data/site.json";
 import * as repoData from "package.json";
 import { ClientRouter } from "astro:transitions";
@@ -97,7 +96,7 @@ const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
         name="msapplication-config"
         content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#0069cc" />
+    <meta name="theme-color" content={siteData.brandColorFallback} />
 
     <!-- Open Graph -->
     <meta property="og:locale" content="en" />

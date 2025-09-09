@@ -1,82 +1,35 @@
 ---
 // src/components/Footer.astro
-import Nav from "@components/Nav.astro";
+import Nav from "@footer/Nav.astro";
 import Qr from "@footer/Qr.astro";
 import Mail from "@footer/Mail.astro";
 import Copyright from "@footer/Copyright.astro";
 import Logo from "@svgs/logo_stroke.svg";
 import * as siteData from "@data/site.json";
+import "@footer/footer.css";
 
 const siteEmail = "info@junglestar.org";
 ---
 
-<style>
-    .white {
-        color: var(--white);
-    }
-    footer {
-        width: 100%;
-        position: sticky;
-        bottom: 0;
-        min-height: 100vh;
-        padding-block: var(--spaceI);
-        padding-inline: var(--space_);
-        color: var(--white);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        a {
-            font-size: 2.33svh;
-            color: var(--white);
-        }
-
-        svg {
-            display: inline;
-            height: 5svh;
-        }
-        svg.logo {
-            height: 11svh;
-        }
-    }
-
-    .footer_block {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: center;
-        filter: grayscale(100%);
-        a:hover {
-            filter: grayscale(0%);
-        }
-    }
-
-    .footer_icon {
-        padding-top: calc(var(--space) * 2);
-    }
-    .site_name {
-        text-transform: uppercase;
-        padding-block: calc(var(--space) * 0.55);
-        font-weight: var(--weight);
-    }
-</style>
-
-<footer class="footer">
+<footer class="">
     <a
         title="clicking this link will send you back to this junglestar.org homepage"
         href="/"
         class="footer_icon action_button back_home"
     >
         <Logo />
-        <div class="action_title revealed site_name">
+        <div class="action_title site_name">
             {siteData.brand} Agency
         </div>
     </a>
 
     <Nav />
 
-    <Mail />
-
-    <Qr />
-
-    <Copyright />
+    <div class="flexcolo abso">
+        <Copyright />
+        <div class="flexro nopad">
+            <Mail />
+            <Qr />
+        </div>
+    </div>
 </footer>

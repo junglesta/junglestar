@@ -41,13 +41,13 @@
     }
 
     .wrapper {
-        padding: var(--space_big);
+        padding: var(--space_);
     }
 
     @media (min-width: 600px) {
         .wrapper {
-            padding-left: var(--space_big);
-            padding-right: var(--space_big);
+            padding-left: var(--space_);
+            padding-right: var(--space_);
         }
     }
 
@@ -71,8 +71,8 @@
     }
 
     .wrapper_vert_pad {
-        padding-top: var(--space_big);
-        padding-bottom: var(--space_big);
+        padding-top: var(--space_);
+        padding-bottom: var(--space_);
     }
 
     /* Site header */
@@ -186,28 +186,28 @@
 
     /* Intro section */
     .intro {
-        margin-top: var(--space_big);
-        margin-bottom: var(--space_big);
+        margin-top: var(--space_);
+        margin-bottom: var(--space_);
     }
 
     @media (min-width: 600px) {
         .intro {
-            margin-top: calc(var(--space_big) * 0.75);
-            margin-bottom: calc(var(--space_big) * 0.75);
+            margin-top: calc(var(--space_) * 0.75);
+            margin-bottom: calc(var(--space_) * 0.75);
         }
     }
 
     @media (min-width: 820px) {
         .intro {
-            margin-top: calc(var(--space_big) * 0.5);
-            margin-bottom: calc(var(--space_big) * 0.5);
+            margin-top: calc(var(--space_) * 0.5);
+            margin-bottom: calc(var(--space_) * 0.5);
         }
     }
 
     @media (min-width: 1024px) {
         .intro {
-            margin-top: calc(var(--space_big) * 0.25);
-            margin-bottom: calc(var(--space_big) * 0.25);
+            margin-top: calc(var(--space_) * 0.25);
+            margin-bottom: calc(var(--space_) * 0.25);
         }
     }
 }

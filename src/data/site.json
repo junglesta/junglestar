@@ -17,5 +17,7 @@
     "name": "Rokma",
     "email": "me@rokma.com",
     "github": "toybreaker"
-  }
+  },
+  "brandColorFallback": "#0069cc",
+  "bandColor": "oklch(0.5286 0.1735 254.92)"
 }

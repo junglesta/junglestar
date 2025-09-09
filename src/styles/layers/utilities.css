@@ -82,7 +82,7 @@
     }
 
     .top_pad_big {
-        padding-top: var(--space_big);
+        padding-top: var(--space_);
     }
 
     .top_padded {

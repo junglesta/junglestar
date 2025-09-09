@@ -5,11 +5,13 @@ import Hi from "@components/Hi.astro";
 ---
 
 <style>
-    .site_name {
+    .brand {
         font-weight: 200 !important;
         font-size: 200%;
+        line-height: 1;
+        padding-block: 0;
     }
-    .cover_wrapper {
+    .cover {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,13 +23,23 @@ import Hi from "@components/Hi.astro";
         background-color: #0069cc;
         color: var(--white);
     }
+    .slogan {
+        padding-top: calc(var(--spaceI) * 2);
+        padding-bottom: calc(var(--spaceI) / 4);
+        padding-inline: calc(var(--spaceI) * 1);
+        text-wrap: pretty;
+        text-align: center;
+    }
 </style>
 
-<header class="cover_wrapper js_scrollto01">
+<header class="cover js_scrollto01">
     <Hi />
     <Intro />
-    <h1 class="center site_name">JUNGLESTAR</h1>
-    <div class="center desc">
-        We believe in making life easy for you and your customers.
+
+    <div class="slogan" id="slogan0">
+        <p>Making life easier.</p>
+        <p>For you and your customers.</p>
+        <h1 class="brand">JUNGLESTAR</h1>
+        <p>We can help.</p>
     </div>
 </header>

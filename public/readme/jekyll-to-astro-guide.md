@@ -3,14 +3,20 @@
 ## Key Conversion Patterns
 
 ### 1. Layout Files
+
 **Jekyll:**
+
 ```html
 <!-- _includes/head.html -->
 <title>{{ page.title }}</title>
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta
+  name="description"
+  content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"
+/>
 ```
 
 **Astro:**
+
 ```astro
 <!-- src/components/Head.astro -->
 ---
@@ -21,13 +27,16 @@ const { title, description = 'Default description' } = Astro.props;
 ```
 
 ### 2. Component Includes
+
 **Jekyll:**
+
 ```html
-{% include footer.html %}
-{% include svg/use.html id="icn--logo_white" class="logo" %}
+{% include footer.html %} {% include svg/use.html id="icn--logo_white"
+class="logo" %}
 ```
 
 **Astro:**
+
 ```astro
 ---
 import Footer from '@components/Footer.astro';
@@ -38,16 +47,17 @@ import SvgIcon from '@components/SvgIcon.astro';
 ```
 
 ### 3. Loops and Conditionals
+
 **Jekyll:**
+
 ```html
-{% for item in site.services %}
-  {% if item.footer_listed %}
-    <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
-  {% endif %}
-{% endfor %}
+{% for item in site.services %} {% if item.footer_listed %}
+<a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+{% endif %} {% endfor %}
 ```
 
 **Astro:**
+
 ```astro
 ---
 import { getCollection } from 'astro:content';
@@ -60,13 +70,16 @@ const footerServices = services.filter(item => item.data.footer_listed);
 ```
 
 ### 4. Variables and Filters
+
 **Jekyll:**
+
 ```html
-{{ site.time | date: '%Y' }}
-{{ page.url | replace:'index.html','' | prepend: site.baseurl }}
+{{ site.time | date: '%Y' }} {{ page.url | replace:'index.html','' | prepend:
+site.baseurl }}
 ```
 
 **Astro:**
+
 ```astro
 ---
 const currentYear = new Date().getFullYear();
@@ -79,6 +92,7 @@ const pageUrl = Astro.url.pathname.replace('index.html', '');
 ## Conversion Steps for Your Files
 
 ### 1. Create Layout Component (`src/layouts/Layout.astro`)
+
 ```astro
 ---
 import Head from '@components/Head.astro';
@@ -102,6 +116,7 @@ const { title, description, language = 'english' } = Astro.props;
 ```
 
 ### 2. Convert Footer Component (`src/components/Footer.astro`)
+
 ```astro
 ---
 import { getCollection } from 'astro:content';
@@ -126,7 +141,7 @@ const siteEmail = 'info@junglestar.org'; // Move to config
   </a>
 
   <div class="footer_block">
-    <div class="action_title revealed">Junglestar</div>
+    <div class="action_title ">Junglestar</div>
 
     <div class="footer_block_pages" role="menu">
       {footerServices.map(item => (
@@ -152,7 +167,7 @@ const siteEmail = 'info@junglestar.org'; // Move to config
 
     <div class="footer_block_contacts">
       <a title="send us an email" class="action_button mail" href={`mailto:${siteEmail}`}>
-        <span class="action_title revealed">get in touch</span>
+        <span class="action_title ">get in touch</span>
         <span class="action_title reveal_on_hover">send email</span>
         <SvgIcon id="icn--email" class="email" />
       </a>
@@ -176,6 +191,7 @@ const siteEmail = 'info@junglestar.org'; // Move to config
 ```
 
 ### 3. Convert Head Component (`src/components/Head.astro`)
+
 ```astro
 ---
 const {
@@ -242,6 +258,7 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
 ```
 
 ### 4. Convert Intro Component (`src/components/Intro.astro`)
+
 ```astro
 ---
 // Import SVG components or use inline SVGs
@@ -282,6 +299,7 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
 ```
 
 ### 5. Create Pages (`src/pages/index.astro`)
+
 ```astro
 ---
 import Layout from '@layouts/Layout.astro';
@@ -299,6 +317,7 @@ const pageDescription = "Sustainable Web Design to help fight Climate Change";
 ```
 
 ### 6. File Structure
+
 ```
 src/
 ├── components/

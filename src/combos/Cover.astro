@@ -8,7 +8,7 @@ import Hi from "@components/Hi.astro";
     .brand {
         font-weight: 200 !important;
         font-size: 200%;
-        line-height: 1;
+        line-height: 1.25;
         padding-block: 0;
     }
     .cover {
@@ -16,7 +16,7 @@ import Hi from "@components/Hi.astro";
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: var(--spaceI) var(--space_);
+        padding: var(--space) var(--space_);
         min-height: 100svh;
         height: 100svh;
         background-size: cover;
@@ -24,11 +24,14 @@ import Hi from "@components/Hi.astro";
         color: var(--white);
     }
     .slogan {
-        padding-top: calc(var(--spaceI) * 2);
-        padding-bottom: calc(var(--spaceI) / 4);
-        padding-inline: calc(var(--spaceI) * 1);
+        padding-top: calc(var(--space) * 2);
+        padding-bottom: calc(var(--space) / 4);
+        padding-inline: calc(var(--space_) * 1);
         text-wrap: pretty;
         text-align: center;
+    }
+    p {
+        margin-bottom: calc(var(--space) / 8);
     }
 </style>
 

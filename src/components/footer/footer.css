@@ -3,16 +3,17 @@ footer {
     position: sticky;
     bottom: 0;
     min-height: 100vh;
-    padding-block: var(--spaceI);
+    padding-block: var(--space);
     min-height: 100svh;
     height: 100svh;
-    padding-top: calc(var(--spaceI) * 5);
-    padding-bottom: var(--spaceI);
+    padding-top: calc(var(--space) * 5);
+    padding-bottom: var(--space);
     padding-inline: var(--space_);
     color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
+
     a {
         font-size: 2.33svh;
         color: var(--white);
@@ -41,7 +42,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: calc(var(--spaceI) / 2);
+    gap: calc(var(--space) / 2);
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -50,7 +51,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: calc(var(--spaceI) / 2);
+    gap: calc(var(--space) / 2);
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -59,11 +60,11 @@ footer {
     justify-content: space-between;
 }
 
-.footer_icon {
+.footer_logo {
     padding-top: calc(var(--space) * 2);
 }
 
-.site_name {
+.brand {
     text-transform: uppercase;
     padding-block: calc(var(--space) * 0.55);
     font-weight: var(--weight);

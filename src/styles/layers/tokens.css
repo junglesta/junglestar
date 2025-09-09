@@ -15,7 +15,7 @@
         /* Fize space */
         --stone: 3rem;
         /* Dynamic spaces */
-        --spaceI: 2.75svh;
+        --space: 2.75svh;
         --space_: 2.75svw;
 
         /* Colors */

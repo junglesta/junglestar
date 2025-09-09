@@ -158,7 +158,7 @@
 
     @media (min-width: 600px) {
         .section {
-            padding: var(--spaceI) var(--space_);
+            padding: var(--space) var(--space_);
         }
     }
 
@@ -171,7 +171,7 @@
 
     @media (min-width: 1024px) {
         .section {
-            padding: var(--spaceI) var(--space_);
+            padding: var(--space) var(--space_);
         }
     }
 

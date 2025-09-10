@@ -137,12 +137,19 @@
     }
 
     /* Links */
-    a {
+    a:not(.button):not(.no_underline) {
         color: var(--link_color);
-        text-decoration: none;
         position: relative;
         display: inline-block;
         padding-bottom: 0.2svh;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 8px;
+        user-select: none;
+    }
+    a:not(.button):not(.no_underline):hover {
+        text-decoration-thickness: 4px;
+        text-underline-offset: 6px;
     }
 
     /* Blockquotes */
@@ -278,13 +285,13 @@
     .button:focus,
     .button:hover {
         cursor: pointer;
-        background-color: var(--button_focus_bg);
-        transform: translateY(0.024svh);
+        /*background-color: var(--button_focus_bg);*/
+        transform: scale(1.025);
     }
 
     .button:active {
-        background-color: var(--button_focus_bg);
-        transform: translateY(0.04svh);
+        /*background-color: var(--button_focus_bg);*/
+        transform: translateY(0.4svh);
     }
 
     .button_dark {

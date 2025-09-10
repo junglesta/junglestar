@@ -17,6 +17,7 @@ footer {
     a {
         font-size: 2.33svh;
         color: var(--white);
+        text-decoration-thickness: 2px;
     }
 
     svg {
@@ -32,9 +33,13 @@ footer {
     font-size: var(--font_rem);
 }
 
+.footer_link {
+    font-size: var(--font_size);
+}
+
 .abso {
     position: absolute;
-    bottom: 1rem;
+    bottom: calc(var(--space) * 2);
 }
 
 .flexcolo {
@@ -45,6 +50,10 @@ footer {
     gap: calc(var(--space) / 2);
     padding: 0 !important;
     margin: 0 !important;
+}
+
+.flexcolo.abso {
+    gap: calc(var(--space) / 8);
 }
 
 .flexro {
@@ -71,4 +80,39 @@ footer {
 }
 .undies {
     position: relative;
+}
+.CTAbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: fit-content;
+    svg {
+        width: max-content;
+    }
+}
+.qr {
+    /*LINK*/
+    padding: 0;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    svg {
+        width: max-content;
+        height: 48px;
+    }
+}
+.qr.expanded {
+    padding: var(--space) var(--space_);
+    font-size: 75%;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    svg {
+        width: max-content;
+        height: clamp(100px, 30svw, 300px);
+    }
 }

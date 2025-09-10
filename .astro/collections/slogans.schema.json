@@ -1,0 +1,81 @@
+{
+  "$ref": "#/definitions/slogans",
+  "definitions": {
+    "slogans": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "offer": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string"
+              },
+              "sub_question": {
+                "type": "string"
+              },
+              "answer": {
+                "type": "string"
+              },
+              "sub_answer": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "sub_question",
+              "answer",
+              "sub_answer"
+            ],
+            "additionalProperties": false
+          },
+          "cover": {
+            "type": "object",
+            "properties": {
+              "line1": {
+                "type": "string"
+              },
+              "line2": {
+                "type": "string"
+              },
+              "line3": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "line1",
+              "line2",
+              "line3"
+            ],
+            "additionalProperties": false
+          },
+          "design": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "question"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "offer",
+          "cover",
+          "design"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

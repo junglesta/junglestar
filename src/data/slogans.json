@@ -1,16 +1,19 @@
-{
-  "offer": {
-    "question": "Is your website hard to use on phones?",
-    "sub_question": "Need to zoom-in to read the text and menus?",
-    "answer": "We can fix that.",
-    "sub_answer": "We offer affordable packages for any budget!"
+[
+  {
+    "id": "offer",
+    "p1": "Is your website hard to use on phones?",
+    "p2": "Need to zoom-in to read the text and menus?",
+    "p3": "We can fix that.",
+    "p4": "We offer affordable packages for any budget!"
   },
-  "cover": {
-    "line1": "Making life easier.",
-    "line2": "For you and your customers",
-    "line3": "We can help."
+  {
+    "id": "cover",
+    "p1": "Making life easier.",
+    "p2": "For you and your customers",
+    "p3": "We can help."
   },
-  "design": {
-    "question": "Check our packages!"
+  {
+    "id": "design",
+    "p1": "Check our packages!"
   }
-}
+]

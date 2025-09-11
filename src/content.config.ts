@@ -16,49 +16,16 @@ const works = defineCollection({
   }),
 });
 
-const site = defineCollection({
-  loader: file("src/data/site.json"),
-  schema: z.object({
-    brand: z.string(),
-    description: z.string(),
-    keywords: z.string(),
-    lang: z.string(),
-    email: z.string().email(),
-    url: z.string().url(),
-    repo: z.string().url(),
-    deploy_check: z.string().url(),
-    status_badge_markdown_snippet: z.string(),
-    license_url: z.string().url(),
-    google: z.object({
-      analytics: z.string(),
-      verification: z.string(),
-    }),
-    author: z.object({
-      name: z.string(),
-      email: z.string().email(),
-      github: z.string(),
-    }),
-    brandColorFallback: z.string(),
-    bandColor: z.string(),
-  }),
-});
 const slogans = defineCollection({
   loader: file("src/data/slogans.json"),
   schema: z.object({
-    offer: z.object({
-      question: z.string(),
-      sub_question: z.string(),
-      answer: z.string(),
-      sub_answer: z.string(),
-    }),
-    cover: z.object({
-      line1: z.string(),
-      line2: z.string(),
-      line3: z.string(),
-    }),
-    design: z.object({
-      question: z.string(),
-    }),
+    id: z.string(),
+    p1: z.string(),
+    p2: z.string().optional().nullable(),
+    p3: z.string().optional().nullable(),
+    p4: z.string().optional().nullable(),
+    p5: z.string().optional().nullable(),
+    // Add more if needed
   }),
 });
 
@@ -79,7 +46,7 @@ const packages = defineCollection({
   loader: file("src/data/packages.json"),
   schema: z.array(
     z.object({
-      name: z.string(),
+      id: z.string(),
       title: z.string(),
       type: z.string().optional(),
       description: z.string(),
@@ -107,7 +74,6 @@ const packages = defineCollection({
 
 export const collections = {
   works,
-  site,
   slogans,
   intro,
   packages,

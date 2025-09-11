@@ -1,6 +1,6 @@
-[
-  {
-    "name": "custom",
+{
+  "id": "custom",
+  "slug": "custom",
     "title": "amazing custom design",
     "type": "",
     "description": "We are a small, flexible, web agency. We offer top quality custom designed websites at reasonable prices. We grow relationships with clients.",
@@ -32,11 +32,12 @@
       "sp08": "Editing system for collaborators.",
       "sp09": "Customised architecture & functionalities.",
       "sp10": "Your Company look & feel!",
-      "sp11": "Sustainable Web Design to help fight Climate Change."
+      "sp11": "Sustainable Web Design."
     }
   },
   {
-    "name": "full site",
+    "id": "full site",
+    "slug": "full-site",
     "title": "amazing full site",
     "type": "",
     "description": "We are a small, flexible, web agency. We craft information architecture, screen design, write code and deploy it. We offer full website solutions all-included.",
@@ -66,11 +67,12 @@
       "sp06": "Secure SLL/https.",
       "sp07": "Data entry.",
       "sp08": "Editing system for collaborators.",
-      "sp09": "Sustainable Web Design to help fight Climate Change."
+      "sp09": "Sustainable Web Design."
     }
   },
   {
-    "name": "landing page",
+    "id": "landing page",
+    "slug": "landing-page",
     "title": "amazing landing page",
     "type": "",
     "description": "Junglestar is a small, flexible, web agency. We deal with information architecture, screen design, code and deploy. We offer landing page websites at a competitive prices.",
@@ -99,7 +101,6 @@
       "sp05": "Domain name.",
       "sp06": "Hosting on global CDN.",
       "sp07": "Secure SLL/https.",
-      "sp08": "Sustainable Web Design to help fight Climate Change."
+      "sp08": "Sustainable Web Design."
     }
   }
-]

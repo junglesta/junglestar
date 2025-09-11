@@ -11,67 +11,84 @@
       "additionalProperties": {
         "type": "object",
         "properties": {
-          "offer": {
-            "type": "object",
-            "properties": {
-              "question": {
-                "type": "string"
-              },
-              "sub_question": {
-                "type": "string"
-              },
-              "answer": {
-                "type": "string"
-              },
-              "sub_answer": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "question",
-              "sub_question",
-              "answer",
-              "sub_answer"
-            ],
-            "additionalProperties": false
+          "id": {
+            "type": "string"
           },
-          "cover": {
-            "type": "object",
-            "properties": {
-              "line1": {
-                "type": "string"
-              },
-              "line2": {
-                "type": "string"
-              },
-              "line3": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "line1",
-              "line2",
-              "line3"
-            ],
-            "additionalProperties": false
+          "p1": {
+            "type": "string"
           },
-          "design": {
-            "type": "object",
-            "properties": {
-              "question": {
-                "type": "string"
+          "p2": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "not": {}
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              {
+                "type": "null"
               }
-            },
-            "required": [
-              "question"
-            ],
-            "additionalProperties": false
+            ]
+          },
+          "p3": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "not": {}
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "p4": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "not": {}
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "p5": {
+            "anyOf": [
+              {
+                "anyOf": [
+                  {
+                    "not": {}
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
           }
         },
         "required": [
-          "offer",
-          "cover",
-          "design"
+          "id",
+          "p1"
         ],
         "additionalProperties": false
       }

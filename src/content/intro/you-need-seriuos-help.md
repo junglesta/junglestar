@@ -1,8 +1,8 @@
 ---
-title: You  need serious help.
-subtile: Junglestaris a small, flexible web acency.
-subsubtile: Sustainable web design to help the planet.
-image: 2.svg
+title: You need serious help.
+subtile: Junglestaris a small, flexible web agency.
+subsubtile: Sustainable web design to help you and the planet.
+image: ./2.svg
 cta: See what we deliver
 link: "/about"
 theme: superstition

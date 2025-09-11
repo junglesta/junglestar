@@ -1,0 +1,146 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'intro'>;
+  showContent?: boolean;
+}
+
+const { entry, showContent = true } = Astro.props;
+const { data } = entry;
+const { Content } = await entry.render();
+---
+
+<article class="intro-card">
+  <div class="intro-header">
+    {data.image && (
+      <div class="intro-image">
+        <img src={`/images/${data.image}`} alt={data.title} />
+      </div>
+    )}
+
+    <div class="intro-titles">
+      <h2 class="intro-title">{data.title}</h2>
+      {data.subtile && <h3 class="intro-subtitle">{data.subtile}</h3>}
+      {data.subsubtile && <h4 class="intro-subsubtitle">{data.subsubtile}</h4>}
+    </div>
+  </div>
+
+  {showContent && (
+    <div class="intro-content">
+      <Content />
+    </div>
+  )}
+
+  {data.cta && data.link && (
+    <div class="intro-cta">
+      <a href={data.link} class="cta-button">
+        {data.cta}
+      </a>
+    </div>
+  )}
+
+  {data.theme && (
+    <div class="intro-theme">
+      <span class="theme-label">Theme:</span>
+      <span class="theme-value">{data.theme}</span>
+    </div>
+  )}
+</article>
+
+<style>
+  .intro-card {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    background: var(--card-bg, #fff);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .intro-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .intro-image {
+    margin-bottom: 1rem;
+  }
+
+  .intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .intro-titles {
+    margin-bottom: 1rem;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--text-primary, #333);
+  }
+
+  .intro-subtitle {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--text-secondary, #666);
+    font-weight: normal;
+  }
+
+  .intro-subsubtitle {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--text-tertiary, #999);
+    font-weight: normal;
+  }
+
+  .intro-content {
+    margin: 1.5rem 0;
+    line-height: 1.6;
+    color: var(--text-body, #444);
+  }
+
+  .intro-content :global(p) {
+    margin-bottom: 1rem;
+  }
+
+  .intro-content :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .intro-cta {
+    margin: 1.5rem 0;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--cta-bg, #0069cc);
+    color: var(--cta-text, white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background: var(--cta-hover, #0056b3);
+  }
+
+  .intro-theme {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color, #eee);
+    font-size: 0.875rem;
+  }
+
+  .theme-label {
+    color: var(--text-tertiary, #999);
+    margin-right: 0.5rem;
+  }
+
+  .theme-value {
+    color: var(--text-secondary, #666);
+    font-style: italic;
+  }
+</style>

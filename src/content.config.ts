@@ -62,8 +62,53 @@ const slogans = defineCollection({
   }),
 });
 
+const intro = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/intro" }),
+  schema: z.object({
+    title: z.string(),
+    subtile: z.string(),
+    subsubtile: z.string(),
+    image: z.string(),
+    cta: z.string(),
+    link: z.string(),
+    theme: z.string(),
+  }),
+});
+
+const packages = defineCollection({
+  loader: file("src/data/packages.json"),
+  schema: z.array(
+    z.object({
+      name: z.string(),
+      title: z.string(),
+      type: z.string().optional(),
+      description: z.string(),
+      permalink: z.string(),
+      question: z.string(),
+      publish: z.boolean(),
+      bestseller: z.boolean().optional(),
+      bestvalue: z.boolean().optional(),
+      product: z.object({
+        group: z.string(),
+        name: z.string(),
+        type: z.string(),
+        subname: z.string(),
+        desc: z.string(),
+        starting_at: z.string(),
+        starting_at_rp: z.string(),
+        starting_at_agent: z.string(),
+        agent_gets: z.string(),
+        demo_url: z.string().url(),
+      }),
+      selling_points: z.record(z.string(), z.string()),
+    }),
+  ),
+});
+
 export const collections = {
   works,
   site,
   slogans,
+  intro,
+  packages,
 };

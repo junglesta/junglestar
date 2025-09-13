@@ -1,6 +1,42 @@
 import { defineCollection, z } from "astro:content";
 import { glob, file } from "astro/loaders";
 
+// Define the schema for your offer/product JSON structure
+const offerSchema = z.object({
+  name: z.string(),
+  slug: z.string(),
+  title: z.string(),
+  type: z.string().optional(),
+  description: z.string(),
+  permalink: z.string(),
+  question: z.string(),
+  publish: z.boolean(),
+  bestseller: z.boolean(),
+  bestvalue: z.boolean(),
+  product: z.object({
+    group: z.string(),
+    name: z.string(),
+    type: z.string(),
+    subname: z.string(),
+    desc: z.string(),
+    starting_at: z.string(),
+    starting_at_rp: z.string(),
+    starting_at_agent: z.string(),
+    agent_gets: z.string(),
+    demo_url: z.string().url(),
+  }),
+  selling_points: z.record(z.string()),
+});
+
+// Define the collections with loaders
+const offers = defineCollection({
+  loader: glob({
+    pattern: "**/*.json",
+    base: "./src/data/pricing",
+  }),
+  schema: offerSchema,
+});
+
 const works = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/works" }),
   schema: z.object({
@@ -30,7 +66,7 @@ const slogans = defineCollection({
 });
 
 const intro = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/intro" }),
+  type: "content", // Important: must be 'content' not 'data'
   schema: z.object({
     title: z.string(),
     subtile: z.string(),
@@ -42,39 +78,9 @@ const intro = defineCollection({
   }),
 });
 
-const packages = defineCollection({
-  loader: file("src/data/packages.json"),
-  schema: z.array(
-    z.object({
-      id: z.string(),
-      title: z.string(),
-      type: z.string().optional(),
-      description: z.string(),
-      permalink: z.string(),
-      question: z.string(),
-      publish: z.boolean(),
-      bestseller: z.boolean().optional(),
-      bestvalue: z.boolean().optional(),
-      product: z.object({
-        group: z.string(),
-        name: z.string(),
-        type: z.string(),
-        subname: z.string(),
-        desc: z.string(),
-        starting_at: z.string(),
-        starting_at_rp: z.string(),
-        starting_at_agent: z.string(),
-        agent_gets: z.string(),
-        demo_url: z.string().url(),
-      }),
-      selling_points: z.record(z.string(), z.string()),
-    }),
-  ),
-});
-
 export const collections = {
+  offers,
   works,
   slogans,
   intro,
-  packages,
 };

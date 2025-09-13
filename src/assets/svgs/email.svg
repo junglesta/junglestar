@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <path
+        fill="currentColor"
+        fill-rule="evenodd"
+        d="M64 12H0v39h64V12zm-4.4 2L32 31.81 4.4 14h55.2zM2 49V14.84l30 19.35 30-19.36V49H2z"
+        clip-rule="evenodd"
+        shape-rendering="geometricPrecision"
+    />
+</svg>

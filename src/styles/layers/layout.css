@@ -76,12 +76,13 @@
     }
 
     /* Site header */
-    .site_header {
+    .site_header,
+    .top2bottom {
         background-color: var(--brand_color);
         position: relative;
         z-index: 1;
         top: 0;
-        min-height: 100vh;
+        min-height: 100svh;
         margin: 0 auto;
         padding-top: var(--space);
         padding-bottom: var(--space);

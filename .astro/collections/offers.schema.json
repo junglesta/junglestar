@@ -1,0 +1,113 @@
+{
+  "$ref": "#/definitions/offers",
+  "definitions": {
+    "offers": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "permalink": {
+          "type": "string"
+        },
+        "question": {
+          "type": "string"
+        },
+        "publish": {
+          "type": "boolean"
+        },
+        "bestseller": {
+          "type": "boolean"
+        },
+        "bestvalue": {
+          "type": "boolean"
+        },
+        "product": {
+          "type": "object",
+          "properties": {
+            "group": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "subname": {
+              "type": "string"
+            },
+            "desc": {
+              "type": "string"
+            },
+            "starting_at": {
+              "type": "string"
+            },
+            "starting_at_rp": {
+              "type": "string"
+            },
+            "starting_at_agent": {
+              "type": "string"
+            },
+            "agent_gets": {
+              "type": "string"
+            },
+            "demo_url": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "group",
+            "name",
+            "type",
+            "subname",
+            "desc",
+            "starting_at",
+            "starting_at_rp",
+            "starting_at_agent",
+            "agent_gets",
+            "demo_url"
+          ],
+          "additionalProperties": false
+        },
+        "selling_points": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "slug",
+        "title",
+        "description",
+        "permalink",
+        "question",
+        "publish",
+        "bestseller",
+        "bestvalue",
+        "product",
+        "selling_points"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

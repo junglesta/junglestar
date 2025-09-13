@@ -8,7 +8,7 @@ interface Props {
 
 const { entry, showContent = true } = Astro.props;
 const { data } = entry;
-//const { Content } = await entry.render();
+const { Content } = await entry.render();
 ---
 
 <article class="intro-card">

@@ -1,0 +1,115 @@
+{
+  "$ref": "#/definitions/packpricing",
+  "definitions": {
+    "packpricing": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "permalink": {
+              "type": "string"
+            },
+            "question": {
+              "type": "string"
+            },
+            "publish": {
+              "type": "boolean"
+            },
+            "bestseller": {
+              "type": "boolean"
+            },
+            "bestvalue": {
+              "type": "boolean"
+            },
+            "product": {
+              "type": "object",
+              "properties": {
+                "group": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "subname": {
+                  "type": "string"
+                },
+                "desc": {
+                  "type": "string"
+                },
+                "starting_at": {
+                  "type": "string"
+                },
+                "starting_at_rp": {
+                  "type": "string"
+                },
+                "starting_at_agent": {
+                  "type": "string"
+                },
+                "agent_gets": {
+                  "type": "string"
+                },
+                "demo_url": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "required": [
+                "group",
+                "name",
+                "type",
+                "subname",
+                "desc",
+                "starting_at",
+                "starting_at_rp",
+                "starting_at_agent",
+                "agent_gets",
+                "demo_url"
+              ],
+              "additionalProperties": false
+            },
+            "selling_points": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "description",
+            "permalink",
+            "question",
+            "publish",
+            "product",
+            "selling_points"
+          ],
+          "additionalProperties": false
+        }
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

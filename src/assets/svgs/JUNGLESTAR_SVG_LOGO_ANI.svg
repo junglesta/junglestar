@@ -28,7 +28,7 @@
         fill="none"
         stroke="hsla(209, 100%, 70%, 1)"
         class="star"
-        data-delay="20"
+        data-delay="0"
         data-duration="50"
         data-start="1"
         d="m122.5 459.8 137.7-131.3L227.5 143l170.3 87.2L568 142.5l-32.2 185.3L673.5 459l-190.3 27.2-85 168.8L313 486.5z"
@@ -38,7 +38,7 @@
         stroke="currentColor"
         d="m122.5 459.8 137.7-131.3L227.5 143l170.3 87.2L568 142.5l-32.2 185.3L673.5 459l-190.3 27.2-85 168.8L313 486.5z"
         class="star"
-        data-delay="20"
+        data-delay="-20"
         data-duration="50"
         data-start="1"
     />

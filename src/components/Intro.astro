@@ -1,0 +1,57 @@
+---
+import { getCollection } from "astro:content";
+import IntroCard from "./IntroCard.astro";
+
+// Get all intro entries and sort them by ID (filename)
+const introEntries = await getCollection("intro");
+const sortedEntries = introEntries.sort((a, b) => {
+    // Sort by filename (1.svg, 2.svg, 3.svg, etc.)
+    const aNum = parseInt(a.id.match(/^\d+/)?.[0] || "0");
+    const bNum = parseInt(b.id.match(/^\d+/)?.[0] || "0");
+    return aNum - bNum;
+});
+
+// Optional: Filter published entries only
+// const publishedEntries = sortedEntries.filter(entry => entry.data.published !== false);
+
+interface Props {
+    showContent?: boolean;
+    limit?: number;
+}
+
+const { showContent = true, limit } = Astro.props;
+const entriesToShow = limit ? sortedEntries.slice(0, limit) : sortedEntries;
+---
+
+<style>
+    .intro_pitch {
+        background-color: #000;
+        color: white;
+        padding: var(--space) var(--space_);
+    }
+
+    .intro_wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    /* Optional: Add grid layout for cards */
+    /*@media (min-width: 768px) {
+        .intro-wrapper {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+    }*/
+</style>
+
+<section class="intro_pitch">
+    <div class="intro_wrapper">
+        {
+            entriesToShow.map((entry) => (
+                <IntroCard entry={entry} showContent={showContent} />
+            ))
+        }
+    </div>
+</section>

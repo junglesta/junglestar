@@ -23,9 +23,9 @@
         --space_: 2.75svw;
 
         /* Colors */
-        --black: #000000;
-        --white: #ffffff;
-        --background_color: #e6e6e6;
+        --black: oklch(0.2 0 360); /*#161616*/
+        --white: oklch(0.9 0 360); /*#dedede*/
+        --background_color: oklch(0.8 0.03 208.64); /* #e6e6e6*/
         /*--brand_color: #0069cc;*/
         --brand_color: oklch(0.5286 0.1735 254.92);
         /*--brand_color_invert: #ff9633;*/

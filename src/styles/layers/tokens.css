@@ -11,8 +11,8 @@
         --font_size: clamp(19px, calc((2svh + 2svw) / 2), 36px);
         --line_height: 1.5;
         --weight: 200;
-
-        /* Fize space */
+        --weight_bold: 600;
+        --weight_heavy: 900; /* Fize space */
         --stone: 3rem;
         /* Dynamic spaces */
 

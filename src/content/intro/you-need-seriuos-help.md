@@ -14,6 +14,6 @@ We help with marketing communication.
 
 We advise on strategies, produce content, manage social media.
 
-We make \*\*websites* and \_apps*. We grow relationships with clients.
+We make websites and apps. We grow relationships with clients.
 
 We've been dealing with communication for over 25 years.

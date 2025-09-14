@@ -133,7 +133,7 @@
 
     /* Strong text */
     strong {
-        font-weight: var(--weight);
+        font-weight: var(--weight_bold);
     }
 
     /* Links */

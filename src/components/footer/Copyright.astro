@@ -1,16 +1,13 @@
 ---
 // Site configuration
 const currentYear = new Date().getFullYear();
-const siteName = "Junglestar";
+import * as siteData from "@data/site.json";
 ---
 
-<style>
-    a {
-        text-decoration: underline;
-    }
-</style>
-<a class="footer_link" href="/about"> About us </a>
 <div class="copy">
     &copy; 2012-{currentYear}
-    {siteName}.org. All rights reserved.
+    {siteData.brand}.org. This website <a href={siteData.repo}> source code </a>
+    is licensed under
+
+    <a href={siteData.license_url}>CC BY 4.0 </a>
 </div>

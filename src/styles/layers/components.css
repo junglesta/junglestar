@@ -143,13 +143,13 @@
         display: inline-block;
         padding-bottom: 0.2svh;
         text-decoration: underline;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 8px;
+        text-decoration-thickness: 0.1ch;
+        text-underline-offset: 0.55ch;
         user-select: none;
     }
     a:not(.button):not(.no_underline):hover {
-        text-decoration-thickness: 4px;
-        text-underline-offset: 6px;
+        text-decoration-thickness: 0.2ch;
+        text-underline-offset: 0.5ch;
     }
 
     /* Blockquotes */

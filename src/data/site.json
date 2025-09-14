@@ -8,7 +8,7 @@
   "repo": "https://github.com/junglesta/junglestar",
   "deploy_check": "https://junglestar.netlify.app/",
   "status_badge_markdown-snippet": "[![Netlify Status](https://api.netlify.com/api/v1/badges/db2b418a-ca16-460a-9bf3-e82dc4cea661/deploy-status)](https://app.netlify.com/projects/junglestar/deploys)",
-  "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US",
+  "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
   "google": {
     "analytics": "G-LHHLWSBG3Z",
     "verification": "google32e66f1a5601ec40"

@@ -20,7 +20,7 @@ footer {
         text-decoration-thickness: 2px;
     }
 
-    svg {
+    svg:not(.hide) {
         display: inline;
         height: 5svh;
     }
@@ -29,8 +29,9 @@ footer {
     }
 }
 
-.copy {
-    font-size: var(--font_rem);
+.copy,
+.copy a {
+    font-size: calc(var(--font_size) / 1.5);
 }
 
 .footer_link {

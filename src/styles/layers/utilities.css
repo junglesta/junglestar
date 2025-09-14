@@ -3,6 +3,9 @@
    ======================================== */
 
 @layer utilities {
+    .hide {
+        display: none;
+    }
     /* Flexbox utilities */
     .flex {
         display: flex;

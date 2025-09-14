@@ -2,7 +2,7 @@
 title: Sustainable by design.
 subtile: Minimize. Organize. Simplify.
 subsubtile: An easy to mantain internet presence. Easy on your budget & your time.
-image: ./3.svg
+image: ./src/content/intro/3.svg
 cta: Find out more
 link: "/design"
 theme: crazy_claims

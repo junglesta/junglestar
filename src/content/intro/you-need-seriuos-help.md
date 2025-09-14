@@ -8,12 +8,14 @@ link: "/about"
 theme: superstition
 ---
 
-We offer a one-stop-shop esperience for small enterprises.
+We offer a **one-stop-shop** esperience for small enterprises.
 
 We help with marketing communication.
 
-We advise on strategies, produce content, manage social media.
+We advise on **strategies**, produce content, manage social media.
 
-We make websites and apps. We grow relationships with clients.
+We make **websites** and **apps**.
 
-We've been dealing with communication for over 25 years.
+We grow **relationships** with clients.
+
+We've been dealing with communication for over **25** years.

@@ -306,7 +306,7 @@ import Layout from '@layouts/Layout.astro';
 import Intro from '@components/Intro.astro';
 
 const pageTitle = "Junglestar - Web Design & Development";
-const pageDescription = "Sustainable Web Design to help fight Climate Change";
+const pageDescription = "Sustainable Web Design to help the planet";
 ---
 
 <Layout title={pageTitle} description={pageDescription}>

@@ -16,8 +16,14 @@ const { Content } = await entry.render();
         padding-bottom: calc(var(--space) * 10);
     }
     .button {
-        color: var(--brand_color_complementary);
-        border-color: var(--brand_color_complementary);
+        color: var(--brand_color);
+        border-color: var(--brand_color);
+    }
+    .intro_cta {
+        margin-top: calc(var(--space) * 2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 
@@ -59,13 +65,4 @@ const { Content } = await entry.render();
             </div>
         )
     }
-
-    <!-- {
-        data.theme && (
-            <div class="intro-theme">
-                <span class="theme-label">Theme:</span>
-                <span class="theme-value">{data.theme}</span>
-            </div>
-        )
-    } -->
 </article>

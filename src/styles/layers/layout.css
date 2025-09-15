@@ -15,8 +15,8 @@
         /*position: relative;*/
     }
 
-    /* Responsive font scaling */
-    @media (min-width: 600px) {
+    /* Responsive font scaling is taken care by clamp() in the token declaration*/
+    /*@media (min-width: 600px) {
         body {
             font-size: calc(var(--font_size) * 1.1);
         }
@@ -32,7 +32,7 @@
         body {
             font-size: calc(var(--font_size) * 1.2);
         }
-    }
+    }*/
 
     /* Main structure */
     .main {

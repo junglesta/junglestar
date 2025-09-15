@@ -10,20 +10,10 @@ theme: crazy_claims
 
 Sustainable for you. Never too busy again.
 
-You want to step-up **Anti-fragility**.
+We design for a Low Consumption, helping the planet.
 
-Simplify your company software needs, **automate** recurring everyday-tasks.
+Fell for those do-it-yourself web-services? Sure feels easy, but is it delevering, performing?
 
-We design for a Low Consumption. Sustainable Web, helping the planet.
-
-Entreprenuers should avoid repetitive tasks, delegate, and be able to just focus.
-
-An Artisasal Family Run Shop can't scale, and can't be sold.
-
-**Feel these needs?** That's when you want to **pivot**.
+Entreprenuers avoid, delegate, make time to just focus.
 
 We bring **the joy of out-sourcing**, a manager's life-saver.
-
-Free your time by delegating.
-
-Start with the time consuming, energy absorbing Social Content Production! Hard to do without, today!

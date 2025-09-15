@@ -8,11 +8,14 @@ link: "/design"
 theme: blasting brands
 ---
 
-To get noticed, ones need to be **easy**, **customer-friendly** and **recognizable**.
+To get noticed, brands need to be **easy**, **customer-friendly** and **recognizable**.
 
 Today 60% of internet traffic comes **from phones**. Is your website ready for that?
 
 It's never been easier to launch a brand new internet presence.
 
-Needing a landing page or an **online shop**? Marketing using social media? Tired to try to
-manage it all yourself?
+Needing a landing page or an **online shop**?
+
+Content for Social Media Marketing?
+
+Tired of trying to manage, produce it all yourself?

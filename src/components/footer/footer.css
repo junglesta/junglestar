@@ -32,6 +32,18 @@ footer {
 .copy,
 .copy a {
     font-size: calc(var(--font_size) / 1.5);
+    text-decoration: none;
+}
+
+.copy {
+    padding-top: calc(var(--space) * 0.25);
+    padding-inline: var(--space);
+    text-align: center;
+}
+
+.copy p {
+    padding: 0;
+    margin: 0;
 }
 
 .footer_link {

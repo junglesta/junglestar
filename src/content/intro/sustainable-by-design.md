@@ -1,19 +1,19 @@
 ---
-title: Sustainable by design.
+title: "Overwelmed? Try: Sustainable by Design."
 subtile: Minimize. Organize. Simplify.
-subsubtile: An easy to mantain internet presence. Easy on your budget & your time.
+subsubtile: An easy-to-mantain internet presence. Easy on your budget & your time.
 image: ./src/content/intro/3.svg
 cta: Find out more
 link: "/design"
 theme: crazy_claims
 ---
 
-Sustainable for you. Never too busy again.
+**Sustainable for you.** Never too busy again.
 
-We design for a Low Consumption, helping the planet.
+We design for **Easy-Update** and **Low-Consumption**, helping you and the planet.
 
-Fell for those do-it-yourself web-services? Sure feels easy, but is it delevering, performing?
+Fell for those do-it-yourself web-services? Sure it feels easy, but **is it delivering?** Performing?
 
-Entreprenuers avoid, delegate, make time to just focus.
+Entreprenuers avoid, delegate, make time to **just focus**.
 
-We bring **the joy of out-sourcing**, a manager's life-saver.
+We bring the **joy of out-sourcing**, an owner's life-saver.

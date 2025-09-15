@@ -13,33 +13,45 @@ const { Content } = await entry.render();
 
 <style>
     .intro_card {
-        padding-bottom: calc(var(--space) * 10);
+        padding-block: calc(var(--space) * 3);
     }
     .button {
         color: var(--white);
         border-color: var(--white);
     }
+    .intro_image {
+    }
     .intro_cta {
-        margin-top: calc(var(--space) * 2);
+        padding-top: calc(var(--space) * 1);
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .intro_titles {
-        text-align: center;
+        padding-inline: calc(var(--space_) * 2.5);
+        h2 {
+            color: var(--brand_light);
+        }
+    }
+
+    .intro_content {
+        font-size: var(--font_rem);
+        padding-top: calc(var(--space) * 1);
+        /*padding-inline: calc(var(--space_) * 0.25);*/
+        padding-inline: calc(var(--space_) * 2.5);
+        text-justify: distribute;
     }
 </style>
 
 <article class="intro_card">
+    {
+        data.image && (
+            <div class="intro_image">
+                <img src={`${data.image}`} alt={data.title} />
+            </div>
+        )
+    }
     <div class="intro_header">
-        {
-            data.image && (
-                <div class="intro_image">
-                    <img src={`${data.image}`} alt={data.title} />
-                </div>
-            )
-        }
-
         <div class="intro_titles">
             <h2 class="intro_title">{data.title}</h2>
             {data.subtile && <h3 class="intro_subtitle">{data.subtile}</h3>}

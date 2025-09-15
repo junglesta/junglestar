@@ -1,6 +1,6 @@
 ---
 title: You need serious help.
-subtile: Junglestaris a small, flexible web agency.
+subtile: Junglestar is a small, flexible web agency.
 subsubtile: Sustainable web design to help you and the planet.
 image: ./src/content/intro/2.svg
 cta: See what we deliver

@@ -16,23 +16,29 @@
     }
 
     /* Responsive font scaling is taken care by clamp() in the token declaration*/
-    /*@media (min-width: 600px) {
-        body {
-            font-size: calc(var(--font_size) * 1.1);
+    @media (min-width: 600px) {
+        :root {
+            --font_rem: 1.1rem;
         }
     }
 
     @media (min-width: 820px) {
-        body {
-            font-size: calc(var(--font_size) * 1.15);
+        :root {
+            --font_rem: 1.2rem;
         }
     }
 
     @media (min-width: 1024px) {
-        body {
-            font-size: calc(var(--font_size) * 1.2);
+        :root {
+            --font_rem: 2rem;
         }
-    }*/
+    }
+
+    @media (min-width: 1280px) {
+        :root {
+            --font_rem: 2.5rem;
+        }
+    }
 
     /* Main structure */
     .main {

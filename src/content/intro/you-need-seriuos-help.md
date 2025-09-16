@@ -10,11 +10,11 @@ theme: superstition
 
 We offer a **one-stop-shop** esperience for small enterprises.
 
-We help with marketing communication.
+We **check your existing** marketing communication.
 
-We advise on **strategies**, produce content, manage social media.
+We advise on **strategies**, help plan and produce content, manage social media.
 
-We make **websites** and **apps**.
+We make **websites** and **apps**. We help small biz. We find and develop solutions.
 
 We grow **relationships** with clients.
 

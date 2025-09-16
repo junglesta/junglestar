@@ -25,7 +25,7 @@ footer {
         height: 5svh;
     }
     svg.logo {
-        height: 11svh;
+        height: 16svh;
     }
 }
 
@@ -89,7 +89,7 @@ footer {
 .brand {
     text-transform: uppercase;
     padding-block: calc(var(--space) * 0.55);
-    font-weight: var(--weight);
+    font-weight: 400;
 }
 .undies {
     position: relative;

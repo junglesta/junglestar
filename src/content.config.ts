@@ -66,16 +66,22 @@ const slogans = defineCollection({
 });
 
 const intro = defineCollection({
-  type: "content", // Important: must be 'content' not 'data'
-  schema: z.object({
-    title: z.string(),
-    subtile: z.string(),
-    subsubtile: z.string(),
-    image: z.string(),
-    cta: z.string(),
-    link: z.string(),
-    theme: z.string(),
-  }),
+  loader: glob({ pattern: "**/*.md", base: "./src/content/intro" }),
+  schema: (
+    { image }, // Get the image helper from the schema function
+  ) =>
+    z.object({
+      title: z.string(),
+      subtile: z.string(),
+      subsubtile: z.string(),
+      image: z.object({
+        src: image(), // Use image() helper instead of z.string()
+        alt: z.string().default("Junglestar"),
+      }),
+      cta: z.string(),
+      link: z.string(),
+      theme: z.string(),
+    }),
 });
 
 export const collections = {

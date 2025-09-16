@@ -2,7 +2,9 @@
 title: It's a Jungle out there.
 subtile: Can customers reach you?
 subsubtile: When I google your company name which infos can I get?
-image: ./src/content/intro/1.svg
+image:
+  src: ./1.svg
+  alt: "It's a Jungle out there."
 cta: We got solutions
 link: "/design"
 theme: blasting brands

@@ -2,7 +2,9 @@
 title: "Overwelmed? Try: Sustainable by Design."
 subtile: Minimize. Organize. Simplify.
 subsubtile: An easy-to-mantain internet presence. Easy on your budget & your time.
-image: ./src/content/intro/3.svg
+image:
+  src: ./3.svg
+  alt: "Overwelmed?"
 cta: Find out more
 link: "/design"
 theme: crazy_claims

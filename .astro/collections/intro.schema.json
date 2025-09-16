@@ -14,7 +14,20 @@
           "type": "string"
         },
         "image": {
-          "type": "string"
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string"
+            },
+            "alt": {
+              "type": "string",
+              "default": "Junglestar"
+            }
+          },
+          "required": [
+            "src"
+          ],
+          "additionalProperties": false
         },
         "cta": {
           "type": "string"

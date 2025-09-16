@@ -2,7 +2,9 @@
 title: You need serious help.
 subtile: Junglestar is a small, flexible web agency.
 subsubtile: Sustainable web design to help you and the planet.
-image: ./src/content/intro/2.svg
+image:
+  src: ./2.svg
+  alt: "Running on beliefs?"
 cta: See what we deliver
 link: "/about"
 theme: superstition

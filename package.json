@@ -12,6 +12,7 @@
     "buildv": "astro build --verbose",
     "builddev": "astro build --devOutput",
     "buildwithtest": "astro check && tsc --noEmit && astro build",
+    "preview": "astro preview",
     "astro": "astro",
     "upg": "npx @astrojs/upgrade"
   },

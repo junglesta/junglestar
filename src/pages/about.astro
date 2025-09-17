@@ -1,11 +1,53 @@
 ---
-//import Welcome from '../components/aaa.astro';
+// src/pages/projects.astro
 import Layout from "@layouts/Layout.astro";
+import ProjectCard from "@components/WorksCard.astro";
+import projectsData from "@data/works.json";
+
+// Sort projects by date (newest first)
+const projects = projectsData.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+);
+
 // Page metadata
 const pageTitle = "Junglestar | About us";
 const pageDescription =
-    "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
+    "SHOWCASE: We helped these  small enterprises with websites, apps, and marketing communication.";
 const pageSubtitle = "";
 ---
 
-<Layout title={pageTitle}>about </Layout>
+<Layout title={pageTitle}>
+
+    <main>
+        <h1>See what we deliver!</h1>
+        <div class="projects-grid">
+            {projects.map((project) => <ProjectCard {...project} />)}
+        </div>
+    </main>
+</Layout>
+
+<style>
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: #111827;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .projects-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

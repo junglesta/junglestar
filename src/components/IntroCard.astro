@@ -22,6 +22,8 @@ const { Content } = await render(entry);
         border-color: var(--white);
     }
     .intro_image {
+        transform: scale(1.1);
+        padding-bottom: calc(var(--space) * 1);
     }
     .intro_cta {
         padding-top: calc(var(--space) * 1);
@@ -49,7 +51,7 @@ const { Content } = await render(entry);
     {
         data.image && (
             <div class="intro_image">
-                <Image src={data.image.src} alt={data.image.alt} />
+                <Image src={data.image.src} alt={data.image.alt} width={2500} />
             </div>
         )
     }

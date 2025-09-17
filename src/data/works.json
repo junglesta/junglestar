@@ -1,0 +1,272 @@
+[
+  {
+    "id": "beyondcittastudi",
+    "date": "2015-05-01",
+    "title": "BEYOND CITTA STUDI",
+    "subtitle": "Instagram contest",
+    "category": "website",
+    "tags": ["commissioned-work", "open-source"],
+    "url": "http://beyondcittastudi.junglestar.org/",
+    "icon": {
+      "url": "/assets/ico/beyondcittastudi/polimi.svg",
+      "name": "polimi"
+    },
+    "permalink": "/works/beyondcittastudi/",
+    "description": "Beyond Citta Studi contest website"
+  },
+  {
+    "id": "krap",
+    "date": "2015-05-15",
+    "title": "KRAP",
+    "subtitle": "Skateboarding History Postcards",
+    "category": "slideshow",
+    "tags": ["eye-candy", "open-source"],
+    "url": "https://krap.junglestar.org/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/krap/safari-pinned-tab.svg",
+      "name": "krap"
+    },
+    "permalink": "/works/krap/",
+    "description": "Compact Skateboarding History, visually"
+  },
+  {
+    "id": "speak",
+    "date": "2015-11-15",
+    "title": "JUNGLE SPEAK",
+    "subtitle": "Quotes Collection",
+    "category": "website",
+    "tags": ["reader-digest", "open-source"],
+    "url": "https://speak.junglestar.org/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/speak/safari-pinned-tab.svg",
+      "name": "speak"
+    },
+    "permalink": "/works/speak/",
+    "description": "Jungle speak collection with sources, like a jungle digest!"
+  },
+  {
+    "id": "qr",
+    "date": "2016-01-09",
+    "title": "Quick QRcode Generator",
+    "subtitle": null,
+    "category": "webapp",
+    "tags": ["tool", "open-source"],
+    "url": "https://qr.junglestar.org/?ref=junglestar.org",
+    "icon": {
+      "url": "/assets/ico/qr/qr-junglestar-org.png",
+      "name": "qrgenerator"
+    },
+    "permalink": "/works/qr/",
+    "description": "Everybody needs a QRcode"
+  },
+  {
+    "id": "shopify",
+    "date": "2016-01-12",
+    "title": "We build online stores",
+    "subtitle": "with Shopify",
+    "category": "news",
+    "tags": ["partners"],
+    "url": "https://www.shopify.com/?ref=junglestar.org",
+    "icon": {
+      "url": "/assets/svg/shopify.svg",
+      "name": "shopify"
+    },
+    "permalink": "/works/shopify/",
+    "description": null
+  },
+  {
+    "id": "octopal",
+    "date": "2016-01-15",
+    "title": "OCTOPAL",
+    "subtitle": "Colors from images!",
+    "category": "webapp",
+    "tags": ["tool", "open-source"],
+    "url": "https://palette.junglestar.org/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/octo/safari-pinned-tab.svg",
+      "name": "octopal"
+    },
+    "permalink": "/works/octopal/",
+    "description": "Octopal, feeds on images, gives rgb palettes!"
+  },
+  {
+    "id": "binocle",
+    "date": "2016-04-01",
+    "title": "BINOCLE",
+    "subtitle": "Architecture Studio",
+    "category": "website",
+    "tags": ["commissioned-work", "open-source"],
+    "url": "https://binocle.it/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/binocle/safari-pinned-tab.svg",
+      "name": "binocle"
+    },
+    "permalink": "/works/binocle/",
+    "description": "Binocle Studio portfolio webapp"
+  },
+  {
+    "id": "wherenodoctor",
+    "date": "2016-07-01",
+    "title": "WHERE NO DOCTOR",
+    "subtitle": "Offline-Ready Book",
+    "category": "webapp",
+    "tags": ["tool", "open-source"],
+    "url": "https://nodoctor.junglestar.org/?ref=junglestar",
+    "icon": {
+      "url": "/assets/svg/wherenodoctor.svg",
+      "name": "wherenodoctor"
+    },
+    "permalink": "/works/nodoctor/",
+    "description": null
+  },
+  {
+    "id": "bill",
+    "date": "2017-10-19",
+    "title": "BILL",
+    "subtitle": "Simple Secure Invoice",
+    "category": "webapp",
+    "tags": ["tool", "open-source"],
+    "url": "https://bill.junglestar.org/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/bill/safari-pinned-tab.svg",
+      "name": "bill"
+    },
+    "permalink": "/works/bill/",
+    "description": "bill"
+  },
+  {
+    "id": "fumes",
+    "date": "2018-04-01",
+    "title": "FUMES",
+    "subtitle": "Art, Photography, Ideas",
+    "category": "magazine",
+    "tags": ["commissioned-work"],
+    "url": "https://fumes.junglestar.org/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/fumes/safari-pinned-tab.svg",
+      "name": "fumes"
+    },
+    "permalink": "/works/fumes/",
+    "description": "fumes webapp"
+  },
+  {
+    "id": "roccomarosi",
+    "date": "2018-04-01",
+    "title": "ROCCO MAROSI",
+    "subtitle": "Architecture Photography",
+    "category": "website",
+    "tags": ["commissioned-work", "open-source"],
+    "url": "https://roccomarosi.com/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/roccomarosi/safari-pinned-tab.svg",
+      "name": "roccomarosi"
+    },
+    "permalink": "/works/roccomarosi/",
+    "description": "rocco marosi webapp"
+  },
+  {
+    "id": "magicgreen",
+    "date": "2018-05-05",
+    "title": "MAGIC GREEN",
+    "subtitle": "Online Magazine",
+    "category": "magazine",
+    "tags": ["commissioned-work"],
+    "url": "https://magicgreen.junglestar.org/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/magicgreen/safari-pinned-tab.svg",
+      "name": "magicgreen"
+    },
+    "permalink": "/works/magicgreen/",
+    "description": "Online Magazine website with resources search and responsive images."
+  },
+  {
+    "id": "davinastephens",
+    "date": "2019-04-01",
+    "title": "DAVINA STEPHENS",
+    "subtitle": "Artist Portfolio",
+    "category": "website",
+    "tags": ["commissioned-work"],
+    "url": "https://davinastephens.com/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/davinastephens/safari-pinned-tab.svg",
+      "name": "davinastephens"
+    },
+    "permalink": "/works/davinastephens/",
+    "description": "Super fast and simple portfolio website. Secure and mobile ready."
+  },
+  {
+    "id": "adriasartore",
+    "date": "2019-08-15",
+    "title": "ADRIA SARTORE",
+    "subtitle": "Artist Portfolio",
+    "category": "website",
+    "tags": ["commissioned-work", "open-source"],
+    "url": "https://adriasartore.com/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/adriasartore/safari-pinned-tab.svg",
+      "name": "adriasartore"
+    },
+    "permalink": "/works/adriasartore/",
+    "description": "Adria Sartore website. Super fast, minimalist portfolio."
+  },
+  {
+    "id": "junglo",
+    "date": "2020-06-01",
+    "title": "JUNGLO SHOES",
+    "subtitle": "Online Store",
+    "category": "website",
+    "tags": ["commissioned-work"],
+    "url": "https://jungloshoes.com/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/junglo/safari-pinned-tab.svg",
+      "name": "junglo"
+    },
+    "permalink": "/works/junglo/",
+    "description": "Junglo shoes website."
+  },
+  {
+    "id": "casaasia",
+    "date": "2021-02-01",
+    "title": "CASA ASIA",
+    "subtitle": "Restaurant Visual Menu",
+    "category": "website",
+    "tags": ["commissioned-work"],
+    "url": "https://casaasiabali.com?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/casaasia/safari-pinned-tab.svg",
+      "name": "casaasia"
+    },
+    "permalink": "/works/casaasia/",
+    "description": "Visual menu website."
+  },
+  {
+    "id": "quarzia",
+    "date": "2021-04-01",
+    "title": "QUARZIA",
+    "subtitle": "Online Store",
+    "category": "website",
+    "tags": ["commissioned-work"],
+    "url": "https://quarzia.it/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/quarzia/safari-pinned-tab.svg",
+      "name": "junglo"
+    },
+    "permalink": "/works/quarzia/",
+    "description": "Quarzia online store website."
+  },
+  {
+    "id": "divino",
+    "date": "2022-12-25",
+    "title": "DIVINO",
+    "subtitle": "Restaurant Visual Menu",
+    "category": "website",
+    "tags": ["commissioned-work"],
+    "url": "https://divinobali.com?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/divino/safari-pinned-tab.svg",
+      "name": "casaasia"
+    },
+    "permalink": "/works/divino/",
+    "description": "Visual menu website."
+  }
+]

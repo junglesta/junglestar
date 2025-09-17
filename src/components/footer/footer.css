@@ -1,4 +1,4 @@
-footer {
+.footer_site {
     width: 100%;
     position: sticky;
     bottom: 0;
@@ -13,6 +13,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 0;
 
     a {
         font-size: 2.33svh;

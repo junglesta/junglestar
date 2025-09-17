@@ -1,5 +1,6 @@
 ---
 // src/layouts/Layout.astro
+import LandingScreen from "@components/LandingScreen.astro";
 import Head from "@components/Head.astro";
 import Footer from "@footer/Footer.astro";
 import "@styles/global.css";
@@ -20,7 +21,10 @@ const {
     slogan,
 } = Astro.props;
 ---
+<style>
+main { background-color: var(--white);}
 
+</style>
 <!doctype html>
 <html lang="en">
     <Head title={title} description={description} sitemap={sitemap} />
@@ -38,7 +42,8 @@ const {
      email    : info@junglestar.org
      twitter  : @rokmatwit
     -->
-        <slot name="header" />
+        <slot name="head_banner" />
+        <LandingScreen />
         <main class="main">
             <slot />
         </main>

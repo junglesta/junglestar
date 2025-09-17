@@ -1,0 +1,125 @@
+---
+// src/components/ProjectCard.astro
+export interface Props {
+    id: string;
+    date: string;
+    title: string;
+    subtitle?: string | null;
+    category: string;
+    tags: string[];
+    url: string;
+    icon?: {
+        url: string;
+        name: string;
+    };
+    description?: string | null;
+}
+
+const { title, subtitle, category, tags, url, date, description } = Astro.props;
+
+const formattedDate = new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+});
+---
+
+<style>
+    .project-card {
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition:
+            transform 0.2s,
+            box-shadow 0.2s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.25rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    h3 a:hover {
+        color: #2563eb;
+    }
+
+    .subtitle {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: normal;
+        color: #6b7280;
+        margin-top: 0.25rem;
+    }
+
+    .meta {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.875rem;
+        color: #6b7280;
+        margin-bottom: 0.75rem;
+    }
+
+    .category {
+        text-transform: capitalize;
+    }
+
+    .description {
+        margin: 0.75rem 0;
+        color: #374151;
+        line-height: 1.6;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tag {
+        background: #f3f4f6;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        color: #4b5563;
+    }
+</style>
+<article class="project-card">
+    <a href={url} target="_blank" rel="noopener noreferrer">
+        <header>
+            <h3>
+                {title}
+                {subtitle && <span class="subtitle">{subtitle}</span>}
+            </h3>
+            <div class="meta">
+                <time datetime={date}>{formattedDate}</time>
+                <span class="category">{category}</span>
+            </div>
+        </header>
+
+        {description && <p class="description">{description}</p>}
+
+        {
+            tags.length > 0 && (
+                <footer>
+                    <ul class="tags">
+                        {tags.map((tag) => (
+                            <li class="tag">{tag}</li>
+                        ))}
+                    </ul>
+                </footer>
+            )
+        }
+    </a>
+</article>

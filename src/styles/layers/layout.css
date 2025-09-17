@@ -24,19 +24,19 @@
 
     @media (min-width: 820px) {
         :root {
-            --font_rem: 1.2rem;
+            --font_rem: 1.25rem;
         }
     }
 
     @media (min-width: 1024px) {
         :root {
-            --font_rem: 2rem;
+            --font_rem: 1.5rem;
         }
     }
 
     @media (min-width: 1280px) {
         :root {
-            --font_rem: 2.5rem;
+            --font_rem: 1.85rem;
         }
     }
 

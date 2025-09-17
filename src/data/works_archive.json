@@ -1,0 +1,48 @@
+[
+  {
+    "id": "davinastephens",
+    "date": "2024-04-01",
+    "title": "DAVINA STEPHENS",
+    "subtitle": "Artist Portfolio",
+    "category": "website",
+    "tags": ["commissioned-work"],
+    "url": "https://davinastephens.com/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/davinastephens/safari-pinned-tab.svg",
+      "name": "davinastephens"
+    },
+    "permalink": "/works/davinastephens/",
+    "description": "Super fast and simple portfolio website. Secure and mobile ready."
+  },
+  {
+    "id": "adriasartore",
+    "date": "2024-08-15",
+    "title": "ADRIA SARTORE",
+    "subtitle": "Artist Portfolio",
+    "category": "website",
+    "tags": ["commissioned-work", "open-source"],
+    "url": "https://adriasartore.com/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/adriasartore/safari-pinned-tab.svg",
+      "name": "adriasartore"
+    },
+    "permalink": "/works/adriasartore/",
+    "description": "Adria Sartore website. Super fast, minimalist portfolio."
+  },
+
+  {
+    "id": "quarzia",
+    "date": "2023-04-01",
+    "title": "QUARZIA",
+    "subtitle": "Online Store",
+    "category": "website",
+    "tags": ["commissioned-work"],
+    "url": "https://quarzia.it/?ref=junglestar",
+    "icon": {
+      "url": "/assets/ico/quarzia/safari-pinned-tab.svg",
+      "name": "junglo"
+    },
+    "permalink": "/works/quarzia/",
+    "description": "Quarzia online store website."
+  }
+]

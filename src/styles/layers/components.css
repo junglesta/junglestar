@@ -68,7 +68,7 @@
     .offer_content h3,
     .section h2,
     .section h3 {
-        color: var(--brand_color);
+        color: var(--brand);
     }
 
     h1,
@@ -276,7 +276,7 @@
         margin-bottom: calc(var(--vertical_rhythm_small) / 2);
         border-radius: 0.64svh;
         padding: 0.8svh 2.4svh;
-        color: var(--brand_color);
+        color: var(--brand);
         border: 2px solid var(--white);
         margin: var(--vertical_rhythm) auto;
         font-weight: var(--weight);
@@ -303,8 +303,8 @@
     .button_dark:focus,
     .button_dark:hover {
         cursor: pointer;
-        background-color: var(--brand_color);
-        border: 0.32svh solid var(--brand_color);
+        background-color: var(--brand);
+        border: 0.32svh solid var(--brand);
     }
 
     .button_row {

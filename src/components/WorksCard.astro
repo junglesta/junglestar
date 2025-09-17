@@ -24,8 +24,8 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
 ---
 
 <style>
-    .project-card {
-        border: 1px solid #e5e7eb;
+    .works_card {
+        border: 1px solid var(--brand);
         border-radius: 8px;
         padding: 1.5rem;
         transition:
@@ -33,13 +33,13 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
             box-shadow 0.2s;
     }
 
-    .project-card:hover {
+    .works_card:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     h3 {
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 var(--space) 0;
         font-size: 1.25rem;
     }
 
@@ -95,7 +95,7 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
         color: #4b5563;
     }
 </style>
-<article class="project-card">
+<article class="works_card">
     <a href={url} target="_blank" rel="noopener noreferrer">
         <header>
             <h3>
@@ -108,7 +108,7 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
             </div>
         </header>
 
-        {description && <p class="description">{description}</p>}
+        {description && <p class="description hide">{description}</p>}
 
         {
             tags.length > 0 && (

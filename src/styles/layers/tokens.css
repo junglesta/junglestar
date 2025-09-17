@@ -26,16 +26,16 @@
         --black: oklch(0.2 0 360); /*#161616*/
         --white: oklch(0.9 0 360); /*#dedede*/
         --background_color: oklch(0.8 0.03 208.64); /* #e6e6e6*/
-        /*--brand_color: #0069cc;*/
-        --brand_color: oklch(0.5286 0.1735 254.92);
-        /*--brand_color_invert: #ff9633;*/
-        --brand_color_invert: oklch(0.7687 0.1641 58.66);
-        /*--brand_color_complementary: #cc6600;*/
-        --brand_color_complementary: oklch(0.6201 0.156454 53.4649);
+        /*--brand: #0069cc;*/
+        --brand: oklch(0.5286 0.1735 254.92);
+        /*--brand_invert: #ff9633;*/
+        --brand_invert: oklch(0.7687 0.1641 58.66);
+        /*--brand_complementary: #cc6600;*/
+        --brand_complementary: oklch(0.6201 0.156454 53.4649);
         --brand_light: oklch(0.8322 0.0885 246.95);
 
         --text_color: #111111;
-        --link_color: var(--brand_color);
+        --link_color: var(--brand);
 
         --grey_color: #212121;
         --grey_color_light: #868686;
@@ -86,7 +86,7 @@
         /* Button tokens */
         --black_stroke: hsl(0, 0%, 60%);
         --button_focus_bg: hsla(0, 0%, 100%, 1);
-        --button_book: var(--brand_color);
+        --button_book: var(--brand);
 
         /* Card tokens */
         --big_card_width: 27.5vw;

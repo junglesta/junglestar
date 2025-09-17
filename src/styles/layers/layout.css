@@ -10,7 +10,7 @@
         line-height: var(--line_height);
         font-weight: var(--weight);
         color: var(--text_color);
-        background-color: var(--brand_color);
+        background-color: var(--brand);
         -webkit-text-size-adjust: 100%;
         /*position: relative;*/
     }
@@ -84,7 +84,7 @@
     /* Site header */
     .site_header,
     .top2bottom {
-        background-color: var(--brand_color);
+        background-color: var(--brand);
         position: relative;
         z-index: 1;
         top: 0;

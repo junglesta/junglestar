@@ -22,7 +22,7 @@
     }
 
     .brand_color {
-        color: var(--brand_color);
+        color: var(--brand);
     }
 
     /* SVG utilities */
@@ -53,7 +53,7 @@
     }
 
     svg.brand_color {
-        stroke: var(--brand_color);
+        stroke: var(--brand);
     }
 
     svg.white_color {

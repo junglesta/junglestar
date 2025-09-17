@@ -89,7 +89,7 @@ footer {
 .brand {
     text-transform: uppercase;
     padding-block: calc(var(--space) * 0.55);
-    font-weight: 400;
+    font-weight: 3400;
 }
 .undies {
     position: relative;

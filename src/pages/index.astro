@@ -1,7 +1,7 @@
 ---
 // src/pages/index.astro
 import Layout from "@layouts/Layout.astro";
-import Cover from "@components/LandingScreen.astro";
+import LandingScreen from "@components/LandingScreen.astro";
 import Intro from "@components/Intro.astro";
 
 // Page metadata
@@ -12,6 +12,6 @@ const pageSubtitle = "";
 ---
 
 <Layout title={pageTitle} description={pageDescription} subtitle={pageSubtitle}>
-    <Cover />
+    <LandingScreen />
     <Intro />
 </Layout>

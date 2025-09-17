@@ -16,16 +16,6 @@ const pageDescription =
 const pageSubtitle = "";
 ---
 
-<Layout title={pageTitle}>
-
-    <main>
-        <h1>See what we deliver!</h1>
-        <div class="projects-grid">
-            {projects.map((project) => <ProjectCard {...project} />)}
-        </div>
-    </main>
-</Layout>
-
 <style>
     main {
         max-width: 1200px;
@@ -51,3 +41,12 @@ const pageSubtitle = "";
         }
     }
 </style>
+
+<Layout title={pageTitle} description={pageDescription}>
+    <main>
+        <h1>See what we deliver!</h1>
+        <div class="projects-grid">
+            {projects.map((project) => <ProjectCard {...project} />)}
+        </div>
+    </main>
+</Layout>

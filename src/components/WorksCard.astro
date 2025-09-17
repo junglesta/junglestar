@@ -15,7 +15,8 @@ export interface Props {
     description?: string | null;
 }
 
-const { title, subtitle, category, tags, url, date, description } = Astro.props;
+const { title, subtitle, category, tags, url, date, description, icon } =
+    Astro.props;
 
 const formattedDate = new Date(date).toLocaleDateString("en-US", {
     year: "numeric",
@@ -25,6 +26,9 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
 
 <style>
     .works_card {
+        background-color: var(--background_color);
+        display: flex;
+        flex-direction: column;
         border: 1px solid var(--brand);
         border-radius: 8px;
         padding: 1.5rem;
@@ -33,9 +37,24 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
             box-shadow 0.2s;
     }
 
+    .works_card_link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .works_card:hover {
+        background-color: white;
         transform: translateY(-2px);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .work_icon {
+        width: 200px;
+        height: 200x;
+        object-fit: contain;
+        margin-block: calc(var(--space) / 2);
     }
 
     h3 {
@@ -46,10 +65,6 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
     a {
         text-decoration: none;
         color: inherit;
-    }
-
-    h3 a:hover {
-        color: #2563eb;
     }
 
     .subtitle {
@@ -88,16 +103,32 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
     }
 
     .tag {
-        background: #f3f4f6;
+        background: #fff;
         padding: 0.25rem 0.75rem;
         border-radius: 9999px;
         font-size: 0.75rem;
-        color: #4b5563;
+        color: var(--brand);
     }
 </style>
+
 <article class="works_card">
-    <a href={url} target="_blank" rel="noopener noreferrer">
+    <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="works_card_link"
+    >
         <header>
+            {
+                icon && (
+                    <img
+                        src={icon.url}
+                        alt={icon.name}
+                        class="work_icon"
+                        loading="lazy"
+                    />
+                )
+            }
             <h3>
                 {title}
                 {subtitle && <span class="subtitle">{subtitle}</span>}

@@ -68,7 +68,7 @@
     "tags": ["partners"],
     "url": "https://www.shopify.com/?ref=junglestar.org",
     "icon": {
-      "url": "/assets/svg/shopify.svg",
+      "url": "/assets/ico/shopify.svg",
       "name": "shopify"
     },
     "permalink": "/works/shopify/",
@@ -113,7 +113,7 @@
     "tags": ["tool", "open-source"],
     "url": "https://nodoctor.junglestar.org/?ref=junglestar",
     "icon": {
-      "url": "/assets/svg/wherenodoctor.svg",
+      "url": "/assets/ico/wherenodoctor.svg",
       "name": "wherenodoctor"
     },
     "permalink": "/works/nodoctor/",

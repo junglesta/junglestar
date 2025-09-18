@@ -36,8 +36,8 @@
     .h6 {
         margin: 0;
         padding: 0;
-        padding-top: 1.5svh;
-        padding-bottom: 1.5svh;
+        padding-top: calc(var(--space) * 0.545); /* was 1.5svh */
+        padding-bottom: calc(var(--space) * 0.545); /* was 1.5svh */
         font-weight: var(--weight);
         line-height: 1.44;
     }
@@ -141,23 +141,23 @@
         color: var(--link_color);
         position: relative;
         display: inline-block;
-        padding-bottom: 0.2svh;
+        padding-bottom: calc(var(--space) * 0.073); /* was 0.2svh */
         text-decoration: underline;
-        text-decoration-thickness: 0.1ch;
+        text-decoration-thickness: 0.75ch;
         text-underline-offset: 0.55ch;
         user-select: none;
     }
     a:not(.button):not(.no_underline):hover {
         text-decoration-thickness: 0.2ch;
-        text-underline-offset: 0.5ch;
+        text-underline-offset: 0.45ch;
     }
 
     /* Blockquotes */
     blockquote {
         color: var(--grey_color);
-        border-left: 0.4svh solid var(--grey_color_light);
+        border-left: calc(var(--space) * 0.145) solid var(--grey_color_light); /* was 0.4svh */
         padding-left: calc(var(--space) / 2);
-        letter-spacing: -0.1svh;
+        letter-spacing: calc(var(--space) * -0.036); /* was -0.1svh */
         font-style: italic;
     }
 
@@ -168,14 +168,14 @@
     /* Code blocks */
     pre {
         font-family: "Open Sans", sans-serif;
-        max-width: 54svh;
+        max-width: 54svh; /* Keep as viewport based */
         display: block;
         font-size: 0.875em;
         font-family: Consolas, monospace;
         color: var(--grey_color_dark);
         line-height: 1.3em;
         margin: 0 auto;
-        padding: 0 1svh;
+        padding: 0 calc(var(--space) * 0.364); /* was 1svh */
     }
 
     code {
@@ -186,11 +186,11 @@
 
     /* Cards */
     .card {
-        font-size: 1.6svh;
+        font-size: calc(var(--space) * 0.58); /* was 1.6svh */
         z-index: 10;
         background-color: hsla(0, 0%, 95%, 1);
         cursor: pointer;
-        border-radius: 0.4svh;
+        border-radius: calc(var(--space) * 0.145); /* was 0.4svh */
         display: block;
         position: relative;
         width: 90%;
@@ -198,8 +198,8 @@
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 1.6svh;
-        padding-right: 1.6svh;
+        padding-left: calc(var(--space) * 0.58); /* was 1.6svh */
+        padding-right: calc(var(--space) * 0.58); /* was 1.6svh */
         box-shadow: var(--card_shadow);
         transition: var(--transition_shadow);
     }
@@ -219,7 +219,7 @@
     }
 
     .card:active {
-        transform: translateY(0.025svh);
+        transform: translateY(calc(var(--space) * 0.009)); /* was 0.025svh */
     }
 
     .card h1 {
@@ -236,7 +236,7 @@
 
     .card h3 {
         height: 20%;
-        min-height: 6svh;
+        min-height: calc(var(--space) * 2.18); /* was 6svh */
     }
 
     .card p {
@@ -245,7 +245,7 @@
     }
 
     .card > * {
-        margin-top: 4.8svh;
+        margin-top: calc(var(--space) * 1.745); /* was 4.8svh */
     }
 
     /* Card bestseller/bestvalue badges */
@@ -257,8 +257,8 @@
         top: 0;
         display: block;
         right: 0;
-        width: 10svh;
-        height: 10svh;
+        width: 10svh; /* Keep as badge size */
+        height: 10svh; /* Keep as badge size */
     }
 
     .card.bestseller:before {
@@ -274,11 +274,11 @@
         line-height: 1.4;
         margin-right: calc(var(--space) / 2);
         margin-bottom: calc(var(--space) / 2);
-        border-radius: 0.64svh;
-        padding: 0.8svh 2.4svh;
+        border-radius: calc(var(--space) * 0.23); /* was 0.64svh */
+        padding: calc(var(--space) * 0.29) calc(var(--space) * 0.87); /* was 0.8svh 2.4svh */
         color: var(--brand);
         border: 2px solid var(--white);
-        margin: var(--vertical_rhythm) auto;
+        margin: var(--space) auto; /* Fixed orphan --vertical_rhythm */
         font-weight: var(--weight);
     }
 
@@ -291,20 +291,20 @@
 
     .button:active {
         /*background-color: var(--button_focus_bg);*/
-        transform: translateY(0.4svh);
+        transform: translateY(calc(var(--space) * 0.145)); /* was 0.4svh */
     }
 
     .button_dark {
         background-color: var(--black);
         color: var(--white);
-        border: 0.32svh solid var(--white);
+        border: calc(var(--space) * 0.116) solid var(--white); /* was 0.32svh */
     }
 
     .button_dark:focus,
     .button_dark:hover {
         cursor: pointer;
         background-color: var(--brand);
-        border: 0.32svh solid var(--brand);
+        border: calc(var(--space) * 0.116) solid var(--brand); /* was 0.32svh */
     }
 
     .button_row {
@@ -324,21 +324,21 @@
     .checkmark:before {
         content: "";
         display: inline-block;
-        width: 0.48svh;
-        height: 0.96svh;
+        width: calc(var(--space) * 0.175); /* was 0.48svh */
+        height: calc(var(--space) * 0.35); /* was 0.96svh */
         border: solid limegreen;
-        border-width: 0 0.32svh 0.32svh 0;
+        border-width: 0 calc(var(--space) * 0.116) calc(var(--space) * 0.116) 0; /* was 0.32svh */
         transform: rotate(45deg);
-        padding-right: 1.28svh;
-        padding-bottom: 1.6svh;
-        margin-right: 2.56svh;
+        padding-right: calc(var(--space) * 0.465); /* was 1.28svh */
+        padding-bottom: calc(var(--space) * 0.58); /* was 1.6svh */
+        margin-right: calc(var(--space) * 0.93); /* was 2.56svh */
     }
 
     .selling_points {
         user-select: none;
-        font-size: 1.5svh;
+        font-size: calc(var(--space) * 0.545); /* was 1.5svh */
         margin-bottom: var(--space);
-        max-width: 40svh;
+        max-width: 40svh; /* Keep as viewport based */
         margin-left: auto;
         margin-right: auto;
     }

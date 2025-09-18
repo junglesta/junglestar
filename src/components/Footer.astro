@@ -1,11 +1,146 @@
 ---
 // src/components/Footer.astro
 import * as siteData from "@data/site.json";
-import Nav from "@footer/Nav.astro";
+import Nav from "@components/Nav.astro";
 import Logo from "@svgs/logo_stroke.svg";
-import Copy from "@components/footer/Copyright.astro";
-import "@footer/footer.css";
+
+const currentYear = new Date().getFullYear();
 ---
+
+<style>
+    .footer_site {
+        width: 100%;
+        position: sticky;
+        bottom: 0;
+        height: 100svh;
+        padding-top: calc(var(--space) * 5);
+        padding-bottom: var(--space);
+        padding-inline: var(--space_);
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 0;
+
+        a {
+            color: var(--white);
+            text-decoration-thickness: 2px;
+        }
+
+        svg:not(.hide) {
+            display: inline;
+            height: 5svh;
+        }
+        svg.logo {
+            height: 16svh;
+        }
+    }
+
+    .copy {
+        font-size: calc(var(--font_size) / 1.5);
+        padding-top: calc(var(--space) * 0.25);
+        padding-inline: var(--space);
+        text-align: center;
+        p {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .footer_link {
+        font-size: var(--font_size);
+    }
+
+    .abso {
+        position: absolute;
+        bottom: calc(var(--space) * 2);
+    }
+
+    .flexcolo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: calc(var(--space) / 5);
+        padding: 0 !important;
+        margin: 0 !important;
+
+        a.button {
+            margin: 0 !important;
+        }
+    }
+
+    .flexcolo.abso {
+        gap: calc(var(--space) / 8);
+    }
+
+    .flexro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: calc(var(--space) / 2);
+        padding: 0 !important;
+        margin: 0 !important;
+        .button {
+            margin-block: 0;
+        }
+    }
+
+    .space_between {
+        justify-content: space-between;
+    }
+
+    .footer_logo {
+        padding-top: calc(var(--space) * 2);
+    }
+
+    .brand {
+        text-transform: uppercase;
+        padding-block: calc(var(--space) * 0.55);
+        font-weight: 3400;
+    }
+    .undies {
+        position: relative;
+    }
+    .CTAbutton {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: fit-content;
+        svg {
+            width: max-content;
+        }
+    }
+    .qr {
+        /*LINK*/
+        padding: 0;
+        width: 100svw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+        svg {
+            width: max-content;
+            height: 48px;
+        }
+    }
+    .qr.expanded {
+        padding: var(--space) var(--space_);
+        font-size: 75%;
+        width: 100svw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: center;
+        svg {
+            width: max-content;
+            height: clamp(100px, 30svw, 300px);
+        }
+    }
+</style>
 
 <footer class="footer_site">
     <a
@@ -43,6 +178,14 @@ import "@footer/footer.css";
 
             <a href="/about" class="footer_link">About</a>
         </div>
-        <Copy />
+
+        <div class="copy">
+            <p>
+                &copy; 2012-{currentYear}
+                {siteData.brand}.org | <a href={siteData.repo}> Source</a> licensed
+                under
+                <a href={siteData.license_url}> CC BY 4.0 </a>
+            </p>
+        </div>
     </div>
 </footer>

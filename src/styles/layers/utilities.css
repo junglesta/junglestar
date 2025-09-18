@@ -28,7 +28,7 @@
     /* SVG utilities */
     svg.outlined {
         fill: transparent;
-        stroke-width: 0.8svh;
+        stroke-width: calc(var(--space) * 0.29); /* was 0.8svh */
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-miterlimit: 10;
@@ -36,19 +36,19 @@
 
     @media (min-width: 600px) {
         svg.outlined {
-            stroke-width: 0.6svh;
+            stroke-width: calc(var(--space) * 0.218); /* was 0.6svh */
         }
     }
 
     @media (min-width: 820px) {
         svg.outlined {
-            stroke-width: 0.5svh;
+            stroke-width: calc(var(--space) * 0.182); /* was 0.5svh */
         }
     }
 
     @media (min-width: 1024px) {
         svg.outlined {
-            stroke-width: 0.4svh;
+            stroke-width: calc(var(--space) * 0.145); /* was 0.4svh */
         }
     }
 
@@ -89,7 +89,7 @@
     }
 
     .top_padded {
-        padding-top: 11.5svh;
+        padding-top: calc(var(--space) * 4.18); /* was 11.5svh */
     }
 
     .text {
@@ -120,7 +120,7 @@
         }
     }
     .pretty {
-        /* 🐉 LETS MAKE IT WRAPPING PRETTY! */
+        /* 🍉 LETS MAKE IT WRAPPING PRETTY! */
         text-wrap: pretty;
     }
 

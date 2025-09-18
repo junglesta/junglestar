@@ -274,11 +274,10 @@
         line-height: 1.4;
         margin-right: calc(var(--space) / 2);
         margin-bottom: calc(var(--space) / 2);
-        border-radius: calc(var(--space) * 0.23); /* was 0.64svh */
+        border-radius: var(--radius);
         padding: calc(var(--space) * 0.29) calc(var(--space) * 0.87); /* was 0.8svh 2.4svh */
         color: var(--brand);
-        border: 2px solid var(--white);
-        margin: var(--space) auto; /* Fixed orphan --vertical_rhythm */
+        border: 2px solid var(--white); /* Fixed orphan --vertical_rhythm */
         font-weight: var(--weight);
     }
 

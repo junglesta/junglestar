@@ -10,6 +10,8 @@ link: "/design"
 theme: blasting brands
 ---
 
+Let's face it. The noise level. The nonsense. Marketing slogans cacophony.
+
 To get noticed, brands need to be **easy**, **customer-friendly** and **recognizable**.
 
 Today 60% of internet traffic comes **from phones**. Is your website ready for that?

@@ -2,10 +2,10 @@
 import { getCollection } from "astro:content";
 import IntroCard from "./IntroCard.astro";
 
-// Get all intro entries and sort them by ID (filename)
+// Get all intro entries and sort them
 const introEntries = await getCollection("intro");
 const sortedEntries = introEntries.sort((a, b) => {
-    // Sort by filename (1.svg, 2.svg, 3.svg, etc.)
+    // Sort by filename
     const aNum = parseInt(a.id.match(/^\d+/)?.[0] || "0");
     const bNum = parseInt(b.id.match(/^\d+/)?.[0] || "0");
     return aNum - bNum;

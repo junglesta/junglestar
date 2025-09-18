@@ -10,7 +10,7 @@ link: "/design"
 theme: blasting brands
 ---
 
-Let's face it. The noise level. The nonsense. Marketing slogans cacophony.
+Let's face it. The noise level. The nonsense. It's mostly marketing slogans cacophony these days.
 
 To get noticed, brands need to be **easy**, **customer-friendly** and **recognizable**.
 

@@ -6,7 +6,7 @@
 @layer tokens {
     :root {
         /* Typography */
-        --font_family: "Titillium Web", sans-serif;
+        --font_family: Georgia, sans-serif;
         --font_rem: 1rem;
         --font_size: clamp(19px, calc((2svh + 2svw) / 2), 36px);
         --line_height: 1.5;

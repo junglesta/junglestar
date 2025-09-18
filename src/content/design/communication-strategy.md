@@ -1,6 +1,9 @@
 ---
 title: communication strategy
 subtile: Develop your brand voice
+image:
+  src: communication-strategy.svg
+  alt: "Overwelmed?"
 tags:
   - design
 ---

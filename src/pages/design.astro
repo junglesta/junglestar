@@ -1,6 +1,11 @@
 ---
 //import Welcome from '../components/aaa.astro';
 import Layout from "@layouts/Layout.astro";
+import DesignCard from "@components/DesignCard.astro";
+import { getCollection } from "astro:content";
+const designs = await getCollection("designs", ({ data }) => {
+    return data.draft !== true;
+});
 // Page metadata
 const pageTitle = "Junglestar | Design";
 const pageDescription =
@@ -8,5 +13,37 @@ const pageDescription =
 const pageSubtitle = "";
 ---
 
-<Layout title={pageTitle} description={pageDescription}> design </Layout>
+<style>
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: #111827;
+    }
+
+    .design-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .design-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<Layout title={pageTitle} description={pageDescription}>
+    <main>
+        <h1 class="center">See what we deliver!</h1>
+        <div class="design-grid">
+            {designs.map((design) => <DesignCard {...design} />)}
+        </div>
+    </main>
+</Layout>
 x

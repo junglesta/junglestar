@@ -1,6 +1,9 @@
 ---
 title: Building for the Phone Era
 subtile: Fast, phone-friendly and easy to use.
+image:
+  src: building-for-the-phone-era.svg
+  alt: "Overwelmed?"
 tags:
   - design
 ---

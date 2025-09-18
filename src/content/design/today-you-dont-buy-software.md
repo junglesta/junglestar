@@ -1,6 +1,9 @@
 ---
 title: Today you don't buy software
 subtile: Pay a developer who can code components together.
+image:
+  src: open-source-technology.svg
+  alt: "Overwelmed?"
 tags:
   - design
 ---

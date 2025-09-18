@@ -1,27 +1,27 @@
 ---
 //component/Design.astro
 import { getCollection } from "astro:content";
-import DesignCard from "./DesignCard.astro";
+import DesignConceptsCard from "./DesignConceptsCard.astro";
 
 // Get all intro entries and sort them by ID (filename)
-const introEntries = await getCollection("design");
-const sortedEntries = introEntries.sort((a, b) => {
-    // Sort by filename (1.svg, 2.svg, 3.svg, etc.)
-    const aNum = parseInt(a.id.match(/^\d+/)?.[0] || "0");
-    const bNum = parseInt(b.id.match(/^\d+/)?.[0] || "0");
-    return aNum - bNum;
-});
+const designConcepts = await getCollection("designConcepts");
+const { post } = Astro.props;
+// const sortedEntries = designConcepts.sort((a, b) => {
+//     // Sort by filename (1.svg, 2.svg, 3.svg, etc.)
+//     const aNum = parseInt(a.id.match(/^\d+/)?.[0] || "0");
+//     const bNum = parseInt(b.id.match(/^\d+/)?.[0] || "0");
+//     return aNum - bNum;
+// });
 
-// Optional: Filter published entries only
-// const publishedEntries = sortedEntries.filter(entry => entry.data.published !== false);
+// // Optional: Filter published entries only
+// // const publishedEntries = sortedEntries.filter(entry => entry.data.published !== false);
+// interface Props {
+//     showContent?: boolean;
+//     limit?: number;
+// }
 
-interface Props {
-    showContent?: boolean;
-    limit?: number;
-}
-
-const { showContent = true, limit } = Astro.props;
-const entriesToShow = limit ? sortedEntries.slice(0, limit) : sortedEntries;
+// const { showContent = true, limit } = Astro.props;
+// const entriesToShow = limit ? sortedEntries.slice(0, limit) : sortedEntries;
 ---
 
 <style>
@@ -41,7 +41,7 @@ const entriesToShow = limit ? sortedEntries.slice(0, limit) : sortedEntries;
     <div class="intro_wrapper">
         {
             entriesToShow.map((entry) => (
-                <DesignCard entry={entry} showContent={showContent} />
+                <DesignConceptsCard entry={entry} showContent={showContent} />
             ))
         }
     </div>

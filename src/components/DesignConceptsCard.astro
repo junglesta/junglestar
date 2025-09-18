@@ -1,16 +1,11 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import { render } from "astro:content";
-import { Image } from "astro:assets";
-
 interface Props {
-    entry: CollectionEntry<"design">;
-    showContent?: boolean;
+    post: CollectionEntry<"designConcepts">;
 }
 
-const { entry, showContent = true } = Astro.props;
-const { data } = entry;
-const { Content } = await render(entry);
+// `post` will match your 'blog' collection schema type
+const { post } = Astro.props;
 ---
 
 <style>

@@ -84,19 +84,21 @@ const intro = defineCollection({
     }),
 });
 
-const designs = defineCollection({
+const designConcepts = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/design" }),
   schema: (
     { image }, // Get the image helper from the schema function
   ) =>
     z.object({
       title: z.string(),
-      subtile: z.string(),
+      subtile: z.string().optional().nullable(),
+      draft: z.boolean().optional().nullable(),
       image: z
         .object({
           src: image(), // Use image() helper instead of z.string()
           alt: z.string().default("Junglestar"),
         })
+        .optional()
         .nullable(),
     }),
 });
@@ -106,5 +108,5 @@ export const collections = {
   works,
   slogans,
   intro,
-  designs,
+  designConcepts,
 };

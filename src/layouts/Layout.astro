@@ -9,23 +9,21 @@ export interface Props {
     title: string;
     description?: string;
     sitemap?: boolean;
-    subtitle?: string;
-    slogan?: string;
 }
 
 const {
     title,
     description = "Sustainable Web Design to help fight Climate Change",
     sitemap = true,
-    subtitle,
-    slogan,
 } = Astro.props;
 ---
-<style>
-main { background-color: var(--white);}
 
+<style>
+    main {
+        background-color: var(--white);
+    }
 </style>
-<!doctype html>
+
 <html lang="en">
     <Head title={title} description={description} sitemap={sitemap} />
     <body>

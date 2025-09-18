@@ -1,16 +1,16 @@
 ---
 //import Welcome from '../components/aaa.astro';
 import Layout from "@layouts/Layout.astro";
-import DesignCard from "@components/DesignCard.astro";
+//import Card from "@components/DesignConceptsCard.astro";
 import { getCollection } from "astro:content";
-const designs = await getCollection("designs", ({ data }) => {
-    return data.draft !== true;
+const posts = await getCollection('designConcepts', ({ data }) => {
+  return data.draft !== true && import.meta.env.PROD ? data.draft !== true : true;
 });
+
 // Page metadata
-const pageTitle = "Junglestar | Design";
-const pageDescription =
+const title = "Junglestar | Design Because Why";
+const description =
     "Sustainable Web Design to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
-const pageSubtitle = "";
 ---
 
 <style>
@@ -37,12 +37,29 @@ const pageSubtitle = "";
             grid-template-columns: 1fr;
         }
     }
+    .baloon {
+        border: 1px solid var(--brand);
+        border-radius: var(--radius);
+    }
+
 </style>
-<Layout title={pageTitle} description={pageDescription}>
+<Layout title={title} description={description}>
     <main>
-        <h1 class="center">See what we deliver!</h1>
+        <h1 class="center">Design delivers!</h1>
+        <h3 class="center baloon">Designing for sustainabilty? What's that...</h3>
+        <hr>
+        <div class="center">TOC</div>
         <div class="design-grid">
-            {designs.map((design) => <DesignCard {...design} />)}
+            {
+                posts.map((post) => (
+                    <li>
+                        <a href=#{post.id}>{post.data.title}</a>
+                    </li>
+                ))
+            }
+
+            <hr>
+            <!-- {designs.map((design) => <Card {...design} />)} -->
         </div>
     </main>
 </Layout>

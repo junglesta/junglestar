@@ -54,11 +54,11 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
         width: 200px;
         height: 200x;
         object-fit: contain;
-        margin-block: calc(var(--space) / 2);
+        margin-block: calc(var(--space_block) / 2);
     }
 
     h3 {
-        margin: 0 0 var(--space) 0;
+        margin: 0 0 var(--space_block) 0;
         font-size: 1.25rem;
     }
 
@@ -96,7 +96,7 @@ const formattedDate = new Date(date).toLocaleDateString("en-US", {
     .tags {
         display: flex;
         flex-wrap: wrap;
-        gap: var(--space);
+        gap: var(--space_block);
         list-style: none;
         padding: 0;
         margin: 0;

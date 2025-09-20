@@ -18,6 +18,9 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
 ---
 
 <style>
+    article {
+        padding: 0 !important;
+    }
     .works_card {
         user-select: none;
         position: relative;
@@ -51,17 +54,19 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
         width: 25%;
         height: auto;
         object-fit: contain;
-        margin-block: calc(var(--space) / 2);
+        margin-block: calc(var(--space_block) / 2);
         margin-inline: auto;
     }
 
     h3 {
-        margin: 0 0 var(--space) 0;
+        margin: 0;
+        padding-bottom: calc(var(--space_block) / 5);
         font-size: var(--font_size);
         text-align: center;
     }
 
-    a {
+    a.action_button {
+        position: relative;
         text-decoration: none;
         color: inherit;
     }
@@ -89,6 +94,12 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
         background-color: inherit;
         color: var(--brand);
     }
+    header {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 </style>
 
 <article class={"works_card " + category}>
@@ -99,20 +110,20 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
         class="action_button"
     >
         <header>
-            {
-                icon && (
-                    <img
-                        src={icon.url}
-                        alt={icon.name}
-                        class="work_icon"
-                        loading="lazy"
-                    />
-                )
-            }
             <h3 class="title_heading_group weight500">
                 {title}
                 {subtitle && <span class="subtitle">{subtitle}</span>}
             </h3>
         </header>
+        {
+            icon && (
+                <img
+                    src={icon.url}
+                    alt={icon.name}
+                    class="work_icon"
+                    loading="lazy"
+                />
+            )
+        }
     </a>
 </article>

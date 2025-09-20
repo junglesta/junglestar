@@ -18,7 +18,7 @@
     p,
     pre,
     ul {
-        margin-bottom: calc(var(--space) / 2);
+        margin-bottom: calc(var(--space_block) / 2);
     }
 
     /* Headings */
@@ -36,8 +36,7 @@
     .h6 {
         margin: 0;
         padding: 0;
-        padding-top: calc(var(--space) * 0.545); /* was 1.5svh */
-        padding-bottom: calc(var(--space) * 0.545); /* was 1.5svh */
+        padding-block: calc(var(--space_block) * 0.545); /* was 1.5svh */
         font-weight: var(--weight);
         line-height: 1.44;
     }
@@ -141,7 +140,7 @@
         color: var(--link_color);
         position: relative;
         display: inline-block;
-        padding-bottom: calc(var(--space) * 0.073); /* was 0.2svh */
+        padding-bottom: calc(var(--space_block) * 0.073); /* was 0.2svh */
         text-decoration: underline;
         text-decoration-thickness: 0.75ch;
         text-underline-offset: 0.55ch;
@@ -155,9 +154,10 @@
     /* Blockquotes */
     blockquote {
         color: var(--grey_color);
-        border-left: calc(var(--space) * 0.145) solid var(--grey_color_light); /* was 0.4svh */
-        padding-left: calc(var(--space) / 2);
-        letter-spacing: calc(var(--space) * -0.036); /* was -0.1svh */
+        border-left: calc(var(--space_inline) * 0.145) solid
+            var(--grey_color_light); /* was 0.4svh */
+        padding-left: calc(var(--space_inline) / 2);
+        letter-spacing: calc(var(--space_inline) * -0.036); /* was -0.1svh */
         font-style: italic;
     }
 
@@ -175,7 +175,7 @@
         color: var(--grey_color_dark);
         line-height: 1.3em;
         margin: 0 auto;
-        padding: 0 calc(var(--space) * 0.364); /* was 1svh */
+        padding: 0 calc(var(--space_inline) * 0.364); /* was 1svh */
     }
 
     code {
@@ -186,11 +186,11 @@
 
     /* Cards */
     .card {
-        font-size: calc(var(--space) * 0.58); /* was 1.6svh */
+        font-size: calc(var(--space_inline) * 0.58); /* was 1.6svh */
         z-index: 10;
         background-color: hsla(0, 0%, 95%, 1);
         cursor: pointer;
-        border-radius: calc(var(--space) * 0.145); /* was 0.4svh */
+        border-radius: calc(var(--space_block) * 0.145); /* was 0.4svh */
         display: block;
         position: relative;
         width: 90%;
@@ -198,8 +198,8 @@
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
-        padding-left: calc(var(--space) * 0.58); /* was 1.6svh */
-        padding-right: calc(var(--space) * 0.58); /* was 1.6svh */
+        padding-left: calc(var(--space_inline) * 0.58); /* was 1.6svh */
+        padding-right: calc(var(--space_inline) * 0.58); /* was 1.6svh */
         box-shadow: var(--card_shadow);
         transition: var(--transition_shadow);
     }
@@ -219,7 +219,9 @@
     }
 
     .card:active {
-        transform: translateY(calc(var(--space) * 0.009)); /* was 0.025svh */
+        transform: translateY(
+            calc(var(--space_block) * 0.009)
+        ); /* was 0.025svh */
     }
 
     .card h1 {
@@ -236,16 +238,16 @@
 
     .card h3 {
         height: 20%;
-        min-height: calc(var(--space) * 2.18); /* was 6svh */
+        min-height: calc(var(--space_block) * 2.18); /* was 6svh */
     }
 
     .card p {
-        margin-left: calc(var(--space) / 2);
-        margin-right: calc(var(--space) / 2);
+        margin-left: calc(var(--space_inline) / 2);
+        margin-right: calc(var(--space_inline) / 2);
     }
 
     .card > * {
-        margin-top: calc(var(--space) * 1.745); /* was 4.8svh */
+        margin-top: calc(var(--space_block) * 1.745); /* was 4.8svh */
     }
 
     /* Card bestseller/bestvalue badges */
@@ -272,10 +274,11 @@
         display: inline-block;
         width: auto;
         line-height: 1.4;
-        margin-right: calc(var(--space) / 2);
-        margin-bottom: calc(var(--space) / 2);
+        margin-right: calc(var(--space_inline) / 2);
+        margin-bottom: calc(var(--space_block) / 2);
         border-radius: var(--radius);
-        padding: calc(var(--space) * 0.29) calc(var(--space) * 0.87); /* was 0.8svh 2.4svh */
+        padding: calc(var(--space_block) * 0.29)
+            calc(var(--space_inline) * 0.87); /* was 0.8svh 2.4svh */
         color: var(--brand);
         border: 2px solid var(--white); /* Fixed orphan --vertical_rhythm */
         font-weight: var(--weight);
@@ -290,25 +293,27 @@
 
     .button:active {
         /*background-color: var(--button_focus_bg);*/
-        transform: translateY(calc(var(--space) * 0.145)); /* was 0.4svh */
+        transform: translateY(
+            calc(var(--space_block) * 0.145)
+        ); /* was 0.4svh */
     }
 
     .button_dark {
         background-color: var(--black);
         color: var(--white);
-        border: calc(var(--space) * 0.116) solid var(--white); /* was 0.32svh */
+        border: calc(var(--space_block) * 0.116) solid var(--white); /* was 0.32svh */
     }
 
     .button_dark:focus,
     .button_dark:hover {
         cursor: pointer;
         background-color: var(--brand);
-        border: calc(var(--space) * 0.116) solid var(--brand); /* was 0.32svh */
+        border: calc(var(--space_block) * 0.116) solid var(--brand); /* was 0.32svh */
     }
 
     .button_row {
-        padding-top: calc(var(--space) / 8);
-        padding-bottom: calc(var(--space) / 2);
+        padding-top: calc(var(--space_block) / 8);
+        padding-bottom: calc(var(--space_block) / 2);
         width: 100%;
         display: block;
     }
@@ -323,20 +328,21 @@
     .checkmark:before {
         content: "";
         display: inline-block;
-        width: calc(var(--space) * 0.175); /* was 0.48svh */
-        height: calc(var(--space) * 0.35); /* was 0.96svh */
+        width: calc(var(--space_inline) * 0.175); /* was 0.48svh */
+        height: calc(var(--space_block) * 0.35); /* was 0.96svh */
         border: solid limegreen;
-        border-width: 0 calc(var(--space) * 0.116) calc(var(--space) * 0.116) 0; /* was 0.32svh */
+        border-width: 0 calc(var(--space_inline) * 0.116)
+            calc(var(--space_block) * 0.116) 0; /* was 0.32svh */
         transform: rotate(45deg);
-        padding-right: calc(var(--space) * 0.465); /* was 1.28svh */
-        padding-bottom: calc(var(--space) * 0.58); /* was 1.6svh */
-        margin-right: calc(var(--space) * 0.93); /* was 2.56svh */
+        padding-right: calc(var(--space_inline) * 0.465); /* was 1.28svh */
+        padding-bottom: calc(var(--space_block) * 0.58); /* was 1.6svh */
+        margin-right: calc(var(--space_inline) * 0.93); /* was 2.56svh */
     }
 
     .selling_points {
         user-select: none;
-        font-size: calc(var(--space) * 0.545); /* was 1.5svh */
-        margin-bottom: var(--space);
+        font-size: calc(var(--space_inline) * 0.545); /* was 1.5svh */
+        margin-bottom: var(--space_block);
         max-width: 40svh; /* Keep as viewport based */
         margin-left: auto;
         margin-right: auto;

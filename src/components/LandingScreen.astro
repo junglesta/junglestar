@@ -19,7 +19,7 @@ import Hi from "@components/LogoAni.astro";
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: var(--space) var(--space_);
+        padding: var(--space_block) var(--space_inline);
         min-height: 100svh;
         height: 100svh;
         background-size: cover;
@@ -27,15 +27,15 @@ import Hi from "@components/LogoAni.astro";
         color: var(--white);
     }
     .slogan {
-        padding-top: calc(var(--space) * 2);
-        padding-bottom: calc(var(--space) / 4);
-        padding-inline: calc(var(--space_) * 1);
+        padding-top: calc(var(--space_block) * 2);
+        padding-bottom: calc(var(--space_block) / 4);
+        padding-inline: calc(var(--space_inline) * 1);
         text-wrap: pretty;
         text-align: center;
         font-weight: 400;
     }
     p {
-        margin-bottom: calc(var(--space) / 8);
+        margin-bottom: calc(var(--space_block) / 8);
     }
 </style>
 

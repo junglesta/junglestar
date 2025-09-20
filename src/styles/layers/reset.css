@@ -55,7 +55,7 @@
     /* Lists */
     ol,
     ul {
-        margin-left: var(--space);
+        margin-left: var(--space_inline);
     }
 
     li > ul,
@@ -68,7 +68,7 @@
         text-decoration: none;
         position: relative;
         display: inline-block;
-        padding-bottom: calc(var(--space) * 0.073); /* was 0.2svh */
+        padding-bottom: calc(var(--space_block) * 0.073); /* was 0.2svh */
     }
 
     /* External link indicator */
@@ -87,8 +87,8 @@
 
     .icon > svg {
         display: inline-block;
-        width: calc(var(--space) * 0.58); /* was 1.6svh */
-        height: calc(var(--space) * 0.58); /* was 1.6svh */
+        width: calc(var(--space_inline) * 0.58); /* was 1.6svh */
+        height: calc(var(--space_inline) * 0.58); /* was 1.6svh */
         vertical-align: middle;
     }
 }

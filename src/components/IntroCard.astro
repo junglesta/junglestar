@@ -15,7 +15,7 @@ const { Content } = await render(entry);
 
 <style>
     .intro_card {
-        padding-block: calc(var(--space) * 3);
+        padding-block: calc(var(--space_block) * 3);
     }
     .button {
         color: var(--white);
@@ -23,16 +23,16 @@ const { Content } = await render(entry);
     }
     .intro_image {
         transform: scale(1.1);
-        padding-bottom: calc(var(--space) * 1);
+        padding-bottom: calc(var(--space_block) * 1);
     }
     .intro_cta {
-        padding-top: calc(var(--space) * 1);
+        padding-top: calc(var(--space_block) * 1);
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .intro_titles {
-        padding-inline: calc(var(--space_) * 2.5);
+        padding-inline: calc(var(--space_inline) * 2.5);
         h2 {
             color: var(--brand_light);
         }
@@ -40,9 +40,9 @@ const { Content } = await render(entry);
 
     .intro_content {
         font-size: var(--font_rem);
-        padding-top: calc(var(--space) * 1);
-        /*padding-inline: calc(var(--space_) * 0.25);*/
-        padding-inline: calc(var(--space_) * 2.5);
+        padding-top: calc(var(--space_block) * 1);
+        /*padding-inline: calc(var(--space_inline) * 0.25);*/
+        padding-inline: calc(var(--space_inline) * 2.5);
         text-justify: distribute;
     }
 </style>

@@ -13,9 +13,9 @@ const currentYear = new Date().getFullYear();
         position: sticky;
         bottom: 0;
         height: 100svh;
-        padding-top: calc(var(--space) * 5);
-        padding-bottom: var(--space);
-        padding-inline: var(--space_);
+        padding-top: calc(var(--space_block) * 5);
+        padding-bottom: var(--space_block);
+        padding-inline: var(--space_inline);
         color: var(--white);
         display: flex;
         flex-direction: column;
@@ -38,8 +38,8 @@ const currentYear = new Date().getFullYear();
 
     .copy {
         font-size: calc(var(--font_size) / 1.5);
-        padding-top: calc(var(--space) * 0.25);
-        padding-inline: var(--space);
+        padding-top: calc(var(--space_block) * 0.25);
+        padding-inline: var(--space_block);
         text-align: center;
         p {
             padding: 0;
@@ -56,7 +56,7 @@ const currentYear = new Date().getFullYear();
 
     .abso {
         position: absolute;
-        bottom: calc(var(--space) * 2);
+        bottom: calc(var(--space_block) * 2);
     }
 
     .flexcolo {
@@ -64,7 +64,7 @@ const currentYear = new Date().getFullYear();
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        gap: calc(var(--space) / 5);
+        gap: calc(var(--space_block) / 5);
         padding: 0 !important;
         margin: 0 !important;
 
@@ -74,14 +74,14 @@ const currentYear = new Date().getFullYear();
     }
 
     .flexcolo.abso {
-        gap: calc(var(--space) / 8);
+        gap: calc(var(--space_block) / 8);
     }
 
     .flexro {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: calc(var(--space) / 2);
+        gap: calc(var(--space_block) / 2);
         padding: 0 !important;
         margin: 0 !important;
         .button {
@@ -94,12 +94,12 @@ const currentYear = new Date().getFullYear();
     }
 
     .footer_logo {
-        padding-top: calc(var(--space) * 2);
+        padding-top: calc(var(--space_block) * 2);
     }
 
     .brand {
         text-transform: uppercase;
-        padding-block: calc(var(--space) * 0.55);
+        padding-block: calc(var(--space_block) * 0.55);
         font-weight: 3400;
     }
     .undies {
@@ -128,7 +128,7 @@ const currentYear = new Date().getFullYear();
         }
     }
     .qr.expanded {
-        padding: var(--space) var(--space_);
+        padding: var(--space_block) var(--space_inline);
         font-size: 75%;
         width: 100svw;
         display: flex;

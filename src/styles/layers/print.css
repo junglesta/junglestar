@@ -27,17 +27,17 @@
             display: block;
             width: 100%;
             text-align: center;
-            margin-top: calc(var(--space) * 0.364); /* was 1svh */
-            margin-bottom: calc(var(--space) * 0.727); /* was 2svh */
+            margin-top: calc(var(--space_block) * 0.364); /* was 1svh */
+            margin-bottom: calc(var(--space_block) * 0.727); /* was 2svh */
         }
 
         .print_title {
-            font-size: calc(var(--space) * 1.745); /* was 4.8svh */
+            font-size: calc(var(--space_inline) * 1.745); /* was 4.8svh */
             line-height: 1;
         }
 
         .print_footer {
-            font-size: calc(var(--space) * 0.756); /* was 2.08svh */
+            font-size: calc(var(--space_inline) * 0.756); /* was 2.08svh */
         }
 
         /* Layout adjustments */
@@ -47,38 +47,38 @@
         }
 
         .top_pad_big {
-            padding-top: calc(var(--space) * 0.58); /* was 1.6svh */
+            padding-top: calc(var(--space_block) * 0.58); /* was 1.6svh */
         }
 
         .product_grid {
             width: 100vw !important;
             flex-direction: row;
             margin: 0 auto;
-            padding: calc(var(--space) * 0.116) 0; /* was 0.32svh 0 */
+            padding: calc(var(--space_block) * 0.116) 0; /* was 0.32svh 0 */
         }
 
         /* Card styles for print */
         .card {
-            font-size: calc(var(--space) * 0.756); /* was 2.08svh */
+            font-size: calc(var(--space_inline) * 0.756); /* was 2.08svh */
             background-color: transparent;
             float: left;
             min-width: auto;
             max-width: 33vw !important;
-            margin: calc(var(--space) * 0.116); /* was 0.32svh */
-            padding: calc(var(--space) * 0.116); /* was 0.32svh */
+            margin-block: calc(var(--space_block) * 0.116);
+            margin-inline: calc(var(--space_inline) * 0.116); /* was 0.32svh */
+            padding-block: calc(var(--space_block) * 0.116);
+            padding-inline: calc(var(--space_inline) * 0.116); /* was 0.32svh */
             box-shadow: none;
-            border: calc(var(--space) * 0.058) solid rgba(0, 0, 0, 0.24); /* was 0.16svh */
+            border: calc(var(--space_inline) * 0.058) solid rgba(0, 0, 0, 0.24); /* was 0.16svh */
         }
 
         .card p {
-            margin-bottom: calc(var(--space) * 0.175); /* was 0.48svh */
+            margin-bottom: calc(var(--space_block) * 0.175); /* was 0.48svh */
         }
 
         .card > * {
-            margin-top: calc(var(--space) * 0.29); /* was 0.8svh */
-            margin-bottom: calc(var(--space) * 0.29); /* was 0.8svh */
-            padding-top: calc(var(--space) * 0.29); /* was 0.8svh */
-            padding-bottom: calc(var(--space) * 0.29); /* was 0.8svh */
+            margin-block: calc(var(--space_block) * 0.29); /* was 0.8svh */
+            padding-block: calc(var(--space_block) * 0.29); /* was 0.8svh */
         }
 
         .card:hover {
@@ -97,26 +97,25 @@
         h3,
         h4 {
             line-height: 1.3;
-            padding-top: calc(var(--space) * 0.116); /* was 0.32svh */
-            padding-bottom: calc(var(--space) * 0.116); /* was 0.32svh */
+            padding-block: calc(var(--space_block) * 0.116); /* was 0.32svh */
         }
 
         h1 {
-            font-size: calc(var(--space) * 1.396); /* was 3.84svh */
+            font-size: calc(var(--space_inline) * 1.396); /* was 3.84svh */
         }
         h2 {
-            font-size: calc(var(--space) * 1.164); /* was 3.2svh */
+            font-size: calc(var(--space_inline) * 1.164); /* was 3.2svh */
         }
         h3 {
-            font-size: calc(var(--space) * 0.931); /* was 2.56svh */
+            font-size: calc(var(--space_inline) * 0.931); /* was 2.56svh */
         }
         h4 {
-            font-size: calc(var(--space) * 0.873); /* was 2.4svh */
+            font-size: calc(var(--space_inline) * 0.873); /* was 2.4svh */
         }
 
         /* Element specific adjustments */
         .selling_points {
-            font-size: calc(var(--space) * 0.815); /* was 2.24svh */
+            font-size: calc(var(--space_inline) * 0.815); /* was 2.24svh */
             line-height: 1.15;
         }
 
@@ -125,13 +124,14 @@
         }
 
         .checkmark:before {
-            width: calc(var(--space) * 0.116); /* was 0.32svh */
-            height: calc(var(--space) * 0.116); /* was 0.32svh */
-            border-width: 0 calc(var(--space) * 0.116) calc(var(--space) * 0.116) 0; /* was 0.32svh */
+            width: calc(var(--space_inline) * 0.116); /* was 0.32svh */
+            height: calc(var(--space_block) * 0.116); /* was 0.32svh */
+            border-width: 0 calc(var(--space_block) * 0.116)
+                calc(var(--space_inline) * 0.116) 0; /* was 0.32svh */
             transform: rotate(45deg);
-            padding-right: calc(var(--space) * 0.233); /* was 0.64svh */
-            padding-bottom: calc(var(--space) * 0.465); /* was 1.28svh */
-            margin-right: calc(var(--space) * 0.58); /* was 1.6svh */
+            padding-right: calc(var(--space_inline) * 0.233); /* was 0.64svh */
+            padding-bottom: calc(var(--space_block) * 0.465); /* was 1.28svh */
+            margin-right: calc(var(--space_inline) * 0.58); /* was 1.6svh */
         }
 
         /* Hide elements in print */

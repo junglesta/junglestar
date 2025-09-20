@@ -72,8 +72,8 @@ const intro = defineCollection({
   ) =>
     z.object({
       title: z.string(),
-      subtile: z.string(),
-      subsubtile: z.string(),
+      subtitle: z.string(),
+      tagline: z.string(),
       image: z.object({
         src: image(), // Use image() helper instead of z.string()
         alt: z.string().default("Junglestar"),
@@ -91,7 +91,7 @@ const designConcepts = defineCollection({
   ) =>
     z.object({
       title: z.string(),
-      subtile: z.string().optional().nullable(),
+      subtitle: z.string().optional().nullable(),
       draft: z.boolean().optional().default(false),
       image: z
         .object({

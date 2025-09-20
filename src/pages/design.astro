@@ -4,7 +4,7 @@ import Layout from "@layouts/Layout.astro";
 //import Card from "@components/DesignConceptsCard.astro";
 import { getCollection } from "astro:content";
 const posts = await getCollection('designConcepts', ({ data }) => {
-  return data.draft !== true && import.meta.env.PROD ? data.draft !== true : true;
+  return !import.meta.env.PROD || data.draft !== true;
 });
 
 // Page metadata
@@ -43,6 +43,7 @@ const description =
     }
 
 </style>
+
 <Layout title={title} description={description}>
     <main>
         <h1 class="center">Design delivers!</h1>

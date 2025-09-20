@@ -7,7 +7,7 @@
         "title": {
           "type": "string"
         },
-        "subtile": {
+        "subtitle": {
           "anyOf": [
             {
               "anyOf": [

@@ -1,6 +1,6 @@
 ---
 title: communication strategy
-subtile: Develop your brand voice
+subtitle: Develop your brand voice
 image:
   src: communication-strategy.svg
   alt: "Overwelmed?"

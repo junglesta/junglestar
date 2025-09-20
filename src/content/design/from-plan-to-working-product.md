@@ -1,6 +1,6 @@
 ---
 title: From plan to working product
-subtile: Our solutions include everything you need.
+subtitle: Our solutions include everything you need.
 image:
   src: from-plan-to-working-product.svg
   alt: "Overwelmed?"

@@ -1,7 +1,7 @@
 ---
-title: You need serious help.
-subtile: Junglestar is a small, flexible web agency.
-subsubtile: Sustainable web design to help you and the planet.
+title: Running on beliefs? You need serious help.
+subtitle: Junglestar is a small, flexible web agency.
+tagline: Sustainable web design to help you and the planet.
 image:
   src: ./2.svg
   alt: "Running on beliefs?"

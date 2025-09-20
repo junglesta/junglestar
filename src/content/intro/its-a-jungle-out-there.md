@@ -1,7 +1,7 @@
 ---
 title: It's a Jungle out there.
-subtile: Can customers reach you?
-subsubtile: When I Google or ask an LLM about your company what do I get?
+subtitle: Can customers reach you?
+tagline: When I Google or ask an LLM about your company what do I get?
 image:
   src: ./1.svg
   alt: "It's a Jungle out there."

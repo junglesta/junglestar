@@ -7,10 +7,10 @@
         "title": {
           "type": "string"
         },
-        "subtile": {
+        "subtitle": {
           "type": "string"
         },
-        "subsubtile": {
+        "tagline": {
           "type": "string"
         },
         "image": {
@@ -44,8 +44,8 @@
       },
       "required": [
         "title",
-        "subtile",
-        "subsubtile",
+        "subtitle",
+        "tagline",
         "image",
         "cta",
         "link",

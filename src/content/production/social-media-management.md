@@ -1,6 +1,6 @@
 ---
 title: Social Media Management
-subtile: Strategy and management leveraging automation
+subtitle: Strategy and management leveraging automation
 tags:
   - content
   - media-strategy

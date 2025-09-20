@@ -1,14 +1,11 @@
 ---
-
 title: Open source technology
-subtile: We pick the best and smartest.
+subtitle: We pick the best and smartest.
 image:
 src: open-source-technology.svg
 alt: "Overwelmed?"
 tags:
-
-- design
-
+  - design
 ---
 
 We make use of the best and newest Open Source technologies and services:

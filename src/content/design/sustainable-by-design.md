@@ -1,6 +1,6 @@
 ---
 title: What's Sustainable in Marketing Communication?
-subtile: Sustainable for you. Never too busy again. Build for easy maintainance.
+subtitle: Sustainable for you. Never too busy again. Build for easy maintainance.
 image:
   src: open-source-technology.svg
   alt: "Overwelmed?"

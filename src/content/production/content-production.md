@@ -1,6 +1,6 @@
 ---
 title: Content production
-subtile: From establishing a meaningful strategy...
+subtitle: From establishing a meaningful strategy...
 tags:
   - content
   - figures-of-speech

@@ -1,6 +1,6 @@
 ---
 title: Need some help
-subtile: We offer Guidance.
+subtitle: We offer Guidance.
 tags:
   - content
   - creative-process

@@ -7,7 +7,7 @@
         "title": {
           "type": "string"
         },
-        "subtile": {
+        "subtitle": {
           "type": "string"
         },
         "image": {
@@ -23,9 +23,7 @@
                   "default": "Junglestar"
                 }
               },
-              "required": [
-                "src"
-              ],
+              "required": ["src"],
               "additionalProperties": false
             },
             {
@@ -37,11 +35,7 @@
           "type": "string"
         }
       },
-      "required": [
-        "title",
-        "subtile",
-        "image"
-      ],
+      "required": ["title", "subtitle", "image"],
       "additionalProperties": false
     }
   },

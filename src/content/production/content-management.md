@@ -1,6 +1,6 @@
 ---
 title: Content management
-subtile: Delegate, so you can focus on your business
+subtitle: Delegate, so you can focus on your business
 tags:
   - content
   - manage-content

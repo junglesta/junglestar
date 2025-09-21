@@ -30,12 +30,13 @@ const pageSubtitle = "";
     }
 
     .projects-grid {
+        padding: var(--space_block) var(--space_inline);
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: var(--space_block) var(--space_inline);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 370px) {
         .projects-grid {
             grid-template-columns: 1fr;
         }
@@ -44,7 +45,7 @@ const pageSubtitle = "";
 
 <Layout title={pageTitle} description={pageDescription}>
     <main>
-        <h1 class="center">Check some of your LIVE projects</h1>
+        <h1 class="center">Live Projects</h1>
         <div class="projects-grid">
             {projects.map((project) => <ProjectCard {...project} />)}
         </div>

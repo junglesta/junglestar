@@ -7,7 +7,11 @@ const currentPath = Astro.url.pathname;
 
 <style>
     nav.flexcolo {
-        margin-block: calc(var(--space_block) * 6);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-block: calc(var(--space_block) * 1);
+        padding-left: 5.5rem;
     }
     .button {
         text-align: center;

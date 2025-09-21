@@ -19,72 +19,62 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
 
 <style>
     article {
-        padding: 0 !important;
-    }
-    .works_card {
+        padding: 0;
         user-select: none;
         position: relative;
-        background-color: var(--background_color);
         background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         border: 1px solid var(--brand);
-        border-radius: 8px;
-        padding: 1.5rem;
+        border-radius: var(--radius);
         transition:
             transform 0.2s,
             box-shadow 0.2s;
     }
 
-    .action_button {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .works_card:hover {
+    article:hover {
         transform: translateY(3px);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
-    .work_icon {
+    .card_works_link {
+        height: 288px;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        row-gap: calc(var(--space) / 1.5);
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+    .card_works_link::after {
+        display: none;
+    }
+
+    .icon_works {
         width: 25%;
+        min-width: 111px;
         height: auto;
         object-fit: contain;
-        margin-block: calc(var(--space_block) / 2);
-        margin-inline: auto;
+        justify-self: center;
     }
 
     h3 {
         margin: 0;
-        padding-bottom: calc(var(--space_block) / 5);
-        font-size: var(--font_size);
+        padding-bottom: 0;
+        font-size: calc(var(--font_size) / 1.25);
         text-align: center;
+        font-weight: 500;
+        padding-inline: var(--space_inline);
     }
 
-    a.action_button {
-        position: relative;
-        text-decoration: none;
-        color: inherit;
-    }
-    .title_heading_group {
-        margin-block: 0;
-    }
-    .subtitle {
+    .subtitle_works {
         display: block;
-        font-size: 0.875rem;
+        font-size: 1rem;
         font-weight: normal;
-        color: #6b7280;
+        color: var(--text_color);
         margin-top: 0.25rem;
     }
     .webapp:before {
         content: "APP";
         display: block;
-        font-size: calc(var(--font_rem) / 1.5);
-        font-weight: 400;
         position: absolute;
         top: 10px;
         right: 10px;
@@ -93,37 +83,32 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
         border: 1px solid var(--brand);
         background-color: inherit;
         color: var(--brand);
-    }
-    header {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        font-size: calc(var(--font_rem) / 1.5);
+        font-weight: 400;
     }
 </style>
 
-<article class={"works_card " + category}>
+<article class={"card_works  " + category}>
     <a
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        class="action_button"
+        class="card_works_link"
     >
-        <header>
-            <h3 class="title_heading_group weight500">
-                {title}
-                {subtitle && <span class="subtitle">{subtitle}</span>}
-            </h3>
-        </header>
         {
             icon && (
                 <img
                     src={icon.url}
                     alt={icon.name}
-                    class="work_icon"
+                    class="icon_works"
                     loading="lazy"
                 />
             )
         }
+
+        <h3 class="title_works">
+            {title}
+            {subtitle && <span class="subtitle_works">{subtitle}</span>}
+        </h3>
     </a>
 </article>

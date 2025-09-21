@@ -186,22 +186,19 @@
 
     /* Cards */
     .card {
-        font-size: calc(var(--space_inline) * 0.58); /* was 1.6svh */
-        z-index: 10;
-        background-color: hsla(0, 0%, 95%, 1);
-        cursor: pointer;
-        border-radius: calc(var(--space_block) * 0.145); /* was 0.4svh */
-        display: block;
         position: relative;
+        z-index: 10;
+        display: block;
         width: 90%;
-        min-width: 90%;
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: calc(var(--space_inline) * 0.58); /* was 1.6svh */
-        padding-right: calc(var(--space_inline) * 0.58); /* was 1.6svh */
+        height: clamp(220px, 220px, 250px);
+        background-color: hsla(0, 0%, 95%, 1); /* was 0.4svh */
+        border-radius: calc(var(--space_block) * 0.145);
+        margin-inline: auto;
+        padding-inline: calc(var(--space_inline) * 0.58); /* was 1.6svh */
         box-shadow: var(--card_shadow);
         transition: var(--transition_shadow);
+        font-size: calc(var(--space_inline) * 0.58); /* was 1.6svh */
+        cursor: pointer;
     }
 
     @media (min-width: 1024px) {

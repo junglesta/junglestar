@@ -92,7 +92,7 @@
         --button_book: var(--brand);
 
         /* Card tokens */
-        --big_card_width: 27.5vw;
+        --big_card_width: 27.5svw;
 
         /* Product categories */
         --product_category_1: hsla(117, 100%, 81%, 0.75);

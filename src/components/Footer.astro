@@ -63,7 +63,7 @@ const currentYear = new Date().getFullYear();
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         gap: calc(var(--space_block) / 5);
         padding: 0 !important;
         margin: 0 !important;
@@ -95,12 +95,20 @@ const currentYear = new Date().getFullYear();
 
     .footer_logo {
         padding-top: calc(var(--space_block) * 2);
+        transform: rotate(0deg);
     }
 
     .brand {
+        position: absolute;
+        left: -1rem;
+        top: calc(50% - 9ch);
         text-transform: uppercase;
         padding-block: calc(var(--space_block) * 0.55);
-        font-weight: 3400;
+        font-weight: 100;
+        writing-mode: vertical-lr; /* or vertical-rl for right-to-left */
+        rotate: 180deg;
+        font-size: 77px;
+        opacity: 0.175;
     }
     .undies {
         position: relative;
@@ -149,10 +157,11 @@ const currentYear = new Date().getFullYear();
         href="/"
     >
         <Logo />
-        <div class="action_title brand">
-            {siteData.brand} Agency
-        </div>
     </a>
+
+    <div class="brand">
+        {siteData.brand} Agency
+    </div>
 
     <Nav />
 

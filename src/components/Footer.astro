@@ -3,24 +3,34 @@
 import * as siteData from "@data/site.json";
 import Nav from "@components/Nav.astro";
 import Logo from "@svgs/logo_stroke.svg";
+import Carbon from "@components/Carbon.astro";
 
 const currentYear = new Date().getFullYear();
 ---
 
 <style>
+    hr {
+        width: 100%;
+        padding-block: 0;
+        margin-block: 10px;
+    }
+
     .footer_site {
         width: 100%;
-        position: sticky;
-        bottom: 0;
-        height: 100svh;
+        min-height: var(--viewport_height);
+
+        /* Simple sticky footer */
+        margin-top: auto;
+
         padding-top: calc(var(--space_block) * 5);
         padding-bottom: var(--space_block);
         padding-inline: var(--space_inline);
         color: var(--white);
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        z-index: 0;
+        position: relative;
 
         a {
             color: var(--white);
@@ -34,6 +44,21 @@ const currentYear = new Date().getFullYear();
         svg.logo {
             height: 16svh;
         }
+    }
+
+    /* Make sure body/html use flexbox for sticky footer */
+    :global(html, body) {
+        height: 100%;
+    }
+
+    :global(body) {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    :global(main) {
+        flex: 1;
     }
 
     .copy {
@@ -99,16 +124,8 @@ const currentYear = new Date().getFullYear();
     }
 
     .brand {
-        position: absolute;
-        left: -1rem;
-        top: calc(50% - 9ch);
         text-transform: uppercase;
-        padding-block: calc(var(--space_block) * 0.55);
-        font-weight: 100;
-        writing-mode: vertical-lr; /* or vertical-rl for right-to-left */
-        rotate: 180deg;
-        font-size: 66px;
-        opacity: 0.25;
+        font-size: 150%;
     }
     .undies {
         position: relative;
@@ -123,7 +140,6 @@ const currentYear = new Date().getFullYear();
         }
     }
     .qr {
-        /*LINK*/
         padding: 0;
         width: 100svw;
         display: flex;
@@ -148,6 +164,11 @@ const currentYear = new Date().getFullYear();
             height: clamp(100px, 30svw, 300px);
         }
     }
+    @media (max-width: 450px) {
+        .hide_on_mobile {
+            display: none;
+        }
+    }
 </style>
 
 <footer class="footer_site">
@@ -159,13 +180,13 @@ const currentYear = new Date().getFullYear();
         <Logo />
     </a>
 
-    <div class="brand">
-        {siteData.brand} Agency
-    </div>
-
     <Nav />
 
     <div class="flexcolo abso">
+        <div class="brand">
+            {siteData.brand} Agency
+        </div>
+        <hr />
         <div class="flexro">
             <a
                 class="CTAbutton mail footer_link"
@@ -187,14 +208,19 @@ const currentYear = new Date().getFullYear();
 
             <a href="/about" class="footer_link">About</a>
         </div>
-
         <div class="copy">
             <p>
                 &copy; 2012-{currentYear}
-                {siteData.brand}.org | <a href={siteData.repo}> Source</a> licensed
-                under
+                {siteData.brand}.org <span class="hide_on_mobile">|</span>
+                <a href={siteData.repo}> This webite's code is Open Source, </a>
+                licensed under
                 <a href={siteData.license_url}> CC BY 4.0 </a>
             </p>
+            <p>
+                0.02g of CO2/viewWebsite Carbon. Cleaner than 98% of pages
+                tested
+            </p>
         </div>
+        <hr />
     </div>
 </footer>

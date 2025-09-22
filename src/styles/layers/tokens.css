@@ -19,7 +19,9 @@
         --weight_heavy: 900; /* Fize space */
         --stone: 3rem;
         --radius: clamp(3px, 0.5rem, 1.5rem);
+
         /* Dynamic spaces */
+        --viewport_height: 100vh;
 
         /* vertical */
         --space_block: 2.75svh;

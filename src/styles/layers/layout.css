@@ -12,7 +12,6 @@
         color: var(--text_color);
         background-color: var(--brand);
         -webkit-text-size-adjust: 100%;
-        /*position: relative;*/
     }
 
     /* Responsive font scaling is taken care by clamp() in the token declaration*/
@@ -44,6 +43,7 @@
     .main {
         position: relative;
         z-index: 1;
+        background-color: transparent;
     }
 
     .wrapper {

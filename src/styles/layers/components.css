@@ -268,6 +268,7 @@
     .button {
         user-select: none;
         font-size: inherit;
+        font-weight: var(--weight_med);
         display: inline-block;
         width: auto;
         line-height: 1.4;
@@ -278,7 +279,6 @@
             calc(var(--space_inline) * 0.87); /* was 0.8svh 2.4svh */
         color: var(--brand);
         border: 2px solid var(--white); /* Fixed orphan --vertical_rhythm */
-        font-weight: var(--weight);
     }
 
     .button:focus,

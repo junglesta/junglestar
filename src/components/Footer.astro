@@ -169,6 +169,22 @@ const currentYear = new Date().getFullYear();
             display: none;
         }
     }
+
+    @media (min-width: 450px) {
+        .show_on_mobile {
+            display: none;
+        }
+    }
+
+    a::before,
+    a::after {
+        content: none;
+        display: none;
+    }
+
+    .copy .small_pad_top {
+        padding-top: calc(var(--space_block) / 2.5);
+    }
 </style>
 
 <footer class="footer_site">
@@ -206,19 +222,37 @@ const currentYear = new Date().getFullYear();
                 QRcode
             </a>
 
+            <a
+                class="CTAbutton github footer_link"
+                href={siteData.github}
+                title="Get In Touch. Send us an email"
+                target="_blank"
+                rel="noopener">Github</a
+            >
+
             <a href="/about" class="footer_link">About</a>
         </div>
         <div class="copy">
             <p>
-                &copy; 2012-{currentYear}
-                {siteData.brand}.org <span class="hide_on_mobile">|</span>
-                <a href={siteData.repo}> This webite's code is Open Source, </a>
+                <span class="hide_on_mobile">|</span>
+                <a href={siteData.repo}>
+                    This webite's code is <strong>Open Source</strong>,
+                </a>
                 licensed under
                 <a href={siteData.license_url}> CC BY 4.0 </a>
             </p>
+
             <p>
-                0.02g of CO2/viewWebsite Carbon. Cleaner than 98% of pages
-                tested
+                <a
+                    href="https://websitecarbon.com/"
+                    target="_blank"
+                    rel="noopener"><strong>Website Carbon:</strong></a
+                > 0.02g of CO2/view. <span class="show_on_mobile"><br /></span
+                >Cleaner than 98% of pages tested.
+            </p>
+            <p class="small_pad_top">
+                &copy; 2012-{currentYear}
+                {siteData.brand}.org
             </p>
         </div>
         <hr />

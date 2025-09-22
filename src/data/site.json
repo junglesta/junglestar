@@ -6,6 +6,7 @@
   "email": "info@junglestar.org",
   "url": "https://junglestar.org",
   "repo": "https://github.com/junglesta/junglestar",
+  "github": "https://github.com/junglesta",
   "deploy_check": "https://junglestar.netlify.app/",
   "status_badge_markdown-snippet": "[![Netlify Status](https://api.netlify.com/api/v1/badges/db2b418a-ca16-460a-9bf3-e82dc4cea661/deploy-status)](https://app.netlify.com/projects/junglestar/deploys)",
   "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",

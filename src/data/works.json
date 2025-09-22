@@ -47,8 +47,8 @@
   {
     "id": "qr",
     "date": "2016-01-09",
-    "title": "Quick QRcode Generator",
-    "subtitle": null,
+    "title": "QRcode Generator",
+    "subtitle": "Free Open Source",
     "category": "webapp",
     "tags": ["tool", "open-source"],
     "url": "https://qr.junglestar.org/?ref=junglestar.org",

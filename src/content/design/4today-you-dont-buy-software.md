@@ -8,9 +8,9 @@ tags:
   - design
 ---
 
-Today you pay a developer who can code components together to _craft the Customer Experience_ your business needs.
+Today you pay a developer who can code components together to **craft the Customer Experience** your business needs.
 
-Flexible enough to help you _leverage the Free_ or [Freemium Services](https://en.wikipedia.org/wiki/Freemium#:~:text=Freemium%2C%20a%20portmanteau%20of%20the,free%20version%20of%20the%20software), abundant today.
+Flexible enough to help you **leverage the Free** or [Freemium Services](https://en.wikipedia.org/wiki/Freemium#:~:text=Freemium%2C%20a%20portmanteau%20of%20the,free%20version%20of%20the%20software), abundant today.
 
 We offer Guidance. We can empower you with modern open source software and show you how easily you can become productive with it.
 

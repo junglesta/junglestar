@@ -1,6 +1,6 @@
 ---
-title: communication strategy
-subtitle: Develop your brand voice
+title: Communication Strategy
+subtitle: Develop Your Brand Voice
 image:
   src: "communication_strategy.svg"
   alt: "Overwelmed?"
@@ -8,8 +8,8 @@ tags:
   - design
 ---
 
-We design and develop _communication strategies_. We can help your company define a meaningful _brand discourse_.
+We design and develop **communication strategies**. We can help your company define a meaningful **brand discourse**.
 
-Focusing on your offer and your audience, we will create an integrated _content publishing strategy_ for your chosen media channels.
+Focusing on your offer and your audience, we will create an integrated **content publishing strategy** for your chosen media channels.
 
-Your brand will develop a _voice_, a recognisable style, to organically grow a meaningful followers base quickly.
+Your brand will develop a **voice**, a recognisable style, to organically grow a meaningful followers base quickly.

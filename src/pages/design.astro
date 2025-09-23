@@ -37,13 +37,6 @@ const description =
         color: #111827;
     }
 
-    .baloon {
-        border: 1px solid var(--brand);
-        border-radius: var(--radius);
-        padding: 1rem;
-        margin-bottom: 2rem;
-    }
-
     .toc {
         margin: 2rem 0;
         padding: 1.5rem;
@@ -88,62 +81,59 @@ const description =
         border-bottom: none;
     }
 
-    .post-header {
+    .post_header {
         margin-bottom: 2rem;
     }
 
-    .post-title {
+    .post_title {
+        color: var(--brand);
         font-size: 2rem;
         margin-bottom: 0.5rem;
-        color: #111827;
     }
 
-    .post-subtitle {
-        font-size: 1.25rem;
-        color: #6b7280;
+    .post_subtitle {
         margin-bottom: 1rem;
+        font-weight: var(--weight_med);
     }
 
-    .post-image {
+    .post_image {
         margin: 2rem 0;
         text-align: center;
     }
 
-    .post-image img {
+    .post_image img {
         max-width: 100%;
         height: auto;
         border-radius: var(--radius);
     }
 
-    .post-content {
-        font-size: 1.1rem;
-        line-height: 1.7;
-        color: #374151;
+    .post_content {
+        /*color: #374151;*/
     }
 
-    .post-content :global(h1),
-    .post-content :global(h2),
-    .post-content :global(h3) {
+    .post_content :global(h1),
+    .post_content :global(h2),
+    .post_content :global(h3) {
         margin-top: 2rem;
         margin-bottom: 1rem;
     }
 
-    .post-content :global(p) {
-        margin-bottom: 1rem;
+    .post_content :global(p) {
+        margin-bottom: var(--space_block);
     }
 
-    .post-content :global(ul),
-    .post-content :global(ol) {
-        margin-bottom: 1rem;
-        padding-left: 2rem;
+    .post_content :global(ul),
+    .post_content :global(ol) {
+        margin-bottom: var(--space_block);
+        padding-left: var(--space_inline);
     }
 
-    .post-content :global(a) {
+    .post_content :global(a) {
         color: var(--brand);
         text-decoration: underline;
     }
 
-    .back-to-top {
+    .back_to_top {
         display: inline-block;
         margin-top: 1rem;
         color: var(--brand);
@@ -151,36 +141,36 @@ const description =
         font-size: 0.9rem;
     }
 
-    .back-to-top:hover {
+    .back_to_top:hover {
         text-decoration: underline;
     }
 
-    @media (max-width: 768px) {
-        .post-title {
+    /*@media (max-width: 768px) {
+        .post_title {
             font-size: 1.5rem;
         }
 
-        .post-subtitle {
+        .post_subtitle {
             font-size: 1.1rem;
         }
-    }
+    }*/
 </style>
 
 <Layout title={title} description={description}>
     <main>
-        <h1 class="center">Design delivers!</h1>
-        <h3 class="center baloon">
+        <h2 class="center">Design delivers!</h2>
+        <h3 class="center">
             Designing for sustainabilty? What's that...
         </h3>
 
         <!-- Table of Contents -->
         <div class="toc">
-            <h2 class="center">Table of Contents</h2>
+            <h4 class="center">Table of Contents</h4>
             <ul>
                 {
                     renderedPosts.map((post) => (
                         <li>
-                            <a href={`#${post.id}`}>{post.data.title}</a>
+                            <a href={`#${post.id}`}>{post.data.title.toUpperCase()}</a>
                         </li>
                     ))
                 }
@@ -192,31 +182,34 @@ const description =
             {
                 renderedPosts.map((post) => (
                     <article class="post" id={post.id}>
-                        <div class="post-header">
-                            <h2 class="post-title">{post.data.title}</h2>
+
+                        {post.data.image && (
+                            <div class="post_image">
+                                <Image
+                                    src={post.data.image.src}
+                                    alt={post.data.image.alt}
+                                    width={200}
+                                    height={200}
+                                />
+                            </div>
+                        )}
+
+                        <div class="post_header">
+                            <h3 class="post_title">{post.data.title}</h3>
                             {post.data.subtitle && (
-                                <p class="post-subtitle">
+                                <p class="post_subtitle">
                                     {post.data.subtitle}
                                 </p>
                             )}
                         </div>
 
-                        {post.data.image && (
-                            <div class="post-image">
-                                <Image
-                                    src={post.data.image.src}
-                                    alt={post.data.image.alt}
-                                    width={600}
-                                    height={300}
-                                />
-                            </div>
-                        )}
 
-                        <div class="post-content">
+
+                        <div class="post_content">
                             <post.Content />
                         </div>
 
-                        <!-- <a href="#top" class="back-to-top">
+                        <!-- <a href="#top" class="back_to_top">
                             ↑ Back to top
                         </a> -->
                     </article>

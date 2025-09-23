@@ -45,21 +45,6 @@ const currentYear = new Date().getFullYear();
         }
     }
 
-    /* Make sure body/html use flexbox for sticky footer */
-    :global(html, body) {
-        height: 100%;
-    }
-
-    :global(body) {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-
-    :global(main) {
-        flex: 1;
-    }
-
     .copy {
         font-size: calc(var(--font_size) / 1.5);
         padding-top: calc(var(--space_block) * 0.25);
@@ -72,10 +57,6 @@ const currentYear = new Date().getFullYear();
         a {
             text-decoration: none;
         }
-    }
-
-    .footer_link {
-        font-size: var(--font_size);
     }
 
     .abso {

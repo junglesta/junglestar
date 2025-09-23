@@ -41,8 +41,8 @@
 
     /* Main structure */
     .main {
-        position: relative;
-        z-index: 1;
+        /*position: relative;*/
+        /*z-index: 1;*/
         background-color: transparent;
     }
 

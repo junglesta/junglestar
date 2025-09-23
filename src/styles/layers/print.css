@@ -124,8 +124,6 @@
         }
 
         .checkmark:before {
-            width: calc(var(--space_inline) * 0.116); /* was 0.32svh */
-            height: calc(var(--space_block) * 0.116); /* was 0.32svh */
             border-width: 0 calc(var(--space_block) * 0.116)
                 calc(var(--space_inline) * 0.116) 0; /* was 0.32svh */
             transform: rotate(45deg);

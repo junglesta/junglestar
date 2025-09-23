@@ -12,6 +12,23 @@
         flex-direction: row;
     }
 
+    .flex.flex_justify_center {
+        justify-content: center;
+    }
+
+    .flex.flex_align_center {
+        align-items: center;
+    }
+
+    .flex.flex_cols {
+        flex-direction: column;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+
     /* Color utilities */
     .color_black {
         color: var(--black) !important;

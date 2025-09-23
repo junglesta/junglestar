@@ -8,9 +8,241 @@ const pageDescription =
 const pageSubtitle = "Check our packages!";
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
-    {pageSubtitle}
+<style>
+    .brand_color {
+        color: var(--brand);
+    }
 
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .offer_content {
+        padding-bottom: 16dvw;
+    }
+
+    .offer_content .h1,
+    .section .h1,
+    .offer_content .h2,
+    .section .h2,
+    .offer_content .h3,
+    .section .h3,
+    .offer_content .h4,
+    .section .h4,
+    .offer_content .h5,
+    .section .h5,
+    .offer_content .h6,
+    .section .h6,
+    .offer_content h1,
+    .section h1,
+    .offer_content h2,
+    .section h2,
+    .offer_content h3,
+    .section h3,
+    .offer_content h4,
+    .section h4,
+    .offer_content h5,
+    .section h5,
+    .offer_content h6,
+    .section h6 {
+        color: var(--brand);
+    }
+
+    .light_bg,
+    .page_content.light_bg {
+        background-color: #c3daf1;
+    }
+
+    .mean_title {
+        color: var(--brand);
+        min-height: 50dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mean_title.mean_title--first {
+        background-color: black;
+    }
+    .mean_title.mean_title--second {
+        margin-top: 2rem;
+    }
+    .mean_title.mean_title--first h1,
+    .mean_title.mean_title--first h2,
+    .mean_title.mean_title--first h3 {
+        color: white;
+    }
+
+    .mean_icon {
+        min-width: 120px;
+        padding-top: 10px;
+        width: 20vw;
+        max-width: 240px;
+    }
+    .mean_icon.four_icon_group {
+        max-width: 80vw;
+        display: flex;
+        width: 80vw;
+    }
+    @media only screen and (min-width: 601px) {
+        .mean_icon.four_icon_group {
+            width: 70vw;
+        }
+    }
+    @media only screen and (min-width: 821px) {
+        .mean_icon.four_icon_group {
+            width: 60vw;
+        }
+    }
+    @media only screen and (min-width: 1025px) {
+        .mean_icon.four_icon_group {
+            width: 50vw;
+        }
+    }
+    @media only screen and (min-width: 1025px) {
+        .mean_icon.four_icon_group {
+            width: 50vw;
+        }
+    }
+    @media only screen and (min-width: 1025px) {
+        .mean_icon.four_icon_group {
+            width: 50vw;
+        }
+    }
+
+    .top_pad--big {
+        padding-top: 8dvw;
+    }
+    .looper__link {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .product_text h2,
+    .product_text h3 {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .color_black {
+        color: #000 !important;
+    }
+
+    h2,
+    .h2 {
+        font-size: 3.5dvw;
+        line-height: 1.1;
+    }
+
+    h4,
+    .h4 {
+        font-size: 2.5dvw;
+        line-height: 1.1;
+    }
+
+    @media (max-width: 800px) {
+        h4,
+        .h4 {
+            font-size: 20px;
+        }
+    }
+
+    .product_grid {
+        margin: 0 8dvw;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-inline);
+    }
+
+    @media only screen and (min-width: 1025px) {
+        .product_grid {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+        }
+    }
+
+    .product_text {
+        margin-block: 1rem;
+        padding-inline: 2rem;
+    }
+
+    .selling_points {
+        font-size: 15px;
+        margin-bottom: 3dvw;
+        max-width: 400px;
+        margin-inline: auto;
+    }
+
+    .button_row {
+        padding-top: 0.125rem;
+        padding-bottom: 0.5rem;
+        width: 100%;
+        display: block;
+        a {
+            color: var(--brand);
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 2px;
+        }
+    }
+
+    /*.card .button_row {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }*/
+
+    .product_text .button_row {
+        padding-inline: 2rem;
+        text-align: center;
+    }
+
+    .button {
+        font-size: 120%;
+        background-color: #fff;
+        display: inline-block;
+        width: auto;
+        line-height: 32px;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-radius: 4px;
+        padding: 5px 15px;
+        box-shadow:
+            0px 0px 2px 0px rgba(0, 0, 0, 0.12),
+            0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+        color: var(--brand);
+        border: 2px solid var(--brand);
+        margin: 2rem auto;
+        font-weight: 600;
+    }
+
+    four_icon_group svg {
+        padding: 4px;
+        max-height: 210px;
+    }
+
+    svg.brand_color {
+        stroke: var(--brand);
+    }
+    @media only screen and (min-width: 601px) {
+        svg.outlined {
+            stroke-width: 6px;
+        }
+    }
+    svg.outlined {
+        fill: transparent;
+        stroke-width: 8px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+    }
+</style>
+
+<Layout title={pageTitle} description={pageDescription}>
     <div class="print_only">
         <div class="print_imperatif">Make life easy for your customers!</div>
         <div class="print_title">Junglestar</div>
@@ -43,11 +275,9 @@ const pageSubtitle = "Check our packages!";
                         </svg>
                     </div>
 
-                    <h1 class="center">
-                        Is your website hard to use on phones?
-                    </h1>
+                    <h1 class="center">Is your website slow?</h1>
                     <h2 class="h3 center">
-                        Need to zoom-in to read the text and menus?
+                        Do I need to pinch & zoom a PDF to see your pricelist?
                     </h2>
                 </div>
             </div>
@@ -250,8 +480,8 @@ const pageSubtitle = "Check our packages!";
 
                     <p class="center">
                         We craft a special design for your brand, produce &
-                        develop a well thought user experiences by embracing
-                        your existing look and brand identity.
+                        develop a well thought user-experience by embracing your
+                        existing look and brand identity.
                     </p>
 
                     <div class="selling_points">

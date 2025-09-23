@@ -43,9 +43,50 @@ const {
         <slot name="head_banner" />
         <LandingScreen />
         <main class="main">
+            <span id="top"></span>
             <slot />
         </main>
 
         <Footer />
     </body>
+
+    <script>
+        function addLink(): void {
+            if (typeof window.getSelection === "undefined") return;
+
+            const body_element = document.getElementsByTagName(
+                "body",
+            )[0] as HTMLBodyElement;
+            const selection = window.getSelection();
+
+            if (!selection || ("" + selection).length < 30) return;
+
+            const newdiv = document.createElement("div") as HTMLDivElement;
+            newdiv.style.position = "absolute";
+            newdiv.style.left = "-99999px";
+            body_element.appendChild(newdiv);
+
+            const range = selection.getRangeAt(0);
+            newdiv.appendChild(range.cloneContents());
+
+            if (range.commonAncestorContainer.nodeName === "PRE") {
+                newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+            }
+
+            newdiv.innerHTML +=
+                "<br /><br />&#9733; Extract from: <a href='" +
+                document.location.href +
+                "'>" +
+                document.location.href +
+                "</a><br />&#9733; 2024 &copy; Junglestar.";
+
+            selection.selectAllChildren(newdiv);
+
+            window.setTimeout((): void => {
+                body_element.removeChild(newdiv);
+            }, 200);
+        }
+
+        document.oncopy = addLink;
+    </script>
 </html>

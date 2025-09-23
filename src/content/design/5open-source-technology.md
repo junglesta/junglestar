@@ -9,14 +9,18 @@ tags:
   - technology
 ---
 
-The Problem: Proprietary software locks you in. Rising subscription costs, vendor dependencies, and zero control over your critical tools.
+<small><em>The Problem</em></small>:
 
-The Solution: **Go open source.** Build on **transparent foundations** you can inspect, modify, and own forever. Join **thriving communities** that innovate faster than any corporation.
+Proprietary software locks you in. Rising subscription costs, **vendor dependencies**, and **zero control** over your **critical tools**.
 
-Why It Matters:
+<small><em>The Solution</em></small>:
 
-- **Freedom**: No vendor lock-in or surprise price hikes
-- **Security**: Thousands of eyes catching bugs before you do
-- **Longevity**: Your tools survive even if companies don't
+**Go open source.** Build on transparent foundations we all can inspect, modify, and own forever. Leverage **thriving communities** that innovate faster than any corporation.
+
+<small><em>Why It Matters</em></small>:
+
+- **Freedom**: No vendor lock-in or surprise price hikes.
+- **Security**: Thousands of eyes catching bugs before you do.
+- **Longevity**: Your tools survive even if companies don't.
 
 Ready to own your stack? Open source gives you **true digital independence**.

@@ -207,4 +207,14 @@
             margin-block: calc(var(--space_block) * 0.25);
         }
     }
+
+    .print_only {
+        display: none;
+    }
+
+    @media print {
+        .print_only {
+            display: block; /* or whatever display value you need */
+        }
+    }
 }

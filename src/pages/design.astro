@@ -25,6 +25,7 @@ const description =
 ---
 
 <style>
+
     main {
         max-width: 1200px;
         margin: 0 auto;
@@ -32,21 +33,16 @@ const description =
     }
 
     h1 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
+        /*font-size: 2.5rem;
+        margin-bottom: 2rem;*/
         color: #111827;
     }
 
     .toc {
-        margin: 2rem 0;
-        padding: 1.5rem;
+        margin: var(--space_block) 0;
+        padding: var(--space_block);
         background-color: #f9fafb;
         border-radius: var(--radius);
-    }
-
-    .toc h2 {
-        margin-bottom: 1rem;
-        font-size: 1.25rem;
     }
 
     .toc ul {
@@ -54,9 +50,6 @@ const description =
         padding: 0;
     }
 
-    .toc li {
-        margin-bottom: 0.5rem;
-    }
 
     .toc a {
         color: var(--brand);
@@ -68,11 +61,11 @@ const description =
     }
 
     .posts-container {
-        margin-top: 3rem;
+        margin-top: calc(var(--space_block)*2);
     }
 
     .post {
-        margin-bottom: 4rem;
+        margin-bottom: calc(var(--space_block)*2);
         padding: 2rem 0;
         border-bottom: 1px solid #e5e7eb;
     }
@@ -82,7 +75,7 @@ const description =
     }
 
     .post_header {
-        margin-bottom: 2rem;
+        margin-bottom: calc(var(--space_block)*1);
     }
 
     .post_title {
@@ -97,7 +90,7 @@ const description =
     }
 
     .post_image {
-        margin: 2rem 0;
+        margin: var(--space_block) 0;
         text-align: center;
     }
 
@@ -111,16 +104,10 @@ const description =
         /*color: #374151;*/
     }
 
-    .post_content :global(h1),
-    .post_content :global(h2),
-    .post_content :global(h3) {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
 
-    .post_content :global(p) {
+    /*.post_content :global(p) {
         margin-bottom: var(--space_block);
-    }
+    }*/
 
     .post_content :global(ul),
     .post_content :global(ol) {

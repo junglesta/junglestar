@@ -2,7 +2,7 @@
 title: Building for the Phone Era
 subtitle: Fast, phone-friendly and easy to use.
 image:
-  src: building-for-the-phone-era.svg
+  src: "building-for-the-phone-era.svg"
   alt: "Overwelmed?"
 tags:
   - design

@@ -2,7 +2,7 @@
 title: From plan to working product
 subtitle: Our solutions include everything you need.
 image:
-  src: "jstar.svg"
+  src: "jlogo_blue_white.svg"
   alt: "Overwelmed?"
 tags:
   - design

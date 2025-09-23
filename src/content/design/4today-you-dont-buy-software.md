@@ -2,7 +2,7 @@
 title: Today you don't buy software
 subtitle: Pay a developer who can code components together.
 image:
-  src: "open-source-freedom.svg"
+  src: "open_source.svg"
   alt: "Overwelmed?"
 tags:
   - design

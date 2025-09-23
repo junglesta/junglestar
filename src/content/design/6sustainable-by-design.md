@@ -2,7 +2,7 @@
 title: "Sustainable Marketing Communication"
 subtitle: "Build once, maintain easily. Never overwhelmed again."
 image:
-  src: "sustainable-by-design.svg"
+  src: "jlogo_blue_white.svg"
   alt: "Overwhelmed?"
 tags:
   - design

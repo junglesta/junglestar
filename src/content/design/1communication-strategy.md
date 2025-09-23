@@ -2,7 +2,7 @@
 title: communication strategy
 subtitle: Develop your brand voice
 image:
-  src: "communication-strategy.svg"
+  src: "communication_strategy.svg"
   alt: "Overwelmed?"
 tags:
   - design

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Generator: Adobe Illustrator 26.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg
+    version="1.1"
+    id="Layer_1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    viewBox="0 0 400 400"
+    style="enable-background:new 0 0 400 400;"
+    xml:space="preserve"
+>
+<style type="text/css">
+:root {
+    --brand: #0069cc;
+}
+.st0 {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 4;
+}
+.st1 {
+    fill: #ffffff;
+    stroke: var(--brand);
+    stroke-width: 4;
+}
+    </style>
+<path
+        id="jcircle"
+        class="st0"
+        d="M328.8,60.5l0,163.8c0,43.8-11.6,76-34.6,96.5c-23.1,20.6-53.6,31-91.6,31.4
+	c-38.8,0.4-70-9-93.5-28.3c-23.5-19.3-35.2-44.1-35.2-74.5c0-13.4,6.5-20.2,19.6-20.3c13.9-0.1,20.8,4.9,20.8,15.2
+	c0,22.5,7.9,40.2,23.6,53c15.7,12.9,36.9,19.1,63.4,18.9c27.8-0.3,49.2-8,64.4-23.2c15.1-15.1,22.7-37.9,22.7-68.3l0-192.9
+	C262,17.9,231.9,10,200,10C95.2,10,10,95.2,10,200s85.2,190,190,190c104.8,0,190-85.2,190-190C390,144.9,366.4,95.2,328.8,60.5z"
+    />
+<path
+        id="star"
+        class="st1"
+        d="M56.6,184.7l52.3-49.9L96.5,64.4l64.7,33.2l64.7-33.3l-12.3,70.4l52.4,49.8l-72.3,10.3L161.3,259
+	l-32.4-64L56.6,184.7L56.6,184.7z"
+    />
+</svg>

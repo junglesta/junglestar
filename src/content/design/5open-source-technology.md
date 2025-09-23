@@ -2,7 +2,7 @@
 title: "Why Open Source Is Your Smartest Move"
 subtitle: "Own your tech stack. Control your future. Stop renting software."
 image:
-  src: "open-source-freedom.svg"
+  src: "open_source.svg"
   alt: "Break free?"
 tags:
   - open-source

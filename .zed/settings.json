@@ -5,7 +5,8 @@
 {
   "format_on_save": "on",
   "languages": {
-    "HTML": { "formatter": "prettier" }
+    "HTML": { "formatter": "prettier" },
+    "Astro": { "formatter": "prettier" }
   },
   "inlay_hints": {
     "enabled": true,

@@ -2,52 +2,48 @@
 // src/pages/projects.astro
 import Layout from "@layouts/Layout.astro";
 import ProjectCard from "@components/WorksCard.astro";
+import LandingScreen from "@components/LandingScreen.astro";
 import projectsData from "@data/works.json";
 
 // Sort projects by date (newest first)
-const projects = projectsData.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-);
+const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 // Page metadata
 const pageTitle = "Junglestar | About us";
 const pageDescription =
-    "SHOWCASE: We helped these  small enterprises with websites, apps, and marketing communication.";
+  "SHOWCASE: We helped these  small enterprises with websites, apps, and marketing communication.";
 const pageSubtitle = "";
 ---
 
 <style>
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem 1rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #111827;
+  }
 
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-        color: #111827;
-    }
+  .projects-grid {
+    padding: var(--space_block) var(--space_inline);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: var(--space_block) var(--space_inline);
+  }
 
+  @media (max-width: 370px) {
     .projects-grid {
-        padding: var(--space_block) var(--space_inline);
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-        gap: var(--space_block) var(--space_inline);
+      grid-template-columns: 1fr;
     }
-
-    @media (max-width: 370px) {
-        .projects-grid {
-            grid-template-columns: 1fr;
-        }
-    }
+  }
 </style>
 
 <Layout title={pageTitle} description={pageDescription}>
-    <main>
-        <h1 class="center">Live Projects</h1>
-        <div class="projects-grid">
-            {projects.map((project) => <ProjectCard {...project} />)}
-        </div>
-    </main>
+  <div slot="landing_screen">
+    <LandingScreen />
+  </div>
+  <div class="wrap">
+    <h1 class="center">Live Projects</h1>
+    <div class="projects-grid">
+      {projects.map((project) => <ProjectCard {...project} />)}
+    </div>
+  </div>
 </Layout>

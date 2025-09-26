@@ -265,7 +265,7 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
 ---
 
 <span class="scrolltarget"></span>
-<div class="wrapper wrapper--slim full_height wrapper--vert_pad">
+<div class="wrap wrap--slim full_height wrap--vert_pad">
   <a class="section flex flex_cols flex_align_self_start to_design" href="/design/">
     <div class="color_icon blasting_brands">
       <!-- Replace with actual SVG or component -->

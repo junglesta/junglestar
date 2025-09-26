@@ -8,7 +8,6 @@ tags:
   - design
 ---
 
-Our solutions include everything you need.
 At Junglestar we design and develop websites and simple web-apps that work well on phones, tablets, laptops and desktops.
 
 With our client we make a plan. Then we study and a **produce Design Concept**. Once approved, we develop, write the code and deploy it.

@@ -6,7 +6,7 @@
   /* Base body styles */
   body {
     font-family: var(--font_family);
-    font-size: var(--font_size);
+    font-size: var(--font_clamp);
     line-height: var(--line_height);
     font-weight: var(--weight);
     color: var(--text_color);
@@ -16,34 +16,32 @@
 
   /* Main structure */
   .main {
-    /*position: relative;*/
-    /*z-index: 1;*/
     background-color: transparent;
   }
 
-  .wrapper {
-    padding-inline: var(--space_inline);
+  .wrap {
+    padding-inline: calc(var(--space_inline) * 2);
   }
 
   @media (min-width: 600px) {
-    .wrapper {
-      padding-inline: var(--space_inline);
+    .wrap {
+      padding-inline: calc(var(--space_inline) * 2);
     }
   }
 
   @media (min-width: 820px) {
-    .wrapper {
+    .wrap {
       padding-inline: calc(var(--space_inline) * 1.5);
     }
   }
 
   @media (min-width: 1024px) {
-    .wrapper {
+    .wrap {
       padding-inline: calc(var(--space_inline) * 2);
     }
   }
 
-  .wrapper_vert_pad {
+  .wrap_vert_pad {
     padding-top: var(--space_block);
     padding-bottom: var(--space_block);
   }
@@ -103,7 +101,7 @@
   /* Site navigation */
   .site_nav {
     text-align: center;
-    font-size: calc(var(--font_size) * 1.25);
+    font-size: calc(var(--font_clamp) * 1.25);
     padding-top: var(--space_block);
     line-height: 2;
   }

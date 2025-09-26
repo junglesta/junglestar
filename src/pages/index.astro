@@ -1,6 +1,7 @@
 ---
 // src/pages/index.astro
 import Layout from "@layouts/Layout.astro";
+import LandingScreen from "@components/LandingScreen.astro";
 import * as repoData from "package.json";
 import Intro from "@components/Intro.astro";
 
@@ -9,10 +10,13 @@ const titleA = "Junglestar ";
 const titleB = " Sustainable Web Design";
 const title = titleA + repoData.version + titleB;
 const description =
-    "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
+  "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
 const subtitle = "";
 ---
 
 <Layout title={title + " | " + repoData.version} description={description}>
-    <Intro />
+  <div slot="landing_screen">
+    <LandingScreen />
+  </div>
+  <Intro />
 </Layout>

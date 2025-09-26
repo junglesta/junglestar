@@ -5,27 +5,12 @@
 
 @layer tokens {
   :root {
-    /* Typography */
-    --font_family:
-      -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji,
-      Segoe UI Emoji, Segoe UI Symbol;
-    --font_rem: 16px;
-    --font_size: clamp(20px, 18px + 0.35svw, 36px);
-    --line_height: 1.5;
-    --weight: 200;
-    --weight_med: 400;
-    --weight_bold: 600;
-    --weight_heavy: 900; /* Fize space */
-    --stone: 3rem;
-    --radius: clamp(3px, 0.5rem, 1.5rem);
-
     /* Dynamic spaces */
     --viewport_height: 100dvh;
-    /* vertical */
     --space_block: 2.75dvh;
-    /* horizontal */
     --space_inline: 2.75dvw;
-
+    /* Fixed spaces */
+    --stone: 3rem;
     /* Colors */
     --black: oklch(0.2 0 360); /*#161616*/
     --white: oklch(0.9 0 360); /*#dedede*/
@@ -37,10 +22,8 @@
     /*--brand_complementary: #cc6600;*/
     --brand_complementary: oklch(0.6201 0.156454 53.4649);
     --brand_light: oklch(0.8322 0.0885 246.95);
-
     --text_color: #111111;
     --link_color: var(--brand);
-
     --grey_color: #212121;
     --grey_color_light: #868686;
     --grey_color_dark: #000000;
@@ -57,6 +40,82 @@
     /* Transitions */
     --transition_shadow: box-shadow 0.2s ease;
 
+    /* Button tokens */
+    --black_stroke: hsl(0, 0%, 60%);
+    --button_focus_bg: hsla(0, 0%, 100%, 1);
+    --button_book: var(--brand);
+
+    /* Card tokens */
+    --big_card_width: 27.5svw;
+
+    /* Product categories */
+    --product_category_1: hsla(117, 100%, 81%, 0.75);
+    --product_category_2: hsla(43, 100%, 81%, 0.75);
+    --product_category_3: hsla(205, 100%, 81%, 0.75);
+
+    /* Breakpoints */
+    --min_width: 600px;
+    --bp1_width: 820px;
+    --max_width: 1024px;
+
+    /* Typography */
+    --font_family:
+      -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji,
+      Segoe UI Emoji, Segoe UI Symbol;
+    --font_clamp: clamp(20px, 18px + 0.35vw, 36px); /*fallback*/
+    --font_clamp: clamp(20px, 18px + 0.35svw, 36px);
+    --font_rem: 18px;
+    --line_height: 1.5;
+    --weight: 200;
+    --weight_med: 400;
+    --weight_bold: 600;
+    --weight_heavy: 900;
+    --radius: clamp(3px, 0.5rem, 1.5rem);
+  }
+
+  /* Fine-tuned breakpoints */
+  @media (min-width: 480px) {
+    :root {
+      --base-font-size: 17px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    :root {
+      --font_rem: 18px;
+    }
+  }
+
+  @media (min-width: 820px) {
+    :root {
+      --font_rem: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    :root {
+      --font_rem: 22px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    :root {
+      --font_rem: 24px;
+    }
+  }
+  @media (min-width: 1420px) {
+    :root {
+      --font_rem: 25px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    :root {
+      --font_rem: 26px;
+    }
+  }
+
+  :root {
     /* Responsive headings with SVH */
     --heading1_responsive: 4svh;
     --heading1_min: 2.25rem;
@@ -81,23 +140,5 @@
     --heading6_responsive: 2svh;
     --heading6_min: 1rem;
     --heading6_max: 2.6svh;
-
-    /* Button tokens */
-    --black_stroke: hsl(0, 0%, 60%);
-    --button_focus_bg: hsla(0, 0%, 100%, 1);
-    --button_book: var(--brand);
-
-    /* Card tokens */
-    --big_card_width: 27.5svw;
-
-    /* Product categories */
-    --product_category_1: hsla(117, 100%, 81%, 0.75);
-    --product_category_2: hsla(43, 100%, 81%, 0.75);
-    --product_category_3: hsla(205, 100%, 81%, 0.75);
-
-    /* Breakpoints */
-    --min_width: 600px;
-    --bp1_width: 820px;
-    --max_width: 1024px;
   }
 }

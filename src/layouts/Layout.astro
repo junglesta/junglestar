@@ -1,34 +1,30 @@
 ---
 // src/layouts/Layout.astro
-import LandingScreen from "@components/LandingScreen.astro";
+
 import Head from "@components/Head.astro";
 import Footer from "@components/Footer.astro";
 import "@styles/global.css";
 
 export interface Props {
-    title: string;
-    description?: string;
-    sitemap?: boolean;
+  title: string;
+  description?: string;
+  sitemap?: boolean;
 }
 
-const {
-    title,
-    description = "Sustainable Web Design to help fight Climate Change",
-    sitemap = true,
-} = Astro.props;
+const { title, description = "Sustainable Web Design to help fight Climate Change", sitemap = true } = Astro.props;
 ---
 
 <style>
-    main {
-        background-color: var(--white);
-    }
+  main {
+    background-color: var(--white);
+  }
 </style>
 
 <html lang="en">
-    <Head title={title} description={description} sitemap={sitemap} />
-    <body>
-        <!-- ASCII art comment -->
-        <!--
+  <Head title={title} description={description} sitemap={sitemap} />
+  <body>
+    <!-- ASCII art comment -->
+    <!--
           _                   _           _
          | |_   _ _ __   __ _| | ___  ___| |_ __ _ _ __
       _  | | | | | '_ \ / _` | |/ _ \/ __| __/ _` | '__|
@@ -40,53 +36,52 @@ const {
      email    : info@junglestar.org
      twitter  : @rokmatwit
     -->
-        <slot name="head_banner" />
-        <LandingScreen />
-        <main class="main">
-            <span id="top"></span>
-            <slot />
-        </main>
+    <slot name="head_banner" />
+    <slot name="landing_screen" />
 
-        <Footer />
-    </body>
+    <main class="">
+      <span id="top"></span>
+      <slot />
+    </main>
 
-    <script>
-        function addLink(): void {
-            if (typeof window.getSelection === "undefined") return;
+    <Footer />
+  </body>
 
-            const body_element = document.getElementsByTagName(
-                "body",
-            )[0] as HTMLBodyElement;
-            const selection = window.getSelection();
+  <script>
+    function addLink(): void {
+      if (typeof window.getSelection === "undefined") return;
 
-            if (!selection || ("" + selection).length < 30) return;
+      const body_element = document.getElementsByTagName("body")[0] as HTMLBodyElement;
+      const selection = window.getSelection();
 
-            const newdiv = document.createElement("div") as HTMLDivElement;
-            newdiv.style.position = "absolute";
-            newdiv.style.left = "-99999px";
-            body_element.appendChild(newdiv);
+      if (!selection || ("" + selection).length < 30) return;
 
-            const range = selection.getRangeAt(0);
-            newdiv.appendChild(range.cloneContents());
+      const newdiv = document.createElement("div") as HTMLDivElement;
+      newdiv.style.position = "absolute";
+      newdiv.style.left = "-99999px";
+      body_element.appendChild(newdiv);
 
-            if (range.commonAncestorContainer.nodeName === "PRE") {
-                newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-            }
+      const range = selection.getRangeAt(0);
+      newdiv.appendChild(range.cloneContents());
 
-            newdiv.innerHTML +=
-                "<br /><br />&#9733; Extract from: <a href='" +
-                document.location.href +
-                "'>" +
-                document.location.href +
-                "</a><br />&#9733; 2024 &copy; Junglestar.";
+      if (range.commonAncestorContainer.nodeName === "PRE") {
+        newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+      }
 
-            selection.selectAllChildren(newdiv);
+      newdiv.innerHTML +=
+        "<br /><br />&#9733; Extract from: <a href='" +
+        document.location.href +
+        "'>" +
+        document.location.href +
+        "</a><br />&#9733; 2024 &copy; Junglestar.";
 
-            window.setTimeout((): void => {
-                body_element.removeChild(newdiv);
-            }, 200);
-        }
+      selection.selectAllChildren(newdiv);
 
-        document.oncopy = addLink;
-    </script>
+      window.setTimeout((): void => {
+        body_element.removeChild(newdiv);
+      }, 200);
+    }
+
+    document.oncopy = addLink;
+  </script>
 </html>

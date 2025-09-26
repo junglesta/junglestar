@@ -1,5 +1,5 @@
 ---
-title: Running on beliefs? You need serious help.
+title: Running on beliefs? Let's start measuring instead. It helps.
 subtitle: Junglestar is a small, flexible web agency.
 tagline: Sustainable web design to help you and the planet.
 image:

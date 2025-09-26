@@ -1,6 +1,7 @@
 ---
 //import Welcome from '../components/aaa.astro';
 import Layout from "@layouts/Layout.astro";
+import LandingScreen from "@components/LandingScreen.astro";
 // Page metadata
 const pageTitle = "Junglestar | Pricing";
 const pageDescription =
@@ -246,6 +247,9 @@ const pageSubtitle = "Check our packages!";
 </style>
 
 <Layout title={pageTitle} description={pageDescription}>
+  <div slot="landing_screen">
+    <LandingScreen />
+  </div>
   <div class="print_only">
     <div class="print_imperatif">Make life easy for your customers!</div>
     <div class="print_title">Junglestar</div>
@@ -257,7 +261,7 @@ const pageSubtitle = "Check our packages!";
   <div class="light_bg offer_content">
     <div class="scrolltarget">
       <div class="mean_title mean_title--first">
-        <div class="wrapper flex flex_cols flex_align_center flex_justify_center">
+        <div class="wrap flex flex_cols flex_align_center flex_justify_center">
           <div class="mean_icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -281,7 +285,7 @@ const pageSubtitle = "Check our packages!";
       </div>
 
       <div class="mean_title mean_title--second">
-        <div class="wrapper flex flex_cols flex_align_center flex_justify_center">
+        <div class="wrap flex flex_cols flex_align_center flex_justify_center">
           <div class="mean_icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -501,7 +505,7 @@ const pageSubtitle = "Check our packages!";
 
   <div class="offer_content light_bg page_break social_media_management">
     <div class="mean_title mean_title--first">
-      <div class="wrapper flex flex_cols flex_align_center flex_justify_center">
+      <div class="wrap flex flex_cols flex_align_center flex_justify_center">
         <div class="mean_icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -518,7 +522,7 @@ const pageSubtitle = "Check our packages!";
     </div>
 
     <div class="mean_title mean_title--second">
-      <div class="wrapper flex flex_cols flex_align_center flex_justify_center">
+      <div class="wrap flex flex_cols flex_align_center flex_justify_center">
         <div class="mean_icon four_icon_group">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="brand_color outlined icon--instagram">
             <path
@@ -580,7 +584,7 @@ const pageSubtitle = "Check our packages!";
 
   <div class="offer_content light_bg google_my_business">
     <div class="mean_title mean_title--first">
-      <div class="wrapper flex flex_cols flex_align_center flex_justify_center">
+      <div class="wrap flex flex_cols flex_align_center flex_justify_center">
         <div class="mean_icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="white_color outlined icon--location">
             <path
@@ -593,7 +597,7 @@ const pageSubtitle = "Check our packages!";
     </div>
 
     <div class="mean_title mean_title--second">
-      <div class="wrapper flex flex_cols flex_align_center flex_justify_center">
+      <div class="wrap flex flex_cols flex_align_center flex_justify_center">
         <div class="mean_icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"

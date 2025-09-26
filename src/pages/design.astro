@@ -1,5 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import LandingScreen from "@components/LandingScreen.astro";
 import { getCollection, render } from "astro:content";
 import { Image } from "astro:assets";
 
@@ -25,12 +26,6 @@ const description =
 ---
 
 <style>
-
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem 1rem;
-    }
 
     h1 {
         /*font-size: 2.5rem;
@@ -60,7 +55,7 @@ const description =
         text-decoration: underline;
     }
 
-    .posts-container {
+    .posts_container {
         margin-top: calc(var(--space_block)*2);
     }
 
@@ -101,6 +96,8 @@ const description =
     }
 
     .post_content {
+        max-width: 60ch;
+        margin-inline: auto;
         /*color: #374151;*/
     }
 
@@ -144,14 +141,18 @@ const description =
 </style>
 
 <Layout title={title} description={description}>
-    <main>
+    <div slot="landing_screen">
+  <LandingScreen />
+</div>
+    <div class="wrap">
         <h2 class="center">Design delivers!</h2>
         <h3 class="center">
             Designing for sustainabilty? What's that...
         </h3>
 
         <!-- Table of Contents -->
-        <div class="toc">
+        <div class="wrap">
+            <div class=" toc">
             <h4 class="center">Table of Contents</h4>
             <ul>
                 {
@@ -163,9 +164,10 @@ const description =
                 }
             </ul>
         </div>
+        </div>
 
         <!-- Posts Content -->
-        <div class="posts-container">
+        <div class="wrap posts_container">
             {
                 renderedPosts.map((post) => (
                     <article class="post" id={post.id}>
@@ -203,5 +205,5 @@ const description =
                 ))
             }
         </div>
-    </main>
+    </div>
 </Layout>

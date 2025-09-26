@@ -1,11 +1,17 @@
 ---
 //import Welcome from '../components/aaa.astro';
 import Layout from "@layouts/Layout.astro";
+import LandingScreen from "@components/LandingScreen.astro";
 // Page metadata
 const pageTitle = "Junglestar | Content Production";
 const pageDescription =
-    "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
+  "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
 const pageSubtitle = "";
 ---
 
-<Layout title={pageTitle} description={pageDescription}> content </Layout>
+<Layout title={pageTitle} description={pageDescription}>
+  <div slot="landing_screen">
+    <LandingScreen />
+  </div>
+  content
+</Layout>

@@ -15,7 +15,7 @@ import Intro from '@components/Intro.astro';
   title="About Junglestar"
   description="We are a small, flexible web agency"
 >
-  <div class="wrapper">
+  <div class="wrap">
     <div class="section">
       <h1>About Junglestar</h1>
       <p>We are a small, flexible web agency. We help companies and individuals organise their communication.</p>
@@ -50,7 +50,7 @@ import Layout from '@layouts/Layout.astro';
   title="Design and development - junglestar"
   description="We design and develop websites that work well on all devices"
 >
-  <div class="wrapper">
+  <div class="wrap">
     <div class="section">
       <h1>Design and Development</h1>
       <p>Your brand will develop a voice, a recognisable style, to organically grow a meaningful followers base quickly.</p>
@@ -84,7 +84,7 @@ import Layout from '@layouts/Layout.astro';
   title="Content production and management - junglestar"
   description="We help produce your brand communication content"
 >
-  <div class="wrapper">
+  <div class="wrap">
     <div class="section">
       <h1>Content Production and Management</h1>
       <p>We can help your company produce your brand COMMUNICATION CONTENT.</p>

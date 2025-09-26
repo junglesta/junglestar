@@ -30,14 +30,14 @@ const entriesToShow = limit ? sortedEntries.slice(0, limit) : sortedEntries;
         padding: var(--space_block) var(--space_inline);
     }
 
-    .intro_wrapper {
+    .intro_wrap {
         margin: 0 auto;
         padding: 0 1rem;
     }
 </style>
 
 <section class="intro_pitch">
-    <div class="intro_wrapper">
+    <div class="intro_wrap">
         {
             entriesToShow.map((entry) => (
                 <IntroCard entry={entry} showContent={showContent} />

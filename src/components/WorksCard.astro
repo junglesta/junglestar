@@ -1,114 +1,100 @@
 ---
 // src/components/WorksCard.astro
 export interface Props {
-    id: string;
-    date: string;
-    title: string;
-    subtitle?: string | null;
-    category: string;
+  id: string;
+  date: string;
+  title: string;
+  subtitle?: string | null;
+  category: string;
+  url: string;
+  description?: string | null;
+  icon?: {
     url: string;
-    description?: string | null;
-    icon?: {
-        url: string;
-        name: string;
-    };
+    name: string;
+  };
 }
 
 const { title, subtitle, category, url, description, icon } = Astro.props;
 ---
 
 <style>
-    article {
-        padding: 0;
-        user-select: none;
-        position: relative;
-        background-color: white;
-        border: 1px solid var(--brand);
-        border-radius: var(--radius);
-        transition:
-            transform 0.2s,
-            box-shadow 0.2s;
-    }
+  article {
+    padding: 0;
+    user-select: none;
+    position: relative;
+    background-color: white;
+    border: 1px solid var(--brand);
+    border-radius: var(--radius);
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+  }
 
-    article:hover {
-        transform: translateY(3px);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+  article:hover {
+    transform: translateY(3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-    .card_works_link {
-        height: 288px;
-        display: grid;
-        grid-template-rows: 2fr 1fr;
-        row-gap: calc(var(--space) / 1.5);
-        align-items: center;
-        text-decoration: none;
-        color: inherit;
-    }
-    .card_works_link::after {
-        display: none;
-    }
+  .card_works_link {
+    height: 288px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    row-gap: calc(var(--space) / 1.5);
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  .card_works_link::after {
+    display: none;
+  }
 
-    .icon_works {
-        width: 25%;
-        min-width: 111px;
-        height: auto;
-        object-fit: contain;
-        justify-self: center;
-    }
+  .icon_works {
+    width: 25%;
+    min-width: 111px;
+    height: auto;
+    object-fit: contain;
+    justify-self: center;
+  }
 
-    h3 {
-        margin: 0;
-        padding-bottom: 0;
-        font-size: calc(var(--font_size) / 1.25);
-        text-align: center;
-        font-weight: 500;
-        padding-inline: var(--space_inline);
-    }
+  h3 {
+    margin: 0;
+    padding-bottom: 0;
+    font-size: calc(var(--font_clamp) / 1.25);
+    text-align: center;
+    font-weight: 500;
+    padding-inline: var(--space_inline);
+  }
 
-    .subtitle_works {
-        display: block;
-        font-size: 1rem;
-        font-weight: normal;
-        color: var(--text_color);
-        margin-top: 0.25rem;
-    }
-    .webapp:before {
-        content: "APP";
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        padding-right: 10px;
-        padding-left: 10px;
-        border: 1px solid var(--brand);
-        background-color: inherit;
-        color: var(--brand);
-        font-size: calc(var(--font_rem) / 1.5);
-        font-weight: 400;
-    }
+  .subtitle_works {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text_color);
+    margin-top: 0.25rem;
+  }
+  .webapp:before {
+    content: "APP";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px solid var(--brand);
+    background-color: inherit;
+    color: var(--brand);
+    font-size: calc(var(--font_rem) / 1.5);
+    font-weight: 400;
+  }
 </style>
 
 <article class={"card_works  " + category}>
-    <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="card_works_link"
-    >
-        {
-            icon && (
-                <img
-                    src={icon.url}
-                    alt={icon.name}
-                    class="icon_works"
-                    loading="lazy"
-                />
-            )
-        }
+  <a href={url} target="_blank" rel="noopener noreferrer" class="card_works_link">
+    {icon && <img src={icon.url} alt={icon.name} class="icon_works" loading="lazy" />}
 
-        <h3 class="title_works">
-            {title}
-            {subtitle && <span class="subtitle_works">{subtitle}</span>}
-        </h3>
-    </a>
+    <h3 class="title_works">
+      {title}
+      {subtitle && <span class="subtitle_works">{subtitle}</span>}
+    </h3>
+  </a>
 </article>

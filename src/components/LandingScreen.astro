@@ -4,47 +4,49 @@ import Hi from "@components/LogoAni.astro";
 ---
 
 <style>
-    header {
-        position: relative;
-        z-index: 1;
-    }
-    .brand {
-        font-weight: 300 !important;
-        font-size: 200%;
-        line-height: 1.25;
-        padding-block: 0;
-    }
-    .cover {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: var(--space_block) var(--space_inline);
-        min-height: 100svh;
-        height: 100svh;
-        background-size: cover;
-        background-color: #0069cc;
-        color: var(--white);
-    }
-    .slogan {
-        padding-top: calc(var(--space_block) * 2);
-        padding-bottom: calc(var(--space_block) / 4);
-        padding-inline: calc(var(--space_inline) * 1);
-        text-wrap: pretty;
-        text-align: center;
-        font-weight: 400;
-    }
-    p {
-        margin-bottom: calc(var(--space_block) / 8);
-    }
+  header {
+    position: relative;
+    z-index: 1;
+  }
+  .brand {
+    font-weight: 300 !important;
+    font-size: 200%;
+    line-height: 1.25;
+    padding-block: 0;
+  }
+  .cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space_block) var(--space_inline);
+    min-height: 100svh;
+    height: 100svh;
+    background-size: cover;
+    background-color: #0069cc;
+    color: var(--white);
+  }
+  .slogan {
+    padding-top: calc(var(--space_block) * 2);
+    padding-bottom: calc(var(--space_block) / 4);
+    padding-inline: calc(var(--space_inline) * 1);
+    text-wrap: pretty;
+    text-align: center;
+    font-weight: 400;
+  }
+  p {
+    margin-bottom: calc(var(--space_block) / 8);
+  }
 </style>
 
 <header class="cover js_scrollto01">
-    <Hi />
+  <Hi />
 
-    <div class="slogan" id="slogan0">
-        <p>Your business, simplified.</p><p>Your life, upgraded.</p>
-        <h1 class="brand">JUNGLESTAR</h1>
-        <p>Trade grunt-work for poolside.</p>
-    </div>
+  <div class="slogan" id="slogan0">
+    <p>Your business, simplified.</p><p>Your life, upgraded.</p>
+    <p>Trade grunt-work for leasure time!</p>
+    <h1 class="brand">JUNGLESTAR</h1>
+    <p>&nbsp;</p>
+    <p>↓</p>
+  </div>
 </header>

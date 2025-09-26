@@ -4,107 +4,100 @@
    ======================================== */
 
 @layer tokens {
-    :root {
-        /* Typography */
-        --font_family:
-            -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
-            Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
-            Segoe UI Symbol;
-        --font_rem: 1rem;
-        --font_size: clamp(19px, calc((2svh + 2svw) / 2), 36px);
-        --line_height: 1.5;
-        --weight: 200;
-        --weight_med: 400;
-        --weight_bold: 600;
-        --weight_heavy: 900; /* Fize space */
-        --stone: 3rem;
-        --radius: clamp(3px, 0.5rem, 1.5rem);
+  :root {
+    /* Typography */
+    --font_family:
+      -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji,
+      Segoe UI Emoji, Segoe UI Symbol;
+    --font_rem: 16px;
+    --font_size: clamp(20px, 18px + 0.35svw, 36px);
+    --line_height: 1.5;
+    --weight: 200;
+    --weight_med: 400;
+    --weight_bold: 600;
+    --weight_heavy: 900; /* Fize space */
+    --stone: 3rem;
+    --radius: clamp(3px, 0.5rem, 1.5rem);
 
-        /* Dynamic spaces */
-        --viewport_height: 100vh;
+    /* Dynamic spaces */
+    --viewport_height: 100dvh;
+    /* vertical */
+    --space_block: 2.75dvh;
+    /* horizontal */
+    --space_inline: 2.75dvw;
 
-        /* vertical */
-        --space_block: 2.75svh;
-        /* horizontal */
-        --space_inline: 2.75svw;
+    /* Colors */
+    --black: oklch(0.2 0 360); /*#161616*/
+    --white: oklch(0.9 0 360); /*#dedede*/
+    --background_color: oklch(0.8 0.03 208.64); /* #e6e6e6*/
+    /*--brand: #0069cc;*/
+    --brand: oklch(0.5286 0.1735 254.92);
+    /*--brand_invert: #ff9633;*/
+    --brand_invert: oklch(0.7687 0.1641 58.66);
+    /*--brand_complementary: #cc6600;*/
+    --brand_complementary: oklch(0.6201 0.156454 53.4649);
+    --brand_light: oklch(0.8322 0.0885 246.95);
 
-        /* Colors */
-        --black: oklch(0.2 0 360); /*#161616*/
-        --white: oklch(0.9 0 360); /*#dedede*/
-        --background_color: oklch(0.8 0.03 208.64); /* #e6e6e6*/
-        /*--brand: #0069cc;*/
-        --brand: oklch(0.5286 0.1735 254.92);
-        /*--brand_invert: #ff9633;*/
-        --brand_invert: oklch(0.7687 0.1641 58.66);
-        /*--brand_complementary: #cc6600;*/
-        --brand_complementary: oklch(0.6201 0.156454 53.4649);
-        --brand_light: oklch(0.8322 0.0885 246.95);
+    --text_color: #111111;
+    --link_color: var(--brand);
 
-        --text_color: #111111;
-        --link_color: var(--brand);
+    --grey_color: #212121;
+    --grey_color_light: #868686;
+    --grey_color_dark: #000000;
 
-        --grey_color: #212121;
-        --grey_color_light: #868686;
-        --grey_color_dark: #000000;
+    /* Shadows with SVH */
+    --shadow_color: rgb(0, 0, 0);
+    --header_shadow: 0 0.2svh 1svh 0 rgba(0, 0, 0, 0.16);
+    --card_shadow: 0px 0px 0.2svh 0px rgba(0, 0, 0, 0.12), 0px 0.2svh 0.2svh 0px rgba(0, 0, 0, 0.24);
+    --card_shadow_hover: 0px 0px 0.8svh 0px rgba(0, 0, 0, 0.12), 0px 0.8svh 0.8svh 0px rgba(0, 0, 0, 0.24);
+    --main_shadow:
+      0px 0.2svh 0.4svh -0.1svh rgba(0, 0, 0, 0.2), 0px 0.4svh 0.5svh 0px rgba(0, 0, 0, 0.14),
+      0px 0.1svh 1svh 0px rgba(0, 0, 0, 0.12);
 
-        /* Shadows with SVH */
-        --shadow_color: rgb(0, 0, 0);
-        --header_shadow: 0 0.2svh 1svh 0 rgba(0, 0, 0, 0.16);
-        --card_shadow:
-            0px 0px 0.2svh 0px rgba(0, 0, 0, 0.12),
-            0px 0.2svh 0.2svh 0px rgba(0, 0, 0, 0.24);
-        --card_shadow_hover:
-            0px 0px 0.8svh 0px rgba(0, 0, 0, 0.12),
-            0px 0.8svh 0.8svh 0px rgba(0, 0, 0, 0.24);
-        --main_shadow:
-            0px 0.2svh 0.4svh -0.1svh rgba(0, 0, 0, 0.2),
-            0px 0.4svh 0.5svh 0px rgba(0, 0, 0, 0.14),
-            0px 0.1svh 1svh 0px rgba(0, 0, 0, 0.12);
+    /* Transitions */
+    --transition_shadow: box-shadow 0.2s ease;
 
-        /* Transitions */
-        --transition_shadow: box-shadow 0.2s ease;
+    /* Responsive headings with SVH */
+    --heading1_responsive: 4svh;
+    --heading1_min: 2.25rem;
+    --heading1_max: 4.6svh;
 
-        /* Responsive headings with SVH */
-        --heading1_responsive: 4svh;
-        --heading1_min: 2.25rem;
-        --heading1_max: 4.6svh;
+    --heading2_responsive: 3.5svh;
+    --heading2_min: 2rem;
+    --heading2_max: 4.2svh;
 
-        --heading2_responsive: 3.5svh;
-        --heading2_min: 2rem;
-        --heading2_max: 4.2svh;
+    --heading3_responsive: 3svh;
+    --heading3_min: 1.5rem;
+    --heading3_max: 3.6svh;
 
-        --heading3_responsive: 3svh;
-        --heading3_min: 1.5rem;
-        --heading3_max: 3.6svh;
+    --heading4_responsive: 2.5svh;
+    --heading4_min: 1.25rem;
+    --heading4_max: 3.3svh;
 
-        --heading4_responsive: 2.5svh;
-        --heading4_min: 1.25rem;
-        --heading4_max: 3.3svh;
+    --heading5_responsive: 2.25svh;
+    --heading5_min: 1.15rem;
+    --heading5_max: 3svh;
 
-        --heading5_responsive: 2.25svh;
-        --heading5_min: 1.15rem;
-        --heading5_max: 3svh;
+    --heading6_responsive: 2svh;
+    --heading6_min: 1rem;
+    --heading6_max: 2.6svh;
 
-        --heading6_responsive: 2svh;
-        --heading6_min: 1rem;
-        --heading6_max: 2.6svh;
+    /* Button tokens */
+    --black_stroke: hsl(0, 0%, 60%);
+    --button_focus_bg: hsla(0, 0%, 100%, 1);
+    --button_book: var(--brand);
 
-        /* Button tokens */
-        --black_stroke: hsl(0, 0%, 60%);
-        --button_focus_bg: hsla(0, 0%, 100%, 1);
-        --button_book: var(--brand);
+    /* Card tokens */
+    --big_card_width: 27.5svw;
 
-        /* Card tokens */
-        --big_card_width: 27.5svw;
+    /* Product categories */
+    --product_category_1: hsla(117, 100%, 81%, 0.75);
+    --product_category_2: hsla(43, 100%, 81%, 0.75);
+    --product_category_3: hsla(205, 100%, 81%, 0.75);
 
-        /* Product categories */
-        --product_category_1: hsla(117, 100%, 81%, 0.75);
-        --product_category_2: hsla(43, 100%, 81%, 0.75);
-        --product_category_3: hsla(205, 100%, 81%, 0.75);
-
-        /* Breakpoints */
-        --min_width: 600px;
-        --bp1_width: 820px;
-        --max_width: 1024px;
-    }
+    /* Breakpoints */
+    --min_width: 600px;
+    --bp1_width: 820px;
+    --max_width: 1024px;
+  }
 }

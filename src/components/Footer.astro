@@ -8,233 +8,220 @@ const currentYear = new Date().getFullYear();
 ---
 
 <style>
-    hr {
-        width: 100%;
-        padding-block: 0;
-        margin-block: 10px;
+  hr {
+    width: 100%;
+    padding-block: 0;
+    margin-block: 10px;
+  }
+
+  .footer_site {
+    width: 100%;
+    min-height: var(--viewport_height);
+
+    padding-top: calc(var(--space_block) * 2);
+    padding-bottom: 0;
+    padding-inline: var(--space_inline);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    a {
+      color: var(--white);
+      text-decoration-thickness: 2px;
     }
 
-    .footer_site {
-        width: 100%;
-        min-height: var(--viewport_height);
-
-        /* Simple sticky footer */
-        margin-top: auto;
-
-        padding-top: calc(var(--space_block) * 5);
-        padding-bottom: var(--space_block);
-        padding-inline: var(--space_inline);
-        color: var(--white);
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-
-        a {
-            color: var(--white);
-            text-decoration-thickness: 2px;
-        }
-
-        svg:not(.hide) {
-            display: inline;
-            height: 5svh;
-        }
-        svg.logo {
-            height: 16svh;
-        }
+    svg:not(.hide) {
+      display: inline;
+      height: 5svh;
     }
+    svg.logo {
+      height: 16svh;
+    }
+  }
 
-    .copy {
-        font-size: calc(var(--font_size) / 1.5);
-        padding-top: calc(var(--space_block) * 0.25);
-        padding-inline: var(--space_block);
-        text-align: center;
-        p {
-            padding: 0;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
-        }
+  .copy {
+    font-size: calc(var(--font_size) / 1.5);
+    padding-top: calc(var(--space_block) * 0.25);
+    padding-inline: var(--space_block);
+    text-align: center;
+    p {
+      padding: 0;
+      margin: 0;
     }
+    a {
+      text-decoration: none;
+    }
+  }
 
-    .abso {
-        position: absolute;
-        bottom: calc(var(--space_block) * 2);
-    }
+  .abso {
+    position: absolute;
+    bottom: 0;
+  }
 
-    .flexcolo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: calc(var(--space_block) / 5);
-        padding: 0 !important;
-        margin: 0 !important;
+  .flexcolo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--space_block) / 5);
+    padding: 0 !important;
+    margin: 0 !important;
 
-        a.button {
-            margin: 0 !important;
-        }
+    a.button {
+      margin: 0 !important;
     }
+  }
 
-    .flexcolo.abso {
-        gap: calc(var(--space_block) / 8);
-    }
+  .flexcolo.abso {
+    gap: calc(var(--space_block) / 8);
+  }
 
-    .flexro {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: calc(var(--space_block) / 2);
-        padding: 0 !important;
-        margin: 0 !important;
-        .button {
-            margin-block: 0;
-        }
+  .flexro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: calc(var(--space_block) / 2);
+    padding: 0 !important;
+    margin: 0 !important;
+    .button {
+      margin-block: 0;
     }
+  }
 
-    .space_between {
-        justify-content: space-between;
-    }
+  .space_between {
+    justify-content: space-between;
+  }
 
-    .footer_logo {
-        padding-top: calc(var(--space_block) * 2);
-        transform: rotate(0deg);
-    }
+  .footer_logo {
+    /*padding-top: calc(var(--space_block) * 2);*/
+    transform: rotate(0deg);
+  }
 
-    .brand {
-        text-transform: uppercase;
-        font-size: 150%;
+  .brand {
+    text-transform: uppercase;
+    font-size: 150%;
+  }
+  .undies {
+    position: relative;
+  }
+  .CTAbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: fit-content;
+    svg {
+      width: max-content;
     }
-    .undies {
-        position: relative;
+  }
+  .qr {
+    padding: 0;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    svg {
+      width: max-content;
+      height: 48px;
     }
-    .CTAbutton {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        width: fit-content;
-        svg {
-            width: max-content;
-        }
+  }
+  .qr.expanded {
+    padding: var(--space_block) var(--space_inline);
+    font-size: 75%;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    svg {
+      width: max-content;
+      height: clamp(100px, 30svw, 300px);
     }
-    .qr {
-        padding: 0;
-        width: 100svw;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        align-items: center;
-        svg {
-            width: max-content;
-            height: 48px;
-        }
+  }
+  @media (max-width: 450px) {
+    .hide_on_mobile {
+      display: none;
     }
-    .qr.expanded {
-        padding: var(--space_block) var(--space_inline);
-        font-size: 75%;
-        width: 100svw;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        align-items: center;
-        svg {
-            width: max-content;
-            height: clamp(100px, 30svw, 300px);
-        }
-    }
-    @media (max-width: 450px) {
-        .hide_on_mobile {
-            display: none;
-        }
-    }
+  }
 
-    @media (min-width: 450px) {
-        .show_on_mobile {
-            display: none;
-        }
+  @media (min-width: 450px) {
+    .show_on_mobile {
+      display: none;
     }
+  }
 
-    a::before,
-    a::after {
-        content: none;
-        display: none;
-    }
+  a::before,
+  a::after {
+    content: none;
+    display: none;
+  }
 
-    .copy .small_pad_top {
-        padding-top: calc(var(--space_block) / 2.5);
-    }
+  .copy .small_pad_top {
+    padding-top: calc(var(--space_block) / 2.5);
+  }
 </style>
 
 <footer class="footer_site">
-    <a
-        class="footer_logo no_underline"
-        title="Clicking this link will send you back to junglestar.org homepage"
-        href="/"
-    >
-        <Logo />
-    </a>
+  <a class="footer_logo no_underline" title="Clicking this link will send you back to junglestar.org homepage" href="/">
+    <Logo />
+  </a>
 
-    <Nav />
+  <Nav />
 
-    <div class="flexcolo abso">
-        <div class="brand">
-            {siteData.brand} Agency
-        </div>
-        <hr />
-        <div class="flexro">
-            <a
-                class="CTAbutton mail footer_link"
-                href={`mailto:${siteData.email}`}
-                title="Get In Touch. Send us an email">Mail</a
-            >
-
-            <a href="#" class="CTAbutton footer_link">
-                <svg class="hide" viewBox="0 0 296 296" id="Qr">
-                    <title>https://junglestar.org QRcode</title>
-                    <path fill="none" d="M0 0h296v296H0z"></path>
-                    <path
-                        fill="currentColor"
-                        d="M32 184v8h8v-8h-8zM88 32H32v56h56V32zm-8 48H40V40h40v40zm-32 96h8v-16h-8v8h-8v-8h8v-8h-8v-24h8v8h8v-8h8v-8h-8v-8h16v8h24v-8H80v-8h-8v-8h-8v8h-8v-8H40v8h-8v8h8v8h-8v56h8v8h8v-8zm8 8h-8v8h-8v8h24v-8h-8v-8zM72 48H48v24h24V48zm-8 96h8v-8H56v8h-8v8h8v8h16v-8h-8v-8zM48 248h24v-24H48v24zm16-72h8v-8h-8v8zm0 8v8h8v-8h-8zm8 16h16v-8H72v8zm-40 64h56v-56H32v56zm8-48h40v40H40v-40zm32-80h24v-8H72v8zm0 8v8h16v-8H72zm8 40h8v-8h-8v8zm16-88H80v8h16v-8zm-8 88v8h8v-8h-8zm16-80h-8v8h8v-8zm0 24v-8h-8v8h8zm-8 128h8v-16h-8v16zm8-152h16v-8h-8v-8h-8v-8h-8v16h8v8zm8 16v8h8v8h-8v8h24v-16h-8v-8h-8v-8h-16v8h8zm-8 8v8h8v-8h-8zm8 80v-8h-8v-8h-8v24h8v-8h8zm0-168v24h-8V40h8v-8H96v40h24V40h-8zm8 40h-8v8h8v-8zm16 160v-8h-16v-16h-16v8h-8v8h16v16h8v-8h16zm-16 24h8v-8h8v-8h-16v16zm8-176h8V72h-16v8h8v8zm8 136v-8h-8v8h8zm8 40v-8h-8v8h8zm8-184h8V64h-8V48h-16v8h8v8h-8v8h16v8zm0 0h-8v8h8v-8zm-8 32V88h-8v8h-8v8h8v16h16v-8h-8zm0 24h8v-8h-8v8zm0 64h-24v8h32v-16h-8v8zm8 24v-8h-8v8h8zm0-136v8h8v-8h-8zm-8 64v-8h-8v8h-24v-8H96v8h8v8h8v8H96v-16h-8v8h-8v8h8v8h24v8h-8v8h8v8h8v-8h8v-8h8v8h8v-8h8v-8h8v-8h-8v-8h8v-24h-8v16h-8zm0 24h-24v-8h24v8zm16 16v-8h-8v8h8zm-8 72h8v-8h-8v8zm16-224h-8v-8h-24v8h16v8h16v-8zm0 48v-8h-8v8h8zm-8 16h8v-8h-8v8zm16-32h-8v8h8v-8zm-8 80h8v-8h-8v8zm0 32v16h-8v8h16v-24h-8zm8-112h8v8h8v8h-8v-8h-8v8h-8v8h8v8h-8v8h-8v8h-8v8h16v8h8v-8h16v-8h-16v-8h16v-8h-8v-8h16V72h-8v-8h-8v-8h8v-8h-8V32h-16v8h8v32zm8 176h8v-8h-8v8zm16-136h8v-8h-8v8zm0 16h8v8h-16v16h8v8h-16v24h8v8h-8v16h-8v8h-8v8h8v8h-8v-8h-8v8h-8v8h-16v8h24v8h8v8h8v-8h8v-8h-16v-8h16v-24h8v24h16v-8h16v8h-8v16h8v-8h16v-8h-8v-8h8v-8h-8v-32h-8v-8h-16v8h-8v-8h8v-24h16v-32h-8v-8h-16v8zm24 72v24h-24v-24h24zm-8-48h-8v-8h8v8zm-8 96h-8v8h-8v8h24v-8h-8v-8zm0-152v8h8v-8h-8zm8 112h-8v8h8v-8zm0-88h8v-16h-8v16zm24 144v-8h-16v8h16zm8-216h-24v24h24V48zm-8 72h-8v8h8v-8zm-8 40v8h8v-8h-8zm16 80v-8h-8v8h8zm-24-136h8v8h8v-8h16v8h-8v16h8v-8h8V96h-40v8zm24 160h16v-8h-8v-8h-8v16zM208 32v56h56V32h-56zm48 48h-40V40h40v40zm0 64h-16v8h24v-16h-8v8zm8 80h-8v-8h8v-56h-8v8h-16v8h8v32h-8v8h8v16h16v-8zm-8 24h8v-8h-8v8z"
-                    ></path>
-                </svg>
-                QRcode
-            </a>
-
-            <a
-                class="CTAbutton github footer_link"
-                href={siteData.github}
-                title="Get In Touch. Send us an email"
-                target="_blank"
-                rel="noopener">Github</a
-            >
-
-            <a href="/about" class="footer_link">About</a>
-        </div>
-        <div class="copy">
-            <p>
-                <span class="hide_on_mobile">|</span>
-                <a href={siteData.repo}>
-                    This webite's code is <strong>Open Source</strong>,
-                </a>
-                licensed under
-                <a href={siteData.license_url}> CC BY 4.0 </a>
-            </p>
-
-            <p>
-                <a
-                    href="https://websitecarbon.com/"
-                    target="_blank"
-                    rel="noopener"><strong>Website Carbon:</strong></a
-                > 0.02g of CO2/view. <span class="show_on_mobile"><br /></span
-                >Cleaner than 98% of pages tested.
-            </p>
-            <p class="small_pad_top">
-                &copy; 2012-{currentYear}
-                {siteData.brand}.org
-            </p>
-        </div>
-        <hr />
+  <div class="flexcolo abso">
+    <div class="brand">
+      {siteData.brand} Agency
     </div>
+    <hr />
+    <div class="flexro">
+      <a class="CTAbutton mail footer_link" href={`mailto:${siteData.email}`} title="Get In Touch. Send us an email"
+        >Mail</a
+      >
+
+      <a href="#" class="CTAbutton footer_link">
+        <svg class="hide" viewBox="0 0 296 296" id="Qr">
+          <title>https://junglestar.org QRcode</title>
+          <path fill="none" d="M0 0h296v296H0z"></path>
+          <path
+            fill="currentColor"
+            d="M32 184v8h8v-8h-8zM88 32H32v56h56V32zm-8 48H40V40h40v40zm-32 96h8v-16h-8v8h-8v-8h8v-8h-8v-24h8v8h8v-8h8v-8h-8v-8h16v8h24v-8H80v-8h-8v-8h-8v8h-8v-8H40v8h-8v8h8v8h-8v56h8v8h8v-8zm8 8h-8v8h-8v8h24v-8h-8v-8zM72 48H48v24h24V48zm-8 96h8v-8H56v8h-8v8h8v8h16v-8h-8v-8zM48 248h24v-24H48v24zm16-72h8v-8h-8v8zm0 8v8h8v-8h-8zm8 16h16v-8H72v8zm-40 64h56v-56H32v56zm8-48h40v40H40v-40zm32-80h24v-8H72v8zm0 8v8h16v-8H72zm8 40h8v-8h-8v8zm16-88H80v8h16v-8zm-8 88v8h8v-8h-8zm16-80h-8v8h8v-8zm0 24v-8h-8v8h8zm-8 128h8v-16h-8v16zm8-152h16v-8h-8v-8h-8v-8h-8v16h8v8zm8 16v8h8v8h-8v8h24v-16h-8v-8h-8v-8h-16v8h8zm-8 8v8h8v-8h-8zm8 80v-8h-8v-8h-8v24h8v-8h8zm0-168v24h-8V40h8v-8H96v40h24V40h-8zm8 40h-8v8h8v-8zm16 160v-8h-16v-16h-16v8h-8v8h16v16h8v-8h16zm-16 24h8v-8h8v-8h-16v16zm8-176h8V72h-16v8h8v8zm8 136v-8h-8v8h8zm8 40v-8h-8v8h8zm8-184h8V64h-8V48h-16v8h8v8h-8v8h16v8zm0 0h-8v8h8v-8zm-8 32V88h-8v8h-8v8h8v16h16v-8h-8zm0 24h8v-8h-8v8zm0 64h-24v8h32v-16h-8v8zm8 24v-8h-8v8h8zm0-136v8h8v-8h-8zm-8 64v-8h-8v8h-24v-8H96v8h8v8h8v8H96v-16h-8v8h-8v8h8v8h24v8h-8v8h8v8h8v-8h8v-8h8v8h8v-8h8v-8h8v-8h-8v-8h8v-24h-8v16h-8zm0 24h-24v-8h24v8zm16 16v-8h-8v8h8zm-8 72h8v-8h-8v8zm16-224h-8v-8h-24v8h16v8h16v-8zm0 48v-8h-8v8h8zm-8 16h8v-8h-8v8zm16-32h-8v8h8v-8zm-8 80h8v-8h-8v8zm0 32v16h-8v8h16v-24h-8zm8-112h8v8h8v8h-8v-8h-8v8h-8v8h8v8h-8v8h-8v8h-8v8h16v8h8v-8h16v-8h-16v-8h16v-8h-8v-8h16V72h-8v-8h-8v-8h8v-8h-8V32h-16v8h8v32zm8 176h8v-8h-8v8zm16-136h8v-8h-8v8zm0 16h8v8h-16v16h8v8h-16v24h8v8h-8v16h-8v8h-8v8h8v8h-8v-8h-8v8h-8v8h-16v8h24v8h8v8h8v-8h8v-8h-16v-8h16v-24h8v24h16v-8h16v8h-8v16h8v-8h16v-8h-8v-8h8v-8h-8v-32h-8v-8h-16v8h-8v-8h8v-24h16v-32h-8v-8h-16v8zm24 72v24h-24v-24h24zm-8-48h-8v-8h8v8zm-8 96h-8v8h-8v8h24v-8h-8v-8zm0-152v8h8v-8h-8zm8 112h-8v8h8v-8zm0-88h8v-16h-8v16zm24 144v-8h-16v8h16zm8-216h-24v24h24V48zm-8 72h-8v8h8v-8zm-8 40v8h8v-8h-8zm16 80v-8h-8v8h8zm-24-136h8v8h8v-8h16v8h-8v16h8v-8h8V96h-40v8zm24 160h16v-8h-8v-8h-8v16zM208 32v56h56V32h-56zm48 48h-40V40h40v40zm0 64h-16v8h24v-16h-8v8zm8 80h-8v-8h8v-56h-8v8h-16v8h8v32h-8v8h8v16h16v-8zm-8 24h8v-8h-8v8z"
+          ></path>
+        </svg>
+        QRcode
+      </a>
+
+      <a
+        class="CTAbutton github footer_link"
+        href={siteData.github}
+        title="Get In Touch. Send us an email"
+        target="_blank"
+        rel="noopener">Github</a
+      >
+
+      <a href="/about" class="footer_link">About</a>
+    </div>
+    <div class="copy">
+      <p>
+        <span class="hide_on_mobile">|</span>
+        <a href={siteData.repo}>
+          This webite's code is <strong>Open Source</strong>,
+        </a>
+        licensed under
+        <a href={siteData.license_url}> CC BY 4.0 </a>
+      </p>
+
+      <p>
+        <a href="https://websitecarbon.com/" target="_blank" rel="noopener"><strong>Website Carbon:</strong></a> 0.02g of
+        CO2/view. <span class="show_on_mobile"><br /></span>Cleaner than 98% of pages tested.
+      </p>
+      <p class="small_pad_top">
+        &copy; 2012-{currentYear}
+        {siteData.brand}.org
+      </p>
+    </div>
+    <hr />
+  </div>
 </footer>

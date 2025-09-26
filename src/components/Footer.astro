@@ -26,7 +26,8 @@ const currentYear = new Date().getFullYear();
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    position: sticky;
+    bottom: 0;
 
     a {
       color: var(--white);
@@ -62,6 +63,9 @@ const currentYear = new Date().getFullYear();
   }
 
   .flexcolo {
+    position: fixed;
+    bottom: 0;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,7 +175,7 @@ const currentYear = new Date().getFullYear();
 
   <Nav />
 
-  <div class="flexcolo abso">
+  <div class="flexcolo">
     <div class="brand">
       {siteData.brand} Agency
     </div>
@@ -222,6 +226,5 @@ const currentYear = new Date().getFullYear();
         {siteData.brand}.org
       </p>
     </div>
-    <hr />
   </div>
 </footer>

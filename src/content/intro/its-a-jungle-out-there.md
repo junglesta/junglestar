@@ -14,9 +14,9 @@ Let's face it. The noise level. The nonsense. It's mostly marketing slogans caco
 
 To get noticed, brands need to be **easy**, **customer-friendly** and **recognizable**.
 
-Today 60% of internet traffic comes **from phones**. Is your website ready for that?
+Today 60% of internet traffic comes **from phones**. Is **your website ready** for that?
 
-It's never been easier to launch a brand new internet presence.
+It's never been easier to launch a **brand new** internet presence.
 
 Needing a landing page or an **online shop**?
 

@@ -1,13 +1,9 @@
 ---
-// src/components/LandingScreen.astro
+// src/components/Header.astro
 import Hi from "@components/LogoAni.astro";
 ---
 
 <style>
-  header {
-    position: relative;
-    z-index: 1;
-  }
   .brand {
     font-weight: 300 !important;
     font-size: 200%;
@@ -23,7 +19,7 @@ import Hi from "@components/LogoAni.astro";
     min-height: 100svh;
     height: 100svh;
     background-size: cover;
-    background-color: #0069cc;
+    background-color: var(--brand);
     color: var(--white);
   }
   .slogan {
@@ -38,8 +34,7 @@ import Hi from "@components/LogoAni.astro";
     margin-bottom: calc(var(--space_block) / 8);
   }
 </style>
-
-<header class="cover js_scrollto01">
+<header slot="landing_screen" class="cover js_scrollto01">
   <Hi />
 
   <div class="slogan" id="slogan0">

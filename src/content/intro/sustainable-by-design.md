@@ -12,10 +12,12 @@ theme: crazy_claims
 
 Never too busy again.
 
-Efficient by design: simple updates, low resource consumption, more time for what matters.
+**Efficient by design**: simple updates, low resource consumption, more time for what matters.
 
-Easy-to-use doesn't mean effective. Is your DIY solution truly performing?
+Easy-to-use doesn't mean **effective**. Is your lowcost solution actually **performing**?
 
-DIY marketing vs. professional expertise - can small businesses compete? Successful entrepreneurs know when to delegate and focus.
+DIY Marketing vs. Expertise. How can small businesses compete?
 
-We make outsourcing easy - empowering managers, liberating owners"
+Successful entrepreneurs know when to **delegate** and focus.
+
+We make outsourcing easy, **empowering managers**, liberating owners.

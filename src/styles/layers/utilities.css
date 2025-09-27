@@ -12,21 +12,16 @@
     flex-direction: row;
   }
 
-  .flex.flex_justify_center {
+  .flex_justify_center {
     justify-content: center;
   }
 
-  .flex.flex_align_center {
+  .flex_align_center {
     align-items: center;
   }
 
-  .flex.flex_cols {
+  .flex_cols {
     flex-direction: column;
-  }
-
-  .flex {
-    display: flex;
-    flex-direction: row;
   }
 
   /* Color utilities */
@@ -102,11 +97,7 @@
   }
 
   .top_pad_big {
-    padding-top: var(--space_inline);
-  }
-
-  .top_padded {
-    padding-top: calc(var(--space_block) * 4.18); /* was 11.5svh */
+    padding-top: calc(var(--space_block) * 3); /* was 11.5svh */
   }
 
   .text {
@@ -114,8 +105,14 @@
   }
 
   /* Layout utilities */
+
+  .important_banner {
+    background-color: #fff;
+    padding-block: var(--space_block);
+  }
+
   .full_height {
-    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   /* Print only - hidden on screen */

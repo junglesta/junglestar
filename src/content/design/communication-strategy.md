@@ -1,4 +1,5 @@
 ---
+sort_order: 1
 title: Communication Strategy
 subtitle: Develop Your Brand Voice
 image:

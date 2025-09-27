@@ -1,4 +1,5 @@
 ---
+sort_order: 2
 title: "Sustainable Marketing Communication"
 subtitle: "Build once, maintain easily. Never overwhelmed again."
 image:

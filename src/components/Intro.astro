@@ -5,18 +5,18 @@ import IntroCard from "./IntroCard.astro";
 // Get all intro entries and sort them
 const introEntries = await getCollection("intro");
 const sortedEntries = introEntries.sort((a, b) => {
-    // Sort by filename
-    const aNum = parseInt(a.id.match(/^\d+/)?.[0] || "0");
-    const bNum = parseInt(b.id.match(/^\d+/)?.[0] || "0");
-    return aNum - bNum;
+  // Sort by filename
+  const aNum = parseInt(a.id.match(/^\d+/)?.[0] || "0");
+  const bNum = parseInt(b.id.match(/^\d+/)?.[0] || "0");
+  return aNum - bNum;
 });
 
 // Optional: Filter published entries only
 // const publishedEntries = sortedEntries.filter(entry => entry.data.published !== false);
 
 interface Props {
-    showContent?: boolean;
-    limit?: number;
+  showContent?: boolean;
+  limit?: number;
 }
 
 const { showContent = true, limit } = Astro.props;
@@ -24,24 +24,21 @@ const entriesToShow = limit ? sortedEntries.slice(0, limit) : sortedEntries;
 ---
 
 <style>
-    .intro_pitch {
-        background-color: #000;
-        color: white;
-        padding: var(--space_block) var(--space_inline);
-    }
+  .intro_pitch {
+    background-color: #000;
+    color: white;
+    padding: var(--space_block) var(--space_inline);
+  }
 
-    .intro_wrap {
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
+  .intro_wrap {
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 100ch;
+  }
 </style>
 
 <section class="intro_pitch">
-    <div class="intro_wrap">
-        {
-            entriesToShow.map((entry) => (
-                <IntroCard entry={entry} showContent={showContent} />
-            ))
-        }
-    </div>
+  <div class="intro_wrap">
+    {entriesToShow.map((entry) => <IntroCard entry={entry} showContent={showContent} />)}
+  </div>
 </section>

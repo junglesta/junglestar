@@ -1,4 +1,5 @@
 ---
+sort_order: 5
 title: Today you don't buy software
 subtitle: Pay a developer who can code components together.
 image:

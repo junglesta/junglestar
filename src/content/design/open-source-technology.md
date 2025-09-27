@@ -1,4 +1,5 @@
 ---
+sort_order: 6
 title: "Why Open Source Is Your Smartest Move"
 subtitle: "Own your tech stack. Control your future. Stop renting software."
 image:

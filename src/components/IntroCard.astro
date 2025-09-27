@@ -4,8 +4,8 @@ import { render } from "astro:content";
 import { Image } from "astro:assets";
 
 interface Props {
-    entry: CollectionEntry<"intro">;
-    showContent?: boolean;
+  entry: CollectionEntry<"intro">;
+  showContent?: boolean;
 }
 
 const { entry, showContent = true } = Astro.props;
@@ -14,71 +14,76 @@ const { Content } = await render(entry);
 ---
 
 <style>
-    .intro_card {
-        padding-block: calc(var(--space_block) * 3);
+  .intro_card {
+    padding-block: calc(var(--space_block) * 3);
+    padding-inline: calc(var(--space_inline) * 1);
+  }
+  .CTAbutton {
+    text-transform: uppercase;
+    color: var(--white);
+    border-color: var(--white);
+  }
+  .intro_image {
+    padding-block: calc(var(--space_block) * 2);
+  }
+  .expand11 {
+    transform: scale(1.1);
+  }
+  .intro_cta {
+    padding-top: calc(var(--space_block) * 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro_titles {
+    margin-inline: auto;
+    padding-inline: calc(var(--space_inline) * 2.5);
+    h2 {
+      color: var(--brand_light);
+      font-weight: var(--weight_med);
     }
-    .button {
-        color: var(--white);
-        border-color: var(--white);
-    }
-    .intro_image {
-        transform: scale(1.1);
-        padding-bottom: calc(var(--space_block) * 1);
-    }
-    .intro_cta {
-        padding-top: calc(var(--space_block) * 1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .intro_titles {
-        padding-inline: calc(var(--space_inline) * 2.5);
-        h2 {
-            color: var(--brand_light);
-            font-weight: var(--weight_med);
-        }
-    }
+  }
 
-    .intro_content {
-        font-size: var(--font_rem);
-        padding-top: calc(var(--space_block) * 1);
-        /*padding-inline: calc(var(--space_inline) * 0.25);*/
-        padding-inline: calc(var(--space_inline) * 2.5);
-        text-justify: distribute;
-    }
+  .intro_content {
+    font-size: var(--font_rem);
+    padding-top: calc(var(--space_block) * 1);
+    /*padding-inline: calc(var(--space_inline) * 0.25);*/
+    padding-inline: calc(var(--space_inline) * 2.5);
+    text-justify: distribute;
+  }
 </style>
 
 <article class="intro_card">
-    {
-        data.image && (
-            <div class="intro_image">
-                <Image src={data.image.src} alt={data.image.alt} width={2500} />
-            </div>
-        )
-    }
-    <div class="intro_header">
-        <div class="intro_titles">
-            <h2 class="intro_title">{data.title}</h2>
-            {data.subtitle && <h3 class="intro_subtitle">{data.subtitle}</h3>}
-            {data.tagline && <h4 class="intro_subsubtitle">{data.tagline}</h4>}
-        </div>
+  {
+    data.image && (
+      <div class="intro_image expand11">
+        <Image src={data.image.src} alt={data.image.alt} width={2500} />
+      </div>
+    )
+  }
+  <div class="intro_header">
+    <div class="intro_titles">
+      <h2 class="intro_title">{data.title}</h2>
+      {data.subtitle && <h3 class="intro_subtitle">{data.subtitle}</h3>}
+      {data.tagline && <h4 class="intro_subsubtitle">{data.tagline}</h4>}
     </div>
+  </div>
 
-    {
-        showContent && (
-            <div class="intro_content">
-                <Content />
-            </div>
-        )
-    }
+  {
+    showContent && (
+      <div class="intro_content">
+        <Content />
+      </div>
+    )
+  }
 
-    {
-        data.cta && data.link && (
-            <div class="intro_cta ">
-                <a href={data.link} class="cta_button button">
-                    {data.cta}
-                </a>
-            </div>
-        )
-    }
+  {
+    data.cta && data.link && (
+      <div class="intro_cta ">
+        <a href={data.link} class="CTAbutton button">
+          {data.cta}
+        </a>
+      </div>
+    )
+  }
 </article>

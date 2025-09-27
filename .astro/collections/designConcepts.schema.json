@@ -28,6 +28,9 @@
           "type": "boolean",
           "default": false
         },
+        "sort_order": {
+          "type": "number"
+        },
         "image": {
           "anyOf": [
             {

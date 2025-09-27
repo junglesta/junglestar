@@ -87,6 +87,7 @@ const currentYear = new Date().getFullYear();
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     gap: calc(var(--space_block) / 2);
     padding: 0 !important;
     margin: 0 !important;
@@ -174,11 +175,9 @@ const currentYear = new Date().getFullYear();
     </div>
     <hr />
     <div class="flexro">
-      <a class="CTAbutton mail footer_link" href={`mailto:${siteData.email}`} title="Get In Touch. Send us an email"
-        >Mail</a
-      >
+      <a class="mail footer_link" href={`mailto:${siteData.email}`} title="Get In Touch. Send us an email">Mail</a>
 
-      <a href="#" class="CTAbutton footer_link">
+      <a href="#" class="footer_link">
         <svg class="hide" viewBox="0 0 296 296" id="Qr">
           <title>https://junglestar.org QRcode</title>
           <path fill="none" d="M0 0h296v296H0z"></path>
@@ -191,7 +190,7 @@ const currentYear = new Date().getFullYear();
       </a>
 
       <a
-        class="CTAbutton github footer_link"
+        class="github footer_link"
         href={siteData.github}
         title="Get In Touch. Send us an email"
         target="_blank"

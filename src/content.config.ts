@@ -93,6 +93,7 @@ const designConcepts = defineCollection({
       title: z.string(),
       subtitle: z.string().optional().nullable(),
       draft: z.boolean().optional().default(false),
+      sort_order: z.number().optional(),
       image: z
         .object({
           src: image(), // Use image() helper instead of z.string()

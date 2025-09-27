@@ -7,7 +7,8 @@ import { Image } from "astro:assets";
 const posts = await getCollection("designConcepts", ({ data }) => {
   return !import.meta.env.PROD || data.draft !== true;
 });
-
+// Sort by sort_order field (ascending: 1, 2, 3...)
+posts.sort((a, b) => a.data.sort_order - b.data.sort_order);
 // Render all posts content
 const renderedPosts = await Promise.all(
   posts.map(async (post) => {
@@ -27,30 +28,7 @@ const description =
 
 <style>
   h1 {
-    /*font-size: 2.5rem;
-        margin-bottom: 2rem;*/
     color: #111827;
-  }
-
-  .toc {
-    margin: var(--space_block) 0;
-    padding: var(--space_block);
-    background-color: #f9fafb;
-    border-radius: var(--radius);
-  }
-
-  .toc ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .toc a {
-    color: var(--brand);
-    text-decoration: none;
-  }
-
-  .toc a:hover {
-    text-decoration: underline;
   }
 
   .posts_container {
@@ -99,12 +77,7 @@ const description =
   .post_content {
     max-width: 60ch;
     margin-inline: auto;
-    /*color: #374151;*/
   }
-
-  /*.post_content :global(p) {
-        margin-bottom: var(--space_block);
-    }*/
 
   .post_content :global(ul),
   .post_content :global(ol) {
@@ -135,8 +108,7 @@ const description =
     <LandingScreen />
   </div>
   <div class="wrap">
-    <h2 class="center">Design delivers!</h2>
-    <h3 class="center"> Designing for sustainabilty? What's that... </h3>
+    <h2 class="center"> Investing in design does deliver!</h2>
 
     <!-- Table of Contents -->
     <div class="wrap">
@@ -176,5 +148,11 @@ const description =
         ))
       }
     </div>
+  </div>
+
+  <div class="flex flex_justify_center flex_align_center important_banner">
+    <a class="button CTAbutton" href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's Design">
+      Let's start talking!
+    </a>
   </div>
 </Layout>

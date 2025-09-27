@@ -10,12 +10,10 @@ tags:
   - technology
 ---
 
-<small><em>The Problem</em></small>:
-
+<small><em>The Problem</em></small>:<br>
 Proprietary software locks you in. Rising subscription costs, **vendor dependencies**, and **zero control** over your **critical tools**.
 
-<small><em>The Solution</em></small>:
-
+<small><em>The Solution</em></small>:<br>
 **Go open source.** Build on transparent foundations we all can inspect, modify, and own forever. Leverage **thriving communities** that innovate faster than any corporation.
 
 <small><em>Why It Matters</em></small>:

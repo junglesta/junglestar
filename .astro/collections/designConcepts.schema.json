@@ -29,7 +29,21 @@
           "default": false
         },
         "sort_order": {
-          "type": "number"
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "image": {
           "anyOf": [

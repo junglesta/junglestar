@@ -421,7 +421,6 @@
     padding: var(--space_block);
     background-color: #f9fafb;
     border-radius: var(--radius);
-    max-width: 50ch;
     margin-inline: auto;
   }
 
@@ -449,5 +448,14 @@
     svg {
       width: max-content;
     }
+  }
+
+  .max_width_100ch {
+    max-width: 100ch;
+    margin-inline: auto;
+  }
+  .max_width_60ch {
+    max-width: 60ch;
+    margin-inline: auto;
   }
 }

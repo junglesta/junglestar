@@ -6,7 +6,7 @@ export default defineConfig({
   output: "static",
   image: {
     responsiveStyles: true,
-    layout: "constrained",
+    layout: "full-width",
   },
   build: {
     format: "directory",

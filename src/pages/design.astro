@@ -7,8 +7,12 @@ import { Image } from "astro:assets";
 const posts = await getCollection("designConcepts", ({ data }) => {
   return !import.meta.env.PROD || data.draft !== true;
 });
-// Sort by sort_order field (ascending: 1, 2, 3...)
-posts.sort((a, b) => a.data.sort_order - b.data.sort_order);
+// Sort with fallback for undefined sort_order
+posts.sort((a, b) => {
+  const orderA = a.data.sort_order ?? 999; // Default to 999 if undefined
+  const orderB = b.data.sort_order ?? 999;
+  return orderA - orderB;
+});
 // Render all posts content
 const renderedPosts = await Promise.all(
   posts.map(async (post) => {
@@ -41,6 +45,8 @@ const description =
     border-bottom: 1px solid white;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space_inline);
   }
 
   .post:last-child {
@@ -112,7 +118,7 @@ const description =
 
     <!-- Table of Contents -->
     <div class="wrap">
-      <div class="toc">
+      <div class="toc max_width_60ch">
         <h4 class="center">Table of Contents</h4>
         <ul>
           {

@@ -2,7 +2,7 @@
 // src/components/Nav.astro
 //
 // Helper to check if current page
-const currentPath = Astro.url.pathname;
+//const currentPath = Astro.url.pathname;
 ---
 
 <style>
@@ -11,13 +11,17 @@ const currentPath = Astro.url.pathname;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*justify-content: stretch;*/
     margin-block: calc(var(--space_block) * 1);
   }
   .button {
-    text-align: center;
     text-transform: uppercase;
+    width: 80svw;
+    max-width: 400px;
+    border-color: var(--white);
   }
 </style>
+
 <nav class="flexcolo" role="menu">
   <a class="button" role="menuitem" title="Design and development" href="/design">
     <span class="page_title">Communication Design</span>

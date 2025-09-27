@@ -11,6 +11,7 @@
     --space_inline: 2.75dvw;
     /* Fixed spaces */
     --stone: 3rem;
+    --tap_size: 48px;
     /* Colors */
     --black: oklch(0.2 0 360); /*#161616*/
     --white: oklch(0.9 0 360); /*#dedede*/

@@ -281,12 +281,14 @@
     font-weight: var(--weight_med);
     display: inline-block;
     width: auto;
-    line-height: 1.4;
-    margin-block: calc(var(--space_block) / 2);
+    text-align: center;
+    height: var(--tap_size);
+    line-height: var(--tap_size);
+    margin-block: calc(var(--space_block) / 3);
     border-radius: var(--radius);
-    padding: calc(var(--space_block) * 0.5) calc(var(--space_inline) * 1); /* was 0.8svh 2.4svh */
+    padding-inline: calc(var(--space_inline) * 2);
     color: var(--brand);
-    border: 2px solid var(--white); /* Fixed orphan --vertical_rhythm */
+    border: 2px solid var(--brand);
   }
 
   .button:focus,
@@ -359,5 +361,68 @@
   .offer_content h6,
   .section h6 {
     color: var(--brand);
+  }
+
+  .mean_title {
+    color: var(--brand);
+    min-height: 50dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mean_icon {
+    min-width: 200px;
+    padding-top: 10px;
+    width: 20dvw;
+    max-width: 240px;
+  }
+
+  .mean_icon.four_icon_group {
+    max-width: 80dvw;
+    display: flex;
+    width: 80vw;
+  }
+
+  @media only screen and (min-width: 601px) {
+    .mean_icon.four_icon_group {
+      width: 70dvw;
+    }
+  }
+  @media only screen and (min-width: 821px) {
+    .mean_icon.four_icon_group {
+      width: 60dvw;
+    }
+  }
+  @media only screen and (min-width: 1025px) {
+    .mean_icon.four_icon_group {
+      width: 50dvw;
+    }
+  }
+  @media only screen and (min-width: 1025px) {
+    .mean_icon.four_icon_group {
+      width: 50dvw;
+    }
+  }
+  @media only screen and (min-width: 1025px) {
+    .mean_icon.four_icon_group {
+      width: 50dvw;
+    }
+  }
+
+  .mean_title.mean_title--first {
+    background-color: black;
+    min-height: 50dvh;
+    padding-block: calc(var(--space_block) * 4);
+  }
+  .mean_title.mean_title--second {
+    padding-block: calc(var(--space_block) * 4);
+    margin-top: 2rem;
+  }
+  .mean_title.mean_title--first h1,
+  .mean_title.mean_title--first h2,
+  .mean_title.mean_title--first h3 {
+    color: white;
   }
 }

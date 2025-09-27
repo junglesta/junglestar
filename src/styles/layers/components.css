@@ -80,6 +80,7 @@
   .h2 {
     font-size: clamp(var(--heading2_min), var(--heading2_responsive), var(--heading2_max));
     line-height: 1.1;
+    padding-top: calc(var(--space_block) * 2);
   }
 
   h3,
@@ -327,5 +328,36 @@
     max-width: 40svh; /* Keep as viewport based */
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .offer_content {
+    padding-bottom: 16dvw;
+  }
+
+  .offer_content .h1,
+  .section .h1,
+  .offer_content .h2,
+  .section .h2,
+  .offer_content .h3,
+  .section .h3,
+  .offer_content .h4,
+  .section .h4,
+  .offer_content .h5,
+  .section .h5,
+  .offer_content .h6,
+  .section .h6,
+  .offer_content h1,
+  .section h1,
+  .offer_content h2,
+  .section h2,
+  .offer_content h3,
+  .section h3,
+  .offer_content h4,
+  .section h4,
+  .offer_content h5,
+  .section h5,
+  .offer_content h6,
+  .section h6 {
+    color: var(--brand);
   }
 }

@@ -1,12 +1,12 @@
 ---
 //pages/discoverability.astro
 import Layout from "@layouts/Layout.astro";
-import LandingScreen from "@components/HeaderDiscoverability.astro";
+import Header from "@components/HeaderSlotted.astro";
 // Page metadata
 const pageTitle = "Junglestar | Pricing";
 const pageDescription =
   "Flexible one-stop web agency. We design, code & deploy — from webstores to web apps. Packed solutions & custom designs for great user experiences.";
-const pageSubtitle = "Check our packages!";
+const pageSubtitle = "Let's put your business on the map!";
 ---
 
 <style>
@@ -61,9 +61,9 @@ const pageSubtitle = "Check our packages!";
   }
 </style>
 
-<Layout title={pageTitle} description={pageDescription}>
+<Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
   <div slot="landing_screen">
-    <LandingScreen />
+    <Header>{pageSubtitle}</Header>
   </div>
   <div class="print_only">
     <div class="print_imperatif">Make life easy for your customers!</div>
@@ -120,18 +120,19 @@ const pageSubtitle = "Check our packages!";
           that You will be well listed on Google.
         </h3>
       </div>
+
+      <a
+        class="button CTAbutton"
+        href="mailto:info@junglestar.org?subject=Send me infos about Junglestar's Google Biz package"
+      >
+        Let's start talking!
+      </a>
     </div>
 
     <div class="print_only">
       <div class="starting_at center print_footer">
         <p>Starting at 290 Euro</p>
       </div>
-    </div>
-
-    <div class="button_row center">
-      <a href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's Google Biz package">
-        <span class="button center">Let's start talking!</span>
-      </a>
     </div>
   </div>
 

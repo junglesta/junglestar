@@ -41,7 +41,9 @@ import Hi from "@components/LogoAni.astro";
   <Hi />
 
   <div class="slogan" id="slogan0">
-    <h1 class="brand">Discover our packages!</h1>
+    <h1 class="brand">
+      <slot />
+    </h1>
     <p>&nbsp;</p>
     <p>↓</p>
   </div>

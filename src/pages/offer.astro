@@ -1,7 +1,7 @@
 ---
 //import Welcome from '../components/aaa.astro';
 import Layout from "@layouts/Layout.astro";
-import LandingScreen from "@components/HeaderOffer.astro";
+import Header from "@components/HeaderSlotted.astro";
 // Page metadata
 const pageTitle = "Junglestar | Pricing";
 const pageDescription =
@@ -197,8 +197,9 @@ const pageSubtitle = "Check our packages!";
 
 <Layout title={pageTitle} description={pageDescription}>
   <div slot="landing_screen">
-    <LandingScreen />
+    <Header>{pageSubtitle}</Header>
   </div>
+
   <div class="print_only">
     <div class="print_imperatif">Make life easy for your customers!</div>
     <div class="print_title">Junglestar</div>
@@ -253,7 +254,7 @@ const pageSubtitle = "Check our packages!";
           </div>
 
           <h1 class="center">We can fix that.</h1>
-          <h2 class="h3 center"> We offer affordable packages for any budget! </h2>
+          <h2 class="h3 center"> We offer all-inclusive packages for any budget! </h2>
         </div>
       </div>
     </div>
@@ -309,10 +310,11 @@ const pageSubtitle = "Check our packages!";
 
           <div class="button_row center">
             <a
+              class="button CTAbutton"
               title="request more infos"
               href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's Landing package"
             >
-              <span class="button center">Let's start talking!</span>
+              Let's start talking!
             </a>
           </div>
         </div>
@@ -373,10 +375,11 @@ const pageSubtitle = "Check our packages!";
 
           <div class="button_row center">
             <a
+              class="button CTAbutton"
               title="request more infos"
-              href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's  package"
+              href="mailto:info@junglestar.org?subject=Send me infos about Junglestar's Full Site package"
             >
-              <span class="button center">Let's start talking!</span>
+              Let's start talking!
             </a>
           </div>
         </div>
@@ -441,10 +444,11 @@ const pageSubtitle = "Check our packages!";
 
           <div class="button_row center">
             <a
+              class="button CTAbutton"
               title="request more infos"
               href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's  package"
             >
-              <span class="button center">Let's start talking!</span>
+              Let's start talking!
             </a>
           </div>
         </div>

@@ -1,6 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import LandingScreen from "@components/HeaderDesign.astro";
+import Header from "@components/HeaderSlotted.astro";
 import { getCollection, render } from "astro:content";
 import { Image } from "astro:assets";
 
@@ -28,6 +28,7 @@ const renderedPosts = await Promise.all(
 const title = "Junglestar Design | Because Why";
 const description =
   "Sustainable Web Design to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
+const pageSubtitle = "Designing for sustainabilty? What's that?!";
 ---
 
 <style>
@@ -109,9 +110,9 @@ const description =
   }*/
 </style>
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} pageSubtitle={pageSubtitle}>
   <div slot="landing_screen">
-    <LandingScreen />
+    <Header>{pageSubtitle}</Header>
   </div>
   <div class="wrap">
     <h2 class="center"> Investing in design does deliver!</h2>

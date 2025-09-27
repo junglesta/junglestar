@@ -1,7 +1,8 @@
 ---
 //import Welcome from '../components/aaa.astro';
 import Layout from "@layouts/Layout.astro";
-import LandingScreen from "@components/HeaderContent.astro";
+
+import Header from "@components/HeaderSlotted.astro";
 // Page metadata
 const pageTitle = "Junglestar | Content Production";
 const pageDescription =
@@ -9,9 +10,9 @@ const pageDescription =
 const pageSubtitle = "";
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
+<Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
   <div slot="landing_screen">
-    <LandingScreen />
+    <Header>{pageSubtitle}</Header>
   </div>
 
   <div class="offer_content light_bg page_break social_media_management">
@@ -69,25 +70,27 @@ const pageSubtitle = "";
         <h2 class="h3 center"> We build your image through social engagement! </h2>
         <h3 class="center">
           Instagram, Facebook, Twitter, Pinterest...
-          <br />We'll target and engage real followers.
-          <br />We'll build your brand, <br />authentically growing your audience, <br />directing traffic to your site, <br
-          />increasing sales and customer satisfaction, <br /><strong
-            >leveraging the smartest tools and strategies.</strong
-          >
+          <br />First we strategize goals & audience together, then...
+          <br />We'll target and engage <strong> real active users. </strong>
+          <br />We'll build your brand,
+          <br />authentically growing your audience.
+          <br />We'll direct traffic to your site,
+          <br />increasing sales and customer satisfaction,
+          <br />leveraging the smartest tools.
         </h3>
         <a
-          class="button CTAbutton"
+          class="button CTAbutton center"
           href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's Social Media Management package"
         >
           Let's start talking!
         </a>
-      </div>
 
-      <div class="print_only">
-        <div class="starting_at center print_footer">
-          <p>Starting at 290 Euro</p>
+        <div class="print_only">
+          <div class="starting_at center print_footer">
+            <p>Starting at 290 Euro</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</Layout>
+  </div></Layout
+>

@@ -145,17 +145,6 @@ const currentYear = new Date().getFullYear();
       height: clamp(100px, 30svw, 300px);
     }
   }
-  @media (max-width: 450px) {
-    .hide_on_mobile {
-      display: none;
-    }
-  }
-
-  @media (min-width: 450px) {
-    .show_on_mobile {
-      display: none;
-    }
-  }
 
   a::before,
   a::after {
@@ -169,7 +158,11 @@ const currentYear = new Date().getFullYear();
 </style>
 
 <footer class="footer_site">
-  <a class="footer_logo no_underline" title="Clicking this link will send you back to junglestar.org homepage" href="/">
+  <a
+    class="footer_logo no_underline hide_on_phones"
+    title="Clicking this link will send you back to junglestar.org homepage"
+    href="/"
+  >
     <Logo />
   </a>
 
@@ -219,7 +212,7 @@ const currentYear = new Date().getFullYear();
 
       <p>
         <a href="https://websitecarbon.com/" target="_blank" rel="noopener"><strong>Website Carbon:</strong></a> 0.02g of
-        CO2/view. <span class="show_on_mobile"><br /></span>Cleaner than 98% of pages tested.
+        CO2/view. <span class="show_on_phones"><br /></span>Cleaner than 98% of pages tested.
       </p>
       <p class="small_pad_top">
         &copy; 2012-{currentYear}

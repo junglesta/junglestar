@@ -22,9 +22,9 @@ const pageSubtitle = "Expertise you can trust";
   }
 
   .projects-grid {
-    padding: var(--space_block) var(--space_inline);
+    padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: var(--space_block) var(--space_inline);
   }
 
@@ -33,13 +33,16 @@ const pageSubtitle = "Expertise you can trust";
       grid-template-columns: 1fr;
     }
   }
+  .vpad {
+    padding-block: calc(var(--space_block) * 3);
+  }
 </style>
 
 <Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
   <div slot="landing_screen">
     <Header>{pageSubtitle}</Header>
   </div>
-  <div class="wrap">
+  <div class="wrap vpad">
     <h1 class="center">Live Projects</h1>
     <div class="projects-grid">
       {projects.map((project) => <ProjectCard {...project} />)}

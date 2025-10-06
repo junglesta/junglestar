@@ -15,7 +15,12 @@
     /* Colors */
     --black: oklch(0.2 0 360); /*#161616*/
     --white: oklch(0.9 0 360); /*#dedede*/
+    --white_hover: #fff; /*#dedede*/
     --background_color: oklch(0.8 0.03 208.64); /* #e6e6e6*/
+    --background_blackT15: rgba(0, 0, 0, 0.15);
+    --background_whiteT15: rgba(255, 255, 255, 0.15);
+    --black_fumes: #161616;
+
     /*--brand: #0069cc;*/
     --brand: oklch(0.5286 0.1735 254.92);
     /*--brand_invert: #ff9633;*/
@@ -24,10 +29,13 @@
     --brand_complementary: oklch(0.6201 0.156454 53.4649);
     --brand_light: oklch(0.8322 0.0885 246.95);
     --text_color: #111111;
-    --link_color: var(--brand);
     --grey_color: #212121;
     --grey_color_light: #868686;
     --grey_color_dark: #000000;
+
+    /* DERIVED COLOURS */
+    --link_color: var(--white);
+    --link_color_hover: var(--white_hover);
 
     /* Shadows with SVH */
     --shadow_color: rgb(0, 0, 0);
@@ -40,11 +48,6 @@
 
     /* Transitions */
     --transition_shadow: box-shadow 0.2s ease;
-
-    /* Button tokens */
-    --black_stroke: hsl(0, 0%, 60%);
-    --button_focus_bg: hsla(0, 0%, 100%, 1);
-    --button_book: var(--brand);
 
     /* Card tokens */
     --big_card_width: 27.5svw;

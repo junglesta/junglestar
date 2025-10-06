@@ -3,92 +3,95 @@
    ======================================== */
 
 @layer reset {
-    /* Reset margins and paddings */
-    blockquote,
-    body,
-    dd,
-    dl,
-    figure,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    hr,
-    ol,
-    p,
-    pre,
-    ul {
-        margin: 0;
-        padding: 0;
-    }
+  /* Reset margins and paddings */
+  blockquote,
+  body,
+  dd,
+  dl,
+  figure,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  ol,
+  p,
+  pre,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
-    /* Universal reset */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+  /* Universal reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-    /* HTML and Body */
-    body,
-    html {
-        height: 100%;
-        overflow-x: hidden;
-    }
+  /* HTML and Body */
+  body,
+  html {
+    height: 100%;
+    overflow-x: hidden;
+  }
 
-    html {
-        scroll-behavior: smooth;
-    }
+  html {
+    scroll-behavior: smooth;
+  }
 
-    /* Images */
-    img {
-        max-width: 100%;
-        display: block;
-    }
+  /* Images */
+  img {
+    max-width: 100%;
+    display: block;
+  }
 
-    figure > img {
-        display: block;
-    }
+  figure > img {
+    display: block;
+  }
 
-    /* Lists */
-    ol,
-    ul {
-        margin-left: var(--space_inline);
-    }
+  /* Lists */
+  ol,
+  ul {
+    margin-left: var(--space_inline);
+  }
 
-    li > ul,
-    li > ol {
-        margin-bottom: 0;
-    }
+  li > ul,
+  li > ol {
+    margin-bottom: 0;
+  }
 
-    /* Links */
-    a {
-        text-decoration: none;
-        position: relative;
-        display: inline-block;
-        padding-bottom: calc(var(--space_block) * 0.073); /* was 0.2svh */
-    }
+  /* Links */
+  a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-bottom: calc(var(--space_block) * 0.073); /* was 0.2svh */
+  }
 
-    /* External link indicator */
-    a:not(.action_button)[target="_blank"]:after {
-        content: "↗";
-        font-size: 80%;
-        display: inline;
-        color: currentColor;
-    }
+  /* External link indicator */
+  a:not(.action_button)[target="_blank"]:after {
+    content: "↗";
+    font-size: 90%;
+    display: inline;
+    color: currentColor;
+    padding-left: 0.5ch;
+    text-decoration-color: transparent !important;
+    border-bottom-color: transparent !important;
+    text-decoration-thickness: 0 !important;
+  }
+  /* Icons */
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 
-    /* Icons */
-    svg {
-        width: 100%;
-        height: 100%;
-    }
-
-    .icon > svg {
-        display: inline-block;
-        width: calc(var(--space_inline) * 0.58); /* was 1.6svh */
-        height: calc(var(--space_inline) * 0.58); /* was 1.6svh */
-        vertical-align: middle;
-    }
+  .icon > svg {
+    display: inline-block;
+    width: calc(var(--space_inline) * 0.58); /* was 1.6svh */
+    height: calc(var(--space_inline) * 0.58); /* was 1.6svh */
+    vertical-align: middle;
+  }
 }

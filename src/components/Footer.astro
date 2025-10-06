@@ -2,7 +2,7 @@
 // src/components/Footer.astro
 import * as siteData from "@data/site.json";
 import Nav from "@components/Nav.astro";
-import Logo from "@svgs/logo_stroke.svg";
+import Logo from "@components/Logo.astro";
 
 const currentYear = new Date().getFullYear();
 ---
@@ -29,18 +29,28 @@ const currentYear = new Date().getFullYear();
     position: sticky;
     bottom: 0;
 
+    /*@media (orientation: landscape) {
+      .footer_site {
+        position: static;
+      }
+    }*/
+
     a {
-      color: var(--white);
+      color: var(--link_color);
       text-decoration-thickness: 2px;
     }
+    a:hover {
+      color: var(--link_color_hover);
+      /*text-decoration-thickness: 2px;*/
+    }
 
-    svg:not(.hide) {
+    /*svg:not(.hide) {
       display: inline;
       height: 5svh;
     }
     svg.logo {
       height: 16svh;
-    }
+    }*/
   }
 
   .copy {
@@ -147,11 +157,11 @@ const currentYear = new Date().getFullYear();
     }
   }
 
-  a::before,
+  /*a::before,
   a::after {
     content: none;
     display: none;
-  }
+  }*/
 
   .copy .small_pad_top {
     padding-top: calc(var(--space_block) / 2.5);
@@ -159,23 +169,21 @@ const currentYear = new Date().getFullYear();
 </style>
 
 <footer class="footer_site">
-  <a
-    class="footer_logo no_underline hide_on_phones"
-    title="Clicking this link will send you back to junglestar.org homepage"
-    href="/"
-  >
-    <Logo />
-  </a>
-
   <Nav />
 
   <div class="flexcolo">
-    <div class="brand">
-      {siteData.brand} Agency
-    </div>
+    <a
+      class="footer_logo no_underline hide_on_phones"
+      title="Clicking this link will send you back to junglestar.org homepage"
+      href="/"
+    >
+      <div class="brand">
+        {siteData.brand} Agency
+      </div>
+    </a>
     <hr />
     <div class="flexro">
-      <a class="mail footer_link" href={`mailto:${siteData.email}`} title="Get In Touch. Send us an email">Mail</a>
+      <a href="/about" class="footer_link">About</a>
 
       <a href="#" class="footer_link">
         <svg class="hide" viewBox="0 0 296 296" id="Qr">
@@ -190,14 +198,19 @@ const currentYear = new Date().getFullYear();
       </a>
 
       <a
+        target="_blank"
+        class="mail footer_link"
+        href={`mailto:${siteData.email}`}
+        title="Get In Touch. Send us an email">Mail</a
+      >
+
+      <a
         class="github footer_link"
         href={siteData.github}
         title="Get In Touch. Send us an email"
         target="_blank"
         rel="noopener">Github</a
       >
-
-      <a href="/about" class="footer_link">About</a>
     </div>
     <div class="copy">
       <p>

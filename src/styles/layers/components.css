@@ -124,6 +124,7 @@
     user-select: none;
   }
   a:not(.button):not(.no_underline):hover {
+    color: var(--link_color_hover);
     text-decoration-thickness: 0.2ch;
     text-underline-offset: 0.45ch;
   }

@@ -178,6 +178,14 @@ declare module 'astro:content' {
   rendered?: RenderedContent;
   filePath?: string;
 }>;
+"introJ": Record<string, {
+  id: string;
+  body?: string;
+  collection: "introJ";
+  data: any;
+  rendered?: RenderedContent;
+  filePath?: string;
+}>;
 "offers": Record<string, {
   id: string;
   body?: string;

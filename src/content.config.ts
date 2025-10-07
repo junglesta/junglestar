@@ -114,7 +114,7 @@ const designConcepts = defineCollection({
 });
 
 // PARSERS!!! Coolio
-const intro = defineCollection({
+const introJ = defineCollection({
   loader: file("src/data/slogans.json", { parser: (text) => JSON.parse(text).intro }),
 });
 // const help = defineCollection({
@@ -124,7 +124,7 @@ const intro = defineCollection({
 export const collections = {
   offers,
   works,
-  intro,
+  introJ,
   slogans_help,
   slogans_intro,
   designConcepts,

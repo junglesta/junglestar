@@ -1,7 +1,7 @@
 {
-  "$ref": "#/definitions/intro",
+  "$ref": "#/definitions/slogans_help",
   "definitions": {
-    "intro": {
+    "slogans_help": {
       "type": "object",
       "properties": {
         "$schema": {
@@ -12,40 +12,6 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "string"
-          },
-          "title": {
-            "type": "string"
-          },
-          "subtitle": {
-            "type": "string"
-          },
-          "tagline": {
-            "type": "string"
-          },
-          "image": {
-            "type": "object",
-            "properties": {
-              "src": {
-                "type": "string"
-              },
-              "alt": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "src",
-              "alt"
-            ],
-            "additionalProperties": false
-          },
-          "cta": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          },
-          "theme": {
             "type": "string"
           },
           "p1": {
@@ -118,51 +84,10 @@
                 "type": "null"
               }
             ]
-          },
-          "p6": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "p7": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
           }
         },
         "required": [
           "id",
-          "title",
-          "subtitle",
-          "tagline",
-          "image",
-          "cta",
-          "link",
-          "theme",
           "p1"
         ],
         "additionalProperties": false

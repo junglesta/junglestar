@@ -3,6 +3,9 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
+  experimental: {
+    chromeDevtoolsWorkspace: true,
+  },
   output: "static",
   image: {
     responsiveStyles: true,

@@ -1,10 +1,9 @@
 ---
-
-title:  "DAVINA STEPHENS<br>Artist Portfolio"
+title: "DAVINA STEPHENS<br>Artist Portfolio"
 category: website
 tag: commissioned-work
 redir: https://davinastephens.com/?ref=junglestar
-ico_url: /assets/ico/davinastephens/safari-pinned-tab.svg
+ico_url: "davinastephens/safari-pinned-tab.svg"
 ico_name: davinastephens
 permalink: /works/davinastephens/
 ---

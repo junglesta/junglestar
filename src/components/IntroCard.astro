@@ -14,10 +14,6 @@ const { Content } = await render(entry);
 ---
 
 <style>
-  .intro_card {
-    padding-block: calc(var(--space_block) * 3);
-    padding-inline: calc(var(--space_inline) * 1);
-  }
   .CTAbutton {
     text-transform: uppercase;
     color: var(--white);
@@ -50,16 +46,31 @@ const { Content } = await render(entry);
     /*padding-inline: calc(var(--space_inline) * 0.25);*/
     padding-inline: calc(var(--space_inline) * 2.5);
   }
+
+  .intro_card {
+    padding-block: calc(var(--space_block) * 3);
+    padding-inline: calc(var(--space_inline) * 1);
+    svg {
+      color: white;
+      fill: currentColor;
+    }
+  }
+
+  .svg_fill_white {
+    color: var(--white);
+  }
+
+  .svg_bi_gi {
+    fill: var(--brand_light);
+    color: var(--brand_light);
+  }
 </style>
 
 <article class="intro_card">
-  {
-    data.image && (
-      <div class="intro_image expand11">
-        <Image src={data.image.src} alt={data.image.alt} width={2500} />
-      </div>
-    )
-  }
+  <div class="intro_image expand11">
+    <Image src={data.image.src} alt={data.image.alt} width={2500} height={1700} />
+  </div>
+
   <div class="intro_header">
     <div class="intro_titles">
       <h2 class="intro_title">{data.title}</h2>

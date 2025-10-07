@@ -174,7 +174,7 @@ declare module 'astro:content' {
   id: string;
   body?: string;
   collection: "intro";
-  data: InferEntrySchema<"intro">;
+  data: any;
   rendered?: RenderedContent;
   filePath?: string;
 }>;
@@ -186,11 +186,19 @@ declare module 'astro:content' {
   rendered?: RenderedContent;
   filePath?: string;
 }>;
-"slogans": Record<string, {
+"slogans_help": Record<string, {
   id: string;
   body?: string;
-  collection: "slogans";
-  data: InferEntrySchema<"slogans">;
+  collection: "slogans_help";
+  data: InferEntrySchema<"slogans_help">;
+  rendered?: RenderedContent;
+  filePath?: string;
+}>;
+"slogans_intro": Record<string, {
+  id: string;
+  body?: string;
+  collection: "slogans_intro";
+  data: InferEntrySchema<"slogans_intro">;
   rendered?: RenderedContent;
   filePath?: string;
 }>;

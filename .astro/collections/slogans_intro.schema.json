@@ -1,7 +1,7 @@
 {
-  "$ref": "#/definitions/intro",
+  "$ref": "#/definitions/slogans_intro",
   "definitions": {
-    "intro": {
+    "slogans_intro": {
       "type": "object",
       "properties": {
         "$schema": {
@@ -22,22 +22,6 @@
           },
           "tagline": {
             "type": "string"
-          },
-          "image": {
-            "type": "object",
-            "properties": {
-              "src": {
-                "type": "string"
-              },
-              "alt": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "src",
-              "alt"
-            ],
-            "additionalProperties": false
           },
           "cta": {
             "type": "string"
@@ -159,7 +143,6 @@
           "title",
           "subtitle",
           "tagline",
-          "image",
           "cta",
           "link",
           "theme",

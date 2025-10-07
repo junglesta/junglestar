@@ -32,6 +32,7 @@
     --grey_color: #212121;
     --grey_color_light: #868686;
     --grey_color_dark: #000000;
+    --svgBG: pink;
 
     /* DERIVED COLOURS */
     --link_color: var(--white);

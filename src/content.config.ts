@@ -37,6 +37,7 @@ const offers = defineCollection({
   schema: offerSchema,
 });
 
+//M
 const works = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/works" }),
   schema: z.object({
@@ -52,8 +53,8 @@ const works = defineCollection({
   }),
 });
 
-const slogans = defineCollection({
-  loader: file("src/data/slogans.json"),
+const slogans_help = defineCollection({
+  loader: file("src/data/slogans_help.json"),
   schema: z.object({
     id: z.string(),
     p1: z.string(),
@@ -65,22 +66,30 @@ const slogans = defineCollection({
   }),
 });
 
-const intro = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/intro" }),
+const slogans_intro = defineCollection({
+  loader: file("src/data/slogans_intro.json"),
   schema: (
     { image }, // Get the image helper from the schema function
   ) =>
     z.object({
+      id: z.string(),
       title: z.string(),
       subtitle: z.string(),
       tagline: z.string(),
-      image: z.object({
-        src: image(), // Use image() helper instead of z.string()
-        alt: z.string().default("Junglestar"),
-      }),
+      // image: z.object({
+      //   src: z.string(),
+      //   alt: z.string(),
+      // }),
       cta: z.string(),
       link: z.string(),
       theme: z.string(),
+      p1: z.string(),
+      p2: z.string().optional().nullable(),
+      p3: z.string().optional().nullable(),
+      p4: z.string().optional().nullable(),
+      p5: z.string().optional().nullable(),
+      p6: z.string().optional().nullable(),
+      p7: z.string().optional().nullable(),
     }),
 });
 
@@ -104,10 +113,19 @@ const designConcepts = defineCollection({
     }),
 });
 
+// PARSERS!!! Coolio
+const intro = defineCollection({
+  loader: file("src/data/slogans.json", { parser: (text) => JSON.parse(text).intro }),
+});
+// const help = defineCollection({
+//   loader: file("src/data/slogans.json", { parser: (text) => JSON.parse(text).help }),
+// });
+
 export const collections = {
   offers,
   works,
-  slogans,
   intro,
+  slogans_help,
+  slogans_intro,
   designConcepts,
 };

@@ -1,6 +1,9 @@
 ---
 import { getCollection } from "astro:content";
-import IntroCard from "./IntroCard.astro";
+import IntroCard from "@components/IntroCard.astro";
+// import Svg1 from "@assets/intro/1.svg";
+// import Svg2 from "@assets/intro/2.svg";
+// import Svg3 from "@assets/intro/3.svg";
 
 // Get all intro entries and sort them
 const introEntries = await getCollection("intro");
@@ -39,6 +42,13 @@ const entriesToShow = limit ? sortedEntries.slice(0, limit) : sortedEntries;
 
 <section class="intro_pitch">
   <div class="intro_wrap">
+    <!-- {
+      sortedEntries.map((i) => (
+        <div>
+          <h2>{i.data.title}</h2>
+        </div>
+      ))
+    } -->
     {entriesToShow.map((entry) => <IntroCard entry={entry} showContent={showContent} />)}
   </div>
 </section>

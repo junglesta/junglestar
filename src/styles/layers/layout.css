@@ -190,4 +190,10 @@
       display: block; /* or whatever display value you need */
     }
   }
+
+  .post_image,
+  .post_title,
+  .post_subtitle {
+    user-select: none;
+  }
 }

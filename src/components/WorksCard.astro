@@ -17,7 +17,7 @@ export interface Props {
 const { title, subtitle, category, url, description, icon } = Astro.props;
 ---
 
-<style>
+<!-- <style>
   article {
     padding: var(--space_block) var(--space_inline);
     user-select: none;
@@ -86,13 +86,12 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
     font-size: calc(var(--font_rem) / 1.5);
     font-weight: 400;
   }
-</style>
-
+</style> -->
 <article class={"card_works  " + category}>
   <a href={url} target="_blank" rel="noopener noreferrer" class="card_works_link">
     {icon && <img src={icon.url} alt={icon.name} class="icon_works" loading="lazy" />}
 
-    <h3 class="title_works">
+    <h3 class="title_works hide">
       {title}
       {subtitle && <span class="subtitle_works">{subtitle}</span>}
     </h3>

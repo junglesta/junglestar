@@ -2,7 +2,7 @@
 // src/components/Footer.astro
 import * as siteData from "@data/site.json";
 import Nav from "@components/Nav.astro";
-import Logo from "@components/Logo.astro";
+import FooterLogo from "@components/FooterLogo.astro";
 
 const currentYear = new Date().getFullYear();
 ---
@@ -29,28 +29,13 @@ const currentYear = new Date().getFullYear();
     position: sticky;
     bottom: 0;
 
-    /*@media (orientation: landscape) {
-      .footer_site {
-        position: static;
-      }
-    }*/
-
     a {
       color: var(--link_color);
       text-decoration-thickness: 2px;
     }
     a:hover {
       color: var(--link_color_hover);
-      /*text-decoration-thickness: 2px;*/
     }
-
-    /*svg:not(.hide) {
-      display: inline;
-      height: 5svh;
-    }
-    svg.logo {
-      height: 16svh;
-    }*/
   }
 
   .copy {
@@ -110,15 +95,6 @@ const currentYear = new Date().getFullYear();
     justify-content: space-between;
   }
 
-  .footer_logo {
-    /*padding-top: calc(var(--space_block) * 2);*/
-    transform: rotate(0deg);
-  }
-
-  .brand {
-    text-transform: uppercase;
-    font-size: 150%;
-  }
   .undies {
     position: relative;
   }
@@ -172,15 +148,7 @@ const currentYear = new Date().getFullYear();
   <Nav />
 
   <div class="flexcolo">
-    <a
-      class="footer_logo no_underline hide_on_phones"
-      title="Clicking this link will send you back to junglestar.org homepage"
-      href="/"
-    >
-      <div class="brand">
-        {siteData.brand} Agency
-      </div>
-    </a>
+    <FooterLogo />
     <hr />
     <div class="flexro">
       <a href="/about" class="footer_link">About</a>

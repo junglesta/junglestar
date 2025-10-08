@@ -1,18 +1,22 @@
 ---
 // src/layouts/Layout.astro
-
 import Head from "@components/Head.astro";
 import Footer from "@components/Footer.astro";
 import "@styles/global.css";
 
 export interface Props {
+  titleTAB: string;
   title: string;
   description?: string;
-  pageSubtitle?: string;
   sitemap?: boolean;
 }
 
-const { title, description = "Sustainable Web Design to help fight Climate Change", sitemap = true } = Astro.props;
+const {
+  titleTAB,
+  title,
+  description = "Sustainable Web Design to help fight Climate Change",
+  sitemap = true,
+} = Astro.props;
 ---
 
 <style>
@@ -40,7 +44,7 @@ const { title, description = "Sustainable Web Design to help fight Climate Chang
  email    : info@junglestar.org
  twitter  : @rokmatwit
 -->
-  <Head title={title} description={description} sitemap={sitemap} />
+  <Head title={titleTAB} description={description} sitemap={sitemap} titlePAGE={title} />
   <body>
     <div class="scrolling_body_wrap">
       <slot name="head_banner" />

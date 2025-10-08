@@ -74,6 +74,7 @@
   .h1 {
     font-size: clamp(var(--heading1_min), var(--heading1_responsive), var(--heading1_max));
     line-height: 1.1;
+    text-transform: uppercase;
   }
 
   h2,
@@ -81,6 +82,7 @@
     font-size: clamp(var(--heading2_min), var(--heading2_responsive), var(--heading2_max));
     line-height: 1.1;
     padding-top: calc(var(--space_block) * 2);
+    text-transform: uppercase;
   }
 
   h3,

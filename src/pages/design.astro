@@ -25,13 +25,16 @@ const renderedPosts = await Promise.all(
 );
 
 // Page metadata
-const title = "Junglestar Design | Because Why";
+const titleTAB = "Junglestar Design | Because Why";
 const description =
   "Sustainable Web Design to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
-const pageSubtitle = "Designing for sustainabilty? What's that?!";
+const titlePAGE = "Design, Sustainabilty!? Because Why?";
 ---
 
 <style>
+  :root {
+    --link_color: var(--black);
+  }
   h1 {
     color: #111827;
   }
@@ -97,6 +100,10 @@ const pageSubtitle = "Designing for sustainabilty? What's that?!";
     text-decoration: underline;
   }
 
+  .toc {
+    color: var(--black);
+  }
+
   /*.back_to_top {
     display: inline-block;
     margin-top: 1rem;
@@ -110,9 +117,9 @@ const pageSubtitle = "Designing for sustainabilty? What's that?!";
   }*/
 </style>
 
-<Layout title={title} description={description} pageSubtitle={pageSubtitle}>
+<Layout title={titleTAB} description={description} pageSubtitle={titlePAGE}>
   <div slot="landing_screen">
-    <Header>{pageSubtitle}</Header>
+    <Header>{titlePAGE}</Header>
   </div>
   <div class="wrap">
     <h2 class="center"> Investing in design does deliver!</h2>

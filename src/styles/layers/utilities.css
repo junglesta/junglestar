@@ -175,3 +175,7 @@
     }
   }
 }
+
+.tt {
+  text-transform: capitalize;
+}

@@ -4,19 +4,15 @@ import Head from "@components/Head.astro";
 import Footer from "@components/Footer.astro";
 import "@styles/global.css";
 
+//import DevBrandColors from "@components/DevBrandColors.astro";
+
 export interface Props {
-  titleTAB: string;
   title: string;
   description?: string;
   sitemap?: boolean;
 }
 
-const {
-  titleTAB,
-  title,
-  description = "Sustainable Web Design to help fight Climate Change",
-  sitemap = true,
-} = Astro.props;
+const { title, description = "Sustainable Web Design to help fight Climate Change", sitemap = true } = Astro.props;
 ---
 
 <style>
@@ -44,8 +40,10 @@ const {
  email    : info@junglestar.org
  twitter  : @rokmatwit
 -->
-  <Head title={titleTAB} description={description} sitemap={sitemap} titlePAGE={title} />
+  <Head title={title} description={description} sitemap={sitemap} />
   <body>
+    <!-- {import.meta.env.DEV && <DevBrandColors />} -->
+
     <div class="scrolling_body_wrap">
       <slot name="head_banner" />
       <slot name="landing_screen" />

@@ -5,17 +5,11 @@ import * as repoData from "package.json";
 import { ClientRouter } from "astro:transitions";
 
 export interface Props {
-  titleTAB: string;
   title: string;
   description?: string;
   sitemap?: boolean;
 }
-const {
-  titleTAB,
-  title,
-  description = "Sustainable Web Design to help fight Climate Change",
-  sitemap = true,
-} = Astro.props;
+const { title, description = "Sustainable Web Design to help fight Climate Change", sitemap = true } = Astro.props;
 
 // Site configuration
 const siteUrl = import.meta.env.SITE || "https://junglestar.org";

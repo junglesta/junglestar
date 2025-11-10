@@ -1,0 +1,39 @@
+---
+// @components/License.astro
+import * as siteData from "@data/site.json";
+import CCico1 from "@svgs/cc_icon1.svg";
+import CCico2 from "@svgs/cc_icon2.svg";
+import CCico3 from "@svgs/cc_icon3.svg";
+---
+
+<style>
+  .cc_icons {
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+</style>
+
+<div class="license">
+  <div class="head">License</div>
+  <p>
+    This website source is owned by {siteData.brand} and is licensed under <a
+      target="_blank"
+      rel="noopener"
+      href={siteData.license_url}
+    >
+      <strong>Creative Commons: CC BY-SA 4.0</strong>
+    </a>
+  </p>
+  <div class="cc_icons">
+    <CCico1 />
+    <CCico2 />
+    <CCico3 />
+  </div>
+  <div class="contribute">
+    Contribute, fork, see the <a target="_blank" rel="noopener" href={siteData.repo}>
+      <strong>source files on GitHub</strong>
+    </a>
+  </div>
+</div>

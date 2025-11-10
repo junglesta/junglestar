@@ -1,0 +1,61 @@
+---
+// use:
+// // in FrontMatter put this:
+// import DevComponent from "@components/DevBrandColors.astro";
+
+// in BODY put this
+// {import.meta.env.DEV && <DevBrandColors />}
+---
+
+<style>
+  .dev_banner {
+    background-color: white;
+    border: 8px solid white;
+
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: 5dvh;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+    align-content: stretch;
+    justify-content: stretch;
+    gap: 10px;
+  }
+  .dev_banner > * {
+    height: 100%;
+    justify-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: clamp(18px, 2svw, 30px);
+  }
+
+  .brand {
+    background-color: var(--brand);
+    color: white;
+  }
+  .brand_invert {
+    background-color: var(--brand_invert);
+  }
+  .brand_complementary {
+    background-color: var(--brand_complementary);
+  }
+  .brand_light {
+    background-color: var(--brand_light);
+  }
+  .brand_dark {
+    background-color: var(--brand_light);
+  }
+</style>
+
+<div class="dev_banner">
+  <div class="brand_light">light</div>
+  <div class="brand">brand</div>
+  <div class="brand_dark">dark</div>
+  <div class="brand_invert">invert</div>
+  <div class="brand_complementary">complementary</div>
+</div>

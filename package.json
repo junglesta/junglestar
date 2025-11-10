@@ -1,7 +1,7 @@
 {
   "name": "j25",
   "type": "module",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
@@ -17,13 +17,13 @@
     "upg": "npx @astrojs/upgrade"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "astro": "^5.14.1",
-    "sharp": "^0.34.4",
+    "@astrojs/check": "^0.9.5",
+    "astro": "^5.15.4",
+    "sharp": "^0.34.5",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.5",
+    "@biomejs/biome": "^2.3.4",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1"
   },

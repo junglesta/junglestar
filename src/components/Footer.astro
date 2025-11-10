@@ -2,6 +2,7 @@
 // src/components/Footer.astro
 import * as siteData from "@data/site.json";
 import Nav from "@components/Nav.astro";
+import License from "@components/License.astro";
 import FooterLogo from "@components/FooterLogo.astro";
 
 const currentYear = new Date().getFullYear();
@@ -18,8 +19,7 @@ const currentYear = new Date().getFullYear();
     width: 100%;
     min-height: var(--viewport_height);
 
-    padding-top: calc(var(--space_block) * 2);
-    padding-bottom: 0;
+    padding-block: calc(var(--space_block) * 2);
     padding-inline: var(--space_inline);
     color: var(--white);
 
@@ -39,8 +39,8 @@ const currentYear = new Date().getFullYear();
   }
 
   .copy {
-    font-size: calc(var(--font_clamp) / 1.5);
-    padding-top: calc(var(--space_block) * 0.25);
+    font-size: calc(var(--font_clamp) / 1.1);
+    padding-block: calc(var(--space_block) * 1);
     padding-inline: var(--space_block);
     text-align: center;
     p {
@@ -149,7 +149,7 @@ const currentYear = new Date().getFullYear();
 
   <div class="flexcolo">
     <FooterLogo />
-    <hr />
+
     <div class="flexro">
       <a href="/about" class="footer_link">About</a>
 
@@ -169,8 +169,10 @@ const currentYear = new Date().getFullYear();
         target="_blank"
         class="mail footer_link"
         href={`mailto:${siteData.email}`}
-        title="Get In Touch. Send us an email">Mail</a
+        title="Get In Touch. Send us an email"
       >
+        Mail
+      </a>
 
       <a
         class="github footer_link"
@@ -180,23 +182,20 @@ const currentYear = new Date().getFullYear();
         rel="noopener">Github</a
       >
     </div>
-    <div class="copy">
-      <p>
-        <span class="hide_on_mobile">|</span>This webite's code is
-        <a href={siteData.repo}>
-          <strong>Open Source</strong>,
-        </a>
-        licensed under
-        <a href={siteData.license_url}> CC BY 4.0 </a>
-      </p>
 
-      <p>
-        <a href="https://websitecarbon.com/" target="_blank" rel="noopener"><strong>Website Carbon:</strong></a> 0.02g of
-        CO2/view. <span class="show_on_phones"><br /></span>Cleaner than 98% of pages tested.
-      </p>
+    <hr />
+    <div class="copy">
       <p class="small_pad_top">
         &copy; 2012-{currentYear}
         {siteData.brand}.org
+      </p>
+      <hr />
+      <License />
+
+      <p>
+        This website carbon is ~0.02g of CO2/view.
+        <span class="show_on_phones"><br /></span>Cleaner than 98% of pages tested.
+        <a href="https://websitecarbon.com/" target="_blank" rel="noopener"><strong>Know more</strong></a>
       </p>
     </div>
   </div>

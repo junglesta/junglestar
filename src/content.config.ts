@@ -117,14 +117,35 @@ const designConcepts = defineCollection({
 const introJ = defineCollection({
   loader: file("src/data/slogans.json", { parser: (text) => JSON.parse(text).intro }),
 });
-// const help = defineCollection({
-//   loader: file("src/data/slogans.json", { parser: (text) => JSON.parse(text).help }),
-// });
+
+const intro = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/intro" }),
+  schema: (
+    { image }, // Get the image helper from the schema function
+  ) =>
+    z.object({
+      title: z.string(),
+      subtitle: z.string().optional().nullable(),
+      tagline: z.string().optional().nullable(),
+      cta: z.string(),
+      link: z.string(),
+      theme: z.string(),
+      draft: z.boolean().optional().default(false),
+      image: z
+        .object({
+          src: image(), // Use image() helper instead of z.string()
+          alt: z.string().default("Junglestar"),
+        })
+        .optional()
+        .nullable(),
+    }),
+});
 
 export const collections = {
   offers,
   works,
   introJ,
+  intro,
   slogans_help,
   slogans_intro,
   designConcepts,

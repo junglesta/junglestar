@@ -42,13 +42,13 @@ const entriesToShow = limit ? sortedEntries.slice(0, limit) : sortedEntries;
 
 <section class="intro_pitch">
   <div class="intro_wrap">
-    <!-- {
+    {
       sortedEntries.map((i) => (
         <div>
           <h2>{i.data.title}</h2>
         </div>
       ))
-    } -->
-    {entriesToShow.map((entry) => <IntroCard entry={entry} showContent={showContent} />)}
+    }
+    <!-- {entriesToShow.map((entry) => <IntroCard entry={entry} showContent={showContent} />)} -->
   </div>
 </section>

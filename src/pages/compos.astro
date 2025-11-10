@@ -1,12 +1,15 @@
 ---
 // imports all files that end with `.astro` in `./src/components/`
-const components = Object.values(import.meta.glob("../components/*.astro", { eager: true }));
+//const components = Object.values(import.meta.glob("../components/*.astro", { eager: true }));
 ---
 
-<!-- Display all of our components -->{
+<!-- Display all of our components
+
+{
   components.map((component) => (
     <div>
       <component.default size={24} />
     </div>
   ))
 }
+-->

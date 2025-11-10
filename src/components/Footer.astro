@@ -183,20 +183,19 @@ const currentYear = new Date().getFullYear();
       >
     </div>
 
-    <hr />
-    <div class="copy">
-      <p class="small_pad_top">
+    <details>
+      <summary class="copy small_pad_top">
         &copy; 2012-{currentYear}
         {siteData.brand}.org
-      </p>
-      <hr />
-      <License />
-
-      <p>
-        This website carbon is ~0.02g of CO2/view.
-        <span class="show_on_phones"><br /></span>Cleaner than 98% of pages tested.
-        <a href="https://websitecarbon.com/" target="_blank" rel="noopener"><strong>Know more</strong></a>
-      </p>
-    </div>
+      </summary>
+      <div class="container">
+        <License />
+        <p>
+          This website carbon is ~0.02g of CO2/view.
+          <span class="show_on_phones"><br /></span>Cleaner than 98% of pages tested.
+          <a href="https://websitecarbon.com/" target="_blank" rel="noopener"><strong>Know more</strong></a>
+        </p>
+      </div>
+    </details>
   </div>
 </footer>

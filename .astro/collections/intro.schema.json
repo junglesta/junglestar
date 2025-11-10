@@ -4,169 +4,97 @@
     "intro": {
       "type": "object",
       "properties": {
+        "title": {
+          "type": "string"
+        },
+        "subtitle": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tagline": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cta": {
+          "type": "string"
+        },
+        "link": {
+          "type": "string"
+        },
+        "theme": {
+          "type": "string"
+        },
+        "draft": {
+          "type": "boolean",
+          "default": false
+        },
+        "image": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "src": {
+                      "type": "string"
+                    },
+                    "alt": {
+                      "type": "string",
+                      "default": "Junglestar"
+                    }
+                  },
+                  "required": [
+                    "src"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
         "$schema": {
           "type": "string"
         }
       },
-      "additionalProperties": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "title": {
-            "type": "string"
-          },
-          "subtitle": {
-            "type": "string"
-          },
-          "tagline": {
-            "type": "string"
-          },
-          "image": {
-            "type": "object",
-            "properties": {
-              "src": {
-                "type": "string"
-              },
-              "alt": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "src",
-              "alt"
-            ],
-            "additionalProperties": false
-          },
-          "cta": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          },
-          "theme": {
-            "type": "string"
-          },
-          "p1": {
-            "type": "string"
-          },
-          "p2": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "p3": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "p4": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "p5": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "p6": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "p7": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          }
-        },
-        "required": [
-          "id",
-          "title",
-          "subtitle",
-          "tagline",
-          "image",
-          "cta",
-          "link",
-          "theme",
-          "p1"
-        ],
-        "additionalProperties": false
-      }
+      "required": [
+        "title",
+        "cta",
+        "link",
+        "theme"
+      ],
+      "additionalProperties": false
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#"

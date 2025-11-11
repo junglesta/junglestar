@@ -3,6 +3,7 @@
 import * as siteData from "@data/site.json";
 import Nav from "@components/Nav.astro";
 import License from "@components/License.astro";
+import Carbon from "@components/Carbon.astro";
 import FooterLogo from "@components/FooterLogo.astro";
 
 const currentYear = new Date().getFullYear();
@@ -142,6 +143,33 @@ const currentYear = new Date().getFullYear();
   .copy .small_pad_top {
     padding-top: calc(var(--space_block) / 2.5);
   }
+
+  details summary {
+    user-select: none;
+    list-style: none; /* Remove default marker */
+    cursor: pointer;
+  }
+
+  /* Remove default marker in WebKit browsers */
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Add + after the text */
+  details summary::after {
+    content: " +";
+    margin-left: 0.5em;
+    font-size: 130%;
+  }
+
+  /* Change to - when open */
+  details[open] summary::after {
+    content: " −";
+  }
+
+  details {
+    padding-bottom: calc(var(--space_block) * 2);
+  }
 </style>
 
 <footer class="footer_site">
@@ -183,19 +211,15 @@ const currentYear = new Date().getFullYear();
       >
     </div>
 
-    <details>
+    <details class="wrap">
       <summary class="copy small_pad_top">
         &copy; 2012-{currentYear}
         {siteData.brand}.org
       </summary>
-      <div class="container">
+      <small>
+        <Carbon />
         <License />
-        <p>
-          This website carbon is ~0.02g of CO2/view.
-          <span class="show_on_phones"><br /></span>Cleaner than 98% of pages tested.
-          <a href="https://websitecarbon.com/" target="_blank" rel="noopener"><strong>Know more</strong></a>
-        </p>
-      </div>
+      </small>
     </details>
   </div>
 </footer>

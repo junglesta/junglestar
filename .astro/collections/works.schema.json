@@ -4,41 +4,93 @@
     "works": {
       "type": "object",
       "properties": {
+        "id": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
         "title": {
           "type": "string"
+        },
+        "subtitle": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "category": {
           "type": "string"
         },
-        "tag": {
-          "type": "string"
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
-        "redir": {
+        "url": {
           "type": "string",
           "format": "uri"
         },
-        "ico_url": {
+        "icon": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "url",
+            "name"
+          ],
+          "additionalProperties": false
+        },
+        "permalink": {
           "type": "string"
         },
-        "ico_name": {
-          "type": "string"
-        },
-        "featured": {
-          "type": "boolean",
-          "default": false
-        },
-        "order": {
-          "type": "number"
+        "description": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "not": {}
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "$schema": {
           "type": "string"
         }
       },
       "required": [
+        "id",
+        "date",
         "title",
         "category",
-        "tag",
-        "redir"
+        "tags",
+        "url",
+        "icon"
       ],
       "additionalProperties": false
     }

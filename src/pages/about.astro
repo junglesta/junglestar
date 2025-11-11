@@ -1,17 +1,20 @@
 ---
 // src/pages/projects.astro
 import Layout from "@layouts/Layout.astro";
-import ProjectCard from "@components/WorksCard.astro";
+import WorksCard from "@components/WorksCard.astro";
 import Header from "@components/HeaderSlotted.astro";
 import projectsData from "@data/works.json";
-
-// Sort projects by date (newest first)
-const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+import type { ImageMetadata } from "astro";
 
 // Page metadata
 const pageTitle = "Junglestar | About us";
 const pageDescription = "SHOWCASE: We helped these small enterprises with websites, apps, and marketing communication.";
 const pageSubtitle = "Expertise you can trust";
+
+// Import all icons dynamically
+const icons = import.meta.glob<{ default: ImageMetadata }>("/src/assets/ico/**/*.{svg,png}", { eager: true });
+
+const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 ---
 
 <style>
@@ -24,7 +27,7 @@ const pageSubtitle = "Expertise you can trust";
   .projects-grid {
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: var(--space_block) var(--space_inline);
   }
 
@@ -45,7 +48,29 @@ const pageSubtitle = "Expertise you can trust";
   <div class="wrap vpad">
     <h1 class="center">Live Projects</h1>
     <div class="projects-grid">
-      {projects.map((project) => <ProjectCard {...project} />)}
+      {
+        projects.map(async (project) => {
+          const iconPath = `/src/assets/ico/${project.icon.url}`;
+          const images = import.meta.glob("/src/assets/ico/**/*.{png,svg,jpg,jpeg,gif}");
+          const iconImage = await images[iconPath]?.();
+
+          return (
+            <WorksCard
+              id={project.id}
+              title={project.title}
+              subtitle={project.subtitle}
+              category={project.category}
+              tags={project.tags}
+              url={project.url}
+              icon={project.icon}
+              ico_url={(iconImage as any)?.default?.src || ""}
+              permalink={project.permalink}
+              description={project.description}
+              date={project.date}
+            />
+          );
+        })
+      }
     </div>
   </div>
 </Layout>

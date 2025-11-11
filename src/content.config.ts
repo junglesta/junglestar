@@ -41,15 +41,19 @@ const offers = defineCollection({
 const works = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/works" }),
   schema: z.object({
+    id: z.string(),
+    date: z.string(), // or z.coerce.date() if you want Date objects
     title: z.string(),
+    subtitle: z.string().optional().nullable(),
     category: z.string(),
-    tag: z.string(),
-    redir: z.string().url(), // The external project URL
-    ico_url: z.string().optional(),
-    ico_name: z.string().optional(),
-    // Add any other fields you need
-    featured: z.boolean().default(false),
-    order: z.number().optional(),
+    tags: z.array(z.string()),
+    url: z.string().url(), // renamed from 'redir'
+    icon: z.object({
+      url: z.string(),
+      name: z.string(),
+    }),
+    permalink: z.string().optional(),
+    description: z.string().optional().nullable(),
   }),
 });
 
@@ -130,7 +134,6 @@ const intro = defineCollection({
       cta: z.string(),
       link: z.string(),
       theme: z.string(),
-      draft: z.boolean().optional().default(false),
       image: z
         .object({
           src: image(), // Use image() helper instead of z.string()
@@ -138,6 +141,7 @@ const intro = defineCollection({
         })
         .optional()
         .nullable(),
+      draft: z.boolean().optional().default(false),
     }),
 });
 

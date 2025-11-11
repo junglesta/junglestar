@@ -50,10 +50,6 @@
         "theme": {
           "type": "string"
         },
-        "draft": {
-          "type": "boolean",
-          "default": false
-        },
         "image": {
           "anyOf": [
             {
@@ -83,6 +79,10 @@
               "type": "null"
             }
           ]
+        },
+        "draft": {
+          "type": "boolean",
+          "default": false
         },
         "$schema": {
           "type": "string"

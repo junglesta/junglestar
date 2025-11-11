@@ -1,7 +1,7 @@
 {
   "name": "j25",
   "type": "module",
-  "version": "2.3.5",
+  "version": "2.3.7",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",

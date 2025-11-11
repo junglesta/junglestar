@@ -2,27 +2,32 @@
 // src/components/WorksCard.astro
 export interface Props {
   id: string;
-  date: string;
   title: string;
   subtitle?: string | null;
-  category: string;
+  category?: string | null;
+  tags: string[];
   url: string;
-  description?: string | null;
   icon?: {
     url: string;
     name: string;
   };
+  ico_url: string;
+  permalink?: string;
+  description?: string | null;
+  date?: string;
 }
 
-const { title, subtitle, category, url, description, icon } = Astro.props;
+const { title, subtitle, category, tags, url, icon, ico_url, description, date } = Astro.props;
+const tag = tags?.[0] || "";
 ---
 
-<!-- <style>
+<style>
   article {
     padding: var(--space_block) var(--space_inline);
     user-select: none;
     position: relative;
     background-color: white;
+    color: var(--brand);
     border: 1px solid var(--brand);
     border-radius: var(--radius);
     transition:
@@ -36,13 +41,13 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
   }
 
   .card_works_link {
-    height: 288px;
+    min-height: 288px;
     display: grid;
-    grid-template-rows: 2fr 1fr;
-    row-gap: calc(var(--space) / 1.5);
-    align-items: center;
+    grid-template-rows: auto 1fr auto;
+    row-gap: calc(var(--space) / 2);
+    padding: var(--space_block);
     text-decoration: none;
-    color: inherit;
+    color: var(--brand);
   }
   .card_works_link::after {
     display: none;
@@ -63,6 +68,7 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
     text-align: center;
     font-weight: 500;
     padding-inline: var(--space_inline);
+    color: var(--brand);
   }
 
   .subtitle_works {
@@ -72,6 +78,44 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
     color: var(--text_color);
     margin-top: 0.25rem;
   }
+
+  .meta_works {
+    font-size: 0.875rem;
+    color: var(--text_color);
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .date_works {
+    display: block;
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-bottom: 0.25rem;
+  }
+
+  .description_works {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+  }
+
+  .tags_works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  .tag_item {
+    font-size: 0.75rem;
+    padding: 0.125rem 0.5rem;
+    background-color: var(--brand);
+    color: white;
+    border-radius: calc(var(--radius) / 2);
+  }
+
   .webapp:before {
     content: "APP";
     display: block;
@@ -86,14 +130,40 @@ const { title, subtitle, category, url, description, icon } = Astro.props;
     font-size: calc(var(--font_rem) / 1.5);
     font-weight: 400;
   }
-</style> -->
-<article class={"card_works  " + category}>
-  <a href={url} target="_blank" rel="noopener noreferrer" class="card_works_link">
-    {icon && <img src={icon.url} alt={icon.name} class="icon_works" loading="lazy" />}
+</style>
 
-    <h3 class="title_works hide">
-      {title}
-      {subtitle && <span class="subtitle_works">{subtitle}</span>}
-    </h3>
+<article class="card_works">
+  <div class={category + " " + tag}></div>
+  <a href={url} target="_blank" rel="noopener noreferrer" class="card_works_link">
+    {ico_url && <img src={ico_url} alt={icon?.name || title} class="icon_works" loading="lazy" />}
+
+    <div>
+      <h3 class="title_works hide">
+        {title}
+        {subtitle && <span class="subtitle_works">{subtitle}</span>}
+      </h3>
+
+      {
+        date && (
+          <div class="meta_works">
+            <span class="date_works">
+              {new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "short" })}
+            </span>
+          </div>
+        )
+      }
+
+      {description && <span class="description_works">{description}</span>}
+
+      {
+        tags && tags.length > 0 && (
+          <div class="tags_works">
+            {tags.map((t) => (
+              <span class="tag_item">{t}</span>
+            ))}
+          </div>
+        )
+      }
+    </div>
   </a>
 </article>

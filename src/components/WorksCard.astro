@@ -27,9 +27,12 @@ const tag = tags?.[0] || "";
     display: grid;
     grid-template-rows: auto 1fr auto;
     row-gap: calc(var(--space) / 2);
-    padding: var(--space_block);
+    padding-block: calc(var(--space_block) / 2);
     text-decoration: none;
     color: var(--brand);
+    background-color: hsla(0, 0%, 95%, 1);
+    border-radius: var(--radius);
+    border: 1px solid var(--brand);
   }
   .card_works_link::after {
     display: none;

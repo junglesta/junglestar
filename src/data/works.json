@@ -3,7 +3,7 @@
     "id": "beyondcittastudi",
     "date": "2015-05-01",
     "title": "BEYOND CITTA STUDI",
-    "subtitle": "Instagram contest",
+    "subtitle": "Instagram contest website for Architecture University Course",
     "category": "website",
     "tags": ["commissioned-work", "open-source"],
     "url": "http://beyondcittastudi.junglestar.org/",
@@ -12,7 +12,7 @@
       "name": "polimi"
     },
     "permalink": "/works/beyondcittastudi/",
-    "description": "Beyond Citta Studi contest website"
+    "description": ""
   },
   {
     "id": "krap",
@@ -27,13 +27,13 @@
       "name": "krap"
     },
     "permalink": "/works/krap/",
-    "description": "Compact Skateboarding History, visually"
+    "description": ""
   },
   {
     "id": "speak",
     "date": "2015-11-15",
     "title": "JUNGLE SPEAK",
-    "subtitle": "Quotes Collection",
+    "subtitle": "Quotes collection with sources",
     "category": "website",
     "tags": ["reader-digest", "open-source"],
     "url": "https://speak.junglestar.org/?ref=junglestar",
@@ -42,13 +42,13 @@
       "name": "speak"
     },
     "permalink": "/works/speak/",
-    "description": "Jungle speak collection with sources, like a jungle digest!"
+    "description": ""
   },
   {
     "id": "qr",
-    "date": "2016-01-09",
+    "date": "2025-11-01",
     "title": "QRcode Generator",
-    "subtitle": "Free Open Source",
+    "subtitle": "Simple Free Open Source with SVG/PNG download.",
     "category": "webapp",
     "tags": ["tool", "open-source"],
     "url": "https://qr.junglestar.org/?ref=junglestar.org",
@@ -57,15 +57,15 @@
       "name": "qrgenerator"
     },
     "permalink": "/works/qr/",
-    "description": "Everybody needs a QRcode"
+    "description": ""
   },
   {
     "id": "shopify",
     "date": "2023-01-12",
-    "title": "We build online stores",
-    "subtitle": "with Shopify",
+    "title": "We can advice, help, improve, fix and build custom online stores",
+    "subtitle": "for YOUR BRAND with Shopify.",
     "category": "news",
-    "tags": ["partners"],
+    "tags": ["service", "partners"],
     "url": "https://www.shopify.com/?ref=junglestar.org",
     "icon": {
       "url": "shopify.svg",
@@ -78,7 +78,7 @@
     "id": "octopal",
     "date": "2016-01-15",
     "title": "OCTOPAL",
-    "subtitle": "Colors from images!",
+    "subtitle": "Extracts colours from images, gives rgb palettes!!",
     "category": "webapp",
     "tags": ["tool", "open-source"],
     "url": "https://palette.junglestar.org/?ref=junglestar",
@@ -87,13 +87,13 @@
       "name": "octopal"
     },
     "permalink": "/works/octopal/",
-    "description": "Octopal, feeds on images, gives rgb palettes!"
+    "description": ""
   },
   {
     "id": "binocle",
-    "date": "2025-04-01",
+    "date": "2025-10-30",
     "title": "BINOCLE",
-    "subtitle": "Architecture Studio",
+    "subtitle": "Architecture Studio portfolio webapp.",
     "category": "website",
     "tags": ["commissioned-work", "open-source"],
     "url": "https://binocle.it/?ref=junglestar",
@@ -102,7 +102,7 @@
       "name": "binocle"
     },
     "permalink": "/works/binocle/",
-    "description": "Binocle Studio portfolio webapp"
+    "description": ""
   },
   {
     "id": "wherenodoctor",
@@ -123,16 +123,16 @@
     "id": "bill",
     "date": "2025-10-19",
     "title": "BILL",
-    "subtitle": "Simple Secure Invoice",
+    "subtitle": "Free Simple Secure downloadable PDF Invoice generator.",
     "category": "webapp",
-    "tags": ["tool", "open-source"],
+    "tags": ["tool", "open-source", "webapp"],
     "url": "https://bill.junglestar.org/?ref=junglestar",
     "icon": {
       "url": "bill/safari-pinned-tab.svg",
       "name": "bill"
     },
     "permalink": "/works/bill/",
-    "description": "bill"
+    "description": ""
   },
   {
     "id": "fumes",
@@ -140,20 +140,20 @@
     "title": "FUMES",
     "subtitle": "Art, Photography, Ideas",
     "category": "magazine",
-    "tags": ["commissioned-work"],
+    "tags": ["magazine", "open-source", "eye-candy"],
     "url": "https://fumes.junglestar.org/?ref=junglestar",
     "icon": {
       "url": "fumes/safari-pinned-tab.svg",
       "name": "fumes"
     },
     "permalink": "/works/fumes/",
-    "description": "fumes webapp"
+    "description": ""
   },
   {
     "id": "roccomarosi",
     "date": "2024-04-01",
     "title": "ROCCO MAROSI",
-    "subtitle": "Architecture Photography",
+    "subtitle": "Architecture Photography Portfolio",
     "category": "website",
     "tags": ["commissioned-work", "open-source"],
     "url": "https://roccomarosi.com/?ref=junglestar",
@@ -162,22 +162,22 @@
       "name": "roccomarosi"
     },
     "permalink": "/works/roccomarosi/",
-    "description": "rocco marosi webapp"
+    "description": ""
   },
   {
     "id": "magicgreen",
     "date": "2023-05-05",
     "title": "MAGIC GREEN",
-    "subtitle": "Online Magazine",
+    "subtitle": "magazine website with resources search.",
     "category": "magazine",
-    "tags": ["commissioned-work"],
+    "tags": ["commissioned-work", "magazine"],
     "url": "https://magicgreen.junglestar.org/?ref=junglestar",
     "icon": {
       "url": "magicgreen/safari-pinned-tab.svg",
       "name": "magicgreen"
     },
     "permalink": "/works/magicgreen/",
-    "description": "Online Magazine website with resources search and responsive images."
+    "description": ""
   },
   {
     "id": "junglo",
@@ -185,20 +185,20 @@
     "title": "JUNGLO SHOES",
     "subtitle": "Online Store",
     "category": "website",
-    "tags": ["commissioned-work"],
+    "tags": ["commissioned-work", "Shopify"],
     "url": "https://jungloshoes.com/?ref=junglestar",
     "icon": {
       "url": "junglo/safari-pinned-tab.svg",
       "name": "junglo"
     },
     "permalink": "/works/junglo/",
-    "description": "Junglo shoes website."
+    "description": ""
   },
   {
     "id": "casaasia",
     "date": "2025-02-01",
     "title": "CASA ASIA",
-    "subtitle": "Restaurant Visual Menu",
+    "subtitle": "Restaurant Visual Menu website",
     "category": "website",
     "tags": ["commissioned-work"],
     "url": "https://casaasiabali.com?ref=junglestar",
@@ -207,13 +207,13 @@
       "name": "casaasia"
     },
     "permalink": "/works/casaasia/",
-    "description": "Visual menu website."
+    "description": ""
   },
   {
     "id": "divino",
-    "date": "2022-12-25",
+    "date": "2024-12-25",
     "title": "DIVINO",
-    "subtitle": "Restaurant Visual Menu",
+    "subtitle": "Restaurant Visual Menu website",
     "category": "website",
     "tags": ["commissioned-work"],
     "url": "https://divinobali.com?ref=junglestar",
@@ -222,6 +222,6 @@
       "name": "casaasia"
     },
     "permalink": "/works/divino/",
-    "description": "Visual menu website."
+    "description": ""
   }
 ]

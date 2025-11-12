@@ -1,32 +1,48 @@
 // @ts-check
 import { defineConfig } from "astro/config";
+import netlify from "@astrojs/netlify";
 
-// https://astro.build/config
+// https://astro.build/config'
 export default defineConfig({
+  output: "static",
+  adapter: netlify(),
+
+  // Specify the strategy used for scoping styles within Astro components.
+  // Choose from:
+  // where - Use :where selectors, causing no specificity increase.
+  // class - Use class-based selectors, causing a +1 specificity increase.
+  scopedStyleStrategy: "class",
+
   experimental: {
     chromeDevtoolsWorkspace: true,
   },
-  output: "static",
+
   image: {
     responsiveStyles: true,
     layout: "full-width",
   },
+
   build: {
+    assets: "_JSTAR",
     format: "directory",
     inlineStylesheets: "always",
   },
+
   prefetch: {
     // defaultStrategy: "viewport",
     prefetchAll: true,
   },
+
   trailingSlash: "never",
   root: "./",
   site: "https://junglestar.org",
   outDir: "./dist",
+
   devToolbar: {
     // keep the toolbar on in dev; data-astro-* hints show in dev
     enabled: true,
   },
+
   redirects: {
     // No root hitting for these dir. No index needed. Astro will take care of it.
     "/o": {
@@ -34,6 +50,7 @@ export default defineConfig({
       destination: "/",
     },
   },
+
   // Sourcemaps in production builds
   vite: {
     build: { sourcemap: true }, // JS sourcemaps

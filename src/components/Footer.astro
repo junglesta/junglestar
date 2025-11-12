@@ -5,18 +5,13 @@ import Nav from "@components/Nav.astro";
 import License from "@components/License.astro";
 import Carbon from "@components/Carbon.astro";
 import FooterLogo from "@components/FooterLogo.astro";
+import Logo from "@components/Logo.astro";
 
 const currentYear = new Date().getFullYear();
 ---
 
 <style>
-  hr {
-    width: 100%;
-    padding-block: 0;
-    margin-block: 10px;
-  }
-
-  .footer_site {
+  footer {
     width: 100%;
     min-height: var(--viewport_height);
 
@@ -41,7 +36,6 @@ const currentYear = new Date().getFullYear();
 
   .copy {
     font-size: calc(var(--font_clamp) / 1.1);
-    padding-block: calc(var(--space_block) * 1);
     padding-inline: var(--space_block);
     text-align: center;
     p {
@@ -134,12 +128,6 @@ const currentYear = new Date().getFullYear();
     }
   }
 
-  /*a::before,
-  a::after {
-    content: none;
-    display: none;
-  }*/
-
   .copy .small_pad_top {
     padding-top: calc(var(--space_block) / 2.5);
   }
@@ -148,6 +136,7 @@ const currentYear = new Date().getFullYear();
     user-select: none;
     list-style: none; /* Remove default marker */
     cursor: pointer;
+    padding-bottom: var(--space_block);
   }
 
   /* Remove default marker in WebKit browsers */
@@ -172,7 +161,8 @@ const currentYear = new Date().getFullYear();
   }
 </style>
 
-<footer class="footer_site">
+<footer>
+  <Logo />
   <Nav />
 
   <div class="flexcolo">

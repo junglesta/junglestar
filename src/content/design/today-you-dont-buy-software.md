@@ -1,7 +1,7 @@
 ---
 sort_order: 5
 title: Today you don't buy software
-subtitle: Pay a developer who can code components together.
+subtitle: Today you pay a developer who can code components together.
 image:
   src: "open_source.svg"
   alt: "Overwelmed?"

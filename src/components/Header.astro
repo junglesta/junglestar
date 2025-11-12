@@ -36,8 +36,12 @@ import Hi from "@components/LogoAni.astro";
   small {
     padding-top: calc(var(--space_block) / 4);
   }
+  .jsScrollButton,
+  .jsScrollButton:hover {
+    cursor: pointer;
+  }
 </style>
-<header slot="landing_screen" class="cover js_scrollto01">
+<header slot="landing_screen" class="cover jsScrollButton header_astro">
   <Hi />
 
   <div class="slogan uppercase maxcontrast_white" id="slogan0">
@@ -49,4 +53,6 @@ import Hi from "@components/LogoAni.astro";
     <p>&nbsp;</p>
     <p>↓</p>
   </div>
+
+  <div class="jsScrollTarget">&nbsp;</div>
 </header>

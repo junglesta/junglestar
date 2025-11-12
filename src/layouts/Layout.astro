@@ -41,6 +41,7 @@ const { title, description = "Sustainable Web Design to help fight Climate Chang
  email    : info@junglestar.org
  twitter  : @rokmatwit
 -->
+
   <Head title={title} description={description} sitemap={sitemap} />
   <body>
     <!-- {import.meta.env.DEV && <DevBrandColors />} -->
@@ -56,6 +57,28 @@ const { title, description = "Sustainable Web Design to help fight Climate Chang
     </div>
     <Footer />
   </body>
+
+  <script is:inline>
+    // Smooth scroll to target
+    document.addEventListener("DOMContentLoaded", function () {
+      const scrollButton = document.querySelector(".jsScrollButton");
+      const scrollTarget = document.querySelector(".jsScrollTarget");
+
+      if (scrollButton && scrollTarget) {
+        scrollButton.addEventListener("click", function (e) {
+          e.preventDefault();
+          scrollTarget.scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      } else {
+        console.log("Elements not found:", {
+          button: !!scrollButton,
+          target: !!scrollTarget,
+        });
+      }
+    });
+  </script>
 
   <script>
     function addLink(): void {
@@ -83,7 +106,7 @@ const { title, description = "Sustainable Web Design to help fight Climate Chang
         document.location.href +
         "'>" +
         document.location.href +
-        "</a><br />&#9733; 2024 &copy; Junglestar.";
+        "</a><br />&#9733; 2025 &copy; Junglestar.";
 
       selection.selectAllChildren(newdiv);
 

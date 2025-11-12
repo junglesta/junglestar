@@ -22,24 +22,6 @@ const tag = tags?.[0] || "";
 ---
 
 <style>
-  article {
-    padding: var(--space_block) var(--space_inline);
-    user-select: none;
-    position: relative;
-    background-color: white;
-    color: var(--brand);
-    border: 1px solid var(--brand);
-    border-radius: var(--radius);
-    transition:
-      transform 0.2s,
-      box-shadow 0.2s;
-  }
-
-  article:hover {
-    transform: translateY(3px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
   .card_works_link {
     min-height: 288px;
     display: grid;
@@ -59,12 +41,14 @@ const tag = tags?.[0] || "";
     height: auto;
     object-fit: contain;
     justify-self: center;
+    padding-bottom: var(--space_block);
   }
 
-  h3 {
+  .title_works {
+    /*h3*/
     margin: 0;
     padding-bottom: 0;
-    font-size: calc(var(--font_clamp) / 1.25);
+    font-size: calc(var(--font_clamp) / 0.88);
     text-align: center;
     font-weight: 500;
     padding-inline: var(--space_inline);
@@ -132,38 +116,34 @@ const tag = tags?.[0] || "";
   }
 </style>
 
-<article class="card_works">
+<a href={url} target="_blank" rel="noopener noreferrer" class="card no_underline card_works_link">
   <div class={category + " " + tag}></div>
-  <a href={url} target="_blank" rel="noopener noreferrer" class="card_works_link">
-    {ico_url && <img src={ico_url} alt={icon?.name || title} class="icon_works" loading="lazy" />}
+  {ico_url && <img src={ico_url} alt={icon?.name || title} class="icon_works" loading="lazy" />}
 
-    <div>
-      <h3 class="title_works hide">
-        {title}
-        {subtitle && <span class="subtitle_works">{subtitle}</span>}
-      </h3>
+  <h3 class="title_works center">
+    {title}
+    {subtitle && <span class="subtitle_works">{subtitle}</span>}
+  </h3>
 
-      {
-        date && (
-          <div class="meta_works">
-            <span class="date_works">
-              {new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "short" })}
-            </span>
-          </div>
-        )
-      }
+  {
+    date && (
+      <div class="meta_works">
+        <span class="date_works">
+          {new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "short" })}
+        </span>
+      </div>
+    )
+  }
 
-      {description && <span class="description_works">{description}</span>}
+  {description && <span class="description_works center">{description}</span>}
 
-      {
-        tags && tags.length > 0 && (
-          <div class="tags_works">
-            {tags.map((t) => (
-              <span class="tag_item">{t}</span>
-            ))}
-          </div>
-        )
-      }
-    </div>
-  </a>
-</article>
+  {
+    tags && tags.length > 0 && (
+      <div class="tags_works">
+        {tags.map((t) => (
+          <span class="tag_item">{t}</span>
+        ))}
+      </div>
+    )
+  }
+</a>

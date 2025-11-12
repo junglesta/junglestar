@@ -11,6 +11,7 @@ import Hi from "@components/LogoAni.astro";
     padding-block: 0;
   }
   .cover {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +22,10 @@ import Hi from "@components/LogoAni.astro";
     background-size: cover;
     background-color: var(--brand);
     color: var(--white);
+  }
+  .first_click_landing {
+    position: absolute;
+    bottom: 0;
   }
   .slogan {
     padding-top: calc(var(--space_block) * 2);
@@ -36,8 +41,14 @@ import Hi from "@components/LogoAni.astro";
   small {
     padding-top: calc(var(--space_block) / 4);
   }
+
+  .jsScrollButton,
+  .jsScrollButton:hover {
+    cursor: pointer;
+  }
 </style>
-<header slot="landing_screen" class="cover js_scrollto01">
+
+<header slot="landing_screen" class="cover jsScrollButton header_slotted_astro">
   <Hi />
 
   <div class="slogan" id="slogan0">
@@ -47,4 +58,5 @@ import Hi from "@components/LogoAni.astro";
     <p>&nbsp;</p>
     <p>↓</p>
   </div>
+  <div class="jsScrollTarget">&nbsp;</div>
 </header>

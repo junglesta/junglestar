@@ -49,7 +49,7 @@
   /* DERIVED COLOURS */
   --link_color: var(--white);
   --link_color_hover: var(--white_hover);
-  --smart_underline_for_white_text: var(--brand_dark);
+  --smart_underline_for_white_text: var(--brandT50);
 
   /* Shadows with SVH */
   --shadow_color: rgb(0, 0, 0);

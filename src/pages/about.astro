@@ -27,13 +27,20 @@ const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Da
   .projects-grid {
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+    grid-template-columns: 1fr;
     gap: var(--space_block) var(--space_inline);
   }
 
-  @media (max-width: 370px) {
+  @media (min-width: 370px) {
     .projects-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    }
+  }
+
+  @media (min-width: 652px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
   }
   .vpad {
@@ -46,7 +53,7 @@ const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Da
     <Header>{pageSubtitle}</Header>
   </div>
   <div class="wrap vpad">
-    <h1 class="center">Live Projects</h1>
+    <h1 class="center">Live Projects Showcase</h1>
     <div class="projects-grid">
       {
         projects.map(async (project) => {

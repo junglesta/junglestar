@@ -1,20 +1,5 @@
 [
   {
-    "id": "beyondcittastudi",
-    "date": "2015-05-01",
-    "title": "BEYOND CITTA STUDI",
-    "subtitle": "Instagram contest website for Architecture University Course",
-    "category": "website",
-    "tags": ["commissioned-work", "open-source"],
-    "url": "http://beyondcittastudi.junglestar.org/",
-    "icon": {
-      "url": "beyondcittastudi/polimi.svg",
-      "name": "polimi"
-    },
-    "permalink": "/works/beyondcittastudi/",
-    "description": ""
-  },
-  {
     "id": "krap",
     "date": "2015-05-15",
     "title": "KRAP",
@@ -69,6 +54,21 @@
     "url": "https://www.shopify.com/?ref=junglestar.org",
     "icon": {
       "url": "shopify.svg",
+      "name": "shopify"
+    },
+    "permalink": "/works/shopify/",
+    "description": null
+  },
+  {
+    "id": "webapps",
+    "date": "2025-10-2",
+    "title": "We make apps that works in the browser. One single app to serve web, iPhones and Androids. ",
+    "subtitle": "No download needed. Browse to it, install it and you'll find its icon among your phone apps. Forget Playstore & Appstore, WebApps are here!",
+    "category": "news",
+    "tags": ["service"],
+    "url": "#",
+    "icon": {
+      "url": "emty.svg",
       "name": "shopify"
     },
     "permalink": "/works/shopify/",

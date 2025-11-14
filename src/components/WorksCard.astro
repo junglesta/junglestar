@@ -121,6 +121,11 @@ const tag = tags?.[0] || "";
   a:has(.service) {
     background-color: var(--brandT25);
   }
+  a:has(.service) {
+    .date_works {
+      display: none;
+    }
+  }
 </style>
 
 <a href={url} target="_blank" rel="noopener noreferrer" class="card no_underline card_works_link">

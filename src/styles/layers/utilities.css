@@ -87,7 +87,9 @@ svg.white_color {
 }
 
 /* Spacing utilities */
-.center {
+.center,
+.centred,
+.centre {
   text-align: center;
 }
 

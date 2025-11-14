@@ -11,7 +11,7 @@ export default defineConfig({
   // Choose from:
   // where - Use :where selectors, causing no specificity increase.
   // class - Use class-based selectors, causing a +1 specificity increase.
-  scopedStyleStrategy: "class",
+  scopedStyleStrategy: "where",
 
   experimental: {
     chromeDevtoolsWorkspace: true,

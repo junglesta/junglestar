@@ -6,14 +6,17 @@ import * as siteData from "@data/site.json";
 <style>
   .footer_logo {
     transform: rotate(0deg);
+    display: flex;
+    align-items: center;
   }
   .brand {
     text-transform: uppercase;
     font-size: 150%;
+    width: 100%;
   }
 </style>
 <a class="footer_logo no_underline" title="Clicking this link will send you back to junglestar.org homepage" href="/">
-  <div class="brand">
+  <div class="brand center">
     {siteData.brand_full}
   </div>
 </a>

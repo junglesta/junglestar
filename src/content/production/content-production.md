@@ -1,6 +1,9 @@
 ---
 title: Content production
 subtitle: From establishing a meaningful strategy...
+image:
+  src: "pacman.svg"
+  alt: "Overwhelmed?"
 tags:
   - content
   - figures-of-speech
@@ -10,7 +13,7 @@ tags:
 
 We can help your company produce **_communication content_** for your brand.
 
-From establishing a meaningful [content strategy](content strategy), to creating the proper memes, it’s important to pick the right **_selling points_**.
+From establishing a meaningful content strategy to creating the proper memes, it’s important to pick the right **_selling points_**.
 
 Use the correct **_figures of speech_**, hit those points which will resonate, being highly symbolical, to your audience.
 

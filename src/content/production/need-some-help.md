@@ -1,6 +1,9 @@
 ---
 title: Need some help?
 subtitle: We offer Guidance.
+image:
+  src: "spark.svg"
+  alt: "Overwhelmed?"
 tags:
   - guidance
   - content

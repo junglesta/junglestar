@@ -108,7 +108,7 @@ svg.white_color {
 /* Layout utilities */
 
 .important_banner {
-  background-color: #fff;
+  background-color: var(--brandT25);
   padding-block: var(--space_block);
 }
 

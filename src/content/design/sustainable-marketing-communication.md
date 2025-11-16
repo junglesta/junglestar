@@ -20,4 +20,4 @@ tags:
 - **Focus**: Free your schedule to lead.
 - **Sustain**: Low-maintenance, low-resources design helps you and the planet.
 
-Ready to pivot? We simplify your software needs for **easy maintenance**. That's what we call Sustainable Marketing Communication. Sustainable for you.
+**Ready to pivot?** We simplify your software needs for **easy maintenance**. That's what we call Sustainable Marketing Communication. Sustainable for you.

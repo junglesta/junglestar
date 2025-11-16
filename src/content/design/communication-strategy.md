@@ -3,7 +3,7 @@ sort_order: 1
 title: "Communication Strategy"
 subtitle: "Develop your brand voice. Connect with your audience. Stand out."
 image:
-  src: "communication_strategy.svg"
+  src: "com_strategy.svg"
   alt: "Overwhelmed?"
 tags:
   - service

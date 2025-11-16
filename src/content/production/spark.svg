@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    color="currentColor"
+>
+
+<style type="text/css">
+:root {
+    --brand: #0069cc;
+}
+.brand {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 0.25;
+    stroke-linejoin: round;
+}
+    </style>
+
+  <path class="brand" d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z" >
+  </path>
+</svg>

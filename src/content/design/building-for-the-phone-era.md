@@ -3,7 +3,7 @@ sort_order: 3
 title: Building for the Phone Era
 subtitle: Fast, Phone-Friendly and Easy-to-Use.
 image:
-  src: "building_for_phones.svg"
+  src: "building.svg"
   alt: "Overwelmed?"
 tags:
   - building

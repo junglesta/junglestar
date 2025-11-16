@@ -1,6 +1,9 @@
 ---
 title: Social Media Management
 subtitle: Strategy and management leveraging automation
+image:
+  src: "community.svg"
+  alt: "Overwhelmed?"
 tags:
   - content
   - media-strategy

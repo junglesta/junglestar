@@ -1,0 +1,19 @@
+[
+  {
+    "id": "offer",
+    "p1": "Is your website hard to use on phones?",
+    "p2": "Need to zoom-in to read the text and menus?",
+    "p3": "We can fix that.",
+    "p4": "We offer affordable packages for any budget!"
+  },
+  {
+    "id": "cover",
+    "p1": "Your business, simplified. Your life, upgraded.",
+    "p2": "<h1 class='brand'>JUNGLESTAR</h1>",
+    "p3": "We can help."
+  },
+  {
+    "id": "design",
+    "p1": "Explore Our Solutions!"
+  }
+]

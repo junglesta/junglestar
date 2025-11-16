@@ -1,6 +1,9 @@
 ---
 title: Content management
 subtitle: Delegate, so you can focus on your business
+image:
+  src: "binocular.svg"
+  alt: "Overwhelmed?"
 tags:
   - content
   - manage-content

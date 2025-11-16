@@ -4,14 +4,14 @@
    ======================================== */
 
 :root {
-  /* Dynamic spaces */
+  /*🐸 Dynamic spaces */
   --viewport_height: 100dvh;
   --space_block: 2.75dvh;
   --space_inline: 2.75dvw;
-  /* Fixed spaces */
+  /*🐸 Fixed spaces */
   --stone: 3rem;
   --tap_size: 48px;
-  /* Colors */
+  /*🐸 Colors */
   /*--black: oklch(0.2 0 360);#161616*/
   --black: oklch(0.2002 0 0);
   --blackT25: color-mix(in oklch, var(--black), transparent 75%);
@@ -46,12 +46,12 @@
   --grey_color_dark: #000000;
   --svgBG: pink;
 
-  /* DERIVED COLOURS */
+  /*🐸 DERIVED COLOURS */
   --link_color: var(--white);
   --link_color_hover: var(--white_hover);
   --smart_underline_for_white_text: var(--brandT50);
 
-  /* Shadows with SVH */
+  /*🐸 Shadows with SVH */
   --shadow_color: rgb(0, 0, 0);
   --header_shadow: 0 0.2svh 1svh 0 rgba(0, 0, 0, 0.16);
   --card_shadow: 0px 0px 0.2svh 0px rgba(0, 0, 0, 0.12), 0px 0.2svh 0.2svh 0px rgba(0, 0, 0, 0.24);
@@ -60,23 +60,23 @@
     0px 0.2svh 0.4svh -0.1svh rgba(0, 0, 0, 0.2), 0px 0.4svh 0.5svh 0px rgba(0, 0, 0, 0.14),
     0px 0.1svh 1svh 0px rgba(0, 0, 0, 0.12);
 
-  /* Transitions */
+  /*🐸 Transitions */
   --transition_shadow: box-shadow 0.2s ease;
 
-  /* Card tokens */
+  /*🐸 Card tokens */
   --big_card_width: 27.5svw;
 
-  /* Product categories */
+  /*🐸 Product categories */
   --product_category_1: hsla(117, 100%, 81%, 0.75);
   --product_category_2: hsla(43, 100%, 81%, 0.75);
   --product_category_3: hsla(205, 100%, 81%, 0.75);
 
-  /* Breakpoints */
+  /*🐸 Breakpoints */
   --min_width: 600px;
   --bp1_width: 820px;
   --max_width: 1024px;
 
-  /* Typography */
+  /*🐸 Typography */
   --font_family:
     -apple-system, BlinkMacSystemFont, Segoe UI, "Inter", Helvetica, Arial, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol;
@@ -90,7 +90,7 @@
   --radius: clamp(3px, 0.5rem, 1.5rem);
 }
 
-/* Fine-tuned breakpoints */
+/*🐸 Fine-tuned breakpoints */
 @media (min-width: 480px) {
   :root {
     --base-font-size: 17px;
@@ -133,7 +133,7 @@
 }
 
 :root {
-  /* Responsive headings with SVH */
+  /*🐸Responsive headings with SVH */
   --heading1_responsive: 4svh;
   --heading1_min: 1.75rem;
   --heading1_max: 4.6svh;

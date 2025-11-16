@@ -71,10 +71,10 @@ svg.white_color {
   stroke: var(--white);
 }
 
-/* Background utilities */
+/*🐸 Background utilities */
 .light_bg,
 .page_content.light_bg {
-  background-color: rgba(195, 218, 241, 1);
+  background-color: var(--white);
 }
 
 .dark_bg,
@@ -105,7 +105,7 @@ svg.white_color {
   padding-top: calc(var(--space_block) / 2);
 }
 
-/* Layout utilities */
+/*🐸 Layout utilities */
 
 .important_banner {
   background-color: var(--brandT25);
@@ -116,12 +116,12 @@ svg.white_color {
   min-height: 100dvh;
 }
 
-/* Print only - hidden on screen */
+/*🐸 Print only - hidden on screen */
 .print_only {
   display: none;
 }
 
-/* Target fade animation */
+/*🐸 Target fade animation */
 :target {
   animation: target_fade 3s 1;
 }

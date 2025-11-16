@@ -12,7 +12,7 @@ const pageDescription = "SHOWCASE: We helped these small enterprises with websit
 const pageSubtitle = "Expertise you can trust";
 
 // Import all icons dynamically
-const icons = import.meta.glob<{ default: ImageMetadata }>("/src/assets/ico/**/*.{svg,png}", { eager: true });
+//const icons = import.meta.glob<{ default: ImageMetadata }>("/src/assets/ico/**/*.{svg,png}", { eager: true });
 
 const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 ---

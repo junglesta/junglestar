@@ -7,13 +7,19 @@ import "@styles/global.css";
 //import DevBrandColors from "@components/DevBrandColors.astro";
 
 export interface Props {
+  bodyClass?: string;
   title: string;
   description?: string;
   sitemap?: boolean;
   pageSubtitle?: string;
 }
 
-const { title, description = "Sustainable Web Design to help fight Climate Change", sitemap = true } = Astro.props;
+const {
+  bodyClass,
+  title,
+  description = "Sustainable Web Design to help fight Climate Change",
+  sitemap = true,
+} = Astro.props;
 ---
 
 <style>
@@ -43,7 +49,7 @@ const { title, description = "Sustainable Web Design to help fight Climate Chang
 -->
 
   <Head title={title} description={description} sitemap={sitemap} />
-  <body>
+  <body class={bodyClass}>
     <!-- {import.meta.env.DEV && <DevBrandColors />} -->
 
     <div class="scrolling_body_wrap">

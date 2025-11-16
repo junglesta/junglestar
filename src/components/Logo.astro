@@ -9,12 +9,21 @@ const starF = "transparent";
 
 <style>
   .logo.svg_wrap {
-    margin-block: calc(var(--space_block) * 1);
-    margin-inline: calc(var(--space_inline) * 3);
+    margin-block: var(--space_block);
+    padding-inline: var(--space_inline);
+    min-height: 120px;
+    height: clamp(120px, 120px, 300px);
   }
-  svg {
-    max-height: 15dvh;
-  }
+  /*svg {
+    min-height: 200px;
+    height: clamp(200px, 15dvh, 400px);
+  }*/
+
+  /*@media (min-width: 510px) {
+    svg {
+      max-height: clamp(200px, 15dvh, 400px);
+    }
+  }*/
 </style>
 
 <div class="logo svg_wrap">

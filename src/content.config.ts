@@ -107,6 +107,28 @@ const designConcepts = defineCollection({
       subtitle: z.string().optional().nullable(),
       draft: z.boolean().optional().default(false),
       sort_order: z.number().optional().nullable(),
+      tags: z.array(z.string()),
+      image: z
+        .object({
+          src: image(), // Use image() helper instead of z.string()
+          alt: z.string().default("Junglestar"),
+        })
+        .optional()
+        .nullable(),
+    }),
+});
+
+const productionConcepts = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/production" }),
+  schema: (
+    { image }, // Get the image helper from the schema function
+  ) =>
+    z.object({
+      title: z.string(),
+      subtitle: z.string().optional().nullable(),
+      draft: z.boolean().optional().default(false),
+      sort_order: z.number().optional().nullable(),
+      tags: z.array(z.string()),
       image: z
         .object({
           src: image(), // Use image() helper instead of z.string()
@@ -153,4 +175,5 @@ export const collections = {
   slogans_help,
   slogans_intro,
   designConcepts,
+  productionConcepts,
 };

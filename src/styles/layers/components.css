@@ -411,3 +411,19 @@ a:not(.card):not(.no_underline):not(.button):focus,
 a:not(.card):not(.no_underline):not(.button):hover {
   background: var(--smart_underline_for_white_text);
 }
+
+/*page specific design style*/
+body.design {
+  p small em {
+    color: var(--brand);
+    margin-left: -1rem;
+    font-size: calc(var(--font_rem) * 0.55);
+    text-transform: uppercase;
+  }
+  .post_content ul {
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 1rem !important;
+  }
+}

@@ -38,7 +38,7 @@
     "tags": ["tool", "open-source"],
     "url": "https://qr.junglestar.org/?ref=junglestar.org",
     "icon": {
-      "url": "qr/qr-junglestar-org.png",
+      "url": "qr/qr_brand_color.svg",
       "name": "qrgenerator"
     },
     "permalink": "/works/qr/",
@@ -83,7 +83,7 @@
     "tags": ["tool", "open-source"],
     "url": "https://palette.junglestar.org/?ref=junglestar",
     "icon": {
-      "url": "octo/safari-pinned-tab.svg",
+      "url": "octo/octo_brand_color.svg",
       "name": "octopal"
     },
     "permalink": "/works/octopal/",
@@ -128,7 +128,7 @@
     "tags": ["tool", "open-source", "webapp"],
     "url": "https://bill.junglestar.org/?ref=junglestar",
     "icon": {
-      "url": "bill/safari-pinned-tab.svg",
+      "url": "bill/bill_brand_color.svg",
       "name": "bill"
     },
     "permalink": "/works/bill/",

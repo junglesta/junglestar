@@ -1,7 +1,7 @@
 {
-  "$ref": "#/definitions/designConcepts",
+  "$ref": "#/definitions/productionConcepts",
   "definitions": {
-    "designConcepts": {
+    "productionConcepts": {
       "type": "object",
       "properties": {
         "title": {

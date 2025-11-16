@@ -1,16 +1,25 @@
 ---
 sort_order: 1
-title: Communication Strategy
-subtitle: Develop Your Brand Voice
+title: "Communication Strategy"
+subtitle: "Develop your brand voice. Connect with your audience. Stand out."
 image:
   src: "communication_strategy.svg"
-  alt: "Overwelmed?"
+  alt: "Overwhelmed?"
 tags:
-  - design
+  - service
+  - guidance
 ---
 
-We design and develop **communication strategies**. We can help your company define a meaningful **brand discourse**.
+<small><em>The Problem</em></small><br>
+Your message gets lost in the noise. Inconsistent content, scattered channels, and no clear **brand identity** make it impossible to build meaningful connections.
 
-Focusing on your offer and your audience, we will create an integrated **content publishing strategy** for your chosen media channels.
+<small><em>The Solution</em></small><br>
+We design **integrated communication strategies** tailored to your audience and offer. Define your **brand discourse**, establish a recognizable voice, and create cohesive content across all your channels.
 
-Your brand will develop a **voice**, a recognisable style, to organically grow a meaningful followers base quickly.
+<small><em>Why It Matters</em></small>
+
+- **Clarity**: Your message cuts through the noise with a distinct voice.
+- **Consistency**: Unified content strategy across all media channels.
+- **Growth**: Organically build a loyal, engaged follower base.
+
+Ready to be heard? Let's craft a communication strategy that makes your brand unforgettable.

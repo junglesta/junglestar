@@ -6,7 +6,8 @@ image:
   src: "building_for_phones.svg"
   alt: "Overwelmed?"
 tags:
-  - design
+  - building
+  - service
 ---
 
 Today more than [60% of internet traffic](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/asia) originates from mobile devices.

@@ -1,17 +1,25 @@
 ---
 sort_order: 4
-title: From plan to working product
-subtitle: Our solutions include everything you need.
+title: "From Plan to Working Product"
+subtitle: "Complete solutions. No surprises. Everything you need to launch."
 image:
   src: "jlogo_blue_white.svg"
-  alt: "Overwelmed?"
+  alt: "Overwhelmed?"
 tags:
-  - design
+  - building
+  - service
 ---
 
-At Junglestar we design and develop websites and simple web-apps that work well on phones, tablets, laptops and desktops.
+<small><em>The Problem</em></small><br>
+You have a vision but need technical expertise. Piecing together designers, developers, hosting, and security feels overwhelming—and costly mistakes are easy.
 
-With our client we make a plan. Then we study and produce a **Design Concept** based on company needs and resources. Once approved, we develop it, write the code, tests and deploy it.
+<small><em>The Solution</em></small><br>
+We handle everything from **design concept** to deployment. Study your needs, produce a tailored plan, write the code, test thoroughly, and launch. Websites and web-apps that work beautifully on every device.
 
-We offer solutions that include everything you’ll need, speed, security, [SEO](https://en.wikipedia.org/wiki/Search**engine**optimization) and hosting.
-We have prepared [3 packages](/offer) to get you quickly online.
+<small><em>Why It Matters</em></small><br>
+
+- **Completeness**: Speed, security, SEO, and hosting—all included.
+- **Efficiency**: From concept to live product without managing multiple vendors.
+- **Quality**: Professional results that match your company's needs and resources.
+
+Ready to launch? Check out our [3 packages](/offer) designed to get you online fast.

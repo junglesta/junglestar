@@ -25,16 +25,30 @@ const renderedPosts = await Promise.all(
 );
 
 // Page metadata
-const titleTAB = "Junglestar Design | Because Why";
+const titleTAB = "Junglestar | Design: Because Why";
 const description =
   "Sustainable Web Design to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
 const titlePAGE = "Design, Sustainabilty!? Because Why?";
 ---
 
 <style>
-  .toc a {
+  .toc {
     color: var(--black);
+    border: 1px solid var(--brand);
+    border-radius: var(--radius);
+    background-color: var(--whiteT25);
+    a {
+      color: var(--black);
+      text-decoration: none;
+      font-size: 90%;
+      font-weight: 400;
+      padding-bottom: 8px;
+    }
   }
+  .toc li a:nth-child(even) {
+    color: red;
+  }
+
   h1 {
     color: #111827;
   }
@@ -91,7 +105,7 @@ const titlePAGE = "Design, Sustainabilty!? Because Why?";
 
   .post_content :global(ul),
   .post_content :global(ol) {
-    margin-bottom: var(--space_block);
+    padding-bottom: var(--space_block);
     padding-left: var(--space_inline);
   }
 
@@ -100,24 +114,25 @@ const titlePAGE = "Design, Sustainabilty!? Because Why?";
     text-decoration: underline;
   }
 
-  .toc {
-    color: var(--black);
+  .post_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
   }
 
-  /*.back_to_top {
-    display: inline-block;
-    margin-top: 1rem;
+  .tag {
+    padding: 0.25rem 0.75rem;
+    background-color: var(--whiteT25);
+    border: 1px solid var(--brand);
+    border-radius: calc(var(--radius) / 2);
+    font-size: calc(var(--font_rem) * 0.665);
+    text-transform: uppercase;
     color: var(--brand);
-    text-decoration: none;
-    font-size: 0.9rem;
   }
-
-  .back_to_top:hover {
-    text-decoration: underline;
-  }*/
 </style>
 
-<Layout title={titleTAB} description={description} pageSubtitle={titlePAGE}>
+<Layout title={titleTAB} description={description} pageSubtitle={titlePAGE} bodyClass="design">
   <div slot="landing_screen">
     <Header>{titlePAGE}</Header>
   </div>
@@ -132,7 +147,9 @@ const titlePAGE = "Design, Sustainabilty!? Because Why?";
           {
             renderedPosts.map((post) => (
               <li>
-                <a href={`#${post.id}`}>{post.data.title.toUpperCase()}</a>
+                <a href={`#${post.id}`}>
+                  <span>{post.data.title.toUpperCase()}</span>
+                </a>
               </li>
             ))
           }
@@ -154,6 +171,15 @@ const titlePAGE = "Design, Sustainabilty!? Because Why?";
             <div class="post_header">
               <h3 class="post_title">{post.data.title}</h3>
               {post.data.subtitle && <p class="post_subtitle">{post.data.subtitle}</p>}
+
+              {post.data.tags && post.data.tags.length > 0 && (
+                <div class="post_tags">
+                  {post.data.tags.map((tag) => (
+                    <span class="tag">{tag}</span>
+                  ))}
+                </div>
+              )}
+
               <div class="post_content">
                 <post.Content />
               </div>

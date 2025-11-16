@@ -1,6 +1,7 @@
 ---
 // @components/FoterLogo.astro
 import * as siteData from "@data/site.json";
+import Logo from "@components/Logo.astro";
 ---
 
 <style>
@@ -15,8 +16,9 @@ import * as siteData from "@data/site.json";
     width: 100%;
   }
 </style>
+
 <a class="footer_logo no_underline" title="Clicking this link will send you back to junglestar.org homepage" href="/">
   <div class="brand center">
-    {siteData.brand_full}
+    <Logo />{siteData.brand_full}
   </div>
 </a>

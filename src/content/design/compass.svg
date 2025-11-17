@@ -1,0 +1,28 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="0.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="feather feather-compass">
+
+<style xmlns="http://www.w3.org/2000/svg" type="text/css">
+:root {
+    --brand: #0069cc;
+}
+.brand {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 0.25;
+    stroke-linejoin: round;
+}
+.fillwhite {
+    fill: white;
+}
+    </style>
+
+<circle class="brand" cx="12" cy="12" r="10"></circle>
+<polygon class="brand fillwhite" points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+</svg>

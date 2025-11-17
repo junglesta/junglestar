@@ -1,9 +1,9 @@
 ---
-sort_order: 1
+sort_order: 2
 title: "Communication Strategy"
-subtitle: "Develop your brand voice. Connect with your audience. Stand out."
+subtitle: "Developing your brand voice ain't easy."
 image:
-  src: "com_strategy.svg"
+  src: "guidance.svg"
   alt: "Overwhelmed?"
 tags:
   - service
@@ -11,7 +11,7 @@ tags:
 ---
 
 <small><em>The Problem</em></small><br>
-Your message gets lost in the noise. Inconsistent content, scattered channels, and no clear **brand identity** make it impossible to build meaningful connections.
+Connecting with your audience is not just a button click. Your message gets lost in the noise. Inconsistent content, scattered channels, and no clear **brand identity** make it impossible to build meaningful connections. You might need help to stand out.
 
 <small><em>The Solution</em></small><br>
 We design **integrated communication strategies** tailored to your audience and offer. Define your **brand discourse**, establish a recognizable voice, and create cohesive content across all your channels.

@@ -3,12 +3,13 @@ sort_order: 6
 title: "Why Open Source Is Your Smartest Move"
 subtitle: "Own your tech stack. Control your future. Stop renting software."
 image:
-  src: "open.svg"
+  src: "sunrise.svg"
   alt: "Break free?"
 tags:
   - solutions
   - open-source
   - guidance
+  - strategy
 ---
 
 <small><em>The Problem</em></small><br>

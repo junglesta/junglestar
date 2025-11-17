@@ -3,7 +3,7 @@ sort_order: 4
 title: "From Plan to Working Product"
 subtitle: "Complete solutions. No surprises. Everything you need to launch."
 image:
-  src: "jlogo_blue_white.svg"
+  src: "compass.svg"
   alt: "Overwhelmed?"
 tags:
   - building

@@ -1,9 +1,9 @@
 ---
-sort_order: 2
+sort_order: 1
 title: "Sustainable Marketing Communication"
 subtitle: "Build once, maintain easily. Never overwhelmed again."
 image:
-  src: "jlogo_blue_white.svg"
+  src: "scissors.svg"
   alt: "Overwhelmed?"
 tags:
   - solutions

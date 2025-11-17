@@ -18,14 +18,14 @@ const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Da
 ---
 
 <style>
-  h1 {
+  /*h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: #111827;
-  }
+  }*/
 
   .projects-grid {
-    padding: 10px;
+    padding-top: var(--space_block);
     display: grid;
 
     grid-template-columns: 1fr;
@@ -54,6 +54,10 @@ const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Da
   </div>
   <div class="wrap vpad">
     <h1 class="center">Live Projects Showcase</h1>
+    <p class="center"><strong>Who are we?</strong></p>
+    <p class="center">In this LLM-era do you really want to see our faces and job titles? Does it even matter?</p>
+    <p class="center">Hey! Actions & Productions speak louder than lingo & memes concoctions. </p>
+    <p class="center">No algo-speak, just juicy craftcakes, <br />check them out:</p>
     <div class="projects-grid">
       {
         projects.map(async (project) => {

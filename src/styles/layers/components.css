@@ -313,12 +313,12 @@ code {
 }
 @media (min-width: 821px) {
   .mean_icon.four_icon_group {
-    width: 60dvw;
+    width: 50dvw;
   }
 }
 @media (min-width: 1025px) {
   .mean_icon.four_icon_group {
-    width: 50dvw;
+    width: 35dvw;
   }
 }
 

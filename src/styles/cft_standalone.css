@@ -1,0 +1,110 @@
+:root {
+  /* This is our scaling factor based on the user font size */
+  --scale-factor: calc(16px / 1rem);
+  /* How aggressively should we compress the scale? 1 = full compression, 0 = no compression */
+  --compression-strength: 0.7;
+
+  /* The adaptive ratio multiplier that combines scale factor and compression strength and dampens the type scale at larger user font sizes */
+  --ratio-dampener: calc(1 - ((1 - var(--scale-factor)) * var(--compression-strength)));
+
+  /* A few ratios to choose from */
+  --minorSecond: 1.06666; /* Semitone: 16:15 */
+  --majorSecond: 1.125; /* 9:8 */
+  --minorThird: 1.2; /* 6:5 */
+  --majorThird: 1.25; /* 5:4 */
+  --perfectFourth: 1.33333; /* 4:3 */
+  --augmentedFourth: 1.414; /* √2/1 */
+  --perfectFifth: 1.5; /* 3:2 */
+  --minorSixth: 1.6; /* 8:5 */
+  --goldenRatio: 1.618; /* (1+√5):2 */
+  --majorSixth: 1.66666; /* 5:3 */
+  --minorSeventh: 1.8; /* 9:5 */
+  --majorSeventh: 1.875; /* 15:8 */
+  --octave: 2; /* 2:1 */
+
+  /* Base values for font-size, ratio, viewport widths */
+  --baseFontSizeMin: 1rem;
+  --ratioMin: var(--majorSecond);
+  --minViewportWidth: 320;
+
+  --baseFontSizeMax: 1.3125rem;
+  --ratioMax: var(--perfectFourth);
+  --maxViewportWidth: 1800;
+
+  /* Apply dampening to the ratio spread */
+  --compressedRatioMin: calc(1 + (var(--ratioMin) - 1) * var(--ratio-dampener));
+  --compressedRatioMax: calc(1 + (var(--ratioMax) - 1) * var(--ratio-dampener));
+
+  /* Min and max sizes of the scales are calculated based
+  on the provided ratio with pow():
+  https://developer.mozilla.org/en-US/docs/Web/CSS/pow */
+
+  /* Scale min */
+  --size-min-4: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 4));
+  --size-min-3: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 3));
+  --size-min-2: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 2));
+  --size-min-1: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 1));
+  --size-min-0: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 0));
+
+  /* Scale max */
+  --size-max-4: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 4));
+  --size-max-3: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 3));
+  --size-max-2: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 2));
+  --size-max-1: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 1));
+  --size-max-0: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 0));
+
+  /* This is how the fluid value is calculated: calc([value-min] + ([value-max] - [value-min]) * ((100vw - [breakpoint-min]) / ([breakpoint-max] - [breakpoint-min]))) */
+
+  --fluid-4: clamp(
+    var(--size-min-4),
+    var(--size-min-4) + (var(--size-max-4) - var(--size-min-4)) *
+      ((100vw - var(--minViewportWidth)) / (var(--maxViewportWidth) - var(--minViewportWidth))),
+    var(--size-max-4)
+  );
+  --fluid-3: clamp(
+    var(--size-min-3),
+    var(--size-min-3) + (var(--size-max-3) - var(--size-min-3)) *
+      ((100vw - var(--minViewportWidth)) / (var(--maxViewportWidth) - var(--minViewportWidth))),
+    var(--size-max-3)
+  );
+  --fluid-2: clamp(
+    var(--size-min-2),
+    var(--size-min-2) + (var(--size-max-2) - var(--size-min-2)) *
+      ((100vw - var(--minViewportWidth)) / (var(--maxViewportWidth) - var(--minViewportWidth))),
+    var(--size-max-2)
+  );
+  --fluid-1: clamp(
+    var(--size-min-1),
+    var(--size-min-1) + (var(--size-max-1) - var(--size-min-1)) *
+      ((100vw - var(--minViewportWidth)) / (var(--maxViewportWidth) - var(--minViewportWidth))),
+    var(--size-max-1)
+  );
+  --fluid-0: clamp(
+    var(--size-min-0),
+    var(--size-min-0) + (var(--size-max-0) - var(--size-min-0)) *
+      ((100vw - var(--minViewportWidth)) / (var(--maxViewportWidth) - var(--minViewportWidth))),
+    var(--size-max-0)
+  );
+}
+
+/* And this is how we could apply the sizes */
+
+h1 {
+  font-size: var(--fluid-4);
+}
+
+h2 {
+  font-size: var(--fluid-3);
+}
+
+h3 {
+  font-size: var(--fluid-2);
+}
+
+h4 {
+  font-size: var(--fluid-1);
+}
+
+p {
+  font-size: var(--fluid-0);
+}

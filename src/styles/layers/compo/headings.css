@@ -1,0 +1,87 @@
+/*🐸HEADINGS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+  padding: 0;
+  padding-block: calc(var(--space_block) * 0.545); /* was 1.5svh */
+  font-weight: var(--weight);
+  line-height: 1.44;
+}
+
+@media (min-width: 600px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: var(--weight);
+  }
+}
+
+@media (min-width: 1024px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: var(--weight);
+  }
+}
+
+.offer_content h2,
+.offer_content h3,
+.section h2,
+.section h3 {
+  color: var(--brand);
+}
+
+h1,
+.h1 {
+  font-size: clamp(var(--heading1_min), var(--heading1_responsive), var(--heading1_max));
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  font-size: clamp(var(--heading2_min), var(--heading2_responsive), var(--heading2_max));
+  line-height: 1.1;
+  padding-top: calc(var(--space_block) * 2);
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  font-size: clamp(var(--heading3_min), var(--heading3_responsive), var(--heading3_max));
+  line-height: 1.1;
+}
+
+h4,
+.h4 {
+  font-size: clamp(var(--heading4_min), var(--heading4_responsive), var(--heading4_max));
+  line-height: 1.1;
+}
+
+h5,
+.h5 {
+  font-size: clamp(var(--heading5_min), var(--heading5_responsive), var(--heading5_max));
+  line-height: 1;
+}
+
+h6,
+.h6 {
+  font-size: clamp(var(--heading6_min), var(--heading6_responsive), var(--heading6_max));
+  line-height: 1;
+}

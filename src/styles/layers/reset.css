@@ -2,7 +2,7 @@
    FILE: src/styles/layers/reset.css
    ======================================== */
 
-/*🐸 Reset margins and paddings */
+/*🐸Reset margins and paddings */
 blockquote,
 body,
 dd,
@@ -23,14 +23,14 @@ ul {
   padding: 0;
 }
 
-/*🐸 Universal reset */
+/*🐸Universal reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*🐸  HTML and Body */
+/*🐸HTML and Body */
 body,
 html {
   height: 100%;
@@ -41,7 +41,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/*🐸  Images */
+/*🐸Images */
 img {
   max-width: 100%;
   display: block;
@@ -51,7 +51,7 @@ figure > img {
   display: block;
 }
 
-/*🐸  Lists */
+/*🐸Lists */
 ol,
 ul {
   margin-left: var(--space_inline);
@@ -62,7 +62,7 @@ li > ol {
   margin-bottom: 0;
 }
 
-/*🐸  Links */
+/*🐸Links */
 a {
   text-decoration: none;
   position: relative;
@@ -70,7 +70,7 @@ a {
   padding-bottom: calc(var(--space_block) * 0.073); /* was 0.2svh */
 }
 
-/*🐸 External link indicator */
+/*🐸External link indicator */
 a:not(.action_button)[target="_blank"]:after {
   content: "↗";
   font-size: 90%;
@@ -81,7 +81,7 @@ a:not(.action_button)[target="_blank"]:after {
   border-bottom-color: transparent !important;
   text-decoration-thickness: 0 !important;
 }
-/*🐸 Icons */
+/*🐸Icons */
 svg {
   width: 100%;
   height: 100%;

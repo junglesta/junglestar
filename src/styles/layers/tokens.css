@@ -4,30 +4,31 @@
    ======================================== */
 
 :root {
-  /*🐸 Dynamic spaces */
+  /*🐸Dynamic spaces */
   --viewport_height: 100dvh;
   --space_block: 2.75dvh;
   --space_inline: 2.75dvw;
-  /*🐸 Fixed spaces */
+  /*🐸Fixed spaces */
   --stone: 3rem;
   --tap_size: 48px;
-  /*🐸 Colors */
+  /*🐸Colors */
   /*--black: oklch(0.2 0 360);#161616*/
   --black: oklch(0.2002 0 0);
+  --black_fumes: #161616;
   --blackT25: color-mix(in oklch, var(--black), transparent 75%);
   --blackT50: color-mix(in oklch, var(--black), transparent 50%);
+  --black_hover: black;
 
   --white: oklch(0.95 0.01 186.34 / 100%);
   --whiteT25: color-mix(in oklch, var(--white), transparent 75%);
   --whiteT50: color-mix(in oklch var(--white), transparent 50%);
+  --white_hover: #fff;
 
-  --white_hover: #fff; /*#dedede*/
-  --background_color: oklch(0.8 0.03 208.64); /* #e6e6e6*/
+  --background_color: oklch(0.8 0.03 208.64);
   --background_blackT15: rgba(0, 0, 0, 0.15);
   --background_blackT10: rgba(0, 0, 0, 0.1);
   --background_blackT05: rgba(0, 0, 0, 0.05);
   --background_whiteT15: rgba(255, 255, 255, 0.15);
-  --black_fumes: #161616;
 
   /*--brand: #0069cc;*/
   --brand: oklch(0.5286 0.1735 255);
@@ -46,12 +47,16 @@
   --grey_color_dark: #000000;
   --svgBG: pink;
 
-  /*🐸 DERIVED COLOURS */
+  /*🐸DERIVED COLOURS */
+  --link_color_main_hover: var(--black_hover);
+  /* FOR STRUCTURE*/
   --link_color: var(--white);
   --link_color_hover: var(--white_hover);
+  /* FOR <main>*/
+  --link_color_main: var(--black);
   --smart_underline_for_white_text: var(--brandT50);
 
-  /*🐸 Shadows with SVH */
+  /*🐸Shadows with SVH */
   --shadow_color: rgb(0, 0, 0);
   --header_shadow: 0 0.2svh 1svh 0 rgba(0, 0, 0, 0.16);
   --card_shadow: 0px 0px 0.2svh 0px rgba(0, 0, 0, 0.12), 0px 0.2svh 0.2svh 0px rgba(0, 0, 0, 0.24);
@@ -60,23 +65,28 @@
     0px 0.2svh 0.4svh -0.1svh rgba(0, 0, 0, 0.2), 0px 0.4svh 0.5svh 0px rgba(0, 0, 0, 0.14),
     0px 0.1svh 1svh 0px rgba(0, 0, 0, 0.12);
 
-  /*🐸 Transitions */
+  /*🐸Transitions */
   --transition_shadow: box-shadow 0.2s ease;
 
-  /*🐸 Card tokens */
+  /*🐸Card tokens */
   --big_card_width: 27.5svw;
 
-  /*🐸 Product categories */
+  /*🐸Product categories */
   --product_category_1: hsla(117, 100%, 81%, 0.75);
   --product_category_2: hsla(43, 100%, 81%, 0.75);
   --product_category_3: hsla(205, 100%, 81%, 0.75);
 
-  /*🐸 Breakpoints */
-  --min_width: 600px;
-  --bp1_width: 820px;
-  --max_width: 1024px;
+  /*🐸Breakpoints */
+  --width_min: 400px;
+  --width_xs: 480px;
+  --width_sm: 600px;
+  --width_md: 820px;
+  --width_lg: 1024px;
+  --width_xl: 1280px;
+  --width_2x: 1420px;
+  --width_max: 1920px;
 
-  /*🐸 Typography */
+  /*🐸Typography */
   --font_family:
     -apple-system, BlinkMacSystemFont, Segoe UI, "Inter", Helvetica, Arial, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol;
@@ -90,7 +100,7 @@
   --radius: clamp(3px, 0.5rem, 1.5rem);
 }
 
-/*🐸 Fine-tuned breakpoints */
+/*🐸Fine-tuned breakpoints */
 @media (min-width: 480px) {
   :root {
     --base-font-size: 17px;

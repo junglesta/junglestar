@@ -35,6 +35,33 @@ const titlePAGE = "Design, Sustainabilty!? Because Why?";
   h1 {
     color: var(--black);
   }
+
+  body.design {
+    p small em {
+      color: var(--brand);
+      margin-left: -1rem;
+      font-size: calc(var(--font_rem) * 0.75);
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    .post_content ul {
+      margin-top: -0.751rem;
+      margin-bottom: 0.75rem;
+      margin-left: calc(var(--space_inline) * 2);
+      padding-bottom: 1rem !important;
+    }
+
+    @media (min-width: 601px) {
+      .post_content ul {
+        margin-left: calc(var(--space_inline) * 1);
+      }
+    }
+    @media (min-width: 821px) {
+      .post_content ul {
+        margin-left: calc(var(--space_inline) * 0.75);
+      }
+    }
+  }
 </style>
 
 <Layout title={titleTAB} description={description} pageSubtitle={titlePAGE} bodyClass="design">

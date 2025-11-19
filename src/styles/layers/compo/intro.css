@@ -1,0 +1,22 @@
+/*🐸INTRO SECTION*/
+.intro {
+  margin-block: var(--space_block);
+}
+
+@media (min-width: 600px) {
+  .intro {
+    margin-block: calc(var(--space_block) * 0.75);
+  }
+}
+
+@media (min-width: 820px) {
+  .intro {
+    margin-block: calc(var(--space_block) * 0.5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    margin-block: calc(var(--space_block) * 0.25);
+  }
+}

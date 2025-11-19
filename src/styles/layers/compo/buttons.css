@@ -1,0 +1,59 @@
+/*🐸BUTTONS */
+.button {
+  user-select: none;
+  font-weight: var(--weight_med);
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  height: var(--tap_size);
+  line-height: var(--tap_size);
+  margin-block: calc(var(--space_block) / 3);
+  border-radius: var(--radius);
+  padding-inline: 0;
+  color: var(--brand);
+  border: 2px solid var(--brand);
+}
+
+.button:focus,
+.button:hover {
+  cursor: pointer;
+  /*background-color: var(--button_focus_bg);*/
+  transform: scale(1.025);
+}
+
+.button:active {
+  /*background-color: var(--button_focus_bg);*/
+  transform: translateY(calc(var(--space_block) * 0.145)); /* was 0.4svh */
+}
+
+.button_dark {
+  background-color: var(--black);
+  color: var(--white);
+  border: calc(var(--space_block) * 0.116) solid var(--white); /* was 0.32svh */
+}
+
+.button_dark:focus,
+.button_dark:hover {
+  cursor: pointer;
+  background-color: var(--brand);
+  border: calc(var(--space_block) * 0.116) solid var(--brand); /* was 0.32svh */
+}
+
+.button_row {
+  padding-top: calc(var(--space_block) / 8);
+  padding-bottom: calc(var(--space_block) / 2);
+  width: 100%;
+  display: block;
+}
+
+.CTAbutton {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: fit-content;
+  padding-inline: var(--space_inline);
+  svg {
+    width: max-content;
+  }
+}

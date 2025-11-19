@@ -1,0 +1,51 @@
+/*🐸CARDS */
+.card {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.card > * {
+  margin-top: calc(var(--space_block) / 2);
+}
+
+@media (min-width: 1024px) {
+  .card {
+    display: inline-block;
+    margin: 0;
+    /*min-width: var(--big_card_width);
+    max-width: var(--big_card_width);*/
+  }
+}
+
+.card:focus,
+.card:hover {
+  box-shadow: var(--card_shadow_hover);
+}
+
+.card:active {
+  transform: translateY(calc(var(--space_block) * 0.009));
+}
+
+.card h1 {
+  text-align: center;
+  text-transform: uppercase;
+  height: 15%;
+}
+
+.card h2,
+.card h3 {
+  text-align: center;
+  padding-top: 0;
+}
+
+.card h3 {
+  min-height: calc(var(--space_block) * 1);
+}
+
+.card p {
+  margin-left: calc(var(--space_inline) / 2);
+  margin-right: calc(var(--space_inline) / 2);
+}

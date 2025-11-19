@@ -1,0 +1,18 @@
+/*🐸Code blocks */
+pre {
+  font-family: "Open Sans", sans-serif;
+  max-width: 54svh; /* Keep as viewport based */
+  display: block;
+  font-size: 0.875em;
+  font-family: Consolas, monospace;
+  color: var(--grey_color_dark);
+  line-height: 1.3em;
+  margin: 0 auto;
+  padding: 0 calc(var(--space_inline) * 0.364); /* was 1svh */
+}
+
+code {
+  background: #fafafd;
+  padding: 0.063em;
+  border: 0.063em solid #dedede;
+}

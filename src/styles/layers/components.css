@@ -2,7 +2,7 @@
    FILE: src/styles/layers/components.css
    ======================================== */
 
-/*🐸 TYPOGRAPHY */
+/*🐸TYPOGRAPHY */
 
 blockquote,
 dl,
@@ -20,7 +20,7 @@ ul {
   margin-bottom: calc(var(--space_block) / 2);
 }
 
-/*🐸 HEADINGS */
+/*🐸HEADINGS */
 h1,
 h2,
 h3,
@@ -108,10 +108,6 @@ h6,
   line-height: 1;
 }
 
-strong {
-  font-weight: var(--weight_bold);
-}
-
 /*🐸Blockquotes */
 blockquote {
   color: var(--grey_color);
@@ -125,7 +121,7 @@ blockquote > :last-child {
   margin-bottom: 0;
 }
 
-/*🐸 Code blocks */
+/*🐸Code blocks */
 pre {
   font-family: "Open Sans", sans-serif;
   max-width: 54svh; /* Keep as viewport based */
@@ -144,7 +140,7 @@ code {
   border: 0.063em solid #dedede;
 }
 
-/*🐸 CARDS */
+/*🐸CARDS */
 .card {
   position: relative;
   z-index: 10;
@@ -283,6 +279,8 @@ code {
 .section h6 {
   color: var(--brand);
 }
+
+/*🐸MEAN STUFF */
 
 .mean_title {
   color: var(--brand);
@@ -469,13 +467,19 @@ code {
   }
 }
 
-.max_width_100ch {
-  max-width: 100ch;
-  margin-inline: auto;
+/*🐸LINKS*/
+a:not(.button) {
+  color: var(--link_color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.55ch;
+  user-select: none;
 }
-.max_width_60ch {
-  max-width: 60ch;
-  margin-inline: auto;
+
+a:not(.button):hover {
+  color: var(--link_color_hover);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.45ch;
 }
 
 /*🐸LINKS SUGAR, TOO SWEET???! */
@@ -494,7 +498,7 @@ a:not(.button):not(.no_underline):hover {
   color: var(--link_color_hover);
   text-decoration-thickness: 0.2ch;
   text-underline-offset: 0.45ch;
-}*/
+}
 
 a:not(.no_underline) :not(.button):not(.no_underline) {
   color: inherit;
@@ -508,6 +512,30 @@ a:not(.no_underline) :not(.button):not(.no_underline) {
 a:not(.card):not(.no_underline):not(.button):focus,
 a:not(.card):not(.no_underline):not(.button):hover {
   background: var(--smart_underline_for_white_text);
+}
+*/
+
+/*🐸INTRO SECTION*/
+.intro {
+  margin-block: var(--space_block);
+}
+
+@media (min-width: 600px) {
+  .intro {
+    margin-block: calc(var(--space_block) * 0.75);
+  }
+}
+
+@media (min-width: 820px) {
+  .intro {
+    margin-block: calc(var(--space_block) * 0.5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro {
+    margin-block: calc(var(--space_block) * 0.25);
+  }
 }
 
 /*🐸PAGE SPECIFIC*/

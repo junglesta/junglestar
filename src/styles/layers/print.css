@@ -4,7 +4,7 @@
    ======================================== */
 
 @media print {
-  /*🐸 Base print styles */
+  /*🐸Base print styles */
   body,
   html {
     height: auto;
@@ -21,7 +21,7 @@
     line-height: 1.35;
   }
 
-  /*🐸 Print only elements */
+  /*🐸Print only elements */
   .print_only {
     display: block;
     width: 100%;
@@ -39,7 +39,7 @@
     font-size: calc(var(--space_inline) * 0.756); /* was 2.08svh */
   }
 
-  /*🐸 Layout adjustments */
+  /*🐸Layout adjustments */
   .site_header {
     min-height: 0;
     padding: 0;
@@ -56,7 +56,7 @@
     padding: calc(var(--space_block) * 0.116) 0; /* was 0.32svh 0 */
   }
 
-  /*🐸 Card styles for print */
+  /*🐸Card styles for print */
   .card {
     font-size: calc(var(--space_inline) * 0.756); /* was 2.08svh */
     background-color: transparent;
@@ -90,7 +90,7 @@
     height: auto;
   }
 
-  /*🐸 Typography for print */
+  /*🐸Typography for print */
   h1,
   h2,
   h3,
@@ -112,7 +112,7 @@
     font-size: calc(var(--space_inline) * 0.873); /* was 2.4svh */
   }
 
-  /*🐸 Element specific adjustments */
+  /*🐸Element specific adjustments */
   .selling_points {
     font-size: calc(var(--space_inline) * 0.815); /* was 2.24svh */
     line-height: 1.15;
@@ -130,7 +130,7 @@
     margin-right: calc(var(--space_inline) * 0.58); /* was 1.6svh */
   }
 
-  /*🐸 Hide elements in print */
+  /*🐸Hide elements in print */
   .button_row,
   .card:before,
   .mean_icon,
@@ -141,7 +141,7 @@
     display: none !important;
   }
 
-  /*🐸 Page break controls */
+  /*🐸Page break controls */
   .card,
   .post_link,
   .post_list li,
@@ -179,7 +179,7 @@
     break-inside: avoid !important;
   }
 
-  /*🐸 Utility classes for page breaks */
+  /*🐸Utility classes for page breaks */
   .page_break,
   .page_break_before {
     page-break-before: always !important;

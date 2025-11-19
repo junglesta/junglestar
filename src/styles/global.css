@@ -5,7 +5,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 
-/*🐸 Import all layers */
+/*🐸Import all layers */
 @import "./layers/reset.css" layer(reset);
 @import "./layers/tokens.css" layer(tokens);
 @import "./layers/layout.css" layer(layout);
@@ -13,5 +13,5 @@
 @import "./layers/utilities.css" layer(utilities);
 @import "./layers/print.css" layer(print);
 
-/*🐸 Define layer order - print is LAST for override priority */
+/*🐸Define layer order - print is LAST for override priority */
 @layer reset, tokens, layout, components, utilities, print;

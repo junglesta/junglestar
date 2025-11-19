@@ -4,8 +4,9 @@
 
 ## Warning
 
-Despite this repo being public, it doesn't mean that all these assets, nor the concept, are open-source and/or copyright free, or even that you may use any of them. Please, ask for permission first by contacting us: info@junglestar.org
-All photos © 2025 rokma. All rights reserved.
+Despite this repo being public, it doesn't mean that all these assets, nor the concept, are open-source and/or copyright free, or even that you may use any of them. In fact they are relased under CC-BY-NC-SA [Creative Common License](http).
+We answer you, please, ask for permission first by contacting us: info@junglestar.org
+All photos & videos © 2025 Rokma. All rights reserved.
 Thanks,
 Junglestar team.
 

@@ -1,6 +1,23 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/374891d7-eb50-46d6-a6cf-82fbcb191a9b/deploy-status)](https://app.netlify.com/projects/j25/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1ed66ebc-0495-40f3-bf31-afb2adc2496c/deploy-status)](https://app.netlify.com/projects/j25/deploys)
 
-# Astro Basics
+---
+
+## Warning
+
+Despite this repo being public, it doesn't mean that all these assets, nor the concept, are open-source and/or copyright free, or even that you may use any of them. Please, ask for permission first by contacting us: info@junglestar.org
+All photos © 2025 rokma. All rights reserved.
+Thanks,
+Junglestar team.
+
+---
+
+## CREDITS
+
+A complete list of © credits is coming soon!
+
+1.ASTRO FRAMEWORK
+
+Astro Basics
 
 | Command                | Action                                           |
 | :--------------------- | :----------------------------------------------- |
@@ -11,6 +28,8 @@
 | `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Learn more?
+👀 Learn more? Feel free to check [Astro documentation](https://docs.astro.build) or jump into Astro [Discord server](https://astro.build/chat).
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+2.DESIGN & CONCEPT
+
+Yes, we done this. Check what we do here: [JUNGLESTAR](https://junglestar.org)

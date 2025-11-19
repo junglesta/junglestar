@@ -9,7 +9,23 @@
 @import "./layers/reset.css" layer(reset);
 @import "./layers/tokens.css" layer(tokens);
 @import "./layers/layout.css" layer(layout);
-@import "./layers/components.css" layer(components);
+/*@import "./layers/components.css" layer(components);*/
+@import "./layers/compo/blockquotes.css" layer(components);
+@import "./layers/compo/buttons.css" layer(components);
+@import "./layers/compo/cards.css" layer(components);
+@import "./layers/compo/code.css" layer(components);
+@import "./layers/compo/headings.css" layer(components);
+@import "./layers/compo/intro.css" layer(components);
+@import "./layers/compo/links.css" layer(components);
+@import "./layers/compo/mean.css" layer(components);
+@import "./layers/compo/offer.css" layer(components);
+@import "./layers/compo/post.css" layer(components);
+@import "./layers/compo/selling.css" layer(components);
+@import "./layers/compo/strong.css" layer(components);
+@import "./layers/compo/tag.css" layer(components);
+@import "./layers/compo/toc.css" layer(components);
+@import "./layers/compo/typography.css" layer(components);
+
 @import "./layers/utilities.css" layer(utilities);
 @import "./layers/print.css" layer(print);
 

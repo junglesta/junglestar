@@ -55,9 +55,11 @@ const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Da
   <div class="wrap vpad">
     <h1 class="center">Live Projects Showcase</h1>
     <p class="center"><strong>Who are we?</strong></p>
-    <p class="center">In this LLM-era do you really want to see our faces and job titles? Does it even matter?</p>
-    <p class="center">Hey! Actions & Productions speak louder than lingo & memes concoctions. </p>
-    <p class="center">No algo-speak, just juicy craftcakes, <br />check them out:</p>
+    <p class="center wrap justified pretty">
+      In this LLM-era do you really want to see <strong>our faces</strong> and <strong>job titles</strong>? Does it even
+      matter? We think <strong>Actions & Productions</strong> speak louder than lingo & memes concoctions. No algo-speak,
+      just juicy craftcakes. Check them out:
+    </p>
     <div class="projects-grid">
       {
         projects.map(async (project) => {

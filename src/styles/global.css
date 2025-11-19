@@ -22,6 +22,7 @@
 @import "./layers/compo/post.css" layer(components);
 @import "./layers/compo/selling.css" layer(components);
 @import "./layers/compo/strong.css" layer(components);
+@import "./layers/compo/svgs.css" layer(components);
 @import "./layers/compo/tag.css" layer(components);
 @import "./layers/compo/toc.css" layer(components);
 @import "./layers/compo/typography.css" layer(components);

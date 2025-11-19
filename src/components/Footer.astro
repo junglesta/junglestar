@@ -25,7 +25,13 @@ const currentYear = new Date().getFullYear();
     position: sticky;
     bottom: 0;
 
-    a {
+    .contact_links a,
+    a.footer_logo,
+    a.no_underline {
+      text-decoration: none;
+    }
+
+    a:not(.footer_logo):not(.no_underline) {
       color: var(--link_color);
       text-decoration-thickness: 2px;
     }

@@ -13,6 +13,11 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+p {
+  max-width: 77ch;
+  margin-inline: auto;
+}
+
 /*🐸MAIN */
 .main {
   background-color: transparent;

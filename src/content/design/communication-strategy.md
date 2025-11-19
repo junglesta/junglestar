@@ -22,4 +22,6 @@ We design **integrated communication strategies** tailored to your audience and 
 - **Consistency**: Unified content strategy across all media channels.
 - **Growth**: Organically build a loyal, engaged follower base.
 
-Ready to be heard? Let's craft a communication strategy that makes your brand unforgettable.
+**Are you Audience Ready?**
+
+Let's craft a **communication strategy** that makes **your brand unforgettable**.

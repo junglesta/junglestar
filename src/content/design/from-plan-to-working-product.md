@@ -22,4 +22,6 @@ We handle everything from **design concept** to deployment. Study your needs, pr
 - **Efficiency**: From concept to live product without managing multiple vendors.
 - **Quality**: Professional results that match your company's needs and resources.
 
-Ready to launch? Check out our [3 packages](/offer) designed to get you online fast.
+**Ready to launch?**
+
+Check out our [3 packages](/offer) "designed to get you online" fast.

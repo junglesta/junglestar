@@ -13,6 +13,7 @@
       "@styles/*": ["src/styles/*"],
       "@assets/*": ["src/assets/*"],
       "@data/*": ["src/data/*"],
+      "@utils/*": ["src/utils/*"],
       //two levels deep
       "@footer/*": ["src/components/footer/*"],
       //ASSETS STUFF

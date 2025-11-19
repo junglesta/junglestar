@@ -24,4 +24,6 @@ Proprietary software locks you in. Rising subscription costs, **vendor dependenc
 - **Security**: Thousands of eyes catching bugs before you do.
 - **Longevity**: Your tools survive even if companies don't.
 
-Ready to own your stack? Open source gives you **true digital independence**.
+**Ready to own your stack?**
+
+Open source gives you **true digital independence**.

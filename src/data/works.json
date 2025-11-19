@@ -62,8 +62,8 @@
   {
     "id": "webapps",
     "date": "2025-10-2",
-    "title": "We make apps that works in the browser. One single app to serve web, iPhones and Androids. ",
-    "subtitle": "No download needed. Browse to it, install it and you'll find its icon among your phone apps. Forget Playstore & Appstore, WebApps are here!",
+    "title": "We make apps that works in the browser. One codebase that covers Web, iPhones and Androids. ",
+    "subtitle": "No download. Just browse & install it. Its icon among your phone apps. Forget Playstore & Appstore, WebApps are here!",
     "category": "news",
     "tags": ["service"],
     "url": "#",

@@ -64,6 +64,12 @@ const {
     <Footer />
   </body>
 
+  <script>
+    import { openExternalLinksInNewWindow } from "@utils/externalLinks";
+
+    openExternalLinksInNewWindow();
+  </script>
+
   <script is:inline>
     // Smooth scroll to target
     document.addEventListener("DOMContentLoaded", function () {
@@ -108,7 +114,7 @@ const {
       }
 
       newdiv.innerHTML +=
-        "<br /><br />&#9733; Extract from: <a href='" +
+        "<br /><br />&#9733; Extract from JUNGLESTAR: <a href='" +
         document.location.href +
         "'>" +
         document.location.href +

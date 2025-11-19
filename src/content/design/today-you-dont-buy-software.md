@@ -26,4 +26,6 @@ Work with flexible, skilled developers who **leverage the best** of open source 
 - **Smart Investment**: Pay once to free your time—your time in business isn't free.
 - **Modern Stack**: Harness powerful open source tools configured for your success.
 
-Ready for an amazing website? Get quickly started with our [3 convenient packages](/offer).
+**Ready for an amazing website?**
+
+Get quickly started with our [**3 convenient packages**](/offer).

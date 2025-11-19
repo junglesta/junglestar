@@ -12,7 +12,7 @@
 .brand {
     fill: none;
     stroke: var(--brand);
-    stroke-width: 0.25;
+    stroke-width: 0.33;
     stroke-linejoin: round;
 }
 .white {

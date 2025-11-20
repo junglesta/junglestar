@@ -1,98 +1,95 @@
 {
-  "$ref": "#/definitions/slogans",
-  "definitions": {
-    "slogans": {
-      "type": "object",
-      "properties": {
-        "$schema": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "p1": {
-            "type": "string"
-          },
-          "p2": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "p3": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "p4": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          },
-          "p5": {
-            "anyOf": [
-              {
-                "anyOf": [
-                  {
-                    "not": {}
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
-              },
-              {
-                "type": "null"
-              }
-            ]
-          }
-        },
-        "required": [
-          "id",
-          "p1"
-        ],
-        "additionalProperties": false
-      }
-    }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+	"$ref": "#/definitions/slogans",
+	"definitions": {
+		"slogans": {
+			"type": "object",
+			"properties": {
+				"$schema": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"p1": {
+						"type": "string"
+					},
+					"p2": {
+						"anyOf": [
+							{
+								"anyOf": [
+									{
+										"not": {}
+									},
+									{
+										"type": "string"
+									}
+								]
+							},
+							{
+								"type": "null"
+							}
+						]
+					},
+					"p3": {
+						"anyOf": [
+							{
+								"anyOf": [
+									{
+										"not": {}
+									},
+									{
+										"type": "string"
+									}
+								]
+							},
+							{
+								"type": "null"
+							}
+						]
+					},
+					"p4": {
+						"anyOf": [
+							{
+								"anyOf": [
+									{
+										"not": {}
+									},
+									{
+										"type": "string"
+									}
+								]
+							},
+							{
+								"type": "null"
+							}
+						]
+					},
+					"p5": {
+						"anyOf": [
+							{
+								"anyOf": [
+									{
+										"not": {}
+									},
+									{
+										"type": "string"
+									}
+								]
+							},
+							{
+								"type": "null"
+							}
+						]
+					}
+				},
+				"required": ["id", "p1"],
+				"additionalProperties": false
+			}
+		}
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#"
 }

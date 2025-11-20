@@ -1,227 +1,227 @@
 [
-  {
-    "id": "krap",
-    "date": "2015-05-15",
-    "title": "KRAP",
-    "subtitle": "Skateboarding History Postcards",
-    "category": "slideshow",
-    "tags": ["eye-candy", "open-source"],
-    "url": "https://krap.junglestar.org/?ref=junglestar",
-    "icon": {
-      "url": "krap/safari-pinned-tab.svg",
-      "name": "krap"
-    },
-    "permalink": "/works/krap/",
-    "description": ""
-  },
-  {
-    "id": "speak",
-    "date": "2015-11-15",
-    "title": "JUNGLE SPEAK",
-    "subtitle": "Quotes collection with sources",
-    "category": "website",
-    "tags": ["reader-digest", "open-source"],
-    "url": "https://speak.junglestar.org/?ref=junglestar",
-    "icon": {
-      "url": "speak/safari-pinned-tab.svg",
-      "name": "speak"
-    },
-    "permalink": "/works/speak/",
-    "description": ""
-  },
-  {
-    "id": "qr",
-    "date": "2025-11-01",
-    "title": "QRcode Generator",
-    "subtitle": "Simple Free Open Source with SVG/PNG download.",
-    "category": "webapp",
-    "tags": ["tool", "open-source"],
-    "url": "https://qr.junglestar.org/?ref=junglestar.org",
-    "icon": {
-      "url": "qr/qr_brand_color.svg",
-      "name": "qrgenerator"
-    },
-    "permalink": "/works/qr/",
-    "description": ""
-  },
-  {
-    "id": "shopify",
-    "date": "2023-01-12",
-    "title": "We can advice, help, improve, fix and build custom online stores",
-    "subtitle": "for YOUR BRAND with Shopify.",
-    "category": "news",
-    "tags": ["service", "partners"],
-    "url": "https://www.shopify.com/?ref=junglestar.org",
-    "icon": {
-      "url": "shopify.svg",
-      "name": "shopify"
-    },
-    "permalink": "/works/shopify/",
-    "description": null
-  },
-  {
-    "id": "webapps",
-    "date": "2025-10-2",
-    "title": "We make apps that works in the browser. One codebase that covers Web, iPhones and Androids. ",
-    "subtitle": "No download. Just browse & install it. Its icon among your phone apps. Forget Playstore & Appstore, WebApps are here!",
-    "category": "news",
-    "tags": ["service"],
-    "url": "#",
-    "icon": {
-      "url": "emty.svg",
-      "name": "shopify"
-    },
-    "permalink": "/works/shopify/",
-    "description": null
-  },
-  {
-    "id": "octopal",
-    "date": "2016-01-15",
-    "title": "OCTOPAL",
-    "subtitle": "Extracts colours from images, gives rgb palettes!!",
-    "category": "webapp",
-    "tags": ["tool", "open-source"],
-    "url": "https://palette.junglestar.org/?ref=junglestar",
-    "icon": {
-      "url": "octo/octo_brand_color.svg",
-      "name": "octopal"
-    },
-    "permalink": "/works/octopal/",
-    "description": ""
-  },
-  {
-    "id": "binocle",
-    "date": "2025-10-30",
-    "title": "BINOCLE",
-    "subtitle": "Architecture Studio portfolio webapp.",
-    "category": "website",
-    "tags": ["commissioned-work", "open-source"],
-    "url": "https://binocle.it/?ref=junglestar",
-    "icon": {
-      "url": "binocle/safari-pinned-tab.svg",
-      "name": "binocle"
-    },
-    "permalink": "/works/binocle/",
-    "description": null
-  },
-  {
-    "id": "wherenodoctor",
-    "date": "2016-07-01",
-    "title": "WHERE NO DOCTOR",
-    "subtitle": "Offline-Ready Book",
-    "category": "webapp",
-    "tags": ["tool", "open-source"],
-    "url": "https://nodoctor.junglestar.org/?ref=junglestar",
-    "icon": {
-      "url": "wherenodoctor.svg",
-      "name": "wherenodoctor"
-    },
-    "permalink": "/works/nodoctor/",
-    "description": null
-  },
-  {
-    "id": "bill",
-    "date": "2025-10-19",
-    "title": "BILL",
-    "subtitle": "Free Simple Secure downloadable PDF Invoice generator.",
-    "category": "webapp",
-    "tags": ["tool", "open-source", "webapp"],
-    "url": "https://bill.junglestar.org/?ref=junglestar",
-    "icon": {
-      "url": "bill/bill_brand_color.svg",
-      "name": "bill"
-    },
-    "permalink": "/works/bill/",
-    "description": ""
-  },
-  {
-    "id": "fumes",
-    "date": "2022-04-01",
-    "title": "FUMES",
-    "subtitle": "Art, Photography, Ideas",
-    "category": "magazine",
-    "tags": ["magazine", "open-source", "eye-candy"],
-    "url": "https://fumes.junglestar.org/?ref=junglestar",
-    "icon": {
-      "url": "fumes/safari-pinned-tab.svg",
-      "name": "fumes"
-    },
-    "permalink": "/works/fumes/",
-    "description": ""
-  },
-  {
-    "id": "roccomarosi",
-    "date": "2024-04-01",
-    "title": "ROCCO MAROSI",
-    "subtitle": "Architecture Photography Portfolio",
-    "category": "website",
-    "tags": ["commissioned-work", "open-source"],
-    "url": "https://roccomarosi.com/?ref=junglestar",
-    "icon": {
-      "url": "roccomarosi/safari-pinned-tab.svg",
-      "name": "roccomarosi"
-    },
-    "permalink": "/works/roccomarosi/",
-    "description": ""
-  },
-  {
-    "id": "magicgreen",
-    "date": "2023-05-05",
-    "title": "MAGIC GREEN",
-    "subtitle": "magazine website with resources search.",
-    "category": "magazine",
-    "tags": ["commissioned-work", "magazine"],
-    "url": "https://magicgreen.junglestar.org/?ref=junglestar",
-    "icon": {
-      "url": "magicgreen/safari-pinned-tab.svg",
-      "name": "magicgreen"
-    },
-    "permalink": "/works/magicgreen/",
-    "description": ""
-  },
-  {
-    "id": "junglo",
-    "date": "2022-06-01",
-    "title": "JUNGLO SHOES",
-    "subtitle": "Online Store",
-    "category": "website",
-    "tags": ["commissioned-work", "Shopify"],
-    "url": "https://jungloshoes.com/?ref=junglestar",
-    "icon": {
-      "url": "junglo/safari-pinned-tab.svg",
-      "name": "junglo"
-    },
-    "permalink": "/works/junglo/",
-    "description": ""
-  },
-  {
-    "id": "casaasia",
-    "date": "2025-02-01",
-    "title": "CASA ASIA",
-    "subtitle": "Restaurant Visual Menu website",
-    "category": "website",
-    "tags": ["commissioned-work"],
-    "url": "https://casaasiabali.com?ref=junglestar",
-    "icon": {
-      "url": "casaasia/safari-pinned-tab.svg",
-      "name": "casaasia"
-    },
-    "permalink": "/works/casaasia/",
-    "description": ""
-  },
-  {
-    "id": "divino",
-    "date": "2024-12-25",
-    "title": "DIVINO",
-    "subtitle": "Restaurant Visual Menu website",
-    "category": "website",
-    "tags": ["commissioned-work"],
-    "url": "https://divinobali.com?ref=junglestar",
-    "icon": {
-      "url": "divino/safari-pinned-tab.svg",
-      "name": "casaasia"
-    },
-    "permalink": "/works/divino/",
-    "description": ""
-  }
+	{
+		"id": "krap",
+		"date": "2015-05-15",
+		"title": "KRAP",
+		"subtitle": "Skateboarding History Postcards",
+		"category": "slideshow",
+		"tags": ["eye-candy", "open-source"],
+		"url": "https://krap.junglestar.org/?ref=junglestar",
+		"icon": {
+			"url": "krap/safari-pinned-tab.svg",
+			"name": "krap"
+		},
+		"permalink": "/works/krap/",
+		"description": ""
+	},
+	{
+		"id": "speak",
+		"date": "2015-11-15",
+		"title": "JUNGLE SPEAK",
+		"subtitle": "Quotes collection with sources",
+		"category": "website",
+		"tags": ["reader-digest", "open-source"],
+		"url": "https://speak.junglestar.org/?ref=junglestar",
+		"icon": {
+			"url": "speak/safari-pinned-tab.svg",
+			"name": "speak"
+		},
+		"permalink": "/works/speak/",
+		"description": ""
+	},
+	{
+		"id": "qr",
+		"date": "2025-11-01",
+		"title": "QRcode Generator",
+		"subtitle": "Simple Free Open Source with SVG/PNG download.",
+		"category": "webapp",
+		"tags": ["tool", "open-source"],
+		"url": "https://qr.junglestar.org/?ref=junglestar.org",
+		"icon": {
+			"url": "qr/qr_brand_color.svg",
+			"name": "qrgenerator"
+		},
+		"permalink": "/works/qr/",
+		"description": ""
+	},
+	{
+		"id": "shopify",
+		"date": "2023-01-12",
+		"title": "We can advice, help, improve, fix and build custom online stores",
+		"subtitle": "for YOUR BRAND with Shopify.",
+		"category": "news",
+		"tags": ["service", "partners"],
+		"url": "https://www.shopify.com/?ref=junglestar.org",
+		"icon": {
+			"url": "shopify.svg",
+			"name": "shopify"
+		},
+		"permalink": "/works/shopify/",
+		"description": null
+	},
+	{
+		"id": "webapps",
+		"date": "2025-10-2",
+		"title": "We make apps that works in the browser. One codebase that covers Web, iPhones and Androids. ",
+		"subtitle": "No download. Just browse & install it. Its icon among your phone apps. Forget Playstore & Appstore, WebApps are here!",
+		"category": "news",
+		"tags": ["service"],
+		"url": "#",
+		"icon": {
+			"url": "emty.svg",
+			"name": "shopify"
+		},
+		"permalink": "/works/shopify/",
+		"description": null
+	},
+	{
+		"id": "octopal",
+		"date": "2016-01-15",
+		"title": "OCTOPAL",
+		"subtitle": "Extracts colours from images, gives rgb palettes!!",
+		"category": "webapp",
+		"tags": ["tool", "open-source"],
+		"url": "https://palette.junglestar.org/?ref=junglestar",
+		"icon": {
+			"url": "octo/octo_brand_color.svg",
+			"name": "octopal"
+		},
+		"permalink": "/works/octopal/",
+		"description": ""
+	},
+	{
+		"id": "binocle",
+		"date": "2025-10-30",
+		"title": "BINOCLE",
+		"subtitle": "Architecture Studio portfolio webapp.",
+		"category": "website",
+		"tags": ["commissioned-work", "open-source"],
+		"url": "https://binocle.it/?ref=junglestar",
+		"icon": {
+			"url": "binocle/safari-pinned-tab.svg",
+			"name": "binocle"
+		},
+		"permalink": "/works/binocle/",
+		"description": null
+	},
+	{
+		"id": "wherenodoctor",
+		"date": "2016-07-01",
+		"title": "WHERE NO DOCTOR",
+		"subtitle": "Offline-Ready Book",
+		"category": "webapp",
+		"tags": ["tool", "open-source"],
+		"url": "https://nodoctor.junglestar.org/?ref=junglestar",
+		"icon": {
+			"url": "wherenodoctor.svg",
+			"name": "wherenodoctor"
+		},
+		"permalink": "/works/nodoctor/",
+		"description": null
+	},
+	{
+		"id": "bill",
+		"date": "2025-10-19",
+		"title": "BILL",
+		"subtitle": "Free Simple Secure downloadable PDF Invoice generator.",
+		"category": "webapp",
+		"tags": ["tool", "open-source", "webapp"],
+		"url": "https://bill.junglestar.org/?ref=junglestar",
+		"icon": {
+			"url": "bill/bill_brand_color.svg",
+			"name": "bill"
+		},
+		"permalink": "/works/bill/",
+		"description": ""
+	},
+	{
+		"id": "fumes",
+		"date": "2022-04-01",
+		"title": "FUMES",
+		"subtitle": "Art, Photography, Ideas",
+		"category": "magazine",
+		"tags": ["magazine", "open-source", "eye-candy"],
+		"url": "https://fumes.junglestar.org/?ref=junglestar",
+		"icon": {
+			"url": "fumes/safari-pinned-tab.svg",
+			"name": "fumes"
+		},
+		"permalink": "/works/fumes/",
+		"description": ""
+	},
+	{
+		"id": "roccomarosi",
+		"date": "2024-04-01",
+		"title": "ROCCO MAROSI",
+		"subtitle": "Architecture Photography Portfolio",
+		"category": "website",
+		"tags": ["commissioned-work", "open-source"],
+		"url": "https://roccomarosi.com/?ref=junglestar",
+		"icon": {
+			"url": "roccomarosi/safari-pinned-tab.svg",
+			"name": "roccomarosi"
+		},
+		"permalink": "/works/roccomarosi/",
+		"description": ""
+	},
+	{
+		"id": "magicgreen",
+		"date": "2023-05-05",
+		"title": "MAGIC GREEN",
+		"subtitle": "magazine website with resources search.",
+		"category": "magazine",
+		"tags": ["commissioned-work", "magazine"],
+		"url": "https://magicgreen.junglestar.org/?ref=junglestar",
+		"icon": {
+			"url": "magicgreen/safari-pinned-tab.svg",
+			"name": "magicgreen"
+		},
+		"permalink": "/works/magicgreen/",
+		"description": ""
+	},
+	{
+		"id": "junglo",
+		"date": "2022-06-01",
+		"title": "JUNGLO SHOES",
+		"subtitle": "Online Store",
+		"category": "website",
+		"tags": ["commissioned-work", "Shopify"],
+		"url": "https://jungloshoes.com/?ref=junglestar",
+		"icon": {
+			"url": "junglo/safari-pinned-tab.svg",
+			"name": "junglo"
+		},
+		"permalink": "/works/junglo/",
+		"description": ""
+	},
+	{
+		"id": "casaasia",
+		"date": "2025-02-01",
+		"title": "CASA ASIA",
+		"subtitle": "Restaurant Visual Menu website",
+		"category": "website",
+		"tags": ["commissioned-work"],
+		"url": "https://casaasiabali.com?ref=junglestar",
+		"icon": {
+			"url": "casaasia/safari-pinned-tab.svg",
+			"name": "casaasia"
+		},
+		"permalink": "/works/casaasia/",
+		"description": ""
+	},
+	{
+		"id": "divino",
+		"date": "2024-12-25",
+		"title": "DIVINO",
+		"subtitle": "Restaurant Visual Menu website",
+		"category": "website",
+		"tags": ["commissioned-work"],
+		"url": "https://divinobali.com?ref=junglestar",
+		"icon": {
+			"url": "divino/safari-pinned-tab.svg",
+			"name": "casaasia"
+		},
+		"permalink": "/works/divino/",
+		"description": ""
+	}
 ]

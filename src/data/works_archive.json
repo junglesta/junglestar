@@ -1,63 +1,63 @@
 [
-  {
-    "id": "beyondcittastudi",
-    "date": "2015-05-01",
-    "title": "BEYOND CITTA STUDI",
-    "subtitle": "Instagram contest website for Architecture University Course",
-    "category": "website",
-    "tags": ["commissioned-work", "open-source"],
-    "url": "http://beyondcittastudi.junglestar.org/",
-    "icon": {
-      "url": "beyondcittastudi/polimi.svg",
-      "name": "polimi"
-    },
-    "permalink": "/works/beyondcittastudi/",
-    "description": ""
-  },
-  {
-    "id": "davinastephens",
-    "date": "2024-04-01",
-    "title": "DAVINA STEPHENS",
-    "subtitle": "Fast and simple Artist Portfolio",
-    "category": "website",
-    "tags": ["commissioned-work"],
-    "url": "https://davinastephens.com/?ref=junglestar",
-    "icon": {
-      "url": "/assets/ico/davinastephens/safari-pinned-tab.svg",
-      "name": "davinastephens"
-    },
-    "permalink": "/works/davinastephens/",
-    "description": ""
-  },
-  {
-    "id": "adriasartore",
-    "date": "2024-08-15",
-    "title": "ADRIA SARTORE",
-    "subtitle": "Minimalist Artist Portfolio",
-    "category": "website",
-    "tags": ["commissioned-work", "open-source"],
-    "url": "https://adriasartore.com/?ref=junglestar",
-    "icon": {
-      "url": "/assets/ico/adriasartore/safari-pinned-tab.svg",
-      "name": "adriasartore"
-    },
-    "permalink": "/works/adriasartore/",
-    "description": ""
-  },
+	{
+		"id": "beyondcittastudi",
+		"date": "2015-05-01",
+		"title": "BEYOND CITTA STUDI",
+		"subtitle": "Instagram contest website for Architecture University Course",
+		"category": "website",
+		"tags": ["commissioned-work", "open-source"],
+		"url": "http://beyondcittastudi.junglestar.org/",
+		"icon": {
+			"url": "beyondcittastudi/polimi.svg",
+			"name": "polimi"
+		},
+		"permalink": "/works/beyondcittastudi/",
+		"description": ""
+	},
+	{
+		"id": "davinastephens",
+		"date": "2024-04-01",
+		"title": "DAVINA STEPHENS",
+		"subtitle": "Fast and simple Artist Portfolio",
+		"category": "website",
+		"tags": ["commissioned-work"],
+		"url": "https://davinastephens.com/?ref=junglestar",
+		"icon": {
+			"url": "/assets/ico/davinastephens/safari-pinned-tab.svg",
+			"name": "davinastephens"
+		},
+		"permalink": "/works/davinastephens/",
+		"description": ""
+	},
+	{
+		"id": "adriasartore",
+		"date": "2024-08-15",
+		"title": "ADRIA SARTORE",
+		"subtitle": "Minimalist Artist Portfolio",
+		"category": "website",
+		"tags": ["commissioned-work", "open-source"],
+		"url": "https://adriasartore.com/?ref=junglestar",
+		"icon": {
+			"url": "/assets/ico/adriasartore/safari-pinned-tab.svg",
+			"name": "adriasartore"
+		},
+		"permalink": "/works/adriasartore/",
+		"description": ""
+	},
 
-  {
-    "id": "quarzia",
-    "date": "2023-04-01",
-    "title": "QUARZIA",
-    "subtitle": "Custom Shopify online Store",
-    "category": "website",
-    "tags": ["commissioned-work"],
-    "url": "https://quarzia.it/?ref=junglestar",
-    "icon": {
-      "url": "/assets/ico/quarzia/safari-pinned-tab.svg",
-      "name": "junglo"
-    },
-    "permalink": "/works/quarzia/",
-    "description": ""
-  }
+	{
+		"id": "quarzia",
+		"date": "2023-04-01",
+		"title": "QUARZIA",
+		"subtitle": "Custom Shopify online Store",
+		"category": "website",
+		"tags": ["commissioned-work"],
+		"url": "https://quarzia.it/?ref=junglestar",
+		"icon": {
+			"url": "/assets/ico/quarzia/safari-pinned-tab.svg",
+			"name": "junglo"
+		},
+		"permalink": "/works/quarzia/",
+		"description": ""
+	}
 ]

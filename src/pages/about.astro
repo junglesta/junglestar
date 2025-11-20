@@ -1,20 +1,23 @@
 ---
+import Header from "@components/HeaderSlotted.astro";
+import WorksCard from "@components/WorksCard.astro";
+import projectsData from "@data/works.json";
 // src/pages/projects.astro
 import Layout from "@layouts/Layout.astro";
-import WorksCard from "@components/WorksCard.astro";
-import Header from "@components/HeaderSlotted.astro";
-import projectsData from "@data/works.json";
 import type { ImageMetadata } from "astro";
 
 // Page metadata
 const pageTitle = "Junglestar | About us";
-const pageDescription = "SHOWCASE: We helped these small enterprises with websites, apps, and marketing communication.";
+const pageDescription =
+	"SHOWCASE: We helped these small enterprises with websites, apps, and marketing communication.";
 const pageSubtitle = "Expertise you can trust";
 
 // Import all icons dynamically
 //const icons = import.meta.glob<{ default: ImageMetadata }>("/src/assets/ico/**/*.{svg,png}", { eager: true });
 
-const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+const projects = projectsData.sort(
+	(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+);
 ---
 
 <style>

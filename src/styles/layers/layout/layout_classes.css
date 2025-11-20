@@ -1,0 +1,20 @@
+/* src/styles/layers/layout_all_classe.css  */
+
+/*🐸USE FOR READING BLOCK *:NOT(p)*/
+.reader_friendly {
+  max-width: 77ch;
+  margin-inline: auto;
+}
+
+/*🐸PAGE CONTENT */
+.page_content {
+  padding: 0 0 calc(var(--space_block) * 2);
+  background-color: var(--background_color);
+  min-height: 76svh; /* Keep as specific viewport based */
+}
+
+.post_image,
+.post_title,
+.post_subtitle {
+  user-select: none;
+}

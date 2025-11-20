@@ -1,43 +1,43 @@
 {
-  "$ref": "#/definitions/design",
-  "definitions": {
-    "design": {
-      "type": "object",
-      "properties": {
-        "title": {
-          "type": "string"
-        },
-        "subtitle": {
-          "type": "string"
-        },
-        "image": {
-          "anyOf": [
-            {
-              "type": "object",
-              "properties": {
-                "src": {
-                  "type": "string"
-                },
-                "alt": {
-                  "type": "string",
-                  "default": "Junglestar"
-                }
-              },
-              "required": ["src"],
-              "additionalProperties": false
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "$schema": {
-          "type": "string"
-        }
-      },
-      "required": ["title", "subtitle", "image"],
-      "additionalProperties": false
-    }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+	"$ref": "#/definitions/design",
+	"definitions": {
+		"design": {
+			"type": "object",
+			"properties": {
+				"title": {
+					"type": "string"
+				},
+				"subtitle": {
+					"type": "string"
+				},
+				"image": {
+					"anyOf": [
+						{
+							"type": "object",
+							"properties": {
+								"src": {
+									"type": "string"
+								},
+								"alt": {
+									"type": "string",
+									"default": "Junglestar"
+								}
+							},
+							"required": ["src"],
+							"additionalProperties": false
+						},
+						{
+							"type": "null"
+						}
+					]
+				},
+				"$schema": {
+					"type": "string"
+				}
+			},
+			"required": ["title", "subtitle", "image"],
+			"additionalProperties": false
+		}
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#"
 }

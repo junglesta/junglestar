@@ -1,0 +1,26 @@
+/*🐸SITE HEADER*/
+.site_header {
+  background-color: var(--brand);
+  position: relative;
+  z-index: 1;
+  top: 0;
+  min-height: 100svh;
+  margin: 0 auto;
+  padding-top: var(--space_block);
+  padding-bottom: var(--space_block);
+}
+
+.site_header a {
+  color: var(--black);
+  padding-bottom: var(--space_block);
+  padding-inline: calc(var(--space_inline) / 2);
+}
+
+.site_header small {
+  display: inline-block;
+  margin-top: calc(var(--space_block) * 0.145); /* was 0.4svh */
+}
+
+.site_header .header_title {
+  color: var(--brand_light);
+}

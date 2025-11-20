@@ -1,24 +1,24 @@
 ---
+import Footer from "@components/Footer.astro";
 // src/layouts/Layout.astro
 import Head from "@components/Head.astro";
-import Footer from "@components/Footer.astro";
 import "@styles/global.css";
 
 //import DevBrandColors from "@components/DevBrandColors.astro";
 
 export interface Props {
-  bodyClass?: string;
-  title: string;
-  description?: string;
-  sitemap?: boolean;
-  pageSubtitle?: string;
+	bodyClass?: string;
+	title: string;
+	description?: string;
+	sitemap?: boolean;
+	pageSubtitle?: string;
 }
 
 const {
-  bodyClass,
-  title,
-  description = "Sustainable Web Design to help fight Climate Change",
-  sitemap = true,
+	bodyClass,
+	title,
+	description = "Sustainable Web Design to help fight Climate Change",
+	sitemap = true,
 } = Astro.props;
 ---
 

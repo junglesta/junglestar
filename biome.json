@@ -1,6 +1,23 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.0.0/schema.json",
-  "html": { "formatter": { "enabled": true } },
-  "css": { "formatter": { "enabled": true } },
-  "json": { "formatter": { "enabled": true } }
+	"$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+	"html": { "formatter": { "enabled": true } },
+	"css": { "formatter": { "enabled": true } },
+	"json": { "formatter": { "enabled": true } },
+	"overrides": [
+		{
+			"includes": ["**/*.svelte", "**/*.astro", "**/*.vue"],
+			"linter": {
+				"rules": {
+					"style": {
+						"useConst": "off",
+						"useImportType": "off"
+					},
+					"correctness": {
+						"noUnusedVariables": "off",
+						"noUnusedImports": "off"
+					}
+				}
+			}
+		}
+	]
 }

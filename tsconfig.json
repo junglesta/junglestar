@@ -1,27 +1,27 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "src/**/*"],
-  "exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@root/*": ["src/*"],
-      //one level deep
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@utils*": ["src/utils/*"],
-      "@styles/*": ["src/styles/*"],
-      "@assets/*": ["src/assets/*"],
-      "@data/*": ["src/data/*"],
-      "@utils/*": ["src/utils/*"],
-      //two levels deep
-      "@footer/*": ["src/components/footer/*"],
-      //ASSETS STUFF
-      "@fav/*": ["src/assets/favicons/*"],
-      "@p/*": ["src/assets/p/*"],
-      "@pdf/*": ["src/assets/pdf/*"],
-      "@svgs/*": ["src/assets/svgs/*"],
-      "@intro/*": ["src/assets/intro/*"]
-    }
-  }
+	"extends": "astro/tsconfigs/strict",
+	"include": [".astro/types.d.ts", "src/**/*"],
+	"exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@root/*": ["src/*"],
+			//one level deep
+			"@components/*": ["src/components/*"],
+			"@layouts/*": ["src/layouts/*"],
+			"@utils*": ["src/utils/*"],
+			"@styles/*": ["src/styles/*"],
+			"@assets/*": ["src/assets/*"],
+			"@data/*": ["src/data/*"],
+			"@utils/*": ["src/utils/*"],
+			//two levels deep
+			"@footer/*": ["src/components/footer/*"],
+			//ASSETS STUFF
+			"@fav/*": ["src/assets/favicons/*"],
+			"@p/*": ["src/assets/p/*"],
+			"@pdf/*": ["src/assets/pdf/*"],
+			"@svgs/*": ["src/assets/svgs/*"],
+			"@intro/*": ["src/assets/intro/*"]
+		}
+	}
 }

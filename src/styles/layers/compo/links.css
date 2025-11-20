@@ -1,23 +1,23 @@
 /*🐸LINKS*/
 a:not(.button) {
-  color: var(--link_color);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.55ch;
-  user-select: none;
+	color: var(--link_color);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.55ch;
+	user-select: none;
 }
 
 a:not(.button):hover {
-  color: var(--link_color_hover);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.45ch;
+	color: var(--link_color_hover);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 0.45ch;
 }
 
 main a:not(.button) {
-  color: var(--link_color_main);
+	color: var(--link_color_main);
 }
 main a:not(.button):hover {
-  color: var(--link_color_main_hover);
+	color: var(--link_color_main_hover);
 }
 
 /*🐸LINKS SUGAR, TOO SWEET???! */

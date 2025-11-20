@@ -4,167 +4,176 @@
    ======================================== */
 
 :root {
-  /*🐸Dynamic spaces */
-  --viewport_height: 100dvh;
-  --space_block: 2.75dvh;
-  --space_inline: 2.75dvw;
-  /*🐸Fixed spaces */
-  --stone: 3rem;
-  --tap_size: 48px;
-  /*🐸Colors */
-  /*--black: oklch(0.2 0 360);#161616*/
-  --black: oklch(0.2002 0 0);
-  --black_fumes: #161616;
-  --blackT25: color-mix(in oklch, var(--black), transparent 75%);
-  --blackT50: color-mix(in oklch, var(--black), transparent 50%);
-  --black_hover: black;
+	/*🐸Dynamic spaces */
+	--viewport_height: 100dvh;
+	--space_block: 2.75dvh;
+	--space_inline: 2.75dvw;
+	/*🐸Fixed spaces */
+	--stone: 3rem;
+	--tap_size: 48px;
+	/*🐸Colors */
+	/*--black: oklch(0.2 0 360);#161616*/
+	--black: oklch(0.2002 0 0);
+	--black_fumes: #161616;
+	--blackT25: color-mix(in oklch, var(--black), transparent 75%);
+	--blackT50: color-mix(in oklch, var(--black), transparent 50%);
+	--black_hover: black;
 
-  --white: oklch(0.95 0.01 186.34 / 100%);
-  --whiteT25: color-mix(in oklch, var(--white), transparent 75%);
-  --whiteT50: color-mix(in oklch var(--white), transparent 50%);
-  --white_hover: #fff;
+	--white: oklch(0.95 0.01 186.34 / 100%);
+	--whiteT25: color-mix(in oklch, var(--white), transparent 75%);
+	--whiteT50: color-mix(in oklch var(--white), transparent 50%);
+	--white_hover: #fff;
 
-  --background_color: oklch(0.8 0.03 208.64);
-  --background_blackT15: rgba(0, 0, 0, 0.15);
-  --background_blackT10: rgba(0, 0, 0, 0.1);
-  --background_blackT05: rgba(0, 0, 0, 0.05);
-  --background_whiteT15: rgba(255, 255, 255, 0.15);
+	--background_color: oklch(0.8 0.03 208.64);
+	--background_blackT15: rgba(0, 0, 0, 0.15);
+	--background_blackT10: rgba(0, 0, 0, 0.1);
+	--background_blackT05: rgba(0, 0, 0, 0.05);
+	--background_whiteT15: rgba(255, 255, 255, 0.15);
 
-  /*--brand: #0069cc;*/
-  --brand: oklch(0.5286 0.1735 255);
-  /*--brand_invert: #ff9633;*/
-  --brand_invert: oklch(0.7687 0.1641 58.66);
-  /*--brand_complementary: #cc6600;*/
-  --brand_complementary: oklch(0.6201 0.156454 53.4649);
-  --brandT25: color-mix(in oklch, var(--brand), transparent 75%);
-  --brandT50: color-mix(in oklch, var(--brand), transparent 50%);
-  --brand_light: oklch(from var(--brand) calc(l + 0.03) c h);
-  --brand_dark: oklch(from var(--brand) calc(l - 0.18) c h);
+	/*--brand: #0069cc;*/
+	--brand: oklch(0.5286 0.1735 255);
+	/*--brand_invert: #ff9633;*/
+	--brand_invert: oklch(0.7687 0.1641 58.66);
+	/*--brand_complementary: #cc6600;*/
+	--brand_complementary: oklch(0.6201 0.156454 53.4649);
+	--brandT25: color-mix(in oklch, var(--brand), transparent 75%);
+	--brandT50: color-mix(in oklch, var(--brand), transparent 50%);
+	--brand_light: oklch(from var(--brand) calc(l + 0.03) c h);
+	--brand_dark: oklch(from var(--brand) calc(l - 0.18) c h);
 
-  --text_color: #111111;
-  --grey_color: #212121;
-  --grey_color_light: #868686;
-  --grey_color_dark: #000000;
-  --svgBG: pink;
+	--text_color: #111111;
+	--grey_color: #212121;
+	--grey_color_light: #868686;
+	--grey_color_dark: #000000;
+	--svgBG: pink;
 
-  /*🐸DERIVED COLOURS */
-  --link_color_main_hover: var(--black_hover);
-  /* FOR STRUCTURE*/
-  --link_color: var(--white);
-  --link_color_hover: var(--white_hover);
-  /* FOR <main>*/
-  --link_color_main: var(--black);
-  --smart_underline_for_white_text: var(--brandT50);
+	/*🐸DERIVED COLOURS */
+	--link_color_main_hover: var(--black_hover);
+	/* FOR STRUCTURE*/
+	--link_color: var(--white);
+	--link_color_hover: var(--white_hover);
+	/* FOR <main>*/
+	--link_color_main: var(--black);
+	--smart_underline_for_white_text: var(--brandT50);
 
-  /*🐸Shadows with SVH */
-  --shadow_color: rgb(0, 0, 0);
-  --header_shadow: 0 0.2svh 1svh 0 rgba(0, 0, 0, 0.16);
-  --card_shadow: 0px 0px 0.2svh 0px rgba(0, 0, 0, 0.12), 0px 0.2svh 0.2svh 0px rgba(0, 0, 0, 0.24);
-  --card_shadow_hover: 0px 0px 0.8svh 0px rgba(0, 0, 0, 0.12), 0px 0.8svh 0.8svh 0px rgba(0, 0, 0, 0.24);
-  --main_shadow:
-    0px 0.2svh 0.4svh -0.1svh rgba(0, 0, 0, 0.2), 0px 0.4svh 0.5svh 0px rgba(0, 0, 0, 0.14),
-    0px 0.1svh 1svh 0px rgba(0, 0, 0, 0.12);
+	/*🐸Shadows with SVH */
+	--shadow_color: rgb(0, 0, 0);
+	--header_shadow: 0 0.2svh 1svh 0 rgba(0, 0, 0, 0.16);
+	--card_shadow:
+		0px 0px 0.2svh 0px rgba(0, 0, 0, 0.12), 0px 0.2svh 0.2svh 0px
+		rgba(0, 0, 0, 0.24);
+	--card_shadow_hover:
+		0px 0px 0.8svh 0px rgba(0, 0, 0, 0.12), 0px 0.8svh 0.8svh 0px
+		rgba(0, 0, 0, 0.24);
+	--main_shadow:
+		0px 0.2svh 0.4svh -0.1svh rgba(0, 0, 0, 0.2), 0px 0.4svh 0.5svh 0px rgba(
+			0,
+			0,
+			0,
+			0.14
+		),
+		0px 0.1svh 1svh 0px rgba(0, 0, 0, 0.12);
 
-  /*🐸Transitions */
-  --transition_shadow: box-shadow 0.2s ease;
+	/*🐸Transitions */
+	--transition_shadow: box-shadow 0.2s ease;
 
-  /*🐸Card tokens */
-  --big_card_width: 27.5svw;
+	/*🐸Card tokens */
+	--big_card_width: 27.5svw;
 
-  /*🐸Product categories */
-  --product_category_1: hsla(117, 100%, 81%, 0.75);
-  --product_category_2: hsla(43, 100%, 81%, 0.75);
-  --product_category_3: hsla(205, 100%, 81%, 0.75);
+	/*🐸Product categories */
+	--product_category_1: hsla(117, 100%, 81%, 0.75);
+	--product_category_2: hsla(43, 100%, 81%, 0.75);
+	--product_category_3: hsla(205, 100%, 81%, 0.75);
 
-  /*🐸Breakpoints */
-  --width_min: 400px;
-  --width_xs: 480px;
-  --width_sm: 600px;
-  --width_md: 820px;
-  --width_lg: 1024px;
-  --width_xl: 1280px;
-  --width_2x: 1420px;
-  --width_max: 1920px;
+	/*🐸Breakpoints */
+	--width_min: 400px;
+	--width_xs: 480px;
+	--width_sm: 600px;
+	--width_md: 820px;
+	--width_lg: 1024px;
+	--width_xl: 1280px;
+	--width_2x: 1420px;
+	--width_max: 1920px;
 
-  /*🐸Typography */
-  --font_family:
-    -apple-system, BlinkMacSystemFont, Segoe UI, "Inter", Helvetica, Arial, sans-serif, Apple Color Emoji,
-    Segoe UI Emoji, Segoe UI Symbol;
-  --font_clamp: clamp(18px, 18px + 0.3svw, 28px);
-  --font_rem: 18px;
-  --line_height: 1.5;
-  --weight: 200;
-  --weight_med: 400;
-  --weight_bold: 600;
-  --weight_heavy: 900;
-  --radius: clamp(3px, 0.5rem, 1.5rem);
+	/*🐸Typography */
+	--font_family:
+		-apple-system, BlinkMacSystemFont, Segoe UI, "Inter", Helvetica, Arial, sans-serif, Apple Color Emoji,
+		Segoe UI Emoji, Segoe UI Symbol;
+	--font_clamp: clamp(18px, 18px + 0.3svw, 28px);
+	--font_rem: 18px;
+	--line_height: 1.5;
+	--weight: 200;
+	--weight_med: 400;
+	--weight_bold: 600;
+	--weight_heavy: 900;
+	--radius: clamp(3px, 0.5rem, 1.5rem);
 }
 
 /*🐸Fine-tuned breakpoints */
 @media (min-width: 480px) {
-  :root {
-    --base-font-size: 17px;
-  }
+	:root {
+		--base-font-size: 17px;
+	}
 }
 
 @media (min-width: 600px) {
-  :root {
-    --font_rem: 18px;
-  }
+	:root {
+		--font_rem: 18px;
+	}
 }
 
 @media (min-width: 820px) {
-  :root {
-    --font_rem: 20px;
-  }
+	:root {
+		--font_rem: 20px;
+	}
 }
 
 @media (min-width: 1024px) {
-  :root {
-    --font_rem: 24px;
-  }
+	:root {
+		--font_rem: 24px;
+	}
 }
 
 @media (min-width: 1280px) {
-  :root {
-    --font_rem: 25px;
-  }
+	:root {
+		--font_rem: 25px;
+	}
 }
 @media (min-width: 1420px) {
-  :root {
-    --font_rem: 26px;
-  }
+	:root {
+		--font_rem: 26px;
+	}
 }
 
 @media (min-width: 1920px) {
-  :root {
-    --font_rem: 28px;
-  }
+	:root {
+		--font_rem: 28px;
+	}
 }
 
 :root {
-  /*🐸Responsive headings with SVH */
-  --heading1_responsive: 4svh;
-  --heading1_min: 1.75rem;
-  --heading1_max: 4.6svh;
+	/*🐸Responsive headings with SVH */
+	--heading1_responsive: 4svh;
+	--heading1_min: 1.75rem;
+	--heading1_max: 4.6svh;
 
-  --heading2_responsive: 3.25svh;
-  --heading2_min: 1.75rem;
-  --heading2_max: 4.2svh;
+	--heading2_responsive: 3.25svh;
+	--heading2_min: 1.75rem;
+	--heading2_max: 4.2svh;
 
-  --heading3_responsive: 3svh;
-  --heading3_min: 1.5rem;
-  --heading3_max: 3.6svh;
+	--heading3_responsive: 3svh;
+	--heading3_min: 1.5rem;
+	--heading3_max: 3.6svh;
 
-  --heading4_responsive: 2.5svh;
-  --heading4_min: 1.25rem;
-  --heading4_max: 3.3svh;
+	--heading4_responsive: 2.5svh;
+	--heading4_min: 1.25rem;
+	--heading4_max: 3.3svh;
 
-  --heading5_responsive: 2.25svh;
-  --heading5_min: 1.15rem;
-  --heading5_max: 3svh;
+	--heading5_responsive: 2.25svh;
+	--heading5_min: 1.15rem;
+	--heading5_max: 3svh;
 
-  --heading6_responsive: 2svh;
-  --heading6_min: 1rem;
-  --heading6_max: 2.6svh;
+	--heading6_responsive: 2svh;
+	--heading6_min: 1rem;
+	--heading6_max: 2.6svh;
 }

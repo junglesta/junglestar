@@ -5,10 +5,10 @@
 /*🐸SELLING POINTS */
 
 .selling_points {
-  user-select: none;
-  font-size: calc(var(--space_inline) * 0.545); /* was 1.5svh */
-  margin-bottom: var(--space_block);
-  max-width: 40svh; /* Keep as viewport based */
-  margin-left: auto;
-  margin-right: auto;
+	user-select: none;
+	font-size: calc(var(--space_inline) * 0.545); /* was 1.5svh */
+	margin-bottom: var(--space_block);
+	max-width: 40svh; /* Keep as viewport based */
+	margin-left: auto;
+	margin-right: auto;
 }

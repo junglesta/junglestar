@@ -1,0 +1,28 @@
+/* ========================================
+   FILE: src/styles/layers/layout_semantics.css
+   ======================================== */
+
+/*🐸ONLY SEMANTIC ELEMENTS HERE, NO .classes! */
+body {
+  font-family: var(--font_family);
+  font-size: var(--font_clamp);
+  line-height: var(--line_height);
+  font-weight: var(--weight);
+  color: var(--text_color);
+  background-color: var(--brand);
+  -webkit-text-size-adjust: 100%;
+}
+
+/*🐸MAIN */
+main {
+  background-color: transparent;
+}
+
+/*🐸HR element */
+hr {
+  border: 0;
+  height: calc(var(--space_block) * 0.036); /* was 0.1svh */
+  width: 75%;
+  margin: var(--space_block) auto;
+  /*background-color: rgba(255, 255, 255, 0.25);*/
+}

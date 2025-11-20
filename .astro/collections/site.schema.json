@@ -1,114 +1,107 @@
 {
-  "$ref": "#/definitions/site",
-  "definitions": {
-    "site": {
-      "type": "object",
-      "properties": {
-        "$schema": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": {
-        "type": "object",
-        "properties": {
-          "brand": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "keywords": {
-            "type": "string"
-          },
-          "lang": {
-            "type": "string"
-          },
-          "email": {
-            "type": "string",
-            "format": "email"
-          },
-          "url": {
-            "type": "string",
-            "format": "uri"
-          },
-          "repo": {
-            "type": "string",
-            "format": "uri"
-          },
-          "deploy_check": {
-            "type": "string",
-            "format": "uri"
-          },
-          "status_badge_markdown_snippet": {
-            "type": "string"
-          },
-          "license_url": {
-            "type": "string",
-            "format": "uri"
-          },
-          "google": {
-            "type": "object",
-            "properties": {
-              "analytics": {
-                "type": "string"
-              },
-              "verification": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "analytics",
-              "verification"
-            ],
-            "additionalProperties": false
-          },
-          "author": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string",
-                "format": "email"
-              },
-              "github": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "name",
-              "email",
-              "github"
-            ],
-            "additionalProperties": false
-          },
-          "brandColorFallback": {
-            "type": "string"
-          },
-          "bandColor": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "brand",
-          "description",
-          "keywords",
-          "lang",
-          "email",
-          "url",
-          "repo",
-          "deploy_check",
-          "status_badge_markdown_snippet",
-          "license_url",
-          "google",
-          "author",
-          "brandColorFallback",
-          "bandColor"
-        ],
-        "additionalProperties": false
-      }
-    }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+	"$ref": "#/definitions/site",
+	"definitions": {
+		"site": {
+			"type": "object",
+			"properties": {
+				"$schema": {
+					"type": "string"
+				}
+			},
+			"additionalProperties": {
+				"type": "object",
+				"properties": {
+					"brand": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"keywords": {
+						"type": "string"
+					},
+					"lang": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string",
+						"format": "email"
+					},
+					"url": {
+						"type": "string",
+						"format": "uri"
+					},
+					"repo": {
+						"type": "string",
+						"format": "uri"
+					},
+					"deploy_check": {
+						"type": "string",
+						"format": "uri"
+					},
+					"status_badge_markdown_snippet": {
+						"type": "string"
+					},
+					"license_url": {
+						"type": "string",
+						"format": "uri"
+					},
+					"google": {
+						"type": "object",
+						"properties": {
+							"analytics": {
+								"type": "string"
+							},
+							"verification": {
+								"type": "string"
+							}
+						},
+						"required": ["analytics", "verification"],
+						"additionalProperties": false
+					},
+					"author": {
+						"type": "object",
+						"properties": {
+							"name": {
+								"type": "string"
+							},
+							"email": {
+								"type": "string",
+								"format": "email"
+							},
+							"github": {
+								"type": "string"
+							}
+						},
+						"required": ["name", "email", "github"],
+						"additionalProperties": false
+					},
+					"brandColorFallback": {
+						"type": "string"
+					},
+					"bandColor": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"brand",
+					"description",
+					"keywords",
+					"lang",
+					"email",
+					"url",
+					"repo",
+					"deploy_check",
+					"status_badge_markdown_snippet",
+					"license_url",
+					"google",
+					"author",
+					"brandColorFallback",
+					"bandColor"
+				],
+				"additionalProperties": false
+			}
+		}
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#"
 }

@@ -13,5 +13,5 @@ ol,
 p,
 pre,
 ul {
-  margin-bottom: calc(var(--space_block) / 2);
+	margin-bottom: calc(var(--space_block) / 2);
 }

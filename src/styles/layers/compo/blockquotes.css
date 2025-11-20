@@ -1,12 +1,12 @@
 /*🐸Blockquotes */
 blockquote {
-  color: var(--grey_color);
-  border-left: calc(var(--space_inline) * 0.145) solid var(--grey_color_light); /* was 0.4svh */
-  padding-left: calc(var(--space_inline) / 2);
-  letter-spacing: calc(var(--space_inline) * -0.036); /* was -0.1svh */
-  font-style: italic;
+	color: var(--grey_color);
+	border-left: calc(var(--space_inline) * 0.145) solid var(--grey_color_light); /* was 0.4svh */
+	padding-left: calc(var(--space_inline) / 2);
+	letter-spacing: calc(var(--space_inline) * -0.036); /* was -0.1svh */
+	font-style: italic;
 }
 
 blockquote > :last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }

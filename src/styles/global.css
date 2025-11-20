@@ -3,13 +3,19 @@
    Main entry point - import this in Layout.astro
    ======================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");*/
 
 /*🐸Import all layers */
 @import "./layers/reset.css" layer(reset);
 @import "./layers/tokens.css" layer(tokens);
-@import "./layers/layout.css" layer(layout);
-/*@import "./layers/components.css" layer(components);*/
+
+@import "./layers/layout/layout_semantics.css" layer(layout);
+@import "./layers/layout/layout_classes.css" layer(layout);
+@import "./layers/layout/site_header.css" layer(layout);
+@import "./layers/layout/site_nav.css" layer(layout);
+@import "./layers/layout/site_title.css" layer(layout);
+@import "./layers/layout/wrap.css" layer(layout);
+
 @import "./layers/compo/blockquotes.css" layer(components);
 @import "./layers/compo/buttons.css" layer(components);
 @import "./layers/compo/cards.css" layer(components);

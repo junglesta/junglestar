@@ -1,25 +1,25 @@
 /*🐸TOC STUFF*/
 .toc {
-  background-color: var(--whiteT25);
-  color: var(--black);
-  border: 1px solid var(--brand);
-  border-radius: var(--radius);
-  margin: var(--space_block) 0;
-  padding: var(--space_block);
-  margin-inline: auto;
-  text-align: left;
+	background-color: var(--whiteT25);
+	color: var(--black);
+	border: 1px solid var(--brand);
+	border-radius: var(--radius);
+	margin: var(--space_block) 0;
+	padding: var(--space_block);
+	margin-inline: auto;
+	text-align: left;
 }
 
 .toc ul {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 
 .toc a {
-  color: var(--brand);
-  text-decoration: none;
+	color: var(--brand);
+	text-decoration: none;
 }
 
 .toc a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }

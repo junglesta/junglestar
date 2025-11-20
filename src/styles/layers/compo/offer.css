@@ -2,13 +2,13 @@
 
 .offer_content h2,
 .offer_content h3 {
-  color: var(--brand);
+	color: var(--brand);
 }
 
 .offer_content {
-  padding-bottom: 16dvw;
+	padding-bottom: 16dvw;
 }
 
 .offer_content :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
-  color: var(--brand);
+	color: var(--brand);
 }

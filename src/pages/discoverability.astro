@@ -1,8 +1,9 @@
 ---
+import Gmap from "@components/Gmap.astro";
+import Header from "@components/HeaderSlotted.astro";
 //pages/discoverability.astro
 import Layout from "@layouts/Layout.astro";
-import Header from "@components/HeaderSlotted.astro";
-import Gmap from "@components/Gmap.astro";
+
 // Page metadata
 const pageTitle = "Junglestar | Pricing";
 const pageDescription =
@@ -14,27 +15,6 @@ const pageSubtitle = "WHERE ARE YOU?";
   .light_bg,
   .page_content.light_bg {
     background-color: #c3daf1;
-  }
-
-  .mean_title {
-    color: var(--brand);
-    min-height: 50dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .mean_title.mean_title--first {
-    background-color: black;
-  }
-  .mean_title.mean_title--second {
-    margin-top: 2rem;
-  }
-  .mean_title.mean_title--first h1,
-  .mean_title.mean_title--first h2,
-  .mean_title.mean_title--first h3 {
-    color: white;
   }
 
   .top_pad--big {

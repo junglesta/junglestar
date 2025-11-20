@@ -1,33 +1,33 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import Header from "@components/HeaderSlotted.astro";
-import { getCollection, render } from "astro:content";
 import { Image } from "astro:assets";
+import { getCollection, render } from "astro:content";
+import Header from "@components/HeaderSlotted.astro";
+import Layout from "@layouts/Layout.astro";
 
 const posts = await getCollection("designConcepts", ({ data }) => {
-  return !import.meta.env.PROD || data.draft !== true;
+	return !import.meta.env.PROD || data.draft !== true;
 });
 // Sort with fallback for undefined sort_order
 posts.sort((a, b) => {
-  const orderA = a.data.sort_order ?? 999; // Default to 999 if undefined
-  const orderB = b.data.sort_order ?? 999;
-  return orderA - orderB;
+	const orderA = a.data.sort_order ?? 999; // Default to 999 if undefined
+	const orderB = b.data.sort_order ?? 999;
+	return orderA - orderB;
 });
 // Render all posts content
 const renderedPosts = await Promise.all(
-  posts.map(async (post) => {
-    const { Content } = await render(post);
-    return {
-      ...post,
-      Content,
-    };
-  }),
+	posts.map(async (post) => {
+		const { Content } = await render(post);
+		return {
+			...post,
+			Content,
+		};
+	}),
 );
 
 // Page metadata
 const titleTAB = "Junglestar | Design: Because Why";
 const description =
-  "Sustainable Web Design to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
+	"Sustainable Web Design to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
 const titlePAGE = "Design, Sustainabilty!? Because Why?";
 ---
 

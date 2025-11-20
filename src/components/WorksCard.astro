@@ -1,23 +1,33 @@
 ---
 // src/components/WorksCard.astro
 export interface Props {
-  id: string;
-  title: string;
-  subtitle?: string | null;
-  category?: string | null;
-  tags: string[];
-  url: string;
-  icon?: {
-    url: string;
-    name: string;
-  };
-  ico_url: string;
-  permalink?: string;
-  description?: string | null;
-  date?: string;
+	id: string;
+	title: string;
+	subtitle?: string | null;
+	category?: string | null;
+	tags: string[];
+	url: string;
+	icon?: {
+		url: string;
+		name: string;
+	};
+	ico_url: string;
+	permalink?: string;
+	description?: string | null;
+	date?: string;
 }
 
-const { title, subtitle, category, tags, url, icon, ico_url, description, date } = Astro.props;
+const {
+	title,
+	subtitle,
+	category,
+	tags,
+	url,
+	icon,
+	ico_url,
+	description,
+	date,
+} = Astro.props;
 const tag = tags?.[0] || "";
 ---
 

@@ -2,171 +2,230 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,
 body {
-  background-color: #131412;
-  color: white;
+	background-color: #131412;
+	color: white;
 }
 
 html {
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 pre {
-  font-size: 1rem;
-  /* Did you know that monospace defaults to 1em = 13px? TIL! */
-  color: #fff;
-  margin: 0;
+	font-size: 1rem;
+	/* Did you know that monospace defaults to 1em = 13px? TIL! */
+	color: #fff;
+	margin: 0;
 }
 
 @property --100vw {
-  syntax: "<length>";
-  initial-value: 0px;
-  inherits: false;
+	syntax: "<length>";
+	initial-value: 0px;
+	inherits: false;
 }
 @property --1rem {
-  syntax: "<length>";
-  initial-value: 0px;
-  inherits: false;
+	syntax: "<length>";
+	initial-value: 0px;
+	inherits: false;
 }
 /* Does the browser support division by values with units? */
 @supports (width: calc((1px / 1px) * 1px)) {
-  :root {
-    --current-rem-size: calc(1rem / 1px);
-    --currentWidth: clamp(var(--minWidth), calc(var(--100vw) / 1px), var(--maxWidth));
-  }
+	:root {
+		--current-rem-size: calc(1rem / 1px);
+		--currentWidth: clamp(
+			var(--minWidth),
+			calc(var(--100vw) / 1px),
+			var(--maxWidth)
+		);
+	}
 }
 /* If not, use Jane Ori’s hack: https://dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j*/
 @supports not (width: calc((1px / 1px) * 1px)) {
-  :root {
-    --1rem: 1rem;
-    --100vw: 100vw;
-    --current-rem-size: calc(tan(atan2(var(--1rem), 1px)));
-    /* Firefox bug workaround: https://dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j#comment-2khap */
-    --current-rem-size: calc(10000 * tan(atan2(var(--1rem), 10000px)));
-    --currentWidth: clamp(var(--minWidth), calc(10000 * tan(atan2(1000px, 10000px))), var(--maxWidth));
-  }
+	:root {
+		--1rem: 1rem;
+		--100vw: 100vw;
+		--current-rem-size: calc(tan(atan2(var(--1rem), 1px)));
+		/* Firefox bug workaround: https://dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j#comment-2khap */
+		--current-rem-size: calc(10000 * tan(atan2(var(--1rem), 10000px)));
+		--currentWidth: clamp(
+			var(--minWidth),
+			calc(10000 * tan(atan2(1000px, 10000px))),
+			var(--maxWidth)
+		);
+	}
 }
 :root {
-  --1rem: 1rem;
-  /* How aggressively should we compress the scale? 1 = full compression, 0 = no compression */
-  --compression-strength: 1;
-  /* What we assume as the default for comparison*/
-  --default-assumed-size: 16;
-  /* Now we’re dividing the default assumed size (16px) by the actual unitless rem size to get our factor */
-  --scale-factor: calc(var(--default-assumed-size) / var(--current-rem-size));
-  /* The ratio multiplier that dampens our type scale at larger user font sizes */
-  --ratio-dampener: calc(1 - ((1 - var(--scale-factor)) * var(--compression-strength)));
-  /* Ratios */
-  --minorSecond: 1.06666;
-  /* Semitone: 16:15 */
-  --majorSecond: 1.125;
-  /* 9:8 */
-  --minorThird: 1.2;
-  /* 6:5 */
-  --majorThird: 1.25;
-  /* 5:4 */
-  --perfectFourth: 1.33333;
-  /* 4:3 */
-  --augmentedFourth: 1.414;
-  /* √2/1 */
-  --perfectFifth: 1.5;
-  /* 3:2 */
-  --minorSixth: 1.6;
-  /* 8:5 */
-  --goldenRatio: 1.618;
-  /* (1+√5):2 */
-  --majorSixth: 1.66666;
-  /* 5:3 */
-  --minorSeventh: 1.8;
-  /* 9:5 */
-  --majorSeventh: 1.875;
-  /* 15:8 */
-  --octave: 2;
-  /* 2:1 */
+	--1rem: 1rem;
+	/* How aggressively should we compress the scale? 1 = full compression, 0 = no compression */
+	--compression-strength: 1;
+	/* What we assume as the default for comparison*/
+	--default-assumed-size: 16;
+	/* Now we’re dividing the default assumed size (16px) by the actual unitless rem size to get our factor */
+	--scale-factor: calc(var(--default-assumed-size) / var(--current-rem-size));
+	/* The ratio multiplier that dampens our type scale at larger user font sizes */
+	--ratio-dampener: calc(
+		1 -
+		((1 - var(--scale-factor)) * var(--compression-strength))
+	);
+	/* Ratios */
+	--minorSecond: 1.06666;
+	/* Semitone: 16:15 */
+	--majorSecond: 1.125;
+	/* 9:8 */
+	--minorThird: 1.2;
+	/* 6:5 */
+	--majorThird: 1.25;
+	/* 5:4 */
+	--perfectFourth: 1.33333;
+	/* 4:3 */
+	--augmentedFourth: 1.414;
+	/* √2/1 */
+	--perfectFifth: 1.5;
+	/* 3:2 */
+	--minorSixth: 1.6;
+	/* 8:5 */
+	--goldenRatio: 1.618;
+	/* (1+√5):2 */
+	--majorSixth: 1.66666;
+	/* 5:3 */
+	--minorSeventh: 1.8;
+	/* 9:5 */
+	--majorSeventh: 1.875;
+	/* 15:8 */
+	--octave: 2;
+	/* 2:1 */
 
-  /* A few easing functions */
-  /* EaseOutSine - https://easings.net/#easeOutSine  */
-  --easeOutSine: sin((var(--x) * pi) / 2);
-  /* EaseOutQuad - https://easings.net/#easeOutQuad */
-  --easeOutQuad: calc(1 - (1 - var(--x)) * (1 - var(--x)));
-  /* EaseInOutSine - https://easings.net/#easeInOutSine */
-  --easeInOutSine: calc(- (cos(pi * var(--x)) - 1) / 2);
-  /* Linear ¯\_(ツ)_/¯ */
-  --linear: var(--x);
+	/* A few easing functions */
+	/* EaseOutSine - https://easings.net/#easeOutSine  */
+	--easeOutSine: sin((var(--x) * pi) / 2);
+	/* EaseOutQuad - https://easings.net/#easeOutQuad */
+	--easeOutQuad: calc(1 - (1 - var(--x)) * (1 - var(--x)));
+	/* EaseInOutSine - https://easings.net/#easeInOutSine */
+	--easeInOutSine: calc(1 - (cos(pi * var(--x)) - 1) / 2);
+	/* Linear ¯\_(ツ)_/¯ */
+	--linear: var(--x);
 
-  /* Base values for font-size, ratio, viewport widths */
-  --baseFontSizeMin: 1rem;
-  --ratioMin: var(--minorSecond);
-  --minWidth: 320;
-  --baseFontSizeMax: 1.3125rem;
-  --ratioMax: var(--augmentedFourth);
-  --maxWidth: 1800;
+	/* Base values for font-size, ratio, viewport widths */
+	--baseFontSizeMin: 1rem;
+	--ratioMin: var(--minorSecond);
+	--minWidth: 320;
+	--baseFontSizeMax: 1.3125rem;
+	--ratioMax: var(--augmentedFourth);
+	--maxWidth: 1800;
 
-  /* Which curve do we want to use? */
-  --curve: var(--linear);
+	/* Which curve do we want to use? */
+	--curve: var(--linear);
 
-  /* The current viewport width */
-  --100vw: 100vw;
+	/* The current viewport width */
+	--100vw: 100vw;
 
-  /* This normalizes the value between 0 and 1 */
-  --x: clamp(0, calc((var(--currentWidth) - var(--minWidth)) / (var(--maxWidth) - var(--minWidth))), 1);
+	/* This normalizes the value between 0 and 1 */
+	--x: clamp(
+		0,
+		calc(
+			(var(--currentWidth) - var(--minWidth)) /
+			(var(--maxWidth) - var(--minWidth))
+		),
+		1
+	);
 
-  /* Apply dampening to the ratio spread */
-  --compressedRatioMin: calc(1 + (var(--ratioMin) - 1) * var(--ratio-dampener));
-  --compressedRatioMax: calc(1 + (var(--ratioMax) - 1) * var(--ratio-dampener));
+	/* Apply dampening to the ratio spread */
+	--compressedRatioMin: calc(1 + (var(--ratioMin) - 1) * var(--ratio-dampener));
+	--compressedRatioMax: calc(1 + (var(--ratioMax) - 1) * var(--ratio-dampener));
 
-  /* Min and max sizes of the scales are calculated based
+	/* Min and max sizes of the scales are calculated based
   on the provided ratio with pow():
   https://developer.mozilla.org/en-US/docs/Web/CSS/pow */
 
-  /* Scale min */
-  --size-min-4: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 4));
-  --size-min-3: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 3));
-  --size-min-2: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 2));
-  --size-min-1: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 1));
-  --size-min-0: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 0));
-  --size-min--1: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), -1));
+	/* Scale min */
+	--size-min-4: calc(
+		var(--baseFontSizeMin) *
+		pow(var(--compressedRatioMin), 4)
+	);
+	--size-min-3: calc(
+		var(--baseFontSizeMin) *
+		pow(var(--compressedRatioMin), 3)
+	);
+	--size-min-2: calc(
+		var(--baseFontSizeMin) *
+		pow(var(--compressedRatioMin), 2)
+	);
+	--size-min-1: calc(
+		var(--baseFontSizeMin) *
+		pow(var(--compressedRatioMin), 1)
+	);
+	--size-min-0: calc(
+		var(--baseFontSizeMin) *
+		pow(var(--compressedRatioMin), 0)
+	);
+	--size-min--1: calc(
+		var(--baseFontSizeMin) *
+		pow(var(--compressedRatioMin), -1)
+	);
 
-  /* Scale max */
-  --size-max-4: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 4));
-  --size-max-3: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 3));
-  --size-max-2: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 2));
-  --size-max-1: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 1));
-  --size-max-0: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 0));
-  --size-max--1: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), -1));
+	/* Scale max */
+	--size-max-4: calc(
+		var(--baseFontSizeMax) *
+		pow(var(--compressedRatioMax), 4)
+	);
+	--size-max-3: calc(
+		var(--baseFontSizeMax) *
+		pow(var(--compressedRatioMax), 3)
+	);
+	--size-max-2: calc(
+		var(--baseFontSizeMax) *
+		pow(var(--compressedRatioMax), 2)
+	);
+	--size-max-1: calc(
+		var(--baseFontSizeMax) *
+		pow(var(--compressedRatioMax), 1)
+	);
+	--size-max-0: calc(
+		var(--baseFontSizeMax) *
+		pow(var(--compressedRatioMax), 0)
+	);
+	--size-max--1: calc(
+		var(--baseFontSizeMax) *
+		pow(var(--compressedRatioMax), -1)
+	);
 
-  /* Fluid font sizes with clamp() */
-  --fluid-4: clamp(
-    var(--size-min-4),
-    var(--size-min-4) + (var(--curve) * (var(--size-max-4) - var(--size-min-4))),
-    var(--size-max-4)
-  );
-  --fluid-3: clamp(
-    var(--size-min-3),
-    var(--size-min-3) + (var(--curve) * (var(--size-max-3) - var(--size-min-3))),
-    var(--size-max-3)
-  );
-  --fluid-2: clamp(
-    var(--size-min-2),
-    var(--size-min-2) + (var(--curve) * (var(--size-max-2) - var(--size-min-2))),
-    var(--size-max-2)
-  );
-  --fluid-1: clamp(
-    var(--size-min-1),
-    var(--size-min-1) + (var(--curve) * (var(--size-max-1) - var(--size-min-1))),
-    var(--size-max-1)
-  );
-  --fluid-0: clamp(
-    var(--size-min-0),
-    var(--size-min-0) + (var(--curve) * (var(--size-max-0) - var(--size-min-0))),
-    var(--size-max-0)
-  );
+	/* Fluid font sizes with clamp() */
+	--fluid-4: clamp(
+		var(--size-min-4),
+		var(--size-min-4) +
+		(var(--curve) * (var(--size-max-4) - var(--size-min-4))),
+		var(--size-max-4)
+	);
+	--fluid-3: clamp(
+		var(--size-min-3),
+		var(--size-min-3) +
+		(var(--curve) * (var(--size-max-3) - var(--size-min-3))),
+		var(--size-max-3)
+	);
+	--fluid-2: clamp(
+		var(--size-min-2),
+		var(--size-min-2) +
+		(var(--curve) * (var(--size-max-2) - var(--size-min-2))),
+		var(--size-max-2)
+	);
+	--fluid-1: clamp(
+		var(--size-min-1),
+		var(--size-min-1) +
+		(var(--curve) * (var(--size-max-1) - var(--size-min-1))),
+		var(--size-max-1)
+	);
+	--fluid-0: clamp(
+		var(--size-min-0),
+		var(--size-min-0) +
+		(var(--curve) * (var(--size-max-0) - var(--size-min-0))),
+		var(--size-max-0)
+	);
 }
 
 h1,
@@ -176,59 +235,59 @@ h4,
 h5,
 h6,
 p {
-  color: #6472ff;
-  line-height: 1.25;
-  margin-bottom: calc(1rem + 0.25em);
+	color: #6472ff;
+	line-height: 1.25;
+	margin-bottom: calc(1rem + 0.25em);
 }
 
 h1 {
-  font-size: var(--fluid-4);
+	font-size: var(--fluid-4);
 }
 
 h2 {
-  font-size: var(--fluid-3);
+	font-size: var(--fluid-3);
 }
 
 h3 {
-  font-size: var(--fluid-2);
+	font-size: var(--fluid-2);
 }
 
 h4 {
-  font-size: var(--fluid-1);
+	font-size: var(--fluid-1);
 }
 
 h5 {
-  font-size: var(--fluid-0);
+	font-size: var(--fluid-0);
 }
 
 p {
-  font-size: var(--fluid-0);
-  line-height: 1.5;
-  margin-bottom: 1em;
+	font-size: var(--fluid-0);
+	line-height: 1.5;
+	margin-bottom: 1em;
 }
 
 p.root-font-size {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 /*logger*/
 
 #log-vw::after {
-  counter-reset: val calc(100vi / 1px);
-  content: counter(val);
+	counter-reset: val calc(100vi / 1px);
+	content: counter(val);
 }
 
 #log-font-size::after {
-  counter-reset: val calc((var(--fluid-0) / 0.01px));
-  content: counter(val);
+	counter-reset: val calc((var(--fluid-0) / 0.01px));
+	content: counter(val);
 }
 
 #log-root-font-size::after {
-  counter-reset: val calc(var(--current-rem-size));
-  content: counter(val);
+	counter-reset: val calc(var(--current-rem-size));
+	content: counter(val);
 }
 
 #log-scale-factor::after {
-  counter-reset: val calc(var(--ratio-dampener) * 1000);
-  content: counter(val);
+	counter-reset: val calc(var(--ratio-dampener) * 1000);
+	content: counter(val);
 }

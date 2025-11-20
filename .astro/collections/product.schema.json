@@ -1,104 +1,96 @@
 {
-  "$ref": "#/definitions/product",
-  "definitions": {
-    "product": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        },
-        "title": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "english": {
-          "type": "object",
-          "properties": {
-            "header": {
-              "type": "string"
-            },
-            "title": {
-              "type": "string"
-            },
-            "paragraph1": {
-              "type": "string"
-            },
-            "paragraph2": {
-              "type": "string"
-            },
-            "paragraph3": {
-              "type": "string"
-            },
-            "paragraph4": {
-              "type": "string"
-            },
-            "paragraph5": {
-              "type": "string"
-            },
-            "paragraph6": {
-              "type": "string"
-            },
-            "paragraph7": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "header",
-            "title"
-          ],
-          "additionalProperties": false
-        },
-        "indonesia": {
-          "type": "object",
-          "properties": {
-            "header": {
-              "type": "string"
-            },
-            "title": {
-              "type": "string"
-            },
-            "paragraph1": {
-              "type": "string"
-            },
-            "paragraph2": {
-              "type": "string"
-            },
-            "paragraph3": {
-              "type": "string"
-            },
-            "paragraph4": {
-              "type": "string"
-            },
-            "paragraph5": {
-              "type": "string"
-            },
-            "paragraph6": {
-              "type": "string"
-            },
-            "paragraph7": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "header",
-            "title"
-          ],
-          "additionalProperties": false
-        },
-        "$schema": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name"
-      ],
-      "additionalProperties": false
-    }
-  },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+	"$ref": "#/definitions/product",
+	"definitions": {
+		"product": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"type": {
+					"type": "string"
+				},
+				"title": {
+					"type": "string"
+				},
+				"description": {
+					"type": "string"
+				},
+				"english": {
+					"type": "object",
+					"properties": {
+						"header": {
+							"type": "string"
+						},
+						"title": {
+							"type": "string"
+						},
+						"paragraph1": {
+							"type": "string"
+						},
+						"paragraph2": {
+							"type": "string"
+						},
+						"paragraph3": {
+							"type": "string"
+						},
+						"paragraph4": {
+							"type": "string"
+						},
+						"paragraph5": {
+							"type": "string"
+						},
+						"paragraph6": {
+							"type": "string"
+						},
+						"paragraph7": {
+							"type": "string"
+						}
+					},
+					"required": ["header", "title"],
+					"additionalProperties": false
+				},
+				"indonesia": {
+					"type": "object",
+					"properties": {
+						"header": {
+							"type": "string"
+						},
+						"title": {
+							"type": "string"
+						},
+						"paragraph1": {
+							"type": "string"
+						},
+						"paragraph2": {
+							"type": "string"
+						},
+						"paragraph3": {
+							"type": "string"
+						},
+						"paragraph4": {
+							"type": "string"
+						},
+						"paragraph5": {
+							"type": "string"
+						},
+						"paragraph6": {
+							"type": "string"
+						},
+						"paragraph7": {
+							"type": "string"
+						}
+					},
+					"required": ["header", "title"],
+					"additionalProperties": false
+				},
+				"$schema": {
+					"type": "string"
+				}
+			},
+			"required": ["name"],
+			"additionalProperties": false
+		}
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#"
 }

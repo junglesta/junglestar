@@ -1,19 +1,19 @@
 #log-vw::after {
-  counter-reset: val calc(100vi / 1px);
-  content: counter(val);
+	counter-reset: val calc(100vi / 1px);
+	content: counter(val);
 }
 
 #log-font-size::after {
-  counter-reset: val calc((var(--fluid-0) / 0.01px));
-  content: counter(val);
+	counter-reset: val calc((var(--fluid-0) / 0.01px));
+	content: counter(val);
 }
 
 #log-root-font-size::after {
-  counter-reset: val calc(var(--current-rem-size));
-  content: counter(val);
+	counter-reset: val calc(var(--current-rem-size));
+	content: counter(val);
 }
 
 #log-scale-factor::after {
-  counter-reset: val calc(var(--ratio-dampener) * 1000);
-  content: counter(val);
+	counter-reset: val calc(var(--ratio-dampener) * 1000);
+	content: counter(val);
 }

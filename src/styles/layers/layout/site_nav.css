@@ -1,0 +1,15 @@
+/*🐸SITE NAVIGATION */
+.site_nav {
+  text-align: center;
+  font-size: calc(var(--font_clamp) * 1.25);
+  padding-top: var(--space_block);
+  line-height: 2;
+}
+
+.site_nav .page_link {
+  color: var(--grey_color_light);
+  display: inline-block;
+  width: auto;
+  padding-block: calc(var(--space_block) * 0.87);
+  padding-inline: calc(var(--space_inline) * 0.87); /* was 2.4svh */
+}

@@ -7,27 +7,29 @@ import "@styles/global.css";
 //import DevBrandColors from "@components/DevBrandColors.astro";
 
 export interface Props {
-	bodyClass?: string;
-	title: string;
-	description?: string;
-	sitemap?: boolean;
-	pageSubtitle?: string;
+  bodyClass?: string;
+  title: string;
+  description?: string;
+  sitemap?: boolean;
+  pageSubtitle?: string;
 }
 
 const {
-	bodyClass,
-	title,
-	description = "Sustainable Web Design to help fight Climate Change",
-	sitemap = true,
+  bodyClass,
+  title,
+  description = "Sustainable Web Design to help fight Climate Change",
+  sitemap = true,
 } = Astro.props;
 ---
 
 <style>
+  @view-transition {
+    navigation: auto;
+  }
   main {
     background-color: var(--white);
   }
   .scrolling_body_wrap {
-    /*background-color: #161616;*/
     position: relative;
     z-index: 1;
   }

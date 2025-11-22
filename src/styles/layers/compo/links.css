@@ -1,23 +1,55 @@
 /*🐸LINKS*/
-a:not(.button) {
-	color: var(--link_color);
-	text-decoration: underline;
-	text-decoration-thickness: 1px;
-	text-underline-offset: 0.55ch;
-	user-select: none;
+a {
+  color: var(--link_color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.55ch;
+  user-select: none;
 }
 
-a:not(.button):hover {
-	color: var(--link_color_hover);
-	text-decoration-thickness: 2px;
-	text-underline-offset: 0.45ch;
+a:hover {
+  color: var(--link_color_hover);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.45ch;
 }
 
-main a:not(.button) {
-	color: var(--link_color_main);
+/*🐸Links */
+a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: calc(var(--space_block) * 0.073); /* was 0.2svh */
 }
-main a:not(.button):hover {
-	color: var(--link_color_main_hover);
+
+/*🐸External link indicator */
+a:not(.action_button)[target="_blank"]:after {
+  content: "↗";
+  font-size: 90%;
+  display: inline;
+  color: currentColor;
+  padding-left: 0.5ch;
+  text-decoration-color: transparent !important;
+  border-bottom-color: transparent !important;
+  text-decoration-thickness: 0 !important;
+}
+
+main a {
+  color: var(--link_color_main);
+}
+main a:hover {
+  color: var(--link_color_main_hover);
+}
+.button_row a {
+  text-decoration: none;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+a.button[target="_blank"]:after {
+  content: "";
+  display: none;
 }
 
 /*🐸LINKS SUGAR, TOO SWEET???! */

@@ -25,12 +25,13 @@ a {
 a:not(.action_button)[target="_blank"]:after {
   content: "↗";
   font-size: 90%;
-  display: inline;
+  display: inline-block;
+  text-decoration: none;
   color: currentColor;
   padding-left: 0.5ch;
-  text-decoration-color: transparent !important;
+  /*text-decoration-color: transparent !important;
   border-bottom-color: transparent !important;
-  text-decoration-thickness: 0 !important;
+  text-decoration-thickness: 0 !important;*/
 }
 
 main a {
@@ -47,9 +48,18 @@ a.button {
   text-decoration: none;
 }
 
-a.button[target="_blank"]:after {
+a.button[target="_blank"]:after,
+a.button:not([target="_blank"])::after,
+a.clean {
   content: "";
   display: none;
+}
+
+main a:not([target="_blank"])::after {
+  content: " →";
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 0.5ch;
 }
 
 /*🐸LINKS SUGAR, TOO SWEET???! */

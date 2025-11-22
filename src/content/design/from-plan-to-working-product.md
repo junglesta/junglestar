@@ -24,4 +24,4 @@ We handle everything from **design concept** to deployment. Study your needs, pr
 
 **Ready to launch?**
 
-Check out our [3 packages](/offer) "designed to get you online" fast.
+Check out our [3 packages](/offer)! We offer templates designed to jumpstart your online presence.

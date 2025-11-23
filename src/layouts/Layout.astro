@@ -52,8 +52,6 @@ const {
 
   <Head title={title} description={description} sitemap={sitemap} />
   <body class={bodyClass}>
-    <!-- {import.meta.env.DEV && <DevBrandColors />} -->
-
     <div class="scrolling_body_wrap">
       <slot name="head_banner" />
       <slot name="landing_screen" />
@@ -67,9 +65,12 @@ const {
   </body>
 
   <script>
-    import { openExternalLinksInNewWindow } from "@utils/externalLinks";
+    import { openExternalLinksInNewWindow, markMailtoLinks } from "@utils/el";
 
-    openExternalLinksInNewWindow();
+    document.addEventListener("astro:page-load", () => {
+      openExternalLinksInNewWindow();
+      markMailtoLinks();
+    });
   </script>
 
   <script is:inline>

@@ -22,7 +22,7 @@ a {
 }
 
 /*🐸External link indicator */
-a:not(.action_button)[target="_blank"]:after {
+a:not(.action_button):not(.mailto_link)[target="_blank"]:after {
   content: "↗";
   font-size: 90%;
   display: inline-block;

@@ -1,9 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import { getCollection, render } from "astro:content";
-import Header from "@components/HeaderSlotted.astro";
-import SocialMediaManagement from "@components/SocialMediaManagement.astro";
 import Layout from "@layouts/Layout.astro";
+import Header from "@components/HeaderAni2Black.astro";
+import SocialMediaManagement from "@components/SocialMediaManagement.astro";
 
 const posts = await getCollection("productionConcepts", ({ data }) => {
   return !import.meta.env.PROD || data.draft !== true;

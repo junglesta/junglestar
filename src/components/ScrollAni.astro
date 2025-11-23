@@ -1,0 +1,45 @@
+---
+// ScrollAni.astro
+interface Props {
+  targetClass: string;
+  lumaInitial: number;
+  lumaFinal: number;
+  chromaInitial: number;
+  chromaFinal: number;
+  hue: string;
+  animationRange?: string;
+}
+
+const { targetClass, lumaInitial, lumaFinal, chromaInitial, chromaFinal, hue, animationRange = "0 100%" } = Astro.props;
+---
+
+<style
+  is:global
+  set:html={`
+  @property --luma {
+    syntax: "<number>";
+    initial-value: ${lumaInitial};
+    inherits: false;
+  }
+
+  @property --chroma {
+    syntax: "<number>";
+    initial-value: ${chromaInitial};
+    inherits: false;
+  }
+
+  @keyframes darken {
+    to {
+      --luma: ${lumaFinal};
+      --chroma: ${chromaFinal};
+    }
+  }
+
+  .${targetClass} {
+    background: oklch(var(--luma) var(--chroma) ${hue});
+    animation: darken linear;
+    animation-timeline: scroll();
+    animation-range: ${animationRange};
+  }
+`}
+></style>

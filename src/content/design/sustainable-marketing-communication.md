@@ -12,7 +12,7 @@ tags:
 
 <small><em>The Problem</em></small><br>Entrepreneurs waste time on repetitive tasks (like social content for example) instead of focusing on growth or improvements.
 
-<small><em>The Solution</em></small><br>**Automate everything.** Build simple systems that stay simple over time, so you and your staff can easily run then. Experience **the joy of outsourcing**. We have 30 years of proven real world experience. Not just word-ed, we got trust-ed.
+<small><em>The Solution</em></small><br>**Automate everything.** Build simple systems that stay simple over time, so you and your staff can easily run then. Experience **the joy of outsourcing**. We have 30 years of proven real world experience.
 
 <small><em>Why It Matters</em></small>
 

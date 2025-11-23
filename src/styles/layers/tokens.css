@@ -14,18 +14,17 @@
   /*🐸Colors */
   /*--black: oklch(0.2 0 360);#161616*/
   --black: oklch(0.2002 0 0);
-  --black-full: oklch(0 0 0);
+  --black000: oklch(0 0 0);
   --black_fumes: #161616;
   --blackT25: color-mix(in oklch, var(--black), transparent 75%);
   --blackT50: color-mix(in oklch, var(--black), transparent 50%);
   --black_hover: black;
 
-  --white: oklch(0.95 0.01 186.34 / 100%);
+  --white: oklch(0.95 0.01 255 / 100%);
   --whiteT25: color-mix(in oklch, var(--white), transparent 75%);
   --whiteT50: color-mix(in oklch var(--white), transparent 50%);
   --white_hover: #fff;
 
-  --background_color: oklch(0.8 0.03 208.64);
   --background_blackT15: rgba(0, 0, 0, 0.15);
   --background_blackT10: rgba(0, 0, 0, 0.1);
   --background_blackT05: rgba(0, 0, 0, 0.05);
@@ -48,7 +47,10 @@
   --grey_color_dark: #000000;
   --svgBG: pink;
 
-  /*🐸DERIVED COLOURS */
+  /*🐸DERIVED | COLOURS */
+  --background_color: var(--white);
+
+  /*🐸DERIVED | LINK COLOURS */
   --link_color_main_hover: var(--black_hover);
   /* FOR STRUCTURE*/
   --link_color: var(--white);

@@ -12,19 +12,29 @@
 
 .toc ul {
   padding: 0;
-  list-style-type: "→ ";
+  /*list-style-type: none;*/
+  list-style-type: "→  ";
   list-style-position: outside;
 }
 
 .toc li:not(:hover)::marker {
   color: var(--brand);
 }
-
-.toc a {
+.toc li:hover::marker {
+  font-weight: 500;
   color: var(--brand);
-  text-decoration: none;
 }
 
-.toc a:hover {
-  text-decoration: underline;
+.toc li {
+  a {
+    color: var(--brand);
+    text-decoration: none;
+  }
+  a::after {
+    content: "";
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }

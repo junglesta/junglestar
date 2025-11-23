@@ -1,6 +1,7 @@
 ---
-// src/components/Header.astro
+// src/components/HeaderAni2OffWhite.astro
 import LogoAni from "@components/LogoAni.astro";
+import ScrollAni from "@components/ScrollAni.astro";
 ---
 
 <style>
@@ -11,6 +12,7 @@ import LogoAni from "@components/LogoAni.astro";
     padding-block: 0;
   }
   .cover {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +23,10 @@ import LogoAni from "@components/LogoAni.astro";
     background-size: cover;
     background-color: var(--brand);
     color: var(--white);
+  }
+  .first_click_landing {
+    position: absolute;
+    bottom: 0;
   }
   .slogan {
     padding-top: calc(var(--space_block) * 2);
@@ -36,44 +42,31 @@ import LogoAni from "@components/LogoAni.astro";
   small {
     padding-top: calc(var(--space_block) / 4);
   }
+
   .jsScrollButton,
   .jsScrollButton:hover {
     cursor: pointer;
   }
-
-  /*ANIM*/
-  @property --luma {
-    syntax: "<number>";
-    initial-value: 0.5286;
-    inherits: false;
-  }
-
-  @keyframes darken {
-    to {
-      --luma: 0; /* OKLCH black */
-    }
-  }
-
-  .header_astro {
-    background: oklch(var(--luma) 0.1735 255deg);
-
-    animation: darken linear;
-    animation-timeline: scroll();
-    animation-range: 0svh 100svh;
-  }
 </style>
-<header slot="landing_screen" class="cover jsScrollButton header_astro _Header">
+<ScrollAni
+  targetClass="header_astro"
+  lumaInitial={0.5286}
+  lumaFinal={0.95}
+  chromaInitial={0.1735}
+  chromaFinal={0.01}
+  hue="255deg"
+  animationRange="0vh 100vh"
+/>
+
+<header slot="landing_screen" class="cover jsScrollButton header_astro _HeaderAni2OffWhite">
   <LogoAni />
 
-  <div class="slogan uppercase maxcontrast_white" id="slogan0">
-    <p>Your business, simplified.</p><p>Your life, upgraded.</p>
-    <p>Trade grunt-work for free time!</p>
-    <p>&nbsp;</p>
-    <small>Discover</small>
-    <h1 class="brand">JUNGLESTAR</h1>
+  <div class="slogan" id="slogan0">
+    <h1 class="brand">
+      <slot />
+    </h1>
     <p>&nbsp;</p>
     <p>↓</p>
   </div>
-
   <div class="jsScrollTarget">&nbsp;</div>
 </header>

@@ -1,8 +1,8 @@
 ---
-import Gmap from "@components/Gmap.astro";
-import Header from "@components/HeaderSlotted.astro";
 //pages/discoverability.astro
 import Layout from "@layouts/Layout.astro";
+import Gmap from "@components/Gmap.astro";
+import Header from "@components/HeaderAni2Black.astro";
 
 // Page metadata
 const pageTitle = "Junglestar | Pricing";
@@ -44,7 +44,7 @@ const pageSubtitle = "WHERE ARE YOU?";
 
 <Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
   <div slot="landing_screen">
-    <Header>{pageSubtitle}</Header>
+    <Header class='header_astro"'>{pageSubtitle}</Header>
   </div>
   <Gmap />
 </Layout>

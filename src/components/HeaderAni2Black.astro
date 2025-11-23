@@ -1,11 +1,12 @@
 ---
-// src/components/HeaderSlotted.astro
-import Hi from "@components/LogoAni.astro";
+// src/components/HeaderAni2Black.astro
+import LogoAni from "@components/LogoAni.astro";
+import ScrollAni from "@components/ScrollAni.astro";
 ---
 
 <style>
   .brand {
-    font-weight: 300 !important;
+    font-weight: 300;
     font-size: 200%;
     line-height: 1.25;
     padding-block: 0;
@@ -46,31 +47,19 @@ import Hi from "@components/LogoAni.astro";
   .jsScrollButton:hover {
     cursor: pointer;
   }
-
-  /*ANIM*/
-  @property --darkness {
-    syntax: "<percentage>";
-    initial-value: 0%;
-    inherits: false;
-  }
-
-  @keyframes darken {
-    to {
-      --darkness: 100%;
-    }
-  }
-
-  .header_slotted_astro {
-    background: color-mix(in oklch, var(--brand), var(--black_full) var(--darkness));
-
-    animation: darken linear;
-    animation-timeline: scroll();
-    animation-range: 0vh 100vh; /* Completes within first viewport height */
-  }
 </style>
 
-<header slot="landing_screen" class="cover jsScrollButton header_slotted_astro">
-  <Hi />
+<ScrollAni
+  targetClass="header_astro"
+  lumaInitial={0.5286}
+  lumaFinal={0}
+  chromaInitial={0.1735}
+  chromaFinal={0}
+  hue="255deg"
+  animationRange="0svh 100svh"
+/>
+<header slot="landing_screen" class="cover jsScrollButton header_astro _HeaderAni2Black">
+  <LogoAni />
 
   <div class="slogan" id="slogan0">
     <h1 class="brand">

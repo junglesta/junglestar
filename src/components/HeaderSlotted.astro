@@ -46,6 +46,27 @@ import Hi from "@components/LogoAni.astro";
   .jsScrollButton:hover {
     cursor: pointer;
   }
+
+  /*ANIM*/
+  @property --darkness {
+    syntax: "<percentage>";
+    initial-value: 0%;
+    inherits: false;
+  }
+
+  @keyframes darken {
+    to {
+      --darkness: 100%;
+    }
+  }
+
+  .header_slotted_astro {
+    background: color-mix(in oklch, var(--brand), var(--black_full) var(--darkness));
+
+    animation: darken linear;
+    animation-timeline: scroll();
+    animation-range: 0vh 100vh; /* Completes within first viewport height */
+  }
 </style>
 
 <header slot="landing_screen" class="cover jsScrollButton header_slotted_astro">

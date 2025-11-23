@@ -1,0 +1,27 @@
+---
+// ScrollAnimatedProperty.astro
+interface Props {
+  name: string;          // e.g., "darkness", "hue"
+  syntax: string;        // e.g., "<percentage>", "<number>", "<angle>"
+  initialValue: string;  // e.g., "0%", "0", "255deg"
+  finalValue: string;    // e.g., "100%", "1", "90deg"
+}
+
+const { name, syntax, initialValue, finalValue } = Astro.props;
+const propertyName = `--${name}`;
+const keyframeName = `${name}-cycle`;
+---
+
+<style is:global define:vars={{ propertyName, initialValue, finalValue }}>
+  @property {propertyName} {
+    syntax: {syntax};
+    initial-value: {initialValue};
+    inherits: false;
+  }
+
+  @keyframes {keyframeName} {
+    to {
+      {propertyName}: {finalValue};
+    }
+  }
+</style>

@@ -1,29 +1,29 @@
 {
-	"name": "junglestar",
-	"type": "module",
-	"version": "2.6.2",
-	"private": true,
-	"scripts": {
-		"format": "biome format --write ./src",
-		"lint": "biome lint ./src",
-		"dev": "astro dev --open",
-		"check": "astro check --watch & astro dev",
-		"build": "astro build --force",
-		"buildv": "astro build --verbose",
-		"builddev": "astro build --devOutput",
-		"buildwithtest": "astro check && tsc --noEmit && astro build",
-		"preview": "astro preview",
-		"astro": "astro",
-		"upg": "npx @astrojs/upgrade"
-	},
-	"devDependencies": {
-		"@astrojs/check": "^0.9.5",
-		"@biomejs/biome": "^2.3.7",
-		"astro": "^5.16.0",
-		"prettier": "^3.6.2",
-		"prettier-plugin-astro": "^0.14.1",
-		"sharp": "^0.34.5",
-		"typescript": "^5.9.3"
-	},
-	"packageManager": "pnpm@10.22.0"
+  "name": "junglestar",
+  "type": "module",
+  "version": "2.6.4",
+  "private": true,
+  "scripts": {
+    "format": "biome format --write ./src",
+    "lint": "biome lint ./src",
+    "dev": "astro dev --open",
+    "check": "astro check --watch & astro dev",
+    "build": "astro build --force",
+    "buildv": "astro build --verbose",
+    "builddev": "astro build --devOutput",
+    "buildwithtest": "astro check && tsc --noEmit && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "upg": "npx @astrojs/upgrade"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.5",
+    "@biomejs/biome": "^2.3.7",
+    "astro": "^5.16.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "sharp": "^0.34.5",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.22.0"
 }

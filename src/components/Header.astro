@@ -40,6 +40,27 @@ import Hi from "@components/LogoAni.astro";
   .jsScrollButton:hover {
     cursor: pointer;
   }
+
+  /*ANIM*/
+  @property --luma {
+    syntax: "<number>";
+    initial-value: 0.5286;
+    inherits: false;
+  }
+
+  @keyframes darken {
+    to {
+      --luma: 0; /* OKLCH black */
+    }
+  }
+
+  .header_astro {
+    background: oklch(var(--luma) 0.1735 255deg);
+
+    animation: darken linear;
+    animation-timeline: scroll();
+    animation-range: 0svh 100svh;
+  }
 </style>
 <header slot="landing_screen" class="cover jsScrollButton header_astro">
   <Hi />

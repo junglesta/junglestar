@@ -1,6 +1,6 @@
 ---
 sort_order: 3
-title: Building Phone First
+title: Mobile-First. Obviously.
 subtitle: Simple, Clean, Fast, Phone-Friendly and Easy-to-Use.
 image:
   src: "building.svg"
@@ -10,14 +10,27 @@ tags:
   - service
 ---
 
-Today [60%+ of internet traffic](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/asia) is on mobile devices.
+Your customers are on their phones. Your site better work there.
 
-Phone in hand and on the go, today users **expect your website to be fast**, phone-friendly and **easy** to use. No digging for infos. **No pinch & zoom thru PDF** catalogs.
+<small><em>The reality</small></em>
 
-In this information jungle we are constantly bombarded. Attention focus is very short. To stay in business today, your business needs to offer a **well thought User Experience**.
+More than 60% of web traffic is mobile. People are scrolling fast—thumb in hand, attentionspan measured in seconds. If your site is slow, clunky, or makes them pinch-zoom through a PDF? They're gone.
 
-Any popular social platform, where attention is driven to ads, **not to the content you uploaded**, hardly be enough. Without constant spending, it won't bring you far.
+<small><em>What you actually need</small></em>
 
-Surviving with just an Instagram profile, nowadays, hardly be enough. Let that energy-absorbing video game to young solo-preneurs. It's great fun to dream fame and riches while working up your skills unpaid, learning one video at a time. When you are ready to **think serious biz**, we are here.
+A website that loads fast, looks clean, and gets to the point. No digging. No friction. Just clear information that works on a 6-inch screen.
 
-Your message, your brand narrative, your talking-to-your-customer needs to be **straight to the point**. Producing it needs to be tought as a small-scale-broadcasting, constantly priming your user base. Planned and **streamlined** in his production cycle. Junglestar can help you **build it properly**.
+<small><em>Why not just Instagram</small></em>
+
+Social platforms are rented land. The algorithm decides who sees your content. You're competing with cat videos and constantly paying to boost posts.
+A proper website? That's yours. Your message, your brand, your rules.
+
+<small><em>Why It Matters</small></em>
+
+- **Control**: Your platform, not theirs
+- **Speed**: Built to load fast on any device
+- **Clarity**: Information where people expect it, no treasure hunt required
+
+**Ready to build it right?**
+
+We design mobile-first sites that actually work for your business.

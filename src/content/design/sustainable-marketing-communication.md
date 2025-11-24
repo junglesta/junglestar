@@ -16,10 +16,10 @@ tags:
 
 <small><em>Why It Matters</em></small>
 
-- **Scale**: Automated businesses can grow and be sold.
-- **Focus**: Free your schedule to lead.
-- **Sustain**: Low-maintenance, low-resources design helps you and the planet.
+- **Burnout**: Stop doing the same tasks over and over. Automate your business so it can grow without burning you out.
+- **Sustain**: Buried in daily tasks? Free up your time to actually lead and grow your business.
+- **Focus**: Built lean so you spend less time and money maintaining it — more resources for what matters
 
-**Ready to pivot?**
+**Ready to automate?**
 
-We simplify your software needs for **easy maintenance**. That's what we call _Sustainable Marketing Communication_. **Sustainable for you.**
+We build marketing systems that run themselves — less juggling, more time for you know what.

@@ -10,18 +10,18 @@ tags:
   - service
 ---
 
-<small><em>The Problem</em></small><br>
-You have a vision but need technical expertise. Piecing together designers, developers, hosting, and security feels overwhelming—and costly mistakes are easy.
+<small><em>You know what you need. You don't know who to call.</small><br>
+Finding a designer. Then a developer. Then someone for hosting. Then realizing they don't talk to each other. Then fixing what breaks. Then starting over.
 
-<small><em>The Solution</em></small><br>
-We handle everything from **design concept** to deployment. Study your needs, produce a tailored plan, write the code, test thoroughly, and launch. Websites and web-apps that work beautifully on every device.
+<small><em>We do all of it.</em></small><br>
+Design, code, testing, hosting, security, launch. One team. One plan. No vendor ping-pong.
 
 <small><em>Why It Matters</em></small><br>
 
 - **Completeness**: Speed, security, SEO, and hosting—all included.
-- **Efficiency**: From concept to live product without managing multiple vendors.
-- **Quality**: Professional results that match your company's needs and resources.
+- **Simple**: One conversation, one contract, one delivery.
+- **Solid**: It works on phones, tablets, desktops. Actually works.
 
 **Ready to launch?**
 
-Check out our [3 packages](/offer)! We offer templates designed to jumpstart your online presence.
+We've got [3 packages!](/offer) designed to get you online without the runaround.

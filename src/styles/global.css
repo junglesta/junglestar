@@ -26,6 +26,8 @@
 @import "./layers/compo/mean.css" layer(components);
 @import "./layers/compo/offer.css" layer(components);
 @import "./layers/compo/post.css" layer(components);
+@import "./layers/compo/post_content.css" layer(components);
+@import "./layers/compo/post_image.css" layer(components);
 @import "./layers/compo/selling.css" layer(components);
 @import "./layers/compo/strong.css" layer(components);
 @import "./layers/compo/svgs.css" layer(components);

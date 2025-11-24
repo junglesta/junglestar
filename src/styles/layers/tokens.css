@@ -4,26 +4,25 @@
    ======================================== */
 
 :root {
-  /*🐸Dynamic spaces */
+  /*🐸 DYNAMIC SPACES */
   --viewport_height: 100dvh;
-  --space_block: 2.75dvh;
-  --space_inline: 2.75dvw;
-  /*🐸Fixed spaces */
-  --stone: 3rem;
+  --space_block: 1.25em;
+  --space_inline: 1.25em;
+
+  /*🐸 FIXED SPACES */
   --tap_size: 48px;
-  /*🐸Colors */
-  /*--black: oklch(0.2 0 360);#161616*/
-  --black: oklch(0.2002 0 0);
-  --black000: oklch(0 0 0);
-  --black_fumes: #161616;
+
+  /*🐸 COLOURS */
+  --black: oklch(0 0 0);
+  --black_fumes: #161616; /*oklch(0.2 0 360)*/
   --blackT25: color-mix(in oklch, var(--black), transparent 75%);
   --blackT50: color-mix(in oklch, var(--black), transparent 50%);
-  --black_hover: black;
+  --black_hover: var(--black);
 
   --white: oklch(0.95 0.01 255 / 100%);
   --whiteT25: color-mix(in oklch, var(--white), transparent 75%);
   --whiteT50: color-mix(in oklch var(--white), transparent 50%);
-  --white_hover: #fff;
+  --white_hover: var(--white);
 
   --background_blackT15: rgba(0, 0, 0, 0.15);
   --background_blackT10: rgba(0, 0, 0, 0.1);

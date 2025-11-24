@@ -10,13 +10,15 @@ tags:
   - service
 ---
 
-<small><em>You know what you need. You don't know who to call.</small><br>
+<small><em>You know what you need, but who to contact?</small>
+
 Finding a designer. Then a developer. Then someone for hosting. Then realizing they don't talk to each other. Then fixing what breaks. Then starting over.
 
-<small><em>We do all of it.</em></small><br>
+<small><em>We do all of it.</em></small>
+
 Design, code, testing, hosting, security, launch. One team. One plan. No vendor ping-pong.
 
-<small><em>Why It Matters</em></small><br>
+<small><em>Why It Matters</em></small>
 
 - **Completeness**: Speed, security, SEO, and hosting—all included.
 - **Simple**: One conversation, one contract, one delivery.

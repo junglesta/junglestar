@@ -11,14 +11,16 @@ tags:
   - content-strategy
 ---
 
-We can help your company produce **_communication content_** for your brand.
+<small><em>You know what you sell. Explaining it is harder.</small></em>
 
-From establishing a meaningful content strategy to creating the proper memes, it’s important to pick the right **_selling points_**.
+What makes you different? What words will actually land with your audience? Which images stop the scroll?
 
-Use the correct **_figures of speech_**, hit those points which will resonate, being highly symbolical, to your audience.
+<small><em>We figure that out with you.</small></em>
 
-These language items are **_culture dependent_**, so they varies depending on your target.
+We help you find the right message — the phrases that resonate, the visuals that connect. Then we produce it: captions, posts, photos, hashtags, the whole thing.
 
-Selecting photos, combining product shots and emotional images, copywriting, writing captions and posts text and hashtags.
+<small><em>Why this matters</small></em>
 
-We can write and curate your **_brand discourse_**.
+- _Right message_: What works in one market doesn't work in another. Culture matters.
+- _Consistent voice_: Your brand sounds like your brand, everywhere.
+- _Less guessing_: We've done this before. We know what tends to work.

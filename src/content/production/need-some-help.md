@@ -12,16 +12,18 @@ tags:
   - help
 ---
 
-The **_Creative Process_** can indeed be overwhelming. The **_Adjacent Possible_** is not easy to spot.
+The creative process can be overwhelming. You know something's possible, but you can't quite see the path.
 
-Are you having difficulties figuring it all out on your own? We can help. **We offer Guidance**.
+**That's where we come in.**<br/>
+30 years of imagining and managing creative projects in marketing. We've seen what works and what wastes time.
 
-Junglestar founder has been **immagining** and **managing creative processes** in the [marketing communication](https://en.wikipedia.org/wiki/Marketing_communications) field for more than 30 years.
+<small><em>How it works</small></em>
 
-Beginning from setting project goals, audience and environment with client, we start. Research → Immagine → Design → Production → Monitor → Update → Maintain.
+We start by defining the big picture together—goals, audience, what you're working with. Then: research, design, production, launch, monitor, update.
 
-Wanna do it on your own, sweat the details, tha's ok too. We can show you shortcuts and the best path to take. Starting from **defining the big picture and options together**, before we even start executing. Undoing a plan is easier than undoing action. That's why **planning pays off**.
+Want to do it yourself? That's fine too. We'll show you shortcuts and help you avoid the expensive mistakes. Planning is cheaper than undoing.
 
-In this **fast-changing** world, where everything is **short-lasting**, it’s all about **how quickly** you can **produce** [well thought solutions](/offer). That's why **streamlining** repetitive tasks is **paramount**.
+<small><em>Why this matter:</small></em>
 
-We have been helping small companies for many years.
+Everything moves fast. What worked last year might not work now. The businesses that survive are the ones that can produce good work quickly — without burning out.
+We've been helping small companies figure this out for years.

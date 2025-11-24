@@ -10,7 +10,8 @@ tags:
   - guidance
 ---
 
-<small><em>You're posting. Nobody's listening.</em></small><br/>
+<small><em>You're posting. Nobody's listening.</em></small>
+
 Your content is everywhere and nowhere. Different message on each platform. No consistent voice. Your audience scrolls past because they don't recognize you — or worse, they're confused about what you actually do.
 
 <small><em>We fix that.</em></small>

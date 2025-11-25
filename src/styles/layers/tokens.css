@@ -20,8 +20,8 @@
   --black_hover: var(--black);
 
   --white: oklch(0.95 0.01 255 / 100%);
-  --whiteT25: color-mix(in oklch, var(--white), transparent 75%);
-  --whiteT50: color-mix(in oklch var(--white), transparent 50%);
+  --whiteT25: oklch(0.95 0.01 255 / 25%);
+  --whiteT50: oklch(0.95 0.01 255 / 50%);
   --white_hover: var(--white);
 
   --background_blackT15: rgba(0, 0, 0, 0.15);

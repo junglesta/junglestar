@@ -22,7 +22,7 @@
 }
 
 .intro_pitch {
-  background-color: var(--black000);
+  background-color: var(--black);
   color: white;
   padding: var(--space_block) var(--space_inline);
 }

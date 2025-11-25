@@ -1,7 +1,9 @@
 /* ========================================
    FILE: src/styles/layers/utilities.css
    ======================================== */
-
+.no_select {
+  user-select: none;
+}
 .stretch {
   height: stretch;
 }

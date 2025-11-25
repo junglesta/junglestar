@@ -1,0 +1,27 @@
+.grid_projects {
+  padding-top: var(--space_block);
+  display: grid;
+
+  grid-template-columns: 1fr;
+  gap: var(--space_block) var(--space_inline);
+}
+
+@media (370px < width) {
+  .grid_projects {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+.grid_offer {
+  padding-top: var(--space_block);
+  display: grid;
+
+  grid-template-columns: 1fr;
+  gap: var(--space_block) var(--space_inline);
+}
+
+@media (370px < width) {
+  .grid_offer {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}

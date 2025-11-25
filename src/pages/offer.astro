@@ -36,11 +36,12 @@ const pageSubtitle = "We got all-included packages!";
   }
 
   .color_black {
-    color: #000 !important;
+    color: var(--black);
   }
 
-  .product_grid {
-    margin: 0 8dvw;
+  /*.product_grid {
+    margin: 0;
+    width: min-content;
     display: flex;
     flex-direction: column;
     gap: calc(var(--space_inline) / 2);
@@ -54,30 +55,11 @@ const pageSubtitle = "We got all-included packages!";
       align-items: stretch;
       gap: calc(var(--space_inline) / 2);
     }
-  }
+  }*/
 
   .product_text {
     margin-block: calc(var(--space_block) / 2);
     padding-inline: calc(var(--space_inline) / 2);
-  }
-
-  .selling_points {
-    font-size: 1rem;
-    margin-bottom: calc(var(--space_block) / 2);
-    max-width: 400px;
-    margin-inline: auto;
-    ul {
-      margin-left: calc(var(--space_inline) * 2);
-      margin-right: calc(var(--space_inline) * 1);
-    }
-    li {
-      padding-left: calc(var(--space_inline) / 1.5);
-    }
-    li::marker {
-      content: "✓";
-      color: limegreen;
-      font-weight: bold;
-    }
   }
 
   .button_row {
@@ -183,8 +165,8 @@ const pageSubtitle = "We got all-included packages!";
       </div>
     </div>
 
-    <div class="product_grid top_pad--big">
-      <div id="landing-page" class="looper__link card bestvalue" title="LANDING PAGE package">
+    <div class="grid top_pad--big">
+      <div id="landing-page" class="card card_static looper__link bestvalue" title="LANDING PAGE package">
         <div class="product_text">
           <h2 class="center">Compact Website</h2>
 
@@ -244,7 +226,7 @@ const pageSubtitle = "We got all-included packages!";
         </div>
       </div>
 
-      <div id="full-site" class="looper__link card bestseller" title="FULL SITE package">
+      <div id="full-site" class="card card_static looper__link bestseller" title="FULL SITE package">
         <div class="product_text">
           <h2 class="center">Amazing Website</h2>
 
@@ -309,7 +291,7 @@ const pageSubtitle = "We got all-included packages!";
         </div>
       </div>
 
-      <div id="custom" class="looper__link card" title="CUSTOM package">
+      <div id="custom" class="card card_static looper__link" title="CUSTOM package">
         <div class="product_text">
           <h2 class="center">Awesome Design</h2>
 

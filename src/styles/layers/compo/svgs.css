@@ -1,4 +1,4 @@
-/* SVG utilities */
+/* SVG UTILITIES */
 svg.outlined {
 	fill: transparent;
 	stroke-width: calc(var(--space_block) * 0.29); /* was 0.8svh */

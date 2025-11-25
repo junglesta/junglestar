@@ -16,8 +16,12 @@ import LogoAni from "@components/LogoAni.astro";
     align-items: center;
     justify-content: center;
     padding: var(--space_block) var(--space_inline);
-    min-height: 100svh;
-    height: 100svh;
+
+    /*FALLBACK FOR FF, damn dudes...*/
+    min-height: 100vh;
+    height: 100vh;
+    /*ACTUAL VALUE FOR ALL OTHERS*/
+
     background-size: cover;
     background-color: var(--brand);
     color: var(--white);

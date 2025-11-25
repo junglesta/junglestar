@@ -1,4 +1,4 @@
-/*🐸Blockquotes */
+/*🐸BLOCKQUOTES */
 blockquote {
 	color: var(--grey_color);
 	border-left: calc(var(--space_inline) * 0.145) solid var(--grey_color_light); /* was 0.4svh */

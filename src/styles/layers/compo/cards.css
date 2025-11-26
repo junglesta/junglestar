@@ -28,6 +28,8 @@
   width: 100%;
   cursor: pointer;
   background-color: var(--whiteT25);
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
 }
 
 .card > * {

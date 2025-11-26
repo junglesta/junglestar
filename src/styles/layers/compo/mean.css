@@ -20,7 +20,10 @@
 .mean_icon.four_icon_group {
   max-width: 80dvw;
   display: flex;
-  width: 80vw;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(space_inline);
 }
 
 .mean_title.mean_title--first {

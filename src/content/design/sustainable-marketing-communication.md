@@ -16,7 +16,7 @@ Entrepreneurs waste time on repetitive tasks (like social content for example) i
 
 <small><em>The Solution</em></small>
 
-**Automate everything.** Build simple systems that stay simple over time, so you and your staff can easily run then. Experience **the joy of outsourcing**. We have 30 years of proven real world experience.
+**Automate everything.** Build simple systems that stay simple over time, so you and your staff can easily run them. Experience **the joy of outsourcing**. We have 30 years of proven real world experience.
 
 <small><em>Why It Matters</em></small>
 

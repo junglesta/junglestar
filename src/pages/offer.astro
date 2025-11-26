@@ -26,52 +26,27 @@ const pageSubtitle = "We got all-included packages!";
   .looper__link {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
-  }
-
-  .product_text h2,
-  .product_text h3 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 
   .color_black {
     color: var(--black);
   }
 
-  /*.product_grid {
-    margin: 0;
-    width: min-content;
-    display: flex;
-    flex-direction: column;
-    gap: calc(var(--space_inline) / 2);
-    line-height: 1.15;
-  }
-
-  @media (min-width: 1025px) {
-    .product_grid {
-      display: flex;
-      flex-direction: row;
-      align-items: stretch;
-      gap: calc(var(--space_inline) / 2);
-    }
-  }*/
-
   .product_text {
     margin-block: calc(var(--space_block) / 2);
     padding-inline: calc(var(--space_inline) / 2);
+
+    h2,
+    h3 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
   }
 
   .button_row {
-    padding-top: 0.125rem;
-    padding-bottom: 0.5rem;
-    width: 100%;
-    display: block;
     a {
       color: var(--brand);
       text-decoration: none;
-      position: relative;
-      display: inline-block;
     }
   }
 
@@ -94,10 +69,8 @@ const pageSubtitle = "We got all-included packages!";
     font-size: 66%;
   }
 
-  .card {
-    border: 1px solid var(--brand);
-    border-radius: var(--radius);
-    background-color: var(--whiteT25);
+  .included {
+    padding-top: calc(var(--space_block) / 2);
   }
 </style>
 
@@ -165,7 +138,7 @@ const pageSubtitle = "We got all-included packages!";
       </div>
     </div>
 
-    <div class="grid top_pad--big">
+    <div class="grid_offer top_pad--big">
       <div id="landing-page" class="card card_static looper__link bestvalue" title="LANDING PAGE package">
         <div class="product_text">
           <h2 class="center">Compact Website</h2>
@@ -178,15 +151,15 @@ const pageSubtitle = "We got all-included packages!";
             </small>
           </h4>
 
-          <p class="center">
+          <p class="">
             We load your data, process everything and produce a clean landing page ready to hit. The perfect digital
             brochure with zero maintenance cost!
           </p>
 
           <div class="selling_points">
-            <div class="center">GET:</div>
+            <div class="center brand">What's included:</div>
 
-            <ul>
+            <ul class="included">
               <li class="checkmark">Responsive landing page.</li>
 
               <li class="checkmark">Phone Ready design.</li>
@@ -238,15 +211,15 @@ const pageSubtitle = "We got all-included packages!";
             </small>
           </h4>
 
-          <p class="center">
+          <p class="">
             We load your look and products data, process everything and produce a clean performant website ready to
             compete.
           </p>
 
           <div class="selling_points">
-            <div class="center">GET:</div>
+            <div class="center brand">What's included:</div>
 
-            <ul>
+            <ul class="included">
               <li class="checkmark">Responsive full website.</li>
 
               <li class="checkmark">Social media friendly.</li>
@@ -303,15 +276,15 @@ const pageSubtitle = "We got all-included packages!";
             </small>
           </h4>
 
-          <p class="center">
+          <p>
             We craft a special design for your brand, produce & develop a well thought user-experience by embracing your
             existing look and brand identity.
           </p>
 
           <div class="selling_points">
-            <div class="center">GET:</div>
+            <div class="center brand">What's included:</div>
 
-            <ul>
+            <ul class="included">
               <li class="checkmark">Responsive full website.</li>
 
               <li class="checkmark">Social media friendly.</li>

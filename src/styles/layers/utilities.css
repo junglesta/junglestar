@@ -1,6 +1,10 @@
 /* ========================================
    FILE: src/styles/layers/utilities.css
    ======================================== */
+
+.brand {
+  color: var(--brand);
+}
 .no_select {
   user-select: none;
 }

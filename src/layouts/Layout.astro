@@ -1,9 +1,10 @@
 ---
 import Footer from "@components/Footer.astro";
 // src/layouts/Layout.astro
+import LastPub from "@components/LastPublished.astro";
 import Head from "@components/Head.astro";
+import * as siteData from "@data/site.json";
 import "@styles/global.css";
-
 //import DevBrandColors from "@components/DevBrandColors.astro";
 
 export interface Props {
@@ -37,6 +38,7 @@ const {
 </style>
 
 <html lang="en">
+  <LastPub />
   <!-- ASCII art, dude! -->
   <!--
       _                   _           _
@@ -63,74 +65,53 @@ const {
       </main>
     </div>
     <Footer />
+
+    <!-- Inline script: only passes data to window -->
+    <script is:inline define:vars={{ brand: siteData.brand, url: siteData.url }}>
+      window.__SITE_DATA__ = { brand, url };
+    </script>
+
+    <!-- Processed script: handles imports -->
+    <script>
+      import { initPopipasta } from "@utils/popipasta";
+
+      document.addEventListener("astro:page-load", () => {
+        const { brand, url } = (window as any).__SITE_DATA__;
+        initPopipasta(brand, url);
+      });
+    </script>
   </body>
-
-  <script>
-    import { openExternalLinksInNewWindow, markMailtoLinks } from "@utils/el";
-
-    document.addEventListener("astro:page-load", () => {
-      openExternalLinksInNewWindow();
-      markMailtoLinks();
-    });
-  </script>
-
-  <script is:inline>
-    // Smooth scroll to target
-    document.addEventListener("DOMContentLoaded", function () {
-      const scrollButton = document.querySelector(".jsScrollButton");
-      const scrollTarget = document.querySelector(".jsScrollTarget");
-
-      if (scrollButton && scrollTarget) {
-        scrollButton.addEventListener("click", function (e) {
-          e.preventDefault();
-          scrollTarget.scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      } else {
-        console.log("Elements not found:", {
-          button: !!scrollButton,
-          target: !!scrollTarget,
-        });
-      }
-    });
-  </script>
-
-  <script>
-    function addLink(): void {
-      if (typeof window.getSelection === "undefined") return;
-
-      const body_element = document.getElementsByTagName("body")[0] as HTMLBodyElement;
-      const selection = window.getSelection();
-
-      if (!selection || ("" + selection).length < 30) return;
-
-      const newdiv = document.createElement("div") as HTMLDivElement;
-      newdiv.style.position = "absolute";
-      newdiv.style.left = "-99999px";
-      body_element.appendChild(newdiv);
-
-      const range = selection.getRangeAt(0);
-      newdiv.appendChild(range.cloneContents());
-
-      if (range.commonAncestorContainer.nodeName === "PRE") {
-        newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-      }
-
-      newdiv.innerHTML +=
-        "<br /><br />&#9733; Extract from JUNGLESTAR: <a href='" +
-        document.location.href +
-        "'>" +
-        document.location.href +
-        "</a><br />&#9733; 2025 &copy; Junglestar.";
-
-      selection.selectAllChildren(newdiv);
-
-      window.setTimeout((): void => {
-        body_element.removeChild(newdiv);
-      }, 200);
-    }
-
-    document.oncopy = addLink;
-  </script>
 </html>
+
+<script>
+  import { openExternalLinksInNewWindow, markMailtoLinks } from "@utils/el";
+
+  document.addEventListener("astro:page-load", () => {
+    openExternalLinksInNewWindow();
+    markMailtoLinks();
+  });
+</script>
+
+<script is:inline>
+  // Smooth scroll to target
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const scrollButton = document.querySelector(".jsScrollButton");
+  //   const scrollTarget = document.querySelector(".jsScrollTarget");
+
+  //   if (scrollButton && scrollTarget) {
+  //     scrollButton.addEventListener("click", function (e) {
+  //       e.preventDefault();
+  //       scrollTarget.scrollIntoView({
+  //         behavior: "smooth",
+  //       });
+  //     });
+  //   } else {
+  //     console.log("Elements not found:", {
+  //       button: !!scrollButton,
+  //       target: !!scrollTarget,
+  //     });
+  //   }
+  // });
+</script>
+
+```

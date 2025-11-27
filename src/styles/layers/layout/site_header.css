@@ -1,4 +1,6 @@
 /*🐸SITE HEADER*/
+/*NOT USED ATM | THIS FILE IS NOT LINKED*/
+
 .site_header {
   background-color: var(--brand);
   position: relative;
@@ -18,9 +20,8 @@
 
 .site_header small {
   display: inline-block;
-  margin-top: calc(var(--space_block) * 0.145); /* was 0.4svh */
+  margin-top: calc(var(--space_block) * 0.145);
 }
 
 .site_header .header_title {
   color: var(--brand_light);
-}

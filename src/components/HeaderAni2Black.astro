@@ -62,11 +62,11 @@ import ScrollAni from "@components/ScrollAni.astro";
   <LogoAni />
 
   <div class="slogan" id="slogan0">
-    <h1 class="brand">
+    <h1 class="">
       <slot />
     </h1>
-    <p>&nbsp;</p>
     <p>↓</p>
+
+    <slot name="on_scroll_message" />
   </div>
-  <div class="jsScrollTarget">&nbsp;</div>
 </header>

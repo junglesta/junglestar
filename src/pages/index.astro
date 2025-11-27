@@ -6,15 +6,17 @@ import Intro from "@components/Intro.astro";
 import * as repoData from "package.json";
 
 // Page metadata
-const titleA = "Junglestar ";
-const titleB = " Sustainable Web Design";
-const titleNEW = titleA + repoData.version + titleB;
+const title_start = "Junglestar ";
+const title_end = " Sustainable Web Design";
+const title = title_start + repoData.version + title_end;
 const description =
   "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
-const subtitle = "";
+// const subtitle = "";
 ---
 
-<Layout title={titleNEW} description={description}>
-  <LandingScreen />
+<Layout title={title} description={description}>
+  <LandingScreen>
+    <p slot="on_scroll_message" class="brand small_text">Welcome visitor! <br /> Keep on scrolling & discovering...</p>
+  </LandingScreen>
   <Intro />
 </Layout>

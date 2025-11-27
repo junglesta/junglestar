@@ -1,6 +1,9 @@
 /* ========================================
    FILE: src/styles/layers/utilities.css
    ======================================== */
+.small_text {
+  font-size: 85% !important;
+}
 
 .brand {
   color: var(--brand);
@@ -170,7 +173,4 @@
 
 .uppercase {
   text-transform: uppercase;
-}
-.maxcontrast_white {
-  color: white;
 }

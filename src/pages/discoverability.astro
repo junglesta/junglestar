@@ -2,7 +2,7 @@
 //pages/discoverability.astro
 import Layout from "@layouts/Layout.astro";
 import Gmap from "@components/Gmap.astro";
-import Header from "@components/HeaderAni2Black.astro";
+import LandingScreen from "@components/HeaderAni2Black.astro";
 
 // Page metadata
 const pageTitle = "Junglestar | Pricing";
@@ -43,8 +43,9 @@ const pageSubtitle = "WHERE ARE YOU LOCATED?";
 </style>
 
 <Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
-  <div slot="landing_screen">
-    <Header class='header_astro"'>{pageSubtitle}</Header>
-  </div>
+  <LandingScreen>
+    {pageSubtitle}
+    <p class="brand small_text">'Can you send your location? <br />Are we still at 'Follow me i'll show you?!'</p>
+  </LandingScreen>
   <Gmap />
 </Layout>

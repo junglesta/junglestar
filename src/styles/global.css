@@ -11,7 +11,7 @@
 
 @import "./layers/layout/layout_semantics.css" layer(layout);
 @import "./layers/layout/layout_classes.css" layer(layout);
-@import "./layers/layout/site_header.css" layer(layout);
+/*@import "./layers/layout/site_header.css" layer(layout);*/
 @import "./layers/layout/site_nav.css" layer(layout);
 @import "./layers/layout/site_title.css" layer(layout);
 @import "./layers/layout/wrap.css" layer(layout);
@@ -37,6 +37,7 @@
 @import "./layers/compo/typography.css" layer(components);
 
 @import "./layers/utilities.css" layer(utilities);
+
 @import "./layers/print.css" layer(print);
 
 /* 🐸 DEFINE LAYER ORDER - PRINT IS LAST FOR OVERRIDE PRIORITY */

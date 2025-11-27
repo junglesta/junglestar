@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import { getCollection, render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
-import Header from "@components/HeaderAni2OffWhite.astro";
+import LandingScreen from "@components/HeaderAni2OffWhite.astro";
 
 const posts = await getCollection("designConcepts", ({ data }) => {
   return !import.meta.env.PROD || data.draft !== true;
@@ -25,8 +25,8 @@ const renderedPosts = await Promise.all(
 );
 
 // Page metadata
-const titlePAGE = "Design, Sustainabilty!? Because Why?";
-const titleTAB = "Junglestar | Design: Because Why";
+const pageTitle = "Design, Sustainabilty!? Because Why?";
+const pageSubtitle = "Design, Sustainabilty!? Because Why?";
 const description =
   "Sustainable Web Design to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
 ---
@@ -37,10 +37,11 @@ const description =
   }
 </style>
 
-<Layout title={titleTAB} description={description} pageSubtitle={titlePAGE} bodyClass="design">
-  <div slot="landing_screen">
-    <Header>{titlePAGE}</Header>
-  </div>
+<Layout title={pageTitle} description={description} pageSubtitle={pageSubtitle} bodyClass="design">
+  <LandingScreen>
+    {pageSubtitle}
+    <p class="brand small_text">Find out what sustainable actually means for a small entrepreneur.</p>
+  </LandingScreen>
   <div class="wrap">
     <h2 class="center"> Design does deliver!</h2>
 

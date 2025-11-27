@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import { getCollection, render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
-import Header from "@components/HeaderAni2Black.astro";
+import LandingScreen from "@components/HeaderAni2Black.astro";
 import SocialMediaManagement from "@components/SocialMediaManagement.astro";
 
 const posts = await getCollection("productionConcepts", ({ data }) => {
@@ -27,9 +27,9 @@ const renderedPosts = await Promise.all(
 
 // Page metadata
 const pageTitle = "Junglestar | Content Production";
+const pageSubtitle = "Brand's Narrative? What's that...";
 const pageDescription =
   "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
-const pageSubtitle = "Brand's Narrative? What's that...";
 ---
 
 <style>
@@ -39,9 +39,10 @@ const pageSubtitle = "Brand's Narrative? What's that...";
 </style>
 
 <Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
-  <div slot="landing_screen">
-    <Header>{pageSubtitle}</Header>
-  </div>
+  <LandingScreen>
+    {pageSubtitle}
+    <p class="brand small_text">What? Why do I need that?<br /> You're on the way to learn more</p>
+  </LandingScreen>
 
   <SocialMediaManagement />
 

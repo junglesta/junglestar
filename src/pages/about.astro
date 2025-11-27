@@ -10,6 +10,7 @@ import projectsData from "@data/works.json";
 // Page metadata
 const pageTitle = "Junglestar | About us";
 const pageSubtitle = "Expertise you can trust";
+const pageRevealOnScroll = "OK! Now see for yourself what’s possible. Get inspired.";
 const pageDescription = "SHOWCASE: We helped these small enterprises with websites, apps, and marketing communication.";
 
 // Import all icons dynamically
@@ -27,7 +28,7 @@ const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Da
 <Layout title={pageTitle} description={pageDescription}>
   <LandingScreen>
     {pageSubtitle}
-    <p class="brand small_text">OK! Now see for yourself what’s possible. Get inspired.</p>
+    <p class="brand small_text">{pageRevealOnScroll}</p>
   </LandingScreen>
   <div class="wrap vpad">
     <h1 class="center">Live Projects Showcase</h1>

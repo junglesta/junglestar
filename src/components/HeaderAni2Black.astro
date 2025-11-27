@@ -35,6 +35,10 @@ import ScrollAni from "@components/ScrollAni.astro";
     text-wrap: pretty;
     text-align: center;
     font-weight: 400;
+    h1 {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
   }
   p {
     margin-bottom: calc(var(--space_block) / 8);
@@ -65,7 +69,6 @@ import ScrollAni from "@components/ScrollAni.astro";
     <h1 class="">
       <slot />
     </h1>
-    <p>↓</p>
 
     <slot name="on_scroll_message" />
   </div>

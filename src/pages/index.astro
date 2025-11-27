@@ -1,7 +1,7 @@
 ---
 // src/pages/index.astro
 import Layout from "@layouts/Layout.astro";
-import LandingScreen from "@components/Header.astro";
+import LandingScreen from "@components/HeaderAni2Black.astro";
 import Intro from "@components/Intro.astro";
 import * as repoData from "package.json";
 
@@ -9,14 +9,41 @@ import * as repoData from "package.json";
 const title_start = "Junglestar ";
 const title_end = " Sustainable Web Design";
 const title = title_start + repoData.version + title_end;
+const pageSubtitle_line1 = "Your business, simplified.";
+const pageSubtitle_line2 = "Your life, upgraded. ";
+const pageSubtitle_line3 = "Trade grunt-work for free time!";
+const onScroll_line1 = "Welcome visitor!";
+const onScroll_line2 = "Keep on scrolling & discovering";
+const onScroll_line3 = "while we set the stage";
 const description =
   "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
 // const subtitle = "";
 ---
 
+<style>
+  .overtitle {
+    font-size: 1.33rem;
+    padding-bottom: 5px;
+  }
+  .overtitle_wrap {
+    padding-bottom: calc(var(--space_block) / 2);
+  }
+</style>
 <Layout title={title} description={description}>
   <LandingScreen>
-    <p slot="on_scroll_message" class="brand small_text">Welcome visitor! <br /> Keep on scrolling & discovering...</p>
+    <div class="overtitle_wrap">
+      <div class="overtitle">{pageSubtitle_line1}</div>
+      <div class="overtitle">{pageSubtitle_line2}</div>
+      <div class="overtitle">{pageSubtitle_line3}</div>
+    </div>
+    {title_start}
+
+    <p class="brand small_text">
+      {onScroll_line1.toUpperCase()}
+      <br />
+      {onScroll_line2}
+    </p>
   </LandingScreen>
+
   <Intro />
 </Layout>

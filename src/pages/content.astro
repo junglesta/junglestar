@@ -27,7 +27,8 @@ const renderedPosts = await Promise.all(
 
 // Page metadata
 const pageTitle = "Junglestar | Content Production";
-const pageSubtitle = "Brand's Narrative? What's that...";
+const pageSubtitle = "Brand Narrative";
+const pageRevealOnScroll = "What's that? Why do I need that? Scroll for answers";
 const pageDescription =
   "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
 ---
@@ -41,7 +42,7 @@ const pageDescription =
 <Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
   <LandingScreen>
     {pageSubtitle}
-    <p class="brand small_text">What? Why do I need that?<br /> You're on the way to learn more</p>
+    <p class="brand small_text">{pageRevealOnScroll}</p>
   </LandingScreen>
 
   <SocialMediaManagement />

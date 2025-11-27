@@ -59,31 +59,6 @@ const currentYear = new Date().getFullYear();
     padding-top: calc(var(--space_block) / 2.5);
   }
 
-  details summary {
-    user-select: none;
-    list-style: none;
-    cursor: pointer;
-    padding-bottom: var(--space_block);
-  }
-
-  details summary::-webkit-details-marker {
-    display: none;
-  }
-
-  details summary::after {
-    content: " +";
-    margin-left: 0.5em;
-    font-size: 130%;
-  }
-
-  details[open] summary::after {
-    content: " −";
-  }
-
-  details {
-    padding-bottom: calc(var(--space_block) / 2);
-  }
-
   .brand_background {
     background-color: var(--brand);
   }

@@ -19,6 +19,6 @@ A clear strategy. The right tools. Automated where possible, personal where it m
 
 <small><em>Why this matters</small></em>
 
-- \*_Consistency_: Your audience sees you regularly, not randomly.
+- _Consistency_: Your audience sees you regularly, not randomly.
 - _Time back_: You focus on your business, the posts go out on schedule.
 - _Smarter reach_: We know which tools actually work and which are a waste of money.

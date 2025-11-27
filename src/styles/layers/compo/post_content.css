@@ -18,14 +18,14 @@
   ol {
     margin-top: -0.751rem;
     margin-bottom: 0.75rem;
-    margin-left: calc(var(--space_inline) * 2);
+    margin-left: 0;
 
     padding-bottom: var(--space_block);
     padding-left: var(--space_inline);
   }
 }
 
-@media (min-width: 601px) {
+/*@media (min-width: 601px) {
   .post_content ul {
     margin-left: calc(var(--space_inline) * 1);
   }
@@ -34,4 +34,4 @@
   .post_content ul {
     margin-left: calc(var(--space_inline) * 0.75);
   }
-}
+}*/

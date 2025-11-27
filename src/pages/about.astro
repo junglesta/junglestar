@@ -31,17 +31,26 @@ const projects = projectsData.sort((a, b) => new Date(b.date).getTime() - new Da
     <p class="brand small_text">{pageRevealOnScroll}</p>
   </LandingScreen>
   <div class="wrap vpad">
+    <details class="center">
+      <summary>
+        <span class="center"><strong>Who are we?</strong></span>
+      </summary>
+      <p class="center wrap justified pretty">
+        In this LLM-era do you really want to see <strong>our faces</strong> and <strong>job titles</strong>? Does it
+        even matter? Do you hire a face or an expertise? Ok, here is our c.v. for all of you Mister Spreadsheet! out
+        there.
+        <br />
+        <br />
+        We think <strong>Actions & Productions</strong> speak louder than lingo & memes concoctions. No algo-speak, just
+        juicy craftcakes.
+      </p>
+    </details>
+
     <h1 class="center">Live Projects Showcase</h1>
-    <p class="center"><strong>Who are we?</strong></p>
-    <p class="center wrap justified pretty">
-      In this LLM-era do you really want to see <strong>our faces</strong> and <strong>job titles</strong>? Does it even
-      matter? Do you hire a face or an expertise? Ok, here is our c.v. for all of you Mister Spreadsheet! out there.
-      <br />
-      <br />
-      We think <strong>Actions & Productions</strong> speak louder than lingo & memes concoctions. No algo-speak, just juicy
-      craftcakes. <br />
-      <br />Check them out:
-    </p>
+
+    <br />
+    <p class="center">Check them out! Please scroll down.</p>
+
     <div class="grid_projects">
       {
         projects.map(async (project) => {

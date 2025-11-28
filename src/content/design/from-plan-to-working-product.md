@@ -10,6 +10,8 @@ tags:
   - service
 ---
 
+<details><summary><span class="like_link_underline">Read on, expand this </span></summary>
+
 <small><em>You know what you need, but who to contact?</small>
 
 Finding a designer. Then a developer. Then someone for hosting. Then realizing they don't talk to each other. Then fixing what breaks. Then starting over.

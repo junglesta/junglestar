@@ -14,7 +14,11 @@ details summary::after {
   margin-left: 0.5em;
   font-size: 130%;
 }
-
+details,
+details[open] {
+  width: 100%;
+  text-align: left;
+}
 details[open] summary::after {
   content: " −";
 }

@@ -6,8 +6,8 @@
   border-bottom: 1px solid white;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: var(--space_inline);
+  justify-content: stretch;
+  gap: 0;
 }
 
 .post:last-child {
@@ -18,9 +18,9 @@
   margin-top: calc(var(--space_block) * 2);
 }
 
-.post_header {
+/*.post_header {
   margin-bottom: calc(var(--space_block) * 1);
-}
+}*/
 
 .post_title {
   color: var(--brand);

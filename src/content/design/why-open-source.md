@@ -12,6 +12,8 @@ tags:
   - strategy
 ---
 
+<details><summary><span class="like_link_underline">Read on, expand this </span></summary>
+
 <small><em>The Problem</em></small>
 
 Proprietary software locks you in. Rising subscription costs, **vendor dependencies**, and **zero control** over your **critical tools**.

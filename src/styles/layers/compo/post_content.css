@@ -1,8 +1,14 @@
 /*🐸post_content STUFF*/
 
 .post_content {
-  max-width: 60ch;
-  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  > * {
+    max-width: 60ch;
+    margin-inline: auto;
+  }
   a {
     color: var(--brand);
     text-decoration: underline;
@@ -23,6 +29,9 @@
     padding-bottom: var(--space_block);
     padding-left: var(--space_inline);
   }
+}
+
+.post_content:has(summary) {
 }
 
 /*@media (min-width: 601px) {

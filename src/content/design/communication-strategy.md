@@ -1,7 +1,7 @@
 ---
 sort_order: 2
 title: "Communication Strategy"
-subtitle: "Developing your brand voice ain't easy."
+subtitle: "Developing your brand voice ain't easy. Takes clarity & consistency to start with ..."
 image:
   src: "guidance.svg"
   alt: "Overwhelmed?"
@@ -9,6 +9,8 @@ tags:
   - service
   - guidance
 ---
+
+<details><summary><span class="like_link_underline">Read on, expand this </span></summary>
 
 <small><em>You're posting. Nobody's listening.</em></small>
 
@@ -22,7 +24,7 @@ We build one clear voice across all your channels. Your audience knows who you a
 
 - **Clarity**: One message, one voice. No confusion.
 - **Consistency**: Same energy across every platform—people recognize you instantly.
-- **Growth**: Stop shouting into the void. Build followers who actually stick around.
+- **Echo**: Stop shouting into the void. Build followers who actually talk about you.
 
 **Ready to be heard?**
 

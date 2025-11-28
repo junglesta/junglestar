@@ -10,6 +10,8 @@ tags:
   - organised approach
 ---
 
+<details><summary><span class="like_link_underline">Read on, expand this </span></summary>
+
 <small><em>You know you should be posting. You're not.</small></em>
 
 Social media, blog updates, campaigns — it all takes time you don't have. So it slips. Weeks pass. Your audience forgets you exist.

@@ -10,6 +10,8 @@ tags:
   - service
 ---
 
+<details><summary><span class="like_link_underline">Read on, expand this </span></summary>
+
 Your customers are on their phones. Your site better work there.
 
 <small><em>The reality</small></em>

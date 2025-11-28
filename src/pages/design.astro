@@ -27,7 +27,9 @@ const renderedPosts = await Promise.all(
 // Page metadata
 const pageTitle = "Design, Sustainabilty!? Because Why?";
 const pageSubtitle = "Design, Sustainabilty!? Because Why?";
-const pageRevealOnScroll = "Find out what sustainable actually means for us small entrepreneurs.";
+const pageRevealOnScroll1 = "Ever feel prisoner of your own processes?";
+const pageRevealOnScroll2 = "Those ones necessary to run your biz?";
+const pageRevealOnScroll3 = "Find out what sustainable actually means for us small entrepreneurs.";
 const description =
   "Sustainable Web Design to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
 ---
@@ -41,10 +43,16 @@ const description =
 <Layout title={pageTitle} description={description} pageSubtitle={pageSubtitle} bodyClass="design">
   <LandingScreen>
     {pageSubtitle}
-    <p class="brand small_text">{pageRevealOnScroll}</p>
+    <p class="brand small_text">
+      {pageRevealOnScroll1}
+      <br /><br />
+      {pageRevealOnScroll2}
+      <br /><br />
+      {pageRevealOnScroll3}
+    </p>
   </LandingScreen>
   <div class="wrap">
-    <h2 class="center"> Design does deliver!</h2>
+    <h2 class="center"> Thinking communication design does deliver!</h2>
 
     <!-- Table of Contents -->
     <div class="wrap">
@@ -86,10 +94,9 @@ const description =
                   ))}
                 </div>
               )}
-
-              <div class="post_content">
-                <post.Content />
-              </div>
+            </div>
+            <div class="post_content">
+              <post.Content />
             </div>
           </article>
         ))

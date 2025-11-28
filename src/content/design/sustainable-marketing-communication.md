@@ -10,6 +10,8 @@ tags:
   - guidance
 ---
 
+<details><summary><span class="like_link_underline">Read on, expand this </span></summary>
+
 <small><em>The Problem</em></small>
 
 Entrepreneurs waste time on repetitive tasks (like social content for example) instead of focusing on growth or improvements.

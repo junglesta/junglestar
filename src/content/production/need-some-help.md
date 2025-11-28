@@ -12,6 +12,8 @@ tags:
   - help
 ---
 
+<details><summary><span class="like_link_underline">Read on, expand this </span></summary>
+
 The creative process can be overwhelming. You know something's possible, but you can't quite see the path.
 
 **That's where we come in.**<br/>

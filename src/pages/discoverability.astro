@@ -7,7 +7,11 @@ import LandingScreen from "@components/HeaderAni2Black.astro";
 // Page metadata
 const pageTitle = "Junglestar | Pricing";
 const pageSubtitle = "YOU'RE LOCATED where?";
-const pageRevealOnScroll = "'Can you send me your location? Or are we still at 'Follow me, I'll show you?!'";
+const pageRevealOnScroll1 = "Do you get msg like:'";
+const pageRevealOnScroll2 = "''Can you send me your location, pls?''";
+const pageRevealOnScroll3 = "How you deal with it? Traditionally it was:";
+const pageRevealOnScroll4 = "''Follow me, I'll show you!''";
+const pageRevealOnScroll5 = "What worked doesn't anymore, now what?";
 const pageDescription =
   "Flexible one-stop web agency. We design, code & deploy — from webstores to web apps. Packed solutions & custom designs for great user experiences.";
 ---
@@ -46,7 +50,17 @@ const pageDescription =
 <Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
   <LandingScreen>
     {pageSubtitle}
-    <p class="brand small_text">{pageRevealOnScroll}</p>
+    <p class="brand small_text">
+      {pageRevealOnScroll1}
+      <br /><br />
+      {pageRevealOnScroll2}
+      <br /><br />
+      {pageRevealOnScroll3}
+      <br /><br />
+      {pageRevealOnScroll4}
+      <br /><br />
+      {pageRevealOnScroll5}
+    </p>
   </LandingScreen>
   <Gmap />
 </Layout>

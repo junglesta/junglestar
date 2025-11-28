@@ -11,6 +11,8 @@ tags:
   - content-strategy
 ---
 
+<details><summary><span class="like_link_underline">Read on, expand this </span></summary>
+
 <small><em>You know what you sell. Explaining it is harder.</small></em>
 
 What makes you different? What words will actually land with your audience? Which images stop the scroll?

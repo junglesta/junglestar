@@ -10,6 +10,8 @@ tags:
   - broadcasting-flow
 ---
 
+<details><summary><span class="like_link_underline">Read on, expand this </span></summary>
+
 <small><em>Posting manually every day? That doesn't scale.</small></em>
 
 You need a steady flow of content—news, promos, offers—without it eating your whole week.

@@ -23,6 +23,7 @@
 @import "./layers/compo/details.css" layer(components);
 @import "./layers/compo/grids.css" layer(components);
 @import "./layers/compo/headings.css" layer(components);
+@import "./layers/compo/header.css" layer(components);
 @import "./layers/compo/intro.css" layer(components);
 @import "./layers/compo/links.css" layer(components);
 @import "./layers/compo/mean.css" layer(components);

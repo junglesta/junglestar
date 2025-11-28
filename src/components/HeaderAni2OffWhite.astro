@@ -4,54 +4,6 @@ import LogoAni from "@components/LogoAni.astro";
 import ScrollAni from "@components/ScrollAni.astro";
 ---
 
-<style>
-  .brand {
-    font-weight: 300 !important;
-    font-size: 200%;
-    line-height: 1.25;
-    padding-block: 0;
-  }
-  .cover {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: var(--space_block) var(--space_inline);
-    min-height: 100svh;
-    height: 100svh;
-    background-size: cover;
-    background-color: var(--brand);
-    color: var(--white);
-  }
-  .first_click_landing {
-    position: absolute;
-    bottom: 0;
-  }
-  .slogan {
-    padding-top: calc(var(--space_block) * 2);
-    padding-bottom: calc(var(--space_block) / 4);
-    padding-inline: calc(var(--space_inline) * 1);
-    text-wrap: pretty;
-    text-align: center;
-    font-weight: 400;
-    h1 {
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
-  }
-  p {
-    margin-bottom: calc(var(--space_block) / 8);
-  }
-  small {
-    padding-top: calc(var(--space_block) / 4);
-  }
-
-  .jsScrollButton,
-  .jsScrollButton:hover {
-    cursor: pointer;
-  }
-</style>
 <ScrollAni
   targetClass="header_astro"
   lumaInitial={0.5286}
@@ -59,17 +11,16 @@ import ScrollAni from "@components/ScrollAni.astro";
   chromaInitial={0.1735}
   chromaFinal={0.01}
   hue="255deg"
-  animationRange="0vh 100vh"
+  animationRange="0dvh 200dvh"
 />
 
 <header slot="landing_screen" class="cover jsScrollButton header_astro _HeaderAni2OffWhite">
   <LogoAni />
 
   <div class="slogan" id="slogan0">
-    <h1 class="">
+    <h1 class="space_between">
       <slot />
+      <slot name="on_scroll_message" />
     </h1>
-
-    <slot name="on_scroll_message" />
   </div>
 </header>

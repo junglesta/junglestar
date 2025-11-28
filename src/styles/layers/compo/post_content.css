@@ -31,9 +31,6 @@
   }
 }
 
-.post_content:has(summary) {
-}
-
 /*@media (min-width: 601px) {
   .post_content ul {
     margin-left: calc(var(--space_inline) * 1);

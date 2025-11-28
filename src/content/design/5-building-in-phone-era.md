@@ -1,5 +1,5 @@
 ---
-sort_order: 3
+sort_order: 5
 title: Mobile-First. Obviously.
 subtitle: Simple, Clean, Fast, Phone-Friendly and Easy-to-Use.
 image:

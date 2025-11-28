@@ -8,6 +8,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  h1 {
+    max-width: 90svw;
+  }
 }
 
 .mean_icon {

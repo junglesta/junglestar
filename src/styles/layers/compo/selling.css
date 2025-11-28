@@ -4,12 +4,6 @@
 
 .selling_points {
   user-select: none;
-  font-size: calc(var(--space_inline) * 0.545); /* was 1.5svh */
-  margin-bottom: var(--space_block);
-  max-width: 40svh; /* Keep as viewport based */
-  margin-left: auto;
-  margin-right: auto;
-
   font-size: 1rem;
   margin-bottom: calc(var(--space_block) / 2);
   max-width: 400px;
@@ -25,5 +19,31 @@
     content: "✓";
     color: limegreen;
     font-weight: bold;
+  }
+}
+
+.selling_gmap {
+  margin-bottom: var(--space_block);
+  font-size: 1.1rem;
+  max-width: 80svh;
+  margin-inline: auto;
+  ul {
+    margin-left: 0;
+    margin-right: calc(var(--space_inline) * 0.15);
+  }
+  li {
+    /*padding-left: calc(var(--space_inline) / 1.5);*/
+    padding-left: calc(var(--space_inline) * 0.25);
+  }
+  li::marker {
+    content: "✓";
+    color: limegreen;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 600px) {
+  .selling_gmap {
+    margin-left: 15dvw;
   }
 }

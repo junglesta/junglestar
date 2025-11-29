@@ -35,8 +35,9 @@
   padding-block: calc(var(--space_block) * 4);
 }
 .mean_title.mean_title--second {
-  padding-block: calc(var(--space_block) * 4);
-  margin-top: 2rem;
+  padding-top: calc(var(--space_block) * 4);
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .mean_title.mean_title--first h1,
 .mean_title.mean_title--first h2,

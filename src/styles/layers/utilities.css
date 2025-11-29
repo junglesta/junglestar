@@ -2,6 +2,10 @@
    FILE: src/styles/layers/utilities.css
    ======================================== */
 
+.space_block {
+  padding-block: calc(var(--space_block) * 3);
+}
+
 .space_between {
   display: flex;
   flex-direction: column;
@@ -100,13 +104,7 @@
   padding-top: calc(var(--space_block) * 3); /* was 11.5svh */
 }
 
-/*🐸Layout utilities */
-
-.important_banner {
-  background-color: var(--brandT25);
-  padding-block: var(--space_block);
-}
-
+/*🐸 Layout utilities */
 .full_height {
   min-height: 100dvh;
 }

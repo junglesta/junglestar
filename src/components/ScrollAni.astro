@@ -8,36 +8,46 @@ interface Props {
   chromaFinal: number;
   hue: string;
   animationRange?: string;
+  id?: string;
 }
 
-const { targetClass, lumaInitial, lumaFinal, chromaInitial, chromaFinal, hue, animationRange = "0 100%" } = Astro.props;
+const {
+  targetClass,
+  lumaInitial,
+  lumaFinal,
+  chromaInitial,
+  chromaFinal,
+  hue,
+  animationRange = "0 100%",
+  id = targetClass.replace(/[^a-zA-Z0-9]/g, "_"),
+} = Astro.props;
 ---
 
 <style
   is:global
   set:html={`
-  @property --luma {
+  @property --luma-${id} {
     syntax: "<number>";
     initial-value: ${lumaInitial};
     inherits: false;
   }
 
-  @property --chroma {
+  @property --chroma-${id} {
     syntax: "<number>";
     initial-value: ${chromaInitial};
     inherits: false;
   }
 
-  @keyframes darken {
+  @keyframes darken-${id} {
     to {
-      --luma: ${lumaFinal};
-      --chroma: ${chromaFinal};
+      --luma-${id}: ${lumaFinal};
+      --chroma-${id}: ${chromaFinal};
     }
   }
 
   .${targetClass} {
-    background: oklch(var(--luma) var(--chroma) ${hue});
-    animation: darken linear;
+    background: oklch(var(--luma-${id}) var(--chroma-${id}) ${hue});
+    animation: darken-${id} linear;
     animation-timeline: scroll();
     animation-range: ${animationRange};
   }

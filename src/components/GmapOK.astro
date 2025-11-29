@@ -1,6 +1,5 @@
 ---
 // @component/Gmap.astro
-import ScrollAni from "@components/ScrollAni.astro";
 ---
 
 <style>
@@ -8,16 +7,6 @@ import ScrollAni from "@components/ScrollAni.astro";
     --space_inline: calc(1.25em * 2);
   }
 </style>
-
-<ScrollAni
-  targetClass="mean_title--second"
-  lumaInitial={1}
-  chromaInitial={0.01}
-  hue="255"
-  lumaFinal={1}
-  chromaFinal={0.15}
-  animationRange="66% 100%"
-/>
 
 <section class="gmap">
   <header>
@@ -90,11 +79,12 @@ import ScrollAni from "@components/ScrollAni.astro";
             <li>Do it all yourself or give access to others. No password sharing needed!</li>
           </ul>
         </div>
-      </div>
-      <div class="button_row center">
-        <a href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's Google Map package">
-          <span class="button CTAbutton center">Want the details? </span>
-        </a>
+
+        <div class="button_row center">
+          <a href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's Google Map package">
+            <span class="button CTAbutton center">Want the details? </span>
+          </a>
+        </div>
       </div>
     </div>
   </header>

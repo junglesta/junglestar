@@ -15,7 +15,7 @@ const pageRevealOnScroll1 = "Brand Narrative? What's that?";
 const pageRevealOnScroll2 = "Why do I need that?";
 const pageRevealOnScroll3 = "Keep on scrolling... for answers.";
 const pageDescription =
-  "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
+  "What people remember you for. Brand narrative is that discourse. We help small enterprises with websites, apps, and marketing communication.";
 ---
 
 <style>
@@ -36,9 +36,11 @@ const pageDescription =
 
   <SocialMediaManagement />
 
-  <TableOfContents posts={renderedPosts} />
-
-  <PostsGrid posts={renderedPosts} />
+  <div class="wrap">
+    <h2 class="center">What people remember you for. Brand narrative is that. The whole thing.</h2>
+    <TableOfContents posts={renderedPosts} />
+    <PostsGrid posts={renderedPosts} />
+  </div>
 
   <CTABanner subject="Send me more infos about Junglestar's Content Production" />
 </Layout>

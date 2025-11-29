@@ -1,0 +1,24 @@
+---
+interface Props {
+  email?: string;
+  subject?: string;
+  text?: string;
+}
+
+const {
+  email = "info@junglestar.org",
+  subject = "Send me more infos about Junglestar",
+  text = "Let's start talking!",
+} = Astro.props;
+---
+
+<style>
+  .CTAbanner {
+    width: 100%;
+  }
+</style>
+<div class="flex flex_justify_center flex_align_center CTAbanner">
+  <a class="button CTAbutton" href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}>
+    {text}
+  </a>
+</div>

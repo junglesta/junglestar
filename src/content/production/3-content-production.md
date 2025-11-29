@@ -1,6 +1,7 @@
 ---
-title: Content production
-subtitle: From establishing a meaningful strategy...
+sort_order: 3
+title: Content strategy
+subtitle: From choosing the right language and tone to establishing a meaningful strategy...
 image:
   src: "pacman.svg"
   alt: "Overwhelmed?"

@@ -1,6 +1,18 @@
 ---
 //SOCIAL MEDIA MANAGEMENT
+import ScrollAni from "@components/ScrollAni.astro";
+import CTABanner from "@components/CTABanner.astro";
 ---
+
+<ScrollAni
+  targetClass="mean_title--second"
+  lumaInitial={1}
+  chromaInitial={0.01}
+  hue="255"
+  lumaFinal={1}
+  chromaFinal={0.15}
+  animationRange="66% 100%"
+/>
 
 <div class="offer_content light_bg page_break social_media_management">
   <div class="mean_title mean_title--first">
@@ -59,25 +71,24 @@
             stroke-width="0.5"></path>
         </svg>
       </div>
-      <h2 class="h3 center"> We build your image through social engagement! </h2>
-      <h3 class="center">
-        Instagram, YouTube, Facebook, LinkedIn, GoogleMap...
-        <small>
-          <br />First we strategize goals & audience together, then...
-          <br />We'll target and engage <strong> real active users. </strong>
-          <br />We'll build your brand,
-          <br />authentically growing your audience.
-          <br />We'll direct traffic to your site/shop
-          <br />leveraging the smartest tools for thought and platform dynamics.</small
-        >
-      </h3>
-      <a
-        class="button CTAbutton center"
-        href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's Social Media Management package"
-      >
-        Let's start talking!
-      </a>
 
+      <div class="change_background_color_on_scroll flex-wrap-reverse">
+        <h2 class="h3 center"> We build your image through social engagement! </h2>
+        <h3 class="center">
+          Instagram, YouTube, Facebook, LinkedIn, GoogleMap...
+          <small>
+            <br />First we strategize goals & audience together, then...
+            <br />We'll target and engage <strong> real active users. </strong>
+            <br />We'll build your brand,
+            <br />authentically growing your audience.
+            <br />We'll direct traffic to your site/shop
+            <br />leveraging the smartest tools for thought and platform dynamics.</small
+          >
+        </h3>
+      </div>
+      <div class="space_block">
+        <CTABanner subject="Send me more infos about Junglestar's Social Media Management package" />
+      </div>
       <div class="print_only">
         <div class="starting_at center print_footer">
           <p>Starting at 290 Euro</p>

@@ -14,7 +14,7 @@
 
 .grid_offer {
   display: grid;
-  margin: 5%;
+  padding: 5%;
   grid-template-columns: 1fr;
   gap: var(--space_block) var(--space_inline);
 }

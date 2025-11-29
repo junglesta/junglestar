@@ -1,5 +1,6 @@
 ---
-title: Content management
+sort_order: 2
+title: Social Media Management
 subtitle: Delegate, so you can focus on your business
 image:
   src: "binocular.svg"
@@ -14,11 +15,11 @@ tags:
 
 <small><em>You know you should be posting. You're not.</small></em>
 
-Social media, blog updates, campaigns — it all takes time you don't have. So it slips. Weeks pass. Your audience forgets you exist.
+Social media, blog updates, campaigns — it all takes time we don't have. So it slips. Weeks pass. Your audience forgets you exist.
 
 <small><em>We handle it.</small></em>
 
-We manage your content calendar, keep things moving on schedule, and make sure your audience hears from you regularly.
+We manage your content calendar, keep things moving on schedule, and make sure your audience hears from you regularly. Your social channels keep moving without you babysitting them.
 
 <small><em>Why this matters</small></em>
 

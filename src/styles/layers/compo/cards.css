@@ -27,7 +27,7 @@
   display: block;
   width: 100%;
   cursor: pointer;
-  background-color: var(--whiteT25);
+  background-color: var(--whiteT50);
   border: 1px solid var(--brand);
   border-radius: var(--radius);
 }
@@ -48,6 +48,7 @@
 .card:focus,
 .card:hover {
   box-shadow: var(--card_shadow_hover);
+  background-color: var(--white);
 }
 
 .card:active {

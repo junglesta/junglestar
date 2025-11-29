@@ -1,30 +1,13 @@
 ---
-import { Image } from "astro:assets";
-import { getCollection, render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/HeaderAni2OffWhite.astro";
+import TableOfContents from "@components/TableOfContents.astro";
+import PostsGrid from "@components/PostsGrid.astro";
+import CTABanner from "@components/CTABanner.astro";
+import { getRenderedPosts } from "@utils/getPosts";
 
-const posts = await getCollection("designConcepts", ({ data }) => {
-  return !import.meta.env.PROD || data.draft !== true;
-});
-// Sort with fallback for undefined sort_order
-posts.sort((a, b) => {
-  const orderA = a.data.sort_order ?? 999; // Default to 999 if undefined
-  const orderB = b.data.sort_order ?? 999;
-  return orderA - orderB;
-});
-// Render all posts content
-const renderedPosts = await Promise.all(
-  posts.map(async (post) => {
-    const { Content } = await render(post);
-    return {
-      ...post,
-      Content,
-    };
-  }),
-);
+const renderedPosts = await getRenderedPosts("designConcepts");
 
-// Page metadata
 const pageTitle = "Design, Sustainabilty!? Because Why?";
 const pageSubtitle = "Design, Sustainabilty!? Because Why?";
 const pageRevealOnScroll1 = "Ever feel prisoner of your own processes?";
@@ -44,69 +27,17 @@ const description =
   <LandingScreen>
     {pageSubtitle}
     <p class="brand small_text">
-      {pageRevealOnScroll1}
-      <br /><br />
-      {pageRevealOnScroll2}
-      <br /><br />
+      {pageRevealOnScroll1}<br /><br />
+      {pageRevealOnScroll2}<br /><br />
       {pageRevealOnScroll3}
     </p>
   </LandingScreen>
+
   <div class="wrap">
-    <h2 class="center"> Thinking communication design does deliver!</h2>
-
-    <!-- Table of Contents -->
-    <div class="wrap">
-      <div class="toc max_width_60ch">
-        <h4>Table of Contents</h4>
-        <ul>
-          {
-            renderedPosts.map((post) => (
-              <li>
-                <a href={`#${post.id}`}>
-                  <span>{post.data.title}</span>
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-    </div>
-
-    <!-- Posts Content -->
-    <div class="wrap posts_container">
-      {
-        renderedPosts.map((post) => (
-          <article class="post" id={post.id}>
-            {post.data.image && (
-              <div class="post_image">
-                <Image src={post.data.image.src} alt={post.data.image.alt} />
-              </div>
-            )}
-
-            <div class="post_header">
-              <h3 class="post_title">{post.data.title}</h3>
-              {post.data.subtitle && <p class="post_subtitle">{post.data.subtitle}</p>}
-
-              {post.data.tags && post.data.tags.length > 0 && (
-                <div class="post_tags">
-                  {post.data.tags.map((tag) => (
-                    <span class="tag">{tag}</span>
-                  ))}
-                </div>
-              )}
-            </div>
-            <div class="post_content">
-              <post.Content />
-            </div>
-          </article>
-        ))
-      }
-    </div>
+    <h2 class="center">Thinking communication design does deliver!</h2>
+    <TableOfContents posts={renderedPosts} />
+    <PostsGrid posts={renderedPosts} />
   </div>
 
-  <div class="flex flex_justify_center flex_align_center important_banner">
-    <a class="button CTAbutton" href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's Design">
-      Let's start talking!
-    </a>
-  </div>
+  <CTABanner subject="Send me more infos about Junglestar's Design" />
 </Layout>

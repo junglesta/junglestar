@@ -1,0 +1,27 @@
+---
+import type { RenderedPost } from "@utils/getPosts";
+
+interface Props {
+  posts: RenderedPost<"designConcepts" | "productionConcepts">[];
+  title?: string;
+}
+
+const { posts, title = "Table of Contents" } = Astro.props;
+---
+
+<div class="wrap">
+  <div class="toc max_width_60ch">
+    <h4>{title}</h4>
+    <ul>
+      {
+        posts.map((post) => (
+          <li>
+            <a href={`#${post.id}`}>
+              <span>{post.data.title}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

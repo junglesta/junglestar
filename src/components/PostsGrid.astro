@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+import type { RenderedPost } from "@utils/getPosts";
+
+interface Props {
+  posts: RenderedPost<"designConcepts" | "productionConcepts">[];
+}
+
+const { posts } = Astro.props;
+---
+
+<div class="wrap posts_container">
+  {
+    posts.map((post) => (
+      <article class="post" id={post.id}>
+        {post.data.image && (
+          <div class="post_image">
+            <Image src={post.data.image.src} alt={post.data.image.alt} />
+          </div>
+        )}
+
+        <div class="post_header">
+          <h3 class="post_title">{post.data.title}</h3>
+          {post.data.subtitle && <p class="post_subtitle">{post.data.subtitle}</p>}
+
+          {post.data.tags && post.data.tags.length > 0 && (
+            <div class="post_tags">
+              {post.data.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
+          )}
+        </div>
+        <div class="post_content">
+          <post.Content />
+        </div>
+      </article>
+    ))
+  }
+</div>

@@ -2,6 +2,10 @@
    FILE: src/styles/layers/utilities.css
    ======================================== */
 
+.margin_topx2 {
+  margin-top: calc(var(--space_block) * 2);
+}
+
 .space_block {
   padding-block: calc(var(--space_block) * 3);
 }

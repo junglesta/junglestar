@@ -1,4 +1,5 @@
 .cover {
+  user-select: none;
   position: relative;
   min-height: 200dvh;
   height: 200dvh;

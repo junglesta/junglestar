@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import type { RenderedPost } from "@utils/getPosts";
+import AnimatedCard from "@components/AnimateCardsCover.astro";
 
 interface Props {
   posts: RenderedPost<"designConcepts" | "productionConcepts">[];
@@ -9,16 +10,18 @@ interface Props {
 const { posts } = Astro.props;
 ---
 
-<div class="wrap posts_container">
+<div class="wrap margin_topx2 card_list">
   {
     posts.map((post) => (
-      <article class="post" id={post.id}>
+      <AnimatedCard end="33%" distance="33%" class:list={post}>
+        <div id={post.id} class="hidden">
+          &nbsp;
+        </div>{" "}
         {post.data.image && (
           <div class="post_image">
             <Image src={post.data.image.src} alt={post.data.image.alt} />
           </div>
         )}
-
         <div class="post_header">
           <h3 class="post_title">{post.data.title}</h3>
           {post.data.subtitle && <p class="post_subtitle">{post.data.subtitle}</p>}
@@ -34,7 +37,7 @@ const { posts } = Astro.props;
         <div class="post_content">
           <post.Content />
         </div>
-      </article>
+      </AnimatedCard>
     ))
   }
 </div>

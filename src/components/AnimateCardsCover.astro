@@ -1,0 +1,58 @@
+---
+// src/components/AnimateCardsCover.astro
+// USING: animation-range: cover 0% cover var(--end);
+interface Props {
+  class?: string;
+  end?: string;
+  distance?: string;
+}
+
+const { class: className, end = "50%", distance = "50px" } = Astro.props;
+---
+
+<div class:list={["card_list", className]} style={`--end: ${end}; --distance: ${distance}`}>
+  <slot />
+</div>
+
+<style>
+  @keyframes slide-from-left {
+    from {
+      opacity: 0;
+      transform: translateX(calc(var(--distance) * -1));
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-from-right {
+    from {
+      opacity: 0;
+      transform: translateX(var(--distance));
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .card_list {
+    @media (prefers-reduced-motion: no-preference) {
+      @supports (animation-timeline: view()) {
+        animation-timeline: view();
+        /*animation-range: contain 0% contain var(--end);*/
+        animation-range: cover 0% cover var(--end);
+        animation-fill-mode: both;
+
+        &:nth-child(odd) {
+          animation-name: slide-from-left;
+        }
+
+        &:nth-child(even) {
+          animation-name: slide-from-right;
+        }
+      }
+    }
+  }
+</style>

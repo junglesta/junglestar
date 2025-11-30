@@ -75,3 +75,42 @@
   margin-left: calc(var(--space_inline) / 2);
   margin-right: calc(var(--space_inline) / 2);
 }
+
+/*🐸CARDS */
+
+/* 🐸 .card_anima TO ANIMATE LISTS */
+/*https://codepen.io/argyleink/pres/VwNMLQN*/
+
+@keyframes slide-fade-in {
+  from {
+    opacity: 0;
+    box-shadow: none;
+    transform: scale(0.8) translateY(15vh);
+  }
+}
+
+.card_anima {
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation: slide-fade-in both;
+      animation-timeline: view();
+      animation-range: contain 0% contain 50%;
+    }
+  }
+}
+
+.card_anima {
+  user-select: none;
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: auto;
+  background-color: transparent;
+}
+
+@media (min-width: 1024px) {
+  .card_anima {
+    display: inline-block;
+    margin: 0;
+  }
+}

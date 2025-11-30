@@ -14,10 +14,6 @@
   border-bottom: none;
 }
 
-.posts_container {
-  margin-top: calc(var(--space_block) * 2);
-}
-
 /*.post_header {
   margin-bottom: calc(var(--space_block) * 1);
 }*/

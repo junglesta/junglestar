@@ -15,9 +15,23 @@ const {
 <style>
   .CTAbanner {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 30dvh;
+    text-transform: uppercase;
+    a:hover {
+      color: var(--white);
+      background-color: var(--brand);
+    }
+  }
+  @media (min-width: 600px) {
+    .CTAbanner {
+      padding-block: calc(var(--space_block) * 5);
+    }
   }
 </style>
-<div class="flex flex_justify_center flex_align_center CTAbanner">
+<div class="CTAbanner">
   <a class="button CTAbutton" href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}>
     {text}
   </a>

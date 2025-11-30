@@ -1,26 +1,28 @@
 /*🐸post_image STUFF*/
 
 .post_image {
-  margin: var(--space_block) 0;
+  margin: 0;
   text-align: center;
-  width: 400px;
+  width: auto;
+  width: auto;
+  padding: 0 calc(var(--space_inline) * 2);
 }
 
 .post_image img {
   max-width: 100%;
   height: auto;
   border-radius: var(--radius);
-  width: 175px !important;
-  margin-inline: auto;
+  width: 125px;
+  padding: 0;
 }
 
 @media (min-width: 601px) {
-  .post_image img {
-    width: 300px !important;
+  .post_image {
+    width: 250px;
   }
 }
 @media (min-width: 821px) {
-  .post_image img {
-    width: 350px !important;
+  .post_image {
+    width: 350px;
   }
 }

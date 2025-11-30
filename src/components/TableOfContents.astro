@@ -1,8 +1,8 @@
 ---
-import type { RenderedPost } from "@utils/getPosts";
+import type { MDXPost } from "@utils/getMDXPosts";
 
 interface Props {
-  posts: RenderedPost<"designConcepts" | "productionConcepts">[];
+  posts: MDXPost<"designConcepts" | "productionConcepts">[];
   title?: string;
 }
 

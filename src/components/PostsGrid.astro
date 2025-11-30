@@ -16,7 +16,7 @@ const { posts } = Astro.props;
       <AnimatedCard end="33%" distance="33%" class:list={post}>
         <div id={post.id} class="hidden">
           &nbsp;
-        </div>{" "}
+        </div>
         {post.data.image && (
           <div class="post_image">
             <Image src={post.data.image.src} alt={post.data.image.alt} />

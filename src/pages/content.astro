@@ -3,11 +3,11 @@ import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/HeaderAni2Black.astro";
 import SocialMediaManagement from "@components/SocialMediaManagement.astro";
 import TableOfContents from "@components/TableOfContents.astro";
-import PostsGrid from "@components/PostsGrid.astro";
+import PostsGridMDX from "@components/PostsGridMDX.astro";
 import CTABanner from "@components/CTABanner.astro";
-import { getRenderedPosts } from "@utils/getPosts";
+import { getMDXPosts } from "@utils/getMDXPosts";
 
-const renderedPosts = await getRenderedPosts("productionConcepts");
+const posts = await getMDXPosts("productionConcepts");
 
 const pageTitle = "Junglestar | Content Production";
 const pageSubtitle = "Brand Narrative";
@@ -38,9 +38,9 @@ const pageDescription =
 
   <div class="wrap">
     <h2 class="center">What people remember you for. Brand narrative is that. The whole thing.</h2>
-    <TableOfContents posts={renderedPosts} />
-    <PostsGrid posts={renderedPosts} />
+    <TableOfContents posts={posts} />
+    <PostsGridMDX posts={posts} />
   </div>
 
-  <CTABanner subject="Send me more infos about Junglestar's Content Production" />
+  <CTABanner subject="Send more infos about Junglestar's Content Production" />
 </Layout>

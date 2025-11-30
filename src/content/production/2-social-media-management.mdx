@@ -1,0 +1,41 @@
+---
+sort_order: 2
+title: Social Media Management
+subtitle: Delegate, so you can focus on your business
+image:
+  src: "binocular.svg"
+  alt: "Overwhelmed?"
+tags:
+  - content
+  - manage-content
+  - organised approach
+---
+
+export const Tags = ({ tags }) => (
+  <div className="tags">
+    {tags?.map((tag) => (
+      <span key={tag} className="tag">
+        {tag}
+      </span>
+    ))}
+  </div>
+);
+
+<details>
+<summary><span className="like_link_underline">Read on, expand this </span></summary>
+
+<Tags tags={frontmatter.tags} />
+
+<small><em>You know you should be posting. You're not.</em></small>
+
+Social media, blog updates, campaigns — it all takes time we don't have. So it slips. Weeks pass. Your audience forgets you exist.
+
+<small><em>We handle it.</em></small>
+
+We manage your content calendar, keep things moving on schedule, and make sure your audience hears from you regularly. Your social channels keep moving without you babysitting them.
+
+<small><em>Why this matters</em></small>
+
+Consistency builds trust. People come back when they know you're still there. We take care of the rhythm so you can focus on running your business.
+
+</details>

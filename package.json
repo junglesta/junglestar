@@ -1,7 +1,7 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "2.9.5",
+  "version": "2.9.6",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
@@ -25,5 +25,8 @@
     "sharp": "^0.34.5",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@10.22.0"
+  "packageManager": "pnpm@10.22.0",
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.12"
+  }
 }

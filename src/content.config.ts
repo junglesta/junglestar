@@ -98,7 +98,7 @@ const slogans_intro = defineCollection({
 });
 
 const designConcepts = defineCollection({
-	loader: glob({ pattern: "**/*.md", base: "./src/content/design" }),
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/design" }),
 	schema: (
 		{ image }, // Get the image helper from the schema function
 	) =>
@@ -119,7 +119,7 @@ const designConcepts = defineCollection({
 });
 
 const productionConcepts = defineCollection({
-	loader: glob({ pattern: "**/*.md", base: "./src/content/production" }),
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/production" }),
 	schema: (
 		{ image }, // Get the image helper from the schema function
 	) =>

@@ -17,36 +17,10 @@ const pageDescription =
 ---
 
 <style>
-  .light_bg,
-  .page_content.light_bg {
-    background-color: #c3daf1;
-  }
-
-  .top_pad--big {
-    padding-top: 8dvw;
-  }
-  .looper__link {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-  }
-
-  .product_text h2,
-  .product_text h3 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .color_black {
-    color: #000 !important;
-  }
-
-  .product_text .button_row {
-    padding-inline: calc(var(--space_inline) / 1);
-    text-align: center;
+  h1 {
+    color: var(--black);
   }
 </style>
-
 <Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
   <LandingScreen>
     {pageSubtitle}

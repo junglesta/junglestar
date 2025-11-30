@@ -20,10 +20,6 @@ const {
     align-items: center;
     padding-block: 30dvh;
     text-transform: uppercase;
-    a:hover {
-      color: var(--white);
-      background-color: var(--brand);
-    }
   }
   @media (min-width: 600px) {
     .CTAbanner {
@@ -32,7 +28,7 @@ const {
   }
 </style>
 <div class="CTAbanner">
-  <a class="button CTAbutton" href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}>
+  <a class="button" href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}>
     {text}
   </a>
 </div>

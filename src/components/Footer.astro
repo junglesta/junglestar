@@ -11,7 +11,7 @@ const currentYear = new Date().getFullYear();
 ---
 
 <style>
-  footer {
+  .footer_site {
     width: 100%;
     min-height: var(--viewport_height);
     padding-top: calc(var(--space_block) * 2);
@@ -25,11 +25,11 @@ const currentYear = new Date().getFullYear();
     position: sticky;
     bottom: 0;
 
-    .contact_links a,
+    /*.contact_links a,
     a.footer_logo,
     a.no_underline {
       text-decoration: none;
-    }
+    }*/
 
     a:not(.footer_logo):not(.no_underline) {
       color: var(--link_color);
@@ -41,62 +41,41 @@ const currentYear = new Date().getFullYear();
     }
   }
 
-  .copy {
-    font-size: calc(var(--font_clamp) * 0.88);
-    text-align: center;
-
-    p {
-      padding: 0;
-      margin: 0;
-    }
-
-    a {
-      text-decoration: none;
-    }
-  }
-
-  .copy .small_pad_top {
-    padding-top: calc(var(--space_block) / 2.5);
-  }
-
-  .brand_background {
-    background-color: var(--brand);
-  }
-
-  .framed {
-    min-width: 340px;
-    width: 400px;
-    max-width: 480px;
-  }
-
   @media (min-width: 510px) {
-    .framed {
+    ..footer_site {
       min-width: 480px;
       width: 480px;
       padding-inline: 0;
     }
   }
-
-  small {
-    padding-inline: var(--space_inline);
+  .details_body {
+    font-size: calc(var(--font_clamp) * 0.88);
+    max-width: 40ch;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  details {
+    background-color: var(--brand);
+  }
+  summary {
+    text-align: center;
   }
 </style>
 
-<footer>
-  <div class="flexcol brand_background framed">
-    <Logo />
-    <Contactlinks />
-    <Nav />
+<footer class="footer_site">
+  <!-- <div class="footer_frame flexcol brand_background framed"> -->
+  <Logo />
+  <Contactlinks />
+  <Nav />
 
-    <details class="brand_background">
-      <summary class="copy small_pad_top">
-        &copy; 2012-{currentYear}
-        {siteData.brand}.org
-      </summary>
-      <small>
-        <Carbon />
-        <License />
-      </small>
-    </details>
-  </div>
+  <details class="">
+    <summary class="copy">
+      &copy; 2012-{currentYear}
+      {siteData.brand}.org
+    </summary>
+    <div class="details_body pretty">
+      <Carbon />
+      <License />
+    </div>
+  </details>
 </footer>

@@ -35,3 +35,15 @@
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
+
+details {
+  .post_tags {
+    display: none !important;
+  }
+}
+
+details[open] {
+  .post_tags {
+    display: block !important;
+  }
+}

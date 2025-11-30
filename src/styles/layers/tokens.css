@@ -46,19 +46,16 @@
   --grey_color_dark: #000000;
   --svgBG: pink;
 
-  /*🐸DERIVED | COLOURS */
-  --background_color: var(--white);
-
-  /*🐸DERIVED | LINK COLOURS */
-  --link_color_main_hover: var(--black_hover);
-  /* FOR STRUCTURE*/
   --link_color: var(--white);
+  /* 🐸 DERIVED | COLOURS */
   --link_color_hover: var(--white_hover);
-  /* FOR <main>*/
   --link_color_main: var(--black);
+  --link_color_main_hover: var(--black_hover);
+
+  --background_color: var(--white);
   --smart_underline_for_white_text: var(--brandT50);
 
-  /*🐸SHADOWS WITH SVH */
+  /* 🐸 SHADOWS WITH SVH */
   --shadow_color: rgb(0, 0, 0);
   --header_shadow: 0 0.2svh 1svh 0 rgba(0, 0, 0, 0.16);
   --card_shadow: 0px 0px 0.2svh 0px rgba(0, 0, 0, 0.12), 0px 0.2svh 0.2svh 0px rgba(0, 0, 0, 0.24);
@@ -67,7 +64,7 @@
     0px 0.2svh 0.4svh -0.1svh rgba(0, 0, 0, 0.2), 0px 0.4svh 0.5svh 0px rgba(0, 0, 0, 0.14),
     0px 0.1svh 1svh 0px rgba(0, 0, 0, 0.12);
 
-  /*🐸TRANSITIONS */
+  /* 🐸 TRANSITIONS */
   --transition_shadow: box-shadow 0.2s ease;
 
   /*🐸CARD TOKENS */

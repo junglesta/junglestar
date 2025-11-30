@@ -1,29 +1,27 @@
 /*🐸BUTTONS */
 .button {
+  display: inline-block;
+  height: var(--tap_size);
+  width: max-content;
   user-select: none;
   font-weight: var(--weight_med);
-  display: inline-block;
-  width: max-content;
   text-align: center;
-  height: var(--tap_size);
   line-height: var(--tap_size);
-  margin-block: calc(var(--space_block) / 3);
-  border-radius: var(--radius);
-  padding-inline: 0;
   color: var(--brand);
   border: 2px solid var(--brand);
+  border-radius: var(--radius);
   padding-inline: calc(var(--space_inline) / 5);
+  margin-block: calc(var(--space_block) / 3);
 }
 
 .button:focus,
 .button:hover {
   cursor: pointer;
-  /*background-color: var(--button_focus_bg);*/
+  color: var(--brand);
   transform: scale(1.025);
 }
 
 .button:active {
-  /*background-color: var(--button_focus_bg);*/
   transform: translateY(calc(var(--space_block) * 0.145)); /* was 0.4svh */
 }
 
@@ -36,6 +34,7 @@
 .button_dark:focus,
 .button_dark:hover {
   cursor: pointer;
+  color: var(--white);
   background-color: var(--brand);
   border: calc(var(--space_block) * 0.116) solid var(--brand); /* was 0.32svh */
 }

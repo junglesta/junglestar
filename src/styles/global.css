@@ -11,7 +11,6 @@
 
 @import "./layers/layout/layout_semantics.css" layer(layout);
 @import "./layers/layout/layout_classes.css" layer(layout);
-/*@import "./layers/layout/site_header.css" layer(layout);*/
 @import "./layers/layout/site_nav.css" layer(layout);
 @import "./layers/layout/site_title.css" layer(layout);
 @import "./layers/layout/wrap.css" layer(layout);

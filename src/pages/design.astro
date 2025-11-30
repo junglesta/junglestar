@@ -2,11 +2,11 @@
 import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/HeaderAni2OffWhite.astro";
 import TableOfContents from "@components/TableOfContents.astro";
-import PostsGrid from "@components/PostsGrid.astro";
+import PostsGridMDX from "@components/PostsGridMDX.astro";
 import CTABanner from "@components/CTABanner.astro";
-import { getRenderedPosts } from "@utils/getPosts";
+import { getMDXPosts } from "@utils/getMDXPosts";
 
-const renderedPosts = await getRenderedPosts("designConcepts");
+const posts = await getMDXPosts("designConcepts");
 
 const pageTitle = "Design, Sustainabilty!? Because Why?";
 const pageSubtitle = "Design, Sustainabilty!? Because Why?";
@@ -35,9 +35,9 @@ const description =
 
   <div class="wrap">
     <h2 class="center">Thinking communication design does deliver!</h2>
-    <TableOfContents posts={renderedPosts} />
-    <PostsGrid posts={renderedPosts} />
+    <TableOfContents posts={posts} />
+    <PostsGridMDX posts={posts} />
   </div>
 
-  <CTABanner subject="Send me more infos about Junglestar's Design" />
+  <CTABanner subject="Send more infos about Junglestar's Design" />
 </Layout>

@@ -12,36 +12,49 @@ const title = title_start + repoData.version + title_end;
 const pageSubtitle_line1 = "Your business, simplified.";
 const pageSubtitle_line2 = "Your life, upgraded. ";
 const pageSubtitle_line3 = "Trade grunt-work for free time!";
-const onScroll_line1 = "Hello & Welcome!";
-const onScroll_line2 = "Keep on scrolling & discovering";
-const onScroll_line3 = "while we set the stage";
+const onScroll_line1 = "Hello!";
+const onScroll_line2 = "Welcome.";
+const onScroll_line3 = "Let us breifly introduce";
+const onScroll_line4 = "what we can do";
+const onScroll_line5 = "for small entrepreneurs.";
+const onScroll_line6 = "Keep on scrolling...";
 const description =
   "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
 // const subtitle = "";
 ---
 
 <style>
-  .overtitle {
-    font-size: 1.33rem;
-    padding-bottom: 5px;
+  .overline {
+    font-size: 70%;
   }
-  .overtitle_wrap {
-    padding-bottom: calc(var(--space_block) / 2);
+  .brand_name {
+    padding-top: calc(var(--space_block) * 1);
+    font-size: 133%;
   }
 </style>
 <Layout title={title} description={description}>
   <LandingScreen>
-    <div class="overtitle_wrap">
-      <div class="overtitle">{pageSubtitle_line1}</div>
-      <div class="overtitle">{pageSubtitle_line2}</div>
-      <div class="overtitle">{pageSubtitle_line3}</div>
+    <div class="title_wrap">
+      <div class="overline line1">{pageSubtitle_line1}</div>
+      <div class="overline line2">{pageSubtitle_line2}</div>
+      <div class="overline line3">{pageSubtitle_line3}</div>
+      <div class="brand_name">
+        {title_start}
+      </div>
     </div>
-    {title_start}
 
     <p class="brand small_text">
       {onScroll_line1.toUpperCase()}
       <br />
       {onScroll_line2}
+      <br /><br />
+      {onScroll_line3}
+      <br />
+      {onScroll_line4}
+      <br />
+      {onScroll_line5}
+      <br /><br />
+      {onScroll_line6}
     </p>
   </LandingScreen>
 

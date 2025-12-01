@@ -8,7 +8,7 @@ interface Props {
   posts: MDXPost<"designConcepts" | "productionConcepts">[];
 }
 
-const { posts } = Astro.props;
+const { posts = [] } = Astro.props;
 ---
 
 <div class="wrap margin_topx2 card_list">

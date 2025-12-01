@@ -1,9 +1,10 @@
 ---
-// imports all files that end with `.astro` in `./src/components/`
-//const components = Object.values(import.meta.glob("../components/*.astro", { eager: true }));
----
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 
-<!-- Display all of our components
+const components = Object.values(
+  import.meta.glob<{ default: AstroComponentFactory }>("../components/*.astro", { eager: true }),
+);
+---
 
 {
   components.map((component) => (
@@ -12,4 +13,3 @@
     </div>
   ))
 }
--->

@@ -1,18 +1,21 @@
 ---
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 
-const modules = import.meta.glob<{ default: AstroComponentFactory }>("../components/*.astro", { eager: true });
-const components = Object.values(modules || {});
+const modules = import.meta.glob<{ default: AstroComponentFactory }>(
+  "../components/*.astro",
+  { eager: true }
+);
+
+console.log("Found modules:", Object.keys(modules));
+const components = Object.entries(modules || {});
 ---
 
 {
-  components.length > 0 ? (
-    components.map((component) => (
-      <div>
-        <component.default size={24} />
-      </div>
-    ))
-  ) : (
-    <p>No components found</p>
-  )
+  components.map(([path, component]) => (
+    <div>
+      <p>Component: {path}</p>
+      <!-- Temporarily comment out rendering to isolate -->
+      <!-- <component.default size={24} /> -->
+    </div>
+  ))
 }

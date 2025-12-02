@@ -15,6 +15,7 @@ Junglestar team.
 ## CREDITS
 
 A complete list of © credits is coming soon!
+Including all the icons used here and the respective [creators](https://thenounproject.com/creator/rokma/) on [thenounproject](https://thenounproject.com/creators/)
 
 1.ASTRO FRAMEWORK
 

@@ -1,0 +1,83 @@
+---
+import { getCollection } from "astro:content";
+
+const introItems = await getCollection("introJ");
+
+const svgRaw = import.meta.glob("/src/assets/intro/*.svg", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+});
+
+function getSvgRaw(jsonPath: string) {
+  const srcPath = `/src${jsonPath}`;
+  return svgRaw[srcPath] || "";
+}
+
+function parseBold(text: string) {
+  return text.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+}
+---
+
+<section class="intro_articles">
+  {
+    introItems.map((item) => (
+      <article class="intro_article" data-theme={item.data.theme}>
+        <div class="content">
+          <h1>{item.data.title}</h1>
+          <h2>{item.data.subtitle}</h2>
+          <p class="tagline">{item.data.tagline}</p>
+
+          {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
+          {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
+          {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}
+          {item.data.p4 && <p set:html={parseBold(item.data.p4)} />}
+          {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
+          {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
+
+          <a href={item.data.link} class="cta">
+            {item.data.cta}
+          </a>
+        </div>
+
+        <div class="bg-svg" set:html={getSvgRaw(item.data.image.src)} />
+      </article>
+    ))
+  }
+</section>
+
+<style>
+  .intro_articles {
+    padding-inline: calc(var(--space_block) * 5);
+    max-width: 88ch;
+    margin: 0 auto;
+    padding-block: calc(var(--space_block) * 5);
+  }
+  .intro_article {
+    position: relative;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+  }
+/*
+  .bg-svg {
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .bg-svg :global(svg) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }*/
+
+  /* ...UNNECESSARY rest of styles */
+  .dark {
+  }
+
+
+  .header_astro {
+    padding-block: calc(var(--space_block) * 5);
+</style>

@@ -1,9 +1,9 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import LandingScreen from "@components/HeaderAni2OffWhite.astro";
-import TableOfContents from "@components/TableOfContents.astro";
-import PostsGridMDX from "@components/PostsGridMDX.astro";
-import CTABanner from "@components/CTABanner.astro";
+import LandingScreen from "@components/UI/HeaderAni2OffWhite.astro";
+import TableOfContents from "@components/UI/TableOfContents.astro";
+import PostsGridMDX from "@components/shared/PostsGridMDX.astro";
+import CTABanner from "@components/UI/CTABanner.astro";
 import { getMDXPosts } from "@utils/getMDXPosts";
 
 const posts = await getMDXPosts("designConcepts");

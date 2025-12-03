@@ -1,10 +1,10 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import LandingScreen from "@components/HeaderAni2Black.astro";
-import SocialMediaManagement from "@components/SocialMediaManagement.astro";
-import TableOfContents from "@components/TableOfContents.astro";
-import PostsGridMDX from "@components/PostsGridMDX.astro";
-import CTABanner from "@components/CTABanner.astro";
+import LandingScreen from "@components/UI/HeaderAni2Black.astro";
+import SocialMediaManagement from "@components/brand/SocialMediaManagement.astro";
+import TableOfContents from "@components/UI/TableOfContents.astro";
+import PostsGridMDX from "@components/shared/PostsGridMDX.astro";
+import CTABanner from "@components/UI/CTABanner.astro";
 import { getMDXPosts } from "@utils/getMDXPosts";
 
 const posts = await getMDXPosts("productionConcepts");

@@ -29,38 +29,39 @@ src/
 ## 🎯 How to Use Assets with Optimization
 
 ### 1. **For Images (PNG, JPG, WebP)**
+
 Use Astro's `Image` component and import the image:
 
 ```astro
 ---
 // In any .astro file
-import { Image } from 'astro:assets';
-import logo from '@assets/images/junglestar_logo.png';
+import { Image } from "astro:assets";
+import logo from "@assets/images/junglestar_logo.png";
 ---
 
 <Image src={logo} alt="Junglestar Logo" />
 ```
 
 ### 2. **For SVGs as Components**
+
 Import SVGs directly as components:
 
 ```astro
 ---
 // Option 1: Import as component
-import LogoIcon from '@assets/svgs/logo.svg?raw';
+import LogoIcon from "@assets/svgs/logo.svg?raw";
 ---
 
 <!-- Use as HTML -->
 <div set:html={LogoIcon} />
 
 <!-- Or import as URL -->
----
-import logoUrl from '@assets/svgs/logo.svg';
----
+--- import logoUrl from '@assets/svgs/logo.svg'; ---
 <img src={logoUrl.src} alt="Logo" />
 ```
 
 ### 3. **For Favicons (Special Case)**
+
 Favicons are an exception - they should go in `public/` because browsers expect them at specific URLs:
 
 ```
@@ -79,31 +80,31 @@ public/
 
 ```astro
 ---
-// src/components/Head.astro
-import { getImage } from 'astro:assets';
-import ogImageSrc from '@assets/images/junglestar_logo.png';
+// src/components/heads/Head.astro
+import { getImage } from "astro:assets";
+import ogImageSrc from "@assets/images/junglestar_logo.png";
 
 // Generate optimized OG image
 const ogImage = await getImage({
   src: ogImageSrc,
-  format: 'png',
+  format: "png",
   width: 1200,
-  height: 630
+  height: 630,
 });
 
-const siteUrl = import.meta.env.SITE || 'https://junglestar.org';
+const siteUrl = import.meta.env.SITE || "https://junglestar.org";
 const ogImageUrl = new URL(ogImage.src, siteUrl).href;
 ---
 
 <head>
   <!-- ... other meta tags ... -->
-  
+
   <!-- Favicons (from public folder) -->
   <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
-  
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+
   <!-- Open Graph with optimized image -->
-  <meta property="og:image" content={ogImageUrl}>
+  <meta property="og:image" content={ogImageUrl} />
   <!-- ... -->
 </head>
 ```
@@ -122,24 +123,22 @@ export interface Props {
 const { name, class: className, alt } = Astro.props;
 
 // Dynamic import based on icon name
-const icons = import.meta.glob('@assets/svgs/*.svg', { as: 'raw' });
+const icons = import.meta.glob("@assets/svgs/*.svg", { as: "raw" });
 const iconPath = `/src/assets/svgs/${name}.svg`;
 const iconContent = await icons[iconPath]?.();
 ---
 
-{iconContent && (
-  <div class={className} aria-label={alt} set:html={iconContent} />
-)}
+{iconContent && <div class={className} aria-label={alt} set:html={iconContent} />}
 ```
 
 ### Update Footer.astro to Use Optimized Assets:
 
 ```astro
 ---
-// src/components/Footer.astro
-import { Image } from 'astro:assets';
-import logoImage from '@assets/images/junglestar_logo.png';
-import SvgIcon from './SvgIcon.astro';
+// src/components/footer/Footer.astro
+import { Image } from "astro:assets";
+import logoImage from "@assets/images/junglestar_logo.png";
+import SvgIcon from "./SvgIcon.astro";
 // ... rest of imports
 ---
 
@@ -147,14 +146,14 @@ import SvgIcon from './SvgIcon.astro';
   <a href="/" class="footer_icon">
     <!-- Option 1: Use Image component for PNG logo -->
     <Image src={logoImage} alt="Junglestar Logo" width={100} height={100} />
-    
+
     <!-- Option 2: Or use SVG component -->
     <SvgIcon name="logo_white" class="logo" alt="Back to homepage" />
   </a>
-  
+
   <!-- Email icon using SVG component -->
   <SvgIcon name="email" class="email" />
-  
+
   <!-- ... rest of footer ... -->
 </footer>
 ```
@@ -162,11 +161,13 @@ import SvgIcon from './SvgIcon.astro';
 ## 🚀 Setup Steps
 
 1. **Create the asset folders:**
+
 ```bash
 mkdir -p src/assets/{favicons,images,svgs,p,pdf}
 ```
 
 2. **Move your existing assets:**
+
 ```bash
 # Move images and SVGs to src/assets
 mv your-images/* src/assets/images/
@@ -179,6 +180,7 @@ mv other-favicons/* public/assets/favicons/
 ```
 
 3. **Update your tsconfig paths** (already done!):
+
 ```json
 {
   "compilerOptions": {
@@ -209,7 +211,8 @@ Your CSS stays exactly the same! Just make sure background images reference the 
 .site_title:before {
   /* For inline SVGs, keep as data URIs (already done) */
   background-image: url("data:image/svg+xml;...");
-  
+
   /* For file references, use paths from public folder */
   /* background-image: url("/assets/images/bg.png"); */
 }
+```

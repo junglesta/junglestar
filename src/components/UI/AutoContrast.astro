@@ -1,13 +1,15 @@
 ---
 // AutoContrast.astro
-// Self-contained auto-contrast component following Astro best practices
-// Supports CSS variables (like var(--brand)) for OKLCH colors
+// Modern auto-contrast component using OKLCH color space
+// Uses CSS relative color syntax and the L (lightness) channel for contrast detection
 
 interface Props {
   backgroundColor?: string;
   class?: string;
   tag?: string;
-  useWcagAAA?: boolean;
+  lightText?: string;
+  darkText?: string;
+  threshold?: number;
   id?: string;
   style?: string;
   [key: string]: any;
@@ -17,51 +19,21 @@ const {
   backgroundColor = "var(--brand)",
   class: className = "",
   tag = "div",
-  useWcagAAA = false,
+  lightText = "oklch(98% 0 0)",
+  darkText = "oklch(15% 0 0)",
+  threshold = 0.6,
   style: customStyle = "",
   ...restProps
 } = Astro.props;
 
-// Calculate relative luminance (WCAG formula)
-function getLuminance(r: number, g: number, b: number): number {
-  const [rs, gs, bs] = [r, g, b].map((c) => {
-    c = c / 255;
-    return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
-  });
-  return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
-}
-
-// Convert hex to RGB
-function hexToRgb(hex: string): { r: number; g: number; b: number } | null {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-  return result
-    ? {
-        r: parseInt(result[1], 16),
-        g: parseInt(result[2], 16),
-        b: parseInt(result[3], 16),
-      }
-    : null;
-}
-
-// Get contrasting color (black or white)
-function getContrastColor(hexColor: string): string {
-  const rgb = hexToRgb(hexColor);
-  if (!rgb) return "#000000";
-
-  const luminance = getLuminance(rgb.r, rgb.g, rgb.b);
-  return luminance > 0.5 ? "#000000" : "#ffffff";
-}
-
-// Server-side calculation for hex colors only (CSS vars computed client-side)
-const textColor = backgroundColor.startsWith("#") ? getContrastColor(backgroundColor) : "#000000";
 const Element = tag as any;
 ---
 
 <Element
   class={`auto-contrast ${className}`}
-  style={`--bg-color: ${backgroundColor}; --text-color: ${textColor}; ${customStyle}`}
+  style={`--bg-color: ${backgroundColor}; --light-text: ${lightText}; --dark-text: ${darkText}; --threshold: ${threshold}; ${customStyle}`}
   data-auto-contrast
-  data-bg-color={backgroundColor}
+  data-threshold={threshold}
   {...restProps}
 >
   <slot />
@@ -70,94 +42,63 @@ const Element = tag as any;
 <style>
   .auto-contrast {
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--text-color, var(--dark-text));
     transition:
-      background-color 0.3s ease,
-      color 0.3s ease;
+      background-color 0.8s ease,
+      color 0.8s ease;
   }
 </style>
 
 <script>
-  // Client-side interactivity following Astro best practices
-  // This script is bundled once and runs when the page loads
+  function initAutoContrast() {
+    // Get OKLCH lightness from any color using canvas
+    function getLightness(color: string): number {
+      const canvas = document.createElement("canvas");
+      canvas.width = canvas.height = 1;
+      const ctx = canvas.getContext("2d", { willReadFrequently: true });
+      if (!ctx) return 0.5;
 
-  function getLuminance(r: number, g: number, b: number): number {
-    const [rs, gs, bs] = [r, g, b].map((c) => {
-      c = c / 255;
-      return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
-    });
-    return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
-  }
+      ctx.fillStyle = color;
+      ctx.fillRect(0, 0, 1, 1);
+      const [r, g, b] = ctx.getImageData(0, 0, 1, 1).data;
 
-  function hexToRgb(hex: string): { r: number; g: number; b: number } | null {
-    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result
-      ? {
-          r: parseInt(result[1], 16),
-          g: parseInt(result[2], 16),
-          b: parseInt(result[3], 16),
-        }
-      : null;
-  }
-
-  function parseRgbColor(rgbString: string): { r: number; g: number; b: number } | null {
-    // Parse rgb(r, g, b) or rgba(r, g, b, a) format
-    const match = rgbString.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-    if (match) {
-      return {
-        r: parseInt(match[1]),
-        g: parseInt(match[2]),
-        b: parseInt(match[3]),
+      // Convert RGB to OKLCH lightness (simplified)
+      // Using relative luminance as proxy for OKLCH L
+      const toLinear = (c: number) => {
+        c = c / 255;
+        return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
       };
+
+      const luminance =
+        0.2126 * toLinear(r) + 0.7152 * toLinear(g) + 0.0722 * toLinear(b);
+
+      // Approximate OKLCH lightness from luminance
+      return Math.cbrt(luminance);
     }
-    return null;
-  }
 
-  function getContrastColorFromRgb(r: number, g: number, b: number): string {
-    const luminance = getLuminance(r, g, b);
-    return luminance > 0.5 ? "#000000" : "#ffffff";
-  }
+    function updateElementContrast(element: HTMLElement) {
+      const computedBg = getComputedStyle(element).backgroundColor;
+      const threshold = parseFloat(element.dataset.threshold || "0.6");
+      const lightness = getLightness(computedBg);
 
-  function getContrastColor(color: string): string {
-    // If it's a hex color
-    if (color.startsWith("#")) {
-      const rgb = hexToRgb(color);
-      if (rgb) {
-        return getContrastColorFromRgb(rgb.r, rgb.g, rgb.b);
-      }
-    }
-    return "#000000";
-  }
+      // Use light text on dark backgrounds, dark text on light backgrounds
+      const textColor =
+        lightness < threshold ? "var(--light-text)" : "var(--dark-text)";
 
-  function updateElementContrast(element: HTMLElement) {
-    // Get the computed background color (this resolves CSS variables and OKLCH)
-    const computedBg = window.getComputedStyle(element).backgroundColor;
-
-    // Parse the RGB value returned by getComputedStyle
-    const rgb = parseRgbColor(computedBg);
-
-    if (rgb) {
-      const textColor = getContrastColorFromRgb(rgb.r, rgb.g, rgb.b);
       element.style.setProperty("--text-color", textColor);
     }
+
+    document
+      .querySelectorAll<HTMLElement>("[data-auto-contrast]")
+      .forEach((element) => {
+        updateElementContrast(element);
+
+        (element as any).setBackgroundColor = function (color: string) {
+          this.style.setProperty("--bg-color", color);
+          requestAnimationFrame(() => updateElementContrast(this));
+        };
+      });
   }
 
-  // Find all auto-contrast elements and add the setBackgroundColor method
-  const autoContrastElements = document.querySelectorAll<HTMLElement>("[data-auto-contrast]");
-
-  autoContrastElements.forEach((element) => {
-    // Update contrast based on computed styles (handles CSS variables)
-    updateElementContrast(element);
-
-    // Add the public method to change background color dynamically
-    (element as any).setBackgroundColor = function (color: string) {
-      this.style.setProperty("--bg-color", color);
-      this.dataset.bgColor = color;
-
-      // Wait for next frame to get computed color
-      requestAnimationFrame(() => {
-        updateElementContrast(this);
-      });
-    };
-  });
+  document.addEventListener("astro:page-load", initAutoContrast);
 </script>

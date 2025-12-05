@@ -3,7 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/UI/HeaderAni2OffWhite.astro";
 import TableOfContents from "@components/UI/TableOfContents.astro";
 import PostsGridMDX from "@components/shared/PostsGridMDX.astro";
-import CTABanner from "@components/UI/CTABanner.astro";
+import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
 import { getMDXPosts } from "@utils/getMDXPosts";
 
 const posts = await getMDXPosts("designConcepts");
@@ -12,7 +12,8 @@ const pageTitle = "Design, Sustainabilty!? Because Why?";
 const pageSubtitle = "Design, Sustainabilty!? Because Why?";
 const pageRevealOnScroll1 = "Ever feel prisoner of your own processes?";
 const pageRevealOnScroll2 = "Those ones necessary to run your biz?";
-const pageRevealOnScroll3 = "Find out what sustainable actually means for us small entrepreneurs.";
+const pageRevealOnScroll3 =
+  "Find out what sustainable actually means for us small entrepreneurs.";
 const description =
   "Sustainable Web Design to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
 ---
@@ -23,7 +24,12 @@ const description =
   }
 </style>
 
-<Layout title={pageTitle} description={description} pageSubtitle={pageSubtitle} bodyClass="design">
+<Layout
+  title={pageTitle}
+  description={description}
+  pageSubtitle={pageSubtitle}
+  bodyClass="design"
+>
   <LandingScreen>
     {pageSubtitle}
     <p class="brand small_text">
@@ -39,5 +45,5 @@ const description =
     <PostsGridMDX posts={posts} />
   </div>
 
-  <CTABanner subject="Send more infos about Junglestar's Design" />
+  <CTAMailBanner subject="Send more infos about Junglestar's Design" />
 </Layout>

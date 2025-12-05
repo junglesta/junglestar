@@ -2,6 +2,7 @@
 // src/pages/index.astro
 import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/UI/HeaderAni2Black.astro";
+import AutoContrast from "@components/UI/AutoContrast.astro";
 import IntroSection from "@components/intro/IntroSection.astro";
 import * as repoData from "package.json";
 
@@ -32,7 +33,10 @@ const description =
     font-size: 133%;
   }
 </style>
-<Layout title={title} description={description}>
+<Layout
+  title={title}
+  description={description}
+>
   <LandingScreen>
     <div class="title_wrap">
       <div class="overline line1">{pageSubtitle_line1}</div>
@@ -57,6 +61,58 @@ const description =
       {onScroll_line6}
     </p>
   </LandingScreen>
+  <!-- <AutoContrast backgroundColor="black">
+    <IntroSection />
+  </AutoContrast> -->
 
-  <IntroSection />
+  <AutoContrast
+    id="progress-box"
+    class="h-64"
+    data-scroll-colors='["oklch(0 0 0)","oklch(0 0 0)", "oklch(0.8286 0.1735 255)","oklch(0.8286 0.1735 255)",  "oklch(0.5286 0.1735 255)",  "oklch(0.5286 0.1735 255)"]'
+  >
+    <IntroSection />
+  </AutoContrast>
 </Layout>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    document
+      .querySelectorAll<HTMLElement>("[data-scroll-colors]")
+      .forEach((box) => {
+        const colors: string[] = JSON.parse(box.dataset.scrollColors || "[]");
+        if (colors.length === 0) return;
+
+        const updateColor = () => {
+          const rect = box.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+
+          // Progress: 0 when element top enters viewport bottom
+          //           1 when element bottom reaches viewport top
+          const start = windowHeight; // element top at viewport bottom
+          const end = -rect.height; // element bottom at viewport top
+          const progress = Math.max(
+            0,
+            Math.min(1, (start - rect.top) / (start - end)),
+          );
+
+          const index = Math.min(
+            Math.floor(progress * colors.length),
+            colors.length - 1,
+          );
+          (box as any).setBackgroundColor(colors[index]);
+        };
+
+        window.addEventListener("scroll", updateColor, { passive: true });
+        document.addEventListener("scroll", updateColor, { passive: true });
+        document.body.addEventListener("scroll", updateColor, {
+          passive: true,
+        });
+
+        const main = document.querySelector("main");
+        if (main)
+          main.addEventListener("scroll", updateColor, { passive: true });
+
+        updateColor();
+      });
+  });
+</script>

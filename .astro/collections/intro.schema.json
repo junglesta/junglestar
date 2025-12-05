@@ -4,6 +4,9 @@
     "intro": {
       "type": "object",
       "properties": {
+        "question": {
+          "type": "string"
+        },
         "title": {
           "type": "string"
         },
@@ -89,6 +92,7 @@
         }
       },
       "required": [
+        "question",
         "title",
         "cta",
         "link",

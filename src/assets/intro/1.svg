@@ -4,7 +4,7 @@
   viewBox="0 0 700 400"
 >
   <g class="svg_bi_gi">
-    <path d="M0-.05h700v400H0v-400z"></path>
+    <path fill="none" d="M0-.05h700v400H0v-400z"></path>
     <path
       fill="#95C93D"
       d="M46.1 152.75l80-3.4 17.5 250.6H58.1l-12-247.2zm-7.4-60.3v49.9h92.1l3.9-49.9h-96z"

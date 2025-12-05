@@ -1,8 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-
+//import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
 const introItems = await getCollection("introJ");
-
 const svgRaw = import.meta.glob("/src/assets/intro/*.svg", {
   query: "?raw",
   import: "default",
@@ -19,65 +18,88 @@ function parseBold(text: string) {
 }
 ---
 
-<section class="intro_articles">
+<section class="intro_memes">
   {
     introItems.map((item) => (
-      <article class="intro_article" data-theme={item.data.theme}>
+      <article
+        class="intro_meme"
+        data-theme={item.data.theme}
+      >
+        <div
+          class="background_svg"
+          set:html={getSvgRaw(item.data.image.src)}
+        />
+
+        <h1 class="h3 brand">{item.data.question}</h1>
+        <h2 class="h4">{item.data.title}</h2>
+        <h3 class="h5">{item.data.subtitle}</h3>
         <div class="content">
-          <h1>{item.data.title}</h1>
-          <h2>{item.data.subtitle}</h2>
-          <p class="tagline">{item.data.tagline}</p>
+          <details>
+            <summary class="tagline">{item.data.tagline}</summary>
+            {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
+            {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
+            {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}
+            {item.data.p4 && <p set:html={parseBold(item.data.p4)} />}
+            {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
+            {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
 
-          {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
-          {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
-          {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}
-          {item.data.p4 && <p set:html={parseBold(item.data.p4)} />}
-          {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
-          {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
-
-          <a href={item.data.link} class="cta">
-            {item.data.cta}
-          </a>
+            <a
+              href={item.data.link}
+              class="cta"
+            >
+              {item.data.cta}
+            </a>
+          </details>
         </div>
-
-        <div class="bg-svg" set:html={getSvgRaw(item.data.image.src)} />
       </article>
     ))
   }
 </section>
 
 <style>
-  .intro_articles {
+  .intro_memes {
     padding-inline: calc(var(--space_block) * 2);
-    max-width: 88ch;
+    /*max-width: 60ch;*/
     margin: 0 auto;
     padding-block: calc(var(--space_block) * 5);
+    text-align: center;
   }
-  .intro_article {
+  .intro_meme {
     position: relative;
+    padding-block: calc(var(--space_block) * 8);
+  }
+
+  .intro_memes:first-child {
+    padding-block-start: 0;
+  }
+  .intro_memes:last-child {
+    padding-block-end: 0;
   }
 
   .content {
+    text-align: left;
     position: relative;
     z-index: 1;
+    margin: 0 auto;
+    max-width: 60ch;
   }
-/*
-  .bg-svg {
+
+  .background_svg {
     pointer-events: none;
     z-index: 0;
   }
 
-  .bg-svg :global(svg) {
+  .background_svg :global(svg) {
     width: 100%;
     height: auto;
     display: block;
-  }*/
-
-  /* ...UNNECESSARY rest of styles */
-  .dark {
+  }
+  .tagline {
+    text-align: center;
+    line-height: 1.1;
   }
 
-
-  .header_astro {
-    padding-block: calc(var(--space_block) * 5);
+  [data-theme="superstition"] .brand {
+    color: var(--brand_dark);
+  }
 </style>

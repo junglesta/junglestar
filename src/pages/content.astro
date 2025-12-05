@@ -4,7 +4,7 @@ import LandingScreen from "@components/UI/HeaderAni2Black.astro";
 import SocialMediaManagement from "@components/brand/SocialMediaManagement.astro";
 import TableOfContents from "@components/UI/TableOfContents.astro";
 import PostsGridMDX from "@components/shared/PostsGridMDX.astro";
-import CTABanner from "@components/UI/CTABanner.astro";
+import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
 import { getMDXPosts } from "@utils/getMDXPosts";
 
 const posts = await getMDXPosts("productionConcepts");
@@ -24,7 +24,11 @@ const pageDescription =
   }
 </style>
 
-<Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  pageSubtitle={pageSubtitle}
+>
   <LandingScreen>
     {pageSubtitle}
     <p class="brand small_text">
@@ -37,10 +41,14 @@ const pageDescription =
   <SocialMediaManagement />
 
   <div class="wrap">
-    <h2 class="center">What people remember you for. Brand narrative is that. The whole thing.</h2>
+    <h2 class="center"
+      >What people remember you for. Brand narrative is that. The whole thing.</h2
+    >
     <TableOfContents posts={posts} />
     <PostsGridMDX posts={posts} />
   </div>
 
-  <CTABanner subject="Send more infos about Junglestar's Content Production" />
+  <CTAMailBanner
+    subject="Send more infos about Junglestar's Content Production"
+  />
 </Layout>

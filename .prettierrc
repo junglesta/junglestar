@@ -1,12 +1,19 @@
 {
   "plugins": ["prettier-plugin-astro"],
-  "printWidth": 120,
+  "printWidth": 80,
   "htmlWhitespaceSensitivity": "strict",
+  "singleAttributePerLine": true,
   "overrides": [
     {
       "files": "*.astro",
       "options": {
         "parser": "astro"
+      }
+    },
+    {
+      "files": "*.svg",
+      "options": {
+        "parser": "html"
       }
     }
   ]

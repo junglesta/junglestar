@@ -9,11 +9,11 @@
   max-width: 400px;
   margin-inline: auto;
   ul {
-    margin-left: calc(var(--space_inline) * 0.85);
-    margin-right: calc(var(--space_inline) * 0.15);
+    margin-left: 0;
+    margin-right: 0;
   }
   li {
-    padding-left: calc(var(--space_inline) / 1.5);
+    padding-left: calc(var(--space_inline) / 5);
   }
   li::marker {
     content: "✓";

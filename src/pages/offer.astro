@@ -1,38 +1,130 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Gmap from "@components/brand/Gmap.astro";
+import SlowWebsite from "@components/brand/SlowWebsite.astro";
 import LandingScreen from "@components/UI/HeaderAni2Black.astro";
+import { getCollection } from "astro:content";
+import CTAButton from "@components/UI/CTAButton.astro";
+
+// Fetch all offers from the collection
+const allOffers = await getCollection("offers", ({ data }) => data.publish);
+
+// Sort: bestvalue first, then bestseller, then others
+const offers = allOffers.sort((a, b) => {
+  if (a.data.bestvalue) return -1;
+  if (b.data.bestvalue) return 1;
+  if (a.data.bestseller) return -1;
+  if (b.data.bestseller) return 1;
+  return 0;
+});
 
 // Page metadata
 const pageTitle = "Junglestar | Pricing";
 const pageSubtitle = "Website Packages!";
-const pageRevealOnScroll = "You need a new website! Check our All-included solutions. ";
+const pageRevealOnScroll =
+  "You need a new website! Check our All-included solutions.";
 const pageDescription =
   "Flexible one-stop web agency. We design, code & deploy — from webstores to web apps. Packed solutions & custom designs for great user experiences.";
 ---
 
 <style>
+  .offer_content {
+    padding: 0;
+  }
+
+  .offer_content :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
+    color: var(--brand);
+  }
+
   .grid_offer {
-    padding-top: 8dvw;
-  }
-  .looper__link {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .color_black {
-    color: var(--black);
+    padding-block: calc(var(--space_block) * 2.33);
+    padding-inline: calc(var(--space_inline) * 0.88);
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: calc(var(--space_block) / 1.5);
   }
 
-  .product_text {
+  @media (width > 600px) {
+    .grid_offer {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .grid_offer_card {
     margin-block: calc(var(--space_block) / 2);
     padding-inline: calc(var(--space_inline) / 2);
-
-    h2,
-    h3 {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
+    border: 1px var(--brand) solid;
+    border-radius: var(--radius);
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 15% auto 10% 7%;
+    gap: 8px;
+    grid-template-areas:
+      "header"
+      "desc"
+      "benefits"
+      "price"
+      "footer";
+  }
+  .offer_top {
+    grid-area: header;
+    padding-top: calc(var(--space_block) * 0.75);
+  }
+  .offer_desc {
+    grid-area: desc;
+    text-align: pretty;
+    line-height: 1.15;
+    padding-left: calc(var(--space_inline) * 0.85);
+    padding-right: calc(var(--space_inline) * 0.5);
+    padding-bottom: calc(var(--space_block) * 0.5);
+  }
+  .offer_benefits {
+    grid-area: benefits;
+    text-align: left;
+    /*padding-left: calc(var(--space_inline) * 0.25);*/
+    /*padding-right: calc(var(--space_inline) * 0.5);*/
+  }
+  .offer_price {
+    grid-area: price;
+    p {
+      margin-bottom: 0;
     }
+  }
+  .offer_footer {
+    grid-area: footer;
+    align-self: center;
+    justify-self: center;
+    padding-bottom: calc(var(--space_block) * 2.5);
+  }
+
+  .grid_offer_card {
+    h3,
+    .h3 {
+      padding-top: calc(var(--space_block) * 0.5);
+      padding-bottom: calc(var(--space_block) * 0.5);
+      margin-bottom: 0;
+      font-size: calc(var(--font_rem) * 1.15);
+    }
+    h2,
+    .h2 {
+      padding-top: calc(var(--space_block) * 0.5);
+      padding-bottom: calc(var(--space_block) * 0.5);
+      margin-bottom: 0;
+      font-size: calc(var(--font_rem) * 1.3);
+    }
+    h4,
+    .h4 {
+      font-size: calc(var(--font_rem) * 1.1);
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .color_black {
+    color: var(--black);
   }
 
   .button_row {
@@ -42,23 +134,27 @@ const pageDescription =
     }
   }
 
-  .product_text .button_row {
-    padding-inline: calc(var(--space_inline) / 1);
-    text-align: center;
+  .whatsincluded,
+  .fontsize_med {
+    font-size: calc(var(--font_rem) * 0.75);
+    font-weight: 500;
   }
 
-  four_icon_group svg {
-    padding: 4px;
-    max-height: 210px;
-  }
-
-  small {
-    display: block;
-    font-size: 50%;
+  .fontsize_sm {
+    font-size: calc(var(--font_rem) * 0.55);
+    font-weight: 500;
   }
 
   .starting_at {
-    font-size: 66%;
+    padding-top: calc(var(--space_block) * 0.5);
+    font-size: calc(var(--font_rem) * 0.75);
+    font-weight: 500;
+  }
+
+  .demo_link {
+    padding-bottom: 0;
+    font-size: calc(var(--font_rem) * 0.75);
+    font-weight: 300;
   }
 
   .included {
@@ -66,7 +162,11 @@ const pageDescription =
   }
 </style>
 
-<Layout title={pageTitle} description={pageDescription} bodyClass="offer">
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  bodyClass="offer"
+>
   <LandingScreen>
     {pageSubtitle}
     <p class="brand small_text">{pageRevealOnScroll}</p>
@@ -76,261 +176,88 @@ const pageDescription =
     <div class="print_imperatif">Make life easy for your customers!</div>
     <div class="print_title">Junglestar</div>
     <div class="print_subtitle">
-      Junglestar can make you a fast-loading website, crafted to out-perform your competitors.
+      Junglestar can make you a fast-loading website, crafted to out-perform
+      your competitors.
     </div>
   </div>
 
   <div class="offer_content">
-    <div class="scrolltarget">
-      <div class="mean_title mean_title--first">
-        <div class="wrap flex flex_cols flex_align_center flex_justify_center">
-          <div class="mean_icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0.5 400.5 400 400"
-              class="white_color outlined icon--desperate"
-            >
-              <path
-                fill="none"
-                d="M86.009 645.221c-19.266-9.706-26.963-33.234-17.247-52.43 9.65-19.2 33.167-26.917 52.456-17.157 19.23 9.77 26.891 33.231 17.208 52.424-9.745 19.196-33.25 26.933-52.417 17.163z"
-              ></path>
-              <path
-                fill="none"
-                d="M80.69 663.069h73.136l.551-62.44c.567-23.406 3.994-40.537 14.871-54.805 9.811-12.934 19.678-28.575 61.664-41.691 62.592-19.598 112.234 12.825 118.185 16.549 19.211 12.076 25.046 37.433 13.008 56.695-2.064 3.272-4.615 6.005-7.336 8.463-.329.435-.435.967-.819 1.344l-65.993 72.082h80.619c12.1-.006 21.914 9.793 21.925 21.894.014 12.113-9.796 21.942-21.909 21.957H238.129a21.958 21.958 0 0 1-20.087-13.109c-2.456-5.583-2.29-11.735-.053-17.194.248-4.447 1.171-8.897 3.695-12.911l49.007-79.09c-6.078-.209-12.482.37-18.851 2.466-18.576 5.936-31.843 18.311-31.868 18.311 0 0-2.253 2.194-3.349 3.331l-21.436 81.814c-.167.694-.589 1.184-.807 1.808-.354 1-.792 1.966-1.313 2.889a19.247 19.247 0 0 1-2.706 3.92c-.667.75-1.25 1.499-2.007 2.151-1.299 1.169-2.752 2.029-4.274 2.829-.783.431-1.456.908-2.279 1.228-2.46.955-5.061 1.553-7.817 1.553H80.69c-12.092 0-21.917-7.388-21.917-19.49.003-12.102 9.829-20.554 21.917-20.554zm-36.261-23.691l.027.03s-4.452 19.319-12.473 25.268c-8.046 5.979-15.625 2.733-19.043-1.881l-.027-.029c-3.424-4.616-4.086-12.48 3.957-18.459 8.019-5.951 27.559-4.929 27.559-4.929zm5.734-28.081l-.016.046S33.172 621.614 23.335 620c-9.884-1.605-12.85-9.305-11.929-14.969l.011-.055c.924-5.667 6.11-11.58 15.99-9.961 9.845 1.6 22.756 16.282 22.756 16.282z"
-              ></path>
-            </svg>
-          </div>
-
-          <h1 class="center">Is your website slow?</h1>
-          <h2 class="h3 center"> Do I need to pinch & zoom a PDF to see your pricelist? </h2>
-        </div>
-      </div>
-
-      <div class="mean_title mean_title--second">
-        <div class="wrap flex flex_cols flex_align_center flex_justify_center">
-          <div class="mean_icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0.5 400.5 400 400"
-              class="brand_color outlined icon--jumping"
-            >
-              <path
-                fill="none"
-                d="M356.654 441.236c7.189-6.6 7.685-17.773 1.105-24.983-6.564-7.216-17.731-7.701-24.961-1.129l-106.497 97.28-170.371-.411c-9.767.203-17.518 8.288-17.313 18.054.199 9.479 7.835 17.114 17.313 17.313h103.846v63.846l-72.438.069a21.25 21.25 0 0 0-17.462 9.21 21.21 21.21 0 0 0-2.326 19.616l32.428 84.505a21.236 21.236 0 0 0 19.815 13.632c2.532 0 5.102-.464 7.599-1.429 10.934-4.182 16.406-16.436 12.223-27.37a.182.182 0 0 0-.011-.028l-21.378-55.692 95.098-.094.121 58.271-83.782 38.161c-10.61 4.985-15.169 17.628-10.184 28.238 4.901 10.43 17.229 15.045 27.775 10.396l96.246-43.842a21.174 21.174 0 0 0 12.402-19.36l-.331-191.948 101.083-92.305z"
-              ></path>
-              <path
-                fill="none"
-                d="M219.338 472.87c0 19.317-15.66 34.995-34.963 34.995-19.329 0-35.002-15.678-35.002-34.995.002-19.329 15.673-34.999 35.002-34.999 19.299 0 34.963 15.68 34.963 34.999z"
-              ></path>
-            </svg>
-          </div>
-
-          <h1 class="center">We can fix that.</h1>
-          <h2 class="h3 center"> We offer all-inclusive packages for any budget! </h2>
-        </div>
-      </div>
-    </div>
-
+    <SlowWebsite />
     <div class="grid_offer">
-      <div id="landing-page" class="card card_static looper__link bestvalue" title="LANDING PAGE package">
-        <div class="product_text">
-          <h2 class="center">Compact Website</h2>
+      {
+        offers.map((offer) => {
+          const { data } = offer;
+          const { product, selling_points } = data;
+          const cardClasses = [
+            "grid_offer_card",
+            data.bestvalue && "bestvalue",
+            data.bestseller && "bestseller",
+          ]
+            .filter(Boolean)
+            .join(" ");
 
-          <h3 class="h4 center color_black">All-included package</h3>
-
-          <h4 class="h3 center">
-            Quality website template. Name, Hosting and SSL included for one whole year. <small>
-              50 Euro/year after that.
-            </small>
-          </h4>
-
-          <p class="">
-            We load your data, process everything and produce a clean landing page ready to hit. The perfect digital
-            brochure with zero maintenance cost!
-          </p>
-
-          <div class="selling_points">
-            <div class="center brand">What's included:</div>
-
-            <ul class="included">
-              <li class="checkmark">Responsive landing page.</li>
-
-              <li class="checkmark">Phone Ready design.</li>
-
-              <li class="checkmark">Social media friendly.</li>
-
-              <li class="checkmark">SEO optimised.</li>
-
-              <li class="checkmark">Domain name.</li>
-
-              <li class="checkmark">Hosting on global CDN.</li>
-
-              <li class="checkmark">Secure SLL/https.</li>
-
-              <li class="checkmark">Sustainable Web Design to help the planet. </li>
-            </ul>
-          </div>
-
-          <div class="starting_at center">
-            <p
-              >Starting at 490 Euro.
-              <a class="demo_link" title="See - Compact Website Demo" href="https://amazing-single.junglestar.org/">
-                See Demo.</a
-              >
-            </p>
-          </div>
-
-          <div class="button_row center">
-            <a
-              class="button CTAbutton"
-              title="request more infos"
-              href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's Landing package"
+          return (
+            <div
+              id={data.slug}
+              class={cardClasses}
+              title={`${data.name.toUpperCase()} package`}
             >
-              Let's start talking!
-            </a>
-          </div>
-        </div>
-      </div>
+              <header class="offer_top">
+                <h2 class="center">{product.name}</h2>
+                <p class="center color_black">{product.type} </p>
+                <h3 class="h3 center">
+                  {product.subname}
+                  <br />
+                  <small class="fontsize_sm">
+                    1 year included, then €55/yr.
+                  </small>
+                </h3>
+              </header>
 
-      <div id="full-site" class="card card_static looper__link bestseller" title="FULL SITE package">
-        <div class="product_text">
-          <h2 class="center">Amazing Website</h2>
+              <div class="offer_desc">{product.desc}</div>
 
-          <h3 class="h4 center color_black">All-included package</h3>
+              <div class="offer_benefits selling_points">
+                <div class="center brand fontsize_med">What's included:</div>
 
-          <h4 class="h3 center">
-            Quality website template. Name, Hosting and SSL included for one whole year. <small>
-              50 Euro/year after that.
-            </small>
-          </h4>
+                <ul class="included">
+                  {Object.values(selling_points).map((point) => (
+                    <li class="checkmark">{point}</li>
+                  ))}
+                </ul>
+              </div>
 
-          <p class="">
-            We load your look and products data, process everything and produce a clean performant website ready to
-            compete.
-          </p>
+              <div class="offer_price fontsize_med center">
+                <p class="fontsize_med center">
+                  Starting at {product.starting_at} Euro.
+                </p>
+                <p class="brand fontsize_sm">One time cost!</p>
+                <p>
+                  <a
+                    class="demo_link fontsize_med center"
+                    title={`See - ${product.name} Demo`}
+                    href={product.demo_url}
+                  />
+                  See Demo.
+                </p>
+              </div>
 
-          <div class="selling_points">
-            <div class="center brand">What's included:</div>
-
-            <ul class="included">
-              <li class="checkmark">Responsive full website.</li>
-
-              <li class="checkmark">Social media friendly.</li>
-
-              <li class="checkmark">SEO optimised.</li>
-
-              <li class="checkmark">Domain name.</li>
-
-              <li class="checkmark">Hosting on global CDN.</li>
-
-              <li class="checkmark">Secure SLL/https.</li>
-
-              <li class="checkmark">Data entry.</li>
-
-              <li class="checkmark">Adapted to your existing look.</li>
-
-              <li class="checkmark">Editing system for staff.</li>
-
-              <li class="">Sustainable Web Design to help the planet.</li>
-            </ul>
-          </div>
-
-          <div class="starting_at center">
-            <p>
-              Starting at 990 Euro.
-
-              <a class="demo_link" title="See - Amazing Website Demo" href="https://amazing-days.junglestar.org/">
-                See Demo.</a
-              >
-            </p>
-          </div>
-
-          <div class="button_row center">
-            <a
-              class="button CTAbutton"
-              title="request more infos"
-              href="mailto:info@junglestar.org?subject=Send me infos about Junglestar's Full Site package"
-            >
-              Let's start talking!
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div id="custom" class="card card_static looper__link" title="CUSTOM package">
-        <div class="product_text">
-          <h2 class="center">Awesome Design</h2>
-
-          <h3 class="h4 center color_black">All-included package</h3>
-
-          <h4 class="h3 center">
-            Customised design for your needs. Name, Hosting and SSL included for one whole year. <small>
-              50 Euro/year after that.
-            </small>
-          </h4>
-
-          <p>
-            We craft a special design for your brand, produce & develop a well thought user-experience by embracing your
-            existing look and brand identity.
-          </p>
-
-          <div class="selling_points">
-            <div class="center brand">What's included:</div>
-
-            <ul class="included">
-              <li class="checkmark">Responsive full website.</li>
-
-              <li class="checkmark">Social media friendly.</li>
-
-              <li class="checkmark">SEO optimised.</li>
-
-              <li class="checkmark">Domain name.</li>
-
-              <li class="checkmark">Hosting on global CDN.</li>
-
-              <li class="checkmark">Secure SLL/https.</li>
-
-              <li class="checkmark">Data entry.</li>
-
-              <li class="checkmark">Editing system for staff.</li>
-
-              <li class="checkmark">Custom designed architecture</li>
-
-              <li class="checkmark">Customised functionalities.</li>
-
-              <li class="checkmark">Your Company look & feel!</li>
-
-              <li class="checkmark">Sustainable Web Design to help the planet. </li>
-            </ul>
-          </div>
-
-          <div class="starting_at center">
-            <p>
-              Starting at 3.990 Euro.
-
-              <a class="demo_link" title="See  - Awesome Design Demo" href="https://binocle.it/?ref=junglestar">
-                See Demo.</a
-              >
-            </p>
-          </div>
-
-          <div class="button_row center">
-            <a
-              class="button CTAbutton"
-              title="request more infos"
-              href="mailto:info@junglestar.org?subject=Send me more infos about Junglestar's  package"
-            >
-              Let's start talking!
-            </a>
-          </div>
-        </div>
-      </div>
+              <footer class="offer_footer">
+                <CTAButton
+                  subject={`Send me more infos about Junglestar's ${data.name} package`}
+                />
+              </footer>
+            </div>
+          );
+        })
+      }
     </div>
   </div>
 
   <Gmap />
 
   <div class="print_only">
-    <div class="print_footer"> See this offer online at: https://junglestar.org/offer/ </div>
+    <div class="print_footer">
+      See this offer online at: https://junglestar.org/offer/
+    </div>
   </div>
 </Layout>

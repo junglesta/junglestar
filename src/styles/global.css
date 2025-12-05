@@ -26,7 +26,6 @@
 @import "./layers/compo/intro.css" layer(components);
 @import "./layers/compo/links.css" layer(components);
 @import "./layers/compo/mean.css" layer(components);
-@import "./layers/compo/offer.css" layer(components);
 @import "./layers/compo/post.css" layer(components);
 @import "./layers/compo/post_content.css" layer(components);
 @import "./layers/compo/post_image.css" layer(components);

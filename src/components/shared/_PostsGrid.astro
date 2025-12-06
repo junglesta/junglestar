@@ -1,4 +1,5 @@
 ---
+// PostGrid.astro
 import { Image } from "astro:assets";
 import type { RenderedPost } from "@utils/getPosts";
 import AnimatedCard from "@components/UI/AnimateCardsCover.astro";
@@ -13,18 +14,30 @@ const { posts } = Astro.props;
 <div class="wrap margin_topx2 card_list">
   {
     posts.map((post) => (
-      <AnimatedCard end="33%" distance="33%" class:list={post}>
-        <div id={post.id} class="hidden">
+      <AnimatedCard
+        end="33%"
+        distance="33%"
+        class:list={post}
+      >
+        <div
+          id={post.id}
+          class="hidden"
+        >
           &nbsp;
         </div>
         {post.data.image && (
           <div class="post_image">
-            <Image src={post.data.image.src} alt={post.data.image.alt} />
+            <Image
+              src={post.data.image.src}
+              alt={post.data.image.alt}
+            />
           </div>
         )}
         <div class="post_header">
           <h3 class="post_title">{post.data.title}</h3>
-          {post.data.subtitle && <p class="post_subtitle">{post.data.subtitle}</p>}
+          {post.data.subtitle && (
+            <p class="post_subtitle">{post.data.subtitle}</p>
+          )}
 
           {post.data.tags && post.data.tags.length > 0 && (
             <div class="post_tags">

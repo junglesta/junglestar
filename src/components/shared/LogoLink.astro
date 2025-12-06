@@ -1,0 +1,29 @@
+---
+// @components/shared/LogoLinkBrandFull.astro
+import Logo from "@components/shared/Logo.astro";
+---
+
+<style>
+  .logo_link {
+    transform: rotate(0deg);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .logo {
+    text-transform: uppercase;
+    font-size: 150%;
+    width: 100%;
+    text-align: center;
+  }
+</style>
+
+<a
+  class="logo_link clean file_LogoLink"
+  title="Clicking this link will send you back to junglestar.org homepage"
+  href="/"
+>
+  <div class="logo">
+    <Logo />
+  </div>
+</a>

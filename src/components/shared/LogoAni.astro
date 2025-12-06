@@ -6,7 +6,7 @@ const strokeC = "#FFF";
 
 <style>
   .logo_anim {
-    margin-bottom: 10dvh;
+    margin-bottom: 10rem;
     justify-self: center;
     align-self: center;
   }
@@ -90,11 +90,18 @@ const strokeC = "#FFF";
   "use strict";
   !(function (t, e) {
     function r(r) {
-      if ("undefined" == typeof r) throw new Error('Pathformer [constructor]: "element" parameter is required');
+      if ("undefined" == typeof r)
+        throw new Error(
+          'Pathformer [constructor]: "element" parameter is required',
+        );
       if (r.constructor === String && ((r = e.getElementById(r)), !r))
-        throw new Error('Pathformer [constructor]: "element" parameter is not related to an existing ID');
+        throw new Error(
+          'Pathformer [constructor]: "element" parameter is not related to an existing ID',
+        );
       if (!(r.constructor instanceof t.SVGElement || /^svg$/i.test(r.nodeName)))
-        throw new Error('Pathformer [constructor]: "element" parameter must be a string or a SVGelement');
+        throw new Error(
+          'Pathformer [constructor]: "element" parameter must be a string or a SVGelement',
+        );
       ((this.el = r), this.scan(r));
     }
     function n(t, e, r) {
@@ -104,10 +111,34 @@ const strokeC = "#FFF";
         this.setCallback(r),
         this.isReady && this.init());
     }
-    ((r.prototype.TYPES = ["line", "ellipse", "circle", "polygon", "polyline", "rect"]),
-      (r.prototype.ATTR_WATCH = ["cx", "cy", "points", "r", "rx", "ry", "x", "x1", "x2", "y", "y1", "y2"]),
+    ((r.prototype.TYPES = [
+      "line",
+      "ellipse",
+      "circle",
+      "polygon",
+      "polyline",
+      "rect",
+    ]),
+      (r.prototype.ATTR_WATCH = [
+        "cx",
+        "cy",
+        "points",
+        "r",
+        "rx",
+        "ry",
+        "x",
+        "x1",
+        "x2",
+        "y",
+        "y1",
+        "y2",
+      ]),
       (r.prototype.scan = function (t) {
-        for (var e, r, n, i, a = t.querySelectorAll(this.TYPES.join(",")), o = 0; o < a.length; o++)
+        for (
+          var e, r, n, i, a = t.querySelectorAll(this.TYPES.join(",")), o = 0;
+          o < a.length;
+          o++
+        )
           ((r = a[o]),
             (e = this[r.tagName.toLowerCase() + "ToPath"]),
             (n = e(this.parseAttr(r.attributes))),
@@ -142,7 +173,8 @@ const strokeC = "#FFF";
           for (e = 0; e < i.length; e += 2) a.push(i[e] + "," + i[e + 1]);
           i = a;
         }
-        for (r = "M" + i[0], e = 1; e < i.length; e++) -1 !== i[e].indexOf(",") && (r += "L" + i[e]);
+        for (r = "M" + i[0], e = 1; e < i.length; e++)
+          -1 !== i[e].indexOf(",") && (r += "L" + i[e]);
         return ((n.d = r), n);
       }),
       (r.prototype.polygonToPath = function (t) {
@@ -216,13 +248,19 @@ const strokeC = "#FFF";
           i,
           a = e.createElementNS("http://www.w3.org/2000/svg", "path");
         for (n = 0; n < t.attributes.length; n++)
-          ((i = t.attributes[n]), -1 === this.ATTR_WATCH.indexOf(i.name) && a.setAttribute(i.name, i.value));
+          ((i = t.attributes[n]),
+            -1 === this.ATTR_WATCH.indexOf(i.name) &&
+              a.setAttribute(i.name, i.value));
         for (n in r) a.setAttribute(n, r[n]);
         return a;
       }),
       (r.prototype.parseAttr = function (t) {
         for (var e, r = {}, n = 0; n < t.length; n++) {
-          if (((e = t[n]), -1 !== this.ATTR_WATCH.indexOf(e.name) && -1 !== e.value.indexOf("%")))
+          if (
+            ((e = t[n]),
+            -1 !== this.ATTR_WATCH.indexOf(e.name) &&
+              -1 !== e.value.indexOf("%"))
+          )
             throw new Error(
               "Pathformer [parseAttr]: a SVG shape got values in percentage. This cannot be transformed into 'path' tags. Please use 'viewBox'.",
             );
@@ -251,9 +289,14 @@ const strokeC = "#FFF";
         return 1 - n + i * n;
       }),
       (n.prototype.setElement = function (r, n) {
-        if ("undefined" == typeof r) throw new Error('Vivus [constructor]: "element" parameter is required');
+        if ("undefined" == typeof r)
+          throw new Error(
+            'Vivus [constructor]: "element" parameter is required',
+          );
         if (r.constructor === String && ((r = e.getElementById(r)), !r))
-          throw new Error('Vivus [constructor]: "element" parameter is not related to an existing ID');
+          throw new Error(
+            'Vivus [constructor]: "element" parameter is not related to an existing ID',
+          );
         if (((this.parentEl = r), n && n.file)) {
           var i = e.createElement("object");
           (i.setAttribute("type", "image/svg+xml"),
@@ -269,28 +312,52 @@ const strokeC = "#FFF";
             ((this.el = r), (this.isReady = !0));
             break;
           case t.HTMLObjectElement:
-            if (((this.el = r.contentDocument && r.contentDocument.querySelector("svg")), this.el))
+            if (
+              ((this.el =
+                r.contentDocument && r.contentDocument.querySelector("svg")),
+              this.el)
+            )
               return ((this.isReady = !0), void 0);
             var a = this;
             r.addEventListener("load", function () {
-              if (((a.el = r.contentDocument && r.contentDocument.querySelector("svg")), !a.el))
-                throw new Error("Vivus [constructor]: object loaded does not contain any SVG");
+              if (
+                ((a.el =
+                  r.contentDocument && r.contentDocument.querySelector("svg")),
+                !a.el)
+              )
+                throw new Error(
+                  "Vivus [constructor]: object loaded does not contain any SVG",
+                );
               ((a.isReady = !0), a.init());
             });
             break;
           default:
-            throw new Error('Vivus [constructor]: "element" parameter is not valid (or miss the "file" attribute)');
+            throw new Error(
+              'Vivus [constructor]: "element" parameter is not valid (or miss the "file" attribute)',
+            );
         }
       }),
       (n.prototype.setOptions = function (e) {
         var r = ["delayed", "async", "oneByOne", "scenario", "scenario-sync"],
           i = ["inViewport", "manual", "autostart"];
         if (void 0 !== e && e.constructor !== Object)
-          throw new Error('Vivus [constructor]: "options" parameter must be an object');
+          throw new Error(
+            'Vivus [constructor]: "options" parameter must be an object',
+          );
         if (((e = e || {}), e.type && -1 === r.indexOf(e.type)))
-          throw new Error("Vivus [constructor]: " + e.type + " is not an existing animation `type`");
-        if (((this.type = e.type || r[0]), e.start && -1 === i.indexOf(e.start)))
-          throw new Error("Vivus [constructor]: " + e.start + " is not an existing `start` option");
+          throw new Error(
+            "Vivus [constructor]: " +
+              e.type +
+              " is not an existing animation `type`",
+          );
+        if (
+          ((this.type = e.type || r[0]), e.start && -1 === i.indexOf(e.start))
+        )
+          throw new Error(
+            "Vivus [constructor]: " +
+              e.start +
+              " is not an existing `start` option",
+          );
         if (
           ((this.start = e.start || i[0]),
           (this.isIE =
@@ -300,24 +367,36 @@ const strokeC = "#FFF";
           (this.duration = o(e.duration, 120)),
           (this.delay = o(e.delay, null)),
           (this.dashGap = o(e.dashGap, 2)),
-          (this.forceRender = e.hasOwnProperty("forceRender") ? !!e.forceRender : this.isIE),
+          (this.forceRender = e.hasOwnProperty("forceRender")
+            ? !!e.forceRender
+            : this.isIE),
           (this.selfDestroy = !!e.selfDestroy),
           (this.onReady = e.onReady),
-          (this.ignoreInvisible = e.hasOwnProperty("ignoreInvisible") ? !!e.ignoreInvisible : !1),
+          (this.ignoreInvisible = e.hasOwnProperty("ignoreInvisible")
+            ? !!e.ignoreInvisible
+            : !1),
           (this.animTimingFunction = e.animTimingFunction || n.LINEAR),
           (this.pathTimingFunction = e.pathTimingFunction || n.LINEAR),
           this.delay >= this.duration)
         )
-          throw new Error("Vivus [constructor]: delay must be shorter than duration");
+          throw new Error(
+            "Vivus [constructor]: delay must be shorter than duration",
+          );
       }),
       (n.prototype.setCallback = function (t) {
         if (t && t.constructor !== Function)
-          throw new Error('Vivus [constructor]: "callback" parameter must be a function');
+          throw new Error(
+            'Vivus [constructor]: "callback" parameter must be a function',
+          );
         this.callback = t || function () {};
       }),
       (n.prototype.mapping = function () {
         var e, r, n, i, a, s, h, u;
-        for (u = s = h = 0, r = this.el.querySelectorAll("path"), e = 0; e < r.length; e++)
+        for (
+          u = s = h = 0, r = this.el.querySelectorAll("path"), e = 0;
+          e < r.length;
+          e++
+        )
           ((n = r[e]),
             this.isInvisible(n) ||
               ((a = {
@@ -325,10 +404,16 @@ const strokeC = "#FFF";
                 length: Math.ceil(n.getTotalLength()),
               }),
               isNaN(a.length)
-                ? t.console && console.warn && console.warn("Vivus [mapping]: cannot retrieve a path element length", n)
+                ? t.console &&
+                  console.warn &&
+                  console.warn(
+                    "Vivus [mapping]: cannot retrieve a path element length",
+                    n,
+                  )
                 : ((s += a.length),
                   this.map.push(a),
-                  (n.style.strokeDasharray = a.length + " " + (a.length + this.dashGap)),
+                  (n.style.strokeDasharray =
+                    a.length + " " + (a.length + this.dashGap)),
                   (n.style.strokeDashoffset = a.length),
                   this.isIE && (a.length += this.dashGap),
                   this.renderPath(e))));
@@ -342,10 +427,12 @@ const strokeC = "#FFF";
         ) {
           switch (((a = this.map[e]), this.type)) {
             case "delayed":
-              ((a.startAt = this.delayUnit * e), (a.duration = this.duration - this.delay));
+              ((a.startAt = this.delayUnit * e),
+                (a.duration = this.duration - this.delay));
               break;
             case "oneByOne":
-              ((a.startAt = (h / s) * this.duration), (a.duration = (a.length / s) * this.duration));
+              ((a.startAt = (h / s) * this.duration),
+                (a.duration = (a.length / s) * this.duration));
               break;
             case "async":
               ((a.startAt = 0), (a.duration = this.duration));
@@ -355,17 +442,27 @@ const strokeC = "#FFF";
                 (i = this.parseAttr(n)),
                 (a.startAt = u + (o(i["data-delay"], this.delayUnit) || 0)),
                 (a.duration = o(i["data-duration"], this.duration)),
-                (u = void 0 !== i["data-async"] ? a.startAt : a.startAt + a.duration),
-                (this.frameLength = Math.max(this.frameLength, a.startAt + a.duration)));
+                (u =
+                  void 0 !== i["data-async"]
+                    ? a.startAt
+                    : a.startAt + a.duration),
+                (this.frameLength = Math.max(
+                  this.frameLength,
+                  a.startAt + a.duration,
+                )));
               break;
             case "scenario":
               ((n = r[e]),
                 (i = this.parseAttr(n)),
                 (a.startAt = o(i["data-start"], this.delayUnit) || 0),
                 (a.duration = o(i["data-duration"], this.duration)),
-                (this.frameLength = Math.max(this.frameLength, a.startAt + a.duration)));
+                (this.frameLength = Math.max(
+                  this.frameLength,
+                  a.startAt + a.duration,
+                )));
           }
-          ((h += a.length), (this.frameLength = this.frameLength || this.duration));
+          ((h += a.length),
+            (this.frameLength = this.frameLength || this.duration));
         }
       }),
       (n.prototype.drawer = function () {
@@ -387,7 +484,10 @@ const strokeC = "#FFF";
       (n.prototype.trace = function () {
         var t, e, r, n;
         for (
-          n = this.animTimingFunction(this.currentFrame / this.frameLength) * this.frameLength, t = 0;
+          n =
+            this.animTimingFunction(this.currentFrame / this.frameLength) *
+            this.frameLength,
+            t = 0;
           t < this.map.length;
           t++
         )
@@ -395,7 +495,9 @@ const strokeC = "#FFF";
             (e = (n - r.startAt) / r.duration),
             (e = this.pathTimingFunction(Math.max(0, Math.min(1, e)))),
             r.progress !== e &&
-              ((r.progress = e), (r.el.style.strokeDashoffset = Math.floor(r.length * (1 - e))), this.renderPath(t)));
+              ((r.progress = e),
+              (r.el.style.strokeDashoffset = Math.floor(r.length * (1 - e))),
+              this.renderPath(t)));
       }),
       (n.prototype.renderPath = function (t) {
         if (this.forceRender && this.map && this.map[t]) {
@@ -423,13 +525,18 @@ const strokeC = "#FFF";
           case "inViewport":
             var e = this,
               r = function () {
-                e.isInViewport(e.parentEl, 1) && (e.play(), t.removeEventListener("scroll", r));
+                e.isInViewport(e.parentEl, 1) &&
+                  (e.play(), t.removeEventListener("scroll", r));
               };
             (t.addEventListener("scroll", r), r());
         }
       }),
       (n.prototype.getStatus = function () {
-        return 0 === this.currentFrame ? "start" : this.currentFrame === this.frameLength ? "end" : "progress";
+        return 0 === this.currentFrame
+          ? "start"
+          : this.currentFrame === this.frameLength
+            ? "end"
+            : "progress";
       }),
       (n.prototype.reset = function () {
         return this.setFrameProgress(0);
@@ -446,7 +553,8 @@ const strokeC = "#FFF";
         );
       }),
       (n.prototype.play = function (t) {
-        if (t && "number" != typeof t) throw new Error("Vivus [play]: invalid speed");
+        if (t && "number" != typeof t)
+          throw new Error("Vivus [play]: invalid speed");
         return ((this.speed = t || 1), this.handle || this.drawer(), this);
       }),
       (n.prototype.stop = function () {
@@ -473,7 +581,8 @@ const strokeC = "#FFF";
         var e,
           r = {};
         if (t && t.attributes)
-          for (var n = 0; n < t.attributes.length; n++) ((e = t.attributes[n]), (r[e.name] = e.value));
+          for (var n = 0; n < t.attributes.length; n++)
+            ((e = t.attributes[n]), (r[e.name] = e.value));
         return r;
       }),
       (n.prototype.isInViewport = function (t, e) {
@@ -543,7 +652,9 @@ const strokeC = "#FFF";
     },
     function () {
       if (window.console) {
-        console.log("Program finished. You can go now... [go outdoor and wash your eyes]");
+        console.log(
+          "Program finished. You can go now... [go outdoor and wash your eyes]",
+        );
         // The property 'map' contain all the SVG mapping
         console.table(hi.map);
       }

@@ -181,14 +181,6 @@ declare module 'astro:content' {
   rendered?: RenderedContent;
   filePath?: string;
 }>;
-"intro": Record<string, {
-  id: string;
-  body?: string;
-  collection: "intro";
-  data: any;
-  rendered?: RenderedContent;
-  filePath?: string;
-}>;
 "introJ": Record<string, {
   id: string;
   body?: string;
@@ -210,30 +202,6 @@ declare module 'astro:content' {
   body?: string;
   collection: "productionConcepts";
   data: InferEntrySchema<"productionConcepts">;
-  rendered?: RenderedContent;
-  filePath?: string;
-}>;
-"slogans_help": Record<string, {
-  id: string;
-  body?: string;
-  collection: "slogans_help";
-  data: any;
-  rendered?: RenderedContent;
-  filePath?: string;
-}>;
-"slogans_intro": Record<string, {
-  id: string;
-  body?: string;
-  collection: "slogans_intro";
-  data: any;
-  rendered?: RenderedContent;
-  filePath?: string;
-}>;
-"works": Record<string, {
-  id: string;
-  body?: string;
-  collection: "works";
-  data: any;
   rendered?: RenderedContent;
   filePath?: string;
 }>;

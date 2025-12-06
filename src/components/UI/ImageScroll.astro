@@ -1,0 +1,62 @@
+---
+//ImageScroll.astro
+//
+interface Props {
+  class?: string;
+  image_src: string;
+  alt: string;
+}
+
+const {
+  class: className,
+  image_src,
+  alt = "put a proper alt here",
+} = Astro.props;
+---
+
+<style>
+  global(html) {
+    scroll-behavior: auto;
+  }
+  .img_wrapper {
+    width: 80%;
+    position: relative;
+  }
+
+  .img_pavallax {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+    transform: translate3d(0px, -7.1116%, 0px) scale3d(1.02, 1.02, 1)
+      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+    will-change: transform;
+    z-index: 2;
+    width: 100%;
+    position: relative;
+  }
+</style>
+
+<div class:list={["card_list", className]}>
+  <div class="img_wrapper">
+    <div class="img_pavallax">
+      <img
+        src={image_src}
+        alt=""
+        class="here-any-class-you-need-to-further-customise-the-img"
+      />
+      <div
+        class="img_bg_color"
+        style="{background-color: #6a92a7}"
+      >
+      </div>
+    </div>
+  </div>
+</div>

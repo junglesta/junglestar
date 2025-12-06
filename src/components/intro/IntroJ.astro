@@ -7,20 +7,20 @@ import { getCollection } from "astro:content";
 // import Svg3 from "@assets/intro/3.svg";
 
 // Get all intro entries and sort them
-const introEntries = await getCollection("intro");
+const introEntries = await getCollection("introJ");
 const sortedEntries = introEntries.sort((a, b) => {
-	// Sort by filename
-	const aNum = parseInt(a.id.match(/^\d+/)?.[0] || "0");
-	const bNum = parseInt(b.id.match(/^\d+/)?.[0] || "0");
-	return aNum - bNum;
+  // Sort by filename
+  const aNum = parseInt(a.id.match(/^\d+/)?.[0] || "0");
+  const bNum = parseInt(b.id.match(/^\d+/)?.[0] || "0");
+  return aNum - bNum;
 });
 
 // Optional: Filter published entries only
 // const publishedEntries = sortedEntries.filter(entry => entry.data.published !== false);
 
 interface Props {
-	showContent?: boolean;
-	limit?: number;
+  showContent?: boolean;
+  limit?: number;
 }
 
 const { showContent = true, limit } = Astro.props;

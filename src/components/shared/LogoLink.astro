@@ -1,14 +1,15 @@
 ---
 // @components/shared/LogoLinkBrandFull.astro
-import Logo from "@components/shared/Logo.astro";
+import Logo from "@assets/svgs/logo_stroke.svg";
 ---
 
 <style>
   .logo_link {
-    transform: rotate(0deg);
+    /*transform: rotate(0deg);*/
     display: flex;
     align-items: center;
     text-decoration: none;
+    color: red;
   }
   .logo {
     text-transform: uppercase;
@@ -19,11 +20,15 @@ import Logo from "@components/shared/Logo.astro";
 </style>
 
 <a
-  class="logo_link clean file_LogoLink"
-  title="Clicking this link will send you back to junglestar.org homepage"
+  class="logo_link clean file_Logo"
+  title="This link goes back to junglestar.org homepage"
   href="/"
 >
   <div class="logo">
-    <Logo />
+    <Logo
+      width={300}
+      height={300}
+      fill="currentColor"
+    />
   </div>
 </a>

@@ -9,6 +9,7 @@ import "@styles/global.css";
 
 export interface Props {
   bodyClass?: string;
+  mainClass?: string;
   title: string;
   description?: string;
   sitemap?: boolean;
@@ -17,6 +18,7 @@ export interface Props {
 
 const {
   bodyClass,
+  mainClass = "",
   title,
   description = "Sustainable Web Design to help fight Climate Change",
   sitemap = true,
@@ -52,20 +54,25 @@ const {
  email    : info@junglestar.org
 -->
 
-  <Head title={title} description={description} sitemap={sitemap} />
+  <Head
+    title={title}
+    description={description}
+    sitemap={sitemap}
+  />
   <body class={bodyClass}>
     <div class="scrolling_body_wrap">
       <span id="top"></span>
       <slot name="landing_screen" />
 
-      <main class="">
+      <main class={mainClass}>
         <slot />
       </main>
     </div>
     <Footer />
 
     <!-- Inline script: only passes data to window -->
-    <script is:inline define:vars={{ brand: siteData.brand, url: siteData.url }}>
+    <script is:inline define:vars={{ brand: siteData.brand, url: siteData.url }}
+    >
       window.__SITE_DATA__ = { brand, url };
     </script>
 

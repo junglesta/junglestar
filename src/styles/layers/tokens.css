@@ -20,6 +20,7 @@
   --black_hover: var(--black);
 
   --white: oklch(0.9624 0.0062 75.41/100%);
+  --white_hex: #f5f2ee;
   --whiteT25: oklch(0.95 0.01 255 / 25%);
   --whiteT50: oklch(0.95 0.01 255 / 50%);
   --white_hover: var(--white);
@@ -31,6 +32,7 @@
 
   /*--brand: #0069cc;*/
   --brand: oklch(0.5286 0.1735 255);
+  --brand_hex: #0169cc;
   /*--brand_invert: #ff9633;*/
   --brand_invert: oklch(0.7687 0.1641 58.66);
   /*--brand_complementary: #cc6600;*/

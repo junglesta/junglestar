@@ -1,0 +1,65 @@
+---
+interface Props {
+  color: string;
+  position?: "top" | "bottom";
+  height?: string;
+}
+
+const { color, position = "bottom", height = "8rem" } = Astro.props;
+---
+
+<div
+  class:list={["wave", position]}
+  style={`--color: ${color}; --height: ${height};`}
+>
+  <svg
+    width="0"
+    height="0"
+  >
+    <defs>
+      <clipPath
+        id="waveClipBottom"
+        clipPathUnits="objectBoundingBox"
+      >
+        <path d="M0,0 L0,0.5 C0.25,1 0.75,0 1,0.5 L1,0 Z"></path>
+      </clipPath>
+      <clipPath
+        id="waveClipTop"
+        clipPathUnits="objectBoundingBox"
+      >
+        <path d="M0,1 L0,0.5 C0.25,0 0.75,1 1,0.5 L1,1 Z"></path>
+      </clipPath>
+    </defs>
+  </svg>
+  <div class="wave-shape"></div>
+</div>
+
+<style>
+  .wave {
+    position: relative;
+  }
+
+  .wave-shape {
+    height: var(--height);
+    background-color: var(--color);
+  }
+
+  .wave.bottom {
+    .wave-shape {
+      clip-path: url(#waveClipBottom);
+      bottom: calc(var(--height) * -1);
+      position: relative;
+    }
+  }
+  .wave.top {
+    position: relative;
+    margin-top: calc(var(--height) * -1);
+    height: var(--height);
+    .wave-shape {
+      clip-path: url(#waveClipTop);
+      margin-bottom: 0;
+      position: relative;
+      top: calc(var(--height) * -1);
+    }
+  }
+</style>

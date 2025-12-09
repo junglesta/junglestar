@@ -13,13 +13,19 @@ import ScrollAni from "@components/UI/ScrollAni.astro";
   hue="255deg"
   animationRange="0dvh 200dvh"
 />
-<header slot="landing_screen" class="cover jsScrollButton header_astro _HeaderAni2Black">
+<div
+  slot="landing_screen"
+  class="cover jsScrollButton header_astro _HeaderAni2Black"
+>
   <LogoAni />
 
-  <div class="slogan" id="slogan0">
+  <div
+    class="slogan"
+    id="slogan0"
+  >
     <h1 class="space_between">
       <slot />
       <slot name="on_scroll_message" />
     </h1>
   </div>
-</header>
+</div>

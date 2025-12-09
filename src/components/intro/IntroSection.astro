@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-//import AutoContrast from "@components/UI/AutoContrast.astro";
-//import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
+import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
 const introItems = await getCollection("introJ");
 const svgRaw = import.meta.glob("/src/assets/intro/*.svg", {
   query: "?raw",
@@ -45,12 +44,7 @@ function parseBold(text: string) {
             {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
             {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
 
-            <a
-              href={item.data.link}
-              class="cta"
-            >
-              {item.data.cta}
-            </a>
+            <CTAMailBanner text={item.data.cta} />
           </details>
         </div>
       </article>

@@ -1,8 +1,9 @@
-/* ========================================
-   FILE: src/styles/layers/layout_semantics.css
-   ======================================== */
+/*
+🐸 FILE: src/styles/layers/base.css
+ONLY BASE SEMANTIC ELEMENTS HERE,
+.classes go into /layout/classes.css
+*/
 
-/*🐸ONLY SEMANTIC ELEMENTS HERE, NO .classes! */
 body {
   font-family: var(--font_family);
   font-size: var(--font_clamp);
@@ -25,4 +26,21 @@ hr {
   width: 75%;
   margin: var(--space_block) auto;
   /*background-color: rgba(255, 255, 255, 0.25);*/
+}
+/*🐸TYPOGRAPHY */
+
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+pre,
+ul {
+  margin-bottom: calc(var(--space_block) / 2);
 }

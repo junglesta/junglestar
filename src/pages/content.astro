@@ -1,6 +1,8 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/UI/HeaderAni2Black.astro";
+import Wave from "@components/UI/Wave.astro";
+
 import SocialMediaManagement from "@components/brand/SocialMediaManagement.astro";
 import TableOfContents from "@components/UI/TableOfContents.astro";
 import PostsGridMDX from "@components/shared/PostsGridMDX.astro";
@@ -38,7 +40,17 @@ const pageDescription =
     </p>
   </LandingScreen>
 
+  <Wave
+    color="var(--black)"
+    position="top"
+  />
+
   <SocialMediaManagement />
+
+  <Wave
+    color="var(--white)"
+    position="top"
+  />
 
   <div class="wrap">
     <h2 class="center"
@@ -51,4 +63,10 @@ const pageDescription =
   <CTAMailBanner
     subject="Send more infos about Junglestar's Content Production"
   />
+
+  <Wave
+    color="var(--white)"
+    position="bottom"
+  />
+  <div class="space"></div>
 </Layout>

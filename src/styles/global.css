@@ -9,32 +9,29 @@
 @import "./layers/reset.css" layer(reset);
 @import "./layers/tokens.css" layer(tokens);
 
-@import "./layers/layout/layout_semantics.css" layer(layout);
-@import "./layers/layout/layout_classes.css" layer(layout);
-@import "./layers/layout/site_nav.css" layer(layout);
-@import "./layers/layout/site_title.css" layer(layout);
-@import "./layers/layout/wrap.css" layer(layout);
+@import "./layers/layout/base.css" layer(layout);
+@import "./layers/layout/blockquotes.css" layer(layout);
+@import "./layers/layout/classes.css" layer(layout);
+@import "./layers/layout/code.css" layer(layout);
+@import "./layers/layout/details.css" layer(layout);
+@import "./layers/layout/headings.css" layer(layout);
+@import "./layers/layout/links.css" layer(layout);
+@import "./layers/layout/strong.css" layer(layout);
+@import "./layers/layout/svgs.css" layer(layout);
 
-@import "./layers/compo/blockquotes.css" layer(components);
 @import "./layers/compo/buttons.css" layer(components);
 @import "./layers/compo/cards.css" layer(components);
-@import "./layers/compo/code.css" layer(components);
-@import "./layers/compo/details.css" layer(components);
 @import "./layers/compo/grids.css" layer(components);
-@import "./layers/compo/headings.css" layer(components);
 @import "./layers/compo/header.css" layer(components);
 @import "./layers/compo/intro.css" layer(components);
-@import "./layers/compo/links.css" layer(components);
 @import "./layers/compo/mean.css" layer(components);
 @import "./layers/compo/post.css" layer(components);
 @import "./layers/compo/post_content.css" layer(components);
 @import "./layers/compo/post_image.css" layer(components);
 @import "./layers/compo/selling.css" layer(components);
-@import "./layers/compo/strong.css" layer(components);
-@import "./layers/compo/svgs.css" layer(components);
 @import "./layers/compo/tag.css" layer(components);
 @import "./layers/compo/toc.css" layer(components);
-@import "./layers/compo/typography.css" layer(components);
+@import "./layers/compo/wrap.css" layer(components);
 
 @import "./layers/utilities.css" layer(utilities);
 

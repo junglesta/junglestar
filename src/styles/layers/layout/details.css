@@ -3,7 +3,6 @@ details summary {
   list-style: none;
   cursor: pointer;
   padding-bottom: var(--space_block);
-  font-weight: 500;
 }
 
 details summary::-webkit-details-marker {

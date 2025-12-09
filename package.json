@@ -1,7 +1,7 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "2.14.0",
+  "version": "2.15.1",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
@@ -27,7 +27,6 @@
   },
   "packageManager": "pnpm@10.24.0",
   "dependencies": {
-    "@astrojs/mdx": "^4.3.12",
-    "gsap": "^3.13.0"
+    "@astrojs/mdx": "^4.3.12"
   }
 }

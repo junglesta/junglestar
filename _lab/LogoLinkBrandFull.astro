@@ -1,14 +1,15 @@
 ---
-// @components/shared/LogFullo.astro
+// @components/shared/LogoLinkBrandFull.astro
 import Logo from "@components/shared/Logo.astro";
 import * as siteData from "@data/site.json";
 ---
 
 <style>
-  .footer_logo {
+  .logo_link {
     transform: rotate(0deg);
     display: flex;
     align-items: center;
+    text-decoration: none;
   }
   .brand {
     text-transform: uppercase;
@@ -18,7 +19,7 @@ import * as siteData from "@data/site.json";
 </style>
 
 <a
-  class="footer_logo no_underline clean file_LogoFull"
+  class="logo_link clean file_LogoLinkBrandFull"
   title="Clicking this link will send you back to junglestar.org homepage"
   href="/"
 >

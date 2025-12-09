@@ -1,4 +1,7 @@
 ---
+// CTAMailBanner.astro
+import * as siteData from "@data/site.json";
+
 interface Props {
   email?: string;
   subject?: string;
@@ -6,7 +9,7 @@ interface Props {
 }
 
 const {
-  email = "info@junglestar.org",
+  email = siteData.email,
   subject = "Send me more infos about Junglestar",
   text = "Let's start talking!",
 } = Astro.props;
@@ -18,7 +21,7 @@ const {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 30dvh;
+    padding-block: 3rem;
     text-transform: uppercase;
   }
   @media (min-width: 600px) {

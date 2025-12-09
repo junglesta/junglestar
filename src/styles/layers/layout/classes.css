@@ -27,14 +27,14 @@
 .design .starred:before {
   content: "";
   position: absolute;
-  top: -58px;
-  left: -28%; /* center horizontally, adjust as needed */
+  top: 20px;
+  left: 10%; /* center horizontally, adjust as needed */
   transform: translate(-50%, -50%); /* centers it and pulls 50% above */
   transform-origin: top right;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
 
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E %3Cstyle type='text/css'%3E .circlej%7Bfill:none;stroke:%oklch(0.5286 0.1735 255);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;%7D .star%7Bfill:none;stroke:%23000000;stroke-width:5;%7D %3C/style%3E %3Cpolygon class='star' points='56.6,184.7 108.9,134.8 96.5,64.4 161.2,97.6 225.9,64.3 213.6,134.7 266,184.5 193.6,194.9 161.3,259 128.9,194.9 56.6,184.7 '/%3E %3C/svg%3E ");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E --white_hex: %23f5f2ee; --white_hex: %23f5f2ee; %3Cpolygon class='star' fill='%23f5f2ee' stroke-width='3' stroke='%230169cc' stroke-linecap='round' stroke-linejoin='round' points='56.6,184.7 108.9,134.8 96.5,64.4 161.2,97.6 225.9,64.3 213.6,134.7 266,184.5 193.6,194.9 161.3,259 128.9,194.9 56.6,184.7 '/%3E %3C/svg%3E ");
   background-size: contain;
   background-repeat: no-repeat;
 }

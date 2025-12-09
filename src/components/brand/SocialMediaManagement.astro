@@ -1,8 +1,14 @@
 ---
 //SocialMediaManagement.astro
 import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
+import Wave from "@components/UI/Wave.astro";
 ---
 
+<style>
+  .brand_light {
+    background-color: var(--brand_light);
+  }
+</style>
 <div class="offer_content light_bg page_break social_media_management">
   <div class="mean_title mean_title--first">
     <div class="wrap flex flex_cols flex_align_center flex_justify_center">
@@ -92,11 +98,23 @@ import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
           >
         </h3>
       </div>
-      <div class="space_block">
+
+      <Wave
+        color="var(--brand)"
+        position="top"
+      />
+
+      <div class="space_block brand_light">
         <CTAMailBanner
           subject="Send me more infos about Junglestar's Social Media Management package"
         />
       </div>
+
+      <Wave
+        color="var(--brand)"
+        position="bottom"
+      />
+
       <div class="print_only">
         <div class="starting_at center print_footer">
           <p>Starting at 290 Euro</p>

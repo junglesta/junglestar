@@ -39,7 +39,7 @@
   --brand_complementary: oklch(0.6201 0.156454 53.4649);
   --brandT25: color-mix(in oklch, var(--brand), transparent 75%);
   --brandT50: color-mix(in oklch, var(--brand), transparent 50%);
-  --brand_light: oklch(from var(--brand) calc(l + 0.03) c h);
+  --brand_light: oklch(from var(--brand) calc(l + 0.1) c h);
   --brand_dark: oklch(from var(--brand) calc(l - 0.18) c h);
 
   --text_color: #111111;

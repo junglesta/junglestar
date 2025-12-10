@@ -1,0 +1,104 @@
+---
+// AutoContrastScroll.astro
+// Modern auto-contrast component using OKLCH color space
+// Uses CSS relative color syntax and the L (lightness) channel for contrast detection
+
+interface Props {
+  backgroundColor?: string;
+  class?: string;
+  tag?: string;
+  lightText?: string;
+  darkText?: string;
+  threshold?: number;
+  id?: string;
+  style?: string;
+  [key: string]: any;
+}
+
+const {
+  backgroundColor = "var(--brand)",
+  class: className = "",
+  tag = "div",
+  lightText = "oklch(98% 0 0)",
+  darkText = "oklch(15% 0 0)",
+  threshold = 0.6,
+  style: customStyle = "",
+  ...restProps
+} = Astro.props;
+
+const Element = tag as any;
+---
+
+<Element
+  class={`auto-contrast ${className}`}
+  style={`--bg-color: ${backgroundColor}; --light-text: ${lightText}; --dark-text: ${darkText}; --threshold: ${threshold}; ${customStyle}`}
+  data-auto-contrast
+  data-threshold={threshold}
+  {...restProps}
+>
+  <slot />
+</Element>
+
+<style>
+  .auto-contrast {
+    background-color: var(--bg-color);
+    color: var(--text-color, var(--dark-text));
+    transition:
+      background-color 0.8s ease,
+      color 0.8s ease;
+  }
+</style>
+
+<script>
+  function initAutoContrast() {
+    // Get OKLCH lightness from any color using canvas
+    function getLightness(color: string): number {
+      const canvas = document.createElement("canvas");
+      canvas.width = canvas.height = 1;
+      const ctx = canvas.getContext("2d", { willReadFrequently: true });
+      if (!ctx) return 0.5;
+
+      ctx.fillStyle = color;
+      ctx.fillRect(0, 0, 1, 1);
+      const [r, g, b] = ctx.getImageData(0, 0, 1, 1).data;
+
+      // Convert RGB to OKLCH lightness (simplified)
+      // Using relative luminance as proxy for OKLCH L
+      const toLinear = (c: number) => {
+        c = c / 255;
+        return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+      };
+
+      const luminance =
+        0.2126 * toLinear(r) + 0.7152 * toLinear(g) + 0.0722 * toLinear(b);
+
+      // Approximate OKLCH lightness from luminance
+      return Math.cbrt(luminance);
+    }
+
+    function updateElementContrast(element: HTMLElement) {
+      const computedBg = getComputedStyle(element).backgroundColor;
+      const threshold = parseFloat(element.dataset.threshold || "0.6");
+      const lightness = getLightness(computedBg);
+
+      // Use light text on dark backgrounds, dark text on light backgrounds
+      const textColor =
+        lightness < threshold ? "var(--light-text)" : "var(--dark-text)";
+
+      element.style.setProperty("--text-color", textColor);
+    }
+
+    document
+      .querySelectorAll<HTMLElement>("[data-auto-contrast]")
+      .forEach((element) => {
+        updateElementContrast(element);
+
+        (element as any).setBackgroundColor = function (color: string) {
+          this.style.setProperty("--bg-color", color);
+          requestAnimationFrame(() => updateElementContrast(this));
+        };
+      });
+  }
+
+  document.addEventListener("astro:page-load", initAutoContrast);
+</script>

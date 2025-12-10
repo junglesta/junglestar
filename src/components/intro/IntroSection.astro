@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
+import Wave from "@components/UI/Wave.astro";
 const introItems = await getCollection("introJ");
 const svgRaw = import.meta.glob("/src/assets/intro/*.svg", {
   query: "?raw",
@@ -18,43 +19,8 @@ function parseBold(text: string) {
 }
 ---
 
-<section class="intro_memes">
-  {
-    introItems.map((item) => (
-      <article
-        class="intro_meme"
-        data-theme={item.data.theme}
-      >
-        <div
-          class="background_svg"
-          set:html={getSvgRaw(item.data.image.src)}
-        />
-
-        <h1 class="h2 ">{item.data.question}</h1>
-
-        <h2 class="h4">{item.data.title}</h2>
-        <h3 class="h5">{item.data.subtitle}</h3>
-        <div class="content">
-          <details>
-            <summary class="tagline">{item.data.tagline}</summary>
-            {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
-            {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
-            {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}
-            {item.data.p4 && <p set:html={parseBold(item.data.p4)} />}
-            {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
-            {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
-
-            <CTAMailBanner text={item.data.cta} />
-          </details>
-        </div>
-      </article>
-    ))
-  }
-</section>
-
 <style>
   .intro_memes {
-    padding-inline: calc(var(--space_block) * 2);
     /*max-width: 60ch;*/
     margin: 0 auto;
     padding-block: calc(var(--space_block) * 5);
@@ -121,7 +87,59 @@ function parseBold(text: string) {
     line-height: 1.1;
   }
 
-  [data-theme="superstition"] .brand {
-    color: var(--brand_dark);
+  .intro_memes {
+    color: var(--brand);
+    p {
+      padding-top: var(--space_block);
+      border-bottom: 1px solid var(--brand_light);
+      padding-bottom: var(--space_block);
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid var(--brand_light);
+    }
+
+    details summary::after {
+      display: block;
+      padding-top: var(--space_block);
+    }
   }
 </style>
+
+<section class="intro_memes txt_white_on_black">
+  {
+    introItems.map((item) => (
+      <article
+        class="intro_meme wrap"
+        data-theme={item.data.theme}
+      >
+        <div
+          class="background_svg"
+          set:html={getSvgRaw(item.data.image.src)}
+        />
+
+        <h1 class="h2 brand">{item.data.question}</h1>
+
+        <h2 class="h4 brand">{item.data.title}</h2>
+        <h3 class="h5 ">{item.data.subtitle}</h3>
+        <div class="content">
+          <details>
+            <summary class="tagline">{item.data.tagline}</summary>
+            {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
+            {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
+            {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}
+            {item.data.p4 && <p set:html={parseBold(item.data.p4)} />}
+            {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
+            {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
+
+            <CTAMailBanner text={item.data.cta} />
+          </details>
+        </div>
+      </article>
+    ))
+  }
+</section>
+<Wave
+  color="var(--black)"
+  position="bottom"
+/>

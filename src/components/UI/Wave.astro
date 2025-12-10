@@ -10,7 +10,7 @@ const { color, position = "bottom", height = "8rem" } = Astro.props;
 
 <div
   class:list={["wave", position]}
-  style={`--color: ${color}; --height: ${height};`}
+  style={`--color: ${color}; --height: ${height}; `}
 >
   <svg
     width="0"
@@ -37,6 +37,7 @@ const { color, position = "bottom", height = "8rem" } = Astro.props;
 <style>
   .wave {
     position: relative;
+    background-color: var(--color);
   }
 
   .wave-shape {

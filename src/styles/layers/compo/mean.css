@@ -3,7 +3,7 @@
 
 .mean_title {
   color: var(--brand);
-  min-height: 50dvh;
+  min-height: 50svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +28,7 @@
 
 .mean_title.mean_title--first {
   background-color: black;
-  min-height: 100dvh;
+  min-height: 100svh;
   padding-block: calc(var(--space_block) * 4);
 }
 .mean_title.mean_title--second {
@@ -47,7 +47,7 @@
     width: 70dvw;
   }
   .mean_title.mean_title--first {
-    min-height: 50dvh;
+    min-height: 50svh;
   }
 }
 @media (min-width: 821px) {

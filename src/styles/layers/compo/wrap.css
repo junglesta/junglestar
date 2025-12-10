@@ -23,7 +23,7 @@
 .page_content {
   padding: 0 0 calc(var(--space_block) * 2);
   background-color: var(--background_color);
-  min-height: 76dvh; /* Keep as specific viewport based */
+  min-height: 76svh; /* Keep as specific viewport based */
 }
 
 /*🐸NO SELECT | user-select: none; */

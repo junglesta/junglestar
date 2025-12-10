@@ -18,8 +18,8 @@ import LogoAni from "@components/shared/LogoAni.astro";
     padding: var(--space_block) var(--space_inline);
 
     /*FALLBACK FOR FF, damn dudes...*/
-    min-height: 100vh;
-    height: 100vh;
+    min-height: 100svh;
+    height: 100svh;
     /*ACTUAL VALUE FOR ALL OTHERS*/
 
     background-size: cover;
@@ -66,10 +66,16 @@ import LogoAni from "@components/shared/LogoAni.astro";
     animation-range: 0svh 100svh;
   }
 </style>
-<header slot="landing_screen" class="cover jsScrollButton header_astro _Header">
+<header
+  slot="landing_screen"
+  class="cover jsScrollButton header_astro _Header"
+>
   <LogoAni />
 
-  <div class="slogan" id="slogan0">
+  <div
+    class="slogan"
+    id="slogan0"
+  >
     <p>Your business, simplified.</p><p>Your life, upgraded.</p>
     <p>Trade grunt-work for free time!</p>
     <p>&nbsp;</p>

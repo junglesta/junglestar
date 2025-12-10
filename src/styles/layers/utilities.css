@@ -2,6 +2,62 @@
    FILE: src/styles/layers/utilities.css
    ======================================== */
 
+.space8 {
+  margin-bottom: 8rem;
+}
+
+.txt_white_on_black {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.txt_white_on_brand {
+  background-color: var(--brand);
+  color: var(--white);
+}
+
+.txt_black_on_white {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.txt_black_on_brand {
+  background-color: var(--brand);
+  color: var(--black);
+}
+
+/* brand AUTOCONTRAST PARAGRAPH With fallback for non-supporting browsers */
+.auto_contrast_brand {
+  --AC_brand_bg_color: var(--brand, #3b82f6);
+  background-color: var(--AC_brand_bg_color);
+
+  /* Fallback: dark text (adjust based on your typical bg colors) */
+  color: #1a1a1a;
+}
+
+@supports (color: contrast-color(red)) {
+  .auto_contrast {
+    color: contrast-color(var(--AC_brand_bg_color));
+  }
+}
+
+/* black AUTOCONTRAST PARAGRAPH With fallback for non-supporting browsers */
+.auto_contrast_black {
+  --AC_black_bg_color: var(--black, #000);
+  background-color: var(--AC_black_bg_color);
+
+  /* Fallback: dark text (adjust based on your typical bg colors) */
+  color: #000;
+}
+
+@supports (color: contrast-color(red)) {
+  .auto_contrast {
+    color: contrast-color(var(--AC_black_bg_color));
+  }
+}
+
+/*MORE STUFF*/
+
 .margin_topx2 {
   margin-top: calc(var(--space_block) * 2);
 }
@@ -15,7 +71,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 100dvh;
+  min-height: 100svh;
 }
 .small_text {
   font-size: 85% !important;
@@ -110,7 +166,7 @@
 
 /*🐸 Layout utilities */
 .full_height {
-  min-height: 100dvh;
+  min-height: 100svh;
 }
 
 /*🐸 Print only - hidden on screen */

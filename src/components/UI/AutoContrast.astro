@@ -1,37 +1,57 @@
 ---
-// AutoContrast.astro
-// Modern auto-contrast component using OKLCH color space
-// Uses CSS relative color syntax and the L (lightness) channel for contrast detection
+/**
+ * AutoContrast.astro
+ * CSS-first auto-contrast with JS fallback for Chrome/Edge
+ *
+ * Uses native contrast-color() where supported (Safari 26+, Firefox 146+)
+ * Falls back to JS-based luminance calculation for Chrome/Edge
+ */
 
 interface Props {
+  /** Background color - any valid CSS color or variable */
   backgroundColor?: string;
+  /** Additional CSS classes */
   class?: string;
+  /** HTML element tag to render */
   tag?: string;
+  /** Light text color for dark backgrounds (fallback only) */
   lightText?: string;
+  /** Dark text color for light backgrounds (fallback only) */
   darkText?: string;
+  /** Luminance threshold 0-1 (fallback only) */
   threshold?: number;
+  /** Element ID */
   id?: string;
+  /** Inline styles */
   style?: string;
+  /** Any other HTML attributes */
   [key: string]: any;
 }
 
 const {
-  backgroundColor = "var(--brand)",
+  backgroundColor = "var(--brand, #3b82f6)",
   class: className = "",
   tag = "div",
-  lightText = "oklch(98% 0 0)",
-  darkText = "oklch(15% 0 0)",
-  threshold = 0.6,
+  lightText = "white",
+  darkText = "black",
+  threshold = 0.5,
   style: customStyle = "",
   ...restProps
 } = Astro.props;
 
 const Element = tag as any;
+
+const cssVars = [
+  `--bg-color: ${backgroundColor}`,
+  `--light-text: ${lightText}`,
+  `--dark-text: ${darkText}`,
+  `--threshold: ${threshold}`,
+].join("; ");
 ---
 
 <Element
-  class={`auto-contrast ${className}`}
-  style={`--bg-color: ${backgroundColor}; --light-text: ${lightText}; --dark-text: ${darkText}; --threshold: ${threshold}; ${customStyle}`}
+  class:list={["auto-contrast", className]}
+  style={`${cssVars}; ${customStyle}`}
   data-auto-contrast
   data-threshold={threshold}
   {...restProps}
@@ -42,17 +62,30 @@ const Element = tag as any;
 <style>
   .auto-contrast {
     background-color: var(--bg-color);
-    color: var(--text-color, var(--dark-text));
     transition:
-      background-color 0.8s ease,
-      color 0.8s ease;
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  /* Native CSS solution for supporting browsers */
+  @supports (color: contrast-color(red)) {
+    .auto-contrast {
+      color: contrast-color(var(--bg-color));
+    }
+  }
+
+  /* Fallback text color - JS will override this */
+  @supports not (color: contrast-color(red)) {
+    .auto-contrast {
+      color: var(--text-color, var(--dark-text));
+    }
   }
 </style>
 
 <script>
-  function initAutoContrast() {
-    // Get OKLCH lightness from any color using canvas
-    function getLightness(color: string): number {
+  // Only run fallback if contrast-color() is not supported
+  if (!CSS.supports("color", "contrast-color(red)")) {
+    function getLuminance(color: string): number {
       const canvas = document.createElement("canvas");
       canvas.width = canvas.height = 1;
       const ctx = canvas.getContext("2d", { willReadFrequently: true });
@@ -62,43 +95,49 @@ const Element = tag as any;
       ctx.fillRect(0, 0, 1, 1);
       const [r, g, b] = ctx.getImageData(0, 0, 1, 1).data;
 
-      // Convert RGB to OKLCH lightness (simplified)
-      // Using relative luminance as proxy for OKLCH L
+      // sRGB to linear
       const toLinear = (c: number) => {
-        c = c / 255;
-        return c <= 0.04045 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
+        const v = c / 255;
+        return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
       };
 
-      const luminance =
-        0.2126 * toLinear(r) + 0.7152 * toLinear(g) + 0.0722 * toLinear(b);
-
-      // Approximate OKLCH lightness from luminance
-      return Math.cbrt(luminance);
+      // Relative luminance (WCAG formula)
+      return 0.2126 * toLinear(r) + 0.7152 * toLinear(g) + 0.0722 * toLinear(b);
     }
 
-    function updateElementContrast(element: HTMLElement) {
-      const computedBg = getComputedStyle(element).backgroundColor;
-      const threshold = parseFloat(element.dataset.threshold || "0.6");
-      const lightness = getLightness(computedBg);
+    function updateContrast(el: HTMLElement) {
+      const bg = getComputedStyle(el).backgroundColor;
+      const threshold = parseFloat(el.dataset.threshold || "0.5");
+      const luminance = getLuminance(bg);
 
-      // Use light text on dark backgrounds, dark text on light backgrounds
-      const textColor =
-        lightness < threshold ? "var(--light-text)" : "var(--dark-text)";
-
-      element.style.setProperty("--text-color", textColor);
+      el.style.setProperty(
+        "--text-color",
+        luminance < threshold ? "var(--light-text)" : "var(--dark-text)",
+      );
     }
 
-    document
-      .querySelectorAll<HTMLElement>("[data-auto-contrast]")
-      .forEach((element) => {
-        updateElementContrast(element);
+    function initAll() {
+      document
+        .querySelectorAll<HTMLElement>("[data-auto-contrast]")
+        .forEach((el) => {
+          updateContrast(el);
 
-        (element as any).setBackgroundColor = function (color: string) {
-          this.style.setProperty("--bg-color", color);
-          requestAnimationFrame(() => updateElementContrast(this));
-        };
-      });
+          // Expose method for dynamic updates
+          (el as any).setBackgroundColor = function (color: string) {
+            this.style.setProperty("--bg-color", color);
+            requestAnimationFrame(() => updateContrast(this));
+          };
+        });
+    }
+
+    // Support Astro view transitions
+    document.addEventListener("astro:page-load", initAll);
+
+    // Initial load (non-Astro or first load)
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initAll);
+    } else {
+      initAll();
+    }
   }
-
-  document.addEventListener("astro:page-load", initAutoContrast);
 </script>

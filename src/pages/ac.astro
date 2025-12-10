@@ -27,7 +27,10 @@ const demoColors = [
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>AutoContrast Component Demo</title>
     <style is:global>
       /* Fallback tokens in case external CSS doesn't load */
@@ -58,7 +61,9 @@ const demoColors = [
         --product_category_2: hsla(43, 100%, 81%, 0.75);
         --product_category_3: hsla(205, 100%, 81%, 0.75);
 
-        --font_family: -apple-system, BlinkMacSystemFont, Segoe UI, "Inter", Helvetica, Arial, sans-serif;
+        --font_family:
+          -apple-system, BlinkMacSystemFont, Segoe UI, "Inter", Helvetica,
+          Arial, sans-serif;
         --line_height: 1.5;
         --weight: 300;
         --weight_med: 400;
@@ -68,10 +73,16 @@ const demoColors = [
 
         --background_blackT05: rgba(0, 0, 0, 0.05);
         --header_shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
-        --card_shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
-        --card_shadow_hover: 0px 0px 8px 0px rgba(0, 0, 0, 0.12), 0px 8px 8px 0px rgba(0, 0, 0, 0.24);
+        --card_shadow:
+          0px 0px 2px 0px rgba(0, 0, 0, 0.12),
+          0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+        --card_shadow_hover:
+          0px 0px 8px 0px rgba(0, 0, 0, 0.12),
+          0px 8px 8px 0px rgba(0, 0, 0, 0.24);
         --main_shadow:
-          0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+          0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+          0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 10px 0px rgba(0, 0, 0, 0.12);
         --transition_shadow: box-shadow 0.2s ease;
       }
     </style>
@@ -83,10 +94,21 @@ const demoColors = [
       }
 
       body {
-        font-family: var(--font_family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+        font-family: var(
+          --font_family,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif
+        );
         padding: 0;
-        background: linear-gradient(135deg, var(--brand) 0%, var(--brand_complementary) 100%);
-        min-height: 100vh;
+        background: linear-gradient(
+          135deg,
+          var(--brand) 0%,
+          var(--brand_complementary) 100%
+        );
+        min-height: 100svh;
       }
 
       .hero {
@@ -99,7 +121,11 @@ const demoColors = [
       .hero h1 {
         font-size: 3rem;
         font-weight: var(--weight_heavy, 800);
-        background: linear-gradient(135deg, var(--brand) 0%, var(--brand_invert) 100%);
+        background: linear-gradient(
+          135deg,
+          var(--brand) 0%,
+          var(--brand_invert) 100%
+        );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -356,7 +382,10 @@ const demoColors = [
   <body>
     <div class="hero">
       <h1>✨ AutoContrast Component</h1>
-      <p>Automatically calculates the perfect text color for any background using WCAG luminance formulas</p>
+      <p
+        >Automatically calculates the perfect text color for any background
+        using WCAG luminance formulas</p
+      >
     </div>
 
     <div class="container">
@@ -364,16 +393,23 @@ const demoColors = [
       <div class="featured-demo">
         <h2>🎨 Interactive Color Picker</h2>
         <p>
-          Select any background color and watch the magic happen! The text color automatically switches between black
-          and white to maintain optimal contrast and readability.
+          Select any background color and watch the magic happen! The text color
+          automatically switches between black and white to maintain optimal
+          contrast and readability.
         </p>
 
-        <AutoContrast backgroundColor="var(--brand)" class="card" id="interactive-card">
+        <AutoContrast
+          backgroundColor="var(--brand)"
+          class="card"
+          id="interactive-card"
+        >
           <h3>Dynamic Color Adjustment</h3>
           <p
-            >This text automatically adapts for perfect contrast! The component uses the WCAG 2.1 relative luminance
-            formula to determine whether black or white text provides better readability. Currently using <code
-              style="background: var(--whiteT25); padding: 0.2em 0.5em; border-radius: 4px;">var(--brand)</code
+            >This text automatically adapts for perfect contrast! The component
+            uses the WCAG 2.1 relative luminance formula to determine whether
+            black or white text provides better readability. Currently using <code
+              style="background: var(--whiteT25); padding: 0.2em 0.5em; border-radius: 4px;"
+              >var(--brand)</code
             > with OKLCH color space.</p
           >
           <span class="info-badge">✓ WCAG Compliant</span>
@@ -382,33 +418,65 @@ const demoColors = [
         <div class="color-picker-wrapper">
           <label for="colorPicker">🎨 Choose Your Color:</label>
           <div class="color-picker-container">
-            <input type="color" id="colorPicker" class="color-picker" />
-            <div class="color-value" id="colorValue">Loading...</div>
+            <input
+              type="color"
+              id="colorPicker"
+              class="color-picker"
+            />
+            <div
+              class="color-value"
+              id="colorValue"
+              >Loading...</div
+            >
           </div>
         </div>
       </div>
 
       <!-- Different HTML Tags Section -->
       <h2 class="section-title">📦 Flexible HTML Elements</h2>
-      <p class="section-subtitle">Works with any HTML tag using the 'tag' prop</p>
+      <p class="section-subtitle"
+        >Works with any HTML tag using the 'tag' prop</p
+      >
 
       <div class="tag-showcase">
-        <AutoContrast backgroundColor="var(--brand_invert)" tag="section" class="mini-card">
+        <AutoContrast
+          backgroundColor="var(--brand_invert)"
+          tag="section"
+          class="mini-card"
+        >
           <h4>&lt;section&gt; Tag</h4>
           <p>Using <code style="opacity: 0.7;">var(--brand_invert)</code></p>
         </AutoContrast>
 
-        <AutoContrast backgroundColor="var(--product_category_1)" tag="article" class="mini-card">
+        <AutoContrast
+          backgroundColor="var(--product_category_1)"
+          tag="article"
+          class="mini-card"
+        >
           <h4>&lt;article&gt; Tag</h4>
-          <p>Using <code style="opacity: 0.7;">var(--product_category_1)</code></p>
+          <p
+            >Using <code style="opacity: 0.7;">var(--product_category_1)</code
+            ></p
+          >
         </AutoContrast>
 
-        <AutoContrast backgroundColor="var(--product_category_2)" tag="aside" class="mini-card">
+        <AutoContrast
+          backgroundColor="var(--product_category_2)"
+          tag="aside"
+          class="mini-card"
+        >
           <h4>&lt;aside&gt; Tag</h4>
-          <p>Using <code style="opacity: 0.7;">var(--product_category_2)</code></p>
+          <p
+            >Using <code style="opacity: 0.7;">var(--product_category_2)</code
+            ></p
+          >
         </AutoContrast>
 
-        <AutoContrast backgroundColor="var(--brand)" tag="header" class="mini-card">
+        <AutoContrast
+          backgroundColor="var(--brand)"
+          tag="header"
+          class="mini-card"
+        >
           <h4>&lt;header&gt; Tag</h4>
           <p>Using <code style="opacity: 0.7;">var(--brand)</code></p>
         </AutoContrast>
@@ -416,12 +484,17 @@ const demoColors = [
 
       <!-- Color Palette Showcase -->
       <h2 class="section-title">🎨 Color Palette Showcase</h2>
-      <p class="section-subtitle">Your design tokens with real OKLCH colors and automatic contrast</p>
+      <p class="section-subtitle"
+        >Your design tokens with real OKLCH colors and automatic contrast</p
+      >
 
       <div class="demo-grid">
         {
           demoColors.map((color) => (
-            <AutoContrast backgroundColor={color.var} class="palette-card">
+            <AutoContrast
+              backgroundColor={color.var}
+              class="palette-card"
+            >
               <strong>{color.name}</strong>
               <span class="var-name">{color.var}</span>
               <p>Auto-contrasted text for perfect readability</p>
@@ -433,7 +506,9 @@ const demoColors = [
       <!-- Usage Example -->
       <div class="featured-demo">
         <h2>💻 Quick Start</h2>
-        <p style="color: var(--grey_color); margin-bottom: 1.5rem;"> Using the AutoContrast component is simple: </p>
+        <p style="color: var(--grey_color); margin-bottom: 1.5rem;">
+          Using the AutoContrast component is simple:
+        </p>
         <pre
           style="background: var(--background_blackT05); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"
           ><code>&lt;AutoContrast backgroundColor="#0069cc"&gt;
@@ -448,9 +523,13 @@ const demoColors = [
       // Interactive color picker following Astro best practices
       // Astro scripts are bundled and run as type="module" automatically
 
-      const colorPicker = document.getElementById("colorPicker") as HTMLInputElement;
+      const colorPicker = document.getElementById(
+        "colorPicker",
+      ) as HTMLInputElement;
       const colorValue = document.getElementById("colorValue");
-      const interactiveCard = document.getElementById("interactive-card") as any;
+      const interactiveCard = document.getElementById(
+        "interactive-card",
+      ) as any;
 
       // Helper function to convert RGB to hex
       function rgbToHex(rgb: string): string {
@@ -474,7 +553,8 @@ const demoColors = [
 
       if (colorPicker && interactiveCard && colorValue) {
         // Get the computed background color and set it to the picker
-        const computedBg = window.getComputedStyle(interactiveCard).backgroundColor;
+        const computedBg =
+          window.getComputedStyle(interactiveCard).backgroundColor;
         const hexColor = rgbToHex(computedBg);
         colorPicker.value = hexColor;
         colorValue.textContent = hexColor;

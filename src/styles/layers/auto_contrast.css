@@ -1,0 +1,65 @@
+/**
+ * Auto-Contrast CSS Utilities
+ * Uses native contrast-color() function (CSS Color Level 6)
+ *
+ * Browser Support (Dec 2025):
+ * ✅ Safari 26+, iOS Safari 26+
+ * ✅ Firefox 146+
+ * ❌ Chrome/Edge (not yet)
+ */
+
+/* Base utility - works in supporting browsers */
+.auto-contrast {
+  background-color: var(--bg-color, currentColor);
+  color: contrast-color(var(--bg-color));
+}
+
+/* With fallback for non-supporting browsers */
+.auto-contrast-safe {
+  --bg-color: var(--brand, #3b82f6);
+  background-color: var(--bg-color);
+
+  /* Fallback: dark text (adjust based on your typical bg colors) */
+  color: #1a1a1a;
+}
+
+@supports (color: contrast-color(red)) {
+  .auto-contrast-safe {
+    color: contrast-color(var(--bg-color));
+  }
+}
+
+/* Inverted: auto background based on text color */
+.auto-contrast-bg {
+  --text-color: var(--brand, #1a1a1a);
+  color: var(--text-color);
+  background-color: contrast-color(var(--text-color));
+}
+
+/* Common component patterns */
+.btn-auto {
+  --btn-bg: var(--brand, #3b82f6);
+  background-color: var(--btn-bg);
+  color: contrast-color(var(--btn-bg));
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.badge-auto {
+  --badge-bg: var(--brand, #10b981);
+  background-color: var(--badge-bg);
+  color: contrast-color(var(--badge-bg));
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.card-auto {
+  --card-bg: var(--brand, #f3f4f6);
+  background-color: var(--card-bg);
+  color: contrast-color(var(--card-bg));
+  padding: 1rem;
+  border-radius: 0.5rem;
+}

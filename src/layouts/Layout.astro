@@ -26,9 +26,9 @@ const {
 ---
 
 <style>
-  @view-transition {
+  /*@view-transition {
     navigation: auto;
-  }
+  }*/
   main {
     background-color: var(--black);
     background-color: var(--white);
@@ -40,7 +40,6 @@ const {
 </style>
 
 <html lang="en">
-  <LastPub />
   <!-- ASCII art, dude! -->
   <!--
       _                   _           _
@@ -59,6 +58,9 @@ const {
     description={description}
     sitemap={sitemap}
   />
+
+  <LastPub />
+
   <body class={bodyClass}>
     <div class="scrolling_body_wrap">
       <span id="top"></span>

@@ -12,9 +12,9 @@ export default defineConfig({
   // class - Use class-based selectors, causing a +1 specificity increase.
   scopedStyleStrategy: "where",
 
-  experimental: {
-    chromeDevtoolsWorkspace: true,
-  },
+  // experimental: {
+  //   chromeDevtoolsWorkspace: true,
+  // },
 
   image: {
     responsiveStyles: true,

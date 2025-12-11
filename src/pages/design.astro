@@ -1,23 +1,35 @@
 ---
+//  src/pages/desing.astro
 import Layout from "@layouts/Layout.astro";
-import LandingScreen from "@components/UI/HeaderAni2OffWhite.astro";
-import TableOfContents from "@components/UI/TableOfContents.astro";
+import Ani from "@components/UI/HeaderAni2OffWhite.astro";
 import Wave from "@components/UI/Wave.astro";
-
-import PostsGridMDX from "@components/shared/PostsGridMDX.astro";
+import LandingScreen from "@components/UI/LandingScreen.astro";
 import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
-import { getMDXPosts } from "@utils/getMDXPosts";
 
+import TableOfContents from "@components/UI/TableOfContents.astro";
+import PostsGridMDX from "@components/shared/PostsGridMDX.astro";
+
+import { getMDXPosts } from "@utils/getMDXPosts";
 const posts = await getMDXPosts("designConcepts");
 
-const pageTitle = "Design, Sustainabilty!? Because Why?";
-const pageSubtitle = "Design, Sustainabilty!? Because Why?";
-const pageRevealOnScroll1 = "Ever feel prisoner of your own processes?";
-const pageRevealOnScroll2 = "Those ones necessary to run your biz?";
-const pageRevealOnScroll3 =
-  "Find out what sustainable actually means for us small entrepreneurs.";
+// Page metadata
+//"Junglestar | Design, Sustainabilty!? Because Why?";
+//
+//
+const overtitle_line1 = "Sustainable";
+const overtitle_line2 = "by";
+const overtitle_line3 = "Design?";
+
+const title_start = "Because Why?";
+const title_end = " ";
+const title = title_start + " | " + title_end;
+
+const onScroll_line1 = "Ever feel prisoner of your own processes?";
+const onScroll_line2 = "Those ones necessary to run your biz?";
+const onScroll_line3 = "Find out what sustainable actually means...";
+const onScroll_line4 = "...for us small entrepreneurs.";
 const description =
-  "Sustainable Web Design to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
+  "Sustainable Web Design to help the planet. Change! We help small enterprises with websites, apps, and marketing communication.";
 ---
 
 <style>
@@ -27,20 +39,23 @@ const description =
 </style>
 
 <Layout
-  title={pageTitle}
+  title={title}
   description={description}
-  pageSubtitle={pageSubtitle}
   bodyClass="design"
   mainClass="dd"
 >
-  <LandingScreen>
-    {pageSubtitle}
-    <p class="brand small_text">
-      {pageRevealOnScroll1}<br /><br />
-      {pageRevealOnScroll2}<br /><br />
-      {pageRevealOnScroll3}
-    </p>
-  </LandingScreen>
+  <Ani>
+    <LandingScreen
+      overtitle_line1={overtitle_line1}
+      overtitle_line2={overtitle_line2}
+      overtitle_line3={overtitle_line3}
+      title={title_start}
+      onScroll_line1={onScroll_line1}
+      onScroll_line2={onScroll_line2}
+      onScroll_line3={onScroll_line3}
+      onScroll_line4={onScroll_line4}
+    />
+  </Ani>
 
   <Wave
     color="var(--white)"

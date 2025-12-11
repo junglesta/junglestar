@@ -1,9 +1,9 @@
 ---
 interface Props {
-  pageSubtitle_line1?: string;
-  pageSubtitle_line2?: string;
-  pageSubtitle_line3?: string;
-  title_start: string;
+  overtitle_line1?: string;
+  overtitle_line2?: string;
+  overtitle_line3?: string;
+  title?: string;
   onScroll_line1?: string;
   onScroll_line2?: string;
   onScroll_line3?: string;
@@ -13,10 +13,10 @@ interface Props {
 }
 
 const {
-  pageSubtitle_line1 = "",
-  pageSubtitle_line2 = "",
-  pageSubtitle_line3 = "",
-  title_start,
+  overtitle_line1 = "",
+  overtitle_line2 = "",
+  overtitle_line3 = "",
+  title,
   onScroll_line1 = "",
   onScroll_line2 = "",
   onScroll_line3 = "",
@@ -26,13 +26,26 @@ const {
 } = Astro.props;
 ---
 
-<div class="slogan">
+<style>
+  .grida {
+    display: grid;
+    place-content: stretch center;
+    gap: 1rem;
+    padding: 1rem;
+    height: 100%;
+  }
+  .on_scroll_msg {
+    place-self: center center;
+  }
+</style>
+
+<div class="grida slogan">
   <div class="title_wrap h2">
-    <div class="overline line1">{pageSubtitle_line1}</div>
-    <div class="overline line2">{pageSubtitle_line2}</div>
-    <div class="overline line3">{pageSubtitle_line3}</div>
+    <div class="overline line1">{overtitle_line1}</div>
+    <div class="overline line2">{overtitle_line2}</div>
+    <div class="overline line3">{overtitle_line3}</div>
   </div>
-  <h1 class="brand_name">{title_start}</h1>
+  <h1 class="brand_name">{title}</h1>
   <h2 class="on_scroll_msg brand h3">
     {onScroll_line1.toUpperCase()}
     <br />

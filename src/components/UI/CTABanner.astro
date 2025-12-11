@@ -1,19 +1,16 @@
 ---
 interface Props {
-  email?: string;
-  subject?: string;
-  text?: string;
+  link: string;
+  title?: string;
+  text: string;
+  linkClass?: string;
 }
 
-const {
-  email = "info@junglestar.org",
-  subject = "Send me more infos about Junglestar",
-  text = "Let's start talking!",
-} = Astro.props;
+const { link = "/", title = "back home", text = "J", linkClass } = Astro.props;
 ---
 
 <style>
-  .CTAMailBanner {
+  .CTABanner {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -22,15 +19,17 @@ const {
     text-transform: uppercase;
   }
   @media (min-width: 600px) {
-    .CTAMailBanner {
+    .CTABanner {
       padding-block: calc(var(--space_block) * 5);
     }
   }
 </style>
-<div class="CTAMailBanner">
+
+<div class="CTABanner">
   <a
-    class="button"
-    href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}
+    class="${linkClass} cta button"
+    title={title}
+    href={link}
   >
     {text}
   </a>

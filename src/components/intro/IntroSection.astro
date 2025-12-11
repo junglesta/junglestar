@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
+import CTABanner from "@components/UI/CTABanner.astro";
 import Wave from "@components/UI/Wave.astro";
 const introItems = await getCollection("introJ");
 const svgRaw = import.meta.glob("/src/assets/intro/*.svg", {
@@ -141,7 +141,11 @@ function parseBold(text: string) {
             {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
             {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
 
-            <CTAMailBanner text={item.data.cta} />
+            <CTABanner
+              text={item.data.cta}
+              link={item.data.link}
+              linkClass={item.data.theme}
+            />
           </details>
         </div>
       </article>

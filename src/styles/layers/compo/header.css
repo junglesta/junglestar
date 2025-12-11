@@ -8,19 +8,11 @@
   padding-block: var(--space_block);
 
   .slogan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     padding-top: calc(var(--space_block) * 2);
     padding-bottom: calc(var(--space_block) / 4);
     padding-inline: 0;
     text-wrap: pretty;
     text-align: center;
     font-weight: 400;
-    h1 {
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
   }
 }

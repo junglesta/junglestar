@@ -19,11 +19,6 @@ import ScrollAni from "@components/UI/ScrollAni.astro";
 >
   <Logo />
 
-  <div
-    class="slogan"
-    id="background_change_on_scroll_02"
-  >
-    <slot />
-    <slot name="on_scroll_message" />
-  </div>
+  <slot />
+  <slot name="on_scroll_message" />
 </div>

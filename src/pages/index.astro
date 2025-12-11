@@ -1,8 +1,8 @@
 ---
 // src/pages/index.astro
 import Layout from "@layouts/Layout.astro";
-import LandingScreen from "@components/UI/HeaderAni2Black.astro";
-import AutoContrast from "@components/UI/AutoContrast.astro";
+import Ani from "@components/UI/HeaderAni2Black.astro";
+import LandingScreen from "@components/UI/LandingScreen.astro";
 import IntroSection from "@components/intro/IntroSection.astro";
 import * as repoData from "package.json";
 
@@ -25,12 +25,11 @@ const description =
 ---
 
 <style>
-  .overline {
+  /*.overline {
     font-size: 70%;
-  }
+  }*/
   .brand_name {
     padding-top: calc(var(--space_block) * 1);
-    font-size: 133%;
   }
 </style>
 
@@ -38,29 +37,20 @@ const description =
   title={title}
   description={description}
 >
-  <LandingScreen>
-    <div class="title_wrap">
-      <div class="overline line1">{pageSubtitle_line1}</div>
-      <div class="overline line2">{pageSubtitle_line2}</div>
-      <div class="overline line3">{pageSubtitle_line3}</div>
-    </div>
-    <div class="brand_name">
-      {title_start}
-    </div>
-    <p class="brand small_text">
-      {onScroll_line1.toUpperCase()}
-      <br />
-      {onScroll_line2}
-      <br /><br />
-      {onScroll_line3}
-      <br />
-      {onScroll_line4}
-      <br />
-      {onScroll_line5}
-      <br /><br />
-      {onScroll_line6}
-    </p>
-  </LandingScreen>
-
-  <IntroSection />
+  <Ani>
+    <LandingScreen
+      pageSubtitle_line1={pageSubtitle_line1}
+      pageSubtitle_line2={pageSubtitle_line2}
+      pageSubtitle_line3={pageSubtitle_line3}
+      title_start={title_start}
+      onScroll_line1={onScroll_line1}
+      onScroll_line2={onScroll_line2}
+      onScroll_line3={onScroll_line3}
+      onScroll_line4={onScroll_line4}
+      onScroll_line5={onScroll_line5}
+      onScroll_line6={onScroll_line6}
+    />
+  </Ani>
 </Layout>
+
+<IntroSection />

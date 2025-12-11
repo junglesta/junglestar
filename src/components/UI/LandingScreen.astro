@@ -1,0 +1,49 @@
+---
+interface Props {
+  pageSubtitle_line1?: string;
+  pageSubtitle_line2?: string;
+  pageSubtitle_line3?: string;
+  title_start: string;
+  onScroll_line1?: string;
+  onScroll_line2?: string;
+  onScroll_line3?: string;
+  onScroll_line4?: string;
+  onScroll_line5?: string;
+  onScroll_line6?: string;
+}
+
+const {
+  pageSubtitle_line1 = "",
+  pageSubtitle_line2 = "",
+  pageSubtitle_line3 = "",
+  title_start,
+  onScroll_line1 = "",
+  onScroll_line2 = "",
+  onScroll_line3 = "",
+  onScroll_line4 = "",
+  onScroll_line5 = "",
+  onScroll_line6 = "",
+} = Astro.props;
+---
+
+<div class="slogan">
+  <div class="title_wrap h2">
+    <div class="overline line1">{pageSubtitle_line1}</div>
+    <div class="overline line2">{pageSubtitle_line2}</div>
+    <div class="overline line3">{pageSubtitle_line3}</div>
+  </div>
+  <h1 class="brand_name">{title_start}</h1>
+  <h2 class="on_scroll_msg brand h3">
+    {onScroll_line1.toUpperCase()}
+    <br />
+    {onScroll_line2}
+    <br /><br />
+    {onScroll_line3}
+    <br />
+    {onScroll_line4}
+    <br />
+    {onScroll_line5}
+    <br /><br />
+    {onScroll_line6}
+  </h2>
+</div>

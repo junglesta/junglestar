@@ -3,14 +3,15 @@ interface Props {
   color: string;
   position?: "top" | "bottom";
   height?: string;
+  bgcolor?: string;
 }
 
-const { color, position = "bottom", height = "8rem" } = Astro.props;
+const { color, position = "bottom", height = "8rem", bgcolor } = Astro.props;
 ---
 
 <div
   class:list={["wave", position]}
-  style={`--color: ${color}; --height: ${height}; `}
+  style={`--color: ${color}; --height: ${height}; --bgcolor: ${bgcolor}; `}
 >
   <svg
     width="0"
@@ -37,7 +38,7 @@ const { color, position = "bottom", height = "8rem" } = Astro.props;
 <style>
   .wave {
     position: relative;
-    background-color: var(--color);
+    background-color: var(--bgcolor);
   }
 
   .wave-shape {

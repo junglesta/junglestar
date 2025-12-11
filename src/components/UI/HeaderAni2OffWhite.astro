@@ -1,11 +1,11 @@
 ---
 // src/components/UI/HeaderAni2OffWhite.astro
-import LogoAni from "@components/shared/LogoAni.astro";
+import LogoAni from "@components/shared/LogoLink.astro";
 import ScrollAni from "@components/UI/ScrollAni.astro";
 ---
 
 <ScrollAni
-  targetClass="header_astro"
+  targetClass="header_scroll_ani"
   lumaInitial={0.5286}
   lumaFinal={0.95}
   chromaInitial={0.1735}
@@ -16,7 +16,7 @@ import ScrollAni from "@components/UI/ScrollAni.astro";
 
 <header
   slot="landing_screen"
-  class="cover jsScrollButton header_astro _HeaderAni2OffWhite"
+  class="cover jsScrollButton header_scroll_ani file_HeaderAni2OffWhite"
 >
   <LogoAni />
 

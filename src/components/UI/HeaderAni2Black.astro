@@ -1,11 +1,11 @@
 ---
 // src/components/UI/HeaderAni2Black.astro
-import LogoAni from "@components/shared/LogoAni.astro";
+import Logo from "@components/shared/LogoLink.astro";
 import ScrollAni from "@components/UI/ScrollAni.astro";
 ---
 
 <ScrollAni
-  targetClass="header_astro"
+  targetClass="header_scroll_ani"
   lumaInitial={0.5286}
   lumaFinal={0}
   chromaInitial={0.1735}
@@ -15,17 +15,15 @@ import ScrollAni from "@components/UI/ScrollAni.astro";
 />
 <div
   slot="landing_screen"
-  class="cover jsScrollButton header_astro _HeaderAni2Black"
+  class="cover jsScrollButton header_scroll_ani file_HeaderAni2Black"
 >
-  <LogoAni />
+  <Logo />
 
   <div
     class="slogan"
     id="background_change_on_scroll_02"
   >
-    <h1 class="space_between">
-      <slot />
-      <slot name="on_scroll_message" />
-    </h1>
+    <slot />
+    <slot name="on_scroll_message" />
   </div>
 </div>

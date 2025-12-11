@@ -9,13 +9,26 @@ import Logo from "@assets/svgs/logo_stroke.svg";
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: red;
+    color: var(--brand_light);
   }
+
+  .logo_link::after,
+  .logo_link::before {
+    content: "";
+    display: none;
+  }
+
   .logo {
+    padding-top: calc(var(--space_block) * 3);
     text-transform: uppercase;
     font-size: 150%;
     width: 100%;
     text-align: center;
+    color: var(--white);
+  }
+
+  .logo svg {
+    width: 300px;
   }
 </style>
 

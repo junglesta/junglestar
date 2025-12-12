@@ -26,19 +26,6 @@ const {
 } = Astro.props;
 ---
 
-<style>
-  .grida {
-    display: grid;
-    place-content: stretch center;
-    gap: 1rem;
-    padding: 1rem;
-    height: 100%;
-  }
-  .on_scroll_msg {
-    place-self: center center;
-  }
-</style>
-
 <div class="grida slogan">
   <div class="title_wrap h2">
     <div class="overline line1">{overtitle_line1}</div>
@@ -46,15 +33,15 @@ const {
     <div class="overline line3">{overtitle_line3}</div>
   </div>
   <h1 class="brand_name">{title}</h1>
-  <h2 class="on_scroll_msg brand h3">
+  <h2 class="on_scroll_msg brand h3 wrap">
     {onScroll_line1.toUpperCase()}
-    <br />
+    <br /><br />
     {onScroll_line2}
     <br /><br />
     {onScroll_line3}
-    <br />
+    <br /><br />
     {onScroll_line4}
-    <br />
+    <br /><br />
     {onScroll_line5}
     <br /><br />
     {onScroll_line6}

@@ -11,3 +11,15 @@
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
 }
+
+.grida {
+  display: grid;
+  grid-template-rows: 1fr 1fr 4fr;
+  place-content: stretch center;
+  gap: 1rem;
+  padding: 1rem;
+  height: 155svh;
+}
+.on_scroll_msg {
+  place-self: center center;
+}

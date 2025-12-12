@@ -1,21 +1,35 @@
 ---
+//pages/content.astro
 import Layout from "@layouts/Layout.astro";
-import LandingScreen from "@components/UI/HeaderAni2Black.astro";
+import Ani from "@components/UI/HeaderAni2Black.astro";
 import Wave from "@components/UI/Wave.astro";
+import LandingScreen from "@components/UI/LandingScreen.astro";
 
 import SocialMediaManagement from "@components/brand/SocialMediaManagement.astro";
+
 import TableOfContents from "@components/UI/TableOfContents.astro";
 import PostsGridMDX from "@components/shared/PostsGridMDX.astro";
-import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
 import { getMDXPosts } from "@utils/getMDXPosts";
-
 const posts = await getMDXPosts("productionConcepts");
 
-const pageTitle = "Junglestar | Content Production";
-const pageSubtitle = "Brand Narrative";
-const pageRevealOnScroll1 = "Brand Narrative? What's that?";
-const pageRevealOnScroll2 = "Why do I need that?";
-const pageRevealOnScroll3 = "Keep on scrolling... for answers.";
+// Page metadata
+const overtitle_line1 = "Marketing";
+const overtitle_line2 = "Communication.";
+const overtitle_line3 = "Simplified.";
+
+const title_start = "Junglestar ";
+const title_end = " Content Production";
+const title = title_start + " | " + title_end;
+const pageTitle = "Brand Narrative";
+
+const onScroll_line1 = "Brand Narrative?";
+const onScroll_line2 = "What's that?";
+const onScroll_line3 = "Why do I need that?";
+const onScroll_line4 = " ";
+const onScroll_line5 = "Keep on scrolling... ";
+const onScroll_line6 = "We got answers!";
+
+//
 const pageDescription =
   "What people remember you for. Brand narrative is that discourse. We help small enterprises with websites, apps, and marketing communication.";
 ---
@@ -27,25 +41,24 @@ const pageDescription =
 </style>
 
 <Layout
-  title={pageTitle}
+  title={title}
   description={pageDescription}
-  pageSubtitle={pageSubtitle}
+  bodyClass="content"
 >
-  <LandingScreen>
-    {pageSubtitle}
-    <p class="brand small_text">
-      {pageRevealOnScroll1}<br /><br />
-      {pageRevealOnScroll2}<br /><br />
-      {pageRevealOnScroll3}
-    </p>
-  </LandingScreen>
-
-  <Wave
-    color="var(--black)"
-    position="top"
-  />
-
-  <SocialMediaManagement />
+  <Ani>
+    <LandingScreen
+      overtitle_line1={overtitle_line1}
+      overtitle_line2={overtitle_line2}
+      overtitle_line3={overtitle_line3}
+      title={pageTitle}
+      onScroll_line1={onScroll_line1}
+      onScroll_line2={onScroll_line2}
+      onScroll_line3={onScroll_line3}
+      onScroll_line4={onScroll_line4}
+      onScroll_line5={onScroll_line5}
+      onScroll_line6={onScroll_line6}
+    />
+  </Ani>
 
   <Wave
     color="var(--white)"
@@ -60,9 +73,13 @@ const pageDescription =
     <PostsGridMDX posts={posts} />
   </div>
 
-  <CTAMailBanner
-    subject="Send more infos about Junglestar's Content Production"
+  <div class="space_block"></div>
+  <Wave
+    color="var(--black)"
+    position="top"
   />
+
+  <SocialMediaManagement />
 
   <Wave
     color="var(--white)"

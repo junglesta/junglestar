@@ -1,18 +1,28 @@
 ---
 //pages/discoverability.astro
 import Layout from "@layouts/Layout.astro";
+import Ani from "@components/UI/HeaderAni2Black.astro";
+import Wave from "@components/UI/Wave.astro";
+import LandingScreen from "@components/UI/LandingScreen.astro";
+
 import Gmap from "@components/brand/Gmap.astro";
-import LandingScreen from "@components/UI/HeaderAni2Black.astro";
 
 // Page metadata
-const pageTitle = "Junglestar | Pricing";
-const pageSubtitle = "YOU'RE LOCATED where?";
-const pageRevealOnScroll1 = "Do you get msg like:";
-const pageRevealOnScroll2 = "''Can you send me your location, pls?''";
-const pageRevealOnScroll3 = "How you deal with it? as we always did like...";
-const pageRevealOnScroll4 = "''Follow me, I'll show you!''";
-const pageRevealOnScroll5 = "What worked doesn't anymore.";
-const pageRevealOnScroll6 = "Now what?";
+const overtitle_line1 = "Marketing";
+const overtitle_line2 = "Communication.";
+const overtitle_line3 = "Simplified.";
+
+const title_start = "Junglestar ";
+const title_end = " Content Production";
+const title = title_start + " | " + title_end;
+const pageTitle = "YOU'RE LOCATED where?";
+
+const onScroll_line1 = "Do you get msg like:";
+const onScroll_line2 = "''Can you send me your location, pls?''";
+const onScroll_line3 = "How you deal with it? as we always did like...";
+const onScroll_line4 = "''Follow me, I'll show you!''";
+const onScroll_line5 = "What worked doesn't anymore.";
+const onScroll_line6 = "Now what?";
 const pageDescription =
   "Flexible one-stop web agency. We design, code & deploy — webstores, websites, web apps. Packed solutions & custom designs for great user experiences.";
 ---
@@ -22,22 +32,35 @@ const pageDescription =
     color: var(--black);
   }
 </style>
-<Layout title={pageTitle} description={pageDescription} pageSubtitle={pageSubtitle}>
-  <LandingScreen>
-    {pageSubtitle}
-    <p class="brand small_text">
-      {pageRevealOnScroll1}
-      <br /><br />
-      {pageRevealOnScroll2}
-      <br /><br />
-      {pageRevealOnScroll3}
-      <br /><br />
-      {pageRevealOnScroll4}
-      <br /><br />
-      {pageRevealOnScroll5}
-      <br />
-      {pageRevealOnScroll6}
-    </p>
-  </LandingScreen>
+
+<Layout
+  title={title}
+  description={pageDescription}
+>
+  <Ani>
+    <LandingScreen
+      overtitle_line1={overtitle_line1}
+      overtitle_line2={overtitle_line2}
+      overtitle_line3={overtitle_line3}
+      title={pageTitle}
+      onScroll_line1={onScroll_line1}
+      onScroll_line2={onScroll_line2}
+      onScroll_line3={onScroll_line3}
+      onScroll_line4={onScroll_line4}
+      onScroll_line5={onScroll_line5}
+      onScroll_line6={onScroll_line6}
+    />
+  </Ani>
+
+  <Wave
+    color="var(--black)"
+    position="top"
+  />
   <Gmap />
+  <Wave
+    color="var(--white)"
+    position="bottom"
+  />
+
+  <div class="space8"></div>
 </Layout>

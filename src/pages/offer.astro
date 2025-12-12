@@ -2,7 +2,8 @@
 import Layout from "@layouts/Layout.astro";
 import Gmap from "@components/brand/Gmap.astro";
 import SlowWebsite from "@components/brand/SlowWebsite.astro";
-import LandingScreen from "@components/UI/HeaderAni2Black.astro";
+import Ani from "@components/UI/HeaderAni2Black.astro";
+import LandingScreen from "@components/UI/LandingScreen.astro";
 import { getCollection } from "astro:content";
 import CTAButton from "@components/UI/CTAButton.astro";
 
@@ -19,10 +20,21 @@ const offers = allOffers.sort((a, b) => {
 });
 
 // Page metadata
-const pageTitle = "Junglestar | Pricing";
-const pageSubtitle = "Website Packages!";
-const pageRevealOnScroll =
-  "You need a new website! Check our All-included solutions.";
+const overtitle_line1 = " Pricing, simplified.";
+const overtitle_line3 = "We design, code & deploy";
+const overtitle_line2 = "You need a new website! ";
+
+const title_start = "Junglestar ";
+const title_end = " Pricing";
+const title_page = "website packages & custom designs";
+const title = title_start + " | " + title_end;
+
+const onScroll_line1 = "Junglestar offers";
+const onScroll_line2 = "All-included solutions.";
+const onScroll_line3 = "We are a flexible one-stop web agency.";
+const onScroll_line4 = "We design, code & deploy";
+const onScroll_line5 = "from webstores to web apps";
+const onScroll_line6 = "Packed solutions & custom designs";
 const pageDescription =
   "Flexible one-stop web agency. We design, code & deploy — from webstores to web apps. Packed solutions & custom designs for great user experiences.";
 ---
@@ -163,14 +175,24 @@ const pageDescription =
 </style>
 
 <Layout
-  title={pageTitle}
+  title={title}
   description={pageDescription}
   bodyClass="offer"
 >
-  <LandingScreen>
-    {pageSubtitle}
-    <p class="brand small_text">{pageRevealOnScroll}</p>
-  </LandingScreen>
+  <Ani>
+    <LandingScreen
+      overtitle_line1={overtitle_line1}
+      overtitle_line2={overtitle_line2}
+      overtitle_line3={overtitle_line3}
+      title={title_page}
+      onScroll_line1={onScroll_line1}
+      onScroll_line2={onScroll_line2}
+      onScroll_line3={onScroll_line3}
+      onScroll_line4={onScroll_line4}
+      onScroll_line5={onScroll_line5}
+      onScroll_line6={onScroll_line6}
+    />
+  </Ani>
 
   <div class="print_only">
     <div class="print_imperatif">Make life easy for your customers!</div>

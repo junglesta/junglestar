@@ -14,11 +14,14 @@ import ScrollAni from "@components/UI/ScrollAni.astro";
   animationRange="0dvh 200dvh"
 />
 
-<div
+<header
   slot="landing_screen"
   class="cover jsScrollButton header_scroll_ani file_HeaderAni2Black"
 >
   <Logo />
   <slot />
-  <slot name="on_scroll_message" />
-</div>
+  <slot
+    name="on_scroll_message"
+    class="h1"
+  />
+</header>

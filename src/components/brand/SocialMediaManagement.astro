@@ -6,10 +6,12 @@ import Wave from "@components/UI/Wave.astro";
 
 <style>
   .brand_light {
-    background-color: var(--brand_light);
+    background-color: var(--brandT25);
   }
 </style>
-<div class="offer_content light_bg page_break social_media_management">
+<div
+  class="offer_content light_bg page_break social_media_management brand_light"
+>
   <div class="mean_title mean_title--first">
     <div class="wrap flex flex_cols flex_align_center flex_justify_center">
       <div class="mean_icon">
@@ -81,7 +83,7 @@ import Wave from "@components/UI/Wave.astro";
         </svg>
       </div>
 
-      <div class="change_background_color_on_scroll flex-wrap-reverse">
+      <div class="flex-wrap-reverse">
         <h2 class="h3 center">
           We build your image through social engagement!
         </h2>
@@ -94,17 +96,12 @@ import Wave from "@components/UI/Wave.astro";
             <br />authentically growing your audience.
             <br />We'll direct traffic to your site/shop
             <br />leveraging the smartest tools for thought and platform
-            dynamics.</small
-          >
+            dynamics.
+          </small>
         </h3>
       </div>
 
-      <Wave
-        color="var(--brand)"
-        position="top"
-      />
-
-      <div class="space_block">&nbsp;</div>
+      <!-- <div class="space_block">&nbsp;</div> -->
 
       <CTAMailBanner
         subject="Send me more infos about Junglestar's Social Media Management package"
@@ -112,3 +109,7 @@ import Wave from "@components/UI/Wave.astro";
     </div>
   </div>
 </div>
+<Wave
+  color="var(--brandT25)"
+  position="bottom"
+/>

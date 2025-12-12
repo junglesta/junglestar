@@ -1,4 +1,6 @@
 ---
+import Icono from "@svgs/whatsthat.svg";
+
 interface Props {
   overtitle_line1?: string;
   overtitle_line2?: string;
@@ -26,6 +28,14 @@ const {
 } = Astro.props;
 ---
 
+<style>
+  .icono {
+    padding-block: var(--space_block);
+    display: block;
+    height: 300px;
+  }
+</style>
+
 <div class="grida slogan">
   <div class="title_wrap h2">
     <div class="overline line1">{overtitle_line1}</div>
@@ -39,7 +49,14 @@ const {
     {onScroll_line2}
     <br /><br />
     {onScroll_line3}
-    <br /><br />
+
+    <Icono
+      width={50}
+      height={50}
+      fill="currentColor"
+      class="icono"
+    />
+
     {onScroll_line4}
     <br /><br />
     {onScroll_line5}

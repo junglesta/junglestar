@@ -5,6 +5,7 @@ import Ani from "@components/UI/HeaderAni2Black.astro";
 import Wave from "@components/UI/Wave.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
 import IntroSection from "@components/intro/IntroSection.astro";
+import Icono from "@svgs/whatsthat.svg";
 import * as repoData from "package.json";
 
 // Page metadata
@@ -16,11 +17,11 @@ const title_start = "Junglestar ";
 const title_end = " Sustainable Web Design";
 const title = title_start + " | " + title_end + " v" + repoData.version;
 
-const onScroll_line1 = "Hello!";
-const onScroll_line2 = "Welcome.";
-const onScroll_line3 = "Let us breifly introduce";
-const onScroll_line4 = "what we can do";
-const onScroll_line5 = "for small entrepreneurs.";
+const onScroll_line1 = "Hello! Welcome.";
+const onScroll_line2 = "Let us breifly introduce what we can do";
+const onScroll_line3 = "for small entrepreneurs.";
+const onScroll_line4 = "";
+const onScroll_line5 = "";
 const onScroll_line6 = "Keep on scrolling...";
 const description =
   "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
@@ -30,6 +31,10 @@ const description =
 <style>
   .brand_name {
     padding-top: calc(var(--space_block) * 1);
+  }
+  svg {
+    width: initial;
+    height: initial;
   }
 </style>
 
@@ -41,19 +46,24 @@ const description =
 >
   <Ani>
     <LandingScreen
+      title={title_start}
       overtitle_line1={overtitle_line1}
       overtitle_line2={overtitle_line2}
       overtitle_line3={overtitle_line3}
-      title={title_start}
       onScroll_line1={onScroll_line1}
       onScroll_line2={onScroll_line2}
       onScroll_line3={onScroll_line3}
       onScroll_line4={onScroll_line4}
       onScroll_line5={onScroll_line5}
       onScroll_line6={onScroll_line6}
-    />
+    >
+      <Icono
+        width={133}
+        height={133}
+        fill="currentColor"
+      />
+    </LandingScreen>
   </Ani>
-
   <Wave
     color="var(--black)"
     position="bottom"

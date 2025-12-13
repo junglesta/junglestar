@@ -13,12 +13,14 @@
 }
 
 .grida {
+  position: initial;
   display: grid;
-  grid-template-rows: 1fr 1fr 4fr;
+  grid-template-rows: 0.5fr 0.5fr auto;
   place-content: stretch center;
   gap: 1rem;
   padding: 1rem;
-  height: 155svh;
+  height: auto;
+  padding-block: calc(var(--space_block) * 2);
 }
 .on_scroll_msg {
   place-self: center center;

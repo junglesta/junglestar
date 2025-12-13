@@ -40,19 +40,17 @@ const wavePath = `M0,0 L1,0 L1,${waveHeight} Q0.75,${waveHeight + 0.15} 0.5,${wa
       </clipPath>
     </defs>
   </svg>
-
-  <div
-    class="wave_bottom"
-    style={`background: ${bottomBackground};`}
-  >
-    <slot name="bottom" />
-  </div>
-
   <div
     class="wave_top"
     style={`background: ${topBackground}; clip-path: url(#${clipId});`}
   >
     <slot name="top" />
+  </div>
+  <div
+    class="wave_bottom"
+    style={`background: ${bottomBackground};`}
+  >
+    <slot name="bottom" />
   </div>
 </div>
 

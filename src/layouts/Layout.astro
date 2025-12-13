@@ -4,6 +4,7 @@
 import Footer from "@components/footer/Footer.astro";
 import LastPub from "@components/heads/LastPublished.astro";
 import Head from "@components/heads/Head.astro";
+import WaveSection from "@components/UI/WaveSection.astro";
 import * as siteData from "@data/site.json";
 import "@styles/global.css";
 
@@ -20,7 +21,7 @@ const {
   bodyClass,
   mainClass = "",
   title,
-  description = "Sustainable Web Design to help fight Climate Change",
+  description = "Sustainable Web Design",
   sitemap = true,
 } = Astro.props;
 ---
@@ -72,6 +73,7 @@ const {
         <slot />
       </main>
     </div>
+
     <Footer />
 
     <!-- Inline script: only passes data to window -->

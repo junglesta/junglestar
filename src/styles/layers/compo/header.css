@@ -1,16 +1,13 @@
 .cover {
   user-select: none;
-  position: relative;
-  min-height: 200svh;
-  height: 200svh;
+  min-height: var(--cover_height);
+  height: var(--cover_height);
   color: var(--white);
   background-color: var(--brand);
   padding-block: var(--space_block);
 
   .slogan {
-    padding-top: calc(var(--space_block) * 2);
-    padding-bottom: calc(var(--space_block) / 4);
-    padding-inline: 0;
+    padding: 0;
     text-wrap: pretty;
     text-align: center;
     font-weight: 400;

@@ -24,7 +24,10 @@ const { title, description = "Default description" } = Astro.props;
 
 <!-- src/components/heads/Head.astro -->
 <title>{title}</title>
-<meta name="description" content={description} />
+<meta
+  name="description"
+  content={description}
+/>
 ```
 
 ### 2. Component Includes
@@ -32,7 +35,8 @@ const { title, description = "Default description" } = Astro.props;
 **Jekyll:**
 
 ```html
-{% include footer.html %} {% include svg/use.html id="icn--logo_white" class="logo" %}
+{% include footer.html %} {% include svg/use.html id="icn--logo_white"
+class="logo" %}
 ```
 
 **Astro:**
@@ -44,7 +48,10 @@ import SvgIcon from "@components/SvgIcon.astro";
 ---
 
 <Footer />
-<SvgIcon id="icn--logo_white" class="logo" />
+<SvgIcon
+  id="icn--logo_white"
+  class="logo"
+/>
 ```
 
 ### 3. Loops and Conditionals
@@ -74,7 +81,8 @@ const footerServices = services.filter((item) => item.data.footer_listed);
 **Jekyll:**
 
 ```html
-{{ site.time | date: '%Y' }} {{ page.url | replace:'index.html','' | prepend: site.baseurl }}
+{{ site.time | date: '%Y' }} {{ page.url | replace:'index.html','' | prepend:
+site.baseurl }}
 ```
 
 **Astro:**
@@ -105,7 +113,10 @@ const { title, description, language = "english" } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-  <Head title={title} description={description} />
+  <Head
+    title={title}
+    description={description}
+  />
   <body>
     <Header language={language} />
     <main class="main">
@@ -133,22 +144,36 @@ const currentYear = new Date().getFullYear();
 const siteEmail = "info@junglestar.org"; // Move to config
 ---
 
-<footer class="flex flex_cols flex_align_center flex_justify_center flex_align_content_center">
+<footer
+  class="flex flex_cols flex_align_center flex_justify_center flex_align_content_center"
+>
   <a
     title="clicking this link will send you back to this junglestar.org homepage"
     href="/"
     class="footer_icon action_button back_home"
   >
-    <SvgIcon id="icn--logo_white" class="logo" alt="click to go back to the homepage" />
+    <SvgIcon
+      id="icn--logo_white"
+      class="logo"
+      alt="click to go back to the homepage"
+    />
   </a>
 
   <div class="footer_block">
     <div class="action_title">Junglestar</div>
 
-    <div class="footer_block_pages" role="menu">
+    <div
+      class="footer_block_pages"
+      role="menu"
+    >
       {
         footerServices.map((item) => (
-          <a class="menu_item center" role="menuitem" title={item.data.title} href={`/${item.collection}/${item.slug}`}>
+          <a
+            class="menu_item center"
+            role="menuitem"
+            title={item.data.title}
+            href={`/${item.collection}/${item.slug}`}
+          >
             <span class="page_title">{item.data.title}</span>
           </a>
         ))
@@ -156,7 +181,12 @@ const siteEmail = "info@junglestar.org"; // Move to config
 
       {
         footerOffers.map((item) => (
-          <a class="menu_item center" role="menuitem" title={item.data.title} href={`/${item.collection}/${item.slug}`}>
+          <a
+            class="menu_item center"
+            role="menuitem"
+            title={item.data.title}
+            href={`/${item.collection}/${item.slug}`}
+          >
             <span class="page_title">{item.data.title}</span>
           </a>
         ))
@@ -164,21 +194,37 @@ const siteEmail = "info@junglestar.org"; // Move to config
     </div>
 
     <div class="footer_block_contacts">
-      <a title="send us an email" class="action_button mail" href={`mailto:${siteEmail}`}>
+      <a
+        title="send us an email"
+        class="action_button mail"
+        href={`mailto:${siteEmail}`}
+      >
         <span class="action_title">get in touch</span>
         <span class="action_title reveal_on_hover">send email</span>
-        <SvgIcon id="icn--email" class="email" />
+        <SvgIcon
+          id="icn--email"
+          class="email"
+        />
       </a>
 
       <div class="flex_item qr white">
         <div class="action_title">phone link</div>
-        <SvgIcon id="icn--qr" class="qr" />
+        <SvgIcon
+          id="icn--qr"
+          class="qr"
+        />
       </div>
     </div>
 
     <div class="footer_block_carbonbadge">
-      <div id="wcb" class="carbonbadge"></div>
-      <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+      <div
+        id="wcb"
+        class="carbonbadge"
+      ></div>
+      <script
+        src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
+        defer
+      ></script>
     </div>
 
     <p class="fontsizefixed centertext">
@@ -192,24 +238,48 @@ const siteEmail = "info@junglestar.org"; // Move to config
 
 ```astro
 ---
-const { title, description = "Default site description", sitemap = true } = Astro.props;
+const {
+  title,
+  description = "Default site description",
+  sitemap = true,
+} = Astro.props;
 
 const siteUrl = import.meta.env.SITE || "https://junglestar.org";
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
 ---
 
 <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta
+  http-equiv="X-UA-Compatible"
+  content="IE=edge"
+/>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1"
+/>
 
 <title>{title}</title>
 
-{!sitemap && <meta name="robots" content="noindex,nofollow,nosnippet" />}
+{
+  !sitemap && (
+    <meta
+      name="robots"
+      content="noindex,nofollow,nosnippet"
+    />
+  )
+}
 
-<meta name="description" content={description} />
+<meta
+  name="description"
+  content={description}
+/>
 
 <!-- Font Loading -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+/>
 <link
   rel="preload"
   as="style"
@@ -222,39 +292,127 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
   onload="this.media='all'"
 />
 
-<link rel="canonical" href={canonicalUrl} />
+<link
+  rel="canonical"
+  href={canonicalUrl}
+/>
 
 <!-- Favicons -->
-<link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
-<link rel="manifest" href="/assets/favicons/site.webmanifest" />
-<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#0069cc" />
-<link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
-<meta name="apple-mobile-web-app-title" content="Junglestar" />
-<meta name="application-name" content="Junglestar" />
-<meta name="msapplication-TileColor" content="#0069cc" />
-<meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
-<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml" />
-<meta name="theme-color" content="#0069cc" />
+<link
+  rel="apple-touch-icon"
+  href="/assets/favicons/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/assets/favicons/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="/assets/favicons/android-chrome-192x192.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/assets/favicons/favicon-16x16.png"
+/>
+<link
+  rel="manifest"
+  href="/assets/favicons/site.webmanifest"
+/>
+<link
+  rel="mask-icon"
+  href="/assets/favicons/safari-pinned-tab.svg"
+  color="#0069cc"
+/>
+<link
+  rel="shortcut icon"
+  href="/assets/favicons/favicon.ico"
+/>
+<meta
+  name="apple-mobile-web-app-title"
+  content="Junglestar"
+/>
+<meta
+  name="application-name"
+  content="Junglestar"
+/>
+<meta
+  name="msapplication-TileColor"
+  content="#0069cc"
+/>
+<meta
+  name="msapplication-TileImage"
+  content="/assets/favicons/mstile-144x144.png"
+/>
+<meta
+  name="msapplication-config"
+  content="/assets/favicons/browserconfig.xml"
+/>
+<meta
+  name="theme-color"
+  content="#0069cc"
+/>
 
 <!-- Open Graph -->
-<meta property="og:locale" content="en" />
-<meta property="og:type" content="article" />
-<meta property="og:title" content={title} />
-<meta property="og:image" content={`${siteUrl}/assets/junglestar_logo.png`} />
-<meta property="og:description" content={description} />
-<meta property="og:url" content={canonicalUrl} />
-<meta property="og:site_name" content="Junglestar" />
+<meta
+  property="og:locale"
+  content="en"
+/>
+<meta
+  property="og:type"
+  content="article"
+/>
+<meta
+  property="og:title"
+  content={title}
+/>
+<meta
+  property="og:image"
+  content={`${siteUrl}/assets/junglestar_logo.png`}
+/>
+<meta
+  property="og:description"
+  content={description}
+/>
+<meta
+  property="og:url"
+  content={canonicalUrl}
+/>
+<meta
+  property="og:site_name"
+  content="Junglestar"
+/>
 
 <!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@rokmatwit" />
-<meta name="twitter:creator" content="@rokmatwit" />
-<meta name="twitter:image:src" content={`${siteUrl}/assets/junglestar_logo.png`} />
-<meta name="twitter:title" content={title} />
-<meta name="twitter:description" content={description} />
+<meta
+  name="twitter:card"
+  content="summary_large_image"
+/>
+<meta
+  name="twitter:site"
+  content="@rokmatwit"
+/>
+<meta
+  name="twitter:creator"
+  content="@rokmatwit"
+/>
+<meta
+  name="twitter:image:src"
+  content={`${siteUrl}/assets/junglestar_logo.png`}
+/>
+<meta
+  name="twitter:title"
+  content={title}
+/>
+<meta
+  name="twitter:description"
+  content={description}
+/>
 ```
 
 ### 4. Convert Intro Component (`src/components/Intro.astro`)
@@ -266,7 +424,10 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
 
 <span class="scrolltarget"></span>
 <div class="wrap wrap--slim full_height wrap--vert_pad">
-  <a class="section flex flex_cols flex_align_self_start to_design" href="/design/">
+  <a
+    class="section flex flex_cols flex_align_self_start to_design"
+    href="/design/"
+  >
     <div class="color_icon blasting_brands">
       <!-- Replace with actual SVG or component -->
       <svg>...</svg>
@@ -276,16 +437,24 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
       <span>
         <h1 class="header_title">It's a Jungle out there.</h1>
         <h2 class="h3 header_title color_white">Can customers reach you?</h2>
-        <h3 class="h4 header_title color_white"> When I google your company name which infos can I get? </h3>
+        <h3 class="h4 header_title color_white">
+          When I google your company name which infos can I get?
+        </h3>
       </span>
 
       <div class="text">
-        <p>To get noticed, ones need to be easy, customer-friendly and recognizable.</p>
-        <p>Today 60% of internet traffic comes from phones. Is your website ready for that?</p>
+        <p
+          >To get noticed, ones need to be easy, customer-friendly and
+          recognizable.</p
+        >
+        <p
+          >Today 60% of internet traffic comes from phones. Is your website
+          ready for that?</p
+        >
         <p>It's never been easier to launch a brand new internet presence.</p>
         <p>
-          Needing a landing page or an online shop? Marketing using social media? Tired to try to manage it all
-          yourself?
+          Needing a landing page or an online shop? Marketing using social
+          media? Tired to try to manage it all yourself?
         </p>
         <small class="button button--dark">Know how we design</small>
       </div>
@@ -304,10 +473,13 @@ import Layout from "@layouts/Layout.astro";
 import Intro from "@components/Intro.astro";
 
 const pageTitle = "Junglestar - Web Design & Development";
-const pageDescription = "Sustainable Web Design to help the planet";
+const description = "Sustainable Web Design to help the planet";
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
+<Layout
+  title={pageTitle}
+  description={description}
+>
   <div class="page_content">
     <Intro />
   </div>

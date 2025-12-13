@@ -1,6 +1,4 @@
 ---
-import Icono from "@svgs/whatsthat.svg";
-
 interface Props {
   overtitle_line1?: string;
   overtitle_line2?: string;
@@ -18,7 +16,7 @@ const {
   overtitle_line1 = "",
   overtitle_line2 = "",
   overtitle_line3 = "",
-  title,
+  title = "",
   onScroll_line1 = "",
   onScroll_line2 = "",
   onScroll_line3 = "",
@@ -44,23 +42,14 @@ const {
     <div class="overline line3">{overtitle_line3}</div>
   </div>
   <h2 class="on_scroll_msg brand h3 wrap">
-    {onScroll_line1.toUpperCase()}
-    <br /><br />
-    {onScroll_line2}
-    <br /><br />
-    {onScroll_line3}
+    <div class="l1">{onScroll_line1.toUpperCase()}</div>
+    <div class="l2">{onScroll_line2}</div>
+    <div class="l3">{onScroll_line3}</div>
 
-    <Icono
-      width={50}
-      height={50}
-      fill="currentColor"
-      class="icono"
-    />
+    <slot />
 
-    {onScroll_line4}
-    <br /><br />
-    {onScroll_line5}
-    <br /><br />
-    {onScroll_line6}
+    <div class="l4">{onScroll_line4}</div>
+    <div class="l5">{onScroll_line5}</div>
+    <div class="l6">{onScroll_line6}</div>
   </h2>
 </div>

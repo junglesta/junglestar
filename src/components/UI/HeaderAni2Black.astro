@@ -1,6 +1,6 @@
 ---
 // src/components/UI/HeaderAni2Black.astro
-import Logo from "@components/shared/LogoLink.astro";
+import Logo from "@components/shared/Logo.astro";
 import ScrollAni from "@components/UI/ScrollAni.astro";
 ---
 
@@ -11,7 +11,7 @@ import ScrollAni from "@components/UI/ScrollAni.astro";
   chromaInitial={0.1735}
   chromaFinal={0}
   hue="255deg"
-  animationRange="0dvh 200dvh"
+  animationRange="0 1400px"
 />
 
 <header
@@ -20,8 +20,5 @@ import ScrollAni from "@components/UI/ScrollAni.astro";
 >
   <Logo />
   <slot />
-  <slot
-    name="on_scroll_message"
-    class="h1"
-  />
+  <slot name="on_scroll_message" />
 </header>

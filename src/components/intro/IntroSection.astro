@@ -27,7 +27,6 @@ function parseBold(text: string) {
     text-align: center;
   }
   .intro_meme {
-    position: relative;
     padding-block: calc(var(--space_block) * 8);
   }
 
@@ -129,9 +128,9 @@ function parseBold(text: string) {
 
         <h1 class="h2 brand">{item.data.question}</h1>
 
-        <h2 class="h4 brand">{item.data.title}</h2>
-        <h3 class="h5 ">{item.data.subtitle}</h3>
-        <div class="content">
+        <h2 class="h4 offwhite">{item.data.title}</h2>
+        <h3 class="h5 offwhite">{item.data.subtitle}</h3>
+        <div class="content offwhite">
           <details>
             <summary class="tagline">{item.data.tagline}</summary>
             {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}

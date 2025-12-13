@@ -1,6 +1,6 @@
 ---
-// @components/shared/LogoLinkBrandFull.astro
-import Logo from "@assets/svgs/logo_stroke.svg";
+// @components/shared/LogoBrandFull.astro
+import LogoSVG from "@assets/svgs/logo_stroke.svg";
 ---
 
 <style>
@@ -24,11 +24,10 @@ import Logo from "@assets/svgs/logo_stroke.svg";
     font-size: 150%;
     width: 100%;
     text-align: center;
-    color: var(--white);
   }
 
-  .logo svg {
-    width: 300px;
+  .logosvg {
+    color: var(--white);
   }
 </style>
 
@@ -37,11 +36,10 @@ import Logo from "@assets/svgs/logo_stroke.svg";
   title="This link goes back to junglestar.org homepage"
   href="/"
 >
-  <div class="logo">
-    <Logo
-      width={300}
-      height={300}
-      fill="currentColor"
-    />
-  </div>
+  <LogoSVG
+    class="logosvg"
+    width={155}
+    height={155}
+    fill="currentColor"
+  />
 </a>

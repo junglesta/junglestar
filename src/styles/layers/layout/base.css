@@ -3,7 +3,9 @@
 ONLY BASE SEMANTIC ELEMENTS HERE,
 .classes go into /layout/classes.css
 */
-
+html {
+  background-color: #fff;
+}
 body {
   font-family: var(--font_family);
   font-size: var(--font_clamp);

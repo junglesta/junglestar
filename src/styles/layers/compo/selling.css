@@ -25,7 +25,7 @@
 .selling_gmap {
   margin-bottom: var(--space_block);
   font-size: 1.1rem;
-  max-width: 80svh;
+  max-width: 80svw;
   margin-inline: auto;
   ul {
     margin-left: 0;

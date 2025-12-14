@@ -1,22 +1,23 @@
 ---
-// src/components/UI/HeaderAni2Black.astro
+// src/components/UI/AnimHeader2Black.astro|
+// from BLACK to BRAND
 import Logo from "@components/shared/Logo.astro";
 import ScrollAni from "@components/UI/ScrollAni.astro";
 ---
 
 <ScrollAni
   targetClass="header_scroll_ani"
-  lumaInitial={0.5286}
-  lumaFinal={0}
+  lumaInitial={0}
+  lumaFinal={0.5286}
   chromaInitial={0.1735}
-  chromaFinal={0}
+  chromaFinal={0.1735}
   hue="255deg"
   animationRange="0 1400px"
 />
 
 <header
   slot="landing_screen"
-  class="cover jsScrollButton header_scroll_ani file_HeaderAni2Black"
+  class="cover clickScrollTrigger header_scroll_ani file_AnimHeader2Brand"
 >
   <Logo />
   <slot />

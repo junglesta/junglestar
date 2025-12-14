@@ -14,6 +14,7 @@
 @import "./layers/layout/classes.css" layer(layout);
 @import "./layers/layout/code.css" layer(layout);
 @import "./layers/layout/details.css" layer(layout);
+@import "./layers/layout/grids.css" layer(layout);
 @import "./layers/layout/headings.css" layer(layout);
 @import "./layers/layout/links.css" layer(layout);
 @import "./layers/layout/strong.css" layer(layout);
@@ -21,7 +22,6 @@
 
 @import "./layers/compo/buttons.css" layer(components);
 @import "./layers/compo/cards.css" layer(components);
-@import "./layers/compo/grids.css" layer(components);
 @import "./layers/compo/header.css" layer(components);
 @import "./layers/compo/intro.css" layer(components);
 @import "./layers/compo/mean.css" layer(components);

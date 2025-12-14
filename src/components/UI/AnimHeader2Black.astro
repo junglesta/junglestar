@@ -1,5 +1,5 @@
 ---
-// src/components/UI/HeaderAni2OffWhite.astro
+// src/components/UI/AnimHeader2Black.astro
 import Logo from "@components/shared/Logo.astro";
 import ScrollAni from "@components/UI/ScrollAni.astro";
 ---
@@ -7,16 +7,16 @@ import ScrollAni from "@components/UI/ScrollAni.astro";
 <ScrollAni
   targetClass="header_scroll_ani"
   lumaInitial={0.5286}
-  lumaFinal={0.95}
+  lumaFinal={0}
   chromaInitial={0.1735}
-  chromaFinal={0.01}
+  chromaFinal={0}
   hue="255deg"
-  animationRange="0 1400px"
+  animationRange="0 calc(var(--windowH)*2 + 200px)"
 />
 
 <header
   slot="landing_screen"
-  class="cover jsScrollButton header_scroll_ani file_HeaderAni2OffWhite"
+  class="cover clickScrollTrigger header_scroll_ani file_AnimHeader2Black"
 >
   <Logo />
   <slot />

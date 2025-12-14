@@ -1,11 +1,11 @@
 ---
 // src/pages/index.astro
 import Layout from "@layouts/Layout.astro";
-import Ani from "@components/UI/HeaderAni2Black.astro";
-import Wave from "@components/UI/Wave.astro";
+import Ani from "@components/UI/AnimHeader2Black.astro";
+// import Wave from "@components/UI/Wave.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
 import IntroSection from "@components/intro/IntroSection.astro";
-import Icono from "@svgs/whatsthat.svg";
+import Icono from "@svgs/what.svg";
 import * as repoData from "package.json";
 
 // Page metadata
@@ -30,7 +30,7 @@ const description =
 
 <style>
   .brand_name {
-    padding-top: calc(var(--space_block) * 1);
+    padding-top: calc(var(--space_block) * 3);
   }
   svg {
     width: initial;
@@ -42,7 +42,7 @@ const description =
   title={title}
   description={description}
   bodyClass="home"
-  mainClass="hh"
+  mainClass="grid_main "
 >
   <Ani>
     <LandingScreen
@@ -64,11 +64,6 @@ const description =
       />
     </LandingScreen>
   </Ani>
-  <Wave
-    color="var(--black)"
-    position="bottom"
-    bgcolor="var(--black)"
-  />
 
   <IntroSection />
 </Layout>

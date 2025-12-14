@@ -1,6 +1,7 @@
 ---
 // src/components/heads/Head.astro
 // import { ClientRouter } from "astro:transitions";
+import ViewportHeight from "@components/shared/ViewportHeight.astro";
 
 import * as siteData from "@data/site.json";
 import * as repoData from "package.json";
@@ -23,6 +24,7 @@ const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
 ---
 
 <head>
+  <ViewportHeight />
   <meta
     name="version"
     content={repoData.version}

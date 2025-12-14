@@ -19,9 +19,16 @@
   place-content: stretch center;
   gap: 1rem;
   padding: 1rem;
-  height: auto;
+  height: calc(var(--windowH) * 2);
   padding-block: calc(var(--space_block) * 2);
 }
 .on_scroll_msg {
   place-self: center center;
+}
+
+.grid_main {
+  position: initial;
+  display: grid;
+  padding: 0;
+  margin: 0;
 }

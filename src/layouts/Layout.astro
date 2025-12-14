@@ -4,7 +4,7 @@
 import Footer from "@components/footer/Footer.astro";
 import LastPub from "@components/heads/LastPublished.astro";
 import Head from "@components/heads/Head.astro";
-import WaveSection from "@components/UI/WaveSection.astro";
+// import WaveSection from "@components/UI/WaveSection.astro";
 import * as siteData from "@data/site.json";
 import "@styles/global.css";
 
@@ -35,8 +35,6 @@ const {
     background-color: var(--white);
   }
   .scrolling_body_wrap {
-    position: relative;
-    z-index: 1;
   }
 </style>
 
@@ -63,16 +61,11 @@ const {
   <LastPub />
 
   <body class={bodyClass}>
-    <div
-      class="scrolling_body_wrap"
-      id="top"
-    >
-      <slot name="landing_screen" />
+    <slot name="landing_screen" />
 
-      <main class={mainClass}>
-        <slot />
-      </main>
-    </div>
+    <main class:list={["scrolling_body_wrap clickScrollTarget", mainClass]}>
+      <slot />
+    </main>
 
     <Footer />
 
@@ -84,6 +77,28 @@ const {
 
     <!-- Processed script: handles imports -->
     <script>
+      //Smooth scroll to target
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollButton = document.querySelector(".clickScrollTrigger");
+        const scrollTarget = document.querySelector(".clickScrollTarget");
+
+        if (scrollButton && scrollTarget) {
+          scrollButton.addEventListener("click", function (e) {
+            e.preventDefault();
+            scrollTarget.scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        } else {
+          console.log("Elements not found:", {
+            button: !!scrollButton,
+            target: !!scrollTarget,
+          });
+        }
+      });
+    </script>
+
+    <script>
       import { initPopipasta } from "@utils/popipasta";
 
       document.addEventListener("astro:page-load", () => {
@@ -91,36 +106,14 @@ const {
         initPopipasta(brand, url);
       });
     </script>
+
+    <script>
+      import { openExternalLinksInNewWindow, markMailtoLinks } from "@utils/el";
+
+      document.addEventListener("astro:page-load", () => {
+        openExternalLinksInNewWindow();
+        markMailtoLinks();
+      });
+    </script>
   </body>
 </html>
-
-<script>
-  import { openExternalLinksInNewWindow, markMailtoLinks } from "@utils/el";
-
-  document.addEventListener("astro:page-load", () => {
-    openExternalLinksInNewWindow();
-    markMailtoLinks();
-  });
-</script>
-
-<script is:inline>
-  // Smooth scroll to target
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   const scrollButton = document.querySelector(".jsScrollButton");
-  //   const scrollTarget = document.querySelector(".jsScrollTarget");
-
-  //   if (scrollButton && scrollTarget) {
-  //     scrollButton.addEventListener("click", function (e) {
-  //       e.preventDefault();
-  //       scrollTarget.scrollIntoView({
-  //         behavior: "smooth",
-  //       });
-  //     });
-  //   } else {
-  //     console.log("Elements not found:", {
-  //       button: !!scrollButton,
-  //       target: !!scrollTarget,
-  //     });
-  //   }
-  // });
-</script>

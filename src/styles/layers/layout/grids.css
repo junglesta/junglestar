@@ -15,12 +15,15 @@
 .grida {
   position: initial;
   display: grid;
-  grid-template-rows: 0.5fr 0.5fr auto;
+  grid-template-rows: 1fr auto 6fr;
   place-content: stretch center;
   gap: 1rem;
   padding: 1rem;
   height: calc(var(--windowH) * 2);
   padding-block: calc(var(--space_block) * 2);
+  .brand_name {
+    align-self: center;
+  }
 }
 .on_scroll_msg {
   place-self: center center;

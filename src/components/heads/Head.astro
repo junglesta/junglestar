@@ -1,7 +1,6 @@
 ---
 // src/components/heads/Head.astro
 // import { ClientRouter } from "astro:transitions";
-import ViewportHeight from "@components/shared/ViewportHeight.astro";
 
 import * as siteData from "@data/site.json";
 import * as repoData from "package.json";
@@ -24,7 +23,19 @@ const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
 ---
 
 <head>
-  <ViewportHeight />
+  <!-- ASCII art, dude! -->
+  <!--
+        _                   _           _
+       | |_   _ _ __   __ _| | ___  ___| |_ __ _ _ __
+    _  | | | | | '_ \ / _` | |/ _ \/ __| __/ _` | '__|
+   | |_| | |_| | | | | (_| | |  __/\__ \ || (_| | |
+    \___/ \__,_|_| |_|\__, |_|\___||___/\__\__,_|_|
+                      |___/
+
+   site     : https://junglestar.org
+   email    : info@junglestar.org
+  -->
+
   <meta
     name="version"
     content={repoData.version}

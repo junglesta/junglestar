@@ -1,9 +1,11 @@
 ---
 // src/layouts/Layout.astro
 
-import Footer from "@components/footer/Footer.astro";
 import LastPub from "@components/heads/LastPublished.astro";
+import ViewportHeight from "@components/shared/ViewportHeight.astro";
+import Footer from "@components/footer/Footer.astro";
 import Head from "@components/heads/Head.astro";
+
 // import WaveSection from "@components/UI/WaveSection.astro";
 import * as siteData from "@data/site.json";
 import "@styles/global.css";
@@ -39,26 +41,13 @@ const {
 </style>
 
 <html lang="en">
-  <!-- ASCII art, dude! -->
-  <!--
-      _                   _           _
-     | |_   _ _ __   __ _| | ___  ___| |_ __ _ _ __
-  _  | | | | | '_ \ / _` | |/ _ \/ __| __/ _` | '__|
- | |_| | |_| | | | | (_| | |  __/\__ \ || (_| | |
-  \___/ \__,_|_| |_|\__, |_|\___||___/\__\__,_|_|
-                    |___/
-
- site     : https://junglestar.org
- email    : info@junglestar.org
--->
-
+  <LastPub />
+  <ViewportHeight />
   <Head
     title={title}
     description={description}
     sitemap={sitemap}
   />
-
-  <LastPub />
 
   <body class={bodyClass}>
     <slot name="landing_screen" />

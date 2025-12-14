@@ -51,6 +51,14 @@ export default defineConfig({
       status: 302,
       destination: "/",
     },
+    "/_JSTAR": {
+      status: 302,
+      destination: "/",
+    },
+    "/assets": {
+      status: 302,
+      destination: "/",
+    },
   },
 
   // Sourcemaps in production builds

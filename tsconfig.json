@@ -3,6 +3,11 @@
   "include": [".astro/types.d.ts", "src/**/*"],
   "exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"],
   "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+      }
+    ],
     "baseUrl": ".",
     "paths": {
       "@root/*": ["src/*"],

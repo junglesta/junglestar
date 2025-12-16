@@ -3,7 +3,7 @@
 /*🐸WRAP */
 .wrap {
 	/*padding-inline: calc(var(--space_inline) * 2);*/
-	padding-inline: var(--space_inline) !important;
+	padding-inline: var(--space_inline);
 }
 
 @media (min-width: 820px) {

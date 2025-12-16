@@ -12,9 +12,9 @@ export default defineConfig({
   // class - Use class-based selectors, causing a +1 specificity increase.
   scopedStyleStrategy: "where",
 
-  // experimental: {
-  //   chromeDevtoolsWorkspace: true,
-  // },
+  experimental: {
+    chromeDevtoolsWorkspace: true,
+  },
 
   image: {
     responsiveStyles: true,
@@ -44,6 +44,8 @@ export default defineConfig({
     // keep the toolbar on in dev; data-astro-* hints show in dev
     enabled: true,
   },
+
+  integrations: [mdx()],
 
   redirects: {
     // No root hitting for these dir. No index needed. Astro will take care of it.
@@ -77,5 +79,4 @@ export default defineConfig({
     },
   },
 
-  integrations: [mdx()],
 });

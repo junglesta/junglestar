@@ -41,14 +41,17 @@
 	--background_whiteT15: rgba(255, 255, 255, 0.15);
 
 	/*--brand: #0069cc;*/
-	--brand: oklch(0.5286 0.1735 255);
+	--brand: oklch(0.5286 0.1735 255 / 100%);
 	--brand_hex: #0169cc;
 	/*--brand_invert: #ff9633;*/
 	--brand_invert: oklch(0.7687 0.1641 58.66);
 	/*--brand_complementary: #cc6600;*/
 	--brand_complementary: oklch(0.6201 0.156454 53.4649);
-	--brandT25: color-mix(in oklch, var(--brand), transparent 75%);
-	--brandT50: color-mix(in oklch, var(--brand), transparent 50%);
+    --brandT25: oklch(0.5286 0.1735 255 / 25%);
+    --brandT50: oklch(0.5286 0.1735 255 / 50%);
+    --brandT75: oklch(0.5286 0.1735 255 / 75%);
+	/*--brandT25: color-mix(in oklch, var(--brand), transparent 75%);
+	--brandT50: color-mix(in oklch, var(--brand), transparent 50%);*/
 
 	/*
   calculate manually cos browsers not yet all done this...

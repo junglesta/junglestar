@@ -12,4 +12,8 @@
 		text-align: center;
 		font-weight: 400;
 	}
+	.title_wrap > * ,
+	.on_scroll_msg > * {
+	padding-inline: calc(var(--space_inline)/2);
+	}
 }

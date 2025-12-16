@@ -8,6 +8,10 @@ import Nav from "@components/shared/Nav.astro";
 import * as siteData from "@data/site.json";
 
 const currentYear = new Date().getFullYear();
+
+// .bg_brand
+// .bg_white
+// .bg_black
 ---
 
 <style>
@@ -17,62 +21,50 @@ const currentYear = new Date().getFullYear();
     padding-top: var(--space_block);
     padding-bottom: 0;
     padding-inline: var(--space_inline);
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    /*
-    position: sticky;
-    bottom: 0;
-    */
+    color: inherit;
+    display: grid;
+    place-content: center;
+    gap: var(--space_inline);
 
+    color: currewntColor;
     a:not(.footer_logo):not(.no_underline) {
-      color: var(--link_color);
+      color: inherit;
       text-decoration-thickness: 2px;
     }
 
     a:hover {
-      color: var(--link_color_hover);
+      color: inherit;
     }
   }
 
   .footer_site {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    place-content: center;
+    gap: var(--space_inline);
     padding-bottom: 1rem;
-  }
-
-  .details_reveal {
-    font-size: calc(var(--font_clamp) * 0.88);
-    max-width: 31ch;
-    width: fit-content;
-    margin: 0 auto;
-  }
-  .accordion {
-    background-color: var(--brand);
   }
   .copy {
     text-align: center;
   }
+
+  body.bg_black .footer_site {
+    color: var(--white);
+  }
 </style>
 
-<footer class="footer_wrap">
+<footer class="footer_wrap footer_site">
   <Logo />
-  <div class="footer_site">
-    <Contactlinks />
-    <Nav />
+  <Contactlinks />
+  <Nav />
 
-    <details class="accordion">
-      <summary class="copy">
-        &copy; 2012-{currentYear}
-        {siteData.brand}.org
-      </summary>
-      <div class="details_reveal pretty">
-        <Carbon />
-        <License />
-      </div>
-    </details>
-  </div>
+  <details class="">
+    <summary class="copy">
+      &copy; 2012-{currentYear}
+      {siteData.brand}.org
+    </summary>
+    <div class="details_reveal pretty">
+      <Carbon />
+      <License />
+    </div>
+  </details>
 </footer>

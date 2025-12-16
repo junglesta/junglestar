@@ -8,7 +8,10 @@ import { getCollection } from "astro:content";
 import CTAButton from "@components/UI/CTAButton.astro";
 
 // Fetch all offers from the collection
-const allOffers = await getCollection("offers", ({ data }) => data.publish);
+const allOffers = await getCollection(
+  "offers",
+  ({ data }) => data.publish,
+);
 
 // Sort: bestvalue first, then bestseller, then others
 const offers = allOffers.sort((a, b) => {
@@ -44,7 +47,8 @@ const description =
     padding: 0;
   }
 
-  .offer_content :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
+  .offer_content
+    :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
     color: var(--brand);
   }
 
@@ -177,7 +181,7 @@ const description =
 <Layout
   title={title}
   description={description}
-  bodyClass="offer"
+  bodyClass="offer bg_white"
   background="--white"
 >
   <Ani>
@@ -196,11 +200,13 @@ const description =
   </Ani>
 
   <div class="print_only">
-    <div class="print_imperatif">Make life easy for your customers!</div>
+    <div class="print_imperatif"
+      >Make life easy for your customers!</div
+    >
     <div class="print_title">Junglestar</div>
     <div class="print_subtitle">
-      Junglestar can make you a fast-loading website, crafted to out-perform
-      your competitors.
+      Junglestar can make you a fast-loading website, crafted to
+      out-perform your competitors.
     </div>
   </div>
 
@@ -240,7 +246,9 @@ const description =
               <div class="offer_desc">{product.desc}</div>
 
               <div class="offer_benefits selling_points">
-                <div class="center brand fontsize_med">What's included:</div>
+                <div class="center brand fontsize_med">
+                  What's included:
+                </div>
 
                 <ul class="included">
                   {Object.values(selling_points).map((point) => (

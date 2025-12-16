@@ -18,7 +18,6 @@ a {
 	text-decoration: none;
 	position: relative;
 	display: inline-block;
-	padding-bottom: calc(var(--space_block) * 0.073); /* was 0.2svh */
 }
 
 /*🐸External link indicator */
@@ -29,9 +28,6 @@ a:not(.action_button):not(.mailto_link)[target="_blank"]:after {
 	text-decoration: none;
 	color: currentColor;
 	padding-left: 0.5ch;
-	/*text-decoration-color: transparent !important;
-  border-bottom-color: transparent !important;
-  text-decoration-thickness: 0 !important;*/
 }
 
 main a {
@@ -62,35 +58,4 @@ main a:not([target="_blank"])::after {
 	padding-left: 0.5ch;
 }
 
-/*🐸LINKS SUGAR, TOO SWEET???! */
-
-/*a:not(.button):not(.no_underline) {
-  color: var(--link_color);
-  position: relative;
-  display: inline-block;
-  padding-bottom: calc(var(--space_block) * 0.073);
-  text-decoration: underline;
-  text-decoration-thickness: 0.75ch;
-  text-underline-offset: 0.55ch;
-  user-select: none;
-}
-a:not(.button):not(.no_underline):hover {
-  color: var(--link_color_hover);
-  text-decoration-thickness: 0.2ch;
-  text-underline-offset: 0.45ch;
-}
-
-a:not(.no_underline) :not(.button):not(.no_underline) {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 3px solid var(--smart_underline_for_white_text);
-  box-shadow: inset 0 -5px 0 var(--smart_underline_for_white_text);
-  -webkit-transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
-  transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
-}
-
-a:not(.card):not(.no_underline):not(.button):focus,
-a:not(.card):not(.no_underline):not(.button):hover {
-  background: var(--smart_underline_for_white_text);
-}
-*/
+/* 🐸 LINKS SUGAR: (TOO SWEET | deleted!) */

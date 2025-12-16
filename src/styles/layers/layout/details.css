@@ -2,7 +2,9 @@ details summary {
 	user-select: none;
 	list-style: none;
 	cursor: pointer;
-	padding-bottom: var(--space_block);
+	color: currentColor;
+	min-height: var(--tap_size);
+	height: var(--tap_size);
 }
 
 details summary::-webkit-details-marker {
@@ -13,6 +15,7 @@ details summary::after {
 	content: " +";
 	margin-left: 0.5em;
 	font-size: 130%;
+	color: currentColor;
 }
 details,
 details[open] {
@@ -23,6 +26,20 @@ details[open] summary::after {
 	content: " −";
 }
 
+details[open] summary{
+    padding-bottom: 0;
+    border-bottom: 2px solid currentColor;
+}
+
 details {
 	padding-bottom: calc(var(--space_block) / 2);
+	border-radius: var(--radius);
+
+    .details_reveal {
+        padding-block: var(--space_block);
+        font-size: calc(var(--font_clamp) * 0.88);
+        max-width: 31ch;
+        width: fit-content;
+        margin: 0 auto;
+    }
 }

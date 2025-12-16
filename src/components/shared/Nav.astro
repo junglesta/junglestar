@@ -8,29 +8,35 @@
 <style>
   nav {
     width: 100%;
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-block: calc(var(--space_block) * 1);
+    align-items: center;*/
+    display: grid;
+    place-content: center;
+    gap: calc(var(--space_inline) / 5);
+    margin-block: 0;
   }
 
   .button {
     text-transform: uppercase;
-    width: 80svw;
-    max-width: 480px;
-    border-color: var(--white);
-    background-color: var(--background_blackT50);
+    width: 100%;
+    border-color: currentColor;
+    background-color: var(--background_blackT25);
   }
 
   @media (min-width: 510px) {
     .button {
-      background-color: var(--background_blackT05);
+      background-color: var(--background_blackT15);
     }
   }
   @media (min-width: 1100px) {
     .button {
       background-color: transparent;
     }
+  }
+
+  .bg_black .button {
+    color: var(--white);
   }
 </style>
 

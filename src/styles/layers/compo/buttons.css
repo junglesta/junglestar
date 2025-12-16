@@ -10,8 +10,8 @@
 	color: var(--brand);
 	border: 2px solid var(--brand);
 	border-radius: var(--radius);
-	padding-inline: calc(var(--space_inline) / 5);
-	margin-block: calc(var(--space_block) / 3);
+	padding-inline: calc(var(--space_inline) / 1);
+	margin-block: calc(var(--space_block) / 5);
 }
 
 .button:focus,

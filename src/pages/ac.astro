@@ -15,7 +15,10 @@ const demoColors = [
   { var: "var(--white)", name: "--white" },
   { var: "var(--brand)", name: "--brand" },
   { var: "var(--brand_invert)", name: "--brand_invert" },
-  { var: "var(--brand_complementary)", name: "--brand_complementary" },
+  {
+    var: "var(--brand_complementary)",
+    name: "--brand_complementary",
+  },
   { var: "var(--brand_light)", name: "--brand_light" },
   { var: "var(--brand_dark)", name: "--brand_dark" },
   { var: "var(--text_color)", name: "--text_color" },
@@ -31,12 +34,13 @@ const demoColors = [
 <Layout
   title={title}
   description={description}
+  background="--white"
 >
   <div class="hero">
     <h1>✨ AutoContrast Component</h1>
     <p
-      >Automatically calculates the perfect text color for any background using
-      WCAG luminance formulas</p
+      >Automatically calculates the perfect text color for any
+      background using WCAG luminance formulas</p
     >
   </div>
 
@@ -45,9 +49,9 @@ const demoColors = [
     <div class="featured-demo">
       <h2>🎨 Interactive Color Picker</h2>
       <p>
-        Select any background color and watch the magic happen! The text color
-        automatically switches between black and white to maintain optimal
-        contrast and readability.
+        Select any background color and watch the magic happen! The
+        text color automatically switches between black and white to
+        maintain optimal contrast and readability.
       </p>
 
       <AutoContrast
@@ -57,9 +61,10 @@ const demoColors = [
       >
         <h3>Dynamic Color Adjustment</h3>
         <p
-          >This text automatically adapts for perfect contrast! The component
-          uses the WCAG 2.1 relative luminance formula to determine whether
-          black or white text provides better readability. Currently using <code
+          >This text automatically adapts for perfect contrast! The
+          component uses the WCAG 2.1 relative luminance formula to
+          determine whether black or white text provides better
+          readability. Currently using <code
             style="background: var(--whiteT25); padding: 0.2em 0.5em; border-radius: 4px;"
             >var(--brand)</code
           > with OKLCH color space.</p
@@ -86,7 +91,9 @@ const demoColors = [
 
     <!-- Different HTML Tags Section -->
     <h2 class="section-title">📦 Flexible HTML Elements</h2>
-    <p class="section-subtitle">Works with any HTML tag using the 'tag' prop</p>
+    <p class="section-subtitle"
+      >Works with any HTML tag using the 'tag' prop</p
+    >
 
     <div class="tag-showcase">
       <AutoContrast
@@ -95,7 +102,10 @@ const demoColors = [
         class="mini-card"
       >
         <h4>&lt;section&gt; Tag</h4>
-        <p>Using <code style="opacity: 0.7;">var(--brand_invert)</code></p>
+        <p
+          >Using <code style="opacity: 0.7;">var(--brand_invert)</code
+          ></p
+        >
       </AutoContrast>
 
       <AutoContrast
@@ -104,7 +114,10 @@ const demoColors = [
         class="mini-card"
       >
         <h4>&lt;article&gt; Tag</h4>
-        <p>Using <code style="opacity: 0.7;">var(--product_category_1)</code></p
+        <p
+          >Using <code style="opacity: 0.7;"
+            >var(--product_category_1)</code
+          ></p
         >
       </AutoContrast>
 
@@ -114,7 +127,10 @@ const demoColors = [
         class="mini-card"
       >
         <h4>&lt;aside&gt; Tag</h4>
-        <p>Using <code style="opacity: 0.7;">var(--product_category_2)</code></p
+        <p
+          >Using <code style="opacity: 0.7;"
+            >var(--product_category_2)</code
+          ></p
         >
       </AutoContrast>
 
@@ -131,7 +147,8 @@ const demoColors = [
     <!-- Color Palette Showcase -->
     <h2 class="section-title">🎨 Color Palette Showcase</h2>
     <p class="section-subtitle"
-      >Your design tokens with real OKLCH colors and automatic contrast</p
+      >Your design tokens with real OKLCH colors and automatic
+      contrast</p
     >
 
     <div class="demo-grid">
@@ -173,7 +190,9 @@ const demoColors = [
       "colorPicker",
     ) as HTMLInputElement;
     const colorValue = document.getElementById("colorValue");
-    const interactiveCard = document.getElementById("interactive-card") as any;
+    const interactiveCard = document.getElementById(
+      "interactive-card",
+    ) as any;
 
     // Helper function to convert RGB to hex
     function rgbToHex(rgb: string): string {
@@ -211,7 +230,9 @@ const demoColors = [
         colorValue.textContent = color;
 
         // Update the card's background color
-        if (typeof interactiveCard.setBackgroundColor === "function") {
+        if (
+          typeof interactiveCard.setBackgroundColor === "function"
+        ) {
           interactiveCard.setBackgroundColor(color);
         }
       });

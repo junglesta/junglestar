@@ -13,8 +13,8 @@ body {
 
 html {
 	font-family:
-		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 pre {
@@ -38,11 +38,7 @@ pre {
 @supports (width: calc((1px / 1px) * 1px)) {
 	:root {
 		--current-rem-size: calc(1rem / 1px);
-		--currentWidth: clamp(
-			var(--minWidth),
-			calc(var(--100vw) / 1px),
-			var(--maxWidth)
-		);
+		--currentWidth: clamp(var(--minWidth), calc(var(--100vw) / 1px), var(--maxWidth));
 	}
 }
 /* If not, use Jane Ori’s hack: https://dev.to/janeori/css-type-casting-to-numeric-tanatan2-scalars-582j*/
@@ -69,10 +65,7 @@ pre {
 	/* Now we’re dividing the default assumed size (16px) by the actual unitless rem size to get our factor */
 	--scale-factor: calc(var(--default-assumed-size) / var(--current-rem-size));
 	/* The ratio multiplier that dampens our type scale at larger user font sizes */
-	--ratio-dampener: calc(
-		1 -
-		((1 - var(--scale-factor)) * var(--compression-strength))
-	);
+	--ratio-dampener: calc(1 - ((1 - var(--scale-factor)) * var(--compression-strength)));
 	/* Ratios */
 	--minorSecond: 1.06666;
 	/* Semitone: 16:15 */
@@ -128,10 +121,7 @@ pre {
 	/* This normalizes the value between 0 and 1 */
 	--x: clamp(
 		0,
-		calc(
-			(var(--currentWidth) - var(--minWidth)) /
-			(var(--maxWidth) - var(--minWidth))
-		),
+		calc((var(--currentWidth) - var(--minWidth)) / (var(--maxWidth) - var(--minWidth))),
 		1
 	);
 
@@ -144,56 +134,20 @@ pre {
   https://developer.mozilla.org/en-US/docs/Web/CSS/pow */
 
 	/* Scale min */
-	--size-min-4: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), 4)
-	);
-	--size-min-3: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), 3)
-	);
-	--size-min-2: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), 2)
-	);
-	--size-min-1: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), 1)
-	);
-	--size-min-0: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), 0)
-	);
-	--size-min--1: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), -1)
-	);
+	--size-min-4: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 4));
+	--size-min-3: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 3));
+	--size-min-2: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 2));
+	--size-min-1: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 1));
+	--size-min-0: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 0));
+	--size-min--1: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), -1));
 
 	/* Scale max */
-	--size-max-4: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), 4)
-	);
-	--size-max-3: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), 3)
-	);
-	--size-max-2: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), 2)
-	);
-	--size-max-1: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), 1)
-	);
-	--size-max-0: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), 0)
-	);
-	--size-max--1: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), -1)
-	);
+	--size-max-4: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 4));
+	--size-max-3: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 3));
+	--size-max-2: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 2));
+	--size-max-1: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 1));
+	--size-max-0: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 0));
+	--size-max--1: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), -1));
 
 	/* Fluid font sizes with clamp() */
 	--fluid-4: clamp(

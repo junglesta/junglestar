@@ -1,65 +1,65 @@
 /*🐸LINKS*/
 a {
-  color: var(--link_color);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.55ch;
-  user-select: none;
+	color: var(--link_color);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.55ch;
+	user-select: none;
 }
 
 a:hover {
-  color: var(--link_color_hover);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.45ch;
+	color: var(--link_color_hover);
+	text-decoration-thickness: 2px;
+	text-underline-offset: 0.45ch;
 }
 
 /*🐸Links */
 a {
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  padding-bottom: calc(var(--space_block) * 0.073); /* was 0.2svh */
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	padding-bottom: calc(var(--space_block) * 0.073); /* was 0.2svh */
 }
 
 /*🐸External link indicator */
 a:not(.action_button):not(.mailto_link)[target="_blank"]:after {
-  content: "↗";
-  font-size: 90%;
-  display: inline-block;
-  text-decoration: none;
-  color: currentColor;
-  padding-left: 0.5ch;
-  /*text-decoration-color: transparent !important;
+	content: "↗";
+	font-size: 90%;
+	display: inline-block;
+	text-decoration: none;
+	color: currentColor;
+	padding-left: 0.5ch;
+	/*text-decoration-color: transparent !important;
   border-bottom-color: transparent !important;
   text-decoration-thickness: 0 !important;*/
 }
 
 main a {
-  color: var(--link_color_main);
+	color: var(--link_color_main);
 }
 main a:hover {
-  color: var(--link_color_main_hover);
+	color: var(--link_color_main_hover);
 }
 .button_row a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 a.button {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 a.button[target="_blank"]:after,
 a.button:not([target="_blank"])::after,
 a.clean {
-  content: "";
-  display: none;
+	content: "";
+	display: none;
 }
 
 main a:not([target="_blank"])::after {
-  content: " →";
-  display: inline-block;
-  text-decoration: none;
-  padding-left: 0.5ch;
+	content: " →";
+	display: inline-block;
+	text-decoration: none;
+	padding-left: 0.5ch;
 }
 
 /*🐸LINKS SUGAR, TOO SWEET???! */

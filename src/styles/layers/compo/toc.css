@@ -1,40 +1,40 @@
 /*🐸TOC STUFF*/
 .toc {
-  background-color: var(--whiteT25);
-  color: var(--black);
-  border: 1px solid var(--brand);
-  border-radius: var(--radius);
-  margin: var(--space_block) 0;
-  padding: var(--space_block);
-  margin-inline: auto;
-  text-align: left;
+	background-color: var(--whiteT25);
+	color: var(--black);
+	border: 1px solid var(--brand);
+	border-radius: var(--radius);
+	margin: var(--space_block) 0;
+	padding: var(--space_block);
+	margin-inline: auto;
+	text-align: left;
 }
 
 .toc ul {
-  padding: 0;
-  /*list-style-type: none;*/
-  list-style-type: "→  ";
-  list-style-position: outside;
+	padding: 0;
+	/*list-style-type: none;*/
+	list-style-type: "→  ";
+	list-style-position: outside;
 }
 
 .toc li:not(:hover)::marker {
-  color: var(--brand);
+	color: var(--brand);
 }
 .toc li:hover::marker {
-  font-weight: 500;
-  color: var(--brand);
+	font-weight: 500;
+	color: var(--brand);
 }
 
 .toc li {
-  a {
-    color: var(--brand);
-    text-decoration: none;
-  }
-  a::after {
-    content: "";
-  }
+	a {
+		color: var(--brand);
+		text-decoration: none;
+	}
+	a::after {
+		content: "";
+	}
 
-  a:hover {
-    text-decoration: underline;
-  }
+	a:hover {
+		text-decoration: underline;
+	}
 }

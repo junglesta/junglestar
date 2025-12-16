@@ -19,7 +19,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
     "@astrojs/ts-plugin": "^1.10.6",
-    "@biomejs/biome": "^2.3.8",
+    "@biomejs/biome": "^2.3.9",
     "astro": "^5.16.5",
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",

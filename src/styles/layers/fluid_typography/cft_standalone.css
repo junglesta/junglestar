@@ -5,10 +5,7 @@
 	--compression-strength: 0.7;
 
 	/* The adaptive ratio multiplier that combines scale factor and compression strength and dampens the type scale at larger user font sizes */
-	--ratio-dampener: calc(
-		1 -
-		((1 - var(--scale-factor)) * var(--compression-strength))
-	);
+	--ratio-dampener: calc(1 - ((1 - var(--scale-factor)) * var(--compression-strength)));
 
 	/* A few ratios to choose from */
 	--minorSecond: 1.06666; /* Semitone: 16:15 */
@@ -43,48 +40,18 @@
   https://developer.mozilla.org/en-US/docs/Web/CSS/pow */
 
 	/* Scale min */
-	--size-min-4: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), 4)
-	);
-	--size-min-3: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), 3)
-	);
-	--size-min-2: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), 2)
-	);
-	--size-min-1: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), 1)
-	);
-	--size-min-0: calc(
-		var(--baseFontSizeMin) *
-		pow(var(--compressedRatioMin), 0)
-	);
+	--size-min-4: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 4));
+	--size-min-3: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 3));
+	--size-min-2: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 2));
+	--size-min-1: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 1));
+	--size-min-0: calc(var(--baseFontSizeMin) * pow(var(--compressedRatioMin), 0));
 
 	/* Scale max */
-	--size-max-4: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), 4)
-	);
-	--size-max-3: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), 3)
-	);
-	--size-max-2: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), 2)
-	);
-	--size-max-1: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), 1)
-	);
-	--size-max-0: calc(
-		var(--baseFontSizeMax) *
-		pow(var(--compressedRatioMax), 0)
-	);
+	--size-max-4: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 4));
+	--size-max-3: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 3));
+	--size-max-2: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 2));
+	--size-max-1: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 1));
+	--size-max-0: calc(var(--baseFontSizeMax) * pow(var(--compressedRatioMax), 0));
 
 	/* This is how the fluid value is calculated: calc([value-min] + ([value-max] - [value-min]) * ((100vw - [breakpoint-min]) / ([breakpoint-max] - [breakpoint-min]))) */
 
@@ -92,50 +59,35 @@
 		var(--size-min-4),
 		var(--size-min-4) +
 		(var(--size-max-4) - var(--size-min-4)) *
-		(
-			(100vw - var(--minViewportWidth)) /
-			(var(--maxViewportWidth) - var(--minViewportWidth))
-		),
+		((100vw - var(--minViewportWidth)) / (var(--maxViewportWidth) - var(--minViewportWidth))),
 		var(--size-max-4)
 	);
 	--fluid-3: clamp(
 		var(--size-min-3),
 		var(--size-min-3) +
 		(var(--size-max-3) - var(--size-min-3)) *
-		(
-			(100vw - var(--minViewportWidth)) /
-			(var(--maxViewportWidth) - var(--minViewportWidth))
-		),
+		((100vw - var(--minViewportWidth)) / (var(--maxViewportWidth) - var(--minViewportWidth))),
 		var(--size-max-3)
 	);
 	--fluid-2: clamp(
 		var(--size-min-2),
 		var(--size-min-2) +
 		(var(--size-max-2) - var(--size-min-2)) *
-		(
-			(100vw - var(--minViewportWidth)) /
-			(var(--maxViewportWidth) - var(--minViewportWidth))
-		),
+		((100vw - var(--minViewportWidth)) / (var(--maxViewportWidth) - var(--minViewportWidth))),
 		var(--size-max-2)
 	);
 	--fluid-1: clamp(
 		var(--size-min-1),
 		var(--size-min-1) +
 		(var(--size-max-1) - var(--size-min-1)) *
-		(
-			(100vw - var(--minViewportWidth)) /
-			(var(--maxViewportWidth) - var(--minViewportWidth))
-		),
+		((100vw - var(--minViewportWidth)) / (var(--maxViewportWidth) - var(--minViewportWidth))),
 		var(--size-max-1)
 	);
 	--fluid-0: clamp(
 		var(--size-min-0),
 		var(--size-min-0) +
 		(var(--size-max-0) - var(--size-min-0)) *
-		(
-			(100vw - var(--minViewportWidth)) /
-			(var(--maxViewportWidth) - var(--minViewportWidth))
-		),
+		((100vw - var(--minViewportWidth)) / (var(--maxViewportWidth) - var(--minViewportWidth))),
 		var(--size-max-0)
 	);
 }

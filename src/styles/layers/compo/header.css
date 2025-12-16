@@ -1,15 +1,15 @@
 .cover {
-  user-select: none;
-  min-height: var(--cover_height);
-  height: var(--cover_height);
-  color: var(--white);
-  background-color: var(--brand);
-  padding-block: var(--space_block);
+	user-select: none;
+	min-height: var(--cover_height);
+	height: var(--cover_height);
+	color: var(--white);
+	background-color: var(--brand);
+	padding-block: var(--space_block);
 
-  .slogan {
-    padding: 0;
-    text-wrap: pretty;
-    text-align: center;
-    font-weight: 400;
-  }
+	.slogan {
+		padding: 0;
+		text-wrap: pretty;
+		text-align: center;
+		font-weight: 400;
+	}
 }

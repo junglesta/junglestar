@@ -2,33 +2,33 @@
 
 /*🐸WRAP */
 .wrap {
-  /*padding-inline: calc(var(--space_inline) * 2);*/
-  padding-inline: var(--space_inline) !important;
+	/*padding-inline: calc(var(--space_inline) * 2);*/
+	padding-inline: var(--space_inline) !important;
 }
 
 @media (min-width: 820px) {
-  .wrap {
-    max-width: 600px; /* Keep as viewport based */
-    margin: 0 auto;
-  }
+	.wrap {
+		max-width: 600px; /* Keep as viewport based */
+		margin: 0 auto;
+	}
 }
 
 @media (min-width: 1024px) {
-  .wrap {
-    max-width: 820px; /* Keep as viewport based */
-  }
+	.wrap {
+		max-width: 820px; /* Keep as viewport based */
+	}
 }
 
 /*🐸PAGE CONTENT */
 .page_content {
-  padding: 0 0 calc(var(--space_block) * 2);
-  background-color: var(--background_color);
-  min-height: 76svh; /* Keep as specific viewport based */
+	padding: 0 0 calc(var(--space_block) * 2);
+	background-color: var(--background_color);
+	min-height: 76svh; /* Keep as specific viewport based */
 }
 
 /*🐸NO SELECT | user-select: none; */
 .post_image,
 .post_title,
 .post_subtitle {
-  user-select: none;
+	user-select: none;
 }

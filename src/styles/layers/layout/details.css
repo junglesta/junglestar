@@ -1,28 +1,28 @@
 details summary {
-  user-select: none;
-  list-style: none;
-  cursor: pointer;
-  padding-bottom: var(--space_block);
+	user-select: none;
+	list-style: none;
+	cursor: pointer;
+	padding-bottom: var(--space_block);
 }
 
 details summary::-webkit-details-marker {
-  display: none;
+	display: none;
 }
 
 details summary::after {
-  content: " +";
-  margin-left: 0.5em;
-  font-size: 130%;
+	content: " +";
+	margin-left: 0.5em;
+	font-size: 130%;
 }
 details,
 details[open] {
-  width: 100%;
-  text-align: left;
+	width: 100%;
+	text-align: left;
 }
 details[open] summary::after {
-  content: " −";
+	content: " −";
 }
 
 details {
-  padding-bottom: calc(var(--space_block) / 2);
+	padding-bottom: calc(var(--space_block) / 2);
 }

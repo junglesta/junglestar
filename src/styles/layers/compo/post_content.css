@@ -1,35 +1,35 @@
 /*🐸post_content STUFF*/
 
 .post_content {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  > * {
-    max-width: 60ch;
-    margin-inline: auto;
-  }
-  a {
-    color: var(--brand);
-    text-decoration: underline;
-  }
-  small em {
-    color: var(--brand);
-    margin-left: 1ch;
-    font-size: calc(var(--font_rem) * 0.85);
-    line-height: 1.2;
-    text-transform: uppercase;
-    font-weight: 500;
-    display: block;
-    padding-top: calc(var(--space_block) * 1);
-    padding-bottom: calc(var(--space_block) * 0.5);
-  }
-  ul,
-  ol {
-    margin-bottom: 0.75rem;
-    margin-left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: 100%;
+	> * {
+		max-width: 60ch;
+		margin-inline: auto;
+	}
+	a {
+		color: var(--brand);
+		text-decoration: underline;
+	}
+	small em {
+		color: var(--brand);
+		margin-left: 1ch;
+		font-size: calc(var(--font_rem) * 0.85);
+		line-height: 1.2;
+		text-transform: uppercase;
+		font-weight: 500;
+		display: block;
+		padding-top: calc(var(--space_block) * 1);
+		padding-bottom: calc(var(--space_block) * 0.5);
+	}
+	ul,
+	ol {
+		margin-bottom: 0.75rem;
+		margin-left: 0;
 
-    padding-bottom: var(--space_block);
-    padding-left: var(--space_inline);
-  }
+		padding-bottom: var(--space_block);
+		padding-left: var(--space_inline);
+	}
 }

@@ -2,61 +2,61 @@
 /*🐸MEAN STUFF */
 
 .mean_title {
-  color: var(--brand);
-  min-height: calc(var(--windowH) / 2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  h1 {
-    max-width: 90svw;
-  }
+	color: var(--brand);
+	min-height: calc(var(--windowH) / 2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	h1 {
+		max-width: 90svw;
+	}
 }
 
 .mean_icon {
-  padding-top: 10px;
+	padding-top: 10px;
 }
 
 .mean_icon.four_icon_group {
-  max-width: 80dvw;
-  display: flex;
-  width: 80%;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(space_inline);
+	max-width: 80dvw;
+	display: flex;
+	width: 80%;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(space_inline);
 }
 
 .mean_title.mean_title--first {
-  background-color: black;
-  min-height: var(--windowH);
-  padding-block: calc(var(--space_block) * 4);
+	background-color: black;
+	min-height: var(--windowH);
+	padding-block: calc(var(--space_block) * 4);
 }
 .mean_title.mean_title--second {
-  padding-top: calc(var(--space_block) * 4);
-  padding-bottom: 0;
-  margin-bottom: 0;
+	padding-top: calc(var(--space_block) * 4);
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 .mean_title.mean_title--first h1,
 .mean_title.mean_title--first h2,
 .mean_title.mean_title--first h3 {
-  color: white;
+	color: white;
 }
 
 @media (min-width: 601px) {
-  .mean_icon.four_icon_group {
-    width: 70dvw;
-  }
-  .mean_title.mean_title--first {
-    min-height: calc(var(--windowH) / 2);
-  }
+	.mean_icon.four_icon_group {
+		width: 70dvw;
+	}
+	.mean_title.mean_title--first {
+		min-height: calc(var(--windowH) / 2);
+	}
 }
 @media (min-width: 821px) {
-  .mean_icon.four_icon_group {
-    width: 50dvw;
-  }
+	.mean_icon.four_icon_group {
+		width: 50dvw;
+	}
 }
 @media (min-width: 1025px) {
-  .mean_icon.four_icon_group {
-    width: 35dvw;
-  }
+	.mean_icon.four_icon_group {
+		width: 35dvw;
+	}
 }

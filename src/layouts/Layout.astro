@@ -1,12 +1,9 @@
 ---
 // src/layouts/Layout.astro
-
-import LastPub from "@components/heads/LastPublished.astro";
+import LastPub from "@components/shared/LastPublished.astro";
 import ViewportHeight from "@components/shared/ViewportHeight.astro";
 import Footer from "@components/footer/Footer.astro";
 import Head from "@components/heads/Head.astro";
-
-// import WaveSection from "@components/UI/WaveSection.astro";
 import * as siteData from "@data/site.json";
 import "@styles/global.css";
 
@@ -17,6 +14,7 @@ export interface Props {
   description?: string;
   sitemap?: boolean;
   pageSubtitle?: string;
+  background?: "--white" | "--brand" | "--black";
 }
 
 const {
@@ -25,6 +23,7 @@ const {
   title,
   description = "Sustainable Web Design",
   sitemap = true,
+  background = "--black",
 } = Astro.props;
 ---
 
@@ -33,23 +32,29 @@ const {
     navigation: auto;
   }*/
   main {
-    background-color: var(--black);
-    background-color: var(--white);
+    background-color: inherit;
   }
   .scrolling_body_wrap {
   }
 </style>
 
-<html lang="en">
-  <LastPub />
-  <ViewportHeight />
+<html
+  lang="en"
+  style={`background-color: var(${background})`}
+>
   <Head
     title={title}
     description={description}
     sitemap={sitemap}
   />
 
-  <body class={bodyClass}>
+  <body
+    class={bodyClass}
+    style={`background-color: var(${background})`}
+  >
+    <LastPub />
+    <ViewportHeight />
+
     <slot name="landing_screen" />
 
     <main class:list={["scrolling_body_wrap clickScrollTarget", mainClass]}>

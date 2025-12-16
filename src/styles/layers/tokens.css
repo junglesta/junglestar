@@ -32,6 +32,9 @@
 	--whiteT50: oklch(0.95 0.01 255 / 50%);
 	--white_hover: var(--white);
 
+	--background_blackT75: rgba(0, 0, 0, 0.75);
+	--background_blackT50: rgba(0, 0, 0, 0.5);
+	--background_blackT30: rgba(0, 0, 0, 0.3);
 	--background_blackT15: rgba(0, 0, 0, 0.15);
 	--background_blackT10: rgba(0, 0, 0, 0.1);
 	--background_blackT05: rgba(0, 0, 0, 0.05);

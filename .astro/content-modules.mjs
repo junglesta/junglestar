@@ -7,7 +7,7 @@ export default new Map([
 ["src/content/design/5-building-in-phone-era.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdesign%2F5-building-in-phone-era.mdx&astroContentModuleFlag=true")],
 ["src/content/design/6-why-open-source.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdesign%2F6-why-open-source.mdx&astroContentModuleFlag=true")],
 ["src/content/production/1-content-production.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproduction%2F1-content-production.mdx&astroContentModuleFlag=true")],
-["src/content/production/4-need-some-help.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproduction%2F4-need-some-help.mdx&astroContentModuleFlag=true")],
+["src/content/production/2-social-media-management.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproduction%2F2-social-media-management.mdx&astroContentModuleFlag=true")],
 ["src/content/production/3-content-strategy.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproduction%2F3-content-strategy.mdx&astroContentModuleFlag=true")],
-["src/content/production/2-social-media-management.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproduction%2F2-social-media-management.mdx&astroContentModuleFlag=true")]]);
+["src/content/production/4-need-some-help.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fproduction%2F4-need-some-help.mdx&astroContentModuleFlag=true")]]);
 		

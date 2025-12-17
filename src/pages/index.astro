@@ -1,7 +1,6 @@
 ---
 // src/pages/index.astro
 import Layout from "@layouts/Layout.astro";
-import Ani from "@components/UI/AnimHeader2Black.astro";
 // import Wave from "@components/UI/Wave.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
 import IntroSection from "@components/intro/IntroSection.astro";
@@ -29,6 +28,12 @@ const description =
 ---
 
 <style>
+  .icono {
+    padding-block: var(--space_block);
+    display: block;
+    height: 300px;
+  }
+
   .brand_name {
     padding-top: calc(var(--space_block) * 3);
   }
@@ -45,7 +50,7 @@ const description =
   mainClass="grid_main "
   background="--brand"
 >
-  <Ani>
+  <Fragment slot="inside_header">
     <LandingScreen
       title={title_start}
       overtitle_line1={overtitle_line1}
@@ -60,7 +65,6 @@ const description =
     >
       <Icono width={133} height={133} fill="currentColor" />
     </LandingScreen>
-  </Ani>
-
+  </Fragment>
   <IntroSection />
 </Layout>

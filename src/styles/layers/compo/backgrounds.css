@@ -1,0 +1,12 @@
+.bg_brand {
+  background-color: var(--brand);
+  color: var(--white);
+}
+.bg_white {
+  background-color: var(--white);
+  color: var(--black);
+}
+.bg_black {
+  background-color: var(--black);
+  color: var(--white);
+}

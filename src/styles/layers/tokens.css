@@ -99,7 +99,7 @@
   --weight_med: 400;
   --weight_bold: 600;
   --weight_heavy: 900;
-  --radius: clamp(3px, 0.5rem, 1.5rem);
+  --radius: clamp(3px, 0.25rem, 1rem);
 
   /*🐸BREAKPOINTS */
   --width_min: 400px;

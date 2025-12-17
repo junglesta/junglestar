@@ -14,6 +14,21 @@ export default defineConfig({
 
   experimental: {
     chromeDevtoolsWorkspace: true,
+    svgo: {
+      floatPrecision: 3,
+      multipass: true,
+      plugins: [
+        "preset-default",
+        {
+          name: "removeViewBox",
+          active: false, // Preserve viewBox attribute
+        },
+        {
+          name: "removeMetadata",
+          active: true,
+        },
+      ],
+    },
   },
 
   image: {

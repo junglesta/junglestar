@@ -1,11 +1,10 @@
 ---
-// @components/shared/LogoBrandFull.astro
+// @components/brand/Logo.astro
 import LogoSVG from "@assets/svgs/logo_stroke.svg";
 ---
 
 <style>
   .logo_link {
-    /*transform: rotate(0deg);*/
     display: grid;
     place-content: center;
     text-decoration: none;
@@ -16,14 +15,6 @@ import LogoSVG from "@assets/svgs/logo_stroke.svg";
   .logo_link::before {
     content: "";
     display: none;
-  }
-
-  .logo {
-    padding-top: calc(var(--space_block) * 1.55);
-    text-transform: uppercase;
-    font-size: 150%;
-    width: 100%;
-    text-align: center;
   }
 
   .logosvg {

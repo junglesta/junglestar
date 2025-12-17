@@ -42,10 +42,11 @@ const description =
 <Layout
   title={title}
   description={description}
-  bodyClass="content bg_white"
-  background="--white"
+  bodyClass="content bg_brand"
+  mainClass="bg_white"
+  background="--brand"
 >
-  <Ani>
+  <Fragment slot="inside_header">
     <LandingScreen
       overtitle_line1={overtitle_line1}
       overtitle_line2={overtitle_line2}
@@ -58,7 +59,7 @@ const description =
       onScroll_line5={onScroll_line5}
       onScroll_line6={onScroll_line6}
     />
-  </Ani>
+  </Fragment>
 
   <Wave color="var(--white)" position="top" />
 

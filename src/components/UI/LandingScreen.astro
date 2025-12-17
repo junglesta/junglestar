@@ -1,4 +1,5 @@
 ---
+import Logo from "@components/brand/Logo.astro";
 interface Props {
   overtitle_line1?: string;
   overtitle_line2?: string;
@@ -26,17 +27,12 @@ const {
 } = Astro.props;
 ---
 
-<style>
-  .icono {
-    padding-block: var(--space_block);
-    display: block;
-    height: 300px;
-  }
-</style>
-
 <div class="grida slogan">
-  <h1 class="brand_name">{title}</h1>
-  <div class="title_wrap h2">
+  <div class="logo_wrap">
+    <Logo />
+    <h1 class="brand_name">{title}</h1>
+  </div>
+  <div class="title_wrap h2 clickScrollTrigger">
     <div class="overline line1">{overtitle_line1}</div>
     <div class="overline line2">{overtitle_line2}</div>
     <div class="overline line3">{overtitle_line3}</div>

@@ -15,18 +15,23 @@
 .grida {
   position: initial;
   display: grid;
-  grid-template-rows: 1fr auto 6fr;
+  grid-template-rows: 1fr 1fr 6fr;
   place-content: stretch center;
   gap: 1rem;
   padding: 1rem;
+
   height: calc(var(--windowH) * 2);
   padding-block: calc(var(--space_block) * 2);
   .brand_name {
     align-self: center;
+    /*transform: rotate(-90deg);
+    transform-origin: center -133%;*/
   }
 }
 .on_scroll_msg {
-  place-self: center center;
+  place-self: end center;
+  position: relative;
+  top: calc(var(--windowH) / 4 * -1);
 }
 
 .grid_main {

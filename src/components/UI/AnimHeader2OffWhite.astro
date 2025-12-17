@@ -1,6 +1,5 @@
 ---
 // src/components/UI/AnimHeader2OffWhite.astro
-import Logo from "@components/shared/Logo.astro";
 import ScrollAni from "@components/UI/ScrollAni.astro";
 ---
 
@@ -14,11 +13,9 @@ import ScrollAni from "@components/UI/ScrollAni.astro";
   animationRange="0 calc(var(--windowH)*2.5)"
 />
 
-<header
-  slot="landing_screen"
-  class="cover clickScrollTrigger header_scroll_ani file_AnimHeader2OffWhite"
+<Fragment
+  slot="header_slot"
+  class="cover header_scroll_ani file_AnimHeader2OffWhite"
 >
-  <Logo />
   <slot />
-  <slot name="on_scroll_message" />
-</header>
+</Fragment>

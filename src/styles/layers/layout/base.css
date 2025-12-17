@@ -4,30 +4,30 @@ ONLY BASE SEMANTIC ELEMENTS HERE,
 .classes go into /layout/classes.css
 */
 html {
-	background-color: #fff;
+  background-color: #fff;
 }
 body {
-	font-family: var(--font_family);
-	font-size: var(--font_clamp);
-	line-height: var(--line_height);
-	font-weight: var(--weight);
-	color: var(--text_color);
-	background-color: var(--brand);
-	-webkit-text-size-adjust: 100%;
+  font-family: var(--font_family);
+  font-size: var(--font_clamp);
+  line-height: var(--line_height);
+  font-weight: var(--weight);
+  color: var(--text_color);
+  background-color: var(--brand);
+  -webkit-text-size-adjust: 100%;
 }
 
 /*🐸MAIN */
 main {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 /*🐸HR element */
 hr {
-	border: 0;
-	height: calc(var(--space_block) * 0.036); /* was 0.1svh */
-	width: 75%;
-	margin: var(--space_block) auto;
-	/*background-color: rgba(255, 255, 255, 0.25);*/
+  border: 0;
+  height: calc(var(--space_block) * 0.036); /* was 0.1svh */
+  width: 75%;
+  margin: var(--space_block) auto;
+  /*background-color: rgba(255, 255, 255, 0.25);*/
 }
 /*🐸TYPOGRAPHY */
 
@@ -44,5 +44,5 @@ ol,
 p,
 pre,
 ul {
-	margin-bottom: calc(var(--space_block) / 2);
+  margin-bottom: calc(var(--space_block) / 2);
 }

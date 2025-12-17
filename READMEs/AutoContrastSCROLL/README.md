@@ -17,15 +17,15 @@ Copy `AutoContrast.astro` to your components folder.
 
 ## Props
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `backgroundColor` | `string` | `"var(--brand)"` | Background color (OKLCH, CSS variable, etc.) |
-| `lightText` | `string` | `"oklch(98% 0 0)"` | Text color for dark backgrounds |
-| `darkText` | `string` | `"oklch(15% 0 0)"` | Text color for light backgrounds |
-| `threshold` | `number` | `0.6` | Lightness threshold (0-1) for switching |
-| `tag` | `string` | `"div"` | HTML element to render |
-| `class` | `string` | `""` | Additional CSS classes |
-| `style` | `string` | `""` | Inline styles |
+| Prop              | Type     | Default            | Description                                  |
+| ----------------- | -------- | ------------------ | -------------------------------------------- |
+| `backgroundColor` | `string` | `"var(--brand)"`   | Background color (OKLCH, CSS variable, etc.) |
+| `lightText`       | `string` | `"oklch(98% 0 0)"` | Text color for dark backgrounds              |
+| `darkText`        | `string` | `"oklch(15% 0 0)"` | Text color for light backgrounds             |
+| `threshold`       | `number` | `0.6`              | Lightness threshold (0-1) for switching      |
+| `tag`             | `string` | `"div"`            | HTML element to render                       |
+| `class`           | `string` | `""`               | Additional CSS classes                       |
+| `style`           | `string` | `""`               | Inline styles                                |
 
 ## Usage
 
@@ -33,7 +33,7 @@ Copy `AutoContrast.astro` to your components folder.
 
 ```astro
 ---
-import AutoContrast from './AutoContrast.astro';
+import AutoContrast from "./AutoContrast.astro";
 ---
 
 <AutoContrast backgroundColor="oklch(45% 0.3 264)">
@@ -56,7 +56,7 @@ import AutoContrast from './AutoContrast.astro';
 ### Custom Text Colors
 
 ```astro
-<AutoContrast 
+<AutoContrast
   backgroundColor="oklch(30% 0.15 270)"
   lightText="oklch(95% 0.05 270)"
   darkText="oklch(25% 0.1 270)"
@@ -91,10 +91,10 @@ import AutoContrast from './AutoContrast.astro';
 </AutoContrast>
 
 <script>
-  document.addEventListener('astro:page-load', () => {
-    const box = document.getElementById('dynamic-box');
-    box?.addEventListener('click', () => {
-      (box as any).setBackgroundColor('oklch(65% 0.2 145)');
+  document.addEventListener("astro:page-load", () => {
+    const box = document.getElementById("dynamic-box");
+    box?.addEventListener("click", () => {
+      (box as any).setBackgroundColor("oklch(65% 0.2 145)");
     });
   });
 </script>
@@ -108,17 +108,20 @@ import AutoContrast from './AutoContrast.astro';
 </AutoContrast>
 
 <script>
-  document.addEventListener('astro:page-load', () => {
-    const box = document.getElementById('scroll-box');
+  document.addEventListener("astro:page-load", () => {
+    const box = document.getElementById("scroll-box");
     if (!box) return;
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        (box as any).setBackgroundColor(
-          entry.isIntersecting ? 'oklch(65% 0.2 145)' : 'oklch(55% 0.25 27)'
-        );
-      });
-    }, { threshold: 0.5 });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          (box as any).setBackgroundColor(
+            entry.isIntersecting ? "oklch(65% 0.2 145)" : "oklch(55% 0.25 27)",
+          );
+        });
+      },
+      { threshold: 0.5 },
+    );
 
     observer.observe(box);
   });
@@ -128,8 +131,8 @@ import AutoContrast from './AutoContrast.astro';
 ### Scroll Progress (Gradual Color Change)
 
 ```astro
-<AutoContrast 
-  id="progress-box" 
+<AutoContrast
+  id="progress-box"
   class="h-64"
   data-scroll-colors='["oklch(55% 0.25 27)", "oklch(70% 0.18 55)", "oklch(80% 0.18 95)", "oklch(65% 0.2 145)"]'
 >
@@ -138,27 +141,38 @@ import AutoContrast from './AutoContrast.astro';
 
 <script>
   document.addEventListener("astro:page-load", () => {
-    document.querySelectorAll<HTMLElement>("[data-scroll-colors]").forEach((box) => {
-      const colors: string[] = JSON.parse(box.dataset.scrollColors || "[]");
-      if (colors.length === 0) return;
-      
-      const updateColor = () => {
-        const rect = box.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        const progress = Math.max(0, Math.min(1, 1 - (rect.top / windowHeight)));
-        const index = Math.min(Math.floor(progress * colors.length), colors.length - 1);
-        (box as any).setBackgroundColor(colors[index]);
-      };
-      
-      window.addEventListener("scroll", updateColor, { passive: true });
-      document.addEventListener("scroll", updateColor, { passive: true });
-      document.body.addEventListener("scroll", updateColor, { passive: true });
-      
-      const main = document.querySelector("main");
-      if (main) main.addEventListener("scroll", updateColor, { passive: true });
-      
-      updateColor();
-    });
+    document
+      .querySelectorAll<HTMLElement>("[data-scroll-colors]")
+      .forEach((box) => {
+        const colors: string[] = JSON.parse(box.dataset.scrollColors || "[]");
+        if (colors.length === 0) return;
+
+        const updateColor = () => {
+          const rect = box.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+          const progress = Math.max(
+            0,
+            Math.min(1, 1 - rect.top / windowHeight),
+          );
+          const index = Math.min(
+            Math.floor(progress * colors.length),
+            colors.length - 1,
+          );
+          (box as any).setBackgroundColor(colors[index]);
+        };
+
+        window.addEventListener("scroll", updateColor, { passive: true });
+        document.addEventListener("scroll", updateColor, { passive: true });
+        document.body.addEventListener("scroll", updateColor, {
+          passive: true,
+        });
+
+        const main = document.querySelector("main");
+        if (main)
+          main.addEventListener("scroll", updateColor, { passive: true });
+
+        updateColor();
+      });
   });
 </script>
 ```

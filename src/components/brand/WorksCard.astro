@@ -17,7 +17,17 @@ export interface Props {
   date?: string;
 }
 
-const { title, subtitle, category, tags, url, icon, ico_url, description, date } = Astro.props;
+const {
+  title,
+  subtitle,
+  category,
+  tags,
+  url,
+  icon,
+  ico_url,
+  description,
+  date,
+} = Astro.props;
 const tag = tags?.[0] || "";
 ---
 
@@ -132,9 +142,23 @@ const tag = tags?.[0] || "";
   }
 </style>
 
-<a href={url} target="_blank" rel="noopener noreferrer" class="card no_underline card_works_link">
+<a
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="card no_underline card_works_link"
+>
   <div class={category + " " + tag}></div>
-  {ico_url && <img src={ico_url} alt={icon?.name || title} class="icon_works" loading="lazy" />}
+  {
+    ico_url && (
+      <img
+        src={ico_url}
+        alt={icon?.name || title}
+        class="icon_works"
+        loading="lazy"
+      />
+    )
+  }
 
   <h3 class="title_works center">
     {title}
@@ -145,7 +169,10 @@ const tag = tags?.[0] || "";
     date && (
       <div class="meta_works">
         <span class="date_works">
-          {new Date(date).toLocaleDateString("en-US", { year: "numeric", month: "short" })}
+          {new Date(date).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "short",
+          })}
         </span>
       </div>
     )

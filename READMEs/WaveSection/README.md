@@ -32,7 +32,7 @@ src/
 
 ```astro
 ---
-import WaveSection from '../components/WaveSection.astro';
+import WaveSection from "../components/WaveSection.astro";
 ---
 
 <WaveSection>
@@ -62,19 +62,19 @@ import WaveSection from '../components/WaveSection.astro';
 
 ## Props
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `topBackground` | `string` | `linear-gradient(135deg, #5f27cd, #341f97)` | CSS background for the top layer |
-| `bottomBackground` | `string` | `linear-gradient(135deg, #ff6b6b, #feca57)` | CSS background for the bottom layer |
-| `waveHeight` | `number` | `0.7` | Where the wave starts (0-1 range, e.g., 0.7 = 70% from top) |
-| `height` | `string` | `400px` | Container height (any CSS unit) |
-| `class` | `string` | `''` | Additional CSS classes for the container |
+| Prop               | Type     | Default                                     | Description                                                 |
+| ------------------ | -------- | ------------------------------------------- | ----------------------------------------------------------- |
+| `topBackground`    | `string` | `linear-gradient(135deg, #5f27cd, #341f97)` | CSS background for the top layer                            |
+| `bottomBackground` | `string` | `linear-gradient(135deg, #ff6b6b, #feca57)` | CSS background for the bottom layer                         |
+| `waveHeight`       | `number` | `0.7`                                       | Where the wave starts (0-1 range, e.g., 0.7 = 70% from top) |
+| `height`           | `string` | `400px`                                     | Container height (any CSS unit)                             |
+| `class`            | `string` | `''`                                        | Additional CSS classes for the container                    |
 
 ## Slots
 
-| Slot | Description |
-|------|-------------|
-| `top` | Content rendered in the top (clipped) layer |
+| Slot     | Description                                     |
+| -------- | ----------------------------------------------- |
+| `top`    | Content rendered in the top (clipped) layer     |
 | `bottom` | Content rendered in the bottom (revealed) layer |
 
 ## Component Code
@@ -90,11 +90,11 @@ interface Props {
 }
 
 const {
-  topBackground = 'linear-gradient(135deg, #5f27cd, #341f97)',
-  bottomBackground = 'linear-gradient(135deg, #ff6b6b, #feca57)',
+  topBackground = "linear-gradient(135deg, #5f27cd, #341f97)",
+  bottomBackground = "linear-gradient(135deg, #ff6b6b, #feca57)",
   waveHeight = 0.7,
-  height = '400px',
-  class: className = '',
+  height = "400px",
+  class: className = "",
 } = Astro.props;
 
 const clipId = `wave-${Math.random().toString(36).slice(2, 9)}`;
@@ -102,11 +102,11 @@ const clipId = `wave-${Math.random().toString(36).slice(2, 9)}`;
 const wavePath = `M0,0 L1,0 L1,${waveHeight} Q0.75,${waveHeight + 0.15} 0.5,${waveHeight} Q0.25,${waveHeight - 0.15} 0,${waveHeight} Z`;
 ---
 
-<div class:list={['wave-section', className]} style={`height: ${height};`}>
+<div class:list={["wave-section", className]} style={`height: ${height};`}>
   <svg width="0" height="0" aria-hidden="true">
     <defs>
       <clipPath id={clipId} clipPathUnits="objectBoundingBox">
-        <path d={wavePath} />
+        <path d={wavePath}></path>
       </clipPath>
     </defs>
   </svg>
@@ -115,7 +115,10 @@ const wavePath = `M0,0 L1,0 L1,${waveHeight} Q0.75,${waveHeight + 0.15} 0.5,${wa
     <slot name="bottom" />
   </div>
 
-  <div class="wave-top" style={`background: ${topBackground}; clip-path: url(#${clipId});`}>
+  <div
+    class="wave-top"
+    style={`background: ${topBackground}; clip-path: url(#${clipId});`}
+  >
     <slot name="top" />
   </div>
 </div>

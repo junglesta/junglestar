@@ -12,13 +12,14 @@ A scroll-driven animation component for Astro that slides elements into view wit
 
 ## Props
 
-| Prop | Default | Description |
-|------|---------|-------------|
-| `end` | `"50%"` | Where the animation completes within the `contain` range |
-| `distance` | `"50px"` | How far the element slides from |
-| `class` | — | Additional CSS classes |
+| Prop       | Default  | Description                                              |
+| ---------- | -------- | -------------------------------------------------------- |
+| `end`      | `"50%"`  | Where the animation completes within the `contain` range |
+| `distance` | `"50px"` | How far the element slides from                          |
+| `class`    | —        | Additional CSS classes                                   |
 
 ## Usage
+
 ```astro
 ---
 import CardAnimate from "@/components/CardAnimate.astro";
@@ -36,6 +37,7 @@ import CardAnimate from "@/components/CardAnimate.astro";
 ```
 
 ## Code
+
 ```astro
 ---
 interface Props {

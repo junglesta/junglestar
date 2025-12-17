@@ -1,16 +1,16 @@
 /* SVG UTILITIES */
 svg.outlined {
-	fill: transparent;
-	stroke-width: 8;
-	stroke-linecap: round;
-	stroke-linejoin: round;
-	stroke-miterlimit: 10;
+  fill: transparent;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
 }
 
 svg.brand_color {
-	stroke: var(--brand);
+  stroke: var(--brand);
 }
 
 svg.white_color {
-	stroke: var(--white);
+  stroke: var(--white);
 }

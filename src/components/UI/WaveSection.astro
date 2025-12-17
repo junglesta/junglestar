@@ -22,20 +22,10 @@ const clipId = `wave_${Math.random().toString(36).slice(2, 9)}`;
 const wavePath = `M0,0 L1,0 L1,${waveHeight} Q0.75,${waveHeight + 0.15} 0.5,${waveHeight} Q0.25,${waveHeight - 0.15} 0,${waveHeight} Z`;
 ---
 
-<div
-  class:list={["wave_section", className]}
-  style={`height: ${height};`}
->
-  <svg
-    width="0"
-    height="0"
-    aria-hidden="true"
-  >
+<div class:list={["wave_section", className]} style={`height: ${height};`}>
+  <svg width="0" height="0" aria-hidden="true">
     <defs>
-      <clipPath
-        id={clipId}
-        clipPathUnits="objectBoundingBox"
-      >
+      <clipPath id={clipId} clipPathUnits="objectBoundingBox">
         <path d={wavePath}></path>
       </clipPath>
     </defs>
@@ -46,10 +36,7 @@ const wavePath = `M0,0 L1,0 L1,${waveHeight} Q0.75,${waveHeight + 0.15} 0.5,${wa
   >
     <slot name="top" />
   </div>
-  <div
-    class="wave_bottom"
-    style={`background: ${bottomBackground};`}
-  >
+  <div class="wave_bottom" style={`background: ${bottomBackground};`}>
     <slot name="bottom" />
   </div>
 </div>

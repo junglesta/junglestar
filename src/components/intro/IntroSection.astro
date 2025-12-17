@@ -84,6 +84,7 @@ function parseBold(text: string) {
   .tagline {
     text-align: center;
     line-height: 1.1;
+    padding-bottom: var(--space_block);
   }
 
   .intro_memes {
@@ -95,7 +96,7 @@ function parseBold(text: string) {
     }
 
     details[open] summary {
-      border-bottom: 1px solid var(--brand_light);
+      border-bottom-color: var(--brand_light);
     }
 
     details summary::after {
@@ -118,7 +119,7 @@ function parseBold(text: string) {
   {
     introItems.map((item) => (
       <article
-        class="intro_meme wrap"
+        class="intro_meme wrap "
         data-theme={item.data.theme}
       >
         <div
@@ -128,9 +129,9 @@ function parseBold(text: string) {
 
         <h1 class="h2 brand">{item.data.question}</h1>
 
-        <h2 class="h4 offwhite">{item.data.title}</h2>
-        <h3 class="h5 offwhite">{item.data.subtitle}</h3>
-        <div class="content offwhite">
+        <h2 class="h4 ">{item.data.title}</h2>
+        <h3 class="h5 ">{item.data.subtitle}</h3>
+        <div class="content ">
           <details>
             <summary class="tagline">{item.data.tagline}</summary>
             {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
@@ -148,6 +149,10 @@ function parseBold(text: string) {
           </details>
         </div>
       </article>
+        <Wave
+          color="var(--black)"
+          position="bottom"
+        />
     ))
   }
 </section>

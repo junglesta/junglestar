@@ -1,58 +1,59 @@
 /*🐸BUTTONS */
 .button {
-	display: inline-block;
-	height: var(--tap_size);
-	width: max-content;
-	user-select: none;
-	font-weight: var(--weight_med);
-	text-align: center;
-	line-height: var(--tap_size);
-	color: var(--brand);
-	border: 2px solid var(--brand);
-	border-radius: var(--radius);
-	padding-inline: calc(var(--space_inline) / 1);
-	margin-block: calc(var(--space_block) / 5);
+  display: inline-block;
+  height: var(--tap_size);
+  width: max-content;
+  user-select: none;
+  font-weight: var(--weight_med);
+  text-align: center;
+  line-height: var(--tap_size);
+  color: var(--brand);
+  border: 2px solid var(--brand);
+  border-radius: var(--radius);
+  padding-inline: calc(var(--space_inline) / 1);
+  margin-block: calc(var(--space_block) / 5);
+  white-space: nowrap;
 }
 
 .button:focus,
 .button:hover {
-	cursor: pointer;
-	color: var(--brand);
-	transform: scale(1.025);
+  cursor: pointer;
+  color: var(--brand);
+  transform: scale(1.025);
 }
 
 .button:active {
-	transform: translateY(calc(var(--space_block) * 0.145)); /* was 0.4svh */
+  transform: translateY(calc(var(--space_block) * 0.145)); /* was 0.4svh */
 }
 
 .button_dark {
-	background-color: var(--black);
-	color: var(--white);
-	border: calc(var(--space_block) * 0.116) solid var(--white); /* was 0.32svh */
+  background-color: var(--black);
+  color: var(--white);
+  border: calc(var(--space_block) * 0.116) solid var(--white); /* was 0.32svh */
 }
 
 .button_dark:focus,
 .button_dark:hover {
-	cursor: pointer;
-	color: var(--white);
-	background-color: var(--brand);
-	border: calc(var(--space_block) * 0.116) solid var(--brand); /* was 0.32svh */
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--brand);
+  border: calc(var(--space_block) * 0.116) solid var(--brand); /* was 0.32svh */
 }
 
 .button_row {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: fit-content;
-	margin: 0 auto;
-	padding: var(--space_block) 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: var(--space_block) 0;
 }
 
 .CTAbutton {
-	text-decoration: none;
-	display: flex;
-	flex-direction: column;
-	svg {
-		width: max-content;
-	}
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  svg {
+    width: max-content;
+  }
 }

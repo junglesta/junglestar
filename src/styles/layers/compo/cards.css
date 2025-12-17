@@ -4,76 +4,76 @@
 /*https://codepen.io/argyleink/pres/VwNMLQN*/
 
 @keyframes slide-fade-in {
-	from {
-		opacity: 0;
-		box-shadow: none;
-		transform: scale(0.8) translateY(15vh);
-	}
+  from {
+    opacity: 0;
+    box-shadow: none;
+    transform: scale(0.8) translateY(15vh);
+  }
 }
 
 .card:not(.card_static) {
-	@media (prefers-reduced-motion: no-preference) {
-		@supports (animation-timeline: view()) {
-			animation: slide-fade-in both;
-			animation-timeline: view();
-			animation-range: contain 0% contain 50%;
-		}
-	}
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation: slide-fade-in both;
+      animation-timeline: view();
+      animation-range: contain 0% contain 50%;
+    }
+  }
 }
 
 .card {
-	position: relative;
-	z-index: 10;
-	display: block;
-	width: 100%;
-	cursor: pointer;
-	background-color: var(--whiteT50);
-	border: 1px solid var(--brand);
-	border-radius: var(--radius);
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--whiteT50);
+  border: 1px solid var(--brand);
+  border-radius: var(--radius);
 }
 
 .card > * {
-	margin-top: calc(var(--space_block) / 2);
+  margin-top: calc(var(--space_block) / 2);
 }
 
 @media (min-width: 1024px) {
-	.card {
-		display: inline-block;
-		margin: 0;
-		/*min-width: var(--big_card_width);
+  .card {
+    display: inline-block;
+    margin: 0;
+    /*min-width: var(--big_card_width);
     max-width: var(--big_card_width);*/
-	}
+  }
 }
 
 .card:focus,
 .card:hover {
-	box-shadow: var(--card_shadow_hover);
-	background-color: var(--white);
+  box-shadow: var(--card_shadow_hover);
+  background-color: var(--white);
 }
 
 .card:active {
-	transform: translateY(calc(var(--space_block) * 0.009));
+  transform: translateY(calc(var(--space_block) * 0.009));
 }
 
 .card h1 {
-	text-align: center;
-	text-transform: uppercase;
-	height: 15%;
+  text-align: center;
+  text-transform: uppercase;
+  height: 15%;
 }
 
 .card h2,
 .card h3 {
-	text-align: center;
-	padding-top: 0;
+  text-align: center;
+  padding-top: 0;
 }
 
 .card h3 {
-	min-height: calc(var(--space_block) * 1);
+  min-height: calc(var(--space_block) * 1);
 }
 
 .card p {
-	margin-left: calc(var(--space_inline) / 2);
-	margin-right: calc(var(--space_inline) / 2);
+  margin-left: calc(var(--space_inline) / 2);
+  margin-right: calc(var(--space_inline) / 2);
 }
 
 /*🐸CARDS */
@@ -82,35 +82,35 @@
 /*https://codepen.io/argyleink/pres/VwNMLQN*/
 
 @keyframes slide-fade-in {
-	from {
-		opacity: 0;
-		box-shadow: none;
-		transform: scale(0.8) translateY(15vh);
-	}
+  from {
+    opacity: 0;
+    box-shadow: none;
+    transform: scale(0.8) translateY(15vh);
+  }
 }
 
 .card_anima {
-	@media (prefers-reduced-motion: no-preference) {
-		@supports (animation-timeline: view()) {
-			animation: slide-fade-in both;
-			animation-timeline: view();
-			animation-range: contain 0% contain 50%;
-		}
-	}
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation: slide-fade-in both;
+      animation-timeline: view();
+      animation-range: contain 0% contain 50%;
+    }
+  }
 }
 
 .card_anima {
-	user-select: none;
-	position: relative;
-	z-index: 10;
-	display: block;
-	width: auto;
-	background-color: transparent;
+  user-select: none;
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: auto;
+  background-color: transparent;
 }
 
 @media (min-width: 1024px) {
-	.card_anima {
-		display: inline-block;
-		margin: 0;
-	}
+  .card_anima {
+    display: inline-block;
+    margin: 0;
+  }
 }

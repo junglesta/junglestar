@@ -38,41 +38,24 @@ const {
   }
 </style>
 
-<html
-  lang="en"
-  style={`background-color: var(${background})`}
->
+<html lang="en" style={`background-color: var(${background})`}>
   <!-- NO <html>??? HTML element get stripped by ASTRO, What??? WTF?! -->
-  <Head
-    title={title}
-    description={description}
-    sitemap={sitemap}
-  />
+  <Head title={title} description={description} sitemap={sitemap} />
 
-  <body
-    class={bodyClass}
-    style={`background-color: var(${background})`}
-  >
+  <body class={bodyClass} style={`background-color: var(${background})`}>
     <LastPub />
     <!-- <ViewportHeight /> -->
 
     <slot name="landing_screen" />
 
-    <main
-      class:list={[
-        "scrolling_body_wrap clickScrollTarget",
-        mainClass,
-      ]}
-    >
+    <main class:list={["scrolling_body_wrap clickScrollTarget", mainClass]}>
       <slot />
     </main>
 
     <Footer />
 
     <!-- Inline script: only passes data to window -->
-    <script
-      is:inline
-      define:vars={{ brand: siteData.brand, url: siteData.url }}
+    <script is:inline define:vars={{ brand: siteData.brand, url: siteData.url }}
     >
       window.__SITE_DATA__ = { brand, url };
     </script>
@@ -81,12 +64,8 @@ const {
     <script>
       //Smooth scroll to target
       document.addEventListener("DOMContentLoaded", function () {
-        const scrollButton = document.querySelector(
-          ".clickScrollTrigger",
-        );
-        const scrollTarget = document.querySelector(
-          ".clickScrollTarget",
-        );
+        const scrollButton = document.querySelector(".clickScrollTrigger");
+        const scrollTarget = document.querySelector(".clickScrollTarget");
 
         if (scrollButton && scrollTarget) {
           scrollButton.addEventListener("click", function (e) {
@@ -114,10 +93,7 @@ const {
     </script>
 
     <script>
-      import {
-        openExternalLinksInNewWindow,
-        markMailtoLinks,
-      } from "@utils/el";
+      import { openExternalLinksInNewWindow, markMailtoLinks } from "@utils/el";
 
       document.addEventListener("astro:page-load", () => {
         openExternalLinksInNewWindow();

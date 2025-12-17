@@ -10,7 +10,10 @@ interface Props {
 const { class: className, end = "50%", distance = "50px" } = Astro.props;
 ---
 
-<div class:list={["card_list", className]} style={`--end: ${end}; --distance: ${distance}`}>
+<div
+  class:list={["card_list", className]}
+  style={`--end: ${end}; --distance: ${distance}`}
+>
   <slot />
 </div>
 

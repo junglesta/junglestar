@@ -5,10 +5,11 @@
 Based on your live site, create these pages:
 
 ### 1. **src/pages/about.astro**
+
 ```astro
 ---
-import Layout from '@layouts/Layout.astro';
-import Intro from '@components/Intro.astro';
+import Layout from "@layouts/Layout.astro";
+import Intro from "@components/Intro.astro";
 ---
 
 <Layout
@@ -18,9 +19,18 @@ import Intro from '@components/Intro.astro';
   <div class="wrap">
     <div class="section">
       <h1>About Junglestar</h1>
-      <p>We are a small, flexible web agency. We help companies and individuals organise their communication.</p>
-      <p>We take care of information architecture, screen design, deploy. We can help develop your Content Marketing Strategy.</p>
-      <p>We grow relationships with clients. We design, produce & develop well thought user experiences.</p>
+      <p>
+        We are a small, flexible web agency. We help companies and individuals
+        organise their communication.
+      </p>
+      <p>
+        We take care of information architecture, screen design, deploy. We can
+        help develop your Content Marketing Strategy.
+      </p>
+      <p>
+        We grow relationships with clients. We design, produce & develop well
+        thought user experiences.
+      </p>
       <p>We've been in the communication business for over 30 years.</p>
 
       <h2>What We Do</h2>
@@ -41,9 +51,10 @@ import Intro from '@components/Intro.astro';
 ```
 
 ### 2. **src/pages/design.astro**
+
 ```astro
 ---
-import Layout from '@layouts/Layout.astro';
+import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout
@@ -53,10 +64,16 @@ import Layout from '@layouts/Layout.astro';
   <div class="wrap">
     <div class="section">
       <h1>Design and Development</h1>
-      <p>Your brand will develop a voice, a recognisable style, to organically grow a meaningful followers base quickly.</p>
+      <p>
+        Your brand will develop a voice, a recognisable style, to organically
+        grow a meaningful followers base quickly.
+      </p>
 
       <h2>Our Process</h2>
-      <p>At Junglestar we design and develop websites and simple web-apps that work well on phones, tablets, laptops and desktops.</p>
+      <p>
+        At Junglestar we design and develop websites and simple web-apps that
+        work well on phones, tablets, laptops and desktops.
+      </p>
       <ol>
         <li>With our client we make a plan</li>
         <li>We study and produce Design Concept</li>
@@ -64,7 +81,11 @@ import Layout from '@layouts/Layout.astro';
       </ol>
 
       <h2>Mobile First</h2>
-      <p>Today more than 60% of internet traffic originates from mobile devices. Phone in hand and on the go, users expect your website to be fast, phone-friendly and easy to use.</p>
+      <p>
+        Today more than 60% of internet traffic originates from mobile devices.
+        Phone in hand and on the go, users expect your website to be fast,
+        phone-friendly and easy to use.
+      </p>
 
       <div class="button_row">
         <a href="/offer" class="button">See our packages</a>
@@ -75,9 +96,10 @@ import Layout from '@layouts/Layout.astro';
 ```
 
 ### 3. **src/pages/content.astro**
+
 ```astro
 ---
-import Layout from '@layouts/Layout.astro';
+import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout
@@ -90,14 +112,28 @@ import Layout from '@layouts/Layout.astro';
       <p>We can help your company produce your brand COMMUNICATION CONTENT.</p>
 
       <h2>Content Strategy</h2>
-      <p>From establishing a meaningful content strategy, to creating the proper memes. Selecting photos, combining product shots and emotional images, copywriting, writing captions and posts text.</p>
+      <p>
+        From establishing a meaningful content strategy, to creating the proper
+        memes. Selecting photos, combining product shots and emotional images,
+        copywriting, writing captions and posts text.
+      </p>
 
       <h2>Social Media Management</h2>
-      <p>Today, brands leverage social media channels to grow their audience and drive interest to their website or online shop.</p>
-      <p>We offer Social media management service so you can focus on your business, while the plan gets executed.</p>
+      <p>
+        Today, brands leverage social media channels to grow their audience and
+        drive interest to their website or online shop.
+      </p>
+      <p>
+        We offer Social media management service so you can focus on your
+        business, while the plan gets executed.
+      </p>
 
       <h2>Creative Guidance</h2>
-      <p>The Creative Process can indeed be overwhelming. We offer Guidance. We have been managing creative processes in the marketing communication field for more than 25 years.</p>
+      <p>
+        The Creative Process can indeed be overwhelming. We offer Guidance. We
+        have been managing creative processes in the marketing communication
+        field for more than 25 years.
+      </p>
 
       <div class="button_row">
         <a href="/contact" class="button">Get Started</a>
@@ -112,6 +148,7 @@ import Layout from '@layouts/Layout.astro';
 Add these to `/src/content/offer/`:
 
 ### **starter-landing.md**
+
 ```markdown
 ---
 title: "Starter Landing"
@@ -137,6 +174,7 @@ product_group: "starter"
 ```
 
 ### **pro-website.md**
+
 ```markdown
 ---
 title: "Pro Website"
@@ -163,6 +201,7 @@ product_group: "bestseller"
 ```
 
 ### **custom-brand.md**
+
 ```markdown
 ---
 title: "Custom Brand"
@@ -191,6 +230,7 @@ product_group: "bestvalue"
 ## 🚀 Deploy to Production
 
 ### Option 1: **Deploy to Netlify** (Easiest)
+
 ```bash
 # Build your site
 pnpm build
@@ -207,6 +247,7 @@ netlify deploy --prod
 ```
 
 ### Option 2: **Deploy to Cloudflare Pages**
+
 ```bash
 # Build
 pnpm build
@@ -219,6 +260,7 @@ wrangler pages deploy dist --project-name=junglestar
 ```
 
 ### Option 3: **GitHub Pages**
+
 ```bash
 # Add to astro.config.mjs
 export default defineConfig({
@@ -254,6 +296,7 @@ git subtree push --prefix dist origin gh-pages
    - [ ] favicon.ico to public/
 
 4. **Test locally** ✅
+
    ```bash
    pnpm build
    pnpm preview
@@ -297,10 +340,13 @@ npx netlify-cli deploy --prod --dir=dist
 ```
 
 ## 🎯 CSS is Already Perfect!
+
 Your CSS with SVH units and layers is production-ready. No changes needed!
 
 ## 🔗 Redirects from Old URLs
+
 Create `public/_redirects` for Netlify:
+
 ```
 # Preserve old Jekyll URLs
 /about.html     /about      301

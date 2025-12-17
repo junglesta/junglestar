@@ -39,10 +39,10 @@ const demoColors = [
 >
   <div class="hero">
     <h1>✨ AutoContrast Component</h1>
-    <p
-      >Automatically calculates the perfect text color for any
-      background using WCAG luminance formulas</p
-    >
+    <p>
+      Automatically calculates the perfect text color for any background using
+      WCAG luminance formulas
+    </p>
   </div>
 
   <div class="container">
@@ -50,9 +50,9 @@ const demoColors = [
     <div class="featured-demo">
       <h2>🎨 Interactive Color Picker</h2>
       <p>
-        Select any background color and watch the magic happen! The
-        text color automatically switches between black and white to
-        maintain optimal contrast and readability.
+        Select any background color and watch the magic happen! The text color
+        automatically switches between black and white to maintain optimal
+        contrast and readability.
       </p>
 
       <AutoContrast
@@ -61,40 +61,29 @@ const demoColors = [
         id="interactive-card"
       >
         <h3>Dynamic Color Adjustment</h3>
-        <p
-          >This text automatically adapts for perfect contrast! The
-          component uses the WCAG 2.1 relative luminance formula to
-          determine whether black or white text provides better
-          readability. Currently using <code
+        <p>
+          This text automatically adapts for perfect contrast! The component
+          uses the WCAG 2.1 relative luminance formula to determine whether
+          black or white text provides better readability. Currently using <code
             style="background: var(--whiteT25); padding: 0.2em 0.5em; border-radius: 4px;"
             >var(--brand)</code
-          > with OKLCH color space.</p
-        >
+          > with OKLCH color space.
+        </p>
         <span class="info-badge">✓ WCAG Compliant</span>
       </AutoContrast>
 
       <div class="color-picker-wrapper">
         <label for="colorPicker">🎨 Choose Your Color:</label>
         <div class="color-picker-container">
-          <input
-            type="color"
-            id="colorPicker"
-            class="color-picker"
-          />
-          <div
-            class="color-value"
-            id="colorValue"
-            >Loading...</div
-          >
+          <input type="color" id="colorPicker" class="color-picker" />
+          <div class="color-value" id="colorValue">Loading...</div>
         </div>
       </div>
     </div>
 
     <!-- Different HTML Tags Section -->
     <h2 class="section-title">📦 Flexible HTML Elements</h2>
-    <p class="section-subtitle"
-      >Works with any HTML tag using the 'tag' prop</p
-    >
+    <p class="section-subtitle">Works with any HTML tag using the 'tag' prop</p>
 
     <div class="tag-showcase">
       <AutoContrast
@@ -103,10 +92,7 @@ const demoColors = [
         class="mini-card"
       >
         <h4>&lt;section&gt; Tag</h4>
-        <p
-          >Using <code style="opacity: 0.7;">var(--brand_invert)</code
-          ></p
-        >
+        <p>Using <code style="opacity: 0.7;">var(--brand_invert)</code></p>
       </AutoContrast>
 
       <AutoContrast
@@ -115,11 +101,9 @@ const demoColors = [
         class="mini-card"
       >
         <h4>&lt;article&gt; Tag</h4>
-        <p
-          >Using <code style="opacity: 0.7;"
-            >var(--product_category_1)</code
-          ></p
-        >
+        <p>
+          Using <code style="opacity: 0.7;">var(--product_category_1)</code>
+        </p>
       </AutoContrast>
 
       <AutoContrast
@@ -128,11 +112,9 @@ const demoColors = [
         class="mini-card"
       >
         <h4>&lt;aside&gt; Tag</h4>
-        <p
-          >Using <code style="opacity: 0.7;"
-            >var(--product_category_2)</code
-          ></p
-        >
+        <p>
+          Using <code style="opacity: 0.7;">var(--product_category_2)</code>
+        </p>
       </AutoContrast>
 
       <AutoContrast
@@ -147,18 +129,14 @@ const demoColors = [
 
     <!-- Color Palette Showcase -->
     <h2 class="section-title">🎨 Color Palette Showcase</h2>
-    <p class="section-subtitle"
-      >Your design tokens with real OKLCH colors and automatic
-      contrast</p
-    >
+    <p class="section-subtitle">
+      Your design tokens with real OKLCH colors and automatic contrast
+    </p>
 
     <div class="demo-grid">
       {
         demoColors.map((color) => (
-          <AutoContrast
-            backgroundColor={color.var}
-            class="palette-card"
-          >
+          <AutoContrast backgroundColor={color.var} class="palette-card">
             <strong>{color.name}</strong>
             <span class="var-name">{color.var}</span>
             <p>Auto-contrasted text for perfect readability</p>
@@ -174,12 +152,10 @@ const demoColors = [
         Using the AutoContrast component is simple:
       </p>
       <pre
-        style="background: var(--background_blackT05); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"
-        ><code>&lt;AutoContrast backgroundColor="#0069cc"&gt;
+        style="background: var(--background_blackT05); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"><code>&lt;AutoContrast backgroundColor="#0069cc"&gt;
   &lt;h2&gt;Your Content&lt;/h2&gt;
   &lt;p&gt;Text automatically contrasts!&lt;/p&gt;
-&lt;/AutoContrast&gt;</code></pre
-      >
+&lt;/AutoContrast&gt;</code></pre>
     </div>
   </div>
 
@@ -191,9 +167,7 @@ const demoColors = [
       "colorPicker",
     ) as HTMLInputElement;
     const colorValue = document.getElementById("colorValue");
-    const interactiveCard = document.getElementById(
-      "interactive-card",
-    ) as any;
+    const interactiveCard = document.getElementById("interactive-card") as any;
 
     // Helper function to convert RGB to hex
     function rgbToHex(rgb: string): string {
@@ -231,9 +205,7 @@ const demoColors = [
         colorValue.textContent = color;
 
         // Update the card's background color
-        if (
-          typeof interactiveCard.setBackgroundColor === "function"
-        ) {
+        if (typeof interactiveCard.setBackgroundColor === "function") {
           interactiveCard.setBackgroundColor(color);
         }
       });

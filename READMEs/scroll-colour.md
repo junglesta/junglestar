@@ -123,7 +123,15 @@ interface Props {
   animationRange?: string;
 }
 
-const { targetClass, lumaInitial, lumaFinal, chromaInitial, chromaFinal, hue, animationRange = "0 100%" } = Astro.props;
+const {
+  targetClass,
+  lumaInitial,
+  lumaFinal,
+  chromaInitial,
+  chromaFinal,
+  hue,
+  animationRange = "0 100%",
+} = Astro.props;
 ---
 
 <style

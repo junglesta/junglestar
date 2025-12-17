@@ -10,78 +10,78 @@
       "!!**/_temp-fixtures",
       "!!**/dist",
       "packages/language-tools/vscode/syntaxes/*.json",
-      "!!**/.vscode-test"
-    ]
+      "!!**/.vscode-test",
+    ],
   },
   "vcs": {
     "enabled": true,
     "clientKind": "git",
-    "useIgnoreFile": true
+    "useIgnoreFile": true,
   },
   "formatter": {
     "indentStyle": "tab",
     "indentWidth": 2,
     "lineWidth": 100,
     "includes": ["**", "!**/.changeset", "!**/pnpm-lock.yaml", "!**/*.astro"],
-    "expand": "auto"
+    "expand": "auto",
   },
   "assist": {
     "actions": {
       "source": {
-        "organizeImports": "on"
-      }
-    }
+        "organizeImports": "on",
+      },
+    },
   },
   "linter": {
     "enabled": true,
 
     "domains": {
-      "test": "recommended"
+      "test": "recommended",
     },
     "rules": {
       "recommended": false,
       "style": {
         "useNodejsImportProtocol": "error",
         // Enforce separate type imports for type-only imports to avoid bundling unneeded code
-        "useImportType": "error"
+        "useImportType": "error",
       },
       "suspicious": {
         // This one is specific to catch `console.log`. The rest of logs are permitted
         "noConsole": {
           "level": "warn",
           "options": {
-            "allow": ["error", "warn", "info", "debug"]
-          }
-        }
+            "allow": ["error", "warn", "info", "debug"],
+          },
+        },
       },
       "correctness": {
         "noUnusedVariables": {
           "level": "error",
           "options": {
-            "ignoreRestSiblings": true
-          }
+            "ignoreRestSiblings": true,
+          },
         },
         "noUnusedFunctionParameters": "error",
-        "noUnusedImports": "error"
-      }
-    }
+        "noUnusedImports": "error",
+      },
+    },
   },
   "javascript": {
     "formatter": {
       "trailingCommas": "all",
       "quoteStyle": "single",
-      "semicolons": "always"
-    }
+      "semicolons": "always",
+    },
   },
   "json": {
     "parser": {
       "allowComments": true,
-      "allowTrailingCommas": true
+      "allowTrailingCommas": true,
     },
     "formatter": {
       "indentStyle": "space",
-      "trailingCommas": "none"
-    }
+      "trailingCommas": "none",
+    },
   },
   "overrides": [
     {
@@ -89,37 +89,37 @@
       "includes": ["**/package.json"],
       "json": {
         "formatter": {
-          "expand": "always"
-        }
-      }
+          "expand": "always",
+        },
+      },
     },
     {
       "includes": ["**/*.astro", "**/*.vue", "**/*.svelte"],
       "formatter": {
-        "enabled": false
+        "enabled": false,
       },
       "linter": {
         "rules": {
           "correctness": {
             "noUnusedVariables": "off",
-            "noUnusedImports": "off"
-          }
-        }
-      }
+            "noUnusedImports": "off",
+          },
+        },
+      },
     },
     {
       // We don't want to have node modules in code that should be runtime agnostic
       "includes": [
         "**/packages/astro/src/**/runtime/**/*.ts",
-        "**/packages/astro/src/**/runtime.ts"
+        "**/packages/astro/src/**/runtime.ts",
       ],
       "linter": {
         "rules": {
           "correctness": {
-            "noNodejsModules": "error"
-          }
-        }
-      }
+            "noNodejsModules": "error",
+          },
+        },
+      },
     },
     {
       "includes": ["**/*.astro", "**/client.d.ts", "**/jsx-runtime.d.ts"],
@@ -127,10 +127,10 @@
         "rules": {
           "correctness": {
             "noUnusedVariables": "off",
-            "noUnusedImports": "off"
-          }
-        }
-      }
+            "noUnusedImports": "off",
+          },
+        },
+      },
     },
     {
       "includes": ["**/packages/integrations/**/*.ts"],
@@ -140,27 +140,27 @@
             "noConsole": {
               "level": "error",
               "options": {
-                "allow": ["warn", "error", "info", "debug"]
-              }
-            }
-          }
-        }
-      }
+                "allow": ["warn", "error", "info", "debug"],
+              },
+            },
+          },
+        },
+      },
     },
     {
       "includes": [
         "**/packages/db/**/cli/**/*.ts",
         "**/benchmark/**/*.js",
         "**/packages/astro/src/cli/**/*.ts",
-        "**/packages/astro/astro.js"
+        "**/packages/astro/astro.js",
       ],
       "linter": {
         "rules": {
           "suspicious": {
-            "noConsole": "off"
-          }
-        }
-      }
-    }
-  ]
+            "noConsole": "off",
+          },
+        },
+      },
+    },
+  ],
 }

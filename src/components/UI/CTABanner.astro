@@ -26,11 +26,7 @@ const { link = "/", title = "back home", text = "J", linkClass } = Astro.props;
 </style>
 
 <div class="CTABanner">
-  <a
-    class="${linkClass} cta button"
-    title={title}
-    href={link}
-  >
+  <a class="${linkClass} cta button" title={title} href={link}>
     {text}
   </a>
 </div>

@@ -24,10 +24,7 @@ const { title, description = "Default description" } = Astro.props;
 
 <!-- src/components/heads/Head.astro -->
 <title>{title}</title>
-<meta
-  name="description"
-  content={description}
-/>
+<meta name="description" content={description} />
 ```
 
 ### 2. Component Includes
@@ -48,10 +45,7 @@ import SvgIcon from "@components/SvgIcon.astro";
 ---
 
 <Footer />
-<SvgIcon
-  id="icn--logo_white"
-  class="logo"
-/>
+<SvgIcon id="icn--logo_white" class="logo" />
 ```
 
 ### 3. Loops and Conditionals
@@ -113,18 +107,15 @@ const { title, description, language = "english" } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-  <Head
-    title={title}
-    description={description}
-  />
+  <Head title={title} description={description} />
   <body>
     <Header language={language} />
     <main class="main">
       <slot />
     </main>
     <Footer />
-  </body></html
->
+  </body>
+</html>
 ```
 
 ### 2. Convert Footer Component (`src/components/footer/Footer.astro`)
@@ -162,10 +153,7 @@ const siteEmail = "info@junglestar.org"; // Move to config
   <div class="footer_block">
     <div class="action_title">Junglestar</div>
 
-    <div
-      class="footer_block_pages"
-      role="menu"
-    >
+    <div class="footer_block_pages" role="menu">
       {
         footerServices.map((item) => (
           <a
@@ -201,29 +189,18 @@ const siteEmail = "info@junglestar.org"; // Move to config
       >
         <span class="action_title">get in touch</span>
         <span class="action_title reveal_on_hover">send email</span>
-        <SvgIcon
-          id="icn--email"
-          class="email"
-        />
+        <SvgIcon id="icn--email" class="email" />
       </a>
 
       <div class="flex_item qr white">
         <div class="action_title">phone link</div>
-        <SvgIcon
-          id="icn--qr"
-          class="qr"
-        />
+        <SvgIcon id="icn--qr" class="qr" />
       </div>
     </div>
 
     <div class="footer_block_carbonbadge">
-      <div
-        id="wcb"
-        class="carbonbadge"
-      ></div>
-      <script
-        src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
-        defer
+      <div id="wcb" class="carbonbadge"></div>
+      <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer
       ></script>
     </div>
 
@@ -249,37 +226,17 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
 ---
 
 <meta charset="utf-8" />
-<meta
-  http-equiv="X-UA-Compatible"
-  content="IE=edge"
-/>
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1"
-/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <title>{title}</title>
 
-{
-  !sitemap && (
-    <meta
-      name="robots"
-      content="noindex,nofollow,nosnippet"
-    />
-  )
-}
+{!sitemap && <meta name="robots" content="noindex,nofollow,nosnippet" />}
 
-<meta
-  name="description"
-  content={description}
-/>
+<meta name="description" content={description} />
 
 <!-- Font Loading -->
-<link
-  rel="preconnect"
-  href="https://fonts.gstatic.com"
-  crossorigin
-/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
   rel="preload"
   as="style"
@@ -292,16 +249,10 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
   onload="this.media='all'"
 />
 
-<link
-  rel="canonical"
-  href={canonicalUrl}
-/>
+<link rel="canonical" href={canonicalUrl} />
 
 <!-- Favicons -->
-<link
-  rel="apple-touch-icon"
-  href="/assets/favicons/apple-touch-icon.png"
-/>
+<link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
 <link
   rel="icon"
   type="image/png"
@@ -320,31 +271,16 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
   sizes="16x16"
   href="/assets/favicons/favicon-16x16.png"
 />
-<link
-  rel="manifest"
-  href="/assets/favicons/site.webmanifest"
-/>
+<link rel="manifest" href="/assets/favicons/site.webmanifest" />
 <link
   rel="mask-icon"
   href="/assets/favicons/safari-pinned-tab.svg"
   color="#0069cc"
 />
-<link
-  rel="shortcut icon"
-  href="/assets/favicons/favicon.ico"
-/>
-<meta
-  name="apple-mobile-web-app-title"
-  content="Junglestar"
-/>
-<meta
-  name="application-name"
-  content="Junglestar"
-/>
-<meta
-  name="msapplication-TileColor"
-  content="#0069cc"
-/>
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+<meta name="apple-mobile-web-app-title" content="Junglestar" />
+<meta name="application-name" content="Junglestar" />
+<meta name="msapplication-TileColor" content="#0069cc" />
 <meta
   name="msapplication-TileImage"
   content="/assets/favicons/mstile-144x144.png"
@@ -353,66 +289,27 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
   name="msapplication-config"
   content="/assets/favicons/browserconfig.xml"
 />
-<meta
-  name="theme-color"
-  content="#0069cc"
-/>
+<meta name="theme-color" content="#0069cc" />
 
 <!-- Open Graph -->
-<meta
-  property="og:locale"
-  content="en"
-/>
-<meta
-  property="og:type"
-  content="article"
-/>
-<meta
-  property="og:title"
-  content={title}
-/>
-<meta
-  property="og:image"
-  content={`${siteUrl}/assets/junglestar_logo.png`}
-/>
-<meta
-  property="og:description"
-  content={description}
-/>
-<meta
-  property="og:url"
-  content={canonicalUrl}
-/>
-<meta
-  property="og:site_name"
-  content="Junglestar"
-/>
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content={title} />
+<meta property="og:image" content={`${siteUrl}/assets/junglestar_logo.png`} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:site_name" content="Junglestar" />
 
 <!-- Twitter Cards -->
-<meta
-  name="twitter:card"
-  content="summary_large_image"
-/>
-<meta
-  name="twitter:site"
-  content="@rokmatwit"
-/>
-<meta
-  name="twitter:creator"
-  content="@rokmatwit"
-/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@rokmatwit" />
+<meta name="twitter:creator" content="@rokmatwit" />
 <meta
   name="twitter:image:src"
   content={`${siteUrl}/assets/junglestar_logo.png`}
 />
-<meta
-  name="twitter:title"
-  content={title}
-/>
-<meta
-  name="twitter:description"
-  content={description}
-/>
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
 ```
 
 ### 4. Convert Intro Component (`src/components/Intro.astro`)
@@ -443,14 +340,14 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl);
       </span>
 
       <div class="text">
-        <p
-          >To get noticed, ones need to be easy, customer-friendly and
-          recognizable.</p
-        >
-        <p
-          >Today 60% of internet traffic comes from phones. Is your website
-          ready for that?</p
-        >
+        <p>
+          To get noticed, ones need to be easy, customer-friendly and
+          recognizable.
+        </p>
+        <p>
+          Today 60% of internet traffic comes from phones. Is your website ready
+          for that?
+        </p>
         <p>It's never been easier to launch a brand new internet presence.</p>
         <p>
           Needing a landing page or an online shop? Marketing using social
@@ -476,10 +373,7 @@ const pageTitle = "Junglestar - Web Design & Development";
 const description = "Sustainable Web Design to help the planet";
 ---
 
-<Layout
-  title={pageTitle}
-  description={description}
->
+<Layout title={pageTitle} description={description}>
   <div class="page_content">
     <Intro />
   </div>

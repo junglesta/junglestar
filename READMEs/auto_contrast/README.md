@@ -3,18 +3,19 @@
 Automatically choose readable text color (black or white) based on background color.
 
 **Two solutions included:**
+
 1. **Pure CSS** — zero JavaScript, uses native `contrast-color()`
 2. **Astro Component** — CSS-first with JS fallback for Chrome/Edge
 
 ## Browser Support (December 2025)
 
-| Browser | `contrast-color()` |
-|---------|-------------------|
-| Safari 26+ | ✅ |
-| iOS Safari 26+ | ✅ |
-| Firefox 146+ | ✅ |
-| Chrome | ❌ |
-| Edge | ❌ |
+| Browser        | `contrast-color()` |
+| -------------- | ------------------ |
+| Safari 26+     | ✅                 |
+| iOS Safari 26+ | ✅                 |
+| Firefox 146+   | ✅                 |
+| Chrome         | ❌                 |
+| Edge           | ❌                 |
 
 **Global support:** ~1.5% (but growing fast)
 
@@ -37,21 +38,19 @@ For projects where you can require Safari/Firefox, or provide manual fallbacks.
 ```
 
 ```html
-<button class="auto-contrast-safe my-button">
-  Subscribe
-</button>
+<button class="auto-contrast-safe my-button">Subscribe</button>
 ```
 
 ### Available Classes
 
-| Class | Description |
-|-------|-------------|
-| `.auto-contrast` | Basic auto-contrast (no fallback) |
-| `.auto-contrast-safe` | With fallback for unsupported browsers |
-| `.auto-contrast-bg` | Inverted: auto background from text color |
-| `.btn-auto` | Pre-styled button |
-| `.badge-auto` | Pre-styled badge/pill |
-| `.card-auto` | Pre-styled card |
+| Class                 | Description                               |
+| --------------------- | ----------------------------------------- |
+| `.auto-contrast`      | Basic auto-contrast (no fallback)         |
+| `.auto-contrast-safe` | With fallback for unsupported browsers    |
+| `.auto-contrast-bg`   | Inverted: auto background from text color |
+| `.btn-auto`           | Pre-styled button                         |
+| `.badge-auto`         | Pre-styled badge/pill                     |
+| `.card-auto`          | Pre-styled card                           |
 
 ### Custom Colors
 
@@ -93,14 +92,14 @@ import AutoContrast from "@/components/AutoContrast.astro";
 
 ### Props
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `backgroundColor` | `string` | `var(--brand, #3b82f6)` | Background color |
-| `tag` | `string` | `div` | HTML element to render |
-| `class` | `string` | `""` | Additional CSS classes |
-| `lightText` | `string` | `white` | Text color for dark backgrounds (JS fallback) |
-| `darkText` | `string` | `black` | Text color for light backgrounds (JS fallback) |
-| `threshold` | `number` | `0.5` | Luminance threshold 0-1 (JS fallback) |
+| Prop              | Type     | Default                 | Description                                    |
+| ----------------- | -------- | ----------------------- | ---------------------------------------------- |
+| `backgroundColor` | `string` | `var(--brand, #3b82f6)` | Background color                               |
+| `tag`             | `string` | `div`                   | HTML element to render                         |
+| `class`           | `string` | `""`                    | Additional CSS classes                         |
+| `lightText`       | `string` | `white`                 | Text color for dark backgrounds (JS fallback)  |
+| `darkText`        | `string` | `black`                 | Text color for light backgrounds (JS fallback) |
+| `threshold`       | `number` | `0.5`                   | Luminance threshold 0-1 (JS fallback)          |
 
 ### Examples
 
@@ -127,7 +126,7 @@ import AutoContrast from "@/components/AutoContrast.astro";
 #### Custom text colors (for JS fallback)
 
 ```astro
-<AutoContrast 
+<AutoContrast
   backgroundColor="#1e293b"
   lightText="oklch(98% 0 0)"
   darkText="oklch(15% 0 0)"
@@ -171,6 +170,7 @@ The browser calculates which of black or white has better contrast against the b
 ### JavaScript Fallback
 
 For Chrome/Edge, we:
+
 1. Render the background color to a 1×1 canvas
 2. Read the RGB values
 3. Calculate relative luminance
@@ -189,6 +189,7 @@ For Chrome/Edge, we:
 ## Future
 
 The CSS Working Group is working on expanded `contrast-color()` that will:
+
 - Support custom color lists (not just black/white)
 - Allow specifying target contrast ratios
 - Use improved contrast algorithms (APCA/WCAG 3)

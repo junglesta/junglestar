@@ -128,7 +128,11 @@ const iconPath = `/src/assets/svgs/${name}.svg`;
 const iconContent = await icons[iconPath]?.();
 ---
 
-{iconContent && <div class={className} aria-label={alt} set:html={iconContent} />}
+{
+  iconContent && (
+    <div class={className} aria-label={alt} set:html={iconContent} />
+  )
+}
 ```
 
 ### Update Footer.astro to Use Optimized Assets:

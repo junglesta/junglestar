@@ -10,3 +10,13 @@
   background-color: var(--black);
   color: var(--white);
 }
+
+body.index {
+  .on_scroll_msg > * {
+    color: var(--brand_lightest);
+  }
+}
+
+body.bg_black .footer_site {
+  color: var(--white);
+}

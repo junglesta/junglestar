@@ -25,8 +25,9 @@ const overtitle_line1 = "Because Why?";
 
 const onScroll_line1 = "Ever feel prisoner of your own processes?";
 const onScroll_line2 = "Those ones necessary to run your biz?";
-const onScroll_line3 = "Find out what sustainable actually means...";
-const onScroll_line4 = "...for us small entrepreneurs.";
+const onScroll_line4 =
+  "Find out what sustainable actually means, for all us small entrepreneurs.";
+const onScroll_line5 = "";
 const description =
   "Sustainable Web Design to help the planet. Change! We help small enterprises with websites, apps, and marketing communication.";
 ---
@@ -41,7 +42,7 @@ const description =
   title={title}
   description={description}
   bodyClass="design "
-  background="--brand_lightest"
+  background="--brand_lighter"
   mainClass="bg_white"
 >
   <Fragment slot="inside_header">
@@ -50,13 +51,11 @@ const description =
       overtitle_line1={overtitle_line1}
       onScroll_line1={onScroll_line1}
       onScroll_line2={onScroll_line2}
-      onScroll_line3={onScroll_line3}
       onScroll_line4={onScroll_line4}
+      onScroll_line5={onScroll_line5}
     >
       <Icono width={133} height={133} fill="currentColor" />
     </LandingScreen>
-
-    <Wave color="var(--brand_lightest)" position="bottom" />
   </Fragment>
 
   <div class="wrap">
@@ -65,7 +64,5 @@ const description =
     <PostsGridMDX posts={posts} />
   </div>
   <CTAMailBanner subject="Send more infos about Junglestar's Design" />
-  <div class="space8"></div>
-  <Wave color="var(--brand_lightest)" position="top" />
   <div class="space8"></div>
 </Layout>

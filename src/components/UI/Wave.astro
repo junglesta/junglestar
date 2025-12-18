@@ -1,24 +1,17 @@
 ---
+// Wave.astro
 interface Props {
   color: string;
   position?: "top" | "bottom";
   height?: string;
-  bgcolor?: string;
-  cssclass?: string;
 }
 
-const {
-  cssclass,
-  color,
-  position = "bottom",
-  height = "8rem",
-  bgcolor,
-} = Astro.props;
+const { color, position = "bottom", height = "8rem" } = Astro.props;
 ---
 
 <div
-  class:list={["wave", cssclass, position]}
-  style={`--color: ${color}; --height: ${height}; --bgcolor: ${bgcolor}; `}
+  class:list={["wave", position]}
+  style={`--wave_color: ${color}; --wave_height: ${height};`}
 >
   <svg width="0" height="0">
     <defs>
@@ -35,37 +28,34 @@ const {
 
 <style>
   .wave {
-    position: relative;
-    background-color: var(--bgcolor);
-  }
-
-  .wave-shape {
-    height: var(--height);
-    background-color: var(--color);
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: var(--wave_height);
+    pointer-events: none;
   }
 
   .wave.bottom {
-    position: relative;
-    top: var(--height);
-    .wave-shape {
-      margin-top: -1px;
-      clip-path: url(#waveClipBottom);
-      bottom: calc(var(--height) * -1);
-      position: relative;
-      margin-bottom: var(--height);
-    }
+    bottom: calc(var(--wave_height) * 1.25);
+    transform: translateY(100%);
   }
-  .wave.top {
-    position: relative;
-    bottom: var(--height);
-    /*margin-top: calc(var(--height) * -1);*/
-    height: var(--height);
 
-    .wave-shape {
-      clip-path: url(#waveClipTop);
-      margin-bottom: 0;
-      position: relative;
-      top: calc(var(--height) * -1);
-    }
+  .wave.top {
+    top: 0;
+    transform: translateY(-100%);
+  }
+
+  .wave-shape {
+    width: 100%;
+    height: 100%;
+    background-color: var(--wave_color);
+  }
+
+  .wave.bottom .wave-shape {
+    clip-path: url(#waveClipBottom);
+  }
+
+  .wave.top .wave-shape {
+    clip-path: url(#waveClipTop);
   }
 </style>

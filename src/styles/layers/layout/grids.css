@@ -15,7 +15,9 @@
 .grida {
   position: initial;
   display: grid;
-  grid-template-rows: 1fr 1fr 6fr;
+  grid-template-rows:
+    calc(var(--windowH) / 3) calc(var(--windowH) / 3) calc(var(--windowH) / 3)
+    calc(var(--windowH) * 1);
   place-content: stretch center;
   gap: 1rem;
   padding: 1rem;
@@ -32,6 +34,9 @@
   place-self: end center;
   position: relative;
   top: calc(var(--windowH) / 4 * -1);
+  > * {
+    padding-bottom: calc(var(--space_block) / 3.75);
+  }
 }
 
 .grid_main {

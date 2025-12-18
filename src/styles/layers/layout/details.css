@@ -5,6 +5,7 @@ details summary {
   color: currentColor;
   min-height: var(--tap_size);
   height: var(--tap_size);
+  margin-bottom: var(--space_block);
 }
 
 details summary::-webkit-details-marker {

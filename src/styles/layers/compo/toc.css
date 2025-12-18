@@ -19,9 +19,11 @@
 
 .toc li:not(:hover)::marker {
   color: var(--brand);
+  font-size: 75%;
 }
 .toc li:hover::marker {
   font-weight: 500;
+  font-size: 75%;
   color: var(--brand);
 }
 

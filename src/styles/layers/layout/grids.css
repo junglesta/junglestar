@@ -16,7 +16,9 @@
   position: initial;
   display: grid;
   grid-template-rows:
-    calc(var(--windowH) / 3) calc(var(--windowH) / 3) calc(var(--windowH) / 3)
+    calc(var(--windowH) * 0.333) calc(var(--windowH) * 0.333) calc(
+      var(--windowH) * 0.333
+    )
     calc(var(--windowH) * 1);
   place-content: stretch center;
   gap: 1rem;

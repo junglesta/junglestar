@@ -1,7 +1,6 @@
 ---
 // src/layouts/Layout.astro
 import LastPub from "@components/shared/LastPublished.astro";
-import SlotHeader from "@components/shared/SlotHeader.astro";
 import ViewportHeight from "@components/shared/ViewportHeight.astro";
 import Footer from "@components/footer/Footer.astro";
 import Head from "@components/heads/Head.astro";
@@ -15,7 +14,14 @@ export interface Props {
   description?: string;
   sitemap?: boolean;
   pageSubtitle?: string;
-  background?: "--white" | "--brand" | "--black";
+  background?:
+    | "--white"
+    | "--brand"
+    | "--brand_light"
+    | "--brand_lighter"
+    | "--brand_lightest"
+    | "----grey_color_light"
+    | "--black";
 }
 
 const {
@@ -36,7 +42,7 @@ const {
   }
 </style>
 
-<html lang="en" style={`background-color: var(${background})`}>
+<html lang="en">
   <!-- NO <html>??? HTML element get stripped by ASTRO, What??? WTF?! -->
   <Head title={title} description={description} sitemap={sitemap} />
 

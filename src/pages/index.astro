@@ -1,7 +1,8 @@
 ---
 // src/pages/index.astro
 import Layout from "@layouts/Layout.astro";
-// import Wave from "@components/UI/Wave.astro";
+
+import Wave from "@components/UI/Wave.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
 import IntroSection from "@components/intro/IntroSection.astro";
 import Icono from "@svgs/what.svg";
@@ -47,7 +48,7 @@ const description =
   title={title}
   description={description}
   bodyClass="index bg_brand"
-  mainClass="grid_main "
+  mainClass=" "
   background="--brand"
 >
   <Fragment slot="inside_header">
@@ -67,4 +68,5 @@ const description =
     </LandingScreen>
   </Fragment>
   <IntroSection />
+  <Wave color="var(--white)" position="top" />
 </Layout>

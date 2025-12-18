@@ -110,22 +110,13 @@ function parseBold(text: string) {
   }
 </style>
 
-<Wave
-  color="var(--black)"
-  position="top"
-/>
+<Wave color="var(--black)" position="top" />
 
 <section class="intro_memes txt_white_on_black">
   {
     introItems.map((item) => (
-      <article
-        class="intro_meme wrap "
-        data-theme={item.data.theme}
-      >
-        <div
-          class="background_svg"
-          set:html={getSvgRaw(item.data.image.src)}
-        />
+      <article class="intro_meme wrap " data-theme={item.data.theme}>
+        <div class="background_svg" set:html={getSvgRaw(item.data.image.src)} />
 
         <h1 class="h2 brand">{item.data.question}</h1>
 
@@ -149,10 +140,6 @@ function parseBold(text: string) {
           </details>
         </div>
       </article>
-        <Wave
-          color="var(--black)"
-          position="bottom"
-        />
     ))
   }
 </section>

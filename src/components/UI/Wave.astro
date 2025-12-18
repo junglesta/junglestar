@@ -4,13 +4,20 @@ interface Props {
   position?: "top" | "bottom";
   height?: string;
   bgcolor?: string;
+  cssclass?: string;
 }
 
-const { color, position = "bottom", height = "8rem", bgcolor } = Astro.props;
+const {
+  cssclass,
+  color,
+  position = "bottom",
+  height = "8rem",
+  bgcolor,
+} = Astro.props;
 ---
 
 <div
-  class:list={["wave", position]}
+  class:list={["wave", cssclass, position]}
   style={`--color: ${color}; --height: ${height}; --bgcolor: ${bgcolor}; `}
 >
   <svg width="0" height="0">
@@ -38,17 +45,20 @@ const { color, position = "bottom", height = "8rem", bgcolor } = Astro.props;
   }
 
   .wave.bottom {
-    margin-top: -1px;
+    position: relative;
+    top: var(--height);
     .wave-shape {
       margin-top: -1px;
       clip-path: url(#waveClipBottom);
       bottom: calc(var(--height) * -1);
       position: relative;
+      margin-bottom: var(--height);
     }
   }
   .wave.top {
     position: relative;
-    margin-top: calc(var(--height) * -1);
+    bottom: var(--height);
+    /*margin-top: calc(var(--height) * -1);*/
     height: var(--height);
 
     .wave-shape {

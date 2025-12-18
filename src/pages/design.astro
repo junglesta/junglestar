@@ -1,7 +1,7 @@
 ---
 //  src/pages/desing.astro
 import Layout from "@layouts/Layout.astro";
-import Ani from "@components/UI/AnimHeader2OffWhite.astro";
+import Icono from "@svgs/what.svg";
 import Wave from "@components/UI/Wave.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
 import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
@@ -40,10 +40,11 @@ const description =
 <Layout
   title={title}
   description={description}
-  bodyClass="design bg_white"
-  background="--white"
+  bodyClass="design "
+  background="--brand_lightest"
+  mainClass="bg_white"
 >
-  <Ani>
+  <Fragment slot="inside_header">
     <LandingScreen
       title={title_start}
       overtitle_line1={overtitle_line1}
@@ -51,10 +52,12 @@ const description =
       onScroll_line2={onScroll_line2}
       onScroll_line3={onScroll_line3}
       onScroll_line4={onScroll_line4}
-    />
-  </Ani>
+    >
+      <Icono width={133} height={133} fill="currentColor" />
+    </LandingScreen>
 
-  <Wave color="var(--white)" position="top" />
+    <Wave color="var(--brand_lightest)" position="bottom" />
+  </Fragment>
 
   <div class="wrap">
     <h2 class="center">Thinking communication design does deliver!</h2>
@@ -62,7 +65,7 @@ const description =
     <PostsGridMDX posts={posts} />
   </div>
   <CTAMailBanner subject="Send more infos about Junglestar's Design" />
-
-  <Wave color="var(--white)" position="bottom" />
+  <div class="space8"></div>
+  <Wave color="var(--brand_lightest)" position="top" />
   <div class="space8"></div>
 </Layout>

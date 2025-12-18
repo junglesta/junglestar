@@ -58,6 +58,7 @@
   --brand_light: oklch(from var(--brand) calc(l + 0.1) c h);
   --brand_dark: oklch(from var(--brand) calc(l - 0.18) c h);
   */
+  --brand_lightest: oklch(0.8286 0.1735 255);
   --brand_lighter: oklch(0.7286 0.1735 255);
   --brand_darker: oklch(0.3286 0.1735 255);
   --brand_light: oklch(0.6286 0.1735 255);

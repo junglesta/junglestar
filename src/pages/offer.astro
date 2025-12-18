@@ -2,7 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import Gmap from "@components/brand/Gmap.astro";
 import SlowWebsite from "@components/brand/SlowWebsite.astro";
-import Ani from "@components/UI/AnimHeader2Black.astro";
+import Icono from "@svgs/what.svg";
 import LandingScreen from "@components/UI/LandingScreen.astro";
 import { getCollection } from "astro:content";
 import CTAButton from "@components/UI/CTAButton.astro";
@@ -180,7 +180,7 @@ const description =
   bodyClass="offer bg_white"
   background="--white"
 >
-  <Ani>
+  <Fragment slot="inside_header">
     <LandingScreen
       overtitle_line1={overtitle_line1}
       overtitle_line2={overtitle_line2}
@@ -192,8 +192,10 @@ const description =
       onScroll_line4={onScroll_line4}
       onScroll_line5={onScroll_line5}
       onScroll_line6={onScroll_line6}
-    />
-  </Ani>
+    >
+      <Icono width={133} height={133} fill="currentColor" />
+    </LandingScreen>
+  </Fragment>
 
   <div class="print_only">
     <div class="print_imperatif">Make life easy for your customers!</div>

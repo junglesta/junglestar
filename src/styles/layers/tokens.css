@@ -6,15 +6,15 @@
 :root {
   /*🐸 JS ASSISTED, UNIVERSAL, DYN WIN SETTINGS */
   /* LEGACY FALLBACK */
-  --windowH: 100vh;
+  --windowH: 100svh;
   /* MODERN FALLBACK */
   --windowH: var(--windowH);
   /* JS-POWERED (WINS IF --vh EXISTS) */
-  --windowH: calc(var(--vh, 1vh) * 100);
+  --windowH: calc(var(--vh, 1svh) * 100);
 
   /*🐸 DYNAMIC SPACES */
-  --space_block: 1.25em;
-  --space_inline: 1.25em;
+  --space_block: 1.25rem;
+  --space_inline: 1.25rem;
 
   /*🐸 FIXED SPACES */
   --tap_size: 48px;
@@ -155,29 +155,29 @@
   }
 
   /*🐸RESPONSIVE HEADINGS WITH SVH */
-  --heading1_responsive: 4svh;
+  --heading1_responsive: calc(var(--windowH)/100 * 4);
   --heading1_min: 1.75rem;
-  --heading1_max: 4.6svh;
+  --heading1_max: calc(var(--windowH)/100 * 4.6);
 
-  --heading2_responsive: 3.25svh;
+  --heading2_responsive: calc(var(--windowH)/100 * 3.25);
   --heading2_min: 1.75rem;
-  --heading2_max: 4.2svh;
+  --heading2_max: calc(var(--windowH)/100 * 4.2);
 
-  --heading3_responsive: 3svh;
+  --heading3_responsive: calc(var(--windowH)/100 * 3);
   --heading3_min: 1.5rem;
-  --heading3_max: 3.6svh;
+  --heading3_max: calc(var(--windowH)/100 * 3.6);
 
-  --heading4_responsive: 2.5svh;
+  --heading4_responsive: calc(var(--windowH)/100 * 2.5);
   --heading4_min: 1.25rem;
-  --heading4_max: 3.3svh;
+  --heading4_max: calc(var(--windowH)/100 * 3.3);
 
-  --heading5_responsive: 2.25svh;
+  --heading5_responsive: calc(var(--windowH)/100 * 2.25);
   --heading5_min: 1.15rem;
-  --heading5_max: 3svh;
+  --heading5_max: calc(var(--windowH)/100 * 3);
 
-  --heading6_responsive: 2svh;
+  --heading6_responsive: calc(var(--windowH)/100 * 2);
   --heading6_min: 1rem;
-  --heading6_max: 2.6svh;
+  --heading6_max: calc(var(--windowH)/100 * 2.6);
 
   /* 🐸 DERIVED COLOURS */
   --link_color: var(--white);

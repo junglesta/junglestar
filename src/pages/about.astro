@@ -1,9 +1,8 @@
 ---
 // src/pages/projects.astro
 import Layout from "@layouts/Layout.astro";
-import Ani from "@components/UI/AnimHeader2OffWhite.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
-
+import Icono from "@svgs/what.svg";
 import WorksCard from "@components/brand/WorksCard.astro";
 import projectsData from "@data/works.json";
 
@@ -43,16 +42,17 @@ const projects = projectsData.sort(
   bodyClass="about bg_white"
   background="--white"
 >
-  <Ani>
+  <Fragment slot="inside_header">
     <LandingScreen
-      overtitle_line1={overtitle_line1}
       title={title_start}
+      overtitle_line1={overtitle_line1}
       onScroll_line1={onScroll_line1}
       onScroll_line2={onScroll_line2}
-      onScroll_line3={onScroll_line3}
       onScroll_line4={onScroll_line4}
-    />
-  </Ani>
+    >
+      <Icono width={133} height={133} fill="currentColor" />
+    </LandingScreen>
+  </Fragment>
 
   <div class="wrap vpad">
     <details class="">

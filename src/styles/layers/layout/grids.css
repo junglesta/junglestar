@@ -22,7 +22,7 @@
     calc(var(--windowH) * 1);
   place-content: stretch center;
   gap: 1rem;
-  padding: 1rem;
+  padding-block: var(--space_block);
 
   height: calc(var(--windowH) * 2);
   padding-block: calc(var(--space_block) * 2);

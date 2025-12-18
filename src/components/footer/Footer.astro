@@ -17,10 +17,10 @@ const currentYear = new Date().getFullYear();
 <style>
   .footer_wrap {
     width: 100%;
-    min-height: var(--viewport_height);
+    min-height: var(--windowH);
+    margin-top: calc(var(--space_block) * 5);
     padding-top: var(--space_block);
     padding-bottom: 0;
-    padding-inline: var(--space_inline);
     color: inherit;
     display: grid;
     place-content: center;
@@ -37,13 +37,6 @@ const currentYear = new Date().getFullYear();
     }
   }
 
-  .footer_site {
-    display: grid;
-    place-content: center;
-    gap: var(--space_inline);
-    padding-bottom: 1rem;
-    margin-top: calc(var(--space_block) * 5);
-  }
   .copy {
     text-align: center;
   }

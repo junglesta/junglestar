@@ -1,10 +1,8 @@
 ---
 //pages/discoverability.astro
 import Layout from "@layouts/Layout.astro";
-import Ani from "@components/UI/AnimHeader2Black.astro";
-import Wave from "@components/UI/Wave.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
-
+import Icono from "@svgs/what.svg";
 import Gmap from "@components/brand/Gmap.astro";
 
 // Page metadata
@@ -39,22 +37,24 @@ const description =
   bodyClass="discoverablity bg_black"
   background="--black"
 >
-  <Ani>
+  <Fragment slot="inside_header">
     <LandingScreen
+      title={title_start}
       overtitle_line1={overtitle_line1}
       overtitle_line2={overtitle_line2}
       overtitle_line3={overtitle_line3}
-      title={pageTitle}
       onScroll_line1={onScroll_line1}
       onScroll_line2={onScroll_line2}
       onScroll_line3={onScroll_line3}
       onScroll_line4={onScroll_line4}
       onScroll_line5={onScroll_line5}
       onScroll_line6={onScroll_line6}
-    />
-  </Ani>
+    >
+      <Icono width={133} height={133} fill="currentColor" />
+    </LandingScreen>
+  </Fragment>
 
   <Gmap />
 
-  <div class="space8"></div>
+  <div class="margin5bottom"></div>
 </Layout>

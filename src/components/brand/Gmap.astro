@@ -4,10 +4,6 @@ import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
 ---
 
 <style>
-  :root {
-    --space_inline: calc(1.25em * 2);
-  }
-
   .selling_gmap {
     margin: 0 auto;
     padding-bottom: calc(var(--space_block) * 5);
@@ -107,11 +103,11 @@ import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
           </ul>
         </div>
       </div>
+
+      <CTAMailBanner
+        subject="Send me more infos about Junglestar's Google Map package"
+        text="Want the details?"
+      />
     </div>
   </header>
-
-  <CTAMailBanner
-    subject="Send me more infos about Junglestar's Google Map package"
-    text="Want the details?"
-  />
 </section>

@@ -1,8 +1,7 @@
 ---
 //pages/content.astro
 import Layout from "@layouts/Layout.astro";
-import Ani from "@components/UI/AnimHeader2Black.astro";
-import Wave from "@components/UI/Wave.astro";
+import Icono from "@svgs/what.svg";
 import LandingScreen from "@components/UI/LandingScreen.astro";
 
 import SocialMediaManagement from "@components/brand/SocialMediaManagement.astro";
@@ -58,7 +57,9 @@ const description =
       onScroll_line4={onScroll_line4}
       onScroll_line5={onScroll_line5}
       onScroll_line6={onScroll_line6}
-    />
+    >
+      <Icono width={133} height={133} fill="currentColor" />
+    </LandingScreen>
   </Fragment>
 
   <div class="wrap">
@@ -73,5 +74,5 @@ const description =
 
   <SocialMediaManagement />
 
-  <div class="space8"></div>
+  <div class="margin5bottom"></div>
 </Layout>

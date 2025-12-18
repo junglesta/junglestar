@@ -10,7 +10,7 @@
 .page_content {
   padding: 0 0 calc(var(--space_block) * 2);
   background-color: var(--background_color);
-  min-height: 76svh; /* Keep as specific viewport based */
+  min-height: var(--windowH);
 }
 
 .post_image,

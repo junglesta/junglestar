@@ -8,8 +8,16 @@
 .relative {
   position: relative;
 }
-.space8 {
+.margin5bottom {
   margin-bottom: 8rem;
+}
+
+.margin5bottom {
+  margin-bottom: 5rem;
+}
+
+.margin3bottom {
+  margin-bottom: 3rem;
 }
 
 .txt_white_on_black {

@@ -1,7 +1,6 @@
 ---
 // src/layouts/Layout.astro
 import LastPub from "@components/shared/LastPublished.astro";
-import ViewportHeight from "@components/shared/ViewportHeight.astro";
 import Footer from "@components/footer/Footer.astro";
 import Head from "@components/heads/Head.astro";
 import * as siteData from "@data/site.json";
@@ -44,7 +43,6 @@ const {
 
   <body class={bodyClass} style={`background-color: var(${background})`}>
     <LastPub />
-    <ViewportHeight />
     <header>
       <slot name="inside_header" />
     </header>

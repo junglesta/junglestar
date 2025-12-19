@@ -7,10 +7,6 @@
   /*🐸 JS ASSISTED, UNIVERSAL, DYN WIN SETTINGS */
   /* LEGACY FALLBACK */
   --windowH: 100svh;
-  /* MODERN FALLBACK */
-  --windowH: var(--windowH);
-  /* JS-POWERED (WINS IF --vh EXISTS) */
-  --windowH: calc(var(--vh, 1svh) * 100);
 
   /*🐸 DYNAMIC SPACES */
   --space_block: 1.25rem;

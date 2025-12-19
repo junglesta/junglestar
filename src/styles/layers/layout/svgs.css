@@ -14,3 +14,7 @@ svg.brand_color {
 svg.white_color {
   stroke: var(--white);
 }
+
+.icon--share {
+  width: 35svw;
+}

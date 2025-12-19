@@ -34,16 +34,12 @@ const {
 } = Astro.props;
 ---
 
-<style>
-  /*@view-transition {
+<!-- <style>
+  @view-transition {
     navigation: auto;
-  }*/
-  .scrolling_body_wrap {
   }
-</style>
-
+</style> -->
 <html lang="en">
-  <!-- NO <html>??? HTML element get stripped by ASTRO, What??? WTF?! -->
   <Head title={title} description={description} sitemap={sitemap} />
 
   <body class={bodyClass} style={`background-color: var(${background})`}>
@@ -67,6 +63,15 @@ const {
 
     <!-- Processed script: handles imports -->
     <script>
+      import { initPopipasta } from "@utils/popipasta";
+
+      document.addEventListener("astro:page-load", () => {
+        const { brand, url } = (window as any).__SITE_DATA__;
+        initPopipasta(brand, url);
+      });
+    </script>
+
+    <script>
       //Smooth scroll to target
       document.addEventListener("DOMContentLoaded", function () {
         const scrollButton = document.querySelector(".clickScrollTrigger");
@@ -85,15 +90,6 @@ const {
             target: !!scrollTarget,
           });
         }
-      });
-    </script>
-
-    <script>
-      import { initPopipasta } from "@utils/popipasta";
-
-      document.addEventListener("astro:page-load", () => {
-        const { brand, url } = (window as any).__SITE_DATA__;
-        initPopipasta(brand, url);
       });
     </script>
 

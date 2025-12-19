@@ -24,18 +24,17 @@ function parseBold(text: string) {
     /*max-width: 60ch;*/
     margin: 0 auto;
     padding-block: calc(var(--space_block) * 5);
-    text-align: center;
   }
   .intro_meme {
     padding-block: calc(var(--space_block) * 8);
   }
-
+  /*
   .intro_memes:first-child {
     padding-block-start: 0;
   }
   .intro_memes:last-child {
     padding-block-end: 0;
-  }
+  }*/
 
   .content {
     text-align: left;
@@ -82,7 +81,6 @@ function parseBold(text: string) {
     display: block;
   }
   .tagline {
-    text-align: center;
     line-height: 1.1;
     padding-bottom: var(--space_block);
   }
@@ -90,56 +88,57 @@ function parseBold(text: string) {
   .intro_memes {
     color: var(--brand);
     p {
-      padding-top: var(--space_block);
-      border-bottom: 1px solid var(--brand_light);
-      padding-bottom: var(--space_block);
-    }
-
-    details[open] summary {
-      border-bottom-color: var(--brand_light);
+      padding-top: calc(var(--space_block) / 4);
     }
 
     details summary::after {
       display: block;
       padding-top: var(--space_block);
     }
+    details[open] summary {
+      padding-bottom: calc(var(--space_block) * 5);
+      border-bottom: 0 none;
+    }
   }
 
-  .wave.bottom {
-    background-color: var(--color);
+  .txt_white_on_black > * {
+    color: var(--white);
   }
 </style>
 
-<section class="intro_memes txt_white_on_black relative">
-  <Wave color="var(--black)" position="top" />
-  {
-    introItems.map((item) => (
-      <article class="intro_meme wrap " data-theme={item.data.theme}>
-        <div class="background_svg" set:html={getSvgRaw(item.data.image.src)} />
+<section class="intro_memes txt_white_on_black">
+  <div class="relative">
+    {
+      introItems.map((item) => (
+        <article class="intro_meme wrap " data-theme={item.data.theme}>
+          <div
+            class="background_svg"
+            set:html={getSvgRaw(item.data.image.src)}
+          />
 
-        <h1 class="h2 brand">{item.data.question}</h1>
+          <h1 class="h2 ">{item.data.question}</h1>
 
-        <h2 class="h4 ">{item.data.title}</h2>
-        <h3 class="h5 ">{item.data.subtitle}</h3>
-        <div class="content ">
-          <details>
-            <summary class="tagline">{item.data.tagline}</summary>
-            {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
-            {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
-            {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}
-            {item.data.p4 && <p set:html={parseBold(item.data.p4)} />}
-            {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
-            {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
+          <h2 class="h4 ">{item.data.title}</h2>
+          <h3 class="h5 ">{item.data.subtitle}</h3>
+          <div class="content ">
+            <details>
+              <summary class="tagline">{item.data.tagline}</summary>
+              {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
+              {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
+              {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}
+              {item.data.p4 && <p set:html={parseBold(item.data.p4)} />}
+              {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
+              {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
 
-            <CTABanner
-              text={item.data.cta}
-              link={item.data.link}
-              linkClass={item.data.theme}
-            />
-          </details>
-        </div>
-      </article>
-    ))
-  }
-  <Wave color="var(--black)" position="bottom" />
+              <CTABanner
+                text={item.data.cta}
+                link={item.data.link}
+                linkClass={item.data.theme}
+              />
+            </details>
+          </div>
+        </article>
+      ))
+    }
+  </div>
 </section>

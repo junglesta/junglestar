@@ -27,6 +27,19 @@ const {
 } = Astro.props;
 ---
 
+<style>
+  .icono {
+    padding-block: var(--space_block);
+    display: block;
+    width: 200px;
+    max-width: 25svw;
+    svg {
+      width: initial !important;
+      height: initia !important;
+    }
+  }
+</style>
+
 <div class="grida pretty_heading wrap">
   <Logo />
   <h1 class="brand_name right clickScrollTrigger">{title}</h1>

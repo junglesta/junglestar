@@ -39,10 +39,6 @@
   > * {
     padding-bottom: calc(var(--space_block) / 3.75);
   }
-  .icono {
-    max-width: 45svw;
-    margin-inline: auto;
-  }
 }
 
 .grid_main {

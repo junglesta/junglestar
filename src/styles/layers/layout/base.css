@@ -3,6 +3,12 @@
 ONLY BASE SEMANTIC ELEMENTS HERE,
 .classes go into /layout/classes.css
 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   background-color: #fff;
 }

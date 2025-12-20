@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config'
@@ -13,6 +13,17 @@ export default defineConfig({
   scopedStyleStrategy: "where",
 
   experimental: {
+    fonts: [
+      {
+        provider: fontProviders.google(),
+        name: "Source Sans 3", // variable range
+        weights: [100, 900],
+        cssVariable: "--font_variable",
+        fallbacks: [
+          "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;",
+        ],
+      },
+    ],
     chromeDevtoolsWorkspace: true,
     svgo: {
       floatPrecision: 3,

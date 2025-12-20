@@ -24,23 +24,32 @@ h6,
   h3,
   h4,
   h5,
-  h6 {
-    font-weight: var(--weight);
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    font-weight: var(--weight_thin);
   }
 }
 
-@media (min-width: 800px) {
+/*@media (min-width: 800px) {
   h1,
   h2,
   h3 {
     font-weight: var(--weight_thin);
   }
-}
+}*/
 
 @media (min-width: 1024px) {
   h1,
   h2,
-  h3 {
+  h3,
+  .h1,
+  .h2,
+  .h3 {
     font-weight: var(--weight_thinner);
   }
 }

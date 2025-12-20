@@ -92,6 +92,8 @@
   --font_clamp: clamp(18px, 18px + 0.3svw, 28px);
   --font_rem: 18px;
   --line_height: 1.5;
+  --weight_thinner: 100;
+  --weight_thin: 200;
   --weight: 300;
   --weight_med: 400;
   --weight_bold: 600;

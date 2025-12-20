@@ -1,7 +1,7 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "2.21.1",
+  "version": "2.21.2",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
@@ -27,5 +27,5 @@
     "sharp": "^0.34.5",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@10.25.0"
+  "packageManager": "pnpm@10.26.1"
 }

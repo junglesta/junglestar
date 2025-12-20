@@ -1,0 +1,68 @@
+---
+// Modal.astro
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
+---
+
+<a href="#" class="modal-trigger" data-modal={id}>
+  <slot name="trigger" />
+</a>
+
+<dialog id={id}>
+  <a href="#" class="close-modal" aria-label="Close">&times;</a>
+  <slot />
+</dialog>
+
+<style>
+  dialog {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    width: fit-content;
+    height: fit-content;
+    max-width: min(90vw, 600px);
+    max-height: 90vh;
+    overflow: auto;
+  }
+
+  dialog::backdrop {
+    background: rgba(255, 255, 255, 0.55);
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    line-height: 1;
+  }
+</style>
+
+<script>
+  document.querySelectorAll(".modal-trigger[data-modal]").forEach((trigger) => {
+    const modalId = (trigger as HTMLElement).dataset.modal;
+    const dialog = document.getElementById(modalId!) as HTMLDialogElement;
+    const closeBtn = dialog?.querySelector(".close-modal");
+
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      dialog?.showModal();
+    });
+
+    closeBtn?.addEventListener("click", (e) => {
+      e.preventDefault();
+      dialog.close();
+    });
+
+    dialog?.addEventListener("click", (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+  });
+</script>

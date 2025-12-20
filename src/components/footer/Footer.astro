@@ -1,10 +1,11 @@
 ---
 // src/components/footer/Footer.astro
-import Carbon from "@components/UI/Carbon.astro";
+import Carbon from "@components/brand/Carbon.astro";
 import Contactlinks from "@components/UI/ContactLinks.astro";
 import License from "@components/brand/License.astro";
 import Logo from "@components/brand/Logo.astro";
 import Nav from "@components/shared/Nav.astro";
+import Modal from "@components/UI/Modal.astro";
 import * as siteData from "@data/site.json";
 
 const currentYear = new Date().getFullYear();
@@ -53,14 +54,13 @@ const currentYear = new Date().getFullYear();
   <Contactlinks />
   <Nav />
 
-  <details class="">
-    <summary class="copy">
+  <Modal id="brand-details">
+    <span slot="trigger">
       &copy; 2012-{currentYear}
-      {siteData.brand}.org
-    </summary>
-    <div class="details_reveal pretty">
-      <Carbon />
-      <License />
-    </div>
-  </details>
+      {siteData.brand}.org <span>&nbsp;+</span>
+    </span>
+
+    <Carbon />
+    <License />
+  </Modal>
 </footer>

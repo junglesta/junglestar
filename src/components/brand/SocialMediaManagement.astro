@@ -1,7 +1,11 @@
 ---
 //SocialMediaManagement.astro
 import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
-import Wave from "@components/UI/Wave.astro";
+import IG from "@svgs/svg_brands/instagram.svg";
+import TT from "@svgs/svg_brands/tiktok.svg";
+import F from "@svgs/svg_brands/facebook.svg";
+import Share from "@svgs/share.svg";
+import YT from "@svgs/svg_brands/youtube.svg";
 ---
 
 <style>
@@ -15,95 +19,47 @@ import Wave from "@components/UI/Wave.astro";
   <div class="mean_title mean_title--first">
     <div class="wrap flex flex_cols flex_align_center flex_justify_center">
       <div class="mean_icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0.14 841.445 400 400"
-          class="white_color outlined icon--share"
-        >
-          <path
-            d="M314.598 1119.047c-14.498 0-27.47 5.723-37.39 14.688l-136.013-79.166c.953-4.388 1.715-8.776 1.715-13.354 0-4.579-.763-8.966-1.715-13.354l134.488-78.403c10.301 9.539 23.845 15.452 38.915 15.452 31.666 0 57.229-25.562 57.229-57.229 0-31.666-25.563-57.229-57.229-57.229-31.667 0-57.229 25.562-57.229 57.229 0 4.579.763 8.967 1.716 13.354l-134.488 78.404c-10.302-9.54-23.846-15.452-38.916-15.452-31.666 0-57.228 25.562-57.228 57.229s25.562 57.229 57.228 57.229c15.07 0 28.614-5.914 38.916-15.451l135.824 79.358c-.954 4.006-1.527 8.201-1.527 12.398 0 30.712 24.99 55.703 55.703 55.703s55.703-24.991 55.703-55.703-24.989-55.703-55.702-55.703z"
-          ></path>
-        </svg>
+        <Share fill="none" width="200" />
       </div>
-      <h1 class="center">Social media power for your brand?</h1>
+      <h1 class="center brand">Social media power for your brand?</h1>
     </div>
   </div>
 
   <div class="mean_title mean_title--second">
     <div class="wrap flex flex_cols flex_align_center flex_justify_center">
       <div class="mean_icon four_icon_group">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 400 400"
-          class="brand_color outlined icon--instagram"
-        >
-          <path
-            d="M283.999 395.005h-168C54.789 395.005 5 345.21 5 284V115.997C5 54.788 54.789 4.995 115.999 4.995h168C345.203 4.995 395 54.788 395 115.997V284c0 61.21-49.797 111.005-111.001 111.005zm-168-356.576c-42.772 0-77.571 34.794-77.571 77.567V284c0 42.776 34.798 77.571 77.571 77.571h168c42.777 0 77.575-34.795 77.575-77.571V115.997c0-42.773-34.798-77.567-77.575-77.567h-168z"
-          ></path>
-          <path
-            d="M200.001 299.854c-55.06 0-99.859-44.79-99.859-99.855 0-55.056 44.799-99.86 99.859-99.86 55.064 0 99.863 44.804 99.863 99.86.001 55.064-44.798 99.855-99.863 99.855zm0-166.288c-36.627 0-66.427 29.804-66.427 66.432 0 36.63 29.799 66.429 66.427 66.429 36.63 0 66.435-29.799 66.435-66.429 0-36.627-29.805-66.432-66.435-66.432zM328.143 94.426c0 13.256-10.74 23.996-23.995 23.996-13.26 0-23.999-10.74-23.999-23.996s10.739-23.996 23.999-23.996c13.255.001 23.995 10.74 23.995 23.996z"
-          ></path>
-        </svg>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="100"
-          height="100"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="0.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-facebook"
-          ><path
-            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-          >
-          </path>
-        </svg>
-
-        <svg
-          stroke-width="0.5"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          color="currentColor"
-          ><path
-            d="M14 12L10.5 14V10L14 12Z"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="0.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"></path><path
-            d="M2 12.7075V11.2924C2 8.39705 2 6.94939 2.90549 6.01792C3.81099 5.08645 5.23656 5.04613 8.08769 4.96549C9.43873 4.92728 10.8188 4.8999 12 4.8999C13.1812 4.8999 14.5613 4.92728 15.9123 4.96549C18.7634 5.04613 20.189 5.08645 21.0945 6.01792C22 6.94939 22 8.39705 22 11.2924V12.7075C22 15.6028 22 17.0505 21.0945 17.9819C20.189 18.9134 18.7635 18.9537 15.9124 19.0344C14.5613 19.0726 13.1812 19.1 12 19.1C10.8188 19.1 9.43867 19.0726 8.0876 19.0344C5.23651 18.9537 3.81097 18.9134 2.90548 17.9819C2 17.0505 2 15.6028 2 12.7075Z"
-            stroke="currentColor"
-            stroke-width="0.5"></path>
-        </svg>
+        <IG fill="currentColor" width="200" />
+        <TT fill="currentColor" width="200" />
+        <F fill="currentColor" width="200" />
+        <YT fill="currentColor" width="200" />
       </div>
 
       <div class="flex-wrap-reverse">
-        <h2 class="h3 center">
+        <h2 class="h1 center">
           We build your image through social engagement!
         </h2>
-        <h3 class="center">
-          Instagram, YouTube, Facebook, LinkedIn, GoogleMap...
-          <small>
-            <br />First we strategize goals & audience together, then...
-            <br />We'll target and engage <strong> real active users. </strong>
-            <br />We'll build your brand,
-            <br />authentically growing your audience.
-            <br />We'll direct traffic to your site/shop
-            <br />leveraging the smartest tools for thought and platform
-            dynamics.
-          </small>
+        <h3 class="h2 center">
+          Instagram, TikTok, YouTube, Facebook, LinkedIn, GoogleMap...
         </h3>
+        <ul>
+          <li>First we strategize goals & audience together, then...</li>
+
+          <li>
+            We'll target and engage <strong> real active users. </strong>
+          </li>
+          <li>We'll build your brand, authentically growing your audience.</li>
+          <li>
+            We'll direct traffic to your site/shop <br />leveraging the smartest
+            tools for thought and platform dynamics.
+          </li>
+        </ul>
       </div>
-
-      <!-- <div class="space_block">&nbsp;</div> -->
-
-      <CTAMailBanner
-        subject="Send me more infos about Junglestar's Social Media Management package"
-      />
     </div>
+
+    <!-- <div class="space_block">&nbsp;</div> -->
+
+    <CTAMailBanner
+      subject="Send me more infos about Junglestar's Social Media Management package"
+    />
   </div>
 </div>

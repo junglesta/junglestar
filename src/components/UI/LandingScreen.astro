@@ -38,11 +38,17 @@ const {
       height: initia !important;
     }
   }
+
+  .huge {
+    font-size: clamp(64px, 15svw, 99px);
+    overflow: hidden;
+    font-weight: 100;
+  }
 </style>
 
 <div class="grida pretty_heading wrap">
   <Logo />
-  <h1 class="brand_name right clickScrollTrigger">{title}</h1>
+  <h1 class="brand_name huge right clickScrollTrigger">{title}</h1>
 
   <div class="title_wrap h2 clickScrollTrigger">
     <div class="overline line1">{overtitle_line1}</div>

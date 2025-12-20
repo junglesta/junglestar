@@ -11,7 +11,8 @@
   color: var(--white);
 }
 
-body.index {
+body.index,
+body.content {
   .on_scroll_msg > * {
     color: var(--brand_lightest);
   }

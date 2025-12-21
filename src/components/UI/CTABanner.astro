@@ -15,7 +15,7 @@ const { link = "/", title = "back home", text = "J", linkClass } = Astro.props;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 3rem;
+    padding-block: var(--space_block);
     text-transform: uppercase;
   }
   @media (min-width: 600px) {

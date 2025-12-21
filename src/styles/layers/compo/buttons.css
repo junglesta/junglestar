@@ -51,8 +51,8 @@
 
 .CTAbutton {
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  place-content: center;
   svg {
     width: max-content;
   }

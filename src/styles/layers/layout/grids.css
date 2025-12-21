@@ -15,16 +15,12 @@
 .grida {
   position: initial;
   display: grid;
-  grid-template-rows:
-    calc(var(--windowH) * 0.333) calc(var(--windowH) * 0.333) calc(
-      var(--windowH) * 0.333
-    )
-    calc(var(--windowH) * 1);
+  grid-template-rows: 33svh 33svh 33svh 100vh;
   place-content: stretch center;
   gap: 1rem;
   padding-block: var(--space_block);
 
-  height: calc(var(--windowH) * 2);
+  height: 200vh;
   padding-block: calc(var(--space_block) * 2);
   .brand_name {
     align-self: center;
@@ -35,7 +31,7 @@
 .on_scroll_msg {
   place-self: end center;
   position: relative;
-  top: calc(var(--windowH) / 4 * -1);
+  top: calc(25svh * -1);
   > * {
     padding-bottom: calc(var(--space_block) / 3.75);
   }

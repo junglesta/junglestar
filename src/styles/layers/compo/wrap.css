@@ -23,7 +23,7 @@
 .page_content {
   padding: 0 0 calc(var(--space_block) * 2);
   background-color: var(--background_color);
-  min-height: var(--windowH);
+  min-height: 100svh;
 }
 
 /*🐸NO SELECT | user-select: none; */

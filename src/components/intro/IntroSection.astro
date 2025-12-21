@@ -104,6 +104,10 @@ function parseBold(text: string) {
   .txt_white_on_black > * {
     color: var(--white);
   }
+
+  .cta.button.superstition {
+    color: red;
+  }
 </style>
 
 <section class="intro_memes txt_white_on_black">
@@ -117,9 +121,9 @@ function parseBold(text: string) {
           />
 
           <h1 class="h2 ">{item.data.question}</h1>
-
           <h2 class="h4 ">{item.data.title}</h2>
           <h3 class="h5 ">{item.data.subtitle}</h3>
+
           <div class="content ">
             <details>
               <summary class="tagline">{item.data.tagline}</summary>

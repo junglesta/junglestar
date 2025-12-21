@@ -1,6 +1,21 @@
 /* ========================================
    FILE: src/styles/layers/utilities.css
    ======================================== */
+
+.current_stroke {
+  fill: none;
+  stroke: currentColor;
+}
+
+.current_fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.current_color {
+  color: currentColor;
+}
+
 .right {
   text-align: right;
 }
@@ -85,7 +100,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: var(--windowH);
+  min-height: 100svh;
 }
 .small_text {
   font-size: 85% !important;
@@ -180,7 +195,7 @@
 
 /*🐸 Layout utilities */
 .full_height {
-  min-height: var(--windowH);
+  min-height: 100svh;
 }
 
 /*🐸 Print only - hidden on screen */

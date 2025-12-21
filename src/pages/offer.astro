@@ -4,7 +4,7 @@ import Gmap from "@components/brand/Gmap.astro";
 import SlowWebsite from "@components/brand/SlowWebsite.astro";
 import Icono from "@svgs/feather.svg";
 import LandingScreen from "@components/UI/LandingScreen.astro";
-import CTAButton from "@components/UI/CTAButton.astro";
+import CTAButton from "@components/UI/CTAMailBanner.astro";
 
 import { getCollection } from "astro:content";
 // Fetch all offers from the collection
@@ -276,17 +276,14 @@ const description =
                   See Demo.
                 </p>
               </div>
-
-              <footer class="offer_footer">
-                <CTAButton
-                  subject={`Send me more infos about Junglestar's ${data.name} package`}
-                />
-              </footer>
             </div>
           );
         })
       }
     </div>
+    <footer class="offer_footer">
+      <CTAButton subject={`Send me more infos about Junglestar's packages`} />
+    </footer>
   </div>
 
   <Gmap />

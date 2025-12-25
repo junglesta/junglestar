@@ -21,22 +21,15 @@ function parseBold(text: string) {
 
 <style>
   .intro_memes {
-    /*max-width: 60ch;*/
     margin: 0 auto;
     padding-block: calc(var(--space_block) * 8);
   }
+
   .intro_meme {
     padding-block: calc(var(--space_block) * 8);
   }
-  /*
-  .intro_memes:first-child {
-    padding-block-start: 0;
-  }
-  .intro_memes:last-child {
-    padding-block-end: 0;
-  }*/
 
-  .content {
+  .intro_content {
     text-align: left;
     position: relative;
     z-index: 1;
@@ -116,7 +109,7 @@ function parseBold(text: string) {
       introItems.map((item) => (
         <article class="intro_meme wrap " data-theme={item.data.theme}>
           <div
-            class="background_svg aninatio_slide_pulse"
+            class="background_svg animatio_slide_pulse"
             set:html={getSvgRaw(item.data.image.src)}
           />
 
@@ -124,7 +117,7 @@ function parseBold(text: string) {
           <h2 class="h4 ">{item.data.title}</h2>
           <h3 class="h5 ">{item.data.subtitle}</h3>
 
-          <div class="content ">
+          <div class="intro_content ">
             <details>
               <summary class="tagline">{item.data.tagline}</summary>
               {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}

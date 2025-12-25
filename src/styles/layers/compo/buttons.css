@@ -20,10 +20,12 @@
   cursor: pointer;
   color: var(--brand);
   transform: scale(1.025);
+  transform-origin: center;
 }
 
 .button:active {
-  transform: translateY(calc(var(--space_block) * 0.145)); /* was 0.4svh */
+  transform: translateY(calc(var(--space_block) * 0.145));
+  transform-origin: center;
 }
 
 .button_dark {

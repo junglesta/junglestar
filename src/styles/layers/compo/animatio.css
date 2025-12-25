@@ -17,29 +17,6 @@
   }
 }
 
-.animatioBIG {
-  transform-origin: center top; /* shrinks toward top */
-  /* or: transform-origin: center center; (default) */
-
-  animation: shrink-then-fade linear both;
-  animation-timeline: view();
-  animation-range: cover;
-}
-@keyframes shrink-then-fade {
-  0% {
-    opacity: 1;
-    transform: scale(2.5);
-  }
-  40% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-}
-
 .animatioSLIDE {
   animation: slide-through-big linear both;
   animation-timeline: view();
@@ -54,36 +31,6 @@
   30% {
     transform: translateX(0) scale(1.5);
     opacity: 1;
-  }
-  70% {
-    transform: translateX(0) scale(1.5);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(100%) scale(1.5);
-    opacity: 0;
-  }
-}
-
-.animatio_slide_pulseOLD {
-  animation: slide-pulse-slideOLD linear both;
-  animation-timeline: view();
-  animation-range: cover;
-}
-
-@keyframes slide-pulse-slideOLD {
-  0% {
-    transform: translateX(-100%) scale(1.5);
-    opacity: 0;
-  }
-  30% {
-    transform: translateX(0) scale(1.5);
-    opacity: 1;
-    animation-timing-function: ease-in-out;
-  }
-  50% {
-    transform: translateX(0) scale(2);
-    animation-timing-function: ease-in-out;
   }
   70% {
     transform: translateX(0) scale(1.5);
@@ -114,4 +61,113 @@
     transform: translateX(100%) scale(1);
     opacity: 0;
   }
+}
+
+/*GRADIENT ANIMATIONS*/
+
+@keyframes gradient {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+.about header {
+  background: radial-gradient(
+    circle,
+    var(--jgreen_light),
+    var(--jgreen),
+    var(--jgreen_light),
+    var(--jgreen)
+  );
+  background-size: 350% 1200%;
+  animation: gradient 49s ease-in-out infinite !important;
+}
+
+.about footer {
+  background: radial-gradient(
+    circle,
+    var(--jgreen_light),
+    var(--brand_light),
+    var(--jgreen),
+    var(--jgreen_light)
+  );
+  background-size: 350% 1200%;
+  animation: gradient 33s ease-in-out infinite !important;
+}
+.offer footer:not(.offer_footer) {
+  background: radial-gradient(
+    circle,
+    var(--white),
+    var(--brand_light),
+    var(--white)
+  );
+  background-size: 350% 1200%;
+  animation: gradient 33s ease-in-out infinite !important;
+}
+
+.discoverablity footer {
+  background: radial-gradient(
+    circle,
+    var(--brand_dark),
+    var(--brand_dark),
+    var(--brand),
+    var(--brand_dark)
+  );
+  background-size: 350% 1200%;
+  animation: gradient 33s ease-in-out infinite !important;
+}
+
+.content footer {
+  background: radial-gradient(
+    circle,
+    var(--jorange),
+    var(--jorange_light),
+    var(--jorange_dark)
+  );
+  background-size: 350% 1200%;
+  animation: gradient 33s ease-in-out infinite !important;
+}
+
+.index footer {
+  background: radial-gradient(
+    circle,
+    var(--brand),
+    var(--brand_dark),
+    var(--brand),
+    var(--brand_dark)
+  );
+  background-size: 350% 1200%;
+  animation: gradient 39s ease-in-out infinite !important;
+}
+
+.index header {
+  background: radial-gradient(
+    circle,
+    var(--brand),
+    var(--brand_dark),
+    var(--brand),
+    var(--brand_dark)
+  );
+  background-size: 350% 1200%;
+  animation: gradient 39s ease-in-out infinite !important;
+}
+
+.design footer {
+  background: radial-gradient(
+    circle,
+    var(--brand),
+    var(--brand_light),
+    var(--brand_lighter),
+    var(--brand_light),
+    var(--brand_lighter),
+    var(--brand)
+  );
+  background-size: 250% 1200%;
+  animation: gradient 28s ease-in-out infinite !important;
 }

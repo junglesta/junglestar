@@ -31,12 +31,19 @@ const description =
   h1 {
     color: var(--black);
   }
+
+  body.bg_brand_light :global(.button) {
+    background-color: var(--whiteT10);
+  }
+  body.bg_brand_light :global(.button:hover) {
+    background-color: var(--whiteT25);
+  }
 </style>
 
 <Layout
   title={title}
   description={description}
-  bodyClass="design "
+  bodyClass="design bg_brand_light"
   mainClass="bg_white "
   background="--brand_light"
 >
@@ -58,6 +65,7 @@ const description =
     <TableOfContents posts={posts} />
     <PostsGridMDX posts={posts} />
   </div>
-  <CTAMailBanner subject="Send more infos about Junglestar's Design" />
-  <div class="margin5bottom"></div>
+  <div class="banner_wrap">
+    <CTAMailBanner subject="Send more infos about Junglestar's Design" />
+  </div>
 </Layout>

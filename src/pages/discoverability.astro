@@ -29,6 +29,13 @@ const description =
   h1 {
     color: var(--black);
   }
+
+  body.bg_black :global(.button) {
+    background-color: var(--blackT10);
+  }
+  body.bg_black :global(.button:hover) {
+    background-color: var(--blackT15);
+  }
 </style>
 
 <Layout
@@ -56,6 +63,4 @@ const description =
   </Fragment>
 
   <Gmap />
-
-  <div class="margin5bottom"></div>
 </Layout>

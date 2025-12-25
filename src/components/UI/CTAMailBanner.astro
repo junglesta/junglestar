@@ -1,6 +1,7 @@
 ---
 // CTAMailBanner.astro
 import * as siteData from "@data/site.json";
+import IconMail from "@svgs/mail.svg";
 
 interface Props {
   email?: string;
@@ -23,7 +24,7 @@ const {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 3rem;
+    padding-block: calc(--var(--space_block) * 3);
     text-transform: uppercase;
   }
   @media (min-width: 600px) {
@@ -35,21 +36,9 @@ const {
   .CTAMailBanner .button {
     display: inline-flex;
     align-items: center;
-    gap: 0.5em;
-  }
-
-  .CTAMailBanner .button::after {
-    content: "";
-    display: block;
-    width: 1.2em;
-    height: 1.2em;
-    background-color: currentColor;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='16' rx='2'/%3E%3Cpath d='m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7'/%3E%3C/svg%3E");
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='4' width='20' height='16' rx='2'/%3E%3Cpath d='m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7'/%3E%3C/svg%3E");
-    mask-size: contain;
-    -webkit-mask-size: contain;
-    mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
+    justify-content: space-evenly;
+    gap: calc(var(--space_block) / 1);
+    padding-inline: 15px 5px;
   }
 </style>
 <div class="CTAMailBanner">
@@ -58,5 +47,6 @@ const {
     href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}
   >
     {text}
+    <IconMail size={12} stroke="currentColor" />
   </a>
 </div>

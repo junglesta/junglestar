@@ -40,6 +40,25 @@ const description =
     --brand: var(--jorange_dark);
     background-color: var(--jorange_dark);
   }
+  body.bg_orange :global(.button:hover) {
+    background-color: var(--white);
+  }
+  body.bg_orange :global(.button) {
+    background-color: var(--jorange_dark);
+    color: var(--white);
+    border: 2px solid var(--white);
+  }
+  body.bg_orange :global(.button:hover) {
+    background-color: var(--whiteT15);
+    color: var(--jorange_dark);
+    border: 2px solid var(--jorange_dark);
+  }
+
+  body.bg_orange :global(footer .button) {
+    background-color: var(--whiteT10);
+    /*color: var(--white);*/
+    border: 2px solid var(--black);
+  }
 </style>
 
 <Layout
@@ -77,6 +96,4 @@ const description =
   <div class="space_block"></div>
 
   <SocialMediaManagement />
-
-  <div class="margin5bottom"></div>
 </Layout>

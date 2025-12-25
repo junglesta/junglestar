@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import CTABanner from "@components/UI/CTABanner.astro";
-import Wave from "@components/UI/Wave.astro";
+// import Wave from "@components/UI/Wave.astro";
 const introItems = await getCollection("introJ");
 const svgRaw = import.meta.glob("/src/assets/intro/*.svg", {
   query: "?raw",
@@ -23,7 +23,7 @@ function parseBold(text: string) {
   .intro_memes {
     /*max-width: 60ch;*/
     margin: 0 auto;
-    padding-block: calc(var(--space_block) * 5);
+    padding-block: calc(var(--space_block) * 8);
   }
   .intro_meme {
     padding-block: calc(var(--space_block) * 8);
@@ -116,7 +116,7 @@ function parseBold(text: string) {
       introItems.map((item) => (
         <article class="intro_meme wrap " data-theme={item.data.theme}>
           <div
-            class="background_svg"
+            class="background_svg aninatio_slide_pulse"
             set:html={getSvgRaw(item.data.image.src)}
           />
 

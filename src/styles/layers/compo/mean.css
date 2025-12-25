@@ -15,6 +15,7 @@
 
 .mean_icon {
   padding-top: 10px;
+  color: var(--brand);
 }
 
 .mean_icon.four_icon_group {

@@ -12,24 +12,23 @@
 
 .toc ul {
   padding: 0;
-  /*list-style-type: none;*/
   list-style-type: "→  ";
   list-style-position: outside;
 }
 
 .toc li:not(:hover)::marker {
-  color: var(--brand);
+  color: var(--black75);
   font-size: 75%;
 }
 .toc li:hover::marker {
   font-weight: 500;
   font-size: 75%;
-  color: var(--brand);
+  color: var(--black);
 }
 
 .toc li {
   a {
-    color: var(--brand);
+    color: var(--blackT50);
     text-decoration: none;
   }
   a::after {

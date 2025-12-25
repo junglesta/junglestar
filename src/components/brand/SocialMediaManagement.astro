@@ -6,11 +6,20 @@ import TT from "@svgs/svg_brands/tiktok.svg";
 import F from "@svgs/svg_brands/facebook.svg";
 import Share from "@svgs/share.svg";
 import YT from "@svgs/svg_brands/youtube.svg";
+
+export interface Props {
+  dominantColor?: string;
+}
+
+const { dominantColor = "--brand" } = Astro.props;
 ---
 
 <style>
   .brand_light {
     background-color: var(--brandT25);
+  }
+  .mean_icon {
+    color: var(--brand);
   }
 </style>
 <div
@@ -28,10 +37,10 @@ import YT from "@svgs/svg_brands/youtube.svg";
   <div class="mean_title mean_title--second">
     <div class="wrap flex flex_cols flex_align_center flex_justify_center">
       <div class="mean_icon four_icon_group">
-        <IG fill="currentColor" width="200" />
-        <TT fill="currentColor" width="200" />
-        <F fill="currentColor" width="200" />
-        <YT fill="currentColor" width="200" />
+        <IG fill="currentColor" width="200" height="200" />
+        <TT fill="currentColor" width="200" height="200" />
+        <F fill="currentColor" width="200" height="175" />
+        <YT fill="currentColor" width="200" height="200" />
       </div>
 
       <div class="flex-wrap-reverse">

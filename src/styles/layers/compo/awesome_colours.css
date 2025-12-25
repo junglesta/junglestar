@@ -1,7 +1,22 @@
+.bg_green {
+  background-color: var(--jgreen);
+  color: var(--white);
+}
+.bg_orange {
+  --brand: var(--jorange);
+  background-color: var(--jorange);
+  color: var(--black);
+}
+.bg_brand_light {
+  background-color: var(--bg_brand_light);
+  color: var(--black);
+}
+
 .bg_brand {
   background-color: var(--brand);
   color: var(--white);
 }
+
 .bg_white {
   background-color: var(--white);
   color: var(--black);

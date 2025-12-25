@@ -20,6 +20,7 @@
 @import "./layers/layout/strong.css" layer(layout);
 @import "./layers/layout/svgs.css" layer(layout);
 
+@import "./layers/compo/animatio.css" layer(components);
 @import "./layers/compo/awesome_colours.css" layer(components);
 @import "./layers/compo/buttons.css" layer(components);
 @import "./layers/compo/cards.css" layer(components);

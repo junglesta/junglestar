@@ -12,10 +12,6 @@ import { getMDXPosts } from "@utils/getMDXPosts";
 const posts = await getMDXPosts("designConcepts");
 
 // Page metadata
-//"Junglestar | Design, Sustainabilty!? Because Why?";
-//
-//
-
 const title_start = "Sustainable by design?";
 const title_end = " ";
 const title = title_start + " | " + title_end;
@@ -41,8 +37,8 @@ const description =
   title={title}
   description={description}
   bodyClass="design "
-  background="--brand_lighter"
-  mainClass="bg_white"
+  mainClass="bg_white "
+  background="--brand_light"
 >
   <Fragment slot="inside_header">
     <LandingScreen

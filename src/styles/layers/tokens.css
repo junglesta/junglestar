@@ -28,21 +28,31 @@
   --whiteT50: oklch(0.95 0.01 255 / 50%);
   --white_hover: var(--white);
 
-  --background_blackT75: rgba(0, 0, 0, 0.75);
-  --background_blackT50: rgba(0, 0, 0, 0.5);
-  --background_blackT30: rgba(0, 0, 0, 0.3);
-  --background_blackT15: rgba(0, 0, 0, 0.15);
-  --background_blackT10: rgba(0, 0, 0, 0.1);
-  --background_blackT05: rgba(0, 0, 0, 0.05);
+  --blackT75: rgba(0, 0, 0, 0.75);
+  --blackT50: rgba(0, 0, 0, 0.5);
+  --blackT30: rgba(0, 0, 0, 0.3);
+  --blackT15: rgba(0, 0, 0, 0.15);
+  --blackT10: rgba(0, 0, 0, 0.1);
+  --blackT05: rgba(0, 0, 0, 0.05);
   --background_whiteT15: rgba(255, 255, 255, 0.15);
 
-  /*--brand: #0069cc;*/
-  --brand: oklch(0.5286 0.1735 255 / 100%);
-  --brand_hex: #0169cc;
-  /*--brand_invert: #ff9633;*/
-  --brand_invert: oklch(0.7687 0.1641 58.66);
-  /*--brand_complementary: #cc6600;*/
-  --brand_complementary: oklch(0.6201 0.156454 53.4649);
+  /*---------------------------brand: #0069cc;--------------------------------*/
+  --brand: oklch(0.57 0.24 255 / 100%);
+  --brand_lighter: oklch(0.97 0.02 255);
+  --brand_light: oklch(0.78 0.13 255);
+  --brand_dark: oklch(0.3 0.13 255);
+  /*--  https://oklch.com/#0.5657569011826751,0.23750000000000004,255,100 --*/
+  /*-------------------------GREEN------------------------------------------*/
+  --jgreen_light: oklch(0.96 0.08 144);
+  --jgreen: oklch(0.74 0.31 144);
+  --jgreen_dark: oklch(0.54 0.22 144);
+  --jgreen_darker: oklch(0.29 0.12 144);
+  /*-------------------------ORANGE--------------------------------------------*/
+  --jorange_light: oklch(0.97 0.02 45);
+  --jorange: oklch(0.79 0.16 45);
+  --jorange_dark: oklch(0.58 0.19 45);
+  --jorange_darker: oklch(0.31 0.1 45);
+  /*----------------------TRANSPARENTS----------------------------------------*/
   --brandT25: oklch(0.5286 0.1735 255 / 25%);
   --brandT50: oklch(0.5286 0.1735 255 / 50%);
   --brandT75: oklch(0.5286 0.1735 255 / 75%);
@@ -54,11 +64,11 @@
   --brand_light: oklch(from var(--brand) calc(l + 0.1) c h);
   --brand_dark: oklch(from var(--brand) calc(l - 0.18) c h);
   */
-  --brand_lightest: oklch(0.8286 0.1735 255);
+  /*--brand_lightest: oklch(0.8286 0.1735 255);
   --brand_lighter: oklch(0.7286 0.1735 255);
   --brand_darker: oklch(0.3286 0.1735 255);
   --brand_light: oklch(0.6286 0.1735 255);
-  --brand_dark: oklch(0.4286 0.1735 255);
+  --brand_dark: oklch(0.4286 0.1735 255);*/
   --text_color: #111111;
   --grey_color: #212121;
   --grey_color_light: #878787;

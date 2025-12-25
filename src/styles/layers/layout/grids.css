@@ -6,7 +6,7 @@
   gap: var(--space_block) var(--space_inline);
 }
 
-@media (370px < width) {
+@media (width > 370px) {
   .grid_projects {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }

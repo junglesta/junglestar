@@ -1,0 +1,20 @@
+/*
+  https://harmonizer.evilmartians.com/#W1siMTAwIiwxMDAsbnVsbCwiNTAwIiw2MixudWxsLCI2NzUiLDY0LG51bGwsIjEwNDAiLDkyLG51bGxdLFsianN0YXIiLDI1NSwiamdyZWVuIiwxNDQsImpvcmFuZ2UiLDQ1XSxbImFwY2EiLCJmZ1RvQmciLCJtYXgiLCIjZjVmMmVlIiwiIzE2MTYxNiIsMiwicDMiXV0
+*/
+:root {
+  /*BLUE*/
+  --jstar-100: oklch(0.97 0.02 255);
+  --jstar-500: oklch(0.78 0.13 255);
+  --jstar-675: oklch(0.57 0.24 255); /*<<--DEFAULT JUNGLESTAR BLUE<<---*/
+  --jstar-1040: oklch(0.3 0.13 255);
+  /*GREEN*/
+  --jgreen-100: oklch(0.96 0.08 144);
+  --jgreen-500: oklch(0.74 0.31 144);
+  --jgreen-675: oklch(0.54 0.22 144);
+  --jgreen-1040: oklch(0.29 0.12 144);
+  /*ORANGE*/
+  --jorange-100: oklch(0.97 0.02 45);
+  --jorange-500: oklch(0.79 0.16 45);
+  --jorange-675: oklch(0.58 0.19 45);
+  --jorange-1040: oklch(0.31 0.1 45);
+}

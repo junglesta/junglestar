@@ -15,7 +15,7 @@
 }
 
 .post_title {
-  color: var(--brand);
+  /*color: var(--brand);*/
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }

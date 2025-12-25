@@ -6,12 +6,14 @@ interface Props {
   email?: string;
   subject?: string;
   text?: string;
+  linkClass?: string;
 }
 
 const {
   email = siteData.email,
   subject = "Send me more infos about Junglestar",
   text = "Let's start talking!",
+  linkClass = "transparent",
 } = Astro.props;
 ---
 
@@ -52,7 +54,7 @@ const {
 </style>
 <div class="CTAMailBanner">
   <a
-    class="button"
+    class:list={[linkClass, "cta", "button"]}
     href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}
   >
     {text}

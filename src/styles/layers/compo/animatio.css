@@ -1,0 +1,96 @@
+.animatio {
+  animation: fade-in-out linear both;
+  animation-timeline: view();
+  animation-range: cover;
+}
+
+@keyframes fade-in-out {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  25%,
+  75% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animatioBIG {
+  transform-origin: center top; /* shrinks toward top */
+  /* or: transform-origin: center center; (default) */
+
+  animation: shrink-then-fade linear both;
+  animation-timeline: view();
+  animation-range: cover;
+}
+@keyframes shrink-then-fade {
+  0% {
+    opacity: 1;
+    transform: scale(2.5);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.animatioSLIDE {
+  animation: slide-through-big linear both;
+  animation-timeline: view();
+  animation-range: cover;
+}
+
+@keyframes slide-through-big {
+  0% {
+    transform: translateX(-100%) scale(1.5);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(0) scale(1.5);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(0) scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.aninatio_slide_pulse {
+  animation: slide-pulse-slide linear both;
+  animation-timeline: view();
+  animation-range: cover;
+}
+
+@keyframes slide-pulse-slide {
+  0% {
+    transform: translateX(-100%) scale(1.5);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(0) scale(1.5);
+    opacity: 1;
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateX(0) scale(2);
+    animation-timing-function: ease-in-out;
+  }
+  70% {
+    transform: translateX(0) scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%) scale(1.5);
+    opacity: 0;
+  }
+}

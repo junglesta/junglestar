@@ -36,14 +36,18 @@ const description =
   h1 {
     color: var(--black);
   }
+  .mean_title.mean_title--second {
+    --brand: var(--jorange_dark);
+    background-color: var(--jorange_dark);
+  }
 </style>
 
 <Layout
   title={title}
   description={description}
-  bodyClass="content bg_brand"
-  mainClass="bg_white"
-  background="--brand"
+  bodyClass="content bg_orange"
+  mainClass="bg_orange"
+  background="--jorange"
 >
   <Fragment slot="inside_header">
     <LandingScreen

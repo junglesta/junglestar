@@ -48,7 +48,9 @@ const description =
   .offer_content :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
     color: var(--brand);
   }
-
+  .grid_offer_color {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
   .grid_offer {
     padding-block: calc(var(--space_block) * 2.33);
     padding-inline: calc(var(--space_inline) * 3);
@@ -59,14 +61,15 @@ const description =
     grid-template-rows: repeat(3, 1fr);
   }
 
-  @media (width > 600px) {
+  @media (width > 900px) {
     .grid_offer {
-      grid-template-rows: 1fr;
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
     }
   }
 
   .grid_offer_card {
+    background-color: var(--white);
     margin-block: calc(var(--space_block) / 2);
     padding-inline: calc(var(--space_inline) / 2);
     border: 1px var(--brand) solid;
@@ -137,13 +140,13 @@ const description =
   }
 
   .grid_offer_card:nth-child(1) {
-    background: oklch(from var(--brand_lightest) l c h / 11%);
+    background: var(--white);
   }
   .grid_offer_card:nth-child(2) {
-    background: oklch(from var(--brand_lightest) l c h / 47%);
+    background: var(--white);
   }
   .grid_offer_card:nth-child(3) {
-    background: oklch(from var(--brand_lightest) l c h / 31%);
+    background: var(--white);
   }
 
   .color_black {
@@ -217,7 +220,7 @@ const description =
     </div>
   </div>
 
-  <div class="offer_content">
+  <div class="offer_content grid_offer_color">
     <SlowWebsite />
     <div class="grid_offer">
       {
@@ -282,7 +285,10 @@ const description =
       }
     </div>
     <footer class="offer_footer">
-      <CTAButton subject={`Send me more infos about Junglestar's packages`} />
+      <CTAButton
+        linkClass="bg_white"
+        subject={`Send me more infos about Junglestar's packages`}
+      />
     </footer>
   </div>
 

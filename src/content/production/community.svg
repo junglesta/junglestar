@@ -5,17 +5,14 @@
     color="currentColor">
 
 <style type="text/css">
-    :root {
-        --brand: #0069cc;
-    }
     .brand {
         fill: none;
-        stroke: var(--brand);
+        stroke: currentColor;
         stroke-width: 0.33;
         stroke-linejoin: round;
     }
     .white {
-        fill: white;
+        fill: rgba(255,255,255,0.5);
     }
 </style>
     <path class="brand" d="M7 18V17C7 14.2386 9.23858 12 12 12V12C14.7614 12 17 14.2386 17 17V18"></path>

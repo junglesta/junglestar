@@ -6,20 +6,17 @@
 	style="enable-background:new 0 0 24 24;">
 
 <style>
-    :root {
-        --brand: #0069cc;
-    }
     .brand {
         fill: none;
-        stroke: var(--brand);
+        stroke: currentColor;
         stroke-width: 0.33;
         stroke-linejoin: round;
     }
     .white {
-        fill: white;
+        fill: rgba(255,255,255,0.5);
     }
     .brandfill {
-        fill: var(--brand);
+        fill:currentColor;
     }
 </style>
 

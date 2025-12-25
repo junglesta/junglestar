@@ -1,6 +1,7 @@
 .bg_green {
+  --brand: var(--jgreen);
   background-color: var(--jgreen);
-  color: var(--white);
+  color: var(--black);
 }
 .bg_orange {
   --brand: var(--jorange);

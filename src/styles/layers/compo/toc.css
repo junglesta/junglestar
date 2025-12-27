@@ -9,7 +9,7 @@
   margin-inline: auto;
   text-align: left;
 }
-
+/*
 .toc ul {
   padding: 0;
   list-style-type: "→  ";
@@ -23,6 +23,30 @@
 .toc li:hover::marker {
   font-weight: 500;
   font-size: 75%;
+  color: var(--black);
+}*/
+
+.toc ul {
+  padding: 0;
+  list-style: none; /* remove default marker */
+}
+
+.toc li {
+  position: relative;
+  padding-left: 1.25em; /* space for the arrow */
+}
+
+.toc li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0; /* keeps it aligned to first line */
+  color: var(--black75);
+  font-size: 75%;
+}
+
+.toc li:hover::before {
+  font-weight: 500;
   color: var(--black);
 }
 

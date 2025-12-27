@@ -24,7 +24,7 @@ const {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: calc(--var(--space_block) * 3);
+    padding-block: calc(var(--space_block) * 5);
     text-transform: uppercase;
   }
   @media (min-width: 600px) {
@@ -39,6 +39,10 @@ const {
     justify-content: space-evenly;
     gap: calc(var(--space_block) / 1);
     padding-inline: 15px 5px;
+    svg {
+      width: initial;
+      height: initial;
+    }
   }
 </style>
 <div class="CTAMailBanner">
@@ -47,6 +51,6 @@ const {
     href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}
   >
     {text}
-    <IconMail size={12} stroke="currentColor" />
+    <IconMail width={35} height={35} stroke="currentColor" />
   </a>
 </div>

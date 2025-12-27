@@ -32,12 +32,11 @@ const title = title_start + " | " + title_end;
 const onScroll_line1 = "Junglestar offers";
 const onScroll_line2 = "All-included solutions.";
 const onScroll_line3 = "We are a flexible one-stop web agency.";
-const onScroll_line4 = "We design, code & deploy.";
-const onScroll_line5 =
-  "WebStores, WebApps, Visual Menus for Bars & Restaurants...";
+const onScroll_line4 = "We make websites, webstores & web apps.";
+const onScroll_line5 = "Visual Menus for Bars & Restaurants!";
 const onScroll_line6 = "Packed Solutions & Custom Designs.";
 const description =
-  "Flexible one-stop web agency. We design, code & deploy — from webstores to web apps. Packed solutions & custom designs for great user experiences.";
+  "Flexible one-stop web agency. We make webstores & web apps. Packed solutions & custom designs for great user experiences.";
 ---
 
 <style>
@@ -59,6 +58,7 @@ const description =
     background-color: rgba(0, 0, 0, 0.15);
   }
   .grid_offer {
+    --space_inline: 3.5svw;
     padding-block: calc(var(--space_block) * 2.33);
     padding-inline: calc(var(--space_inline) * 3);
     display: grid;
@@ -66,6 +66,9 @@ const description =
     gap: calc(var(--space_block) * 1.5);
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    max-width: 1500px;
+    margin-inline: auto;
+    marign-top: calc(var(--space_b;lock) * 2);
   }
 
   @media (width > 900px) {
@@ -193,6 +196,13 @@ const description =
   .included {
     padding-top: calc(var(--space_block) / 2);
   }
+
+  .offers_title {
+    text-align: center;
+    text-transform: uppercase !important;
+    padding-top: calc(var(--space_block) * 2);
+    padding-inline: calc(var(--space_inline) * 2);
+  }
 </style>
 
 <Layout
@@ -229,6 +239,10 @@ const description =
 
   <div class="offer_content grid_offer_color">
     <SlowWebsite />
+
+    <div class="h3 offers_title">
+      We offer all-inclusive packages for any budget!
+    </div>
     <div class="grid_offer">
       {
         offers.map((offer) => {

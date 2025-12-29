@@ -27,11 +27,6 @@ const {
     padding-block: calc(var(--space_block) * 5);
     text-transform: uppercase;
   }
-  @media (min-width: 600px) {
-    .CTAMailBanner {
-      padding-block: calc(var(--space_block) * 5);
-    }
-  }
 
   .CTAMailBanner .button {
     display: inline-flex;
@@ -39,12 +34,19 @@ const {
     justify-content: space-evenly;
     gap: calc(var(--space_block) / 1);
     padding-inline: 15px 5px;
-    svg {
-      width: initial;
-      height: initial;
-    }
+  }
+
+  .CTAMailBanner .button svg {
+    width: initial;
+    height: initial;
+    transition: transform 0.3s ease;
+  }
+
+  .CTAMailBanner .button:hover svg {
+    transform: scaleX(-1);
   }
 </style>
+
 <div class="CTAMailBanner">
   <a
     class:list={[linkClass, "cta", "button"]}

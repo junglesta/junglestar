@@ -157,13 +157,11 @@
 }
 
 /*🐸Background utilities */
-.light_bg,
-.page_content.light_bg {
+.light_bg {
   background-color: var(--white);
 }
 
-.dark_bg,
-.page_content.dark_bg {
+.dark_bg {
   background-color: var(--black);
 }
 

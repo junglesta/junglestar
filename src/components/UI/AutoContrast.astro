@@ -9,7 +9,7 @@
 
 interface Props {
   /** Background color - any valid CSS color or variable */
-  backgroundColor?: string;
+  backgroundColor: string;
   /** Additional CSS classes */
   class?: string;
   /** HTML element tag to render */
@@ -34,7 +34,7 @@ const {
   tag = "div",
   lightText = "white",
   darkText = "black",
-  threshold = 0.5,
+  threshold = 0.32,
   style: customStyle = "",
   ...restProps
 } = Astro.props;

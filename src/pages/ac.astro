@@ -10,24 +10,25 @@ import "../styles/layers/tokens.css";
 
 // Using your design tokens directly as CSS variables
 const demoColors = [
+  { var: "var(--brand_lighter)", name: "--brand_lighter" },
+  { var: "var(--brand_light)", name: "--brand_light" },
+  { var: "var(--brand)", name: "--brand" },
+  { var: "var(--brand_dark)", name: "--brand_dark" },
+  { var: "var(--jorange_light)", name: "--jorange_light" },
+  { var: "var(--jorange)", name: "--jorange" },
+  { var: "var(--jorange_dark)", name: "--jorange_dark" },
+  { var: "var(--jorange_darker)", name: "--jorange_darker" },
+  { var: "var(--jgreen_light)", name: "--jgreen_light" },
+  { var: "var(--jgreen)", name: "--jgreen" },
+  { var: "var(--jgreen_dark)", name: "--jgreen_dark" },
+  { var: "var(--jgreen_darker)", name: "--jgreen_darker" },
   { var: "var(--black)", name: "--black" },
   { var: "var(--black_fumes)", name: "--black_fumes" },
   { var: "var(--white)", name: "--white" },
-  { var: "var(--brand)", name: "--brand" },
-  { var: "var(--brand_invert)", name: "--brand_invert" },
-  {
-    var: "var(--brand_complementary)",
-    name: "--brand_complementary",
-  },
-  { var: "var(--brand_light)", name: "--brand_light" },
-  { var: "var(--brand_dark)", name: "--brand_dark" },
   { var: "var(--text_color)", name: "--text_color" },
   { var: "var(--grey_color)", name: "--grey_color" },
   { var: "var(--grey_color_light)", name: "--grey_color_light" },
   { var: "var(--grey_color_dark)", name: "--grey_color_dark" },
-  { var: "var(--product_category_1)", name: "--product_category_1" },
-  { var: "var(--product_category_2)", name: "--product_category_2" },
-  { var: "var(--product_category_3)", name: "--product_category_3" },
 ];
 ---
 
@@ -35,127 +36,174 @@ const demoColors = [
   title={title}
   description={description}
   bodyClass="ac bg_white"
-  background="--white"
+  background="--brand_light"
 >
-  <div class="hero">
-    <h1>✨ AutoContrast Component</h1>
-    <p>
-      Automatically calculates the perfect text color for any background using
-      WCAG luminance formulas
-    </p>
-  </div>
-
-  <div class="container">
-    <!-- Interactive Demo Section -->
-    <div class="featured-demo">
-      <h2>🎨 Interactive Color Picker</h2>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Auto ✨Contrast Component</h1>
       <p>
-        Select any background color and watch the magic happen! The text color
-        automatically switches between black and white to maintain optimal
-        contrast and readability.
+        Automatically calculates the black/white text color for any background
+        using WCAG luminance formulas
       </p>
+    </div>
 
-      <AutoContrast
-        backgroundColor="var(--brand)"
-        class="card"
-        id="interactive-card"
-      >
-        <h3>Dynamic Color Adjustment</h3>
+    <div class="container">
+      <!-- Interactive Demo Section -->
+      <div class="featured-demo">
+        <h2>Interactive Color Picker</h2>
         <p>
-          This text automatically adapts for perfect contrast! The component
-          uses the WCAG 2.1 relative luminance formula to determine whether
-          black or white text provides better readability. Currently using <code
-            style="background: var(--whiteT25); padding: 0.2em 0.5em; border-radius: 4px;"
-            >var(--brand)</code
-          > with OKLCH color space.
+          Select any background color! The text color automatically switches
+          between black and white to maintain optimal contrast and readability.
         </p>
-        <span class="info-badge">✓ WCAG Compliant</span>
-      </AutoContrast>
 
-      <div class="color-picker-wrapper">
-        <label for="colorPicker">🎨 Choose Your Color:</label>
-        <div class="color-picker-container">
-          <input type="color" id="colorPicker" class="color-picker" />
-          <div class="color-value" id="colorValue">Loading...</div>
+        <AutoContrast
+          backgroundColor="var(--jorange)"
+          class="card wrap"
+          id="interactive-card"
+        >
+          <h3>Dynamic Color Adjustment</h3>
+          <p>
+            This text automatically adapts for perfect contrast! The component
+            uses the WCAG 2.1 relative luminance formula to determine whether
+            black or white text provides better readability. It starts using <code
+              style="background: var(--whiteT25); padding: 0.2em 0.5em; border-radius: 4px;"
+              >var(--jorange)</code
+            > with OKLCH color space.
+          </p>
+          <span class="info-badge wrap">✓ WCAG Compliant</span>
+        </AutoContrast>
+
+        <div class="color-picker-wrapper center">
+          <label for="colorPicker">Now, pick a Colour:</label>
+          <div class="color-picker-container">
+            <input type="color" id="colorPicker" class="color-picker" />
+            <div class="color-value" id="colorValue">Loading...</div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Different HTML Tags Section -->
-    <h2 class="section-title">📦 Flexible HTML Elements</h2>
-    <p class="section-subtitle">Works with any HTML tag using the 'tag' prop</p>
-
-    <div class="tag-showcase">
-      <AutoContrast
-        backgroundColor="var(--brand_invert)"
-        tag="section"
-        class="mini-card"
-      >
-        <h4>&lt;section&gt; Tag</h4>
-        <p>Using <code style="opacity: 0.7;">var(--brand_invert)</code></p>
-      </AutoContrast>
-
-      <AutoContrast
-        backgroundColor="var(--product_category_1)"
-        tag="article"
-        class="mini-card"
-      >
-        <h4>&lt;article&gt; Tag</h4>
-        <p>
-          Using <code style="opacity: 0.7;">var(--product_category_1)</code>
-        </p>
-      </AutoContrast>
-
-      <AutoContrast
-        backgroundColor="var(--product_category_2)"
-        tag="aside"
-        class="mini-card"
-      >
-        <h4>&lt;aside&gt; Tag</h4>
-        <p>
-          Using <code style="opacity: 0.7;">var(--product_category_2)</code>
-        </p>
-      </AutoContrast>
-
-      <AutoContrast
-        backgroundColor="var(--brand)"
-        tag="header"
-        class="mini-card"
-      >
-        <h4>&lt;header&gt; Tag</h4>
-        <p>Using <code style="opacity: 0.7;">var(--brand)</code></p>
-      </AutoContrast>
-    </div>
-
-    <!-- Color Palette Showcase -->
-    <h2 class="section-title">🎨 Color Palette Showcase</h2>
-    <p class="section-subtitle">
-      Your design tokens with real OKLCH colors and automatic contrast
-    </p>
-
-    <div class="demo-grid">
-      {
-        demoColors.map((color) => (
-          <AutoContrast backgroundColor={color.var} class="palette-card">
-            <strong>{color.name}</strong>
-            <span class="var-name">{color.var}</span>
-            <p>Auto-contrasted text for perfect readability</p>
-          </AutoContrast>
-        ))
-      }
-    </div>
-
-    <!-- Usage Example -->
-    <div class="featured-demo">
-      <h2>💻 Quick Start</h2>
-      <p style="color: var(--grey_color); margin-bottom: 1.5rem;">
-        Using the AutoContrast component is simple:
+      <!-- Different HTML Tags Section -->
+      <h2 class="section-title">color test</h2>
+      <p class="section-subtitle">
+        Works with any HTML tag using the 'tag' prop
       </p>
-      <pre
-        style="background: var(--blackT05); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"><code>&lt;AutoContrast backgroundColor="#0069cc"&gt;
+
+      <div class="tag-showcase">
+        <AutoContrast
+          backgroundColor="var(--jorange_dark)"
+          tag="section"
+          class="mini-card"
+        >
+          <h4>--jorange_dark</h4>
+        </AutoContrast>
+
+        <AutoContrast
+          backgroundColor="var(--jorange)"
+          tag="article"
+          class="mini-card"
+        >
+          <h4>--jorange</h4>
+        </AutoContrast>
+
+        <AutoContrast
+          backgroundColor="var(--jorange_light)"
+          tag="article"
+          class="mini-card"
+        >
+          <h4>--jorange_light</h4>
+        </AutoContrast>
+
+        <AutoContrast
+          backgroundColor="var(--jgreen_light)"
+          tag="aside"
+          class="mini-card"
+        >
+          <h4>--jgreen_light</h4>
+        </AutoContrast>
+        <AutoContrast
+          backgroundColor="var(--jgreen)"
+          tag="aside"
+          class="mini-card"
+        >
+          <h4>--jgreen</h4>
+        </AutoContrast>
+        <AutoContrast
+          backgroundColor="var(--jgreen_dark)"
+          tag="aside"
+          class="mini-card"
+        >
+          <h4>--jgreen_dark</h4>
+        </AutoContrast>
+        <AutoContrast
+          backgroundColor="var(--jgreen_darker)"
+          tag="aside"
+          class="mini-card"
+        >
+          <h4>--jgreen_darker</h4>
+        </AutoContrast>
+
+        <AutoContrast
+          backgroundColor="var(--brand_lighter)"
+          tag="header"
+          class="mini-card"
+        >
+          <h4>--brand_ligther</h4>
+        </AutoContrast>
+        <AutoContrast
+          backgroundColor="var(--brand_light)"
+          tag="header"
+          class="mini-card"
+        >
+          <h4>--brand_light</h4>
+        </AutoContrast>
+        <AutoContrast
+          backgroundColor="var(--brand)"
+          tag="header"
+          class="mini-card"
+        >
+          <h4>--brand</h4>
+        </AutoContrast>
+        <AutoContrast
+          backgroundColor="var(--brand_dark)"
+          tag="header"
+          class="mini-card"
+        >
+          <h4>--brand_dark</h4>
+        </AutoContrast>
+      </div>
+
+      <!-- Color Palette Showcase -->
+      <h2 class="section-title">Color Palette Showcase</h2>
+      <p class="section-subtitle">
+        Junglestar's design tokens with real OKLCH colors and automatic contrast
+      </p>
+
+      <div class="demo-grid">
+        {
+          demoColors.map((color) => (
+            <AutoContrast backgroundColor={color.var} class="palette-card">
+              <strong>{color.name}</strong>
+              <span class="var-name">{color.var}</span>
+            </AutoContrast>
+          ))
+        }
+      </div>
+
+      <!-- Usage Example -->
+      <div class="featured-demo">
+        <h2>Quick Start</h2>
+        <p style="color: var(--grey_color); margin-bottom: 1.5rem;">
+          Using the AutoContrast component is simple:
+        </p>
+        <pre
+          style="background: var(--blackT05); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"><code>import AutoContrast from "@components/UI/AutoContrast.astro";</code>
+        </pre>
+        <pre
+          style="background: var(--blackT05); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"><code>&lt;AutoContrast backgroundColor="#0069cc"&gt;
   &lt;h2&gt;Your Content&lt;/h2&gt;
   &lt;p&gt;Text automatically contrasts!&lt;/p&gt;
 &lt;/AutoContrast&gt;</code></pre>
+      </div>
     </div>
   </div>
 

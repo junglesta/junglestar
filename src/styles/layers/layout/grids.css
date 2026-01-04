@@ -15,9 +15,9 @@
 .grida {
   position: initial;
   display: grid;
-  grid-template-rows: 33svh 33svh 33svh 100vh;
+  grid-template-rows: 33svh 24svh 40svh 100vh;
   place-content: stretch center;
-  gap: 1rem;
+  gap: 2.5svh;
   padding-block: var(--space_block);
 
   height: 200vh;

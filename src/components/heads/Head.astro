@@ -1,6 +1,7 @@
 ---
 // src/components/heads/Head.astro
 // import { ClientRouter } from "astro:transitions";
+import { Font } from "astro:assets";
 
 import * as siteData from "@data/site.json";
 import * as repoData from "package.json";
@@ -23,6 +24,9 @@ const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
 ---
 
 <head>
+  <!-- Experimental Astro Fonts API -->
+  <Font cssVariable="--font_variable" preload />
+
   <meta name="version" content={repoData.version} />
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />

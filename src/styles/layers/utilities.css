@@ -2,6 +2,11 @@
    FILE: src/styles/layers/utilities.css
    ======================================== */
 
+.clickScrollTrigger {
+  cursor: pointer;
+  user-select: none;
+}
+
 .current_stroke {
   fill: none;
   stroke: currentColor;

@@ -22,12 +22,12 @@ const { id } = Astro.props;
     inset: 0;
     margin: auto;
     border: none;
-    border-radius: 8px;
+    border-radius: var(--radius);
     padding: 2rem;
-    width: fit-content;
-    height: fit-content;
-    max-width: min(90vw, 600px);
-    max-height: 90vh;
+    width: calc(100svw - 10svw);
+    height: calc(100svh - 10svh);
+    max-width: min(calc(100svw - 10svw), 800px);
+    max-height: min(calc(100svh - 10svh), 600px);
     overflow: auto;
   }
 

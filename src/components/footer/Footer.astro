@@ -21,7 +21,7 @@ const currentYear = new Date().getFullYear();
     min-height: 100svh;
     /*margin-top: calc(var(--space_block) * 5);*/
     padding-top: calc(var(--space_block) * 5);
-    padding-bottom: 0;
+    padding-bottom: calc(var(--space_block) / 2);
     color: inherit;
     display: grid;
     place-content: center;
@@ -40,6 +40,10 @@ const currentYear = new Date().getFullYear();
 
   .copy {
     text-align: center;
+  }
+  .logo_link_wrap {
+    width: clamp(155px, 21svw, 300px);
+    margin-inline: auto;
   }
 </style>
 

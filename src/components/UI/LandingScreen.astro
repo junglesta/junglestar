@@ -43,7 +43,6 @@ const {
   .huge {
     font-size: clamp(55px, 15svw, 99px);
     overflow: hidden;
-    /*font-weight: clamp(200, 100, 100);*/
   }
 </style>
 
@@ -51,12 +50,12 @@ const {
   <Logo />
   <h1 class="brand_name huge right clickScrollTrigger">{title}</h1>
 
-  <div class="title_wrap h2 clickScrollTrigger">
+  <div class="title_wrap h2 no_select">
     <div class="overline line1">{overtitle_line1}</div>
     <div class="overline line2">{overtitle_line2}</div>
     <div class="overline line3">{overtitle_line3}</div>
   </div>
-  <div class="on_scroll_msg animatio h3 wrap">
+  <div class="on_scroll_msg animatio h3 wrap no_select">
     <div class="l1">{onScroll_line1.toUpperCase()}</div>
     <div class="l2">{onScroll_line2}</div>
     <div class="l3">{onScroll_line3}</div>

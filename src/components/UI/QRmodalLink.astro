@@ -24,10 +24,12 @@ const url = "https://junglestar.org";
     inset: 0;
     margin: auto;
     border: none;
-    border-radius: 8px;
+    border-radius: var(--radius);
     padding: 2rem;
-    max-width: 90vmin;
-    max-height: 90vmin;
+    width: calc(100svw - 10svw);
+    height: calc(100svh - 10svh);
+    max-width: min(calc(100svw - 10svw), 400px);
+    max-height: min(calc(100svh - 10svh), 450px);
     overflow: hidden;
     p {
       margin: 0;

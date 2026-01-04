@@ -21,3 +21,25 @@ svg.white_color {
     fill: var(--white);
   }
 }
+
+/*🐸LOGO STROKE - responsive (thicker small, thinner large)
+  Uses !important to override inline SVG <style> block */
+:root svg.logo .onepath,
+:root svg.logo .circlej,
+:root svg.logo .star,
+:root .logosvg .onepath,
+:root .logosvg .circlej,
+:root .logosvg .star,
+svg.logo path.onepath,
+svg.logo path.circlej,
+svg.logo polygon.star {
+  stroke-width: var(--logo-stroke, 5) !important;
+}
+
+/*🐸ICON STROKE - for icons with smaller viewBox (24x24) */
+svg.logo-icon circle,
+svg.logo-icon path,
+.logo-icon circle,
+.logo-icon path {
+  stroke-width: var(--logo-stroke-icon, 0.37) !important;
+}

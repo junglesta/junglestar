@@ -116,6 +116,12 @@
   --weight_bold: 600;
   --weight_heavy: 900;
 
+  /*🐸LOGO STROKE - thicker at small sizes, thinner at large
+    Follows same optical principle as font weights */
+  --logo-stroke: 7;
+  --logo-stroke-icon: 0.5; /* For icons with 24x24 viewBox */
+  --logo-size: 220px; /* Base logo size, scales with breakpoints */
+
   /*🐸BREAKPOINTS */
   --width_min: 400px;
   --width_xs: 480px;
@@ -125,48 +131,6 @@
   --width_xl: 1280px;
   --width_2x: 1420px;
   --width_max: 1920px;
-
-  /*🐸FINE-TUNED BREAKPOINTS rem size */
-  @media (min-width: 480px) {
-    :root {
-      --base-font-size: 17px;
-    }
-  }
-
-  @media (min-width: 600px) {
-    :root {
-      --font_rem: 18px;
-    }
-  }
-
-  @media (min-width: 820px) {
-    :root {
-      --font_rem: 20px;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    :root {
-      --font_rem: 24px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    :root {
-      --font_rem: 25px;
-    }
-  }
-  @media (min-width: 1420px) {
-    :root {
-      --font_rem: 26px;
-    }
-  }
-
-  @media (min-width: 1920px) {
-    :root {
-      --font_rem: 28px;
-    }
-  }
 
   /*🐸RESPONSIVE HEADINGS WITH SVH */
   --heading1_responsive: calc(100svh/100 * 4);
@@ -201,4 +165,68 @@
 
   --background_color: var(--white);
   --smart_underline_for_white_text: var(--brandT50);
+}
+
+/*🐸FINE-TUNED BREAKPOINTS - must be outside :root for proper cascade */
+@media (min-width: 480px) {
+  :root {
+    --base-font-size: 17px;
+    --logo-stroke: 6.3;
+    --logo-stroke-icon: 0.45;
+    --logo-size: 250px;
+  }
+}
+
+@media (min-width: 600px) {
+  :root {
+    --font_rem: 18px;
+    --logo-stroke: 5.6;
+    --logo-stroke-icon: 0.4;
+    --logo-size: 280px;
+  }
+}
+
+@media (min-width: 820px) {
+  :root {
+    --font_rem: 20px;
+    --logo-stroke: 4.8;
+    --logo-stroke-icon: 0.35;
+    --logo-size: 320px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --font_rem: 24px;
+    --logo-stroke: 4.1;
+    --logo-stroke-icon: 0.32;
+    --logo-size: 360px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --font_rem: 25px;
+    --logo-stroke: 3.5;
+    --logo-stroke-icon: 0.28;
+    --logo-size: 400px;
+  }
+}
+
+@media (min-width: 1420px) {
+  :root {
+    --font_rem: 26px;
+    --logo-stroke: 3.1;
+    --logo-stroke-icon: 0.25;
+    --logo-size: 420px;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --font_rem: 28px;
+    --logo-stroke: 2.75;
+    --logo-stroke-icon: 0.22;
+    --logo-size: 450px;
+  }
 }

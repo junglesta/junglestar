@@ -1,4 +1,102 @@
 /*🐸HEADINGS */
+
+/*🐸VARIABLE FONT WEIGHT INTERPOLATION
+  Using @property for unitless number interpolation
+  Principle: optical compensation - big text needs thin weight
+  Mobile (small): heavier weights for readability
+  Desktop (large): thinner weights for elegance
+*/
+@property --h1-weight {
+  syntax: "<number>";
+  initial-value: 300;
+  inherits: true;
+}
+@property --h2-weight {
+  syntax: "<number>";
+  initial-value: 300;
+  inherits: true;
+}
+@property --h3-weight {
+  syntax: "<number>";
+  initial-value: 350;
+  inherits: true;
+}
+@property --h4-weight {
+  syntax: "<number>";
+  initial-value: 400;
+  inherits: true;
+}
+@property --h5-weight {
+  syntax: "<number>";
+  initial-value: 400;
+  inherits: true;
+}
+@property --h6-weight {
+  syntax: "<number>";
+  initial-value: 450;
+  inherits: true;
+}
+
+:root {
+  /* Base weights (mobile-first: heavier for small text) */
+  --h1-weight: 300;
+  --h2-weight: 300;
+  --h3-weight: 350;
+  --h4-weight: 400;
+  --h5-weight: 400;
+  --h6-weight: 450;
+}
+
+/* Progressive thinning as viewport grows (text gets larger) */
+@media (min-width: 480px) {
+  :root {
+    --h1-weight: 250;
+    --h2-weight: 280;
+    --h3-weight: 320;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --h1-weight: 200;
+    --h2-weight: 230;
+    --h3-weight: 280;
+    --h4-weight: 350;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --h1-weight: 150;
+    --h2-weight: 180;
+    --h3-weight: 230;
+    --h4-weight: 300;
+    --h5-weight: 350;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --h1-weight: 100;
+    --h2-weight: 150;
+    --h3-weight: 200;
+    --h4-weight: 270;
+    --h5-weight: 320;
+    --h6-weight: 400;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --h1-weight: 100;
+    --h2-weight: 120;
+    --h3-weight: 180;
+    --h4-weight: 250;
+    --h5-weight: 300;
+    --h6-weight: 380;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -14,44 +112,37 @@ h6,
   margin: 0;
   padding: 0;
   padding-block: calc(var(--space_block) * 0.545); /* was 1.5svh */
-  font-weight: var(--weight);
   line-height: 1.44;
 }
 
-@media (min-width: 600px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6 {
-    font-weight: var(--weight_thin);
-  }
+h1,
+.h1 {
+  font-weight: var(--h1-weight);
 }
 
-/*@media (min-width: 800px) {
-  h1,
-  h2,
-  h3 {
-    font-weight: var(--weight_thin);
-  }
-}*/
+h2,
+.h2 {
+  font-weight: var(--h2-weight);
+}
 
-@media (min-width: 1024px) {
-  h1,
-  h2,
-  h3,
-  .h1,
-  .h2,
-  .h3 {
-    font-weight: var(--weight_thinner);
-  }
+h3,
+.h3 {
+  font-weight: var(--h3-weight);
+}
+
+h4,
+.h4 {
+  font-weight: var(--h4-weight);
+}
+
+h5,
+.h5 {
+  font-weight: var(--h5-weight);
+}
+
+h6,
+.h6 {
+  font-weight: var(--h6-weight);
 }
 
 .section h2,

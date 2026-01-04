@@ -12,21 +12,21 @@
   .onepath {
     fill:none;
     stroke:currentColor;
-    stroke-width:3.88;
+    stroke-width:var(--logo-stroke, 3.88);
     stroke-linecap:round;
     stroke-linejoin:round;
     }
 	.circlej {
     fill:var(--brand_invert);
     stroke:currentColor;
-    stroke-width:3.88;
+    stroke-width:var(--logo-stroke, 3.88);
     stroke-linecap:round;
     stroke-linejoin:round;
     }
 	.star {
     fill:var(--brand);
     stroke:currentColor;
-    stroke-width:3.88;
+    stroke-width:var(--logo-stroke, 3.88);
     stroke-linecap:round;
     stroke-linejoin:round;
     }

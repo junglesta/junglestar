@@ -9,6 +9,10 @@ import LogoSVG from "@assets/svgs/logo_stroke.svg";
     place-content: center;
     text-decoration: none;
     color: currentColor;
+    /* Responsive logo size - same everywhere */
+    width: var(--logo-size, 220px);
+    max-width: 100%;
+    margin-inline: auto;
   }
 
   .logo_link::after,
@@ -19,6 +23,8 @@ import LogoSVG from "@assets/svgs/logo_stroke.svg";
 
   .logosvg {
     color: currentColor;
+    width: 100%;
+    height: auto;
   }
 </style>
 

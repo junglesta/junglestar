@@ -3,14 +3,16 @@
 // USING: animation-range: cover 0% cover var(--end);
 interface Props {
   class?: string;
+  id?: string;
   end?: string;
   distance?: string;
 }
 
-const { class: className, end = "50%", distance = "50px" } = Astro.props;
+const { class: className, id, end = "50%", distance = "50px" } = Astro.props;
 ---
 
 <div
+  id={id}
   class:list={["card_list", className]}
   style={`--end: ${end}; --distance: ${distance}`}
 >

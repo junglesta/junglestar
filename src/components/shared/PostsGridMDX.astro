@@ -16,10 +16,7 @@ const { posts = [] } = Astro.props;
     posts.map(async (post) => {
       const { Content } = await render(post);
       return (
-        <AnimatedCard end="33%" distance="33%" class:list={post}>
-          <div id={post.id} class="hidden">
-            &nbsp;
-          </div>
+        <AnimatedCard end="33%" distance="33%" id={post.id} class:list={post}>
           {post.data.image && (
             <div class="post_image">
               <Image src={post.data.image.src} alt={post.data.image.alt} />

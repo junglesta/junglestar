@@ -1,7 +1,7 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "3.1.8",
+  "version": "3.1.9",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
@@ -21,7 +21,7 @@
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/ts-plugin": "^1.10.6",
     "@biomejs/biome": "^2.3.11",
-    "astro": "^5.16.6",
+    "astro": "^5.16.9",
     "prettier": "3.7.4",
     "prettier-plugin-astro": "0.14.1",
     "sharp": "^0.34.5",

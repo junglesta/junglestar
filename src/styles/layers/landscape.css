@@ -1,0 +1,185 @@
+/* ========================================
+   FILE: src/styles/layers/landscape.css
+   Integrated landscape & aspect-ratio aware system
+   ======================================== */
+
+/*
+   ASPECT-RATIO TIERS:
+   - Portrait:     < 1        (phones portrait, tablets portrait)
+   - Square:       1 - 4/3    (tablets, some monitors)
+   - Landscape:    4/3 - 16/9 (most laptops, monitors)
+   - Wide:         16/9 - 21/9 (TVs, wide monitors)
+   - Ultra-wide:   > 21/9     (ultrawide monitors, multi-screen)
+*/
+
+:root {
+  /* LANDSCAPE CONTEXT DEFAULTS (portrait-first) */
+  --is-landscape: 0;
+  --section-height: 100svh;
+  --section-height-half: 50svh;
+  --safe-inset: 0%;
+  --safe-padding: 0px;
+
+  /* Container query support flag */
+  --container-aware: 1;
+}
+
+/* ========================================
+   ASPECT-RATIO TIERS
+   ======================================== */
+
+/* SQUARE & BASIC LANDSCAPE (4:3+) - tablets landscape, older monitors */
+@media (min-aspect-ratio: 4/3) {
+  :root {
+    --is-landscape: 1;
+    --section-height: max(50svh, 400px);
+    --section-height-half: max(35svh, 250px);
+  }
+}
+
+/* STANDARD LANDSCAPE (16:9+) - TVs, modern monitors, laptops */
+@media (min-aspect-ratio: 16/9) {
+  :root {
+    --section-height: max(60svh, 450px);
+    --section-height-half: max(40svh, 300px);
+    --safe-inset: 2.5%;
+    --safe-padding: 2.5vw;
+  }
+}
+
+/* WIDE SCREENS (1.85:1+) - cinematic, some TVs */
+@media (min-aspect-ratio: 1.85/1) {
+  :root {
+    --safe-inset: 4%;
+    --safe-padding: 4vw;
+  }
+}
+
+/* ULTRA-WIDE (21:9+) - ultrawide monitors, multi-screen setups */
+@media (min-aspect-ratio: 21/9) {
+  :root {
+    --section-height: max(70svh, 500px);
+    --section-height-half: max(50svh, 350px);
+    --safe-inset: 5%;
+    --safe-padding: 5vw;
+  }
+}
+
+/* ========================================
+   PHONE LANDSCAPE SPECIAL CASE
+   Very wide but very short viewport
+   ======================================== */
+@media (min-aspect-ratio: 4/3) and (max-height: 500px) {
+  :root {
+    --section-height: auto;
+    --section-height-half: auto;
+    --safe-inset: 0%;
+    --safe-padding: 0px;
+  }
+}
+
+/* ========================================
+   TV-SAFE AREA UTILITIES
+   Apply to elements that need overscan protection
+   ======================================== */
+.tv-safe {
+  padding-inline: var(--safe-padding);
+}
+
+.tv-safe-all {
+  padding: var(--safe-padding);
+}
+
+/* ========================================
+   CONTAINER QUERY SETUP
+   Establish containment contexts for responsive components
+   ======================================== */
+.container-inline {
+  container-type: inline-size;
+}
+
+.container-size {
+  container-type: size;
+}
+
+/* Named containers for specific components */
+.card-container {
+  container-type: inline-size;
+  container-name: card;
+}
+
+.section-container {
+  container-type: inline-size;
+  container-name: section;
+}
+
+.grid-container {
+  container-type: inline-size;
+  container-name: grid;
+}
+
+/* ========================================
+   CONTAINER QUERY RESPONSIVE PATTERNS
+   Components can use these @container rules
+   ======================================== */
+
+/* Example: Cards in container */
+@container card (min-width: 400px) {
+  .card-adaptive {
+    flex-direction: row;
+  }
+}
+
+@container card (min-width: 600px) {
+  .card-adaptive {
+    gap: 2rem;
+  }
+}
+
+/* Example: Section layouts */
+@container section (min-width: 800px) {
+  .section-adaptive {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Example: Grid auto-adaptation */
+@container grid (min-width: 600px) {
+  .grid-adaptive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@container grid (min-width: 900px) {
+  .grid-adaptive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@container grid (min-width: 1200px) {
+  .grid-adaptive {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ========================================
+   LANDSCAPE-AWARE HEIGHT UTILITIES
+   Replace hardcoded 100svh with these
+   ======================================== */
+.section-height {
+  min-height: var(--section-height);
+}
+
+.section-height-half {
+  min-height: var(--section-height-half);
+}
+
+/* Flex utility that uses landscape-aware height */
+.space-between-adaptive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--section-height);
+}

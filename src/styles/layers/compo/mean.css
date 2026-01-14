@@ -3,7 +3,7 @@
 
 .mean_title {
   color: var(--brand);
-  min-height: 50svh;
+  min-height: var(--section_height_half);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,14 +30,14 @@
 .mean_title.mean_title--first {
   background-color: var(--black);
   color: currentColor;
-  min-height: 100svh;
+  min-height: var(--section_height);
   padding-block: calc(var(--space_block) * 4);
 }
 .mean_title.mean_title--second {
   background-color: var(--brand);
   color: var(--white);
   padding-block: calc(var(--space_block) * 4);
-  min-height: 100svh;
+  min-height: var(--section_height);
   padding-bottom: 0;
   margin-bottom: 0;
   svg {
@@ -54,9 +54,7 @@
   .mean_icon.four_icon_group {
     width: 70dvw;
   }
-  .mean_title.mean_title--first {
-    min-height: 50svh;
-  }
+  /* min-height now handled by --section_height in landscape.css */
 }
 @media (min-width: 821px) {
   .mean_icon.four_icon_group {

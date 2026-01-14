@@ -1,4 +1,5 @@
 .grid_projects {
+  container-type: inline-size;
   padding-top: var(--space_block);
   display: grid;
 
@@ -6,9 +7,19 @@
   gap: var(--space_block) var(--space_inline);
 }
 
-@media (width > 370px) {
+/* Container query: adapt to container width, not viewport */
+@container (min-width: 370px) {
   .grid_projects {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+/* Fallback for browsers without container query support */
+@supports not (container-type: inline-size) {
+  @media (width > 370px) {
+    .grid_projects {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
   }
 }
 

@@ -98,7 +98,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 100svh;
+  min-height: var(--section_height);
 }
 .small_text {
   font-size: 85% !important;
@@ -191,7 +191,7 @@
 
 /*🐸 Layout utilities */
 .full_height {
-  min-height: 100svh;
+  min-height: var(--section_height);
 }
 
 /*🐸 Print only - hidden on screen */

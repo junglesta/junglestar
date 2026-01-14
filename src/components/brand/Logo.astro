@@ -26,6 +26,19 @@ import LogoSVG from "@assets/svgs/logo_stroke.svg";
     width: 100%;
     height: auto;
   }
+
+  /* Landscape - constrain logo by height to fit grid row */
+  @media (min-aspect-ratio: 4/3) {
+    .logo_link {
+      width: auto;
+      max-height: 30svh;
+    }
+
+    .logosvg {
+      width: auto;
+      height: 30svh;
+    }
+  }
 </style>
 
 <a

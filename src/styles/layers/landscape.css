@@ -14,14 +14,14 @@
 
 :root {
   /* LANDSCAPE CONTEXT DEFAULTS (portrait-first) */
-  --is-landscape: 0;
-  --section-height: 100svh;
-  --section-height-half: 50svh;
-  --safe-inset: 0%;
-  --safe-padding: 0px;
+  --is_landscape: 0;
+  --section_height: 100svh;
+  --section_height_half: 50svh;
+  --safe_inset: 0%;
+  --safe_padding: 0px;
 
   /* Container query support flag */
-  --container-aware: 1;
+  --container_aware: 1;
 }
 
 /* ========================================
@@ -31,37 +31,37 @@
 /* SQUARE & BASIC LANDSCAPE (4:3+) - tablets landscape, older monitors */
 @media (min-aspect-ratio: 4/3) {
   :root {
-    --is-landscape: 1;
-    --section-height: max(50svh, 400px);
-    --section-height-half: max(35svh, 250px);
+    --is_landscape: 1;
+    --section_height: max(50svh, 400px);
+    --section_height_half: max(35svh, 250px);
   }
 }
 
 /* STANDARD LANDSCAPE (16:9+) - TVs, modern monitors, laptops */
 @media (min-aspect-ratio: 16/9) {
   :root {
-    --section-height: max(60svh, 450px);
-    --section-height-half: max(40svh, 300px);
-    --safe-inset: 2.5%;
-    --safe-padding: 2.5vw;
+    --section_height: max(60svh, 450px);
+    --section_height_half: max(40svh, 300px);
+    --safe_inset: 2.5%;
+    --safe_padding: 2.5vw;
   }
 }
 
 /* WIDE SCREENS (1.85:1+) - cinematic, some TVs */
 @media (min-aspect-ratio: 1.85/1) {
   :root {
-    --safe-inset: 4%;
-    --safe-padding: 4vw;
+    --safe_inset: 4%;
+    --safe_padding: 4vw;
   }
 }
 
 /* ULTRA-WIDE (21:9+) - ultrawide monitors, multi-screen setups */
 @media (min-aspect-ratio: 21/9) {
   :root {
-    --section-height: max(70svh, 500px);
-    --section-height-half: max(50svh, 350px);
-    --safe-inset: 5%;
-    --safe-padding: 5vw;
+    --section_height: max(70svh, 500px);
+    --section_height_half: max(50svh, 350px);
+    --safe_inset: 5%;
+    --safe_padding: 5vw;
   }
 }
 
@@ -71,10 +71,10 @@
    ======================================== */
 @media (min-aspect-ratio: 4/3) and (max-height: 500px) {
   :root {
-    --section-height: auto;
-    --section-height-half: auto;
-    --safe-inset: 0%;
-    --safe-padding: 0px;
+    --section_height: auto;
+    --section_height_half: auto;
+    --safe_inset: 0%;
+    --safe_padding: 0px;
   }
 }
 
@@ -83,11 +83,11 @@
    Apply to elements that need overscan protection
    ======================================== */
 .tv-safe {
-  padding-inline: var(--safe-padding);
+  padding-inline: var(--safe_padding);
 }
 
 .tv-safe-all {
-  padding: var(--safe-padding);
+  padding: var(--safe_padding);
 }
 
 /* ========================================
@@ -168,11 +168,11 @@
    Replace hardcoded 100svh with these
    ======================================== */
 .section-height {
-  min-height: var(--section-height);
+  min-height: var(--section_height);
 }
 
 .section-height-half {
-  min-height: var(--section-height-half);
+  min-height: var(--section_height_half);
 }
 
 /* Flex utility that uses landscape-aware height */
@@ -181,5 +181,5 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: var(--section-height);
+  min-height: var(--section_height);
 }

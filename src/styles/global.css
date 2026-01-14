@@ -8,6 +8,7 @@
 /* 🐸 IMPORT ALL LAYERS */
 @import "./layers/reset.css" layer(reset);
 @import "./layers/tokens.css" layer(tokens);
+@import "./layers/landscape.css" layer(landscape);
 
 @import "./layers/layout/base.css" layer(layout);
 @import "./layers/layout/blockquotes.css" layer(layout);
@@ -40,4 +41,4 @@
 @import "./layers/print.css" layer(print);
 
 /* 🐸 DEFINE LAYER ORDER - PRINT IS LAST FOR OVERRIDE PRIORITY */
-@layer reset, tokens, layout, components, utilities, print;
+@layer reset, tokens, landscape, layout, components, utilities, print;

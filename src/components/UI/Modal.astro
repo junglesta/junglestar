@@ -7,12 +7,12 @@ interface Props {
 const { id } = Astro.props;
 ---
 
-<a href="#" class="modal-trigger" data-modal={id}>
+<a href="#" class="modal_trigger center" data-modal={id}>
   <slot name="trigger" />
 </a>
 
 <dialog id={id}>
-  <a href="#" class="close-modal" aria-label="Close">&times;</a>
+  <a href="#" class="close_modal" aria-label="Close">&times;</a>
   <slot />
 </dialog>
 
@@ -35,7 +35,7 @@ const { id } = Astro.props;
     background: rgba(255, 255, 255, 0.55);
   }
 
-  .close-modal {
+  .close_modal {
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
@@ -46,10 +46,10 @@ const { id } = Astro.props;
 </style>
 
 <script>
-  document.querySelectorAll(".modal-trigger[data-modal]").forEach((trigger) => {
+  document.querySelectorAll(".modal_trigger[data-modal]").forEach((trigger) => {
     const modalId = (trigger as HTMLElement).dataset.modal;
     const dialog = document.getElementById(modalId!) as HTMLDialogElement;
-    const closeBtn = dialog?.querySelector(".close-modal");
+    const closeBtn = dialog?.querySelector(".close_modal");
 
     trigger.addEventListener("click", (e) => {
       e.preventDefault();

@@ -1,10 +1,16 @@
 ---
-// Example usage page for AutoContrast component
+// src/pages/sty.astro
+// JUNGLESTAR STYLE SYSTEM
+//
+// Wave.astro component AND COLOR COMBOS
+// AutoContrast.astro component
+// COLORPICKER DEMO
 
 import Layout from "@layouts/Layout.astro";
 const title = "AutoContrast";
 const description = "AutoContrast";
 
+import WaveSection from "@components/UI/WaveSection.astro";
 import AutoContrast from "@components/UI/AutoContrast.astro";
 import "../styles/layers/tokens.css";
 
@@ -36,9 +42,77 @@ const demoColors = [
   title={title}
   description={description}
   bodyClass="ac bg_white"
-  background="--brand_light"
+  background="--brand"
 >
   <div class="wrap">
+    <WaveSection
+      topBackground="var(--brand)"
+      bottomBackground="var(--brand_dark)"
+      waveHeight={0.5}
+      height="30svw"
+    />
+    <WaveSection
+      topBackground="var(--brand_dark)"
+      bottomBackground="var(--jgreen_light)"
+      waveHeight={0.5}
+      height="30svw"
+    />
+
+    <WaveSection
+      topBackground="var(--jgreen_light)"
+      bottomBackground="var(--jgreen_dark)"
+      waveHeight={0.5}
+      height="30svw"
+    />
+
+    <WaveSection
+      topBackground="var(--jgreen_dark)"
+      bottomBackground="var(--jgreen_darker)"
+      waveHeight={0.5}
+      height="30svw"
+    />
+
+    <WaveSection
+      topBackground="var(--jgreen_darker)"
+      bottomBackground="var(--jorange_dark)"
+      waveHeight={0.5}
+      height="30svw"
+    />
+
+    <WaveSection
+      topBackground="var(--jorange_dark)"
+      bottomBackground="var(--jorange_light)"
+      waveHeight={0.5}
+      height="30svw"
+    />
+    <WaveSection
+      topBackground="var(--jorange_light)"
+      bottomBackground="var(--jorange_darker)"
+      waveHeight={0.5}
+      height="30svw"
+    />
+
+    <WaveSection
+      topBackground="var(--jorange_darker)"
+      bottomBackground="var(--brand_light)"
+      waveHeight={0.5}
+      height="30svw"
+    />
+
+    <WaveSection
+      topBackground="var(--brand_light)"
+      bottomBackground="var(--brand_lighter)"
+      waveHeight={0.5}
+      height="30svw"
+    />
+
+    <WaveSection
+      topBackground="var(--brand_lighter)"
+      bottomBackground="var(--brand)"
+      waveHeight={0.5}
+      height="30svw"
+    />
+
     <div class="hero">
       <h1>Auto ✨Contrast Component</h1>
       <p>
@@ -57,24 +131,29 @@ const demoColors = [
         </p>
 
         <AutoContrast
-          backgroundColor="var(--jorange)"
+          backgroundColor="var(--jgreen_light)"
           class="card wrap"
           id="interactive-card"
         >
-          <h3>Dynamic Color Adjustment</h3>
-          <p>
-            This text automatically adapts for perfect contrast! The component
-            uses the WCAG 2.1 relative luminance formula to determine whether
-            black or white text provides better readability. It starts using <code
-              style="background: var(--whiteT25); padding: 0.2em 0.5em; border-radius: 4px;"
-              >var(--jorange)</code
-            > with OKLCH color space.
-          </p>
+          <h3>Auto Color Adjustment</h3>
           <span class="info-badge wrap">✓ WCAG Compliant</span>
+          <p>
+            This text adapts for perfect contrast! The component uses the WCAG
+            2.1 relative luminance formula to determine whether black or white
+            text provides better readability. It starts using:
+            <code
+              style="background: var(--whiteT25); padding: 0.2em 0.5em; border-radius: 4px;"
+              >--jgreen_light</code
+            > in the OKLCH color space. <small
+              ><br />After the fade-in offcourse.</small
+            >
+          </p>
         </AutoContrast>
 
         <div class="color-picker-wrapper center">
-          <label for="colorPicker">Now, pick a Colour:</label>
+          <br />
+          <br />
+          <label for="colorPicker"><h4>Now, pick a Colour:</h4></label>
           <div class="color-picker-container">
             <input type="color" id="colorPicker" class="color-picker" />
             <div class="color-value" id="colorValue">Loading...</div>
@@ -83,7 +162,7 @@ const demoColors = [
       </div>
 
       <!-- Different HTML Tags Section -->
-      <h2 class="section-title">color test</h2>
+      <h2 class="section-title">AutoContrast Color Test</h2>
       <p class="section-subtitle">
         Works with any HTML tag using the 'tag' prop
       </p>
@@ -173,7 +252,7 @@ const demoColors = [
       </div>
 
       <!-- Color Palette Showcase -->
-      <h2 class="section-title">Color Palette Showcase</h2>
+      <h2 class="section-title">Color Palette</h2>
       <p class="section-subtitle">
         Junglestar's design tokens with real OKLCH colors and automatic contrast
       </p>
@@ -188,24 +267,26 @@ const demoColors = [
           ))
         }
       </div>
-
-      <!-- Usage Example -->
-      <div class="featured-demo">
-        <h2>Quick Start</h2>
-        <p style="color: var(--grey_color); margin-bottom: 1.5rem;">
-          Using the AutoContrast component is simple:
-        </p>
-        <pre
-          style="background: var(--blackT05); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"><code>import AutoContrast from "@components/UI/AutoContrast.astro";</code>
-        </pre>
-        <pre
-          style="background: var(--blackT05); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"><code>&lt;AutoContrast backgroundColor="#0069cc"&gt;
-  &lt;h2&gt;Your Content&lt;/h2&gt;
-  &lt;p&gt;Text automatically contrasts!&lt;/p&gt;
-&lt;/AutoContrast&gt;</code></pre>
-      </div>
     </div>
   </div>
+
+  <!-- Usage Example -->
+  <div class="wrap">
+    <h2>Quick Start</h2>
+    <p style="color: var(--grey_color); margin-bottom: 1.5rem;">
+      Using the AutoContrast component is simple:
+    </p>
+  </div>
+  <pre
+    style="background: var(--blackT15); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"><code>import AutoContrast from "@components/UI/AutoContrast.astro";</code>
+        </pre>
+  <br />
+  <pre
+    style="background: var(--blackT15); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"><code>&lt;AutoContrast backgroundColor="#0069cc"&gt;
+  &lt;h2&gt;Your Content&lt;/h2&gt;
+  &lt;p&gt;Text automatically contrasts!&lt;/p&gt;
+&lt;/AutoContrast&gt;</code>
+      </pre>
 
   <script>
     // Interactive color picker following Astro best practices
@@ -266,3 +347,10 @@ const demoColors = [
     }
   </script>
 </Layout>
+
+<style>
+  pre {
+    margin-left: 1rem !important;
+    min-width: 388px !important;
+  }
+</style>

@@ -3,11 +3,24 @@
   background-color: var(--jgreen);
   color: var(--black);
 }
+.bg_green_light {
+  --brand: var(--jgreen_light);
+  background-color: var(--jgreen_light);
+  color: var(--black);
+}
+
 .bg_orange {
   --brand: var(--jorange);
   background-color: var(--jorange);
   color: var(--black);
 }
+
+.bg_orange_light {
+  --brand: var(--jorange_light);
+  background-color: var(--jorange_light);
+  color: var(--black);
+}
+
 .bg_brand_light {
   background-color: var(--bg_brand_light);
   color: var(--black);
@@ -34,6 +47,6 @@ body.content {
   }
 }
 
-body.bg_black .footer_site {
+body.bg_black .footer_site_color {
   color: var(--white);
 }

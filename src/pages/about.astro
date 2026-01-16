@@ -1,10 +1,8 @@
 ---
-// src/pages/projects.astro
+// src/pages/about.astro
 import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
 import Icono from "@svgs/paperclip.svg";
-import WorksCard from "@components/brand/WorksCard.astro";
-import projectsData from "@data/works.json";
 
 // import type { ImageMetadata } from "astro";
 
@@ -15,19 +13,13 @@ const title_start = "Junglestar Agency ";
 const title_end = " About us";
 const title = title_start + " | " + title_end;
 
-const onScroll_line1 = "Have a look... ";
-const onScroll_line2 = "real-world productions of ours.";
-const onScroll_line3 = "";
-const onScroll_line4 = " Let inspiration come to you.";
+const onScroll_line1 = "So you wanna know about us huh? ";
+const onScroll_line2 = "Like who we really, really are, maybe?!";
+const onScroll_line3 = "Or even get to know us personally.";
+const onScroll_line4 = "Or meet in person...";
+const onScroll_line5 = "via videochat.";
 const description =
   "SHOWCASE: We helped these small enterprises with websites, apps, and marketing communication.";
-
-// Import all icons dynamically
-//const icons = import.meta.glob<{ default: ImageMetadata }>("/src/assets/ico/**/*.{svg,png}", { eager: true });
-
-const projects = projectsData.sort(
-  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-);
 ---
 
 <style>
@@ -39,9 +31,9 @@ const projects = projectsData.sort(
 <Layout
   title={title}
   description={description}
-  bodyClass="about bg_green"
+  bodyClass="about bg_green_light"
   mainClass="about bg_white"
-  background="--jgreen"
+  background="--jgreen_light"
 >
   <Fragment slot="inside_header">
     <LandingScreen
@@ -49,7 +41,9 @@ const projects = projectsData.sort(
       overtitle_line1={overtitle_line1}
       onScroll_line1={onScroll_line1}
       onScroll_line2={onScroll_line2}
+      onScroll_line3={onScroll_line3}
       onScroll_line4={onScroll_line4}
+      onScroll_line5={onScroll_line5}
     >
       <Icono width={133} height={133} fill="currentColor" />
     </LandingScreen>
@@ -58,18 +52,37 @@ const projects = projectsData.sort(
   <div class="wrap vpad">
     <details class="">
       <summary class="center">
-        <strong>Who are we?</strong>
+        <strong>Who are we?</strong><small> TLDR: A bunch of geeks.</small>
       </summary>
       <p class="wrap pretty">
-        TLDR: A bunch of geeks. Starting from the founder 'Old Boy' <a
-          title="Junglestar founder"
-          href="https://tldr.rokma.com"><strong>Rokma</strong></a
-        >. <br />We are <strong> a Group of Professionals Coders, </strong>
-        with complementary skills, working together over the net.
+        <br />
+        Yes geeks. This definitely applies to the founder 'Old Boy'
+        <a title="Junglestar founder" href="https://tldr.rokma.com"
+          ><strong>Rokma</strong></a
+        > and many collabs. Facts define labels.<strong>
+          So we are a Group of Professionals Coders,
+        </strong>
+        with complementary skills, not necessarily particularly geeky. People work
+        together over the net in 2026, and pay bills. Let 'em think we're playing!
       </p>
+      <p class="wrap pretty">
+        Sometimes we also hire consultants, or freelance helpers one shot.
+      </p>
+      <p class="wrap pretty">It depends! On the project.</p>
+      <br />
     </details>
 
     <details class="">
+      <summary class="center">
+        <strong>Where are your LIVE Projects?</strong>
+      </summary>
+      <p class="wrap pretty">
+        Here: <a href="/showcase">Showcase</a>
+        .
+      </p>
+    </details>
+
+    <details open class="">
       <summary class="center">
         <strong>Where we stand?</strong>
       </summary>
@@ -79,37 +92,5 @@ const projects = projectsData.sort(
         .
       </p>
     </details>
-
-    <h1 class="center">Live Projects Showcase</h1>
-    <br />
-    <p class="center">Check them out! Please scroll down.</p>
-
-    <div class="grid_projects">
-      {
-        projects.map(async (project) => {
-          const iconPath = `/src/assets/ico/${project.icon.url}`;
-          const images = import.meta.glob(
-            "/src/assets/ico/**/*.{png,svg,jpg,jpeg,gif}",
-          );
-          const iconImage = await images[iconPath]?.();
-
-          return (
-            <WorksCard
-              id={project.id}
-              title={project.title}
-              subtitle={project.subtitle}
-              category={project.category}
-              tags={project.tags}
-              url={project.url}
-              icon={project.icon}
-              ico_url={(iconImage as any)?.default?.src || ""}
-              permalink={project.permalink}
-              description={project.description}
-              date={project.date}
-            />
-          );
-        })
-      }
-    </div>
   </div>
 </Layout>

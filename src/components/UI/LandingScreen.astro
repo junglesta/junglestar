@@ -44,10 +44,42 @@ const {
     font-size: clamp(55px, 15svw, 99px);
     overflow: hidden;
   }
+
+  .grida {
+    --row1: 30svh;
+    --row2: 70svh;
+    --row3: 200svh;
+    height: calc(var(--row1) + var(--row2) + var(--row3));
+    position: initial;
+    display: grid;
+    grid-template-rows: var(--row1) var(--row2) var(--row3);
+    place-content: stretch center;
+    gap: 2.5svh;
+
+    padding-bottom: calc(var(--space_block) * 2);
+    .brand_name {
+      align-self: center;
+      /*
+      transform: rotate(-90deg);
+      transform-origin: center -133%;
+      */
+    }
+  }
+
+  .grida > :first-child {
+    align-self: start;
+  }
+
+  .grida > :nth-child(2) {
+    align-self: start;
+  }
+  .grida > :nth-child(3) {
+    align-self: center;
+  }
 </style>
 
+<Logo variant="top" />
 <div class="grida pretty_heading wrap">
-  <Logo />
   <h1 class="brand_name huge right clickScrollTrigger">{title}</h1>
 
   <div class="title_wrap h2 no_select">

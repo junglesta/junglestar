@@ -16,18 +16,22 @@ const currentYear = new Date().getFullYear();
 ---
 
 <style>
-  .footer_wrap {
+  .footer_grid {
+    --row1: 20svw;
+    --row2: auto;
+    --row3: auto;
+    --row4: auto;
+    display: grid;
+    grid-template-rows: var(--row1) var(--row2) var(--row3) var(--row4);
+    place-content: center center;
+    gap: var(--space_block);
+
+    color: currentColor;
     width: 100%;
     min-height: 100svh;
-    /*margin-top: calc(var(--space_block) * 5);*/
     padding-top: calc(var(--space_block) * 5);
     padding-bottom: calc(var(--space_block) / 2);
-    color: inherit;
-    display: grid;
-    place-content: center;
-    gap: var(--space_inline);
 
-    color: currewntColor;
     a:not(.footer_logo):not(.no_underline) {
       color: inherit;
       text-decoration-thickness: 2px;
@@ -41,26 +45,22 @@ const currentYear = new Date().getFullYear();
   .copy {
     text-align: center;
   }
-  .logo_link_wrap {
-    width: clamp(155px, 21svw, 300px);
-    margin-inline: auto;
-  }
 </style>
 
-<footer class="footer_wrap footer_site">
-  <div class="logo_link_wrap">
-    <Logo />
+<footer class="footer_site">
+  <div class="footer_grid">
+    <Logo variant="bottom" />
+    <Nav />
+    <Contactlinks />
+
+    <Modal id="brand-details">
+      <span slot="trigger">
+        &copy; 2012-{currentYear}
+        {siteData.brand}.org <span>&nbsp;+</span>
+      </span>
+
+      <Carbon />
+      <License />
+    </Modal>
   </div>
-  <Contactlinks />
-  <Nav />
-
-  <Modal id="brand-details">
-    <span slot="trigger">
-      &copy; 2012-{currentYear}
-      {siteData.brand}.org <span>&nbsp;+</span>
-    </span>
-
-    <Carbon />
-    <License />
-  </Modal>
 </footer>

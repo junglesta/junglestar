@@ -1,20 +1,25 @@
 ---
 // @components/brand/Logo.astro
 import LogoSVG from "@assets/svgs/logo_stroke.svg";
+
+export interface Props {
+  variant: "top" | "bottom";
+}
+
+const { variant } = Astro.props;
 ---
 
 <style>
-  .logo_link {
-    display: grid;
-    place-content: center;
-    text-decoration: none;
-    color: currentColor;
-    /* Responsive logo size - same everywhere */
-    width: var(--logo-size, 220px);
-    max-width: 100%;
-    margin-inline: auto;
+  :root {
+    --logo_size: clamp(188px, 20svw, 255px);
   }
-
+  .logo_link {
+    height: var(--logo_size);
+    color: currentColor;
+    position: relative;
+    display: block;
+    align-self: end;
+  }
   .logo_link::after,
   .logo_link::before {
     content: "";
@@ -23,28 +28,48 @@ import LogoSVG from "@assets/svgs/logo_stroke.svg";
 
   .logosvg {
     color: currentColor;
-    width: 100%;
-    height: auto;
+    width: var(--logo_size);
+    height: var(--logo_size);
   }
 
-  /* Landscape - constrain logo by height to fit grid row */
-  @media (min-aspect-ratio: 4/3) {
-    .logo_link {
-      width: auto;
-      max-height: 30svh;
-    }
+  .logo_link_top {
+    bottom: -76px;
+    display: grid;
+    place-content: center;
+    clip-path: inset(0 0 52px 0); /* top right bottom left */
+  }
 
-    .logosvg {
-      width: auto;
-      height: 30svh;
+  .logo_link_bottom {
+    bottom: -70px;
+    display: grid;
+    place-content: center;
+    clip-path: inset(0 0 52px 0); /* top right bottom left */
+  }
+
+  /* Landscape */
+  @media (min-aspect-ratio: 4/3) {
+    .logo_link_top {
+      bottom: -76px;
+      display: grid;
+      place-content: center;
+      clip-path: inset(0 0 52px 0); /* top right bottom left */
+    }
+    .logo_link {
+      align-self: end;
+    }
+    .logo_link_bottom {
+      bottom: -60px;
+      display: grid;
+      place-content: center;
+      clip-path: inset(0 0 52px 0); /* top right bottom left */
     }
   }
 </style>
 
 <a
-  class="logo_link file_Logo"
+  class={`logo_link logo_link_${variant}`}
   title="This link goes back to junglestar.org homepage"
   href="/"
 >
-  <LogoSVG class="logosvg" width={555} height={555} fill="currentColor" />
+  <LogoSVG class="logosvg" width={255} height={255} fill="currentColor" />
 </a>

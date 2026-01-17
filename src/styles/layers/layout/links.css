@@ -24,6 +24,7 @@ a {
 a:not(.action_button):not(.mailto_link)[target="_blank"]:after {
   content: "↗";
   font-size: 90%;
+  font-weight: 200;
   display: inline-block;
   text-decoration: none;
   color: currentColor;

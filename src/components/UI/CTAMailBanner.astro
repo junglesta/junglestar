@@ -5,14 +5,12 @@ import IconMail from "@svgs/mail.svg";
 
 interface Props {
   email?: string;
-  subject?: string;
   text?: string;
   linkClass?: string;
 }
 
 const {
   email = siteData.email,
-  subject = "Send me more infos about Junglestar",
   text = "Let's start talking!",
   linkClass = "transparent",
 } = Astro.props;
@@ -34,6 +32,7 @@ const {
     justify-content: space-evenly;
     gap: calc(var(--space_block) / 1);
     padding-inline: 15px 5px;
+    font: inherit;
   }
 
   .CTAMailBanner .button svg {
@@ -48,11 +47,37 @@ const {
 </style>
 
 <div class="CTAMailBanner">
-  <a
+  <button
     class:list={[linkClass, "cta", "button"]}
-    href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}
+    data-email={email}
+    data-original-text={text}
+    type="button"
   >
-    {text}
+    <span>{text}</span>
     <IconMail width={35} height={35} stroke="currentColor" />
-  </a>
+  </button>
 </div>
+
+<script>
+  document.querySelectorAll(".CTAMailBanner button[data-email]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const email = button.getAttribute("data-email");
+      const originalText = button.getAttribute("data-original-text");
+      const span = button.querySelector("span");
+
+      if (!email || !span) return;
+
+      try {
+        await navigator.clipboard.writeText(email);
+        span.textContent = "COPIED!";
+
+        setTimeout(() => {
+          span.textContent = originalText;
+        }, 2000);
+      } catch {
+        // Show email if clipboard fails
+        span.textContent = email;
+      }
+    });
+  });
+</script>

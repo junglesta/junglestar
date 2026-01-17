@@ -17,7 +17,7 @@ export default defineConfig({
       {
         provider: fontProviders.google(),
         name: "Source Sans 3",
-        weights: ["200..900"], // Variable font range (Source Sans 3 starts at 200)
+        weights: [200, 300, 400, 500, 600, 700, 800, 900],
         cssVariable: "--font_variable",
         fallbacks: [
           "-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;",

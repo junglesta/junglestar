@@ -14,28 +14,37 @@ import WaveSection from "@components/UI/WaveSection.astro";
 import AutoContrast from "@components/UI/AutoContrast.astro";
 import "../styles/layers/tokens.css";
 
-// Using your design tokens directly as CSS variables
-const demoColors = [
-  { var: "var(--brand_lighter)", name: "--brand_lighter" },
-  { var: "var(--brand_light)", name: "--brand_light" },
-  { var: "var(--brand)", name: "--brand" },
-  { var: "var(--brand_dark)", name: "--brand_dark" },
-  { var: "var(--jorange_light)", name: "--jorange_light" },
-  { var: "var(--jorange)", name: "--jorange" },
-  { var: "var(--jorange_dark)", name: "--jorange_dark" },
-  { var: "var(--jorange_darker)", name: "--jorange_darker" },
-  { var: "var(--jgreen_light)", name: "--jgreen_light" },
-  { var: "var(--jgreen)", name: "--jgreen" },
-  { var: "var(--jgreen_dark)", name: "--jgreen_dark" },
-  { var: "var(--jgreen_darker)", name: "--jgreen_darker" },
-  { var: "var(--black)", name: "--black" },
-  { var: "var(--black_fumes)", name: "--black_fumes" },
-  { var: "var(--white)", name: "--white" },
-  { var: "var(--text_color)", name: "--text_color" },
-  { var: "var(--grey_color)", name: "--grey_color" },
-  { var: "var(--grey_color_light)", name: "--grey_color_light" },
-  { var: "var(--grey_color_dark)", name: "--grey_color_dark" },
+// Color tokens - just add a name here and UI updates automatically
+const colorNames = [
+  "brand_lighter",
+  "brand_light",
+  "brand",
+  "brand_dark",
+  "jorange_light",
+  "jorange",
+  "jorange_dark",
+  "jorange_darker",
+  "jgreen_light",
+  "jgreen",
+  "jgreen_dark",
+  "jgreen_darker",
+  "black",
+  "black_fumes",
+  "whiteDIRTY",
+  "whiteOFF",
+  "white",
+  "text_color",
+  "grey_color_dark",
+  "grey_color",
+  "grey_color_light",
+  "grey_color_lighter",
 ];
+
+// Generate color objects from names
+const demoColors = colorNames.map((name) => ({
+  var: `var(--${name})`,
+  name: `--${name}`,
+}));
 ---
 
 <Layout
@@ -44,76 +53,22 @@ const demoColors = [
   bodyClass="ac bg_white"
   background="--brand"
 >
+  {
+    colorNames.map((color, i) => (
+      <WaveSection
+        topBackground={`var(--${color})`}
+        bottomBackground={`var(--${colorNames[(i + 1) % colorNames.length]})`}
+        waveHeight={0.5}
+        height="30svw"
+      />
+    ))
+  }
   <div class="wrap">
-    <WaveSection
-      topBackground="var(--brand)"
-      bottomBackground="var(--brand_dark)"
-      waveHeight={0.5}
-      height="30svw"
-    />
-    <WaveSection
-      topBackground="var(--brand_dark)"
-      bottomBackground="var(--jgreen_light)"
-      waveHeight={0.5}
-      height="30svw"
-    />
-
-    <WaveSection
-      topBackground="var(--jgreen_light)"
-      bottomBackground="var(--jgreen_dark)"
-      waveHeight={0.5}
-      height="30svw"
-    />
-
-    <WaveSection
-      topBackground="var(--jgreen_dark)"
-      bottomBackground="var(--jgreen_darker)"
-      waveHeight={0.5}
-      height="30svw"
-    />
-
-    <WaveSection
-      topBackground="var(--jgreen_darker)"
-      bottomBackground="var(--jorange_dark)"
-      waveHeight={0.5}
-      height="30svw"
-    />
-
-    <WaveSection
-      topBackground="var(--jorange_dark)"
-      bottomBackground="var(--jorange_light)"
-      waveHeight={0.5}
-      height="30svw"
-    />
-    <WaveSection
-      topBackground="var(--jorange_light)"
-      bottomBackground="var(--jorange_darker)"
-      waveHeight={0.5}
-      height="30svw"
-    />
-
-    <WaveSection
-      topBackground="var(--jorange_darker)"
-      bottomBackground="var(--brand_light)"
-      waveHeight={0.5}
-      height="30svw"
-    />
-
-    <WaveSection
-      topBackground="var(--brand_light)"
-      bottomBackground="var(--brand_lighter)"
-      waveHeight={0.5}
-      height="30svw"
-    />
-
-    <WaveSection
-      topBackground="var(--brand_lighter)"
-      bottomBackground="var(--brand)"
-      waveHeight={0.5}
-      height="30svw"
-    />
-
     <div class="hero">
+      <br />
+      <br />
+      <br />
+      <br />
       <h1>Auto ✨Contrast Component</h1>
       <p>
         Automatically calculates the black/white text color for any background
@@ -168,87 +123,17 @@ const demoColors = [
       </p>
 
       <div class="tag-showcase">
-        <AutoContrast
-          backgroundColor="var(--jorange_dark)"
-          tag="section"
-          class="mini-card"
-        >
-          <h4>--jorange_dark</h4>
-        </AutoContrast>
-
-        <AutoContrast
-          backgroundColor="var(--jorange)"
-          tag="article"
-          class="mini-card"
-        >
-          <h4>--jorange</h4>
-        </AutoContrast>
-
-        <AutoContrast
-          backgroundColor="var(--jorange_light)"
-          tag="article"
-          class="mini-card"
-        >
-          <h4>--jorange_light</h4>
-        </AutoContrast>
-
-        <AutoContrast
-          backgroundColor="var(--jgreen_light)"
-          tag="aside"
-          class="mini-card"
-        >
-          <h4>--jgreen_light</h4>
-        </AutoContrast>
-        <AutoContrast
-          backgroundColor="var(--jgreen)"
-          tag="aside"
-          class="mini-card"
-        >
-          <h4>--jgreen</h4>
-        </AutoContrast>
-        <AutoContrast
-          backgroundColor="var(--jgreen_dark)"
-          tag="aside"
-          class="mini-card"
-        >
-          <h4>--jgreen_dark</h4>
-        </AutoContrast>
-        <AutoContrast
-          backgroundColor="var(--jgreen_darker)"
-          tag="aside"
-          class="mini-card"
-        >
-          <h4>--jgreen_darker</h4>
-        </AutoContrast>
-
-        <AutoContrast
-          backgroundColor="var(--brand_lighter)"
-          tag="header"
-          class="mini-card"
-        >
-          <h4>--brand_ligther</h4>
-        </AutoContrast>
-        <AutoContrast
-          backgroundColor="var(--brand_light)"
-          tag="header"
-          class="mini-card"
-        >
-          <h4>--brand_light</h4>
-        </AutoContrast>
-        <AutoContrast
-          backgroundColor="var(--brand)"
-          tag="header"
-          class="mini-card"
-        >
-          <h4>--brand</h4>
-        </AutoContrast>
-        <AutoContrast
-          backgroundColor="var(--brand_dark)"
-          tag="header"
-          class="mini-card"
-        >
-          <h4>--brand_dark</h4>
-        </AutoContrast>
+        {
+          demoColors.map((color) => (
+            <AutoContrast
+              backgroundColor={color.var}
+              tag="section"
+              class="mini-card"
+            >
+              <h4>{color.name}</h4>
+            </AutoContrast>
+          ))
+        }
       </div>
 
       <!-- Color Palette Showcase -->

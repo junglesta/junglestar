@@ -18,6 +18,9 @@ export interface Props {
     | "--brand_light"
     | "--brand_lighter"
     | "--brand_dark"
+    | "--brandT25"
+    | "--brandT50"
+    | "--brandT75"
     | "--jgreen"
     | "--jgreen_light"
     | "--jorange"
@@ -42,9 +45,8 @@ const {
 </style> -->
 <html lang="en">
   <Head title={title} description={description} sitemap={sitemap} />
-
+  <LastPub />
   <body class={bodyClass} style={`background-color: var(${background})`}>
-    <LastPub />
     <header>
       <slot name="inside_header" />
     </header>

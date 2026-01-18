@@ -46,28 +46,51 @@ const {
   }
 
   .grida {
-    --row1: 30svh;
-    --row2: 70svh;
-    --row3: 200svh;
-    height: calc(var(--row1) + var(--row2) + var(--row3));
+    --row1: auto;
+    --row2: auto;
+    --row3: 20svh;
+    --row4: 120svh;
+    height: max(
+      calc(var(--row1) + var(--row2) + var(--row3) + var(--row4)),
+      200svh
+    );
     position: initial;
     display: grid;
-    grid-template-rows: var(--row1) var(--row2) var(--row3);
+    grid-template-rows: var(--row1) var(--row2) var(--row3) var(--row4);
     place-content: stretch center;
     gap: 2.5svh;
 
+    padding-top: calc(var(--space_block) * 2);
     padding-bottom: calc(var(--space_block) * 2);
+
     .brand_name {
       align-self: center;
-      /*
-      transform: rotate(-90deg);
-      transform-origin: center -133%;
-      */
     }
   }
 
   .grida > :first-child {
+    align-self: end;
+  }
+
+  .grida > :nth-child(2) {
     align-self: start;
+  }
+  .grida > :nth-child(3) {
+    align-self: center;
+  }
+
+  /* Landscape */
+  @media (min-aspect-ratio: 4/3) and (max-width: 1000px) {
+    .grida {
+      --row1: 24svh;
+      --row2: auto;
+      --row3: 50svh;
+      --row4: 120svh;
+    }
+  }
+
+  .grida > :first-child {
+    align-self: end;
   }
 
   .grida > :nth-child(2) {
@@ -78,8 +101,8 @@ const {
   }
 </style>
 
-<Logo variant="top" />
 <div class="grida pretty_heading wrap">
+  <Logo variant="top" />
   <h1 class="brand_name huge right clickScrollTrigger">{title}</h1>
 
   <div class="title_wrap h2 no_select">

@@ -1,11 +1,18 @@
 details summary {
+  position: relative;
   user-select: none;
   list-style: none;
   cursor: pointer;
   color: currentColor;
   min-height: var(--tap_size);
-  height: var(--tap_size);
+  height: max(var(--tap_size), fit-content);
   margin-bottom: var(--space_block);
+  border-bottom: 1px solid currentColor;
+  span {
+    display: block;
+    width: 100%;
+    line-height: 1;
+  }
 }
 
 details summary::-webkit-details-marker {
@@ -14,22 +21,25 @@ details summary::-webkit-details-marker {
 
 details summary::after {
   content: " +";
-  margin-left: 0.5em;
-  font-size: 130%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 150%;
   color: currentColor;
 }
-details,
-details[open] {
-  width: 100%;
-  text-align: left;
-}
+
 details[open] summary::after {
   content: " −";
 }
 
 details[open] summary {
   padding-bottom: 0;
-  border-bottom: 2px solid currentColor;
+  border-bottom: 1px solid transparent;
+}
+details,
+details[open] {
+  width: 100%;
+  text-align: left;
 }
 
 details {

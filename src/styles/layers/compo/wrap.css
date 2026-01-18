@@ -19,6 +19,24 @@
     margin: 0 auto;
   }
 }
+@media (min-width: 1240px) {
+  .wrap {
+    max-width: 85svw;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1400px) {
+  .wrap {
+    max-width: 80svw;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 2500px) {
+  .wrap {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+}
 
 /*🐸NO SELECT | user-select: none; */
 .post_image,

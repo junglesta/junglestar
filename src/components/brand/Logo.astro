@@ -11,10 +11,10 @@ const { variant } = Astro.props;
 
 <style>
   :root {
-    --logo_size: clamp(188px, 20svw, 255px);
+    --logo_size: 255px;
   }
   .logo_link {
-    height: var(--logo_size);
+    padding-top: var(--space_block);
     color: currentColor;
     position: relative;
     display: block;
@@ -29,40 +29,25 @@ const { variant } = Astro.props;
   .logosvg {
     color: currentColor;
     width: var(--logo_size);
-    height: var(--logo_size);
   }
 
   .logo_link_top {
-    bottom: -76px;
+    bottom: 0;
     display: grid;
     place-content: center;
-    clip-path: inset(0 0 52px 0); /* top right bottom left */
   }
 
   .logo_link_bottom {
-    bottom: -70px;
+    bottom: 0;
     display: grid;
     place-content: center;
-    clip-path: inset(0 0 52px 0); /* top right bottom left */
   }
 
   /* Landscape */
-  @media (min-aspect-ratio: 4/3) {
-    .logo_link_top {
-      bottom: -76px;
-      display: grid;
-      place-content: center;
-      clip-path: inset(0 0 52px 0); /* top right bottom left */
-    }
-    .logo_link {
-      align-self: end;
-    }
-    .logo_link_bottom {
-      bottom: -60px;
-      display: grid;
-      place-content: center;
-      clip-path: inset(0 0 52px 0); /* top right bottom left */
-    }
+  @media (min-aspect-ratio: 4/3) and (max-width: 1000px) {
+    /*.logo_link_top {
+      display: none;
+    }*/
   }
 </style>
 

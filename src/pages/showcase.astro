@@ -9,10 +9,11 @@ import projectsData from "@data/works.json";
 // import type { ImageMetadata } from "astro";
 
 // Page metadata
-const overtitle_line1 = "Live Projects.";
 
 const title_start = "Junglestar Showcase ";
 const title_end = " About us";
+const overtitle_line1 = "We build these from zero to launched.";
+const overtitle_line2 = "then maintained, updated, refactored... ";
 const title = title_start + " | " + title_end;
 
 const onScroll_line1 = "Have a look... ";
@@ -39,14 +40,15 @@ const projects = projectsData.sort(
 <Layout
   title={title}
   description={description}
-  bodyClass="showcase bg_green_light"
-  mainClass="showcase bg_green_darker"
-  background="--jgreen_light"
+  bodyClass="showcase bg_brand"
+  mainClass="showcase brand_darker"
+  background="--brand"
 >
   <Fragment slot="inside_header">
     <LandingScreen
       title={title_start}
       overtitle_line1={overtitle_line1}
+      overtitle_line2={overtitle_line2}
       onScroll_line1={onScroll_line1}
       onScroll_line2={onScroll_line2}
       onScroll_line4={onScroll_line4}

@@ -32,4 +32,7 @@
     padding-bottom: var(--space_block);
     padding-left: var(--space_inline);
   }
+  /*.like_link_underline {
+    border-bottom: 1px currentColor solid;
+  }*/
 }

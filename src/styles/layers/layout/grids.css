@@ -1,25 +1,28 @@
 .grid_projects {
-  container-type: inline-size;
   padding-top: var(--space_block);
   display: grid;
-
   grid-template-columns: 1fr;
   gap: var(--space_block) var(--space_inline);
 }
 
-/* Container query: adapt to container width, not viewport */
-@container (min-width: 370px) {
+/* 2 columns */
+@media (min-width: 500px) {
   .grid_projects {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Fallback for browsers without container query support */
-@supports not (container-type: inline-size) {
-  @media (width > 370px) {
-    .grid_projects {
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    }
+/* 3 columns */
+@media (min-width: 900px) {
+  .grid_projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 4 columns */
+@media (min-width: 1400px) {
+  .grid_projects {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

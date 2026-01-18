@@ -47,21 +47,21 @@
   --tap_size: 48px;
 
   /*🐸 COLOURS */
-  --black: oklch(0 0 0);
-  --black_fumes: #161616; /*oklch(0.2 0 360)*/
-  --blackT25: color-mix(in oklch, var(--black), transparent 75%);
-  --blackT50: color-mix(in oklch, var(--black), transparent 50%);
-  --black_hover: var(--black);
 
   --white: oklch(0.9624 0.0062 75.41 / 100%);
+  --whiteOFF: oklch(0.84 0.02 75.4 / 100%);
+  --whiteDIRTY: oklch(0.6849 0.02 75.4 /100%);
   --white_hex: #f5f2ee;
-  --whiteT05: rgba(255, 255, 255, 0.05);
-  --whiteT10: rgba(255, 255, 255, 0.1);
-  --whiteT15: rgba(255, 255, 255, 0.15);
-  --whiteT25: rgba(255, 255, 255, 0.25);
   --whiteT50: rgba(255, 255, 255, 0.5);
+  --whiteT25: rgba(255, 255, 255, 0.25);
+  --whiteT15: rgba(255, 255, 255, 0.15);
+  --whiteT10: rgba(255, 255, 255, 0.1);
+  --whiteT05: rgba(255, 255, 255, 0.05);
   --white_hover: var(--white);
 
+  --black: oklch(0 0 0);
+  --black_fumes: #161616; /*oklch(0.2 0 360)*/
+  --black_hover: var(--black);
   --blackT75: rgba(0, 0, 0, 0.75);
   --blackT50: rgba(0, 0, 0, 0.5);
   --blackT30: rgba(0, 0, 0, 0.3);
@@ -104,9 +104,10 @@
   --brand_light: oklch(0.6286 0.1735 255);
   --brand_dark: oklch(0.4286 0.1735 255);*/
   --text_color: #111111;
-  --grey_color: #212121;
-  --grey_color_light: #878787;
-  --grey_color_dark: #000000;
+  --grey_color_lighter: #888888;
+  --grey_color_light: #646464;
+  --grey_color: #343434;
+  --grey_color_dark: #232323;
   --svgBG: pink;
 
   /* 🐸 GUI ELEMENTS */

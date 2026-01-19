@@ -84,23 +84,10 @@ function parseBold(text: string) {
     p {
       padding-top: calc(var(--space_block) / 4);
     }
-
-    details summary::after {
-      display: block;
-      padding-top: var(--space_block);
-    }
-    details[open] summary {
-      padding-bottom: calc(var(--space_block) * 5);
-      border-bottom: 0 none;
-    }
   }
 
   .txt_white_on_black > * {
     color: var(--white);
-  }
-
-  .cta.button.superstition {
-    color: red;
   }
 </style>
 
@@ -120,7 +107,9 @@ function parseBold(text: string) {
 
           <div class="intro_content ">
             <details>
-              <summary class="tagline">{item.data.tagline}</summary>
+              <summary class="tagline">
+                <span>{item.data.tagline}</span>
+              </summary>
               {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
               {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
               {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}

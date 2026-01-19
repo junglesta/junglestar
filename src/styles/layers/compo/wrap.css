@@ -27,7 +27,7 @@
 }
 @media (min-width: 1400px) {
   .wrap {
-    max-width: 80svw;
+    max-width: 70svw;
     margin: 0 auto;
   }
 }

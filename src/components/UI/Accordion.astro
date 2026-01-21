@@ -1,0 +1,59 @@
+---
+interface Props {
+    summary: string;
+    open?: boolean;
+}
+
+const { summary, open = false } = Astro.props;
+---
+
+<details class="details" open={open}>
+    <summary class="summary">{summary}</summary>
+    <div class="details_content">
+        <slot />
+    </div>
+</details>
+
+<style>
+    .details {
+        border: 1px solid currentColor;
+        border-radius: 8px;
+        background: hsl(0 0% 100%);
+    }
+
+    .summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.25rem;
+        cursor: pointer;
+        user-select: none;
+        list-style: none;
+        transition: background-color 0.2s ease;
+    }
+
+    .summary::-webkit-details_marker {
+        display: none;
+    }
+
+    .summary:hover {
+        background: hsl(0 0% 97%);
+    }
+
+    .summary::after {
+        content: "+";
+        font-size: 1.25rem;
+        font-weight: 400;
+        transition: transform 0.2s ease;
+    }
+
+    .details[open] .summary::after {
+        transform: rotate(45deg);
+    }
+
+    .details_content {
+        padding: 0 1.25rem 1rem;
+        font-size: 0.875rem;
+        color: currentColor;
+    }
+</style>

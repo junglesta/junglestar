@@ -23,7 +23,7 @@ const {
     justify-content: center;
     align-items: center;
     padding-block: calc(var(--space_block) * 5);
-    text-transform: uppercase;
+    color: currentColor;
   }
 
   .CTAMailBanner .button {
@@ -33,6 +33,8 @@ const {
     gap: calc(var(--space_block) / 1);
     padding-inline: 15px 5px;
     font: inherit;
+    text-transform: uppercase;
+    color: currentColor;
   }
 
   .CTAMailBanner .button svg {
@@ -59,25 +61,27 @@ const {
 </div>
 
 <script>
-  document.querySelectorAll(".CTAMailBanner button[data-email]").forEach((button) => {
-    button.addEventListener("click", async () => {
-      const email = button.getAttribute("data-email");
-      const originalText = button.getAttribute("data-original-text");
-      const span = button.querySelector("span");
+  document
+    .querySelectorAll(".CTAMailBanner button[data-email]")
+    .forEach((button) => {
+      button.addEventListener("click", async () => {
+        const email = button.getAttribute("data-email");
+        const originalText = button.getAttribute("data-original-text");
+        const span = button.querySelector("span");
 
-      if (!email || !span) return;
+        if (!email || !span) return;
 
-      try {
-        await navigator.clipboard.writeText(email);
-        span.textContent = "COPIED!";
+        try {
+          await navigator.clipboard.writeText(email);
+          span.textContent = "COPIED!";
 
-        setTimeout(() => {
-          span.textContent = originalText;
-        }, 2000);
-      } catch {
-        // Show email if clipboard fails
-        span.textContent = email;
-      }
+          setTimeout(() => {
+            span.textContent = originalText;
+          }, 2000);
+        } catch {
+          // Show email if clipboard fails
+          span.textContent = email;
+        }
+      });
     });
-  });
 </script>

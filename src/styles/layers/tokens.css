@@ -48,6 +48,7 @@
 
   /*🐸 COLOURS */
 
+  --transparent: rgba(0, 0, 0, 0);
   --white: oklch(0.9624 0.0062 75.41 / 100%);
   --whiteOFF: oklch(0.84 0.02 75.4 / 100%);
   --whiteDIRTY: oklch(0.6849 0.02 75.4 /100%);
@@ -150,12 +151,12 @@
   --weight_heavy: 900;
 
   /*🐸HEADING WEIGHTS - base values (mobile-first) */
-  --h1-weight: 300;
-  --h2-weight: 300;
-  --h3-weight: 350;
-  --h4-weight: 400;
-  --h5-weight: 400;
-  --h6-weight: 450;
+  --h1-weight: 200;
+  --h2-weight: 233;
+  --h3-weight: 266;
+  --h4-weight: 300;
+  --h5-weight: 333;
+  --h6-weight: 366;
 
   /*🐸LOGO STROKE - thicker at small sizes, thinner at large
     Follows same optical principle as font weights */
@@ -173,29 +174,29 @@
   --width_max: 1920px;
 
   /*🐸RESPONSIVE HEADINGS WITH SVH */
-  --heading1_responsive: 4svh;
-  --heading1_min: 1.75rem;
-  --heading1_max: 4.6svh;
+  --h1_responsive: 4svh;
+  --h1_min: 1.75rem;
+  --h1_max: 4.6svh;
 
-  --heading2_responsive: 3.25svh;
-  --heading2_min: 1.75rem;
-  --heading2_max: 4.2svh;
+  --h2_responsive: 3.25svh;
+  --h2_min: 1.75rem;
+  --h2_max: 4.2svh;
 
-  --heading3_responsive: 3svh;
-  --heading3_min: 1.5rem;
-  --heading3_max: 3.6svh;
+  --h3_responsive: 3svh;
+  --h3_min: 1.5rem;
+  --h3_max: 3.6svh;
 
-  --heading4_responsive: 2.5svh;
-  --heading4_min: 1.25rem;
-  --heading4_max: 3.3svh;
+  --h4_responsive: 2.5svh;
+  --h4_min: 1.25rem;
+  --h4_max: 3.3svh;
 
-  --heading5_responsive: 2.25svh;
-  --heading5_min: 1.15rem;
-  --heading5_max: 3svh;
+  --h5_responsive: 2.25svh;
+  --h5_min: 1.15rem;
+  --h5_max: 3svh;
 
-  --heading6_responsive: 2svh;
-  --heading6_min: 1rem;
-  --heading6_max: 2.6svh;
+  --h6_responsive: 2svh;
+  --h6_min: 1rem;
+  --h6_max: 2.6svh;
 
   /* 🐸 DERIVED COLOURS */
   --link_color: var(--white);

@@ -128,9 +128,30 @@ const tag = tags?.[0] || "";
     font-weight: 400;
   }
 
-  a:has(.service) {
-    background-color: var(--blackT75);
+  .service {
+    padding-top: calc(var(--space_block) * 2);
+    &:before {
+      content: "SERVICE";
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+      border: 1px solid var(--brand);
+      background-color: inherit;
+      color: var(--brand);
+      font-size: calc(var(--font_rem) / 1.5);
+      font-weight: 400;
+    }
+  }
+
+  a.service {
+    background-color: var(--blackT15);
     color: var(--white);
+    .title_works {
+      color: var(--white);
+    }
   }
   a:has(.service) {
     .date_works {
@@ -139,7 +160,7 @@ const tag = tags?.[0] || "";
   }
 
   a:has(.webapp) {
-    background-color: var(--blackT50);
+    background-color: var(--whiteT50);
     color: var(--white);
   }
 </style>
@@ -148,9 +169,9 @@ const tag = tags?.[0] || "";
   href={url}
   target="_blank"
   rel="noopener noreferrer"
-  class="card no_underline card_works_link"
+  class={tag + " " + "card no_underline card_works_link"}
 >
-  <div class={category + " " + tag}></div>
+  <div class={category}></div>
   {
     ico_url && (
       <img

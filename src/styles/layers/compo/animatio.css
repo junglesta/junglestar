@@ -63,21 +63,52 @@
   }
 }
 
-/*GRADIENT ANIMATIONS*/
+/*GRADIENT ANIMATIONS - GPU composited using transform */
 
-@keyframes gradient {
+@keyframes gradient-move {
   0% {
-    background-position: 50% 0%;
+    transform: translate(0%, -25%);
   }
   50% {
-    background-position: 0% 100%;
+    transform: translate(-25%, 25%);
   }
   100% {
-    background-position: 50% 0%;
+    transform: translate(0%, -25%);
   }
 }
 
-.about header {
+/* Base styles for animated gradient elements */
+.about header,
+.about footer,
+.offer footer:not(.offer_footer),
+.discoverablity footer,
+.content footer,
+.index footer,
+.index header,
+.design footer {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.about header::before,
+.about footer::before,
+.offer footer:not(.offer_footer)::before,
+.discoverablity footer::before,
+.content footer::before,
+.index footer::before,
+.index header::before,
+.design footer::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  will-change: transform;
+}
+
+.about header::before {
   background: radial-gradient(
     circle,
     var(--jgreen_light),
@@ -85,11 +116,10 @@
     var(--jgreen_light),
     var(--jgreen)
   );
-  background-size: 350% 1200%;
-  animation: gradient 49s ease-in-out infinite !important;
+  animation: gradient-move 49s ease-in-out infinite;
 }
 
-.about footer {
+.about footer::before {
   background: radial-gradient(
     circle,
     var(--jgreen_light),
@@ -97,21 +127,20 @@
     var(--jgreen),
     var(--jgreen_light)
   );
-  background-size: 350% 1200%;
-  animation: gradient 33s ease-in-out infinite !important;
+  animation: gradient-move 33s ease-in-out infinite;
 }
-.offer footer:not(.offer_footer) {
+
+.offer footer:not(.offer_footer)::before {
   background: radial-gradient(
     circle,
     var(--white),
     var(--brand_light),
     var(--white)
   );
-  background-size: 350% 1200%;
-  animation: gradient 33s ease-in-out infinite !important;
+  animation: gradient-move 33s ease-in-out infinite;
 }
 
-.discoverablity footer {
+.discoverablity footer::before {
   background: radial-gradient(
     circle,
     var(--brand_dark),
@@ -119,22 +148,20 @@
     var(--brand),
     var(--brand_dark)
   );
-  background-size: 350% 1200%;
-  animation: gradient 33s ease-in-out infinite !important;
+  animation: gradient-move 33s ease-in-out infinite;
 }
 
-.content footer {
+.content footer::before {
   background: radial-gradient(
     circle,
     var(--jorange),
     var(--jorange_light),
     var(--jorange_dark)
   );
-  background-size: 350% 1200%;
-  animation: gradient 33s ease-in-out infinite !important;
+  animation: gradient-move 33s ease-in-out infinite;
 }
 
-.index footer {
+.index footer::before {
   background: radial-gradient(
     circle,
     var(--brand),
@@ -142,11 +169,10 @@
     var(--brand),
     var(--brand_dark)
   );
-  background-size: 350% 1200%;
-  animation: gradient 39s ease-in-out infinite !important;
+  animation: gradient-move 39s ease-in-out infinite;
 }
 
-.index header {
+.index header::before {
   background: radial-gradient(
     circle,
     var(--brand),
@@ -154,11 +180,10 @@
     var(--brand),
     var(--brand_dark)
   );
-  background-size: 350% 1200%;
-  animation: gradient 39s ease-in-out infinite !important;
+  animation: gradient-move 39s ease-in-out infinite;
 }
 
-.design footer {
+.design footer::before {
   background: radial-gradient(
     circle,
     var(--brand),
@@ -168,6 +193,5 @@
     var(--brand_lighter),
     var(--brand)
   );
-  background-size: 250% 1200%;
-  animation: gradient 28s ease-in-out infinite !important;
+  animation: gradient-move 28s ease-in-out infinite;
 }

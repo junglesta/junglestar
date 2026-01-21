@@ -23,41 +23,43 @@ const wavePath = `M0,0 L1,0 L1,${waveHeight} Q0.75,${waveHeight + 0.15} 0.5,${wa
 ---
 
 <div class:list={["wave_section", className]} style={`height: ${height};`}>
-  <svg width="0" height="0" aria-hidden="true">
-    <defs>
-      <clipPath id={clipId} clipPathUnits="objectBoundingBox">
-        <path d={wavePath}></path>
-      </clipPath>
-    </defs>
-  </svg>
-  <div
-    class="wave_top"
-    style={`background: ${topBackground}; clip-path: url(#${clipId});`}
-  >
-    <slot name="top" />
+  <div class="intros wave_top" style={`clip-path: url(#${clipId});`}>
+    <svg width="0" height="0" aria-hidden="true">
+      <defs>
+        <clipPath id={clipId} clipPathUnits="objectBoundingBox">
+          <path d={wavePath}></path>
+        </clipPath>
+      </defs>
+    </svg>
+    <div
+      class="wave_top"
+      style={`background-color: ${topBackground}; clip-path: url(#${clipId});`}
+    >
+      <slot name="top" />
+    </div>
+    <div class="wave_bottom" style={`background-color: ${bottomBackground};`}>
+      <slot name="bottom" />
+    </div>
   </div>
-  <div class="wave_bottom" style={`background: ${bottomBackground};`}>
-    <slot name="bottom" />
-  </div>
+
+  <style>
+    .wave_section {
+      position: relative;
+      width: 100%;
+    }
+
+    .wave_bottom,
+    .wave_top {
+      position: absolute;
+      inset: 0;
+    }
+
+    .wave_bottom {
+      z-index: 0;
+    }
+
+    .wave_top {
+      z-index: 1;
+    }
+  </style>
 </div>
-
-<style>
-  .wave_section {
-    position: relative;
-    width: 100%;
-  }
-
-  .wave_bottom,
-  .wave_top {
-    position: absolute;
-    inset: 0;
-  }
-
-  .wave_bottom {
-    z-index: 0;
-  }
-
-  .wave_top {
-    z-index: 1;
-  }
-</style>

@@ -3,6 +3,9 @@ details summary {
   top: calc(var(--space_block) / 2);
   user-select: none;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   color: currentColor;
   min-height: var(--tap_size);
@@ -10,6 +13,7 @@ details summary {
   width: 100%;
   margin-bottom: var(--space_block);
   border-bottom: 1px solid rgb(from currentColor r g b / 50%);
+  transition: background-color 0.2s ease;
   span {
     display: block;
     width: 90%;
@@ -22,16 +26,18 @@ details summary::-webkit-details-marker {
 }
 
 details summary::after {
-  content: " +";
-  position: absolute;
+  content: "+";
+  /*position: absolute;
   top: -12px;
-  right: 0px;
+  right: 0px;*/
   font-size: 150%;
   color: currentColor;
+  transition: transform 0.2s ease;
 }
 
 details[open] summary::after {
   content: " −";
+  transform: rotate(180deg);
 }
 
 details[open] summary {

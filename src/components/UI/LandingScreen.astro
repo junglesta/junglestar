@@ -30,13 +30,13 @@ const {
 <style>
   .icono {
     padding-block: var(--space_block);
-    display: block;
-    width: 200px;
-    height: 200px;
-    max-width: 25svw;
+    display: grid;
+    place-items: center;
+    align-self: center;
     svg {
-      width: initial !important;
-      height: initial !important;
+      width: 200px;
+      max-width: 25svw;
+      aspect-ratio: 1;
     }
   }
 
@@ -79,13 +79,48 @@ const {
     align-self: center;
   }
 
-  /* Landscape */
+  .on_scroll_msg {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+  }
+
+  /* Landscape mobile */
   @media (min-aspect-ratio: 4/3) and (max-width: 1000px) {
     .grida {
       --row1: 24svh;
       --row2: auto;
       --row3: 50svh;
-      --row4: 120svh;
+      --row4: 200svh;
+    }
+
+    .on_scroll_msg {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      grid-template-areas:
+        "l1 l1 l1"
+        "l2 l2 l2"
+        "l3 icono l4"
+        "l5 l5 l5"
+        "l6 l6 l6";
+      gap: 0.5rem 2rem;
+      justify-items: center;
+      align-items: center;
+
+      .l1 { grid-area: l1; }
+      .l2 { grid-area: l2; }
+      .l3 { grid-area: l3; justify-self: end; }
+      .icono {
+        grid-area: icono;
+        padding: 1rem;
+        svg {
+          width: 150px;
+        }
+      }
+      .l4 { grid-area: l4; justify-self: start; }
+      .l5 { grid-area: l5; }
+      .l6 { grid-area: l6; }
     }
   }
 
@@ -111,14 +146,14 @@ const {
     <div class="overline line3">{overtitle_line3}</div>
   </div>
   <div class="on_scroll_msg animatio h3 wrap no_select">
-    <div class="l1">{onScroll_line1.toUpperCase()}</div>
-    <div class="l2">{onScroll_line2}</div>
-    <div class="l3">{onScroll_line3}</div>
+    {onScroll_line1 && <div class="l1">{onScroll_line1.toUpperCase()}</div>}
+    {onScroll_line2 && <div class="l2">{onScroll_line2}</div>}
+    {onScroll_line3 && <div class="l3">{onScroll_line3}</div>}
     <div class="icono">
       <slot />
     </div>
-    <div class="l4">{onScroll_line4}</div>
-    <div class="l5">{onScroll_line5}</div>
-    <div class="l6">{onScroll_line6}</div>
+    {onScroll_line4 && <div class="l4">{onScroll_line4}</div>}
+    {onScroll_line5 && <div class="l5">{onScroll_line5}</div>}
+    {onScroll_line6 && <div class="l6">{onScroll_line6}</div>}
   </div>
 </div>

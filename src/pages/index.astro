@@ -18,9 +18,9 @@ const title = title_start + " | " + title_end + " | v" + repoData.version;
 
 const onScroll_line1 = "Hello! Welcome.";
 const onScroll_line2 = "Let us breifly introduce";
-const onScroll_line3 = "WHAT WE CAN DO ";
-const onScroll_line4 = "and";
-const onScroll_line5 = "WHY YOU MIGHT NEED US";
+const onScroll_line3 = "WHAT WE CAN DO FOR YOU";
+const onScroll_line4 = "WHY YOU MIGHT NEED US";
+const onScroll_line5 = "";
 const onScroll_line6 = "Keep on scrolling...";
 const description =
   "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
@@ -52,13 +52,6 @@ const wavePath = `M0,0 L1,0 L1,${waveHeight} Q0.75,${waveHeight + 0.15} 0.5,${wa
   mainClass=" "
   background="--brand"
 >
-  <svg width="0" height="0" aria-hidden="true">
-    <defs>
-      <clipPath id={clipId} clipPathUnits="objectBoundingBox">
-        <path d={wavePath}></path>
-      </clipPath>
-    </defs>
-  </svg>
 
   <Fragment slot="inside_header">
     <LandingScreen
@@ -66,9 +59,12 @@ const wavePath = `M0,0 L1,0 L1,${waveHeight} Q0.75,${waveHeight + 0.15} 0.5,${wa
       overtitle_line1={overtitle_line1}
       overtitle_line2={overtitle_line2}
       overtitle_line3={overtitle_line3}
+
       onScroll_line1={onScroll_line1}
       onScroll_line2={onScroll_line2}
       onScroll_line3={onScroll_line3}
+      onScroll_line4={onScroll_line4}
+
       onScroll_line5={onScroll_line5}
       onScroll_line6={onScroll_line6}
     >

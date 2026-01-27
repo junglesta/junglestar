@@ -13,7 +13,7 @@ importers:
         version: 0.9.6(prettier-plugin-astro@0.14.1)(prettier@3.7.4)(typescript@5.9.3)
       '@astrojs/mdx':
         specifier: ^4.3.13
-        version: 4.3.13(astro@5.16.12(@types/node@25.0.3)(rollup@4.55.3)(typescript@5.9.3)(yaml@2.8.2))
+        version: 4.3.13(astro@5.16.15(@types/node@25.0.3)(rollup@4.55.3)(typescript@5.9.3)(yaml@2.8.2))
       '@astrojs/ts-plugin':
         specifier: ^1.10.6
         version: 1.10.6
@@ -21,8 +21,8 @@ importers:
         specifier: ^2.3.11
         version: 2.3.11
       astro:
-        specifier: ^5.16.12
-        version: 5.16.12(@types/node@25.0.3)(rollup@4.55.3)(typescript@5.9.3)(yaml@2.8.2)
+        specifier: ^5.16.15
+        version: 5.16.15(@types/node@25.0.3)(rollup@4.55.3)(typescript@5.9.3)(yaml@2.8.2)
       prettier:
         specifier: 3.7.4
         version: 3.7.4
@@ -760,8 +760,8 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro@5.16.12:
-    resolution: {integrity: sha512-R2LH1GW4JexpSMWffbpzkeZDAwbdZwI5BclXEwi+vIUPxQI+7Y9ZogJ5u4ukdYFGrcrie/0z+Od4i3MlR0nELQ==}
+  astro@5.16.15:
+    resolution: {integrity: sha512-+X1Z0NTi2pa5a0Te6h77Dgc44fYj63j1yx6+39Nvg05lExajxSq7b1Uj/gtY45zoum8fD0+h0nak+DnHighs3A==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2085,12 +2085,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.13(astro@5.16.12(@types/node@25.0.3)(rollup@4.55.3)(typescript@5.9.3)(yaml@2.8.2))':
+  '@astrojs/mdx@4.3.13(astro@5.16.15(@types/node@25.0.3)(rollup@4.55.3)(typescript@5.9.3)(yaml@2.8.2))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.10
       '@mdx-js/mdx': 3.1.1
       acorn: 8.15.0
-      astro: 5.16.12(@types/node@25.0.3)(rollup@4.55.3)(typescript@5.9.3)(yaml@2.8.2)
+      astro: 5.16.15(@types/node@25.0.3)(rollup@4.55.3)(typescript@5.9.3)(yaml@2.8.2)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -2669,7 +2669,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro@5.16.12(@types/node@25.0.3)(rollup@4.55.3)(typescript@5.9.3)(yaml@2.8.2):
+  astro@5.16.15(@types/node@25.0.3)(rollup@4.55.3)(typescript@5.9.3)(yaml@2.8.2):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.5

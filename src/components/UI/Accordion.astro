@@ -1,59 +1,86 @@
 ---
 interface Props {
-    summary: string;
-    open?: boolean;
+  summary: string;
+  open?: boolean;
+  variant?: "button";
 }
 
-const { summary, open = false } = Astro.props;
+const { summary, open = false, variant } = Astro.props;
 ---
 
-<details class="details" open={open}>
-    <summary class="summary">{summary}</summary>
-    <div class="details_content">
-        <slot />
-    </div>
+<details class="details" data-variant={variant} open={open}>
+  <summary class="summary">
+    {summary}
+  </summary>
+  <div class="details_content">
+    <slot />
+  </div>
 </details>
 
 <style>
-    .details {
-        border: 1px solid currentColor;
-        border-radius: 8px;
-        background: hsl(0 0% 100%);
-    }
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+    transition: background-color 0.2s ease;
+  }
 
-    .summary {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 1.25rem;
-        cursor: pointer;
-        user-select: none;
-        list-style: none;
-        transition: background-color 0.2s ease;
-    }
+  .summary::-webkit-details_marker {
+    display: none;
+  }
 
-    .summary::-webkit-details_marker {
-        display: none;
-    }
+  .summary:hover {
+    opacity: 0.95;
+  }
 
-    .summary:hover {
-        background: hsl(0 0% 97%);
-    }
+  .summary::after {
+    content: "+";
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: transform 0.2s ease;
+  }
 
-    .summary::after {
-        content: "+";
-        font-size: 1.25rem;
-        font-weight: 400;
-        transition: transform 0.2s ease;
-    }
+  .details[open] .summary::after {
+    transform: rotate(45deg);
+  }
 
-    .details[open] .summary::after {
-        transform: rotate(45deg);
-    }
+  .details[data-variant="button"] .summary {
+    border-bottom: none;
+    flex-wrap: wrap;
+  }
 
-    .details_content {
-        padding: 0 1.25rem 1rem;
-        font-size: 0.875rem;
-        color: currentColor;
+  @media (width < 600px) {
+    .details[data-variant="button"] .summary::after {
+      margin-top: var(--space_block);
     }
+  }
+
+  .details[data-variant="button"] .summary::after {
+    content: "Read more";
+    font-size: inherit;
+    font-weight: var(--weight_med);
+    display: inline-block;
+    height: var(--tap_size);
+    line-height: var(--tap_size);
+    color: var(--brand);
+    border: 2px solid var(--brand);
+    border-radius: var(--radius);
+    padding-inline: var(--space_inline);
+    white-space: nowrap;
+    transform: none;
+  }
+
+  .details[data-variant="button"][open] .summary::after {
+    content: "Close this";
+    transform: none;
+  }
+
+  .details_content {
+    padding: 0 1.25rem 1rem;
+    color: currentColor;
+  }
 </style>

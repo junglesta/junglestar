@@ -13,15 +13,15 @@
 */
 
 :root {
-  /* LANDSCAPE CONTEXT DEFAULTS (portrait-first) */
-  --is_landscape: 0;
-  --section_height: 100svh;
-  --section_height_half: 50svh;
-  --safe_inset: 0%;
-  --safe_padding: 0px;
+	/* LANDSCAPE CONTEXT DEFAULTS (portrait-first) */
+	--is_landscape: 0;
+	--section_height: 100svh;
+	--section_height_half: 50svh;
+	--safe_inset: 0%;
+	--safe_padding: 0px;
 
-  /* Container query support flag */
-  --container_aware: 1;
+	/* Container query support flag */
+	--container_aware: 1;
 }
 
 /* ========================================
@@ -29,53 +29,53 @@
    ======================================== */
 
 /* SQUARE & BASIC LANDSCAPE (4:3+) - tablets landscape, older monitors */
-@media (min-aspect-ratio: 4/3) {
-  :root {
-    --is_landscape: 1;
-    --section_height: max(50svh, 400px);
-    --section_height_half: max(35svh, 250px);
-  }
+@media (min-aspect-ratio: 4 / 3) {
+	:root {
+		--is_landscape: 1;
+		--section_height: max(50svh, 400px);
+		--section_height_half: max(35svh, 250px);
+	}
 }
 
 /* STANDARD LANDSCAPE (16:9+) - TVs, modern monitors, laptops */
-@media (min-aspect-ratio: 16/9) {
-  :root {
-    --section_height: max(60svh, 450px);
-    --section_height_half: max(40svh, 300px);
-    --safe_inset: 2.5%;
-    --safe_padding: 2.5vw;
-  }
+@media (min-aspect-ratio: 16 / 9) {
+	:root {
+		--section_height: max(60svh, 450px);
+		--section_height_half: max(40svh, 300px);
+		--safe_inset: 2.5%;
+		--safe_padding: 2.5vw;
+	}
 }
 
 /* WIDE SCREENS (1.85:1+) - cinematic, some TVs */
-@media (min-aspect-ratio: 1.85/1) {
-  :root {
-    --safe_inset: 4%;
-    --safe_padding: 4vw;
-  }
+@media (min-aspect-ratio: 1.85 / 1) {
+	:root {
+		--safe_inset: 4%;
+		--safe_padding: 4vw;
+	}
 }
 
 /* ULTRA-WIDE (21:9+) - ultrawide monitors, multi-screen setups */
-@media (min-aspect-ratio: 21/9) {
-  :root {
-    --section_height: max(70svh, 500px);
-    --section_height_half: max(50svh, 350px);
-    --safe_inset: 5%;
-    --safe_padding: 5vw;
-  }
+@media (min-aspect-ratio: 21 / 9) {
+	:root {
+		--section_height: max(70svh, 500px);
+		--section_height_half: max(50svh, 350px);
+		--safe_inset: 5%;
+		--safe_padding: 5vw;
+	}
 }
 
 /* ========================================
    PHONE LANDSCAPE SPECIAL CASE
    Very wide but very short viewport
    ======================================== */
-@media (min-aspect-ratio: 4/3) and (max-height: 500px) {
-  :root {
-    --section_height: auto;
-    --section_height_half: auto;
-    --safe_inset: 0%;
-    --safe_padding: 0px;
-  }
+@media (min-aspect-ratio: 4 / 3) and (max-height: 500px) {
+	:root {
+		--section_height: auto;
+		--section_height_half: auto;
+		--safe_inset: 0%;
+		--safe_padding: 0px;
+	}
 }
 
 /* ========================================
@@ -83,11 +83,11 @@
    Apply to elements that need overscan protection
    ======================================== */
 .tv-safe {
-  padding-inline: var(--safe_padding);
+	padding-inline: var(--safe_padding);
 }
 
 .tv-safe-all {
-  padding: var(--safe_padding);
+	padding: var(--safe_padding);
 }
 
 /* ========================================
@@ -95,27 +95,27 @@
    Establish containment contexts for responsive components
    ======================================== */
 .container-inline {
-  container-type: inline-size;
+	container-type: inline-size;
 }
 
 .container-size {
-  container-type: size;
+	container-type: size;
 }
 
 /* Named containers for specific components */
 .card-container {
-  container-type: inline-size;
-  container-name: card;
+	container-type: inline-size;
+	container-name: card;
 }
 
 .section-container {
-  container-type: inline-size;
-  container-name: section;
+	container-type: inline-size;
+	container-name: section;
 }
 
 .grid-container {
-  container-type: inline-size;
-  container-name: grid;
+	container-type: inline-size;
+	container-name: grid;
 }
 
 /* ========================================
@@ -125,42 +125,42 @@
 
 /* Example: Cards in container */
 @container card (min-width: 400px) {
-  .card-adaptive {
-    flex-direction: row;
-  }
+	.card-adaptive {
+		flex-direction: row;
+	}
 }
 
 @container card (min-width: 600px) {
-  .card-adaptive {
-    gap: 2rem;
-  }
+	.card-adaptive {
+		gap: 2rem;
+	}
 }
 
 /* Example: Section layouts */
 @container section (min-width: 800px) {
-  .section-adaptive {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+	.section-adaptive {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 /* Example: Grid auto-adaptation */
 @container grid (min-width: 600px) {
-  .grid-adaptive {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	.grid-adaptive {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @container grid (min-width: 900px) {
-  .grid-adaptive {
-    grid-template-columns: repeat(3, 1fr);
-  }
+	.grid-adaptive {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @container grid (min-width: 1200px) {
-  .grid-adaptive {
-    grid-template-columns: repeat(4, 1fr);
-  }
+	.grid-adaptive {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 /* ========================================
@@ -168,18 +168,18 @@
    Replace hardcoded 100svh with these
    ======================================== */
 .section-height {
-  min-height: var(--section_height);
+	min-height: var(--section_height);
 }
 
 .section-height-half {
-  min-height: var(--section_height_half);
+	min-height: var(--section_height_half);
 }
 
 /* Flex utility that uses landscape-aware height */
 .space-between-adaptive {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  min-height: var(--section_height);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	min-height: var(--section_height);
 }

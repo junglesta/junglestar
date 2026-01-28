@@ -1,13 +1,13 @@
 /*🐸TOC STUFF*/
 .toc {
-  background-color: var(--whiteT25);
-  color: var(--black);
-  border: 1px solid var(--brand);
-  border-radius: var(--radius);
-  margin: var(--space_block) 0;
-  padding: var(--space_block);
-  margin-inline: auto;
-  text-align: left;
+	background-color: var(--whiteT25);
+	color: var(--black);
+	border: 1px solid var(--brand);
+	border-radius: var(--radius);
+	margin: var(--space_block) 0;
+	padding: var(--space_block);
+	margin-inline: auto;
+	text-align: left;
 }
 /*
 .toc ul {
@@ -27,39 +27,39 @@
 }*/
 
 .toc ul {
-  padding: 0;
-  list-style: none; /* remove default marker */
+	padding: 0;
+	list-style: none; /* remove default marker */
 }
 
 .toc li {
-  position: relative;
-  padding-left: 1.25em; /* space for the arrow */
+	position: relative;
+	padding-left: 1.25em; /* space for the arrow */
 }
 
 .toc li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-  top: 0; /* keeps it aligned to first line */
-  color: var(--black75);
-  font-size: 75%;
+	content: "→";
+	position: absolute;
+	left: 0;
+	top: 0; /* keeps it aligned to first line */
+	color: var(--black75);
+	font-size: 75%;
 }
 
 .toc li:hover::before {
-  font-weight: 500;
-  color: var(--black);
+	font-weight: 500;
+	color: var(--black);
 }
 
 .toc li {
-  a {
-    color: var(--blackT50);
-    text-decoration: none;
-  }
-  a::after {
-    content: "";
-  }
+	a {
+		color: var(--blackT50);
+		text-decoration: none;
+	}
+	a::after {
+		content: "";
+	}
 
-  a:hover {
-    text-decoration: underline;
-  }
+	a:hover {
+		text-decoration: underline;
+	}
 }

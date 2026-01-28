@@ -1,25 +1,25 @@
 /* SVG UTILITIES */
 svg.outlined {
-  fill: transparent;
-  stroke-width: 5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+	fill: transparent;
+	stroke-width: 5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
 }
 
 svg.brand_color {
-  stroke: var(--brand);
+	stroke: var(--brand);
 }
 
 svg.white_color {
-  stroke: var(--white);
+	stroke: var(--white);
 }
 
 .desperate {
-  color: var(--white);
-  svg.icon--desperate {
-    stroke: var(--white);
-    fill: var(--white);
-  }
+	color: var(--white);
+	svg.icon--desperate {
+		stroke: var(--white);
+		fill: var(--white);
+	}
 }
 
 /*🐸LOGO STROKE - responsive (thicker small, thinner large)
@@ -33,7 +33,7 @@ svg.white_color {
 svg.logo path.onepath,
 svg.logo path.circlej,
 svg.logo polygon.star {
-  stroke-width: var(--logo-stroke, 5) !important;
+	stroke-width: var(--logo-stroke, 5) !important;
 }
 
 /*🐸ICON STROKE - for icons with smaller viewBox (24x24) */
@@ -41,5 +41,5 @@ svg.logo-icon circle,
 svg.logo-icon path,
 .logo-icon circle,
 .logo-icon path {
-  stroke-width: var(--logo-stroke-icon, 0.37) !important;
+	stroke-width: var(--logo-stroke-icon, 0.37) !important;
 }

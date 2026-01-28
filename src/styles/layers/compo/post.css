@@ -1,78 +1,78 @@
 /*🐸POST STUFF*/
 
 .post {
-  margin-bottom: calc(var(--space_block) * 2);
-  padding: 2rem 0;
-  border-bottom: 1px solid white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: stretch;
-  gap: 0;
+	margin-bottom: calc(var(--space_block) * 2);
+	padding: 2rem 0;
+	border-bottom: 1px solid white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: stretch;
+	gap: 0;
 }
 
 .post:last-child {
-  border-bottom: none;
+	border-bottom: none;
 }
 
 .post_title {
-  /*color: currentColor;*/
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+	/*color: currentColor;*/
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
 }
 
 .post_subtitle {
-  margin-bottom: 1rem;
-  font-weight: var(--weight_med);
+	margin-bottom: 1rem;
+	font-weight: var(--weight_med);
 }
 
 .post_tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 details {
-  .post_tags {
-    display: none !important;
-  }
+	.post_tags {
+		display: none !important;
+	}
 }
 
 details[open] {
-  .post_tags {
-    display: block !important;
-  }
+	.post_tags {
+		display: block !important;
+	}
 }
 
 .post_content details summary {
-  border-bottom: none;
-  flex-wrap: wrap;
+	border-bottom: none;
+	flex-wrap: wrap;
 }
 
 .post_content details summary::after {
-  content: none;
+	content: none;
 }
 
 .post_content details summary span {
-  display: inline-block;
-  width: auto;
-  font-weight: var(--weight_med);
-  height: var(--tap_size);
-  line-height: var(--tap_size);
-  color: currentColor;
-  border: 2px solid currentColor;
-  border-radius: var(--radius);
-  padding-inline: var(--space_inline);
-  white-space: nowrap;
-  text-align: center;
+	display: inline-block;
+	width: auto;
+	font-weight: var(--weight_med);
+	height: var(--tap_size);
+	line-height: var(--tap_size);
+	color: currentColor;
+	border: 2px solid currentColor;
+	border-radius: var(--radius);
+	padding-inline: var(--space_inline);
+	white-space: nowrap;
+	text-align: center;
 }
 
 .post_content details[open] summary span {
-  font-size: 0;
+	font-size: 0;
 }
 
 .post_content details[open] summary span::after {
-  content: "Close this";
-  font-size: var(--font_rem);
-  color: currentColor;
+	content: "Close this";
+	font-size: var(--font_rem);
+	color: currentColor;
 }

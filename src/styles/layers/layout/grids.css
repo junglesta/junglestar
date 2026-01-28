@@ -1,43 +1,43 @@
 .grid_projects {
-  padding-top: var(--space_block);
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space_block) var(--space_inline);
+	padding-top: var(--space_block);
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--space_block) var(--space_inline);
 }
 
 /* 2 columns */
 @media (min-width: 500px) {
-  .grid_projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	.grid_projects {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 /* 3 columns */
 @media (min-width: 900px) {
-  .grid_projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
+	.grid_projects {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 /* 4 columns */
 @media (min-width: 1400px) {
-  .grid_projects {
-    grid-template-columns: repeat(4, 1fr);
-  }
+	.grid_projects {
+		grid-template-columns: repeat(4, 1fr);
+	}
 }
 
 .on_scroll_msg {
-  place-self: end center;
-  position: relative;
-  top: calc(25svh * -1);
-  > * {
-    padding-bottom: calc(var(--space_block) / 3.75);
-  }
+	place-self: end center;
+	position: relative;
+	top: calc(25svh * -1);
+	> * {
+		padding-bottom: calc(var(--space_block) / 3.75);
+	}
 }
 
 .grid_main {
-  position: initial;
-  display: grid;
-  padding: 0;
-  margin: 0;
+	position: initial;
+	display: grid;
+	padding: 0;
+	margin: 0;
 }

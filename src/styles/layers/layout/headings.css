@@ -15,82 +15,82 @@ h6,
 .h4,
 .h5,
 .h6 {
-  margin: 0;
-  padding: 0;
-  padding-block: calc(var(--space_block) * 0.545); /* was 1.5svh */
-  line-height: 1.44;
+	margin: 0;
+	padding: 0;
+	padding-block: calc(var(--space_block) * 0.545); /* was 1.5svh */
+	line-height: 1.44;
 }
 
 h1,
 .h1 {
-  font-weight: var(--h1-weight);
+	font-weight: var(--h1-weight);
 }
 
 h2,
 .h2 {
-  font-weight: var(--h2-weight);
+	font-weight: var(--h2-weight);
 }
 
 h3,
 .h3 {
-  font-weight: var(--h3-weight);
+	font-weight: var(--h3-weight);
 }
 
 h4,
 .h4 {
-  font-weight: var(--h4-weight);
+	font-weight: var(--h4-weight);
 }
 
 h5,
 .h5 {
-  font-weight: var(--h5-weight);
+	font-weight: var(--h5-weight);
 }
 
 h6,
 .h6 {
-  font-weight: var(--h6-weight);
+	font-weight: var(--h6-weight);
 }
 
 .section h2,
 .section h3 {
-  color: var(--brand);
+	color: var(--brand);
 }
 
 h1,
 .h1 {
-  font-size: clamp(var(--h1_min), var(--h1_responsive), var(--h1_max));
-  line-height: 1.1;
-  text-transform: uppercase;
+	font-size: clamp(var(--h1_min), var(--h1_responsive), var(--h1_max));
+	line-height: 1.1;
+	text-transform: uppercase;
 }
 
 h2,
 .h2 {
-  font-size: clamp(var(--h2_min), var(--h2_responsive), var(--h2_max));
-  line-height: 1.1;
-  padding-top: calc(var(--space_block) * 2);
-  text-transform: uppercase;
+	font-size: clamp(var(--h2_min), var(--h2_responsive), var(--h2_max));
+	line-height: 1.1;
+	padding-top: calc(var(--space_block) * 2);
+	text-transform: uppercase;
 }
 
 h3,
 .h3 {
-  font-size: clamp(var(--h3_min), var(--h3_responsive), var(--h3_max));
-  line-height: 1.1;
+	font-size: clamp(var(--h3_min), var(--h3_responsive), var(--h3_max));
+	line-height: 1.1;
 }
 
 h4,
 .h4 {
-  font-size: clamp(var(--h4_min), var(--h4_responsive), var(--h4_max));
-  line-height: 1.1;
+	font-size: clamp(var(--h4_min), var(--h4_responsive), var(--h4_max));
+	line-height: 1.1;
 }
 
 h5,
 .h5 {
-  font-size: clamp(var(--h5_min), var(--h5_responsive), var(--h5_max));
-  line-height: 1;
+	font-size: clamp(var(--h5_min), var(--h5_responsive), var(--h5_max));
+	line-height: 1;
 }
 
 h6,
 .h6 {
-  font-size: clamp(var(--h6_min), var(--h6_responsive), var(--h6_max));
-  line-height: 1;
+	font-size: clamp(var(--h6_min), var(--h6_responsive), var(--h6_max));
+	line-height: 1;
 }

@@ -1,52 +1,52 @@
 .bg_green {
-  --brand: var(--jgreen);
-  background-color: var(--jgreen);
-  color: var(--black);
+	--brand: var(--jgreen);
+	background-color: var(--jgreen);
+	color: var(--black);
 }
 .bg_green_light {
-  --brand: var(--jgreen_light);
-  background-color: var(--jgreen_light);
-  color: var(--black);
+	--brand: var(--jgreen_light);
+	background-color: var(--jgreen_light);
+	color: var(--black);
 }
 
 .bg_orange {
-  --brand: var(--jorange);
-  background-color: var(--jorange);
-  color: var(--black);
+	--brand: var(--jorange);
+	background-color: var(--jorange);
+	color: var(--black);
 }
 
 .bg_orange_light {
-  --brand: var(--jorange_light);
-  background-color: var(--jorange_light);
-  color: var(--black);
+	--brand: var(--jorange_light);
+	background-color: var(--jorange_light);
+	color: var(--black);
 }
 
 .bg_brand_light {
-  background-color: var(--bg_brand_light);
-  color: var(--black);
+	background-color: var(--bg_brand_light);
+	color: var(--black);
 }
 
 .bg_brand {
-  background-color: var(--brand);
-  color: var(--white);
+	background-color: var(--brand);
+	color: var(--white);
 }
 
 .bg_white {
-  background-color: var(--white);
-  color: var(--black);
+	background-color: var(--white);
+	color: var(--black);
 }
 .bg_black {
-  background-color: var(--black);
-  color: var(--white);
+	background-color: var(--black);
+	color: var(--white);
 }
 
 body.index,
 body.content {
-  .on_scroll_msg > * {
-    color: var(--brand_lightest);
-  }
+	.on_scroll_msg > * {
+		color: var(--brand_lightest);
+	}
 }
 
 body.bg_black .footer_site_color {
-  color: var(--white);
+	color: var(--white);
 }

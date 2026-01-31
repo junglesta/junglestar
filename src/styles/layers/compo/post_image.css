@@ -6,6 +6,7 @@
 	width: auto;
 	width: auto;
 	padding: 0 calc(var(--space_inline) * 2);
+	color: var(--brand);
 }
 
 .post_image img {

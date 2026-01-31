@@ -19,7 +19,6 @@
 	--fg: var(--black);
 	background-color: var(--bg);
 	color: var(--fg);
-	stroke: var(--bg);
 }
 
 .bg_orange_light {

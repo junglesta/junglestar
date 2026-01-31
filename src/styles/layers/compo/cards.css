@@ -122,5 +122,13 @@
 
 
 .card_list {
-    max-width: 600px; width: 600px;
+    max-width: 100%;
+    width: 100%;
+}
+
+@media (min-width: 601px) {
+    .card_list {
+        max-width: 600px;
+        width: 600px;
+    }
 }

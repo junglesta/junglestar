@@ -9,17 +9,52 @@ interface Props {
 }
 
 const { posts = [] } = Astro.props;
+
+// Load all SVGs as raw strings
+const designSvgs = import.meta.glob("/src/content/design/*.svg", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+}) as Record<string, string>;
+
+const productionSvgs = import.meta.glob("/src/content/production/*.svg", {
+  eager: true,
+  query: "?raw",
+  import: "default",
+}) as Record<string, string>;
+
+const allSvgs = { ...designSvgs, ...productionSvgs };
+
+// Helper to get SVG content by matching the src URL
+function getSvgContent(imageSrc: { src: string; format: string }): string | null {
+  if (imageSrc.format !== "svg") return null;
+
+  // Find matching SVG by filename in the src URL
+  for (const [path, content] of Object.entries(allSvgs)) {
+    const filename = path.split("/").pop();
+    if (filename && imageSrc.src.includes(filename)) {
+      return content;
+    }
+  }
+  return null;
+}
 ---
 
 <div class="wrap margin_topx2 card_list">
   {
     posts.map(async (post) => {
       const { Content } = await render(post);
+      const svgContent = post.data.image ? getSvgContent(post.data.image.src) : null;
+
       return (
         <AnimatedCard end="33%" distance="33%" id={post.id} class:list={post}>
           {post.data.image && (
             <div class="post_image">
-              <Image src={post.data.image.src} alt={post.data.image.alt} />
+              {svgContent ? (
+                <Fragment set:html={svgContent} />
+              ) : (
+                <Image src={post.data.image.src} alt={post.data.image.alt} />
+              )}
             </div>
           )}
           <div class="post_header">

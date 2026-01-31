@@ -2,26 +2,24 @@
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     class="scissors"
+    color="currentColor"
     >
 
 <style type="text/css">
-    :root {
-        --brand: #0069cc;
-    }
     .brand {
         fill: none;
-        stroke: var(--brand);
-        stroke-width: 0.33;
+        stroke: currentColor;
         stroke-linejoin: round;
     }
     .white {
-        fill: white;
+        fill: rgba(255,255,255,1);
     }
+    .stroke033 {stroke-width: 0.33;}
 </style>
 
-    <circle class="brand white" cx="6" cy="6" r="3"></circle>
-    <circle class="brand white" cx="6" cy="18" r="3"></circle>
-    <line class="brand" x1="20" y1="4" x2="8.12" y2="15.88"></line>
-    <line class="brand" x1="14.47" y1="14.48" x2="20" y2="20"></line>
-    <line class="brand" x1="8.12" y1="8.12" x2="12" y2="12"></line>
+    <circle class="brand stroke033 white" cx="6" cy="6" r="3"></circle>
+    <circle class="brand stroke033 white" cx="6" cy="18" r="3"></circle>
+    <line class="brand stroke033" x1="20" y1="4" x2="8.12" y2="15.88"></line>
+    <line class="brand stroke033" x1="14.47" y1="14.48" x2="20" y2="20"></line>
+    <line class="brand stroke033" x1="8.12" y1="8.12" x2="12" y2="12"></line>
 </svg>

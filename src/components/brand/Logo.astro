@@ -13,6 +13,13 @@ const { variant } = Astro.props;
   :root {
     --logo_size: 255px;
   }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    :root {
+      --logo_size: 160px;
+    }
+  }
   .logo_link {
     padding-top: var(--space_block);
     color: currentColor;

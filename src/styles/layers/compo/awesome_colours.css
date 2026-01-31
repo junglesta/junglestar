@@ -1,43 +1,60 @@
 .bg_green {
 	--brand: var(--jgreen);
-	background-color: var(--jgreen);
-	color: var(--black);
+	--bg: var(--jgreen);
+	--fg: var(--black);
+	background-color: var(--bg);
+	color: var(--fg);
 }
 .bg_green_light {
 	--brand: var(--jgreen_light);
-	background-color: var(--jgreen_light);
-	color: var(--black);
+	--bg: var(--jgreen_light);
+	--fg: var(--black);
+	background-color: var(--bg);
+	color: var(--fg);
 }
 
 .bg_orange {
 	--brand: var(--jorange);
-	background-color: var(--jorange);
-	color: var(--black);
+	--bg: var(--jorange);
+	--fg: var(--black);
+	background-color: var(--bg);
+	color: var(--fg);
+	stroke: var(--bg);
 }
 
 .bg_orange_light {
 	--brand: var(--jorange_light);
-	background-color: var(--jorange_light);
-	color: var(--black);
+	--bg: var(--jorange_light);
+	--fg: var(--black);
+	background-color: var(--bg);
+	color: var(--fg);
 }
 
 .bg_brand_light {
-	background-color: var(--bg_brand_light);
-	color: var(--black);
+	--bg: var(--bg_brand_light);
+	--fg: var(--black);
+	background-color: var(--bg);
+	color: var(--fg);
 }
 
 .bg_brand {
-	background-color: var(--brand);
-	color: var(--white);
+	--bg: var(--brand);
+	--fg: var(--white);
+	background-color: var(--bg);
+	color: var(--fg);
 }
 
 .bg_white {
-	background-color: var(--white);
-	color: var(--black);
+	--bg: var(--whiteOFF);
+	--fg: var(--black);
+	background-color: var(--bg);
+	color: var(--fg);
 }
 .bg_black {
-	background-color: var(--black);
-	color: var(--white);
+	--bg: var(--black);
+	--fg: var(--white);
+	background-color: var(--bg);
+	color: var(--fg);
 }
 
 body.index,

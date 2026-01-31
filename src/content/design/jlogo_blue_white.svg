@@ -12,17 +12,14 @@
     xml:space="preserve"
 >
 <style type="text/css">
-:root {
-    --brand: #0069cc;
-}
 .st0 {
     fill: none;
-    stroke: var(--brand);
+    stroke: currentColor;
     stroke-width: 4;
 }
 .st1 {
-    fill: #ffffff;
-    stroke: var(--brand);
+    fill: rgba(255,255,255,1);
+    stroke: currentColor;
     stroke-width: 4;
 }
     </style>

@@ -9,14 +9,14 @@
 .brand {
     fill: none;
     stroke: currentColor;
-    stroke-width: 0.33;
     stroke-linejoin: round;
 }
 .white {
-fill: rgba(255,255,255,0.5);
+fill: rgba(255,255,255,1);
 }
+.stroke033 {stroke-width: 0.33;}
     </style>
 
-  <path class="brand white" d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z" >
+  <path class="brand white stroke033" d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z" >
   </path>
 </svg>

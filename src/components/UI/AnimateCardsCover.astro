@@ -13,7 +13,7 @@ const { class: className, id, end = "50%", distance = "50px" } = Astro.props;
 
 <div
   id={id}
-  class:list={["card_list", className]}
+  class:list={["card_ani", className]}
   style={`--end: ${end}; --distance: ${distance}`}
 >
   <slot />
@@ -42,7 +42,7 @@ const { class: className, id, end = "50%", distance = "50px" } = Astro.props;
     }
   }
 
-  .card_list {
+  .card_ani {
     @media (prefers-reduced-motion: no-preference) {
       @supports (animation-timeline: view()) {
         animation-timeline: view();

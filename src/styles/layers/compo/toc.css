@@ -29,20 +29,19 @@
 .toc ul {
 	padding: 0;
 	list-style: none; /* remove default marker */
+	margin-top: calc(var(--space_block) * 0.5);
 }
 
 .toc li {
 	position: relative;
-	padding-left: 1.25em; /* space for the arrow */
+	padding-left: calc(var(--space_inline) * 0.4); /* reduced indent */
 }
 
 .toc li::before {
 	content: "→";
 	position: absolute;
-	left: 0;
-	top: 0; /* keeps it aligned to first line */
-	color: var(--black75);
-	font-size: 75%;
+	left: calc(var(--space_inline) * -0.6); /* detached to the left */
+	color: var(--blackT30);
 }
 
 .toc li:hover::before {
@@ -52,7 +51,7 @@
 
 .toc li {
 	a {
-		color: var(--blackT50);
+		color: var(--black);
 		text-decoration: none;
 	}
 	a::after {

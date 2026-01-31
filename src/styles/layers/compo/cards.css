@@ -114,3 +114,8 @@
 		margin: 0;
 	}
 }
+
+
+.card_ani {
+    padding-block: calc(var(--space_block)*4);
+}

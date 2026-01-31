@@ -13,13 +13,20 @@ html {
 	background-color: #fff;
 }
 body {
+	--bg: var(--brand);
+	--fg: var(--text_color);
 	font-family: var(--font_family);
 	font-size: var(--font_clamp);
 	line-height: var(--line_height);
 	font-weight: var(--weight);
-	color: var(--text_color);
-	background-color: var(--brand);
+	color: var(--fg);
+	background-color: var(--bg);
 	-webkit-text-size-adjust: 100%;
+}
+
+::selection {
+	background-color: var(--fg);
+	color: var(--bg);
 }
 
 /*🐸MAIN */

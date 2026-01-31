@@ -12,11 +12,13 @@
     fill: none;
     stroke: currentColor;
 }
-.fillwhite {fill: rgba(255,255,255,1);
+.fillwhite {
+    fill: white;
+    stroke: currentColor;
 }
-    .stroke033 {stroke-width: 0.33;}
+.stroke033 {stroke-width: 0.33;}
 </style>
 
 <circle class="brand stroke033" cx="12" cy="12" r="10"></circle>
-<polygon class="brand stroke033 fillwhite" points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+<polygon class="stroke033 fillwhite" points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
 </svg>

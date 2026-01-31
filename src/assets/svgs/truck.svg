@@ -10,11 +10,11 @@
         transform: scaleX(1);
       }
       49.9% {
-        left: calc(100vw - 133px);
+        left: min(230px, calc(100vw - 133px));
         transform: scaleX(1);
       }
       50% {
-        left: calc(100vw - 133px);
+        left: min(230px, calc(100vw - 133px));
         transform: scaleX(-1);
       }
       99.9% {

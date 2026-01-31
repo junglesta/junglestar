@@ -34,7 +34,7 @@
 
 .toc li {
 	position: relative;
-	padding-left: calc(var(--space_inline) * 0.4); /* reduced indent */
+	padding-left: calc(var(--space_inline) * 1.2);
 }
 
 .toc li::before {

@@ -6,19 +6,15 @@ details summary {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: var(--space_inline);
 	cursor: pointer;
 	color: currentColor;
 	min-height: var(--tap_size);
 	height: max(var(--tap_size), fit-content);
 	width: 100%;
-	margin-bottom: var(--space_block);
-	border-bottom: 1px solid rgb(from currentColor r g b / 50%);
+	padding-top: calc(var(--space_block) / 2);
+	border-top: 1px solid rgb(from currentColor r g b / 50%);
 	transition: background-color 0.2s ease;
-	span {
-		display: block;
-		width: 90%;
-		line-height: 1;
-	}
 }
 
 details summary::-webkit-details-marker {
@@ -41,8 +37,8 @@ details[open] summary::after {
 }
 
 details[open] summary {
-	padding-bottom: 0;
-	border-bottom: 1px solid rgb(from currentColor r g b / 60%);
+	margin-bottom: var(--space_block);
+	border-top: 1px solid rgb(from currentColor r g b / 60%);
 }
 details,
 details[open] {

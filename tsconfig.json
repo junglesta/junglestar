@@ -14,11 +14,10 @@
       //one level deep
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@utils*": ["src/utils/*"],
+      "@utils/*": ["src/utils/*"],
       "@styles/*": ["src/styles/*"],
       "@assets/*": ["src/assets/*"],
       "@data/*": ["src/data/*"],
-      "@utils/*": ["src/utils/*"],
       //two levels deep
       "@footer/*": ["src/components/footer/*"],
       //ASSETS STUFF

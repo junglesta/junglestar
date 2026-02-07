@@ -17,8 +17,8 @@ npm install
 yarn add package-name
 ```
 
-**Version:** pnpm 10.26.1
-**Lock File:** pnpm-lock.yaml (4424 lines) - Never commit package-lock.json or yarn.lock
+**Version:** pnpm 10.28.2
+**Lock File:** pnpm-lock.yaml - Never commit package-lock.json or yarn.lock
 
 ## npm Scripts Reference
 
@@ -65,19 +65,19 @@ export default defineConfig({
   site: "https://junglestar.org",     // Production URL
   outDir: "./dist",                   // Build output directory
   build: {
-    assets: "_JSTAR",                 // Custom asset prefix
-    format: "directory",              // Directory-based URLs
+    assets: "_JSTAR",                 // Custom asset prefix (prevents direct browsing)
+    format: "directory",              // Directory-based URLs (/about/index.html)
+    inlineStylesheets: "always",      // All CSS inlined in <head> (no separate .css files)
   },
   trailingSlash: "never",             // No trailing slashes in URLs
+  scopedStyleStrategy: "where",       // :where() selectors (no specificity increase)
 });
 ```
 
-### Important Build Options
+### Image & Prefetch Options
 
 ```javascript
 {
-  scopedStyleStrategy: "where",       // :where() selectors (no specificity)
-
   image: {
     responsiveStyles: true,           // Generate responsive image CSS
     layout: "full-width",             // Full-width image layout
@@ -86,8 +86,23 @@ export default defineConfig({
   prefetch: {
     prefetchAll: true,                // Prefetch all internal links
   },
+}
+```
 
-  inlineStylesheets: "always",        // Inline critical CSS
+### Experimental Features
+
+```javascript
+{
+  experimental: {
+    fonts: [{                         // Google Fonts integration
+      provider: fontProviders.google(),
+      name: "Source Sans 3",
+      weights: [200, 300, 400, 500, 600, 700, 800, 900],
+      cssVariable: "--font_variable",
+    }],
+    chromeDevtoolsWorkspace: true,    // Chrome DevTools workspace support
+    svgo: { ... },                    // SVG optimization (see below)
+  },
 }
 ```
 
@@ -127,23 +142,19 @@ vite: {
 }
 ```
 
-### SVGO Optimization
+### SVGO Optimization (experimental)
 
 ```javascript
-svgo: {
-  plugins: [
-    {
-      name: "preset-default",
-      params: {
-        overrides: {
-          removeViewBox: false,       // Keep viewBox for responsiveness
-          removeMetadata: true,       // Strip metadata
-        },
-      },
-    },
-  ],
-  floatPrecision: 3,                  // 3 decimal precision
-  multipass: true,                    // Multiple optimization passes
+experimental: {
+  svgo: {
+    floatPrecision: 3,                // 3 decimal precision
+    multipass: true,                  // Multiple optimization passes
+    plugins: [
+      "preset-default",
+      { name: "removeViewBox", active: false },   // Keep viewBox for responsiveness
+      { name: "removeMetadata", active: true },    // Strip metadata
+    ],
+  },
 }
 ```
 
@@ -220,23 +231,29 @@ pnpm preview                # Serve at localhost:4321
 
 ```
 /dist/                      # Build output (~2.0MB)
-  /_JSTAR/                  # Asset directory (CSS, JS, images)
-    /*.css                  # Hashed stylesheets
+  /_JSTAR/                  # Asset directory (JS, images, fonts)
+    index.html              # Redirect page (prevents directory browsing)
     /*.js                   # Hashed scripts
     /images/                # Optimized images
   /index.html               # Home page
   /about/index.html         # About page
   /design/index.html        # Design page
+  /content/index.html       # Content page
+  /offer/index.html         # Offer page
+  /services/index.html      # Services page
+  /showcase/index.html      # Showcase page
+  /discoverability/index.html # Discoverability page
   /robots.txt               # SEO robots file
-  /sitemap.xml              # Generated sitemap
 ```
 
 ### Asset Handling
 
 - **Asset Prefix:** `_JSTAR/` (custom, not default `_astro/`)
+- **Directory Protection:** `/_JSTAR` redirects to `/` (prevents direct browsing)
 - **File Naming:** Content-hashed for cache busting
 - **Image Optimization:** Automatic via Sharp
-- **CSS Inlining:** Critical CSS inlined in `<head>`
+- **CSS:** All inlined in `<head>` (no separate CSS files in output)
+- **Fonts:** Auto-fetched via experimental Google Fonts integration
 
 ## Environment Variables
 
@@ -303,7 +320,7 @@ Node Version:     22.19.0 (from .nvmrc)
 
 ```json
 {
-  "astro": "^5.16.15",                // Core framework
+  "astro": "^5.17.1",                 // Core framework
   "@astrojs/mdx": "^4.3.13",          // MDX support
   "@astrojs/check": "^0.9.6",         // Type checking
   "@astrojs/ts-plugin": "^1.10.6",    // IDE integration
@@ -311,20 +328,28 @@ Node Version:     22.19.0 (from .nvmrc)
 }
 ```
 
+### Runtime Dependencies
+
+```json
+{
+  "@astro-community/astro-embed-link-preview": "^0.3.1"  // Link preview embeds
+}
+```
+
 ### Build Tools
 
 ```json
 {
-  "@biomejs/biome": "^2.3.11",        // Linting & formatting
-  "prettier": "^3.7.4",               // Code formatting
-  "prettier-plugin-astro": "^0.14.1", // Astro formatting
+  "@biomejs/biome": "^2.3.14",        // Linting & formatting
+  "prettier": "3.7.4",                // Code formatting
+  "prettier-plugin-astro": "0.14.1",  // Astro formatting
   "sharp": "^0.34.5"                  // Image optimization
 }
 ```
 
 ### pnpm Workspace Configuration
 
-**File:** `.npmrc`
+**File:** `pnpm-workspace.yaml`
 
 ```yaml
 ignoredBuiltDependencies:
@@ -354,10 +379,14 @@ onlyBuiltDependencies:
 
 **Linter Rules:**
 - `noConsole`: warn (allows error, warn, info, debug)
-- `noUnusedVariables`: error
+- `noUnusedVariables`: error (with `ignoreRestSiblings`)
+- `noUnusedFunctionParameters`: error
 - `noUnusedImports`: error
 - `useImportType`: error (enforces type-only imports)
 - `useNodejsImportProtocol`: error
+
+**Overrides:**
+- `.astro`, `.vue`, `.svelte` files: formatting disabled, unused vars/imports off
 
 **Run Before Commit:**
 ```bash
@@ -367,19 +396,19 @@ pnpm lint                   # Check for errors
 
 ### Prettier Configuration
 
-**File:** `.prettierrc.mjs`
+**File:** `.prettierrc.cjs`
 
 ```javascript
-export default {
-  plugins: ["prettier-plugin-astro"],
-  overrides: [
-    {
-      files: "*.astro",
-      options: {
-        parser: "astro",
-      },
-    },
-  ],
+module.exports = {
+  plugins: [require.resolve("prettier-plugin-astro")],
+  overrides: [{ files: "*.astro", options: { parser: "astro" } }],
+  astroAllowShorthand: true,
+  printWidth: 100,
+  semi: true,
+  singleQuote: true,
+  tabWidth: 2,
+  useTabs: false,
+  trailingComma: "all",
 };
 ```
 
@@ -529,7 +558,7 @@ pnpm install                # Fresh install
 
 ## Performance Targets
 
-- **Build Time:** ~30-60 seconds for full build
+- **Build Time:** ~4-5 seconds for full build
 - **Output Size:** ~2.0MB total
 - **Lighthouse Scores:** Aim for 90+ in all categories
 - **First Contentful Paint:** <1.5s

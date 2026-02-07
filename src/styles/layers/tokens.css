@@ -157,7 +157,7 @@
 
 	/*🐸LOGO STROKE - thicker at small sizes, thinner at large
     Follows same optical principle as font weights */
-	--logo-stroke: 3.75;
+	--logo-stroke: 5;
 	--logo-size: 220px; /* Base logo size, scales with breakpoints */
 
 	/*🐸BREAKPOINTS */
@@ -290,5 +290,22 @@
 	:root {
 		--font_rem: 28px;
 		--logo-size: 450px;
+	}
+}
+
+/*🐸LOW-DPI SCREENS - thicker strokes & heavier weights for legibility */
+@media (max-resolution: 1.5dppx) {
+	:root {
+		--logo-stroke: 6.5;
+		--logo-stroke-icon: 0.5;
+		--weight: 350;
+		--weight_thin: 250;
+		--weight_thinner: 150;
+		--h1-weight: 250;
+		--h2-weight: 280;
+		--h3-weight: 310;
+		--h4-weight: 350;
+		--h5-weight: 380;
+		--h6-weight: 400;
 	}
 }

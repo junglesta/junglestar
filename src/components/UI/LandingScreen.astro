@@ -29,14 +29,18 @@ const {
 
 <style>
   .icono {
+    position: relative;
     padding-block: var(--space_block);
     display: grid;
     place-items: center;
     align-self: center;
+    width: 100%;
+    min-height: 80px;
     svg {
-      width: 200px;
-      max-width: 25svw;
+      width: clamp(80px, 25svw, 120px);
       aspect-ratio: 1;
+      stroke: currentColor;
+      stroke-width: var(--logo-stroke-icon, 0.37);
     }
   }
 

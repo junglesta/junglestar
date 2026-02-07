@@ -1,4 +1,4 @@
-<svg stroke-width=".5" color="currentColor" viewBox="0 0 24 24" width="133" height="133" fill="currentColor" class="truck" style="position: absolute; left: 0;">
+<svg stroke-width=".75" color="currentColor" viewBox="0 0 24 24" fill="currentColor" class="truck" style="position: absolute; left: 0;">
   <style>
     .truck {
       animation: drive 4s linear infinite;
@@ -10,11 +10,11 @@
         transform: scaleX(1);
       }
       49.9% {
-        left: min(230px, calc(100vw - 133px));
+        left: calc(100% - clamp(80px, 25svw, 120px));
         transform: scaleX(1);
       }
       50% {
-        left: min(230px, calc(100vw - 133px));
+        left: calc(100% - clamp(80px, 25svw, 120px));
         transform: scaleX(-1);
       }
       99.9% {

@@ -21,5 +21,8 @@ pnpm-debug.log*
 .DS_Store
 .vscode
 
+# Claude Code skills (kept local)
+.claude/skills/
+
 # Local Netlify folder
 .netlify

@@ -49,6 +49,16 @@ details[open] {
 	flex-wrap: wrap;
 }
 
+.design .post_content details summary,
+.content .post_content details summary {
+	border-top: none;
+}
+
+.design .post_content details[open] summary,
+.content .post_content details[open] summary {
+	border-top: none;
+}
+
 .post_content details summary::after {
 	content: none;
 }

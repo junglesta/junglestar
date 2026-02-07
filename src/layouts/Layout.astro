@@ -3,6 +3,7 @@
 import LastPub from "@components/shared/LastPublished.astro";
 import Footer from "@components/footer/Footer.astro";
 import Head from "@components/heads/Head.astro";
+import NavScroll from "@components/shared/NavScroll.astro";
 import * as siteData from "@data/site.json";
 import "@styles/global.css";
 
@@ -47,6 +48,7 @@ const {
   <Head title={title} description={description} sitemap={sitemap} />
   <LastPub />
   <body class={bodyClass} style={`background-color: var(${background})`}>
+    <NavScroll />
     <header>
       <slot name="inside_header" />
     </header>

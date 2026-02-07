@@ -35,6 +35,12 @@
 	}
 }
 
+@media (max-width: 374px) {
+	.on_scroll_msg.h3 {
+		font-size: 1.2rem;
+	}
+}
+
 .grid_main {
 	position: initial;
 	display: grid;

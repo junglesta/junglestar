@@ -44,7 +44,7 @@
 	--space_inline: 1.25rem;
 
 	/*🐸 FIXED SPACES */
-	--tap_size: 48px;
+	--tap_size: 44px;
 
 	/*🐸 COLOURS */
 
@@ -113,7 +113,7 @@
 
 	/* 🐸 GUI ELEMENTS */
 	--cover_height: calc(var(--viewport_height) * 2);
-	--radius: clamp(5px, 0.35rem, 1rem);
+	--radius: clamp(7px, 0.5rem, 1.25rem);
 
 	/*🐸CARD TOKENS */
 	--big_card_width: 27.5svw;

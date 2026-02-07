@@ -1,0 +1,8 @@
+[
+  { "label": "Design", "href": "/design", "title": "Communication design and development" },
+  { "label": "Content", "href": "/content", "title": "Content production and management" },
+  { "label": "Maps", "href": "/discoverability", "title": "Put your biz on the map" },
+  { "label": "Pricing", "href": "/offer", "title": "Website packages and pricing" },
+  { "label": "Showcase", "href": "/showcase", "title": "Selected works" },
+  { "label": "About", "href": "/about", "title": "About us" }
+]

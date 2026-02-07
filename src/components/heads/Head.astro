@@ -67,8 +67,11 @@ const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
     color="#0069cc"
   />
   <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Junglestar" />
   <meta name="application-name" content="Junglestar" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <meta name="msapplication-TileColor" content="#0069cc" />
   <meta
     name="msapplication-TileImage"
@@ -98,4 +101,11 @@ const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
   <meta name="twitter:description" content={description} />
 
   <slot name="head" />
+
+  <!-- Service Worker registration for PWA -->
+  <script is:inline>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
 </head>

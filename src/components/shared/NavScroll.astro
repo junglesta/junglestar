@@ -52,12 +52,11 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 		border-radius: var(--radius);
 		text-decoration: none;
 		user-select: none;
-		opacity: 0.7;
 	}
 
 	.nav_scroll_item:hover,
 	.nav_scroll_item:focus-visible {
-		opacity: 1;
+		background-color: var(--blackT10);
 	}
 
 	.nav_scroll_item::after {
@@ -72,7 +71,6 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 	.nav_scroll_item[aria-current="page"] {
 		background-color: var(--blackT10);
 		border-color: transparent;
-		opacity: 1;
 	}
 
 </style>

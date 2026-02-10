@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.5.9
+
+- NavScroll: removed opacity dimming for better text contrast (Lighthouse a11y fix)
+
 ## 3.5.8
 
 - Added NavScroll component: horizontal touch-scrollable nav driven by `menu.json`

@@ -78,7 +78,6 @@
 }
 
 /* Base styles for animated gradient elements */
-.about header,
 .about footer,
 .offer footer:not(.offer_footer),
 .discoverablity footer,
@@ -90,7 +89,6 @@
 	isolation: isolate;
 }
 
-.about header::before,
 .about footer::before,
 .offer footer:not(.offer_footer)::before,
 .discoverablity footer::before,
@@ -104,17 +102,6 @@
 	height: 200%;
 	z-index: -1;
 	will-change: transform;
-}
-
-.about header::before {
-	background: radial-gradient(
-		circle,
-		var(--jgreen_light),
-		var(--jgreen),
-		var(--jgreen_light),
-		var(--jgreen)
-	);
-	animation: gradient-move 49s ease-in-out infinite;
 }
 
 .about footer::before {

@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.5.11
+
+- Removed about page header gradient animation (consistent with index header cleanup)
+
 ## 3.5.10
 
 - NavScroll: active/hover states use border opacity instead of background color

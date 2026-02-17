@@ -30,7 +30,7 @@
 }
 
 .bg_brand_light {
-	--bg: var(--bg_brand_light);
+	--bg: var(--bg_brand_lighter);
 	--fg: var(--black);
 	background-color: var(--bg);
 	color: var(--fg);
@@ -41,6 +41,10 @@
 	--fg: var(--white);
 	background-color: var(--bg);
 	color: var(--fg);
+
+	.nav_scroll {
+		background-color: var(--brand);
+	}
 }
 
 .bg_white {

@@ -48,7 +48,7 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 		text-transform: uppercase;
 		white-space: nowrap;
 		color: currentColor;
-		border: 1.5px solid var(--blackT15);
+		border: 2px solid color-mix(in oklch, currentColor 20%, transparent);
 		border-radius: var(--radius);
 		text-decoration: none;
 		user-select: none;
@@ -56,7 +56,7 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 
 	.nav_scroll_item:hover,
 	.nav_scroll_item:focus-visible {
-		background-color: var(--blackT10);
+		border-color: color-mix(in oklch, currentColor 60%, transparent);
 	}
 
 	.nav_scroll_item::after {
@@ -69,8 +69,7 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 	}
 
 	.nav_scroll_item[aria-current="page"] {
-		background-color: var(--blackT10);
-		border-color: transparent;
+		border-color: currentColor;
 	}
 
 </style>

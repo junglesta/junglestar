@@ -148,12 +148,12 @@
 	--weight_heavy: 900;
 
 	/*🐸HEADING WEIGHTS - base values (mobile-first) */
-	--h1-weight: 200;
-	--h2-weight: 233;
-	--h3-weight: 266;
-	--h4-weight: 300;
-	--h5-weight: 333;
-	--h6-weight: 366;
+	--h1-weight: 250;
+	--h2-weight: 283;
+	--h3-weight: 300;
+	--h4-weight: 333;
+	--h5-weight: 366;
+	--h6-weight: 400;
 
 	/*🐸LOGO STROKE - thicker at small sizes, thinner at large
     Follows same optical principle as font weights */
@@ -247,10 +247,10 @@
 	:root {
 		--font_rem: 24px;
 		--logo-size: 360px;
-		--h1-weight: 150;
-		--h2-weight: 180;
-		--h3-weight: 230;
-		--h4-weight: 300;
+		--h1-weight: 200;
+		--h2-weight: 220;
+		--h3-weight: 260;
+		--h4-weight: 320;
 		--h5-weight: 350;
 	}
 }

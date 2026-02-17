@@ -84,7 +84,6 @@
 .discoverablity footer,
 .content footer,
 .index footer,
-.index header,
 .design footer {
 	position: relative;
 	overflow: hidden;
@@ -97,7 +96,6 @@
 .discoverablity footer::before,
 .content footer::before,
 .index footer::before,
-.index header::before,
 .design footer::before {
 	content: "";
 	position: absolute;
@@ -152,17 +150,6 @@
 }
 
 .index footer::before {
-	background: radial-gradient(
-		circle,
-		var(--brand),
-		var(--brand_dark),
-		var(--brand),
-		var(--brand_dark)
-	);
-	animation: gradient-move 39s ease-in-out infinite;
-}
-
-.index header::before {
 	background: radial-gradient(
 		circle,
 		var(--brand),

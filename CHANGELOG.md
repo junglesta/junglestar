@@ -1,5 +1,15 @@
 # Changelog
 
+## 3.5.10
+
+- NavScroll: active/hover states use border opacity instead of background color
+- NavScroll: border uses `currentColor` with `color-mix` for automatic dark/light adaptation
+- Fixed `.bg_brand .nav_scroll` forcing black background — now uses `var(--brand)`
+- Removed index header gradient animation (inconsistent — no other page had one)
+- Fixed heading font weights at 1024px breakpoint (h1–h5 values were too low)
+- Migrated skills to `<name>/SKILL.md` directory format
+- Added `READMEs/font-weights.md` documenting the responsive weight system
+
 ## 3.5.9
 
 - NavScroll: removed opacity dimming for better text contrast (Lighthouse a11y fix)

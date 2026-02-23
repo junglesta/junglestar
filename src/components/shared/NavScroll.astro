@@ -32,6 +32,12 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 		padding-block: calc(var(--space_block) / 3);
 	}
 
+	@media (min-width: 1024px) {
+		.nav_scroll {
+			justify-content: center;
+		}
+	}
+
 	.nav_scroll::-webkit-scrollbar {
 		display: none;
 	}

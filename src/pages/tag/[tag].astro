@@ -1,0 +1,74 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { slugify } from "@utils/slugify";
+import { getSvgContent } from "@utils/contentSvgs";
+import { getTagPaths } from "@utils/tags";
+import AnimatedCard from "@components/UI/AnimateCardsCover.astro";
+
+export async function getStaticPaths() {
+	return getTagPaths();
+}
+
+const { tag, posts } = Astro.props;
+---
+
+<Layout
+	title={`${tag}`}
+	description={`Posts tagged "${tag}"`}
+	bodyClass="tag_page bg_white"
+	background="--white"
+>
+	<div class="wrap vpad">
+		<h1 class="center">{tag}</h1>
+		<div class="wrap margin_topx2 card_list">
+			{posts.map(({ post, basePath }) => {
+				const svgContent = post.data.image ? getSvgContent(post.data.image.src) : null;
+				const href = `/${basePath}/${slugify(post.data.title)}`;
+				const transitionName = `post-img-${slugify(post.data.title)}`;
+
+				return (
+					<AnimatedCard end="33%" distance="33%" id={post.id}>
+						<a href={href} class:list={["card_link", `from_${basePath}`]}>
+							{post.data.image && (
+								<div class="post_image" transition:name={transitionName}>
+									{svgContent ? (
+										<Fragment set:html={svgContent} />
+									) : (
+										<Image src={post.data.image.src} alt={post.data.image.alt} />
+									)}
+								</div>
+							)}
+							<div class="post_header">
+								<h3 class="post_title">{post.data.title}</h3>
+								{post.data.subtitle && (
+									<p class="post_subtitle">{post.data.subtitle}&ensp;&rarr;</p>
+								)}
+								{!post.data.subtitle && <p class="post_subtitle">&rarr;</p>}
+							</div>
+						</a>
+					</AnimatedCard>
+				);
+			})}
+		</div>
+	</div>
+</Layout>
+
+<style is:global>
+	.tag_page .vpad {
+		padding-block: calc(var(--space_block) * 2);
+	}
+	.tag_page .from_design {
+		color: var(--brand);
+		border-color: var(--brand);
+	}
+	.tag_page .from_content {
+		color: var(--jorange);
+		border-color: var(--jorange);
+	}
+	.tag_page .from_content .post_image,
+	.tag_page .from_content .post_image svg,
+	.tag_page .from_content .post_image svg .brand {
+		color: var(--jorange);
+	}
+</style>

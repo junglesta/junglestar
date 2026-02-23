@@ -6,20 +6,12 @@ image:
   src: "sunrise.svg"
   alt: "Break free?"
 tags:
-  - guidance
-  - solutions
   - open-source
+  - sustainability
+  - web-development
 ---
 
-export const Tags = ({ tags }) => (
-  <div className="tags">
-    {tags?.map((tag) => (
-      <span key={tag} className="tag">
-        {tag}
-      </span>
-    ))}
-  </div>
-);
+import Tags from "@components/shared/Tags.astro";
 
 <Tags tags={frontmatter.tags} />
 

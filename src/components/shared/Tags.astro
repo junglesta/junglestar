@@ -1,0 +1,16 @@
+---
+// src/components/shared/Tags.astro
+import { getTagHref } from "@utils/tags";
+
+interface Props {
+	tags: string[];
+}
+
+const { tags } = Astro.props;
+---
+
+<nav class="tags" aria-label="Tags">
+	{tags.map((tag) => (
+		<a class="button tag" href={getTagHref(tag)}>{tag}</a>
+	))}
+</nav>

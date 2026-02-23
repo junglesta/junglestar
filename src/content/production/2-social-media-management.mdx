@@ -6,21 +6,13 @@ image:
   src: "binocular.svg"
   alt: "Overwhelmed?"
 tags:
-  - content
-  - management
-  - scheduling
-  - delegate
+  - social-media
+  - content-production
+  - outsourcing
+  - small-business
 ---
 
-export const Tags = ({ tags }) => (
-  <div className="tags">
-    {tags?.map((tag) => (
-      <span key={tag} className="tag">
-        {tag}
-      </span>
-    ))}
-  </div>
-);
+import Tags from "@components/shared/Tags.astro";
 
 <Tags tags={frontmatter.tags} />
 

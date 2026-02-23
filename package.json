@@ -1,7 +1,7 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "3.5.12",
+  "version": "3.6.0",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",

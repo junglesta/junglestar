@@ -6,22 +6,13 @@ image:
   src: "compass.svg"
   alt: "Overwhelmed?"
 tags:
-  - building
-  - service
-  - one-stop-shop
-  - webites
-  - webapps
+  - web-development
+  - mobile-first
+  - outsourcing
+  - creative-process 
 ---
 
-export const Tags = ({ tags }) => (
-  <div className="tags">
-    {tags?.map((tag) => (
-      <span key={tag} className="tag">
-        {tag}
-      </span>
-    ))}
-  </div>
-);
+import Tags from "@components/shared/Tags.astro";
 
 <Tags tags={frontmatter.tags} />
 
@@ -35,7 +26,7 @@ Finding a designer. Then a developer. Then someone for hosting. Then realizing t
   <em>We do all of it.</em>
 </small>
 
-Design, code, testing, hosting, security, launch. One team. One plan. No vendor ping-pong.
+Design, code, testing, hosting, security, launch. The whole creative process. One team. One plan. No vendor ping-pong.
 
 <small>
   <em>Why It Matters</em>

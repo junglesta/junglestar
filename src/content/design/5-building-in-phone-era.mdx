@@ -6,20 +6,12 @@ image:
   src: "building.svg"
   alt: "Overwelmed?"
 tags:
-  - building
-  - guidance
-  - know-how
+  - mobile-first
+  - web-development
+  - small-business
 ---
 
-export const Tags = ({ tags }) => (
-  <div className="tags">
-    {tags?.map((tag) => (
-      <span key={tag} className="tag">
-        {tag}
-      </span>
-    ))}
-  </div>
-);
+import Tags from "@components/shared/Tags.astro";
 
 <Tags tags={frontmatter.tags} />
 

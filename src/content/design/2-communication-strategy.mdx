@@ -6,23 +6,13 @@ image:
   src: "guidance.svg"
   alt: "Overwhelmed?"
 tags:
+  - brand-voice
+  - brand-strategy
   - consulting
-  - service
-  - guidance
-  - voice
-  - tone
-  - clarity
+  - automation
 ---
 
-export const Tags = ({ tags }) => (
-  <div className="tags">
-    {tags?.map((tag) => (
-      <span key={tag} className="tag">
-        {tag}
-      </span>
-    ))}
-  </div>
-);
+import Tags from "@components/shared/Tags.astro";
 
 <Tags tags={frontmatter.tags} />
 

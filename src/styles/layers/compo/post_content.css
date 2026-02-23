@@ -9,7 +9,7 @@
 		max-width: 60ch;
 		margin-inline: auto;
 	}
-	a {
+	a:not(.button) {
 		color: var(--brand);
 		text-decoration: underline;
 	}

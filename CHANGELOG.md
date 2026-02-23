@@ -1,5 +1,18 @@
 # Changelog
 
+## 3.6.0
+
+- Tag navigation system: tags are now clickable links to tag index pages
+- Shared `Tags.astro` component replaces duplicated inline JSX in all 10 MDX files
+- `src/utils/tags.ts` utility for tag URL generation and static path building
+- Unified tag pages at `/tag/[tag]` showing posts from both design and content sections
+- Tags reuse `.button` base class (no more duplicate CSS)
+- SEO tag portfolio refactoring: 33 tags → 15 searchable tags, fixed typos
+- Tag page cards show section color (blue for design, orange for content)
+- Simplified link exclusions: `:not(.button)` covers both buttons and tags
+- NavScroll centered at 1024px+
+- Tags row centered at 1024px+
+
 ## 3.5.12
 
 - Rescaled all content SVGs to unified 400x400 viewBox (was mix of 24x24 and 400x400)

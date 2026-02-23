@@ -7,13 +7,26 @@
 	gap: 5px;
 }
 
+@media (min-width: 1024px) {
+	.tags {
+		justify-content: center;
+	}
+}
+
 .tag {
+	height: auto;
+	line-height: normal;
+	margin-block: 0;
 	padding: 0.25rem 0.75rem;
 	background-color: var(--whiteT25);
-	border: 2px solid var(--brand);
 	border-radius: calc(var(--radius) / 2);
 	font-size: calc(var(--font_rem) * 0.75);
 	text-transform: uppercase;
-	color: var(--brand);
-	font-weight: 500;
+}
+
+.tag:hover,
+.tag:focus-visible {
+	background-color: var(--brand);
+	color: white;
+	transform: none;
 }

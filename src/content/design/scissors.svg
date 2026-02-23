@@ -1,6 +1,6 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
+    viewBox="0 0 400 400"
     class="scissors"
     color="currentColor"
     >
@@ -14,12 +14,12 @@
     .white {
         fill: rgba(255,255,255,1);
     }
-    .stroke033 {stroke-width: 0.33;}
+    .stroke4 {stroke-width: var(--stroke_unitless, 10);}
 </style>
 
-    <circle class="brand stroke033 white" cx="6" cy="6" r="3"></circle>
-    <circle class="brand stroke033 white" cx="6" cy="18" r="3"></circle>
-    <line class="brand stroke033" x1="20" y1="4" x2="8.12" y2="15.88"></line>
-    <line class="brand stroke033" x1="14.47" y1="14.48" x2="20" y2="20"></line>
-    <line class="brand stroke033" x1="8.12" y1="8.12" x2="12" y2="12"></line>
+    <circle class="brand stroke4 white" cx="100" cy="100" r="50"></circle>
+    <circle class="brand stroke4 white" cx="100" cy="300" r="50"></circle>
+    <line class="brand stroke4" x1="333.33" y1="66.67" x2="135.33" y2="264.67"></line>
+    <line class="brand stroke4" x1="241.17" y1="241.33" x2="333.33" y2="333.33"></line>
+    <line class="brand stroke4" x1="135.33" y1="135.33" x2="200" y2="200"></line>
 </svg>

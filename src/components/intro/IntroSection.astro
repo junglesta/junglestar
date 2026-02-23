@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import CTABanner from "@components/UI/CTABanner.astro";
-import Accordion from "@components/UI/Accordion.astro";
 // import Wave from "@components/UI/Wave.astro";
 const introItems = await getCollection("introJ");
 const svgRaw = import.meta.glob("/src/assets/intro/*.svg", {
@@ -85,8 +84,15 @@ const topBackground = "var(--black)";
     display: block;
   }
   .tagline {
+    font-size: clamp(var(--h6_min), var(--h6_responsive), var(--h6_max));
     line-height: 1.1;
     padding-bottom: var(--space_block);
+  }
+
+  @media (600px < width) {
+    .tagline {
+      font-size: clamp(var(--h5_min), var(--h5_responsive), var(--h5_max));
+    }
   }
 
   .intro_memes {
@@ -110,26 +116,23 @@ const topBackground = "var(--black)";
             class="background_svg animatio_slide_pulse"
             set:html={getSvgRaw(item.data.image.src)}
           />
+   <div class="intro_content ">
+          <h2 class="h2" set:html={parseBold(item.data.title1)} />
+          <p class="h4" set:html={parseBold(item.data.sub1)} />
+          <h3 class="h2" set:html={parseBold(item.data.title2)} />
+          <p class="tagline" set:html={parseBold(item.data.sub2)} />
+            {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
+            {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
+            {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}
+            {item.data.p4 && <p set:html={parseBold(item.data.p4)} />}
+            {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
+            {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
 
-          <h2 class="h2 ">{item.data.question}</h2>
-          <h3 class="h4 ">{item.data.title}</h3>
-          <h4 class="h5 ">{item.data.subtitle}</h4>
-
-          <div class="intro_content ">
-            <Accordion summary={item.data.tagline} variant="button">
-              {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
-              {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
-              {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}
-              {item.data.p4 && <p set:html={parseBold(item.data.p4)} />}
-              {item.data.p5 && <p set:html={parseBold(item.data.p5)} />}
-              {item.data.p6 && <p set:html={parseBold(item.data.p6)} />}
-
-              <CTABanner
-                text={item.data.cta}
-                link={item.data.link}
-                linkClass={item.data.theme}
-              />
-            </Accordion>
+            <CTABanner
+              text={item.data.cta}
+              link={item.data.link}
+              linkClass={item.data.theme}
+            />
           </div>
         </article>
       ))

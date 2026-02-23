@@ -109,7 +109,6 @@
 	--grey_color_light: #646464;
 	--grey_color: #343434;
 	--grey_color_dark: #232323;
-	--svgBG: pink;
 
 	/* 🐸 GUI ELEMENTS */
 	--cover_height: calc(var(--viewport_height) * 2);
@@ -160,6 +159,9 @@
 	--logo-stroke: 5;
 	--logo-size: 220px; /* Base logo size, scales with breakpoints */
 
+	/*🐸CONTENT SVG STROKE - unitless, used in viewBox 400 space */
+	--stroke_unitless: 10;
+
 	/*🐸BREAKPOINTS */
 	--width_min: 400px;
 	--width_xs: 480px;
@@ -170,30 +172,30 @@
 	--width_2x: 1420px;
 	--width_max: 1920px;
 
-	/*🐸RESPONSIVE HEADINGS WITH SVH */
-	--h1_responsive: 4svh;
+	/*🐸RESPONSIVE HEADINGS — all rem + vw, no layout shift */
+	--h1_responsive: 3.5vw;
 	--h1_min: 1.75rem;
-	--h1_max: 4.6svh;
+	--h1_max: 3rem;
 
-	--h2_responsive: 3.25svh;
+	--h2_responsive: 3vw;
 	--h2_min: 1.75rem;
-	--h2_max: 4.2svh;
+	--h2_max: 2.75rem;
 
-	--h3_responsive: 3svh;
+	--h3_responsive: 2.5vw;
 	--h3_min: 1.5rem;
-	--h3_max: 3.6svh;
+	--h3_max: 2.35rem;
 
-	--h4_responsive: 2.5svh;
+	--h4_responsive: 2vw;
 	--h4_min: 1.25rem;
-	--h4_max: 3.3svh;
+	--h4_max: 2rem;
 
-	--h5_responsive: 2.25svh;
+	--h5_responsive: 1.75vw;
 	--h5_min: 1.15rem;
-	--h5_max: 3svh;
+	--h5_max: 1.75rem;
 
-	--h6_responsive: 2svh;
+	--h6_responsive: 1.5vw;
 	--h6_min: 1rem;
-	--h6_max: 2.6svh;
+	--h6_max: 1.5rem;
 
 	/* 🐸 DERIVED COLOURS */
 	--link_color: var(--white);

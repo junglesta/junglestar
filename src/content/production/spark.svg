@@ -1,5 +1,5 @@
 <svg
-    viewBox="0 0 24 24"
+    viewBox="0 0 400 400"
     xmlns="http://www.w3.org/2000/svg"
     color="currentColor"
 >
@@ -13,9 +13,9 @@
 .white {
 fill: rgba(255,255,255,1);
 }
-.stroke033 {stroke-width: 0.33;}
+.stroke4 {stroke-width: var(--stroke_unitless, 10);}
     </style>
 
-  <path class="brand white stroke033" d="M3 12C9.26752 12 12 9.36306 12 3C12 9.36306 14.7134 12 21 12C14.7134 12 12 14.7134 12 21C12 14.7134 9.26752 12 3 12Z" >
+  <path class="brand white stroke4" d="M50 200C154.46 200 200 156.05 200 50C200 156.05 245.22 200 350 200C245.22 200 200 245.22 200 350C200 245.22 154.46 200 50 200Z" >
   </path>
 </svg>

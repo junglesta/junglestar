@@ -1,6 +1,6 @@
 ---
 // src/components/heads/Head.astro
-// import { ClientRouter } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import { Font } from "astro:assets";
 
 import * as siteData from "@data/site.json";
@@ -99,6 +99,8 @@ const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
   <meta name="twitter:image:src" content={ogImage} />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
+
+  <ClientRouter />
 
   <slot name="head" />
 

@@ -1,10 +1,20 @@
-<svg viewBox="0 0 24 24" stroke-width="0.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
-<path d="M9.95242 9.62272L11.5109 6.31816C11.711 5.89395 12.289 5.89395 12.4891 6.31816L14.0476 9.62272L17.5329 10.1559C17.9801 10.2243 18.1583 10.7996 17.8346 11.1296L15.313 13.7001L15.9081 17.3314C15.9845 17.7978 15.5168 18.1534 15.1167 17.9331L12 16.2177L8.88328 17.9331C8.48316 18.1534 8.01545 17.7978 8.09187 17.3314L8.68695 13.7001L6.16545 11.1296C5.8417 10.7996 6.01993 10.2243 6.46711 10.1559L9.95242 9.62272Z" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 12L23 12" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
-<path d="M12 2V1" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
-<path d="M12 23V22" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
-<path d="M20 20L19 19" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
-<path d="M20 4L19 5" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
-<path d="M4 20L5 19" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
-<path d="M4 4L5 5" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
-<path d="M1 12L2 12" stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+<svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
+<style type="text/css">
+.brand {
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.stroke4 { stroke-width: var(--stroke_unitless, 10); }
+</style>
+<path class="brand stroke4" d="M165.87 160.38L191.85 105.3C195.18 98.23 204.82 98.23 208.15 105.3L234.13 160.38L292.22 169.27C299.67 170.41 302.64 179.99 297.24 185.49L255.22 228.34L265.13 288.86C266.41 296.63 258.61 302.56 251.95 298.88L200 270.3L148.05 298.88C141.39 302.56 133.59 296.63 134.86 288.86L144.78 228.34L102.76 185.49C97.36 179.99 100.33 170.41 107.79 169.27L165.87 160.38Z"></path>
+<path class="brand stroke4" d="M366.67 200L383.33 200"></path>
+<path class="brand stroke4" d="M200 33.33V16.67"></path>
+<path class="brand stroke4" d="M200 383.33V366.67"></path>
+<path class="brand stroke4" d="M333.33 333.33L316.67 316.67"></path>
+<path class="brand stroke4" d="M333.33 66.67L316.67 83.33"></path>
+<path class="brand stroke4" d="M66.67 333.33L83.33 316.67"></path>
+<path class="brand stroke4" d="M66.67 66.67L83.33 83.33"></path>
+<path class="brand stroke4" d="M16.67 200L33.33 200"></path>
 </svg>

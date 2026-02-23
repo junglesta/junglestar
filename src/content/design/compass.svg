@@ -1,24 +1,20 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    class="feather feather-compass">
+    viewBox="0 0 400 400"
+    color="currentColor">
 
-<style xmlns="http://www.w3.org/2000/svg" type="text/css">
+<style type="text/css">
 .brand {
     fill: none;
     stroke: currentColor;
+    stroke-linejoin: round;
 }
-.fillwhite {
-    fill: white;
-    stroke: currentColor;
+.white {
+    fill: rgba(255,255,255,1);
 }
-.stroke033 {stroke-width: 0.33;}
+.stroke4 {stroke-width: var(--stroke_unitless, 10);}
 </style>
 
-<circle class="brand stroke033" cx="12" cy="12" r="10"></circle>
-<polygon class="stroke033 fillwhite" points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+<circle class="brand stroke4" cx="200" cy="200" r="166.67"></circle>
+<polygon class="brand stroke4 white" points="270.67 129.33 235.33 235.33 129.33 270.67 164.67 164.67 270.67 129.33"></polygon>
 </svg>

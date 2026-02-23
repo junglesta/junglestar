@@ -62,6 +62,7 @@ const {
     display: grid;
     grid-template-rows: var(--row1) var(--row2) var(--row3) var(--row4);
     place-content: stretch center;
+    text-align: center;
     gap: 2.5svh;
 
     padding-top: calc(var(--space_block) * 2);
@@ -86,7 +87,7 @@ const {
   .on_scroll_msg {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 0.5rem;
   }
 
@@ -142,7 +143,7 @@ const {
 
 <div class="grida pretty_heading wrap">
   <Logo variant="top" />
-  <h1 class="brand_name huge right clickScrollTrigger">{title}</h1>
+  <h1 class="brand_name huge clickScrollTrigger">{title}</h1>
 
   <div class="title_wrap h2 no_select">
     <div class="overline line1">{overtitle_line1}</div>

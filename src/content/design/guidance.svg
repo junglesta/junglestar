@@ -9,7 +9,9 @@
 .white {
     fill: rgba(255,255,255,1);
 }
-.stroke4 {stroke-width: 4;}
+.stroke4 {
+    stroke-width: var(--stroke_unitless, 10);
+}
     </style>
 
   <path

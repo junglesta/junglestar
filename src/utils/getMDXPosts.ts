@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
+import { slugify } from './slugify';
 
 type ContentCollection = 'designConcepts' | 'productionConcepts';
 
@@ -19,4 +20,13 @@ export async function getMDXPosts<T extends ContentCollection>(
 	});
 
 	return posts;
+}
+
+/** Build getStaticPaths array for a content collection */
+export async function getPostPaths<T extends ContentCollection>(collectionName: T) {
+	const posts = await getMDXPosts(collectionName);
+	return posts.map((post) => ({
+		params: { slug: slugify(post.data.title) },
+		props: { post },
+	}));
 }

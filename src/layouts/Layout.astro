@@ -14,6 +14,7 @@ export interface Props {
   description?: string;
   sitemap?: boolean;
   pageSubtitle?: string;
+  hideNav?: boolean;
   background?:
     | "--brand"
     | "--brand_light"
@@ -36,19 +37,15 @@ const {
   description = siteData.description,
   sitemap = true,
   background = "--brand",
+  hideNav = false,
 } = Astro.props;
 ---
 
-<!-- <style>
-  @view-transition {
-    navigation: auto;
-  }
-</style> -->
 <html lang="en">
   <Head title={title} description={description} sitemap={sitemap} />
   <LastPub />
   <body class={bodyClass} style={`background-color: var(${background})`}>
-    <NavScroll />
+    {!hideNav && <NavScroll />}
     <header>
       <slot name="inside_header" />
     </header>
@@ -103,6 +100,10 @@ const {
       document.addEventListener("astro:page-load", () => {
         openExternalLinksInNewWindow();
         markMailtoLinks();
+
+        document.querySelector(".back_button")?.addEventListener("click", () => {
+          history.back();
+        });
       });
     </script>
   </body>

@@ -27,12 +27,18 @@
 	ul,
 	ol {
 		margin-bottom: 0.75rem;
-		margin-left: 0;
-
 		padding-bottom: var(--space_block);
-		padding-left: var(--space_inline);
+		padding-left: 1.5em;
 	}
 	/*.like_link_underline {
     border-bottom: 1px currentColor solid;
   }*/
+	.h3 {
+		text-align: center;
+	}
+	@media (min-width: 601px) {
+		.h3 {
+			text-align: left;
+		}
+	}
 }

@@ -52,7 +52,7 @@ a.clean {
 	display: none;
 }
 
-main a:not([target="_blank"])::after {
+main a:not([target="_blank"]):not(.card_link)::after {
 	content: " →";
 	display: inline-block;
 	text-decoration: none;

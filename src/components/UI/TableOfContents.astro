@@ -1,12 +1,14 @@
 ---
 import type { MDXPost } from "@utils/getMDXPosts";
+import { slugify } from "@utils/slugify";
 
 interface Props {
   posts: MDXPost<"designConcepts" | "productionConcepts">[];
+  basePath: string;
   title?: string;
 }
 
-const { posts, title = "Table of Contents" } = Astro.props;
+const { posts, basePath, title = "Table of Contents" } = Astro.props;
 ---
 
 <div class="wrap">
@@ -16,7 +18,7 @@ const { posts, title = "Table of Contents" } = Astro.props;
       {
         posts.map((post) => (
           <li>
-            <a href={`#${post.id}`}>
+            <a href={`/${basePath}/${slugify(post.data.title)}`}>
               <span>{post.data.title}</span>
             </a>
           </li>

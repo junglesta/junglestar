@@ -1,0 +1,53 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+import { render } from "astro:content";
+import { getPostPaths } from "@utils/getMDXPosts";
+import { slugify } from "@utils/slugify";
+import { getSvgContent } from "@utils/contentSvgs";
+
+export async function getStaticPaths() {
+  return getPostPaths("designConcepts");
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const svgContent = post.data.image ? getSvgContent(post.data.image.src) : null;
+const transitionName = `post-img-${slugify(post.data.title)}`;
+---
+
+<Layout
+  title={post.data.title}
+  description={post.data.subtitle ?? ""}
+  bodyClass="design bg_brand_light"
+  mainClass="bg_white"
+  background="--brand_lighter"
+  hideNav
+>
+  <article class="wrap vpad pretty">
+    {post.data.image && (
+      <button class="post_hero_image back_button" transition:name={transitionName} type="button" title="Go back">
+        {svgContent ? (
+          <Fragment set:html={svgContent} />
+        ) : (
+          <Image src={post.data.image.src} alt={post.data.image.alt} />
+        )}
+      </button>
+    )}
+    <div class="post_content">
+      <h1>{post.data.title}</h1>
+      {post.data.subtitle && <p class="h3">{post.data.subtitle}</p>}
+      <Content />
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .vpad {
+    padding-block: calc(var(--space_block) * 2);
+  }
+  .post_content {
+    flex-direction: column;
+    align-items: start;
+  }
+</style>

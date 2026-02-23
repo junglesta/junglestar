@@ -1,7 +1,7 @@
 
 export default new Map([
-["src/content/design/1-sustainable-marketing-communication.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdesign%2F1-sustainable-marketing-communication.mdx&astroContentModuleFlag=true")],
 ["src/content/design/2-communication-strategy.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdesign%2F2-communication-strategy.mdx&astroContentModuleFlag=true")],
+["src/content/design/1-sustainable-marketing-communication.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdesign%2F1-sustainable-marketing-communication.mdx&astroContentModuleFlag=true")],
 ["src/content/design/3-today-you-dont-buy-software.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdesign%2F3-today-you-dont-buy-software.mdx&astroContentModuleFlag=true")],
 ["src/content/design/4-from-plan-to-working-product.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdesign%2F4-from-plan-to-working-product.mdx&astroContentModuleFlag=true")],
 ["src/content/design/5-building-in-phone-era.mdx", () => import("astro:content-layer-deferred-module?astro%3Acontent-layer-deferred-module=&fileName=src%2Fcontent%2Fdesign%2F5-building-in-phone-era.mdx&astroContentModuleFlag=true")],

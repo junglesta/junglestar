@@ -6,7 +6,6 @@ import LandingScreen from "@components/UI/LandingScreen.astro";
 
 import SocialMediaManagement from "@components/brand/SocialMediaManagement.astro";
 
-import TableOfContents from "@components/UI/TableOfContents.astro";
 import PostsGridMDX from "@components/shared/PostsGridMDX.astro";
 import { getMDXPosts } from "@utils/getMDXPosts";
 const posts = await getMDXPosts("productionConcepts");
@@ -89,8 +88,7 @@ const description =
     <h2 class="center">
       What people remember you for. Brand narrative is that. The whole thing.
     </h2>
-    <TableOfContents posts={posts} />
-    <PostsGridMDX posts={posts} />
+    <PostsGridMDX posts={posts} basePath="content" />
   </div>
 
   <div class="space_block"></div>

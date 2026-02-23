@@ -1,5 +1,21 @@
 # Changelog
 
+## 3.5.12
+
+- Rescaled all content SVGs to unified 400x400 viewBox (was mix of 24x24 and 400x400)
+- Added `--stroke_unitless` CSS token for responsive SVG stroke-width control
+- Grid cards get thick strokes (10), single pages get thin strokes (3)
+- Fixed SVG color inheritance: compass, bright-star, building now use currentColor
+- Stripped building.svg to phone outline + text (removed CC logo circle)
+- Bento box grid layout for design/content index pages
+- SVG icon sizing: 80px mobile → 96px tablet → 112px desktop
+- Single page hero SVG click navigates back (history.back)
+- Hidden top nav on slug pages (hideNav Layout prop)
+- Moved h1/subtitle inside .post_content for consistent column alignment
+- Centered headings in .grida landing screens
+- Fixed ul/ol alignment in post content
+- Consolidated .post_hero_image styles into post_image.css (single source of truth)
+
 ## 3.5.11
 
 - Removed about page header gradient animation (consistent with index header cleanup)

@@ -5,7 +5,6 @@ import Icono from "@svgs/truck.svg";
 import LandingScreen from "@components/UI/LandingScreen.astro";
 import CTAMailBanner from "@components/UI/CTAMailBanner.astro";
 
-import TableOfContents from "@components/UI/TableOfContents.astro";
 import PostsGridMDX from "@components/shared/PostsGridMDX.astro";
 
 import { getMDXPosts } from "@utils/getMDXPosts";
@@ -63,8 +62,7 @@ const description =
   <div class="wrap">
     <h2 class="center">What is communication design?</h2>
 
-    <TableOfContents posts={posts} />
-    <PostsGridMDX posts={posts} />
+    <PostsGridMDX posts={posts} basePath="design" />
   </div>
   <div class="banner_wrap">
     <CTAMailBanner />

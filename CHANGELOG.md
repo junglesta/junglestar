@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.6.1
+
+- Centered h1 and subtitle on slug pages at all screen sizes
+- Tags row centered at all sizes (was only 1024px+)
+- Unified `--logo-stroke: 4.5` across all breakpoints for consistent logo weight
+
 ## 3.6.0
 
 - Tag navigation system: tags are now clickable links to tag index pages

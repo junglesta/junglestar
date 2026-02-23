@@ -3,14 +3,8 @@
 	padding-bottom: var(--space_block);
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: start;
+	justify-content: center;
 	gap: 5px;
-}
-
-@media (min-width: 1024px) {
-	.tags {
-		justify-content: center;
-	}
 }
 
 .tag {

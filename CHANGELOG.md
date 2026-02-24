@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.6.5
+
+- Fixed lodash prototype pollution vulnerability (4.17.21 → 4.17.23) via pnpm override
+
 ## 3.6.4
 
 - Article OG metadata: `article:author`, `article:section`, `article:tag` on slug pages

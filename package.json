@@ -1,7 +1,7 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "3.6.4",
+  "version": "3.6.5",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
@@ -28,6 +28,11 @@
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.28.2",
+  "pnpm": {
+    "overrides": {
+      "lodash": ">=4.17.23"
+    }
+  },
   "dependencies": {
     "@astro-community/astro-embed-link-preview": "^0.3.1"
   }

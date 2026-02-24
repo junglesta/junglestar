@@ -15,6 +15,7 @@ export interface Props {
   sitemap?: boolean;
   pageSubtitle?: string;
   hideNav?: boolean;
+  tags?: string[];
   background?:
     | "--brand"
     | "--brand_light"
@@ -38,11 +39,12 @@ const {
   sitemap = true,
   background = "--brand",
   hideNav = false,
+  tags = [],
 } = Astro.props;
 ---
 
 <html lang="en">
-  <Head title={title} description={description} sitemap={sitemap} />
+  <Head title={title} description={description} sitemap={sitemap} tags={tags} />
   <LastPub />
   <body class={bodyClass} style={`background-color: var(${background})`}>
     {!hideNav && <NavScroll />}

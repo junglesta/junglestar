@@ -23,6 +23,7 @@ const transitionName = `post-img-${slugify(post.data.title)}`;
   mainClass="bg_white"
   background="--brand_lighter"
   hideNav
+  tags={post.data.tags}
 >
   <article class="wrap vpad pretty">
     {post.data.image && (

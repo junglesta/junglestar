@@ -10,17 +10,34 @@ export interface Props {
   title: string;
   description?: string;
   sitemap?: boolean;
+  tags?: string[];
 }
 const {
   title,
   description = "Sustainable Web Design to help fight Climate Change",
   sitemap = true,
+  tags = [],
 } = Astro.props;
 
 // Site configuration
 const siteUrl = import.meta.env.SITE || "https://junglestar.org";
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
-const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
+
+// Article metadata (derived from URL path)
+const pathname = Astro.url.pathname;
+const isArticle = pathname.startsWith("/design/") || pathname.startsWith("/content/");
+const section = pathname.startsWith("/design/") ? "Design" : pathname.startsWith("/content/") ? "Content" : "";
+
+const ogImageMap: Record<string, string> = {
+  "/design/": "/assets/og_design.png",
+  "/content/": "/assets/og_content.png",
+  "/discoverability": "/assets/og_discoverability.png",
+  "/offer": "/assets/og_offer.png",
+  "/about": "/assets/og_about.png",
+};
+const ogImageFile = Object.entries(ogImageMap).find(([prefix]) => pathname.startsWith(prefix))?.[1]
+  ?? "/assets/junglestar_logo.png";
+const ogImage = new URL(ogImageFile, siteUrl).href;
 ---
 
 <head>
@@ -91,6 +108,14 @@ const ogImage = new URL("/assets/junglestar_logo.png", siteUrl).href;
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:site_name" content="Junglestar" />
+
+  {isArticle && (
+    <>
+      <meta property="article:author" content={siteData.author.name} />
+      {section && <meta property="article:section" content={section} />}
+      {tags.map((tag) => <meta property="article:tag" content={tag} />)}
+    </>
+  )}
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />

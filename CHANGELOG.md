@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.6.4
+
+- Article OG metadata: `article:author`, `article:section`, `article:tag` on slug pages
+- Per-section OG images (1200x630 stroke logo): blue for design, orange for content, black for discoverability, white for offer, green for about
+- OG image selection via pathname map in Head.astro
+- Tags prop wired through Layout → Head pipeline
+
 ## 3.6.3
 
 - `text-wrap: pretty` on all on_scroll_msg children

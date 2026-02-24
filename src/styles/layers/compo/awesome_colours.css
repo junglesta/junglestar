@@ -30,7 +30,7 @@
 }
 
 .bg_brand_light {
-	--bg: var(--bg_brand_lighter);
+	--bg: var(--brand_lighter);
 	--fg: var(--black);
 	background-color: var(--bg);
 	color: var(--fg);

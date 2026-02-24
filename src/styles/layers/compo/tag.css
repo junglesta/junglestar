@@ -1,9 +1,9 @@
 .tags {
-	padding-top: 0;
-	padding-bottom: var(--space_block);
+	padding-block: var(--space_block);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: baseline;
 	gap: 5px;
 }
 

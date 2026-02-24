@@ -10,7 +10,14 @@ const { tags } = Astro.props;
 ---
 
 <nav class="tags" aria-label="Tags">
+    <small class="hide_on_phones">Topics:</small>
 	{tags.map((tag) => (
 		<a class="button tag" href={getTagHref(tag)}>{tag}</a>
 	))}
 </nav>
+<style>
+nav small {
+    text-transform: uppercase;
+    font-size: 75%;
+}
+</style>

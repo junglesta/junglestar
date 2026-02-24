@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.6.2
+
+- Moved Tags nav to bottom of post content in all 10 MDX files
+- Fixed `--brand_lighter` oklch out-of-gamut rendering (two-tone blue on design page)
+- Fixed undefined `--bg_brand_lighter` variable in `.bg_brand_light` class
+
 ## 3.6.1
 
 - Centered h1 and subtitle on slug pages at all screen sizes

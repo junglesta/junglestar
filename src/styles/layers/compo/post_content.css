@@ -5,7 +5,7 @@
 	align-items: center;
 	justify-content: start;
 	width: 100%;
-	> * {
+	> *:not(nav) {
 		max-width: 60ch;
 		margin-inline: auto;
 	}

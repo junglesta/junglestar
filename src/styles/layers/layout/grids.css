@@ -32,6 +32,7 @@
 	top: calc(25svh * -1);
 	> * {
 		padding-bottom: calc(var(--space_block) / 3.75);
+		text-wrap: pretty;
 	}
 }
 

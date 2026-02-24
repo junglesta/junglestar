@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.6.3
+
+- `text-wrap: pretty` on all on_scroll_msg children
+- Social media section: ul centered with inline padding, evenly spaced rows
+- Thinner SVG strokes in mean_title sections, YouTube play icon stroke refined
+- Share icon responsive sizing on mobile via clamp
+- Icons group wider on mobile (95%/90dvw)
+
 ## 3.6.2
 
 - Moved Tags nav to bottom of post content in all 10 MDX files

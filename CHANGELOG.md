@@ -1,5 +1,18 @@
 # Changelog
 
+## 3.7.0
+
+Release rollup of 3.6.1–3.6.7:
+
+- Offer page responsive card grid + landscape phone layout
+- Per-section OG images (1200x630) + article metadata (`article:author`, `article:section`, `article:tag`)
+- Social media section polish + `text-wrap: pretty` everywhere
+- SVG stroke scoping: thin strokes on `.four_icon_group`, proper `stroke-width` on large-viewBox icons
+- Tags moved to bottom of post content
+- Fixed `--brand_lighter` oklch out-of-gamut rendering
+- Centered h1/subtitle on slug pages + unified `--logo-stroke: 4.5`
+- Fixed lodash prototype pollution vulnerability via pnpm override
+
 ## 3.6.7
 
 - Fixed mean_icon SVG strokes: scoped thin `--logo-stroke-icon` to `.four_icon_group` only

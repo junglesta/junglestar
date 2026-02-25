@@ -26,6 +26,9 @@
 	justify-content: space-between;
 	gap: var(space_inline);
 	padding-bottom: var(--space_block);
+	svg {
+		stroke-width: var(--logo-stroke-icon, 0.5);
+	}
 }
 
 .mean_title.mean_title--first {
@@ -33,9 +36,6 @@
 	color: currentColor;
 	min-height: var(--section_height);
 	padding-block: calc(var(--space_block) * 4);
-	svg {
-		stroke-width: var(--logo-stroke-icon, 0.5);
-	}
 	.mean_icon svg {
 		width: clamp(120px, 30vw, 200px);
 	}
@@ -55,7 +55,6 @@
 	}
 	svg {
 		stroke: var(--white);
-		stroke-width: var(--logo-stroke-icon, 0.5);
 	}
 	.flex-wrap-reverse {
 		display: flex;

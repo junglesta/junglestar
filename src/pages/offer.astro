@@ -54,35 +54,41 @@ const description =
 
   .offer_content :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
     color: var(--brand);
+
   }
   .grid_offer_color {
     background-color: rgba(0, 0, 0, 0.15);
   }
   .grid_offer {
-    --space_inline: 3.5svw;
     padding-block: calc(var(--space_block) * 2.33);
-    padding-inline: calc(var(--space_inline) * 3);
+    padding-inline: var(--space_inline);
     display: grid;
     align-items: stretch;
     gap: calc(var(--space_block) * 1.5);
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    max-width: 1500px;
+    max-width: 500px;
     margin-inline: auto;
     margin-top: calc(var(--space_block) * 2);
   }
 
-  @media (width > 900px) {
+  @media (width > 600px) {
     .grid_offer {
+      padding-inline: calc(var(--space_inline) * 3);
+    }
+  }
+
+  @media (width > 850px) {
+    .grid_offer {
+      max-width: 1200px;
+      padding-inline: var(--space_inline);
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr;
     }
   }
 
   .grid_offer_card {
     background-color: var(--white);
     margin-block: calc(var(--space_block) / 2);
-    padding-inline: calc(var(--space_inline) / 2);
+    padding-inline: clamp(16px, 3vw, 32px);
     border: 1px var(--brand) solid;
     border-radius: var(--radius);
     display: grid;
@@ -125,10 +131,9 @@ const description =
   }
   .offer_desc {
     grid-area: desc;
-    text-align: pretty;
+    text-wrap: pretty;
     line-height: 1.15;
-    padding-left: calc(var(--space_inline) * 0.85);
-    padding-right: calc(var(--space_inline) * 0.5);
+    padding-inline: calc(var(--space_inline) * 0.75);
     padding-bottom: calc(var(--space_block) * 0.5);
   }
   .offer_benefits {
@@ -200,10 +205,15 @@ const description =
 
   .offers_title {
     text-align: center;
+    text-wrap: balance;
     text-transform: uppercase !important;
     padding-top: calc(var(--space_block) * 2);
-    padding-inline: calc(var(--space_inline) * 2);
+    padding-inline: var(--space_inline);
+    max-width: 800px;
+    margin-inline: auto;
   }
+
+
 </style>
 
 <Layout

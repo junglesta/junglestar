@@ -129,6 +129,20 @@ const {
     }
   }
 
+  /* Landscape phones: single screen, no scroll animation */
+  @media (orientation: landscape) and (max-height: 500px) {
+    .grida {
+      height: auto;
+      min-height: 100svh;
+      grid-template-rows: auto auto;
+      gap: 1svh;
+    }
+    .on_scroll_msg,
+    .title_wrap {
+      display: none;
+    }
+  }
+
   .grida > :first-child {
     align-self: end;
   }

@@ -1,5 +1,17 @@
 # Changelog
 
+## 3.6.7
+
+- Fixed mean_icon SVG strokes: scoped thin `--logo-stroke-icon` to `.four_icon_group` only
+- Offer page cards: responsive grid (single col → 3-col at 850px), constrained heading width
+- Fixed card padding and text wrapping (`text-align: pretty` → `text-wrap: pretty`)
+- Landscape phones: hide logo, overtitle, and scroll animation — single-screen header
+
+## 3.6.6
+
+- Fixed mean_icon SVG strokes: scoped thin `--logo-stroke-icon` to `.four_icon_group` only
+- Large-viewBox icons (desperate, jumping, gmap) now use proper `stroke-width: 5` from `.outlined` class
+
 ## 3.6.5
 
 - Fixed lodash prototype pollution vulnerability (4.17.21 → 4.17.23) via pnpm override

@@ -50,11 +50,11 @@ const { variant } = Astro.props;
     place-content: center;
   }
 
-  /* Landscape */
-  @media (min-aspect-ratio: 4/3) and (max-width: 1000px) {
-    /*.logo_link_top {
+  /* Landscape phones: hide top logo */
+  @media (orientation: landscape) and (max-height: 500px) {
+    .logo_link_top {
       display: none;
-    }*/
+    }
   }
 </style>
 

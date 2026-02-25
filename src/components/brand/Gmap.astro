@@ -14,6 +14,10 @@ import Tienda from "@svgs/gmap_tienda.svg";
   .mean_icon > * {
     color: var(--white);
   }
+
+  .mean_title .wrap {
+      padding-inline: calc(var(--space_inline) * 2);
+  }
 </style>
 
 <section class="gmap">
@@ -26,7 +30,7 @@ import Tienda from "@svgs/gmap_tienda.svg";
           <Pin width={255} height={255} fill="none" stroke="currentColor" />
         </div>
         <div class="wrap">
-          <h2 class="h1 center">Want more customers finding your location?</h2>
+          <h2 class="h1 center pretty">Want more customers finding your location?</h2>
         </div>
       </div>
 
@@ -37,7 +41,7 @@ import Tienda from "@svgs/gmap_tienda.svg";
           <Tienda width={255} height={255} fill="none" stroke="currentColor" />
         </div>
         <div class="wrap">
-          <h2 class="center">We make sure your shop shows up online.</h2>
+          <h2 class="center pretty">We make sure your shop shows up online.</h2>
 
           <h3 class="h5 center">
             We feed the map so your restaurant shows up when people search for

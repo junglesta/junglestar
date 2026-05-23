@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.8.1
+
+- GA now gated on Netlify `CONTEXT === "production"` — excludes dev, local preview, deploy-previews, and branch builds (only fires on live junglestar.org)
+
 ## 3.8.0
 
 - Upgraded Astro v5.17.3 → v6.3.7 (+ `@astrojs/mdx` v4 → v5, `@astrojs/check` 0.9.9, `@astrojs/ts-plugin` 1.10.9)

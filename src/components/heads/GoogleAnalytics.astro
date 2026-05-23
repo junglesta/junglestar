@@ -3,7 +3,9 @@
 import * as siteData from "@data/site.json";
 
 const gaId = siteData.google.analytics;
-const enabled = import.meta.env.PROD && Boolean(gaId);
+// Only fire on Netlify production context — excludes dev, deploy-previews, branch builds.
+const isNetlifyProduction = process.env.CONTEXT === "production";
+const enabled = isNetlifyProduction && Boolean(gaId);
 ---
 
 {enabled && (

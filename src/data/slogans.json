@@ -4,8 +4,8 @@
       "id": "1",
       "title1": "It's a Jungle out there.",
       "sub1": "Let's face it. The noise level. The nonsense. It's mostly cacophony these days. How to get noticed? Can customers reach you?",
-      "title2": "Is your pricelist on a PDF?",
-      "sub2": "When I Google or ask an LLM about your company what do I get?",
+      "title2": "Is your pricelist on a PDF? ",
+      "sub2": "Is your website **phone-friendly** ? When I Google or ask an LLM chat-bot about your company what do I get?",
       "image": {
         "src": "/assets/intro/1.svg",
         "alt": "It's a Jungle out there."
@@ -15,10 +15,10 @@
       "theme": "blasting brands",
       "p1": "",
       "p2": "",
-      "p3": "Today brands need to be **recognizable**. This means **Real**, **Easy & Direct**, **Customer-Friendly**.",
+      "p3": "Today brands need to be **recognizable**. This means **Real**, **Easy & Direct**, **Customer-Friendly**. It's never been easier to launch a **brand new** internet presence.",
       "p4": "",
-      "p5": "Today the majority of visits comes **from phones**. Now, is **your website ready** for that?",
-      "p6": "It's never been easier to launch a **brand new** internet presence."
+      "p5": "",
+      "p6": ""
     },
     {
       "id": "2",
@@ -34,9 +34,9 @@
       "link": "/content",
       "theme": "crazy_claims",
       "p1": "",
-      "p2": "Easy-to-use doesn't mean **effective**. Is your lowcost solution **actually performing?**",
-      "p3": "DIY Marketing vs. Expertise. How can small businesses compete?",
-      "p4": "Successful entrepreneurs know when to **delegate and focus**."
+      "p2": "Easy-to-use doesn't mean **effective**. Is your lowcost solution **actually performing? DIY Marketing vs. Expertise. How can small businesses compete? Successful entrepreneurs know when to **delegate and focus.****",
+      "p3": "",
+      "p4": ""
     },
     {
       "id": "3",

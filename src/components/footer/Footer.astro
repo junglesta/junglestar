@@ -7,6 +7,7 @@ import Logo from "@components/brand/Logo.astro";
 import Nav from "@components/shared/Nav.astro";
 import Modal from "@components/UI/Modal.astro";
 import * as siteData from "@data/site.json";
+import * as repoData from "package.json";
 
 const currentYear = new Date().getFullYear();
 
@@ -45,6 +46,11 @@ const currentYear = new Date().getFullYear();
   .copy {
     text-align: center;
   }
+
+  .version_tag {
+    font-size: 0.75em;
+    opacity: 0.6;
+  }
 </style>
 
 <footer class="footer_site">
@@ -56,7 +62,9 @@ const currentYear = new Date().getFullYear();
     <Modal id="brand-details">
       <span slot="trigger">
         &copy; 2012-{currentYear}
-        {siteData.brand}.org <span>&nbsp;+</span>
+        {siteData.brand}.org
+        <span class="version_tag">v{repoData.version}</span>
+        <span>&nbsp;+</span>
       </span>
 
       <Carbon />

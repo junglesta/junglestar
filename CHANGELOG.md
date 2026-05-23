@@ -1,5 +1,17 @@
 # Changelog
 
+## 3.9.0
+
+- **Color system → single source of truth**: `--brand` is now the only seed; added a derived `--brand-50…900` shade scale via OKLCH relative color (`oklch(from var(--brand) …)`), remapped legacy `--brand_lighter/light/dark/darker` aliases onto it, and derived `--brandT25/50/75` from `--brand`. Change `--brand` and the whole palette retunes.
+- **Removed all gradients**: deleted the animated `gradient-move` footer radial gradients (green/orange/blue) in favour of a flat `var(--brand)` footer; replaced `WaveSection` purple/coral linear-gradient defaults with brand tokens.
+- **Hybrid by page**: `showcase` and `about` switched from full brand/green floods to calm light pages. `WorksCard` restyled for light backgrounds (raised white tiles, resting shadow) and fixed the `service`/`webapp` variants whose white text was invisible on light.
+- **Offer page**: recommended tier now visually wins — "Best Seller" solid-brand pill + elevation, "Best Value" lighter brand shade, "Awesome" outlined pill (all three labels now share a badge). Fixed the broken "See Demo" link (anchor self-closed, text fell outside it).
+- **Homepage**: removed leftover debug `background:red`; calmed intro-block scroll spacing; homogenised intro body text (one size/line-height/weight, `<strong>` bold kept); CTA buttons are now solid filled brand instead of a faint outline.
+- **About**: intro wrapped in a white block with a brand border and a monochrome `award`-icon "25 years of expertise" badge.
+- **Copy**: fixed "breifly" → "briefly" and "fight to help to help the planet. Change." → "fight climate change".
+- **Version display**: moved out of the homepage meta title into the footer copyright line.
+- **Tooling**: added `clean` (`rm -rf .astro dist node_modules/.vite`) and `dev:clean` scripts.
+
 ## 3.8.3
 
 - Reverted tracking measurement ID to the correct value for junglestar.org

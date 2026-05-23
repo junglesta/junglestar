@@ -71,12 +71,30 @@
 	--blackT05: rgba(0, 0, 0, 0.05);
 	--background_whiteT15: rgba(255, 255, 255, 0.15);
 
-	/*---------------------------brand: #0069cc;--------------------------------*/
-	--brand: oklch(0.57 0.24 255 / 100%);
-	--brand_lighter: oklch(0.8 0.18 233);
-	--brand_light: oklch(0.73 0.24 255);
-	--brand_dark: oklch(0.3 0.24 255);
-	/*--  https://oklch.com/#0.5657569011826751,0.23750000000000004,255,100 --*/
+	/* ===========================================================
+	   🐸 BRAND — SINGLE SOURCE OF TRUTH
+	   Change ONLY --brand. Every shade below derives from it via
+	   OKLCH relative color, so the whole palette re-tunes itself.
+	   =========================================================== */
+	--brand: oklch(0.57 0.24 255);
+
+	/*🐸 BRAND SHADE SCALE (50 lightest → 900 darkest, all from --brand) */
+	--brand-50: oklch(from var(--brand) 0.97 calc(c * 0.22) h);
+	--brand-100: oklch(from var(--brand) 0.93 calc(c * 0.4) h);
+	--brand-200: oklch(from var(--brand) 0.85 calc(c * 0.65) h);
+	--brand-300: oklch(from var(--brand) 0.75 calc(c * 0.85) h);
+	--brand-400: oklch(from var(--brand) 0.66 c h);
+	--brand-500: var(--brand);
+	--brand-600: oklch(from var(--brand) 0.48 c h);
+	--brand-700: oklch(from var(--brand) 0.4 c h);
+	--brand-800: oklch(from var(--brand) 0.32 calc(c * 0.9) h);
+	--brand-900: oklch(from var(--brand) 0.24 calc(c * 0.7) h);
+
+	/*🐸 LEGACY ALIASES → mapped onto the scale (keep older usages working) */
+	--brand_lighter: var(--brand-200);
+	--brand_light: var(--brand-400);
+	--brand_dark: var(--brand-700);
+	--brand_darker: var(--brand-800);
 	/*-------------------------GREEN------------------------------------------*/
 	--jgreen_light: oklch(0.96 0.31 144);
 	--jgreen: oklch(0.74 0.31 144);
@@ -87,10 +105,10 @@
 	--jorange: oklch(0.79 0.16 45);
 	--jorange_dark: oklch(0.58 0.16 45);
 	--jorange_darker: oklch(0.48 0.16 45);
-	/*----------------------TRANSPARENTS----------------------------------------*/
-	--brandT25: oklch(0.5286 0.1735 255 / 25%);
-	--brandT50: oklch(0.5286 0.1735 255 / 50%);
-	--brandT75: oklch(0.5286 0.1735 255 / 75%);
+	/*----------------------TRANSPARENTS (derived from --brand)-----------------*/
+	--brandT25: oklch(from var(--brand) l c h / 25%);
+	--brandT50: oklch(from var(--brand) l c h / 50%);
+	--brandT75: oklch(from var(--brand) l c h / 75%);
 	/*--brandT25: color-mix(in oklch, var(--brand), transparent 75%);
 	--brandT50: color-mix(in oklch, var(--brand), transparent 50%);*/
 

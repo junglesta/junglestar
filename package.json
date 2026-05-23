@@ -1,12 +1,14 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "3.8.3",
+  "version": "3.9.0",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
     "lint": "biome lint ./src",
+    "clean": "rm -rf .astro dist node_modules/.vite",
     "dev": "astro dev --open",
+    "dev:clean": "pnpm clean && astro dev --open",
     "check": "astro check --watch & astro dev",
     "build": "astro build --force",
     "buildv": "astro build --verbose",

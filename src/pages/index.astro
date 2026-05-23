@@ -4,7 +4,6 @@ import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
 import IntroSection from "@components/intro/IntroSection.astro";
 import Icono from "@svgs/radio.svg";
-import * as repoData from "package.json";
 
 // Page metadata
 const overtitle_line1 = "Your business, simplified.";
@@ -13,16 +12,16 @@ const overtitle_line3 = "Trade grunt-work for free time!";
 
 const title_start = "Junglestar ";
 const title_end = " Sustainable Web Design";
-const title = title_start + " | " + title_end + " | v" + repoData.version;
+const title = title_start + " | " + title_end;
 
 const onScroll_line1 = "Hello! Welcome.";
-const onScroll_line2 = "Let us breifly introduce";
+const onScroll_line2 = "Let us briefly introduce";
 const onScroll_line3 = "WHAT WE CAN DO FOR YOU";
 const onScroll_line4 = "WHY YOU MIGHT NEED US";
 const onScroll_line5 = "";
 const onScroll_line6 = "Keep on scrolling...";
 const description =
-  "Sustainable Web Design to help fight to help the planet. Change. We help small enterprises with websites, apps, and marketing communication.";
+  "Sustainable Web Design to help fight climate change. We help small enterprises with websites, apps, and marketing communication.";
 // const subtitle = "";
 
 ---
@@ -30,10 +29,6 @@ const description =
 <style>
   .brand_name {
     padding-top: calc(var(--space_block) * 3);
-  }
-  .intros {
-    background-color: red;
-    padding-block: 1rem;
   }
 </style>
 

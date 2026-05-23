@@ -40,9 +40,13 @@ const tag = tags?.[0] || "";
     padding-block: calc(var(--space_block) / 2);
     text-decoration: none;
     color: var(--brand);
-    background-color: hsla(0, 0%, 95%, 1);
+    background-color: #fff;
     border-radius: var(--radius);
     border: 1px solid var(--brand);
+    box-shadow: var(--card_shadow);
+    transition:
+      box-shadow 0.2s ease,
+      background-color 0.2s ease;
   }
   .card_works_link::after {
     display: none;
@@ -147,11 +151,18 @@ const tag = tags?.[0] || "";
   }
 
   a.service {
-    background-color: var(--blackT15);
+    background-color: var(--brand);
     color: var(--white);
     .title_works {
       color: var(--white);
     }
+    .service:before {
+      border-color: var(--white);
+      color: var(--white);
+    }
+  }
+  a.service:hover {
+    background-color: var(--brand_dark);
   }
   a:has(.service) {
     .date_works {
@@ -160,8 +171,8 @@ const tag = tags?.[0] || "";
   }
 
   a:has(.webapp) {
-    background-color: var(--whiteT50);
-    color: var(--white);
+    background-color: #fff;
+    color: var(--brand);
   }
 </style>
 

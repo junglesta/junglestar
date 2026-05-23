@@ -42,6 +42,20 @@
 	border: calc(var(--space_block) * 0.116) solid var(--brand); /* was 0.32svh */
 }
 
+/*🐸 CTA — solid, grounded brand button (homepage intro, on dark) */
+.cta {
+	background-color: var(--brand);
+	color: var(--white);
+	border-color: var(--brand);
+}
+
+.cta:focus,
+.cta:hover {
+	color: var(--white);
+	background-color: var(--brand-600);
+	border-color: var(--brand-600);
+}
+
 .button_row {
 	display: flex;
 	align-items: center;

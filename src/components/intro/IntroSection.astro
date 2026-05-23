@@ -35,7 +35,7 @@ const topBackground = "var(--black)";
   }
 
   .intro_meme {
-    padding-block: 25svh;
+    padding-block: clamp(2rem, 12svh, 8rem);
   }
 
   .intro_content {
@@ -83,23 +83,16 @@ const topBackground = "var(--black)";
     height: auto;
     display: block;
   }
-  .tagline {
-    font-size: clamp(var(--h6_min), var(--h6_responsive), var(--h6_max));
-    line-height: 1.1;
-    padding-bottom: var(--space_block);
-  }
-
-  @media (600px < width) {
-    .tagline {
-      font-size: clamp(var(--h5_min), var(--h5_responsive), var(--h5_max));
-    }
+  /* Homogenised body text — one size, weight & line-height; bold kept via <strong> */
+  .intro_content p {
+    font-size: var(--font_clamp);
+    line-height: 1.5;
+    font-weight: var(--weight);
+    margin-block: var(--space_block);
   }
 
   .intro_memes {
     color: var(--brand);
-    p {
-      padding-top: calc(var(--space_block) / 4);
-    }
   }
 
   .txt_white_on_black > * {
@@ -118,9 +111,9 @@ const topBackground = "var(--black)";
           />
    <div class="intro_content ">
           <h2 class="h2" set:html={parseBold(item.data.title1)} />
-          <p class="h4" set:html={parseBold(item.data.sub1)} />
+          <p set:html={parseBold(item.data.sub1)} />
           <h3 class="h2" set:html={parseBold(item.data.title2)} />
-          <p class="tagline" set:html={parseBold(item.data.sub2)} />
+          <p set:html={parseBold(item.data.sub2)} />
             {item.data.p1 && <p set:html={parseBold(item.data.p1)} />}
             {item.data.p2 && <p set:html={parseBold(item.data.p2)} />}
             {item.data.p3 && <p set:html={parseBold(item.data.p3)} />}

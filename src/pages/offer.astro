@@ -155,14 +155,46 @@ const description =
     padding-bottom: calc(var(--space_block) * 1.33);
   }
 
-  .grid_offer_card:nth-child(1) {
-    background: var(--white);
+  /* Recommended tier wins: thicker accent border + elevation */
+  .grid_offer_card.bestseller {
+    border: 2px solid var(--brand);
+    box-shadow: var(--card_shadow_hover);
   }
-  .grid_offer_card:nth-child(2) {
-    background: var(--white);
+  .grid_offer_card.bestvalue {
+    border: 1.5px solid var(--brand-300);
   }
-  .grid_offer_card:nth-child(3) {
-    background: var(--white);
+
+  @media (width > 850px) {
+    .grid_offer_card.bestseller {
+      transform: scale(1.04);
+      z-index: 1;
+    }
+  }
+
+  /* Category label as a pill badge on every tier (outlined by default) */
+  .grid_offer_card .offer_top > p {
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.15em 0.9em;
+    border-radius: 999px;
+    border: 1.5px solid var(--brand);
+    font-size: calc(var(--font_rem) * 0.6);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brand) !important;
+  }
+  /* Recommended tiers get a filled badge */
+  .grid_offer_card.bestseller .offer_top > p {
+    background-color: var(--brand);
+    border-color: var(--brand);
+    color: var(--white) !important;
+  }
+  .grid_offer_card.bestvalue .offer_top > p {
+    background-color: var(--brand-300);
+    border-color: var(--brand-300);
+    color: var(--white) !important;
   }
 
   .color_black {
@@ -307,8 +339,9 @@ const description =
                     class="demo_link fontsize_med center"
                     title={`See - ${product.name} Demo`}
                     href={product.demo_url}
-                  />
-                  See Demo.
+                  >
+                    See Demo.
+                  </a>
                 </p>
               </div>
             </div>

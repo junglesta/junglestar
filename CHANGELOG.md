@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.9.1
+
+- Added showcase projects: **BOOK BAT** (bat.junglestar.org) and **BA ZI Calculator** (bazi.junglestar.org), with their icons.
+- Refreshed showcase dates/subtitles for Jungle Speak, Casa Asia, and Divino.
+- Removed Junglo Shoes from the showcase.
+
 ## 3.9.0
 
 - **Color system → single source of truth**: `--brand` is now the only seed; added a derived `--brand-50…900` shade scale via OKLCH relative color (`oklch(from var(--brand) …)`), remapped legacy `--brand_lighter/light/dark/darker` aliases onto it, and derived `--brandT25/50/75` from `--brand`. Change `--brand` and the whole palette retunes.

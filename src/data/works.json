@@ -15,6 +15,18 @@
     "description": ""
   },
   {
+    "id": "bat",
+    "date": "2026-05-23",
+    "title": "BOOK BAT",
+    "subtitle": "Scan, Build Book's Library, export to JSON/CSV, import, merge",
+    "category": "webapp",
+    "tags": ["app", "tools", "open-source"],
+    "url": "https://bat.junglestar.org/?ref=junglestar",
+    "icon": { "url": "bat/favicon.svg", "name": "bookbat" },
+    "permalink": "/works/bat/",
+    "description": ""
+  },
+  {
     "id": "shaman",
     "date": "2026-01-01",
     "title": "SHAMAN MONSTER",
@@ -31,9 +43,9 @@
   },
   {
     "id": "speak",
-    "date": "2015-11-15",
+    "date": "2026-05-01",
     "title": "JUNGLE SPEAK",
-    "subtitle": "Quotes collection with sources",
+    "subtitle": "Quotes collection. Serarch. Quote Source.",
     "category": "website",
     "tags": ["reader-digest", "open-source"],
     "url": "https://speak.junglestar.org/?ref=junglestar",
@@ -42,6 +54,21 @@
       "name": "speak"
     },
     "permalink": "/works/speak/",
+    "description": ""
+  },
+  {
+    "id": "BAZI",
+    "date": "2025-12-25",
+    "title": "BA ZI Calculator",
+    "subtitle": "八字 Mathematics meets ancient metaphors",
+    "category": "webapp",
+    "tags": ["tool", "open-source"],
+    "url": "https://bazi.junglestar.org/?ref=junglestar",
+    "icon": {
+      "url": "bazi/bazi.svg",
+      "name": "bazi"
+    },
+    "permalink": "/works/bazi/",
     "description": ""
   },
   {
@@ -195,23 +222,8 @@
     "description": ""
   },
   {
-    "id": "junglo",
-    "date": "2022-06-01",
-    "title": "JUNGLO SHOES",
-    "subtitle": "Online Store",
-    "category": "website",
-    "tags": ["commissioned", "Shopify"],
-    "url": "https://jungloshoes.com/?ref=junglestar",
-    "icon": {
-      "url": "junglo/safari-pinned-tab.svg",
-      "name": "junglo"
-    },
-    "permalink": "/works/junglo/",
-    "description": ""
-  },
-  {
     "id": "casaasia",
-    "date": "2025-02-01",
+    "date": "2026-04-05",
     "title": "CASA ASIA",
     "subtitle": "Restaurant Visual Menu website",
     "category": "website",
@@ -226,7 +238,7 @@
   },
   {
     "id": "divino",
-    "date": "2024-12-25",
+    "date": "2026-05-22",
     "title": "DIVINO",
     "subtitle": "Restaurant Visual Menu website",
     "category": "website",

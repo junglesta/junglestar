@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.8.0
+
+- Upgraded Astro v5.17.3 → v6.3.7 (+ `@astrojs/mdx` v4 → v5, `@astrojs/check` 0.9.9, `@astrojs/ts-plugin` 1.10.9)
+- Bumped `@biomejs/biome` to 2.4.15
+- Migrated `experimental.fonts` → top-level `fonts` (stabilized in Astro 6)
+- Migrated `experimental.svgo` → `experimental.svgOptimizer(svgoOptimizer({...}))` (renamed API)
+- Added Google Analytics (gtag.js) via new `GoogleAnalytics.astro` component, prod-only, async, ID sourced from `site.json`
+
 ## 3.7.0
 
 Release rollup of 3.6.1–3.6.7:

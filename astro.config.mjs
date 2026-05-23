@@ -1,7 +1,7 @@
 // @ts-check
 
 import mdx from '@astrojs/mdx';
-import { defineConfig, fontProviders } from 'astro/config';
+import { defineConfig, fontProviders, svgoOptimizer } from 'astro/config';
 
 // https://astro.build/config'
 export default defineConfig({
@@ -13,20 +13,21 @@ export default defineConfig({
 	// class - Use class-based selectors, causing a +1 specificity increase.
 	scopedStyleStrategy: 'where',
 
+	fonts: [
+		{
+			provider: fontProviders.google(),
+			name: 'Source Sans 3',
+			weights: [200, 300, 400, 500, 600, 700, 800, 900],
+			cssVariable: '--font_variable',
+			fallbacks: [
+				'-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;',
+			],
+		},
+	],
+
 	experimental: {
-		fonts: [
-			{
-				provider: fontProviders.google(),
-				name: 'Source Sans 3',
-				weights: [200, 300, 400, 500, 600, 700, 800, 900],
-				cssVariable: '--font_variable',
-				fallbacks: [
-					'-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;',
-				],
-			},
-		],
 		chromeDevtoolsWorkspace: true,
-		svgo: {
+		svgOptimizer: svgoOptimizer({
 			floatPrecision: 3,
 			multipass: true,
 			plugins: [
@@ -36,7 +37,7 @@ export default defineConfig({
 				// @ts-expect-error Astro experimental svgo types incomplete
 				{ name: 'removeMetadata', active: true },
 			],
-		},
+		}),
 	},
 
 	image: {

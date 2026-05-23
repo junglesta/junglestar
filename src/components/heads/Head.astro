@@ -5,6 +5,7 @@ import { Font } from "astro:assets";
 
 import * as siteData from "@data/site.json";
 import * as repoData from "package.json";
+import GoogleAnalytics from "./GoogleAnalytics.astro";
 
 export interface Props {
   title: string;
@@ -135,4 +136,6 @@ const ogImage = new URL(ogImageFile, siteUrl).href;
       navigator.serviceWorker.register('/sw.js');
     }
   </script>
+
+  <GoogleAnalytics />
 </head>

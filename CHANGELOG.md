@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.8.3
+
+- Reverted tracking measurement ID to the correct value for junglestar.org
+
 ## 3.8.2
 
 - Corrected tracking measurement ID in `site.json`

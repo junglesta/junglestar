@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.8.2
+
+- Corrected tracking measurement ID in `site.json`
+
 ## 3.8.1
 
 - GA now gated on Netlify `CONTEXT === "production"` — excludes dev, local preview, deploy-previews, and branch builds (only fires on live junglestar.org)

@@ -1,7 +1,7 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "3.9.4",
+  "version": "3.10.0",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
@@ -21,7 +21,6 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
     "@astrojs/mdx": "^5.0.6",
-    "@astrojs/partytown": "^2.1.7",
     "@astrojs/ts-plugin": "^1.10.9",
     "@biomejs/biome": "^2.4.15",
     "astro": "^6.3.7",

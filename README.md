@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1ed66ebc-0495-40f3-bf31-afb2adc2496c/deploy-status)](https://app.netlify.com/projects/j25/deploys)
+[junglestar.org](https://junglestar.org) — static Astro site, hosted on Cloudflare Workers (static assets).
 
 ---
 

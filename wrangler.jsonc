@@ -1,0 +1,14 @@
+{
+  // Cloudflare Workers static-assets config (host for junglestar.org).
+  // Worker name must match the deployed Worker (…/junglestar.me-b52.workers.dev).
+  "name": "junglestar",
+  "compatibility_date": "2026-05-24",
+  "assets": {
+    "directory": "./dist",
+    // Match Astro's `trailingSlash: 'never'`. The default "auto-trailing-slash"
+    // serves folder index files (about/index.html) WITH a slash, causing a 307
+    // /about -> /about/ redirect that contradicts our no-slash canonicals.
+    // "drop-trailing-slash" serves /about directly and 307s /about/ -> /about.
+    "html_handling": "drop-trailing-slash"
+  }
+}

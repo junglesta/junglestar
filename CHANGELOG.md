@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.10.0
+
+- **Hosting → Cloudflare (migration in progress)**: added `wrangler.jsonc` for Cloudflare Workers static assets (serves `./dist`), with `html_handling: "drop-trailing-slash"` to match Astro's `trailingSlash: 'never'` (the Workers default otherwise 307-redirects `/about` → `/about/`, contradicting our no-slash canonicals). Production DNS cutover is still pending — the site remains live on Netlify until then.
+- **Analytics**: removed Google Analytics (`gtag.js`) and the `@astrojs/partytown` integration entirely. Cloudflare Web Analytics (cookieless, first-party) will be wired in at DNS cutover. No analytics ships in this interim release.
+- **Node pinned**: added `.node-version` (`24.15.0`) — a single source of truth honoured by nvm/fnm, Netlify, and Cloudflare builds.
+- **Dead code removed**: deleted 11 unused components (`ExternalLinks`, `CTAMailButton`, `AnimHeader2Brand`, `AutoContrastScroll`, `TableOfContents`, `QrModalButton`, `Accordion`, `CTAButton`, `brand/SVGstar`, `brand/QR`, `heads/asciiartdude`) and the unused `utils/getPosts.ts`.
+- **Housekeeping**: `site.json` `deploy_check` → Workers URL, dropped the Netlify status badge; README points to Cloudflare hosting.
+- **QR modal**: bumped the copyable URL text to `font-size: 1rem`.
+
 ## 3.9.4
 
 - **About**: fixed the same two-tone background seam as the showcase page — the header inherited the body's `--white` while `<main>` used `bg_white` (`--whiteOFF`). Body now set to `--whiteOFF` for one uniform page colour. (`services`/`offer`/`tag` pages don't set `bg_white` on `<main>`, so they were already seamless.)

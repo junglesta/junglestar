@@ -26,25 +26,10 @@ const description =
   "Sustainable Web Design to help the planet. Change! We help small enterprises with websites, apps, and marketing communication.";
 ---
 
-<style>
-  h1 {
-    color: var(--black);
-  }
-
-  body.bg_brand_light :global(.button) {
-    background-color: var(--whiteT10);
-  }
-  body.bg_brand_light :global(.button:hover) {
-    background-color: var(--whiteT25);
-  }
-</style>
-
 <Layout
   title={title}
   description={description}
-  bodyClass="design bg_brand_light"
-  mainClass="bg_white "
-  background="--brand_lighter"
+  bodyClass="design"
 >
   <Fragment slot="inside_header">
     <LandingScreen

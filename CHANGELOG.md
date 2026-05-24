@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.11.0
+
+- **Colour system — one master per page, luma-derived regions**: head / main / footer backgrounds are now luma variations of a single per-page master colour instead of three independently-set colours. The master is just `--brand` (overridable per page); `base.css` derives `--region_head` (deep, light text), `--region_main` (near-white, dark text) and `--region_foot` (light tint, dark text) from it via OKLCH relative colour, all declared on `<body>` so overriding the master re-tunes the whole page. Fixes footers that clashed with page tops (the "electric two-blues" vs "soft pastel" split).
+- **Layout**: replaced the `background` prop with `master?: "--brand" | "--jgreen" | "--jorange"` (sets `--brand` inline). Removed the parallel `bg_*` body-class mechanism (`awesome_colours.css` emptied) — it set head/main/footer independently, which was the root cause of the mismatch. Footer rule in `animatio.css` collapsed from a 6-page hand-list to a single `.footer_site` using `--region_foot`.
+- **Menus**: unified top (`.nav_scroll_item`) and bottom (footer `.button`) menus to one hard-outline recipe (full-strength `currentColor` border, transparent fill); active top-nav item is a filled chip. Removed redundant per-page button overrides.
+- **Pages**: migrated all 12 pages off `background=`/`bg_*`/`mainClass="bg_white"`; `content` uses `master="--jorange"`, the rest use the brand-blue ramp. Homepage `IntroSection` now renders dark-on-light (was white-on-blue). Fixed `sty.astro`'s contradictory body class and a broken/`--brand_lightest` undefined-var rule on `content`.
+
 ## 3.10.3
 
 - **Security**: added `/.well-known/security.txt` (RFC 9116) so researchers have a clear vulnerability-disclosure contact (`info@junglestar.org`).

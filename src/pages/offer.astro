@@ -45,13 +45,6 @@ const description =
     padding: 0;
   }
 
-  body.bg_white :global(.button) {
-    background-color: var(--whiteT10);
-  }
-  body.bg_white :global(.button:hover) {
-    background-color: var(--whiteT25);
-  }
-
   .offer_content :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
     color: var(--brand);
 
@@ -251,8 +244,7 @@ const description =
 <Layout
   title={title}
   description={description}
-  bodyClass="offer bg_white"
-  background="--white"
+  bodyClass="offer"
 >
   <Fragment slot="inside_header">
     <LandingScreen
@@ -350,7 +342,7 @@ const description =
       }
     </div>
     <footer class="offer_footer">
-      <CTAButton linkClass="bg_white" />
+      <CTAButton />
     </footer>
   </div>
 

@@ -63,14 +63,13 @@
 	}
 }
 
-/* Footers — flat brand backdrop (gradients removed) */
-.about footer,
-.offer footer:not(.offer_footer),
-.discoverablity footer,
-.content footer,
-.index footer,
-.design footer {
+/* Footer — light tier of the page master (see base.css region ramp).
+   Targets the site footer only, never the in-content .offer_footer. */
+.footer_site {
 	position: relative;
 	isolation: isolate;
-	background-color: var(--brand);
+	background-color: var(--region_foot);
+	color: var(--fg_foot);
+	--bg: var(--region_foot);
+	--fg: var(--fg_foot);
 }

@@ -91,16 +91,14 @@ const topBackground = "var(--black)";
     margin-block: var(--space_block);
   }
 
+  /* Intro sits in the near-white main region → dark body text,
+     brand colour kept for emphasis via headings/<strong>. */
   .intro_memes {
-    color: var(--brand);
-  }
-
-  .txt_white_on_black > * {
-    color: var(--white);
+    color: var(--fg_main);
   }
 </style>
 
-<section class="intro_memes txt_white_on_black" }>
+<section class="intro_memes">
   <div class="relative">
     {
       introItems.map((item) => (

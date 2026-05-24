@@ -12,26 +12,49 @@ ONLY BASE SEMANTIC ELEMENTS HERE,
 html {
 	background-color: #fff;
 }
+/* ===========================================================
+   🐸 PER-PAGE COLOUR MASTER → REGION LUMA RAMP
+   One master per page (= --brand, overridable inline per page).
+   Head / main / footer are luma variations of that single hue:
+     head  = deep & saturated  (light text)
+     main  = near-white         (dark text)
+     footer= light tint         (dark text)
+   Declared on <body> so a per-page `--brand` override recomputes
+   all three. Change the master, the whole page re-tunes.
+   =========================================================== */
 body {
-	--bg: var(--brand);
-	--fg: var(--text_color);
+	--region_head: oklch(from var(--brand) 0.45 c h);
+	--region_main: oklch(from var(--brand) 0.97 calc(c * 0.18) h);
+	--region_foot: oklch(from var(--brand) 0.9 calc(c * 0.4) h);
+
+	--fg_head: var(--white);
+	--fg_main: var(--text_color);
+	--fg_foot: var(--black);
+
+	/* legacy aliases — body sits in the head region */
+	--bg: var(--region_head);
+	--fg: var(--fg_head);
+
 	font-family: var(--font_family);
 	font-size: var(--font_clamp);
 	line-height: var(--line_height);
 	font-weight: var(--weight);
-	color: var(--fg);
-	background-color: var(--bg);
+	color: var(--fg_head);
+	background-color: var(--region_head);
 	-webkit-text-size-adjust: 100%;
 }
 
 ::selection {
-	background-color: var(--fg);
-	color: var(--bg);
+	background-color: currentColor;
+	color: var(--region_main);
 }
 
-/*🐸MAIN */
+/*🐸MAIN — near-white tier of the master */
 main {
-	background-color: transparent;
+	--bg: var(--region_main);
+	--fg: var(--fg_main);
+	color: var(--fg_main);
+	background-color: var(--region_main);
 }
 
 /*🐸HR element */

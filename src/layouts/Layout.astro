@@ -16,20 +16,12 @@ export interface Props {
   pageSubtitle?: string;
   hideNav?: boolean;
   tags?: string[];
-  background?:
-    | "--brand"
-    | "--brand_light"
-    | "--brand_lighter"
-    | "--brand_dark"
-    | "--brandT25"
-    | "--brandT50"
-    | "--brandT75"
-    | "--jgreen"
-    | "--jgreen_light"
-    | "--jorange"
-    | "--black"
-    | "--white"
-    | "--whiteOFF";
+  /**
+   * Single colour master for the page. Head / main / footer are derived
+   * as luma variations of it (see base.css region ramp). Defaults to the
+   * brand blue; pass another token to re-tune the whole page at once.
+   */
+  master?: "--brand" | "--jgreen" | "--jorange";
 }
 
 const {
@@ -38,7 +30,7 @@ const {
   title,
   description = siteData.description,
   sitemap = true,
-  background = "--brand",
+  master,
   hideNav = false,
   tags = [],
 } = Astro.props;
@@ -47,7 +39,7 @@ const {
 <html lang="en">
   <Head title={title} description={description} sitemap={sitemap} tags={tags} />
   <LastPub />
-  <body class={bodyClass} style={`background-color: var(${background})`}>
+  <body class={bodyClass} style={master ? `--brand: var(${master})` : undefined}>
     {!hideNav && <NavScroll />}
     <header>
       <slot name="inside_header" />

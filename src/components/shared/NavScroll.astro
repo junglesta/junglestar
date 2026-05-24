@@ -54,7 +54,7 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 		text-transform: uppercase;
 		white-space: nowrap;
 		color: currentColor;
-		border: 2px solid color-mix(in oklch, currentColor 20%, transparent);
+		border: 2px solid currentColor;
 		border-radius: var(--radius);
 		text-decoration: none;
 		user-select: none;
@@ -62,7 +62,7 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 
 	.nav_scroll_item:hover,
 	.nav_scroll_item:focus-visible {
-		border-color: color-mix(in oklch, currentColor 60%, transparent);
+		border-color: currentColor;
 	}
 
 	.nav_scroll_item::after {
@@ -74,8 +74,12 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 		transform: translateY(calc(var(--space_block) * 0.145));
 	}
 
+	/* Active page reads as a filled chip against the all-outline set.
+	   Nav sits in the head region, so invert against it. */
 	.nav_scroll_item[aria-current="page"] {
-		border-color: currentColor;
+		background-color: var(--fg_head);
+		color: var(--region_head);
+		border-color: var(--fg_head);
 	}
 
 </style>

@@ -1,72 +1,12 @@
-.bg_green {
-	--brand: var(--jgreen);
-	--bg: var(--jgreen);
-	--fg: var(--black);
-	background-color: var(--bg);
-	color: var(--fg);
-}
-.bg_green_light {
-	--brand: var(--jgreen_light);
-	--bg: var(--jgreen_light);
-	--fg: var(--black);
-	background-color: var(--bg);
-	color: var(--fg);
-}
+/* ===========================================================
+   Superseded by the per-page colour master → region luma ramp.
+   Region backgrounds (head/main/footer) now derive from a single
+   --brand master per page: see src/styles/layers/layout/base.css
+   (--region_head / --region_main / --region_foot) and the footer
+   rule in compo/animatio.css (.footer_site).
 
-.bg_orange {
-	--brand: var(--jorange);
-	--bg: var(--jorange);
-	--fg: var(--black);
-	background-color: var(--bg);
-	color: var(--fg);
-}
-
-.bg_orange_light {
-	--brand: var(--jorange_light);
-	--bg: var(--jorange_light);
-	--fg: var(--black);
-	background-color: var(--bg);
-	color: var(--fg);
-}
-
-.bg_brand_light {
-	--bg: var(--brand_lighter);
-	--fg: var(--black);
-	background-color: var(--bg);
-	color: var(--fg);
-}
-
-.bg_brand {
-	--bg: var(--brand);
-	--fg: var(--white);
-	background-color: var(--bg);
-	color: var(--fg);
-
-	.nav_scroll {
-		background-color: var(--brand);
-	}
-}
-
-.bg_white {
-	--bg: var(--whiteOFF);
-	--fg: var(--black);
-	background-color: var(--bg);
-	color: var(--fg);
-}
-.bg_black {
-	--bg: var(--black);
-	--fg: var(--white);
-	background-color: var(--bg);
-	color: var(--fg);
-}
-
-body.index,
-body.content {
-	.on_scroll_msg > * {
-		color: var(--brand_lightest);
-	}
-}
-
-body.bg_black .footer_site_color {
-	color: var(--white);
-}
+   The old .bg_brand / .bg_white / .bg_black / .bg_orange / .bg_green
+   helpers were removed: they set head/main/footer independently,
+   which is exactly what caused footers to clash with page tops.
+   To recolour a page, pass <Layout master="--jorange"> etc.
+   =========================================================== */

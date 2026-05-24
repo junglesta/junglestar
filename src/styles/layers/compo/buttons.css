@@ -1,4 +1,7 @@
 /*🐸BUTTONS */
+/* Hard outline — fill transparent, border = current text colour.
+   Same recipe for top (.nav_scroll_item) and bottom (footer .button)
+   menus; polarity flips automatically with the region they sit in. */
 .button {
 	display: inline-block;
 	height: var(--tap_size);
@@ -7,8 +10,9 @@
 	font-weight: var(--weight_med);
 	text-align: center;
 	line-height: var(--tap_size);
-	color: var(--brand);
-	border: 2px solid var(--brand);
+	color: currentColor;
+	background-color: transparent;
+	border: 2px solid currentColor;
 	border-radius: var(--radius);
 	padding-inline: calc(var(--space_inline) / 1);
 	margin-block: calc(var(--space_block) / 5);
@@ -18,7 +22,7 @@
 .button:focus,
 .button:hover {
 	cursor: pointer;
-	color: var(--brand);
+	color: currentColor;
 	transform: scale(1.025);
 	transform-origin: center;
 }

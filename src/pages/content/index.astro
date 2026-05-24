@@ -32,40 +32,18 @@ const description =
 ---
 
 <style>
-  h1 {
-    color: var(--black);
-  }
-  body.bg_orange :global(.mean_title.mean_title--second) {
+  /* Second "mean" banner: a deeper orange tier for emphasis. */
+  body.content :global(.mean_title.mean_title--second) {
     --brand: var(--jorange_dark);
     background-color: var(--jorange_dark);
   }
-
-  body.bg_orange :global(.button) {
-    background-color: var(--jorange_dark);
-    color: var(--white);
-    border: 2px solid var(--white);
-  }
-  body.bg_orange :global(.button:hover) {
-    background-color: var(--white);
-  }
-  body.bg_orange :global(.button:hover) {
-    background-color: var(--jorange_dark);
-    color: var(--white);
-    border: 2px solid var(--jorange_light);
-  }
-
-  body.bg_orange :global(footer .button) {
-    background-color: var(--whiteT10);
-    border: 2px solid var(--black);
-
 </style>
 
 <Layout
   title={title}
   description={description}
-  bodyClass="content bg_orange"
-  mainClass="bg_white"
-  background="--jorange"
+  bodyClass="content"
+  master="--jorange"
 >
   <Fragment slot="inside_header">
     <LandingScreen

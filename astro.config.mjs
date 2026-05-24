@@ -1,6 +1,7 @@
 // @ts-check
 
 import mdx from '@astrojs/mdx';
+import partytown from '@astrojs/partytown';
 import { defineConfig, fontProviders, svgoOptimizer } from 'astro/config';
 import preloadScriptDeps from './integrations/preload-script-deps.mjs';
 
@@ -70,7 +71,14 @@ export default defineConfig({
 		enabled: true,
 	},
 
-	integrations: [mdx(), preloadScriptDeps()],
+	integrations: [
+		mdx(),
+		// Run Google Analytics (gtag.js) in a web worker, off the main thread.
+		// `forward` re-exposes `dataLayer.push` on the main thread so our gtag()
+		// calls reach the worker where gtag.js actually runs.
+		partytown({ config: { forward: ['dataLayer.push'] } }),
+		preloadScriptDeps(),
+	],
 
 	redirects: {
 		// No root hitting for these dir. No index needed. Astro will take care of it.

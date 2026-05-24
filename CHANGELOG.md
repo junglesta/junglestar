@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.9.3
+
+- **Performance**: moved Google Analytics (`gtag.js`) off the main thread via `@astrojs/partytown`. The GA loader + config now run in a web worker (`type="text/partytown"`), with `forward: ['dataLayer.push']` so `gtag()` calls reach the worker. Removes GA's main-thread/parse cost from the critical path. Still prod-only (Netlify `CONTEXT === "production"`). **Verify GA Realtime receives hits after deploy** — Partytown proxies the `collect` beacons cross-origin.
+
 ## 3.9.2
 
 - **Performance**: collapsed the client-script request chain flagged by Lighthouse ("avoid chaining critical requests"). New build-time integration `preload-script-deps` injects a `<link rel="modulepreload">` for the shared chunk that each page's script stub imports (e.g. `page.[hash].js` → `index.[hash].js`, the prefetch runtime), so the browser fetches it in parallel instead of after parsing the stub. Hash-agnostic; pure resource hint — no change to View Transitions or prefetch behaviour.

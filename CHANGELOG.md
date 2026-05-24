@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.9.4
+
+- **About**: fixed the same two-tone background seam as the showcase page — the header inherited the body's `--white` while `<main>` used `bg_white` (`--whiteOFF`). Body now set to `--whiteOFF` for one uniform page colour. (`services`/`offer`/`tag` pages don't set `bg_white` on `<main>`, so they were already seamless.)
+
 ## 3.9.3
 
 - **Performance**: moved Google Analytics (`gtag.js`) off the main thread via `@astrojs/partytown`. The GA loader + config now run in a web worker (`type="text/partytown"`), with `forward: ['dataLayer.push']` so `gtag()` calls reach the worker. Removes GA's main-thread/parse cost from the critical path. Still prod-only (Netlify `CONTEXT === "production"`). **Verify GA Realtime receives hits after deploy** — Partytown proxies the `collect` beacons cross-origin.

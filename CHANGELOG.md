@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.10.3
+
+- **Security**: added `/.well-known/security.txt` (RFC 9116) so researchers have a clear vulnerability-disclosure contact (`info@junglestar.org`).
+
 ## 3.10.2
 
 - **Housekeeping**: stop shipping macOS `.DS_Store` files — the `build` script now strips them from `public/` before building (they were being served publicly at `/.DS_Store`). `deploy:cf` reuses `pnpm build`, so the Worker gets the same guard. Deleted the throwaway DNS-import file.

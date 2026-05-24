@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.9.2
+
+- **Performance**: collapsed the client-script request chain flagged by Lighthouse ("avoid chaining critical requests"). New build-time integration `preload-script-deps` injects a `<link rel="modulepreload">` for the shared chunk that each page's script stub imports (e.g. `page.[hash].js` → `index.[hash].js`, the prefetch runtime), so the browser fetches it in parallel instead of after parsing the stub. Hash-agnostic; pure resource hint — no change to View Transitions or prefetch behaviour.
+- **Showcase**: fixed a two-tone background seam — the header used `--white` while the projects section used `--whiteOFF`. Both now use `--whiteOFF` for a single uniform page colour (added `--whiteOFF` to the Layout `background` prop).
+- **Modals**: restyled `Modal` and `QRmodalLink` dialogs — solid black background with white text, opaque backdrop, and viewport-relative padding/sizing.
+
 ## 3.9.1
 
 - Added showcase projects: **BOOK BAT** (bat.junglestar.org) and **BA ZI Calculator** (bazi.junglestar.org), with their icons.

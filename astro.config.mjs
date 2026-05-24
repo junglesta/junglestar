@@ -2,6 +2,7 @@
 
 import mdx from '@astrojs/mdx';
 import { defineConfig, fontProviders, svgoOptimizer } from 'astro/config';
+import preloadScriptDeps from './integrations/preload-script-deps.mjs';
 
 // https://astro.build/config'
 export default defineConfig({
@@ -69,7 +70,7 @@ export default defineConfig({
 		enabled: true,
 	},
 
-	integrations: [mdx()],
+	integrations: [mdx(), preloadScriptDeps()],
 
 	redirects: {
 		// No root hitting for these dir. No index needed. Astro will take care of it.

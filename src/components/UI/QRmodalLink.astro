@@ -20,16 +20,18 @@ const url = "https://junglestar.org";
 
 <style>
   dialog {
+      background-color: var(--black);
+      color: var(--white);
     position: fixed;
     inset: 0;
     margin: auto;
     border: none;
     border-radius: var(--radius);
-    padding: 2rem;
+    padding: 5dvh 5dvw;
     width: calc(100svw - 10svw);
     height: calc(100svh - 10svh);
     max-width: min(calc(100svw - 10svw), 400px);
-    max-height: min(calc(100svh - 10svh), 450px);
+    max-height: min(calc(100svh - 10svh), 500px);
     overflow: hidden;
     p {
       margin: 0;
@@ -37,7 +39,8 @@ const url = "https://junglestar.org";
   }
 
   dialog::backdrop {
-    background: rgba(255, 255, 255, 0.55);
+
+      background: rgba(0, 0, 0, 1);
   }
 
   dialog svg {

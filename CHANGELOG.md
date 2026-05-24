@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.10.1
+
+- **Cloudflare deploy tooling**: added `wrangler` (dev dependency) and a `deploy:cf` script (`astro build && wrangler deploy`), a `$schema` reference on `wrangler.jsonc`, and ignored `.wrangler/`. Enables GitHub auto-deploy (Workers Builds) and local `pnpm deploy:cf`. Validated with `wrangler deploy --dry-run` (reads `dist`, config OK).
+
 ## 3.10.0
 
 - **Hosting → Cloudflare (migration in progress)**: added `wrangler.jsonc` for Cloudflare Workers static assets (serves `./dist`), with `html_handling: "drop-trailing-slash"` to match Astro's `trailingSlash: 'never'` (the Workers default otherwise 307-redirects `/about` → `/about/`, contradicting our no-slash canonicals). Production DNS cutover is still pending — the site remains live on Netlify until then.

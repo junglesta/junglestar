@@ -1,4 +1,5 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   // Cloudflare Workers static-assets config (host for junglestar.org).
   // Worker name must match the deployed Worker (…/junglestar.me-b52.workers.dev).
   "name": "junglestar",

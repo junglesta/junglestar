@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.10.2
+
+- **Housekeeping**: stop shipping macOS `.DS_Store` files — the `build` script now strips them from `public/` before building (they were being served publicly at `/.DS_Store`). `deploy:cf` reuses `pnpm build`, so the Worker gets the same guard. Deleted the throwaway DNS-import file.
+
 ## 3.10.1
 
 - **Cloudflare deploy tooling**: added `wrangler` (dev dependency) and a `deploy:cf` script (`astro build && wrangler deploy`), a `$schema` reference on `wrangler.jsonc`, and ignored `.wrangler/`. Enables GitHub auto-deploy (Workers Builds) and local `pnpm deploy:cf`. Validated with `wrangler deploy --dry-run` (reads `dist`, config OK).

@@ -1,7 +1,7 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "3.10.1",
+  "version": "3.10.2",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
@@ -10,12 +10,12 @@
     "dev": "astro dev --open",
     "dev:clean": "pnpm clean && astro dev --open",
     "check": "astro check --watch & astro dev",
-    "build": "astro build --force",
+    "build": "find public -name '.DS_Store' -delete && astro build --force",
     "buildv": "astro build --verbose",
     "builddev": "astro build --devOutput",
     "buildwithtest": "astro check && tsc --noEmit && astro build",
     "preview": "astro preview",
-    "deploy:cf": "astro build && wrangler deploy",
+    "deploy:cf": "pnpm build && wrangler deploy",
     "astro": "astro",
     "upg": "npx @astrojs/upgrade"
   },

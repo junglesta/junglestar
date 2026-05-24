@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.11.1
+
+- **Homepage main is dark again**: the intro background SVGs are line art drawn for a black canvas, so the home `<main>` now uses a black background with light text (scoped to `body.index` — the rest of the site keeps the near-white main from the region ramp). `IntroSection` text returned to light.
+- **Design icon outline**: `truck.svg` had `stroke="#000"` hardcoded on its paths, so it stayed black instead of inheriting the head's text colour; switched to `currentColor` so the animated icon shows a white outline on the deep header.
+
 ## 3.11.0
 
 - **Colour system — one master per page, luma-derived regions**: head / main / footer backgrounds are now luma variations of a single per-page master colour instead of three independently-set colours. The master is just `--brand` (overridable per page); `base.css` derives `--region_head` (deep, light text), `--region_main` (near-white, dark text) and `--region_foot` (light tint, dark text) from it via OKLCH relative colour, all declared on `<body>` so overriding the master re-tunes the whole page. Fixes footers that clashed with page tops (the "electric two-blues" vs "soft pastel" split).

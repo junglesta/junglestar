@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.0.0
+
+Milestone release marking the completed header / hero / colour-system / social-card redesign (the 3.12.x–3.13.x arc). Final tweaks in this version:
+
+- **OG card logo**: now drawn in the brand blue (`#0069cc`) with a thinner stroke (a transparent, background-less mark), for a subtler tonal look on the dark-blue gradient.
+- **Tag OG cards**: description copy changed from “Posts tagged …” to “Tip tagged …”.
+
 ## 3.13.1
 
 - **OG card template polish**: title now uses the website's thin heading weight (Light) instead of heavy Black, and the logo is a larger (≈2.5×), transparent **background-less** white outlined mark (rasterised from `logo_stroke.svg` → `public/assets/og_logo.png`) instead of the old blue-square logo. Title size tuned so the longest two-line titles keep clear margin above the description.

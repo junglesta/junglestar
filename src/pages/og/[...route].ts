@@ -79,7 +79,7 @@ const pages: Record<string, Card> = {
 	...Object.fromEntries(
 		tagPaths.map((t) => [
 			`tag/${t.params.tag}`,
-			{ title: `#${t.props.tag}`, description: `Posts tagged “${t.props.tag}”` },
+			{ title: `#${t.props.tag}`, description: `Tip tagged “${t.props.tag}”` },
 		]),
 	),
 };

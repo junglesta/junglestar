@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.12.1
+
+- **CTA buttons tied to the page palette**: `.cta` now derives from the per-page region ramp — fill = `--region_foot` (the footer's light tier), text = `--fg_foot`, outline = black — so every CTA matches its page's footer and re-tunes automatically when a page's master colour changes. Hover inverts to a white fill with brand-coloured text **and** a matching brand-coloured outline, which "lights up" while staying AA-accessible on any background (the previous `--brand-600`/`--brand-400` hovers either darkened or broke white-text contrast). Fixes the content page's CTA blending into its deep-orange section (fill no longer equals the section background) and the design page's too-dark blue.
+- **Removed an instance-level override** that fought the shared class: `CTAMailBanner` no longer hard-sets `color`/`border-color: currentColor`, so the single `.cta` recipe governs every CTA site-wide (homepage intro, offer, Gmap, SlowWebsite, etc.).
+- **Docs**: documented the "style the component, not the instance" rule in the `css-conventions` skill (shared button classes are the single source of truth; only genuine non-identity one-offs may be scoped in a page's `<style>`).
+
 ## 3.12.0
 
 - **Header refactor (logo + wordmark + chips)**: rebuilt the site header — an outlined **logo mark** + **JUNGLESTAR wordmark** on the left, nav chips pushed far right, on a single line. Token-based sizing (`--header_text_size` / `--header_text_spacing`) so the wordmark and chips share one source (no `em`). Renamed `shared/NavScroll.astro` → `header/Header.astro`; it now wraps a semantic `<header>`, and `Layout.astro`'s old hero `<header>` became `<div class="page_intro">` (one banner landmark).

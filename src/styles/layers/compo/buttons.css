@@ -46,18 +46,24 @@
 	border: calc(var(--space_block) * 0.116) solid var(--brand); /* was 0.32svh */
 }
 
-/*🐸 CTA — solid, grounded brand button (homepage intro, on dark) */
+/*🐸 CTA — tied to the page's region ramp: same light tier + text colour as
+   the footer (--region_foot / --fg_foot), outlined in the page master. This
+   binds every CTA to the per-page palette, so re-tuning a page's master
+   re-tunes its CTAs and footer together. */
 .cta {
-	background-color: var(--brand);
-	color: var(--white);
-	border-color: var(--brand);
+	background-color: var(--region_foot);
+	color: var(--fg_foot);
+	border-color: var(--black);
 }
 
+/* Hover = invert: light fill + brand-colour text. Lights up while keeping
+   AA contrast on any region (white bg vs. brand text), unlike darkening or
+   over-lightening the fill (which broke white-on-fill contrast). */
 .cta:focus,
 .cta:hover {
-	color: var(--white);
-	background-color: var(--brand-600);
-	border-color: var(--brand-600);
+	background-color: var(--white);
+	color: var(--brand);
+	border-color: var(--brand);
 }
 
 .button_row {

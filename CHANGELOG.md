@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.13.1
+
+- **OG card template polish**: title now uses the website's thin heading weight (Light) instead of heavy Black, and the logo is a larger (≈2.5×), transparent **background-less** white outlined mark (rasterised from `logo_stroke.svg` → `public/assets/og_logo.png`) instead of the old blue-square logo. Title size tuned so the longest two-line titles keep clear margin above the description.
+- **Hide the style guide from crawlers**: `/sty` now ships `<meta name="robots" content="noindex,nofollow,nosnippet">` (via `sitemap={false}`) and is disallowed in `robots.txt`.
+
 ## 3.13.0
 
 - **Dynamic Open Graph cards**: every page now gets its own 1200×630 social card, generated at build time via `astro-og-canvas` (`src/pages/og/[...route].ts`) — page title set BIG, uppercase, heavy-weight, in the site font (Source Sans 3, vendored), on a brand-blue gradient with the logo. Replaces the old static-image map (home/services/showcase had been falling back to a cropped square logo). `Head.astro` derives each page's card URL from its pathname.

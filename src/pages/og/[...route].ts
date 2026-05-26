@@ -91,7 +91,9 @@ export const { getStaticPaths, GET } = await OGImageRoute({
 		// Uppercase the rendered title (FontConfig has no text-transform option).
 		title: page.title.toUpperCase(),
 		description: page.description,
-		logo: { path: './public/assets/junglestar_logo.png', size: [92] },
+		// Transparent (no-background) white logo, much larger than before.
+		// Rasterised from logo_stroke.svg → public/assets/og_logo.png.
+		logo: { path: './public/assets/og_logo.png', size: [230] },
 		// Brand-blue gradient (deep → --brand) for one cohesive identity.
 		bgGradient: [
 			[3, 28, 68],
@@ -99,8 +101,8 @@ export const { getStaticPaths, GET } = await OGImageRoute({
 		],
 		padding: 64,
 		font: {
-			// Big, heavy, uppercase headline in Source Sans 3 (vendored variable font).
-			title: { color: [255, 255, 255], weight: 'Black', size: 104, lineHeight: 1.05 },
+			// Thin uppercase headline, matching the website's light heading weight.
+			title: { color: [255, 255, 255], weight: 'Light', size: 94, lineHeight: 1.05 },
 			description: { color: [219, 231, 247], weight: 'Normal', size: 34, lineHeight: 1.3 },
 		},
 		fonts: ['./src/assets/fonts/SourceSans3.ttf'],

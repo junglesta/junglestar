@@ -140,6 +140,25 @@
 	box-shadow: var(--card_shadow_hover);
 }
 
+/* The subtitle's → arrow nudges right on card hover. */
+.card_arrow {
+	display: inline-block;
+	transition: transform 0.2s ease;
+}
+
+.card_link:hover .card_arrow {
+	transform: translateX(0.4em);
+}
+
+/* The card icon grows slightly on hover. */
+.card_link .post_image {
+	transition: transform 0.2s ease;
+}
+
+.card_link:hover .post_image {
+	transform: scale(1.05);
+}
+
 /*🐸 BENTO GRID for card_list */
 .card_list {
 	max-width: 100%;

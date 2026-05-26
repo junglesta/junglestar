@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.0.1
+
+- **Header fits the logo**: `.brand_mark` uses `min-height` (not a fixed `tap_size`) so the logo icon sets the row height instead of overflowing the band; symmetric block padding gives it breathing room.
+- **Tag pages restyled**: a distinct off-white scheme — `--whiteOFF` header & footer, `--whiteDIRTY` content band, `--whiteOFF` cards — replacing the brand-blue ramp (the blue clashed with the orange content-type cards). Content text is dark to suit the light band.
+- **Card hover micro-interactions**: the subtitle `→` arrow slides right and the card icon scales to 105% on hover (shared `cards.css`, so it applies to the design/content card grids too).
+
 ## 4.0.0
 
 Milestone release marking the completed header / hero / colour-system / social-card redesign (the 3.12.x–3.13.x arc). Final tweaks in this version:

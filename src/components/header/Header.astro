@@ -111,7 +111,9 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 		align-items: center;
 		gap: var(--space_inline);
 		padding-inline: var(--space_inline);
-		padding-block-start: calc(var(--space_block) * 1);
+		/* Symmetric block padding so the (tall) logo has breathing room above
+		   AND below — the band grows to contain it instead of it overflowing. */
+		padding-block: calc(var(--space_block) * 1);
 
 		/* Single source for ALL header text — wordmark + nav chips read these,
 		   so they can never drift apart in size or tracking. */
@@ -125,7 +127,9 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 		display: inline-flex;
 		align-items: center;
 		gap: calc(var(--space_inline) / 2.5);
-		height: var(--tap_size);
+		/* min, not fixed: lets the logo icon (up to 88px) set the row height so
+		   it never overflows the header band (tap_size stays the floor). */
+		min-height: var(--tap_size);
 		color: currentColor;
 		text-decoration: none;
 		user-select: none;

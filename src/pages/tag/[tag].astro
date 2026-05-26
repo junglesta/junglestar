@@ -41,9 +41,13 @@ const { tag, posts } = Astro.props;
 							<div class="post_header">
 								<h3 class="post_title">{post.data.title}</h3>
 								{post.data.subtitle && (
-									<p class="post_subtitle">{post.data.subtitle}&ensp;&rarr;</p>
+									<p class="post_subtitle">
+										{post.data.subtitle}&ensp;<span class="card_arrow">&rarr;</span>
+									</p>
 								)}
-								{!post.data.subtitle && <p class="post_subtitle">&rarr;</p>}
+								{!post.data.subtitle && (
+									<p class="post_subtitle"><span class="card_arrow">&rarr;</span></p>
+								)}
 							</div>
 						</a>
 					</AnimatedCard>
@@ -54,6 +58,29 @@ const { tag, posts } = Astro.props;
 </Layout>
 
 <style is:global>
+	/* Tag pages invert the region ramp to stand apart: LIGHT top (header),
+	   DARK middle (content), footer unchanged. Foregrounds swap to match
+	   (dark text on the light head, white text on the dark main). */
+	.tag_page {
+		--region_head: var(--whiteOFF);
+		--fg_head: var(--text_color);
+		/* Dirty white — light, neutral, doesn't clash with the orange content
+		   cards. Light main → dark content text. */
+		--region_main: var(--whiteDIRTY);
+		--fg_main: var(--text_color);
+		--region_foot: var(--whiteOFF);
+	}
+
+	/* On the dark main, the default translucent (--whiteT50) card reads as a
+	   muddy mid-blue. Use the off-white token at rest (lighter, but not pure
+	   white); keep the white hover. */
+	.tag_page .card_list .card_link {
+		background-color: var(--whiteOFF);
+	}
+	.tag_page .card_list .card_link:hover {
+		background-color: var(--white);
+	}
+
 	.tag_page .vpad {
 		padding-block: calc(var(--space_block) * 2);
 	}

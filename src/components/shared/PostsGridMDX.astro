@@ -35,9 +35,13 @@ const { posts = [], basePath } = Astro.props;
             <div class="post_header">
               <h3 class="post_title">{post.data.title}</h3>
               {post.data.subtitle && (
-                <p class="post_subtitle">{post.data.subtitle}&ensp;&rarr;</p>
+                <p class="post_subtitle">
+                  {post.data.subtitle}&ensp;<span class="card_arrow">&rarr;</span>
+                </p>
               )}
-              {!post.data.subtitle && <p class="post_subtitle">&rarr;</p>}
+              {!post.data.subtitle && (
+                <p class="post_subtitle"><span class="card_arrow">&rarr;</span></p>
+              )}
             </div>
           </a>
         </AnimatedCard>

@@ -1,300 +1,840 @@
 ---
-// src/pages/sty.astro
-// JUNGLESTAR STYLE SYSTEM
-//
-// Wave.astro component AND COLOR COMBOS
-// AutoContrast.astro component
-// COLORPICKER DEMO
-
+// src/pages/sty.astro — Design System / Style Guide
+// Rebuilt as a DX-oriented reference: every token is a click-to-copy chip,
+// rendered live for visual QA. Hidden from crawlers (sitemap=false).
 import Layout from "@layouts/Layout.astro";
-const title = "AutoContrast";
-const description = "AutoContrast";
-
-import WaveSection from "@components/UI/WaveSection.astro";
 import AutoContrast from "@components/UI/AutoContrast.astro";
-import "../styles/layers/tokens.css";
 
-// Color tokens grouped to match the current single-source colour system
-// (see COLOR.md): one --brand master → a derived --brand-50…900 scale, plus
-// the harmonizer-tuned hue ramps in palette.css. Add a name to a group and
-// the UI updates automatically.
+const title = "Style Guide";
+const description = "Junglestar design system — tokens, type, spacing & components.";
 
-// The single-source brand scale, derived from --brand via OKLCH relative colour
+// ── COLOUR TOKENS ──────────────────────────────────────────────────────────
 const brandScale = [
-  "brand-50",
-  "brand-100",
-  "brand-200",
-  "brand-300",
-  "brand-400",
-  "brand-500",
-  "brand-600",
-  "brand-700",
-  "brand-800",
-  "brand-900",
+  "--brand-50", "--brand-100", "--brand-200", "--brand-300", "--brand-400",
+  "--brand-500", "--brand-600", "--brand-700", "--brand-800", "--brand-900",
+];
+const brandCore = ["--brand", "--brandT25", "--brandT50", "--brandT75"];
+const greenRamp = ["--jgreen_lightest", "--jgreen_light", "--jgreen", "--jgreen_dark", "--jgreen_darker"];
+const orangeRamp = ["--jorange_lightest", "--jorange_light", "--jorange", "--jorange_dark", "--jorange_darker"];
+const whites = ["--white", "--whiteOFF", "--whiteDIRTY"];
+const blacks = [
+  "--grey_color_lightest",
+  "--grey_color_lighter", "--grey_color_light", "--grey_color", "--grey_color_dark",
+  "--black_fumes", "--black",
+];
+const alphaWhite = ["--whiteT50", "--whiteT25", "--whiteT15", "--whiteT10", "--whiteT05"];
+const alphaBlack = ["--blackT75", "--blackT50", "--blackT30", "--blackT15", "--blackT10", "--blackT05"];
+// Per-page region ramp (resolves to this page's master — blue here).
+const regions = ["--region_head", "--region_main", "--region_foot"];
+const semantic = ["--text_color", "--link_color", "--link_color_main", "--background_color"];
+
+// Resolved values for display (mirrors tokens.css; brand scale/regions are the
+// concrete result of the OKLCH relative-colour formulas for the default brand).
+const tokenValues: Record<string, string> = {
+  "--brand-50": "oklch(0.97 0.053 255)",
+  "--brand-100": "oklch(0.93 0.096 255)",
+  "--brand-200": "oklch(0.85 0.156 255)",
+  "--brand-300": "oklch(0.75 0.204 255)",
+  "--brand-400": "oklch(0.66 0.24 255)",
+  "--brand-500": "oklch(0.57 0.24 255)",
+  "--brand-600": "oklch(0.48 0.24 255)",
+  "--brand-700": "oklch(0.4 0.24 255)",
+  "--brand-800": "oklch(0.32 0.216 255)",
+  "--brand-900": "oklch(0.24 0.168 255)",
+  "--brand": "oklch(0.57 0.24 255)",
+  "--brandT25": "oklch(0.57 0.24 255 / 25%)",
+  "--brandT50": "oklch(0.57 0.24 255 / 50%)",
+  "--brandT75": "oklch(0.57 0.24 255 / 75%)",
+  "--jgreen_lightest": "oklch(0.98 0.12 144)",
+  "--jgreen_light": "oklch(0.96 0.31 144)",
+  "--jgreen": "oklch(0.74 0.31 144)",
+  "--jgreen_dark": "oklch(0.54 0.31 144)",
+  "--jgreen_darker": "oklch(0.29 0.31 144)",
+  "--jorange_lightest": "oklch(0.98 0.1 45)",
+  "--jorange_light": "oklch(0.97 0.23 45)",
+  "--jorange": "oklch(0.79 0.16 45)",
+  "--jorange_dark": "oklch(0.58 0.16 45)",
+  "--jorange_darker": "oklch(0.48 0.16 45)",
+  "--white": "oklch(0.9624 0.0062 75.41)",
+  "--whiteOFF": "oklch(0.95 0.02 75.4)",
+  "--whiteDIRTY": "oklch(0.88 0.02 75.4)",
+  "--black": "oklch(0 0 0)",
+  "--black_fumes": "#161616",
+  "--grey_color_lightest": "oklch(0.88 0 0)",
+  "--grey_color_lighter": "#888888",
+  "--grey_color_light": "#646464",
+  "--grey_color": "#343434",
+  "--grey_color_dark": "#232323",
+  "--whiteT50": "rgb(255 255 255 / 50%)",
+  "--whiteT25": "rgb(255 255 255 / 25%)",
+  "--whiteT15": "rgb(255 255 255 / 15%)",
+  "--whiteT10": "rgb(255 255 255 / 10%)",
+  "--whiteT05": "rgb(255 255 255 / 5%)",
+  "--blackT75": "rgb(0 0 0 / 75%)",
+  "--blackT50": "rgb(0 0 0 / 50%)",
+  "--blackT30": "rgb(0 0 0 / 30%)",
+  "--blackT15": "rgb(0 0 0 / 15%)",
+  "--blackT10": "rgb(0 0 0 / 10%)",
+  "--blackT05": "rgb(0 0 0 / 5%)",
+  "--region_head": "oklch(0.45 0.24 255)",
+  "--region_main": "oklch(0.97 0.043 255)",
+  "--region_foot": "oklch(0.9 0.096 255)",
+  "--text_color": "#111111",
+  "--link_color": "oklch(0.9624 0.0062 75.41)",
+  "--link_color_main": "oklch(0 0 0)",
+  "--background_color": "oklch(0.9624 0.0062 75.41)",
+};
+
+// ── TYPE ─────────────────────────────────────────────────────────────────────
+const headings = [
+  { tag: "h1", weight: "--h1-weight" },
+  { tag: "h2", weight: "--h2-weight" },
+  { tag: "h3", weight: "--h3-weight" },
+  { tag: "h4", weight: "--h4-weight" },
+  { tag: "h5", weight: "--h5-weight" },
+  { tag: "h6", weight: "--h6-weight" },
+];
+const weights = [
+  { token: "--weight_thinner", val: 100 },
+  { token: "--weight_thin", val: 200 },
+  { token: "--weight", val: 300 },
+  { token: "--weight_med", val: 400 },
+  { token: "--weight_bold", val: 600 },
+  { token: "--weight_heavy", val: 900 },
 ];
 
-// Harmonizer-tuned hue ramps (palette.css): blue / green / orange at 100/500/675/1040
-const paletteRamps = [
-  "jstar-100",
-  "jstar-500",
-  "jstar-675",
-  "jstar-1040",
-  "jgreen-100",
-  "jgreen-500",
-  "jgreen-675",
-  "jgreen-1040",
-  "jorange-100",
-  "jorange-500",
-  "jorange-675",
-  "jorange-1040",
+// ── SPACING / RADIUS / SHADOW ─────────────────────────────────────────────────
+const spacing = [
+  { token: "--space_block", val: "1.75rem" },
+  { token: "--space_inline", val: "1.25rem" },
+  { token: "--tap_size", val: "44px" },
+];
+const shadows = ["--card_shadow", "--card_shadow_hover", "--main_shadow", "--header_shadow"];
+
+// ── COMPONENT CLASSES ─────────────────────────────────────────────────────────
+const buttons = [".button", ".cta", ".button_dark"];
+
+// Demo cards for the .card_list bento grid
+const demoCards = [
+  { title: "Sustainable design", sub: "Build for the long run" },
+  { title: "Content production", sub: "Your brand narrative" },
+  { title: "Discoverability", sub: "Be found" },
+  { title: "Open source", sub: "Own your stack" },
 ];
 
-// Neutrals: greys, whites, black (kept as-is)
-const neutrals = [
-  "black",
-  "black_fumes",
-  "whiteDIRTY",
-  "whiteOFF",
-  "white",
-  "text_color",
-  "grey_color_dark",
-  "grey_color",
-  "grey_color_light",
-  "grey_color_lighter",
+// Layout utility classes — a representative few (not the whole set)
+const utilities = [".wrap", ".center", ".reader_friendly", ".flex", ".flex_cols", ".flex_align_center"];
+
+// Aspect-ratio tiers (landscape.css): label, ratio range, typical devices
+const aspectTiers = [
+  ["Portrait", "< 1", "phones / tablets portrait"],
+  ["Square", "1 – 4/3", "tablets, some monitors"],
+  ["Landscape", "4/3 – 16/9", "most laptops, monitors"],
+  ["Wide", "16/9 – 21/9", "TVs, wide monitors"],
+  ["Ultra-wide", "> 21/9", "ultrawide, multi-screen"],
 ];
+// Tokens the tiers re-tune + a few landscape-aware utilities
+const aspectTokens = ["--is_landscape", "--section_height", "--section_height_half", "--safe_inset", "--safe_padding"];
+const landscapeUtils = [".tv-safe", ".section-height", ".container-inline", ".space-between-adaptive"];
+const printClasses = [".print_only", ".print_title", ".print_footer", ".top_pad_big"];
+const autocontrastBgs = ["var(--white)", "var(--black)", "var(--brand)", "var(--jorange)", "var(--jgreen)"];
 
-// All names, in display order — drives the wave demo and palette grids
-const colorNames = [...brandScale, ...paletteRamps, ...neutrals];
+// AutoContrast docs — code examples (rendered as literal text)
+const acCssExample = `/* Native CSS Color 6 — picks black or white,
+   whichever contrasts the given colour best. */
+.badge {
+  background: var(--brand);
+  color: contrast-color(var(--brand));
+}`;
+const acAstroExample = `${"---"}
+import AutoContrast from "@components/UI/AutoContrast.astro";
+${"---"}
+<!-- Native where supported; JS luminance fallback elsewhere -->
+<AutoContrast backgroundColor="var(--brand)">
+  Always-readable label
+</AutoContrast>
 
-// Generate color objects from names
-const demoColors = colorNames.map((name) => ({
-  var: `var(--${name})`,
-  name: `--${name}`,
-}));
+<!-- Optional props (lightText / darkText / threshold
+     only affect the JS fallback) -->
+<AutoContrast
+  backgroundColor="#ff9900"
+  tag="span"
+  lightText="white"
+  darkText="black"
+  threshold={0.32}
+>
+  Pill
+</AutoContrast>`;
+const acSupportExample = `/* Progressive enhancement, both ship together */
+@supports (color: contrast-color(red)) {
+  .auto-contrast { color: contrast-color(var(--bg-color)); }
+}
+@supports not (color: contrast-color(red)) {
+  .auto-contrast { color: var(--text-color); } /* JS sets it */
+}`;
+
+const sections = [
+  ["colour", "Colour"],
+  ["type", "Type"],
+  ["space", "Spacing"],
+  ["elevation", "Radius & Shadow"],
+  ["components", "Components"],
+  ["system", "System"],
+];
 ---
 
-<Layout
-  title={title}
-  description={description}
-  bodyClass="ac"
-  sitemap={false}
->
-  {
-    colorNames.map((color, i) => (
-      <WaveSection
-        topBackground={`var(--${color})`}
-        bottomBackground={`var(--${colorNames[(i + 1) % colorNames.length]})`}
-        waveHeight={0.5}
-        height="30svw"
-      />
-    ))
-  }
-
-
-  <div class="wrap">
-    <div class="hero">
-      <br />
-      <br />
-      <br />
-      <br />
-      <h1>Junglestar ✨Colour System</h1>
-      <p>
-        One <code>--brand</code> master (OKLCH) per page derives the whole
-        <code>--brand-50…900</code> scale and the head / main / footer region
-        ramp. AutoContrast then picks black or white text for any background
-        via the native <code>contrast-color()</code> with a WCAG-luminance JS
-        fallback.
+<Layout title={title} description={description} bodyClass="styleguide" sitemap={false}>
+  <main class="sg wrap">
+    <header class="sg_head">
+      <h1>Design System</h1>
+      <p class="sg_lead">
+        Live reference for Junglestar's tokens, type scale and components.
+        <strong>Click any chip to copy its <code>var()</code> reference.</strong>
       </p>
-    </div>
+      <nav class="sg_nav" aria-label="Sections">
+        {sections.map(([id, label]) => <a href={`#${id}`}>{label}</a>)}
+      </nav>
+    </header>
 
-    <div class="container">
-      <!-- Interactive Demo Section -->
-      <div class="featured-demo">
-        <h2>Interactive Color Picker</h2>
-        <p>
-          Select any background color! The text color automatically switches
-          between black and white to maintain optimal contrast and readability.
-        </p>
+    <!-- ══ COLOUR ══════════════════════════════════════════════════════ -->
+    <section id="colour" class="sg_section">
+      <h2>Colour</h2>
 
-        <AutoContrast
-          backgroundColor="var(--jstar-100)"
-          class="card wrap"
-          id="interactive-card"
-        >
-          <h3>Auto Color Adjustment</h3>
-          <span class="info-badge wrap">✓ WCAG Compliant</span>
-          <p>
-            This text adapts for perfect contrast! The component uses the WCAG
-            2.1 relative luminance formula to determine whether black or white
-            text provides better readability. It starts using:
-            <code
-              style="background: var(--whiteT25); padding: 0.2rem 0.5rem; border-radius: 4px;"
-              >--jstar-100</code
-            > in the OKLCH color space. <small
-              ><br />After the fade-in offcourse.</small
-            >
-          </p>
-        </AutoContrast>
+      <h3>Brand scale</h3>
+      <p class="sg_note">Derived from a single <code>--brand</code> via OKLCH relative colour (50 lightest → 900 darkest).</p>
+      <div class="sg_swatches">
+        {brandScale.map((t) => (
+          <button class="swatch" type="button" data-copy={`var(${t})`}>
+            <span class="swatch_color" style={`background:var(${t})`}></span>
+            <code class="swatch_name">{t}</code>
+            {tokenValues[t] && <span class="swatch_value">{tokenValues[t]}</span>}
+          </button>
+        ))}
+      </div>
 
-        <div class="color-picker-wrapper center">
-          <br />
-          <br />
-          <h3>Color Picker Demo</h3>
-          <label for="colorPicker"><h4>Now, pick a Colour:</h4></label>
-          <div class="color-picker-container">
-            <input type="color" id="colorPicker" class="color-picker" />
-            <div class="color-value" id="colorValue">Loading...</div>
+      <h3>Brand &amp; transparents</h3>
+      <div class="sg_swatches">
+        {brandCore.map((t) => (
+          <button class="swatch" type="button" data-copy={`var(${t})`}>
+            <span class="swatch_color checkered" style={`background:var(${t})`}></span>
+            <code class="swatch_name">{t}</code>
+            {tokenValues[t] && <span class="swatch_value">{tokenValues[t]}</span>}
+          </button>
+        ))}
+      </div>
+
+      <h3>Harmonizers — Green</h3>
+      <div class="sg_swatches">
+        {greenRamp.map((t) => (
+          <button class="swatch" type="button" data-copy={`var(${t})`}>
+            <span class="swatch_color" style={`background:var(${t})`}></span>
+            <code class="swatch_name">{t}</code>
+            {tokenValues[t] && <span class="swatch_value">{tokenValues[t]}</span>}
+          </button>
+        ))}
+      </div>
+
+      <h3>Harmonizers — Orange</h3>
+      <div class="sg_swatches">
+        {orangeRamp.map((t) => (
+          <button class="swatch" type="button" data-copy={`var(${t})`}>
+            <span class="swatch_color" style={`background:var(${t})`}></span>
+            <code class="swatch_name">{t}</code>
+            {tokenValues[t] && <span class="swatch_value">{tokenValues[t]}</span>}
+          </button>
+        ))}
+      </div>
+
+      <h3>Whites</h3>
+      <div class="sg_swatches">
+        {whites.map((t) => (
+          <button class="swatch" type="button" data-copy={`var(${t})`}>
+            <span class="swatch_color bordered" style={`background:var(${t})`}></span>
+            <code class="swatch_name">{t}</code>
+            {tokenValues[t] && <span class="swatch_value">{tokenValues[t]}</span>}
+          </button>
+        ))}
+      </div>
+
+      <h3>Blacks &amp; greys</h3>
+      <div class="sg_swatches">
+        {blacks.map((t) => (
+          <button class="swatch" type="button" data-copy={`var(${t})`}>
+            <span class="swatch_color bordered" style={`background:var(${t})`}></span>
+            <code class="swatch_name">{t}</code>
+            {tokenValues[t] && <span class="swatch_value">{tokenValues[t]}</span>}
+          </button>
+        ))}
+      </div>
+
+      <h3>Alpha — white</h3>
+      <div class="sg_swatches">
+        {alphaWhite.map((t) => (
+          <button class="swatch" type="button" data-copy={`var(${t})`}>
+            <span class="swatch_color checkered" style={`background:var(${t})`}></span>
+            <code class="swatch_name">{t}</code>
+            {tokenValues[t] && <span class="swatch_value">{tokenValues[t]}</span>}
+          </button>
+        ))}
+      </div>
+
+      <h3>Alpha — black</h3>
+      <div class="sg_swatches">
+        {alphaBlack.map((t) => (
+          <button class="swatch" type="button" data-copy={`var(${t})`}>
+            <span class="swatch_color checkered" style={`background:var(${t})`}></span>
+            <code class="swatch_name">{t}</code>
+            {tokenValues[t] && <span class="swatch_value">{tokenValues[t]}</span>}
+          </button>
+        ))}
+      </div>
+
+      <h3>Region ramp &amp; semantic</h3>
+      <p class="sg_note">Region tokens resolve from this page's master (blue). Each page re-tunes them.</p>
+      <div class="sg_swatches">
+        {regions.concat(semantic).map((t) => (
+          <button class="swatch" type="button" data-copy={`var(${t})`}>
+            <span class="swatch_color bordered" style={`background:var(${t})`}></span>
+            <code class="swatch_name">{t}</code>
+            {tokenValues[t] && <span class="swatch_value">{tokenValues[t]}</span>}
+          </button>
+        ))}
+      </div>
+    </section>
+
+    <!-- ══ TYPE ════════════════════════════════════════════════════════ -->
+    <section id="type" class="sg_section">
+      <h2>Type</h2>
+
+      <h3>Heading scale</h3>
+      <div class="sg_type_list">
+        {headings.map(({ tag, weight }) => {
+          const Tag = tag;
+          return (
+            <div class="sg_type_row">
+              <Tag class="sg_type_sample">Junglestar — {tag.toUpperCase()}</Tag>
+              <button class="chip" type="button" data-copy={`var(${weight})`}>
+                <code>{weight}</code>
+              </button>
+            </div>
+          );
+        })}
+      </div>
+
+      <h3>Weights</h3>
+      <div class="sg_type_list">
+        {weights.map(({ token, val }) => (
+          <div class="sg_type_row">
+            <span class="sg_weight_sample" style={`font-weight:${val}`}>
+              The smart dev-opx — {val}
+            </span>
+            <button class="chip" type="button" data-copy={`var(${token})`}>
+              <code>{token}</code>
+            </button>
           </div>
-        </div>
+        ))}
       </div>
 
-      <!-- Different HTML Tags Section -->
-      <h2 class="section-title">AutoContrast Color Test</h2>
-      <p class="section-subtitle">
-        Works with any HTML tag using the 'tag' prop
+      <h3>Body &amp; font tokens</h3>
+      <p class="sg_body_sample">
+        Body copy uses <code>--font_clamp</code> over <code>--font_family</code> at
+        <code>--line_height</code>. It's a jungle out there — we design, code &amp; deploy.
+      </p>
+      <div class="sg_chips">
+        {["--font_family", "--font_clamp", "--font_rem", "--line_height"].map((t) => (
+          <button class="chip" type="button" data-copy={`var(${t})`}><code>{t}</code></button>
+        ))}
+      </div>
+    </section>
+
+    <!-- ══ SPACING ═════════════════════════════════════════════════════ -->
+    <section id="space" class="sg_section">
+      <h2>Spacing</h2>
+      <div class="sg_space_list">
+        {spacing.map(({ token, val }) => (
+          <button class="sg_space_row" type="button" data-copy={`var(${token})`}>
+            <span class="sg_space_bar" style={`inline-size:var(${token})`}></span>
+            <code class="sg_space_name">{token}</code>
+            <span class="sg_space_val">{val}</span>
+          </button>
+        ))}
+      </div>
+    </section>
+
+    <!-- ══ RADIUS & SHADOW ═════════════════════════════════════════════ -->
+    <section id="elevation" class="sg_section">
+      <h2>Radius &amp; Shadow</h2>
+
+      <h3>Radius</h3>
+      <div class="sg_swatches">
+        <button class="swatch" type="button" data-copy="var(--radius)">
+          <span class="swatch_box radius_demo"></span>
+          <code class="swatch_name">--radius</code>
+        </button>
+      </div>
+
+      <h3>Shadows</h3>
+      <div class="sg_shadows">
+        {shadows.map((t) => (
+          <button class="sg_shadow" type="button" data-copy={`var(${t})`}>
+            <span class="sg_shadow_box" style={`box-shadow:var(${t})`}></span>
+            <code class="swatch_name">{t}</code>
+            {tokenValues[t] && <span class="swatch_value">{tokenValues[t]}</span>}
+          </button>
+        ))}
+      </div>
+    </section>
+
+    <!-- ══ COMPONENTS ══════════════════════════════════════════════════ -->
+    <section id="components" class="sg_section">
+      <h2>Components</h2>
+
+      <h3>Buttons</h3>
+      <p class="sg_note">Hover to see states. Chips copy the class name.</p>
+      <div class="sg_buttons">
+        {buttons.map((cls) => (
+          <div class="sg_button_cell">
+            <span class:list={["button", cls.replace(".", "")]}>{cls}</span>
+            <button class="chip" type="button" data-copy={cls}><code>{cls}</code></button>
+          </div>
+        ))}
+      </div>
+
+      <h3>Links</h3>
+      <p class="sg_note">Body links use the main-region link colour; hover/underline come from the global link styles.</p>
+      <p class="sg_links_demo">
+        Here is an <a href="#colour">inline link</a> inside body copy, plus a second
+        <a href="#type">link example</a> so you can check the underline and hover state.
+      </p>
+      <div class="sg_chips">
+        {["--link_color", "--link_color_hover", "--link_color_main", "--link_color_main_hover"].map((t) => (
+          <button class="chip" type="button" data-copy={`var(${t})`}><code>{t}</code></button>
+        ))}
+      </div>
+
+      <h3>Card grid · <code>.card_list</code></h3>
+      <p class="sg_note">The bento grid with <code>.card_link</code> items — hover for the arrow nudge &amp; icon scale.</p>
+      <div class="card_list sg_card_grid">
+        {demoCards.map((c) => (
+          <a href="#components" class="card_link">
+            <div class="post_image">
+              <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M8 12l3 3 5-6"></path>
+              </svg>
+            </div>
+            <div class="post_header">
+              <h3 class="post_title">{c.title}</h3>
+              <p class="post_subtitle">{c.sub}&ensp;<span class="card_arrow">&rarr;</span></p>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <h3>Responsive grid · <code>.grid_projects</code></h3>
+      <p class="sg_note">1 → 2 → 3 → 4 columns as the viewport grows (500 / 900 / 1400px).</p>
+      <div class="grid_projects sg_grid_demo">
+        {Array.from({ length: 8 }).map((_, i) => <div class="sg_cell">{i + 1}</div>)}
+      </div>
+
+      <h3>Layout utilities</h3>
+      <p class="sg_note">Reusable helper classes — click to copy.</p>
+      <div class="sg_chips">
+        {utilities.map((c) => (
+          <button class="chip" type="button" data-copy={c}><code>{c}</code></button>
+        ))}
+      </div>
+    </section>
+
+    <!-- ══ SYSTEM ═══════════════════════════════════════════════════════ -->
+    <section id="system" class="sg_section">
+      <h2>System</h2>
+
+      <h3>Aspect-ratio tiers</h3>
+      <p class="sg_note">Layout adapts to the viewport's aspect ratio (<code>landscape.css</code>), re-tuning the tokens below. Resize / rotate to watch the live readout change.</p>
+      <div class="sg_tiers">
+        {aspectTiers.map(([name, range, devices]) => (
+          <div class="sg_tier">
+            <strong>{name}</strong>
+            <code>{range}</code>
+            <span>{devices}</span>
+          </div>
+        ))}
+      </div>
+      <p class="sg_live">
+        Current: <code id="sg_landscape">--is_landscape: …</code>
+        <code id="sg_secheight">--section_height: …</code>
+      </p>
+      <div class="sg_chips">
+        {aspectTokens.map((t) => (
+          <button class="chip" type="button" data-copy={`var(${t})`}><code>{t}</code></button>
+        ))}
+      </div>
+      <p class="sg_note">Landscape-aware utilities (a few of them):</p>
+      <div class="sg_chips">
+        {landscapeUtils.map((c) => (
+          <button class="chip" type="button" data-copy={c}><code>{c}</code></button>
+        ))}
+      </div>
+
+      <h3>Base print styles</h3>
+      <p class="sg_note">A dedicated print layer (last in the cascade) swaps to a white canvas and reveals print-only blocks. Press <kbd>⌘ / Ctrl + P</kbd> to preview. Print helpers:</p>
+      <div class="sg_chips">
+        {printClasses.map((c) => (
+          <button class="chip" type="button" data-copy={c}><code>{c}</code></button>
+        ))}
+      </div>
+
+      <h3>AutoContrast <span class="sg_badge">ready · unused</span></h3>
+      <p class="sg_note">
+        <code>contrast-color()</code> is a new CSS Color&nbsp;6 function: given any colour it returns
+        the colour (black or white) that contrasts it best — so you never hand-pick light/dark text
+        for a dynamic background again. <code>AutoContrast.astro</code> wraps it with a JS luminance
+        fallback so it works everywhere today.
+      </p>
+      <p class="sg_note">
+        <strong>Support:</strong> native in Safari&nbsp;26+ and Firefox&nbsp;146+; Chrome/Edge fall back to the
+        JS path. Both ship together via <code>@supports</code> (progressive enhancement) — see below.
       </p>
 
-      <div class="tag-showcase">
-        {
-          demoColors.map((color) => (
-            <AutoContrast
-              backgroundColor={color.var}
-              tag="section"
-              class="mini-card"
-            >
-              <h3>{color.name}</h3>
-            </AutoContrast>
-          ))
-        }
+      <h4>Native CSS</h4>
+      <pre><code>{acCssExample}</code></pre>
+
+      <h4>The component (Astro)</h4>
+      <pre><code>{acAstroExample}</code></pre>
+
+      <h4>How the fallback is wired</h4>
+      <pre><code>{acSupportExample}</code></pre>
+
+      <h4>Live — text auto-adapts to each background</h4>
+      <div class="sg_autocontrast">
+        {autocontrastBgs.map((bg) => (
+          <AutoContrast backgroundColor={bg} class="sg_ac_chip">{bg}</AutoContrast>
+        ))}
       </div>
+    </section>
 
-      <!-- Color Palette Showcase -->
-      <h2 class="section-title">Color Palette</h2>
-      <p class="section-subtitle">
-        The single-source <code>--brand-50…900</code> scale, the harmonizer
-        ramps (<code>--jstar/--jgreen/--jorange</code> at 100/500/675/1040),
-        and the neutrals — all in OKLCH with automatic contrast.
-      </p>
-
-      <h3 class="section-title">Brand scale (derived from <code>--brand</code>)</h3>
-      <div class="demo-grid">
-        {
-          brandScale.map((name) => (
-            <AutoContrast backgroundColor={`var(--${name})`} class="palette-card">
-              <strong>--{name}</strong>
-              <span class="var-name">var(--{name})</span>
-            </AutoContrast>
-          ))
-        }
-      </div>
-
-      <h3 class="section-title">Harmonizer hue ramps</h3>
-      <div class="demo-grid">
-        {
-          paletteRamps.map((name) => (
-            <AutoContrast backgroundColor={`var(--${name})`} class="palette-card">
-              <strong>--{name}</strong>
-              <span class="var-name">var(--{name})</span>
-            </AutoContrast>
-          ))
-        }
-      </div>
-
-      <h3 class="section-title">Neutrals</h3>
-      <div class="demo-grid">
-        {
-          neutrals.map((name) => (
-            <AutoContrast backgroundColor={`var(--${name})`} class="palette-card">
-              <strong>--{name}</strong>
-              <span class="var-name">var(--{name})</span>
-            </AutoContrast>
-          ))
-        }
-      </div>
-    </div>
-  </div>
-
-  <!-- Usage Example -->
-  <div class="wrap">
-    <h2>Quick Start</h2>
-    <p style="color: var(--grey_color); margin-bottom: 1.5rem;">
-      Using the AutoContrast component is simple:
-    </p>
-  </div>
-  <pre
-    style="background: var(--blackT15); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"><code>import AutoContrast from "@components/UI/AutoContrast.astro";</code>
-        </pre>
-  <br />
-  <pre
-    style="background: var(--blackT15); padding: 1.5rem; border-radius: var(--radius); overflow-x: auto; color: var(--text_color); font-size: 0.9rem;"><code>&lt;AutoContrast backgroundColor="#0069cc"&gt;
-  &lt;h2&gt;Your Content&lt;/h2&gt;
-  &lt;p&gt;Text automatically contrasts!&lt;/p&gt;
-&lt;/AutoContrast&gt;</code>
-      </pre>
-
-  <script>
-    // Interactive color picker following Astro best practices
-    // Astro scripts are bundled and run as type="module" automatically
-
-    const colorPicker = document.getElementById(
-      "colorPicker",
-    ) as HTMLInputElement;
-    const colorValue = document.getElementById("colorValue");
-    const interactiveCard = document.getElementById("interactive-card") as any;
-
-    // Helper function to convert RGB to hex
-    function rgbToHex(rgb: string): string {
-      const match = rgb.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)/);
-      if (!match) return "#000000";
-
-      const r = parseInt(match[1]);
-      const g = parseInt(match[2]);
-      const b = parseInt(match[3]);
-
-      return (
-        "#" +
-        [r, g, b]
-          .map((x) => {
-            const hex = x.toString(16);
-            return hex.length === 1 ? "0" + hex : hex;
-          })
-          .join("")
-      );
-    }
-
-    if (colorPicker && interactiveCard && colorValue) {
-      // Get the computed background color and set it to the picker
-      const computedBg =
-        window.getComputedStyle(interactiveCard).backgroundColor;
-      const hexColor = rgbToHex(computedBg);
-      colorPicker.value = hexColor;
-      colorValue.textContent = hexColor;
-
-      // Listen for color changes
-      colorPicker.addEventListener("input", (e) => {
-        const color = (e.target as HTMLInputElement).value;
-
-        // Update the displayed hex value
-        colorValue.textContent = color;
-
-        // Update the card's background color
-        if (typeof interactiveCard.setBackgroundColor === "function") {
-          interactiveCard.setBackgroundColor(color);
-        }
-      });
-    } else {
-      console.error("Color picker elements not found:", {
-        colorPicker: !!colorPicker,
-        interactiveCard: !!interactiveCard,
-        colorValue: !!colorValue,
-      });
-    }
-  </script>
+    <p class="sg_foot"><code>src/pages/sty.astro</code> · tokens in <code>src/styles/layers/tokens.css</code></p>
+  </main>
 </Layout>
 
 <style>
-  pre {
-    margin-left: 1rem !important;
-    min-width: 388px !important;
+  .sg {
+    max-width: var(--width_xl);
+    padding-block: calc(var(--space_block) * 1.5);
+  }
+
+  .sg_head {
+    padding-block-end: var(--space_block);
+    border-bottom: 1px solid var(--blackT10);
+  }
+  .sg_lead {
+    max-width: 60ch;
+    color: var(--grey_color);
+  }
+  .sg_lead code,
+  .sg_note code,
+  .sg_body_sample code {
+    background: #fff;
+    padding: 0.1em 0.4em;
+    border-radius: 6px;
+    font-size: 0.9em;
+  }
+
+  /* In-page section nav */
+  .sg_nav {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--space_inline) / 2);
+    margin-top: var(--space_block);
+    padding-block: calc(var(--space_block) / 2);
+    background: var(--region_main);
+  }
+  .sg_nav a {
+    font-size: calc(var(--font_rem) * 0.8);
+    font-weight: var(--weight_med);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: currentColor;
+    border: 1.5px solid currentColor;
+    border-radius: 999px;
+    padding: 0.25em 0.9em;
+    text-decoration: none;
+    opacity: 0.7;
+  }
+  .sg_nav a:hover { opacity: 1; }
+
+  .sg_section {
+    padding-block: var(--space_block);
+    border-bottom: 1px solid var(--blackT10);
+    scroll-margin-top: calc(var(--space_block) * 3);
+  }
+  .sg_section h2 {
+    margin-bottom: var(--space_block);
+  }
+  .sg_section h3 {
+    margin-block: var(--space_block) calc(var(--space_block) / 3);
+  }
+  .sg_note {
+    color: var(--grey_color_light);
+    font-size: calc(var(--font_rem) * 0.85);
+    max-width: 60ch;
+    margin-bottom: calc(var(--space_block) / 2);
+  }
+
+  /* ── Swatch grid ── */
+  .sg_swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space_inline);
+  }
+  .swatch {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+    position: relative;
+  }
+  .swatch_color,
+  .swatch_box {
+    display: block;
+    block-size: 72px;
+    border-radius: var(--radius);
+    box-shadow: inset 0 0 0 1px var(--blackT10);
+  }
+  .swatch_color.bordered { box-shadow: inset 0 0 0 1px var(--blackT30); }
+  /* checkerboard reveals alpha/transparent colours */
+  .checkered {
+    background-image:
+      linear-gradient(45deg, var(--blackT10) 25%, transparent 25%),
+      linear-gradient(-45deg, var(--blackT10) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, var(--blackT10) 75%),
+      linear-gradient(-45deg, transparent 75%, var(--blackT10) 75%);
+    background-size: 16px 16px;
+    background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+  }
+  .checkered[style] { background-blend-mode: normal; }
+  .swatch_name {
+    font-size: calc(var(--font_rem) * 0.64);
+    color: var(--grey_color);
+    white-space: nowrap;
+  }
+  .swatch_value {
+    font-family: monospace;
+    font-size: calc(var(--font_rem) * 0.58);
+    color: var(--grey_color_light);
+    white-space: nowrap;
+  }
+
+  /* copied feedback (shared by swatch / chip / rows) */
+  [data-copy].is-copied::after {
+    content: "Copied ✓";
+    position: absolute;
+    inset-block-start: 0.4em;
+    inset-inline-end: 0.4em;
+    background: var(--brand);
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: var(--weight_med);
+    padding: 0.15em 0.6em;
+    border-radius: 999px;
+    pointer-events: none;
+  }
+
+  /* ── Type ── */
+  .sg_type_list { display: flex; flex-direction: column; gap: calc(var(--space_block) / 2); }
+  .sg_type_row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space_inline);
+    flex-wrap: wrap;
+  }
+  .sg_type_sample { margin: 0; }
+  .sg_weight_sample { font-size: calc(var(--font_rem) * 1.1); }
+  .sg_body_sample { max-width: 62ch; }
+  .sg_chips, .sg_buttons { display: flex; flex-wrap: wrap; gap: var(--space_inline); align-items: center; }
+
+  .chip {
+    position: relative;
+    cursor: pointer;
+    font: inherit;
+    background: var(--blackT05);
+    border: 1px solid var(--blackT10);
+    border-radius: 999px;
+    padding: 0.2em 0.7em;
+    color: var(--grey_color);
+  }
+  .chip code { font-size: calc(var(--font_rem) * 0.72); }
+  .chip:hover { background: var(--blackT10); }
+
+  /* ── Spacing ── */
+  .sg_space_list { display: flex; flex-direction: column; gap: calc(var(--space_block) / 2); }
+  .sg_space_row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--space_inline);
+    cursor: pointer;
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    padding: 0;
+  }
+  .sg_space_bar {
+    display: block;
+    block-size: 1.5rem;
+    background: var(--brand);
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  .sg_space_name { font-size: calc(var(--font_rem) * 0.78); }
+  .sg_space_val { color: var(--grey_color_light); font-size: calc(var(--font_rem) * 0.78); }
+
+  /* ── Shadows ── */
+  .sg_shadows { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: calc(var(--space_block) * 1.2); }
+  .sg_shadow {
+    position: relative; cursor: pointer; background: none; border: none; font: inherit; color: inherit;
+    display: flex; flex-direction: column; gap: 0.8em; align-items: flex-start;
+  }
+  .sg_shadow_box {
+    display: block; inline-size: 100%; block-size: 64px;
+    background: var(--white); border-radius: var(--radius);
+  }
+
+  /* ── Components ── */
+  .sg_button_cell { display: flex; flex-direction: column; gap: 0.6em; align-items: flex-start; }
+  .sg_card_demo { max-width: 280px; padding: var(--space_block) var(--space_inline); }
+  .radius_demo { background: var(--brand); }
+
+  /* grid demo cells */
+  .sg_grid_demo { width: 100%; }
+  .sg_cell {
+    display: grid;
+    place-items: center;
+    min-block-size: 64px;
+    background: var(--brand-100);
+    color: var(--brand-800);
+    border-radius: var(--radius);
+    font-weight: var(--weight_med);
+  }
+
+  /* code blocks (doc examples) */
+  .sg_section h4 { margin-block: var(--space_block) 0.4em; font-weight: var(--weight_med); }
+  .sg_section pre {
+    max-width: 100%;
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid var(--blackT15);
+    border-radius: var(--radius);
+    padding: var(--space_inline);
+    margin: 0 0 var(--space_block);
+    font-size: calc(var(--font_rem) * 0.78);
+    line-height: 1.5;
+  }
+  .sg_section pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    white-space: pre;
+  }
+
+  /* ── System ── */
+  .sg_tiers { display: flex; flex-direction: column; gap: 0.4em; max-width: 52rem; }
+  .sg_tier {
+    display: grid;
+    grid-template-columns: 8rem 10rem 1fr;
+    gap: var(--space_inline);
+    align-items: baseline;
+    padding-block: 0.4em;
+    border-bottom: 1px solid var(--blackT10);
+  }
+  .sg_tier code {
+    background: var(--blackT05);
+    padding: 0.1em 0.5em;
+    border-radius: 6px;
+    font-size: 0.85em;
+    white-space: nowrap;
+    justify-self: start;
+  }
+  .sg_tier span { color: var(--grey_color_light); font-size: calc(var(--font_rem) * 0.85); }
+  .sg_live { margin-block: var(--space_block) calc(var(--space_block) / 2); display: flex; flex-wrap: wrap; gap: var(--space_inline); }
+  .sg_live code { background: var(--brand-100); color: var(--brand-900); padding: 0.2em 0.6em; border-radius: 6px; font-size: calc(var(--font_rem) * 0.78); }
+  kbd {
+    font-family: monospace; font-size: 0.85em;
+    background: var(--blackT05); border: 1px solid var(--blackT15);
+    border-radius: 6px; padding: 0.1em 0.5em;
+  }
+  .sg_badge {
+    font-size: calc(var(--font_rem) * 0.6); font-weight: var(--weight_med);
+    text-transform: uppercase; letter-spacing: 0.04em;
+    background: var(--brand-100); color: var(--brand-800);
+    padding: 0.25em 0.7em; border-radius: 999px; vertical-align: middle;
+  }
+  .sg_autocontrast { display: flex; flex-wrap: wrap; gap: var(--space_inline); }
+  .sg_ac_chip {
+    display: grid; place-items: center;
+    min-inline-size: 140px; min-block-size: 64px;
+    padding: 0.6em 1em; border-radius: var(--radius);
+    font-family: monospace; font-size: calc(var(--font_rem) * 0.72);
+    box-shadow: inset 0 0 0 1px var(--blackT10);
+  }
+
+  .sg_foot { margin-top: var(--space_block); color: var(--grey_color_light); font-size: calc(var(--font_rem) * 0.8); }
+</style>
+
+<style is:global>
+  /* The global ::selection (bg: currentColor) goes invisible against this
+     page's many surfaces — force a clear brand highlight here. */
+  .styleguide ::selection {
+    background: var(--brand);
+    color: var(--white);
   }
 </style>
+
+<script>
+  // Click-to-copy for every [data-copy] chip/swatch. Re-wires on view
+  // transitions; guarded so handlers never stack.
+  function initStyleguideCopy() {
+    document.querySelectorAll<HTMLElement>("[data-copy]").forEach((el) => {
+      if (el.dataset.copyWired) return;
+      el.dataset.copyWired = "1";
+      el.addEventListener("click", async () => {
+        const value = el.getAttribute("data-copy");
+        if (!value) return;
+        try {
+          await navigator.clipboard.writeText(value);
+          el.classList.add("is-copied");
+          setTimeout(() => el.classList.remove("is-copied"), 1200);
+        } catch {
+          /* clipboard unavailable — no-op */
+        }
+      });
+    });
+  }
+  // Live readout of the current aspect-ratio tier's tokens.
+  function updateAspectReadout() {
+    const cs = getComputedStyle(document.documentElement);
+    const l = document.getElementById("sg_landscape");
+    const h = document.getElementById("sg_secheight");
+    if (l) l.textContent = `--is_landscape: ${cs.getPropertyValue("--is_landscape").trim() || "0"}`;
+    if (h) h.textContent = `--section_height: ${cs.getPropertyValue("--section_height").trim()}`;
+  }
+
+  document.addEventListener("astro:page-load", () => {
+    initStyleguideCopy();
+    updateAspectReadout();
+  });
+  window.addEventListener("resize", updateAspectReadout);
+</script>

@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.1.0
+
+- **Style guide rebuilt (`/sty`)** as a DX-focused design-system reference on the Layout template (nav assured, kept `noindex`). Every token is a **click-to-copy** chip (copies its `var()` / class). Sections, tokens-first then elements:
+  - **Colour** — brand scale (50–900) with resolved OKLCH values shown, brand + transparents, green & orange ramps, Whites and Blacks & greys (sorted light→dark), white/black alpha (on a checkerboard), region ramp + semantic.
+  - **Type** — heading scale tagged with `--hN-weight`, the weight ramp, body + font tokens.
+  - **Spacing**, **Radius & Shadow** — visualized.
+  - **Components** — live buttons, links, a `.card`, the `.card_list` bento grid and the responsive `.grid_projects`, plus a few utility classes.
+  - **System** — aspect-ratio tiers (with a live readout of the current tier's tokens), base print styles, and a fully-documented **AutoContrast / `contrast-color()`** entry (native CSS + Astro component + `@supports` fallback, with code examples).
+- **New tokens**: `--jgreen_lightest`, `--jorange_lightest` (light end of each ramp → 5 steps each) and `--grey_color_lightest` (neutral, same lightness as `--whiteDIRTY`).
+- **Homepage intro animation**: the meme SVGs no longer balloon — `slide-pulse-slide` midpoint `scale(2)` → `scale(1.5)`.
+- **Code styling**: `<code>` background is now pure white (was `#fafafd`) with a touch more padding (`2px 6px`).
+
 ## 4.0.1
 
 - **Header fits the logo**: `.brand_mark` uses `min-height` (not a fixed `tap_size`) so the logo icon sets the row height instead of overflowing the band; symmetric block padding gives it breathing room.

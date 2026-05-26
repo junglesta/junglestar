@@ -2,13 +2,13 @@
 // src/pages/discoverability.astro
 import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
-import Icono from "@svgs/repeat.svg";
+import Icono from "@svgs/gmap_pin.svg";
 import Gmap from "@components/brand/Gmap.astro";
 
 // Page metadata
-const overtitle_line1 = "Marketing";
-const overtitle_line2 = "Communication.";
-const overtitle_line3 = "Simplified.";
+const overtitle_line1 = "Ever get msg like: Pls send me your location?";
+const overtitle_line2 = "";
+const overtitle_line3 = "";
 
 const title_start = "Location's paramount? ";
 const title_end = " Content Production";
@@ -16,11 +16,11 @@ const title = title_start + " | " + title_end;
 const pageTitle = "YOUR LOCATION?";
 
 const onScroll_line1 = "";
-const onScroll_line2 = "Ever get msg like: 'Pls send me your location?'";
+const onScroll_line2 = "";
 const onScroll_line3 = "How you deal with it? Like:";
-const onScroll_line4 = "'Left, then right... Or maybe: Follow me, I'll show you!'";
-const onScroll_line5 = "What used to work doesn't anymore.";
-const onScroll_line6 = "Now what?";
+const onScroll_line4 = "''LEFT, THEN RIGHT...'' Or maybe: ''ASK FOR ... EVERYONE KNOWS''";
+const onScroll_line5 = "What used to work doesn't anymore. Now what?";
+const onScroll_line6 = "";
 const description =
   "Flexible one-stop web agency. We design, code & deploy — webstores, websites, web apps. Packed solutions & custom designs for great user experiences.";
 ---
@@ -32,7 +32,6 @@ const description =
 >
   <Fragment slot="inside_header">
     <LandingScreen
-      title={title_start}
       overtitle_line1={overtitle_line1}
       overtitle_line2={overtitle_line2}
       overtitle_line3={overtitle_line3}

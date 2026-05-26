@@ -3,7 +3,7 @@
 import LastPub from "@components/shared/LastPublished.astro";
 import Footer from "@components/footer/Footer.astro";
 import Head from "@components/heads/Head.astro";
-import NavScroll from "@components/shared/NavScroll.astro";
+import Header from "@components/header/Header.astro";
 import * as siteData from "@data/site.json";
 import "@styles/global.css";
 
@@ -40,10 +40,10 @@ const {
   <Head title={title} description={description} sitemap={sitemap} tags={tags} />
   <LastPub />
   <body class={bodyClass} style={master ? `--brand: var(${master})` : undefined}>
-    {!hideNav && <NavScroll />}
-    <header>
+    {!hideNav && <Header />}
+    <div class="page_intro">
       <slot name="inside_header" />
-    </header>
+    </div>
 
     <main class:list={["scrolling_body_wrap clickScrollTarget", mainClass]}>
       <slot />

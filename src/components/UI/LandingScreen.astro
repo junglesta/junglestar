@@ -1,9 +1,10 @@
 ---
-import Logo from "@components/brand/Logo.astro";
 interface Props {
   overtitle_line1?: string;
   overtitle_line2?: string;
   overtitle_line3?: string;
+  /** When passed, rendered as the page's <h1> in the hero. Pages whose <h1>
+   *  comes from their own body content simply don't pass it. */
   title?: string;
   onScroll_line1?: string;
   onScroll_line2?: string;
@@ -27,152 +28,71 @@ const {
 } = Astro.props;
 ---
 
+<div class="landing_height">
+    <div class="landing_screen">
+        <slot />
+
+        {title && <h1>{title}</h1>}
+
+        {overtitle_line1 && <p>{overtitle_line1}</p>}
+        {overtitle_line2 && <p>{overtitle_line2}</p>}
+        {overtitle_line3 && <p>{overtitle_line3}</p>}
+
+        {onScroll_line1 && <p>{onScroll_line1}</p>}
+        {onScroll_line2 && <p>{onScroll_line2}</p>}
+        {onScroll_line3 && <p>{onScroll_line3}</p>}
+
+        {onScroll_line4 && <p>{onScroll_line4}</p>}
+        {onScroll_line5 && <p>{onScroll_line5}</p>}
+        {onScroll_line6 && <p>{onScroll_line6}</p>}
+    </div>
+</div>
+
 <style>
-  .icono {
-    position: relative;
-    padding-block: var(--space_block);
-    display: grid;
-    place-items: center;
-    align-self: center;
-    width: 100%;
-    min-height: 80px;
-    svg {
-      width: clamp(80px, 25svw, 120px);
-      aspect-ratio: 1;
-      stroke: currentColor;
-      stroke-width: var(--logo-stroke-icon, 0.37);
+  /* Hero sits in the head region — colours are inherited (white-on-brand).
+     Plain element selectors only; the markup stays class-free by design. */
+  /* Portrait: one screen tall. Landscape: double-height hero. */
+  .landing_height {
+    height: 100svh;
+  }
+
+  @media (orientation: landscape) {
+    .landing_height {
+      height: 188svh;
     }
   }
 
-  .huge {
-    font-size: clamp(55px, 15svw, 99px);
-    overflow: hidden;
-  }
-
-  .grida {
-    --row1: auto;
-    --row2: auto;
-    --row3: 20svh;
-    --row4: 120svh;
-    height: max(
-      calc(var(--row1) + var(--row2) + var(--row3) + var(--row4)),
-      200svh
-    );
-    position: initial;
-    display: grid;
-    grid-template-rows: var(--row1) var(--row2) var(--row3) var(--row4);
-    place-content: stretch center;
-    text-align: center;
-    gap: 2.5svh;
-
-    padding-top: calc(var(--space_block) * 2);
-    padding-bottom: calc(var(--space_block) * 2);
-
-    .brand_name {
-      align-self: center;
-    }
-  }
-
-  .grida > :first-child {
-    align-self: end;
-  }
-
-  .grida > :nth-child(2) {
-    align-self: start;
-  }
-  .grida > :nth-child(3) {
-    align-self: center;
-  }
-
-  .on_scroll_msg {
+  .landing_screen {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: space-around;
+    text-align: center;
+    gap: calc(var(--space_block) / 2);
+    padding-block: calc(var(--space_block) * 2);
+    padding-inline: var(--space_inline);
+    text-wrap: balance;
   }
 
-  /* Landscape mobile */
-  @media (min-aspect-ratio: 4/3) and (max-width: 1000px) {
-    .grida {
-      --row1: 24svh;
-      --row2: auto;
-      --row3: 50svh;
-      --row4: 200svh;
-    }
-
-    .on_scroll_msg {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      grid-template-areas:
-        "l1 l1 l1"
-        "l2 l2 l2"
-        "l3 icono l4"
-        "l5 l5 l5"
-        "l6 l6 l6";
-      gap: 0.5rem 2rem;
-      justify-items: center;
-      align-items: center;
-
-      .l1 { grid-area: l1; }
-      .l2 { grid-area: l2; }
-      .l3 { grid-area: l3; justify-self: end; }
-      .icono {
-        grid-area: icono;
-        padding: 1rem;
-        svg {
-          width: 150px;
-        }
-      }
-      .l4 { grid-area: l4; justify-self: start; }
-      .l5 { grid-area: l5; }
-      .l6 { grid-area: l6; }
-    }
+  .landing_screen h1 {
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 3.75rem);
+    line-height: 1.05;
   }
 
-  /* Landscape phones: single screen, no scroll animation */
-  @media (orientation: landscape) and (max-height: 500px) {
-    .grida {
-      height: auto;
-      min-height: 100svh;
-      grid-template-rows: auto auto;
-      gap: 1svh;
-    }
-    .on_scroll_msg,
-    .title_wrap {
-      display: none;
-    }
+  .landing_screen p {
+    margin: 0;
+    max-width: 75ch;
+    font-size: clamp(1.05rem, 2.4vw, 1.6rem);
+    line-height: 1.3;
   }
 
-  .grida > :first-child {
-    align-self: end;
-  }
-
-  .grida > :nth-child(2) {
-    align-self: start;
-  }
-  .grida > :nth-child(3) {
-    align-self: center;
+  /* Slotted icon (passed by each page) — :global pierces the slot scope. */
+  .landing_screen :global(svg) {
+    width: clamp(255px, 40svw, 660px);
+    height: auto;
+    margin-block: var(--space_block);
+    stroke: currentColor;
+    stroke-width: var(--logo-stroke-icon, 0.37);
   }
 </style>
-
-<div class="grida pretty_heading wrap">
-  <Logo variant="top" />
-  <h1 class="brand_name huge clickScrollTrigger">{title}</h1>
-
-  <div class="title_wrap h2 no_select">
-    <div class="overline line1">{overtitle_line1}</div>
-    <div class="overline line2">{overtitle_line2}</div>
-    <div class="overline line3">{overtitle_line3}</div>
-  </div>
-  <div class="on_scroll_msg animatio h3 wrap no_select">
-    {onScroll_line1 && <div class="l1">{onScroll_line1.toUpperCase()}</div>}
-    {onScroll_line2 && <div class="l2">{onScroll_line2}</div>}
-    {onScroll_line3 && <div class="l3">{onScroll_line3}</div>}
-    <div class="icono">
-      <slot />
-    </div>
-    {onScroll_line4 && <div class="l4">{onScroll_line4}</div>}
-    {onScroll_line5 && <div class="l5">{onScroll_line5}</div>}
-    {onScroll_line6 && <div class="l6">{onScroll_line6}</div>}
-  </div>
-</div>

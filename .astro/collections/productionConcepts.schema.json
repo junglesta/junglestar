@@ -1,96 +1,68 @@
 {
-  "$ref": "#/definitions/productionConcepts",
-  "definitions": {
-    "productionConcepts": {
-      "type": "object",
-      "properties": {
-        "title": {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "anyOf": [
+        {
           "type": "string"
         },
-        "subtitle": {
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "not": {}
-                },
-                {
-                  "type": "string"
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "draft": {
-          "type": "boolean",
-          "default": false
-        },
-        "sort_order": {
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "not": {}
-                },
-                {
-                  "type": "number"
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "image": {
-          "anyOf": [
-            {
-              "anyOf": [
-                {
-                  "not": {}
-                },
-                {
-                  "type": "object",
-                  "properties": {
-                    "src": {
-                      "type": "string"
-                    },
-                    "alt": {
-                      "type": "string",
-                      "default": "Junglestar"
-                    }
-                  },
-                  "required": [
-                    "src"
-                  ],
-                  "additionalProperties": false
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "$schema": {
-          "type": "string"
+        {
+          "type": "null"
         }
-      },
-      "required": [
-        "title",
-        "tags"
-      ],
-      "additionalProperties": false
+      ]
+    },
+    "draft": {
+      "default": false,
+      "type": "boolean"
+    },
+    "sort_order": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "image": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string"
+            },
+            "alt": {
+              "default": "Junglestar",
+              "type": "string"
+            }
+          },
+          "required": [
+            "src"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "$schema": {
+      "type": "string"
     }
   },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+  "required": [
+    "title",
+    "tags"
+  ]
 }

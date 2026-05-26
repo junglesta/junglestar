@@ -14,20 +14,43 @@ import WaveSection from "@components/UI/WaveSection.astro";
 import AutoContrast from "@components/UI/AutoContrast.astro";
 import "../styles/layers/tokens.css";
 
-// Color tokens - just add a name here and UI updates automatically
-const colorNames = [
-  "brand_lighter",
-  "brand_light",
-  "brand",
-  "brand_dark",
-  "jorange_light",
-  "jorange",
-  "jorange_dark",
-  "jorange_darker",
-  "jgreen_light",
-  "jgreen",
-  "jgreen_dark",
-  "jgreen_darker",
+// Color tokens grouped to match the current single-source colour system
+// (see COLOR.md): one --brand master → a derived --brand-50…900 scale, plus
+// the harmonizer-tuned hue ramps in palette.css. Add a name to a group and
+// the UI updates automatically.
+
+// The single-source brand scale, derived from --brand via OKLCH relative colour
+const brandScale = [
+  "brand-50",
+  "brand-100",
+  "brand-200",
+  "brand-300",
+  "brand-400",
+  "brand-500",
+  "brand-600",
+  "brand-700",
+  "brand-800",
+  "brand-900",
+];
+
+// Harmonizer-tuned hue ramps (palette.css): blue / green / orange at 100/500/675/1040
+const paletteRamps = [
+  "jstar-100",
+  "jstar-500",
+  "jstar-675",
+  "jstar-1040",
+  "jgreen-100",
+  "jgreen-500",
+  "jgreen-675",
+  "jgreen-1040",
+  "jorange-100",
+  "jorange-500",
+  "jorange-675",
+  "jorange-1040",
+];
+
+// Neutrals: greys, whites, black (kept as-is)
+const neutrals = [
   "black",
   "black_fumes",
   "whiteDIRTY",
@@ -39,6 +62,9 @@ const colorNames = [
   "grey_color_light",
   "grey_color_lighter",
 ];
+
+// All names, in display order — drives the wave demo and palette grids
+const colorNames = [...brandScale, ...paletteRamps, ...neutrals];
 
 // Generate color objects from names
 const demoColors = colorNames.map((name) => ({
@@ -70,10 +96,13 @@ const demoColors = colorNames.map((name) => ({
       <br />
       <br />
       <br />
-      <h1>Auto ✨Contrast Component</h1>
+      <h1>Junglestar ✨Colour System</h1>
       <p>
-        Automatically calculates the black/white text color for any background
-        using WCAG luminance formulas
+        One <code>--brand</code> master (OKLCH) per page derives the whole
+        <code>--brand-50…900</code> scale and the head / main / footer region
+        ramp. AutoContrast then picks black or white text for any background
+        via the native <code>contrast-color()</code> with a WCAG-luminance JS
+        fallback.
       </p>
     </div>
 
@@ -87,7 +116,7 @@ const demoColors = colorNames.map((name) => ({
         </p>
 
         <AutoContrast
-          backgroundColor="var(--jgreen_light)"
+          backgroundColor="var(--jstar-100)"
           class="card wrap"
           id="interactive-card"
         >
@@ -98,8 +127,8 @@ const demoColors = colorNames.map((name) => ({
             2.1 relative luminance formula to determine whether black or white
             text provides better readability. It starts using:
             <code
-              style="background: var(--whiteT25); padding: 0.2em 0.5em; border-radius: 4px;"
-              >--jgreen_light</code
+              style="background: var(--whiteT25); padding: 0.2rem 0.5rem; border-radius: 4px;"
+              >--jstar-100</code
             > in the OKLCH color space. <small
               ><br />After the fade-in offcourse.</small
             >
@@ -141,15 +170,42 @@ const demoColors = colorNames.map((name) => ({
       <!-- Color Palette Showcase -->
       <h2 class="section-title">Color Palette</h2>
       <p class="section-subtitle">
-        Junglestar's design tokens with real OKLCH colors and automatic contrast
+        The single-source <code>--brand-50…900</code> scale, the harmonizer
+        ramps (<code>--jstar/--jgreen/--jorange</code> at 100/500/675/1040),
+        and the neutrals — all in OKLCH with automatic contrast.
       </p>
 
+      <h3 class="section-title">Brand scale (derived from <code>--brand</code>)</h3>
       <div class="demo-grid">
         {
-          demoColors.map((color) => (
-            <AutoContrast backgroundColor={color.var} class="palette-card">
-              <strong>{color.name}</strong>
-              <span class="var-name">{color.var}</span>
+          brandScale.map((name) => (
+            <AutoContrast backgroundColor={`var(--${name})`} class="palette-card">
+              <strong>--{name}</strong>
+              <span class="var-name">var(--{name})</span>
+            </AutoContrast>
+          ))
+        }
+      </div>
+
+      <h3 class="section-title">Harmonizer hue ramps</h3>
+      <div class="demo-grid">
+        {
+          paletteRamps.map((name) => (
+            <AutoContrast backgroundColor={`var(--${name})`} class="palette-card">
+              <strong>--{name}</strong>
+              <span class="var-name">var(--{name})</span>
+            </AutoContrast>
+          ))
+        }
+      </div>
+
+      <h3 class="section-title">Neutrals</h3>
+      <div class="demo-grid">
+        {
+          neutrals.map((name) => (
+            <AutoContrast backgroundColor={`var(--${name})`} class="palette-card">
+              <strong>--{name}</strong>
+              <span class="var-name">var(--{name})</span>
             </AutoContrast>
           ))
         }

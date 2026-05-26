@@ -63,12 +63,16 @@ const currentYear = new Date().getFullYear();
       <span slot="trigger">
         &copy; 2012-{currentYear}
         {siteData.brand}.org
-        <span class="version_tag">v{repoData.version}</span>
+
         <span>&nbsp;+</span>
       </span>
 
       <Carbon />
       <License />
+<br><br>
+      <span class="version_tag uppercase">{repoData.name}</span>
+<span class="version_tag">v{repoData.version}</span>
+
     </Modal>
   </div>
 </footer>

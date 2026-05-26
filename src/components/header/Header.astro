@@ -1,0 +1,359 @@
+---
+// src/components/header/Header.astro
+import menu from "@data/menu.json";
+import site from "@data/site.json";
+import BrandIcon from "@svgs/logo_stroke.svg";
+
+const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
+---
+
+<header class="site_header">
+	<nav class="top_nav">
+		<a class="brand_mark" href="/" title={`${site.brand} — home`}>
+			<BrandIcon class="brand_icon" width={40} height={40} fill="currentColor" />
+			<span class="brand_wordmark">{site.brand}</span>
+		</a>
+
+		<!-- Desktop: inline scrolling chips -->
+		<div class="nav_scroll" role="menu">
+			{
+				menu.map((item) => (
+					<a
+						class="nav_scroll_item"
+						role="menuitem"
+						title={item.title}
+						href={item.href}
+						aria-current={currentPath === item.href ? "page" : undefined}
+					>
+						{item.label}
+					</a>
+				))
+			}
+		</div>
+
+		<!-- Mobile: hamburger that opens the full-page menu -->
+		<button
+			type="button"
+			class="nav_toggle"
+			aria-label="Open menu"
+			aria-haspopup="dialog"
+			aria-controls="nav_modal"
+		>
+			<svg
+				viewBox="0 0 24 24"
+				width="30"
+				height="30"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="1.5"
+				stroke-linecap="round"
+				aria-hidden="true"
+			>
+				<line x1="3" y1="6" x2="21" y2="6"></line>
+				<line x1="3" y1="12" x2="21" y2="12"></line>
+				<line x1="3" y1="18" x2="21" y2="18"></line>
+			</svg>
+		</button>
+	</nav>
+</header>
+
+<!-- Mobile: full-page nav modal -->
+<dialog id="nav_modal" class="nav_modal" aria-label="Site menu">
+	<!-- Replica top bar: keeps the header "present" while the menu is open —
+	     same brand mark on the left, the hamburger's slot now showing the X. -->
+	<div class="top_nav nav_modal_bar">
+		<a class="brand_mark" href="/" title={`${site.brand} — home`}>
+			<BrandIcon class="brand_icon" width={40} height={40} fill="currentColor" />
+			<span class="brand_wordmark">{site.brand}</span>
+		</a>
+
+		<button type="button" class="nav_modal_close" aria-label="Close menu">
+			<svg
+				viewBox="0 0 24 24"
+				width="30"
+				height="30"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="1.5"
+				stroke-linecap="round"
+				aria-hidden="true"
+			>
+				<line x1="5" y1="5" x2="19" y2="19"></line>
+				<line x1="19" y1="5" x2="5" y2="19"></line>
+			</svg>
+		</button>
+	</div>
+
+	<nav class="nav_modal_list" role="menu">
+		{
+			menu.map((item) => (
+				<a
+					class="nav_scroll_item nav_modal_item"
+					role="menuitem"
+					title={item.title}
+					href={item.href}
+					aria-current={currentPath === item.href ? "page" : undefined}
+				>
+					{item.label}
+				</a>
+			))
+		}
+	</nav>
+</dialog>
+
+<style>
+	/* Top bar: brand mark pinned left, nav pushed to the far right.
+	   Sits in the head region — colours come from currentColor / the
+	   region ramp (see COLOR.md). */
+	.top_nav {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		gap: var(--space_inline);
+		padding-inline: var(--space_inline);
+		padding-block-start: calc(var(--space_block) * 1);
+
+		/* Single source for ALL header text — wordmark + nav chips read these,
+		   so they can never drift apart in size or tracking. */
+		--header_text_size: calc(var(--font_rem) * 0.9);
+		--header_text_spacing: calc(var(--font_rem) * 0.04);
+	}
+
+	/* 🐸 BRAND MARK — icon + wordmark, left edge */
+	.brand_mark {
+		flex: 0 0 auto;
+		display: inline-flex;
+		align-items: center;
+		gap: calc(var(--space_inline) / 2.5);
+		height: var(--tap_size);
+		color: currentColor;
+		text-decoration: none;
+		user-select: none;
+	}
+
+	.brand_mark::after,
+	.brand_mark::before {
+		content: "";
+		display: none;
+	}
+
+	.brand_icon {
+	    /*padding-top: calc(var(--space_block) / 1);*/
+		flex-shrink: 0;
+		width: clamp(58px, 4.5svw, 88px);
+		height: auto;
+		color: currentColor;
+		/* Override the global logo stroke (4.5) — far thicker at icon size.
+		   Cascades into the SVG path's stroke-width:var(--logo-stroke). */
+		--logo-stroke: 12px;
+	}
+
+	/* Mini version of the big brand name (h1.brand_name on the landing): same
+	   thin heading weight, uppercase, no extra tracking — just smaller, a
+	   touch bigger than the nav chip text. */
+	.brand_wordmark {
+		font-weight: 300;
+		font-size: calc(var(--header_text_size) * 2.33);
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+	/* 🐸 NAV — far right, keeps the horizontal-scroll behaviour.
+	   margin-left:auto shoves it to the right edge; min-width:0 +
+	   overflow-x lets it scroll instead of overflowing on narrow screens. */
+	.nav_scroll {
+		flex: 0 1 auto;
+		min-width: 0;
+		margin-left: auto;
+		display: flex;
+		gap: calc(var(--space_inline) / 1.5);
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: none;
+		padding-block: calc(var(--space_block) / 3);
+	}
+
+	.nav_scroll::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* 🐸 HAMBURGER — hidden on desktop, shown on mobile (see breakpoint) */
+	.nav_toggle {
+		display: none;
+		margin-left: auto;
+		flex: 0 0 auto;
+		place-items: center;
+		width: var(--tap_size);
+		height: var(--tap_size);
+		padding: 0;
+		background: none;
+		border: none;
+		color: currentColor;
+		cursor: pointer;
+	}
+
+	.nav_scroll_item {
+		flex-shrink: 0;
+		display: inline-block;
+		height: var(--tap_size);
+		line-height: var(--tap_size);
+		padding-inline: calc(var(--space_inline) * 0.65);
+
+		font-weight: var(--weight_med);
+		letter-spacing: var(--header_text_spacing);
+		text-transform: uppercase;
+		white-space: nowrap;
+		color: currentColor;
+		border: 2px solid currentColor;
+		border-radius: var(--radius);
+		text-decoration: none;
+		user-select: none;
+	}
+
+	.nav_scroll_item:hover,
+	.nav_scroll_item:focus-visible {
+		border-color: currentColor;
+	}
+
+	.nav_scroll_item::after {
+		content: "";
+		display: none;
+	}
+
+	.nav_scroll_item:active {
+		transform: translateY(calc(var(--space_block) * 0.145));
+	}
+
+	/* Active page reads as a filled chip against the all-outline set.
+	   Nav sits in the head region, so invert against it. */
+	.nav_scroll_item[aria-current="page"] {
+		background-color: var(--fg_head);
+		color: var(--region_head);
+		border-color: var(--fg_head);
+	}
+
+	/* 🐸 FULL-PAGE NAV MODAL — inherits the head region colours from <body>. */
+	.nav_modal {
+		margin: 0;
+		inset: 0;
+		width: 100svw;
+		height: 100svh;
+		max-width: 100svw;
+		max-height: 100svh;
+		padding: 0;
+		border: none;
+		background-color: var(--region_head);
+		color: var(--fg_head);
+	}
+
+	.nav_modal::backdrop {
+		background-color: var(--region_head);
+	}
+
+	/* When open, stack the replica bar on top of the menu list. */
+	.nav_modal[open] {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* The replica bar reuses .top_nav so its padding, brand mark and the
+	   --header_text_size token match the real header exactly — it just
+	   doesn't grow. */
+	.nav_modal_bar {
+		flex: 0 0 auto;
+	}
+
+	/* Close (X) sits in the hamburger's slot: pushed right, same tap target. */
+	.nav_modal_close {
+		margin-left: auto;
+		flex: 0 0 auto;
+		display: grid;
+		place-items: center;
+		width: var(--tap_size);
+		height: var(--tap_size);
+		padding: 0;
+		background: none;
+		border: none;
+		color: currentColor;
+		cursor: pointer;
+	}
+
+	.nav_modal_list {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: var(--space_inline);
+		padding: var(--space_block);
+	}
+
+	/* Modal links: bigger, full-width chips — stacked tap targets. */
+	.nav_modal_item {
+		display: block;
+		width: min(100%, 22rem);
+		height: auto;
+		line-height: 1;
+		padding-block: calc(var(--space_block) * 0.6);
+		text-align: center;
+		font-size: calc(var(--font_rem) * 1.3);
+		letter-spacing: calc(var(--font_rem) * 0.04);
+	}
+
+	/* ───────────────────────── MOBILE ───────────────────────── */
+	@media (max-width: 600px) {
+		/* Wordmark stays visible and goes larger — the collapsed nav frees
+		   the room. Weight is unchanged (still the thin/med header weight). */
+		.brand_wordmark {
+			font-size: calc(var(--font_rem) * 2);
+		}
+		/* Swap inline chips for the hamburger. */
+		.nav_scroll {
+			display: none;
+		}
+		.nav_toggle {
+			display: grid;
+		}
+	}
+
+	/* Safety: if the viewport grows past mobile while the modal is open,
+	   keep it from lingering over the desktop layout. */
+	@media (min-width: 601px) {
+		.nav_modal[open] {
+			display: none;
+		}
+	}
+</style>
+
+<script>
+	function initNavModal() {
+		const toggle = document.querySelector<HTMLButtonElement>(".nav_toggle");
+		const dialog = document.querySelector<HTMLDialogElement>("#nav_modal");
+		if (!toggle || !dialog) return;
+
+		const closeBtn = dialog.querySelector<HTMLButtonElement>(".nav_modal_close");
+
+		toggle.addEventListener("click", () => dialog.showModal());
+		closeBtn?.addEventListener("click", () => dialog.close());
+
+		// Click on the backdrop (the dialog element itself) closes it.
+		dialog.addEventListener("click", (e) => {
+			if (e.target === dialog) dialog.close();
+		});
+
+		// Tapping a link navigates (view transitions) — close so it doesn't linger.
+		dialog.querySelectorAll("a").forEach((link) =>
+			link.addEventListener("click", () => dialog.close()),
+		);
+
+		// If resized up to desktop while open, close it.
+		const desktop = window.matchMedia("(min-width: 601px)");
+		desktop.addEventListener("change", (e) => {
+			if (e.matches && dialog.open) dialog.close();
+		});
+	}
+
+	document.addEventListener("astro:page-load", initNavModal);
+</script>

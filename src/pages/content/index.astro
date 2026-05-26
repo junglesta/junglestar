@@ -18,7 +18,7 @@ const overtitle_line3 = "Simplified.";
 const title_start = "Junglestar ";
 const title_end = " Content Production";
 const title = title_start + " | " + title_end;
-const pageTitle = "YOUR Brand Narrative?";
+const h1= 'YOUR BRAND NARRATIVE?';
 
 const onScroll_line1 = "Competing for attention. OK, how?";
 const onScroll_line2 = "Your paid ads are converting very little?";
@@ -47,10 +47,11 @@ const description =
 >
   <Fragment slot="inside_header">
     <LandingScreen
+
+    title={h1}
       overtitle_line1={overtitle_line1}
       overtitle_line2={overtitle_line2}
       overtitle_line3={overtitle_line3}
-      title={pageTitle}
       onScroll_line1={onScroll_line1}
       onScroll_line2={onScroll_line2}
       onScroll_line3={onScroll_line3}
@@ -63,9 +64,9 @@ const description =
   </Fragment>
 
   <div class="wrap">
-    <h2 class="center">
+    <h1 class="center">
       What people remember you for. Brand narrative is that. The whole thing.
-    </h2>
+    </h1>
     <PostsGridMDX posts={posts} basePath="content" />
   </div>
 

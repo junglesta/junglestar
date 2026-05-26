@@ -6,10 +6,6 @@ import Tienda from "@svgs/gmap_tienda.svg";
 ---
 
 <style>
-  .selling_gmap {
-    margin: 0 auto;
-    padding-bottom: calc(var(--space_block) * 5);
-  }
   .mean_icon,
   .mean_icon > * {
     color: var(--white);
@@ -17,6 +13,37 @@ import Tienda from "@svgs/gmap_tienda.svg";
 
   .mean_title .wrap {
       padding-inline: calc(var(--space_inline) * 2);
+  }
+
+  /* The three checklists: centred column, centred text, even rhythm between
+     groups. Inside markers keep the ✓ centred with each line. Overrides
+     selling.css. */
+  .what.selling_gmap {
+    max-width: 34rem;
+    margin-inline: auto;
+    padding: 0 var(--space_inline) calc(var(--space_block) * 4);
+    text-align: center;
+  }
+
+  .what.selling_gmap h4 {
+    margin: 0 0 calc(var(--space_block) / 4);
+  }
+
+  .what.selling_gmap h4:not(:first-child) {
+    margin-top: var(--space_block);
+  }
+
+  /* Headings stay centred; the lists are full-width blocks of the centred
+     column, so all three share one width and one left edge. */
+  .what.selling_gmap ul {
+    margin: 0;
+    padding-left: 1.4em;
+    text-align: left;
+    list-style-position: outside;
+  }
+
+  .what.selling_gmap li {
+    margin-block: calc(var(--space_block) / 8);
   }
 </style>
 
@@ -44,16 +71,15 @@ import Tienda from "@svgs/gmap_tienda.svg";
           <h2 class="center pretty">We make sure your shop shows up online.</h2>
 
           <h3 class="h5 center">
-            We feed the map so your restaurant shows up when people search for
-            food nearby.
+            We feed the map so your Restaurant / Shop / SmallBiz shows up when people search for something nearby.
           </h3>
         </div>
 
         <div class="wrap what selling_gmap">
-          <p class="do"><strong>WHAT WE DO</strong></p>
+          <h4>WHAT WE DO</h4>
 
           <ul class="do">
-            <li>Set up your Google Business Profile properly.</li>
+            <li>Set up your Business Profile properly.</li>
             <li>Phone number, hours, location, products</li>
             <li>Upload a few photos, maybe a video or two</li>
             <li>
@@ -61,7 +87,7 @@ import Tienda from "@svgs/gmap_tienda.svg";
             </li>
           </ul>
 
-          <p class="get"><strong>WHAT YOU GET</strong></p>
+          <h4>WHAT YOU GET</h4>
 
           <ul class="get">
             <li>Your business on Google Maps.</li>
@@ -71,7 +97,7 @@ import Tienda from "@svgs/gmap_tienda.svg";
             <li>Guidance.</li>
           </ul>
 
-          <p class="can"><strong>THEN YOU CAN</strong></p>
+          <h4>THEN YOU CAN</h4>
 
           <ul class="can">
             <li>Get to know more about who's looking for you.</li>

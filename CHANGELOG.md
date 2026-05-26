@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.12.0
+
+- **Header refactor (logo + wordmark + chips)**: rebuilt the site header — an outlined **logo mark** + **JUNGLESTAR wordmark** on the left, nav chips pushed far right, on a single line. Token-based sizing (`--header_text_size` / `--header_text_spacing`) so the wordmark and chips share one source (no `em`). Renamed `shared/NavScroll.astro` → `header/Header.astro`; it now wraps a semantic `<header>`, and `Layout.astro`'s old hero `<header>` became `<div class="page_intro">` (one banner landmark).
+- **Mobile nav → hamburger + full-page modal**: on ≤600px the nav collapses to a hamburger that opens a full-page `<dialog>` with a replica top bar (the header "stays present" and the hamburger slot shows the X). Wired on `astro:page-load` so it survives view transitions; closes on link tap / Esc / backdrop / resize-to-desktop.
+- **Static hero, single `<h1>` per page**: removed the big brand-name `h1` and logo from the hero and killed the on-scroll scroll-timeline fade (and its tall scroll region) sitewide. Each page now declares exactly one `<h1>` — pages pass `title` to `LandingScreen` for a hero h1, or promote a body heading. Hero DOM normalized to plain, classless elements inside `.landing_screen` / `.landing_height` (`100svh` portrait, `188svh` landscape) with fresh baseline styling.
+- **AutoContrast OKLCH fix**: the canvas-luminance fallback no longer silently returns black for `oklch()` colours (sentinel + `color-mix` sRGB probe, bails to the CSS default if unresolvable). Styleguide `sty.astro` refreshed to the current palette (brand scale + harmonizer ramps).
+- **Discoverability lists**: `WHAT WE DO / WHAT YOU GET / THEN YOU CAN` are now real centered `<h4>` headings; the three blocks are equal-width within a centered 34rem column with left-aligned items and even rhythm (dropped the `margin-left: 15dvw` shift).
+- **Landing icons** unified to `stroke="currentColor"`: `design` → `island.svg`, `showcase` → `junglestar_awards.svg`, `discoverability` → `gmap_pin.svg` (path `stroke-width="6.2"` to match the hero's forced weight at its 400-viewBox), `about` → `junglestar_people.svg`.
+- **Copy & layout tweaks**: hero paragraph `max-width` 30ch → 75ch; footer credit line restructured (repo name + `v{version}` on their own line); About page — new `junglestar_people` icon, FAQ reordered (LIVE Projects first), TLDR copy reworked; refreshed Design and Discoverability hero copy.
+- **Docs**: added `COLOR.md` (single-`--brand` → region-luma colour system) and `ROADMAP.md`. Purged stray `em` units sitewide → `rem` / spacing tokens.
+
 ## 3.11.1
 
 - **Homepage main is dark again**: the intro background SVGs are line art drawn for a black canvas, so the home `<main>` now uses a black background with light text (scoped to `body.index` — the rest of the site keeps the near-white main from the region ramp). `IntroSection` text returned to light.

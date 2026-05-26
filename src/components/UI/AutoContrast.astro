@@ -85,30 +85,90 @@ const cssVars = [
 <script>
   // Only run fallback if contrast-color() is not supported
   if (!CSS.supports("color", "contrast-color(red)")) {
-    function getLuminance(color: string): number {
-      const canvas = document.createElement("canvas");
-      canvas.width = canvas.height = 1;
-      const ctx = canvas.getContext("2d", { willReadFrequently: true });
-      if (!ctx) return 0.5;
+    // Single reusable canvas. willReadFrequently keeps readback on the CPU.
+    const canvas = document.createElement("canvas");
+    canvas.width = canvas.height = 1;
+    const ctx = canvas.getContext("2d", { willReadFrequently: true });
 
+    /**
+     * Paint `color` to the 1×1 canvas and return its sRGB bytes, or null if
+     * the canvas could not parse the colour string.
+     *
+     * Why the sentinel dance: assigning an unparseable value to `fillStyle`
+     * is a silent no-op — it keeps whatever was there before. Site colours
+     * are authored in OKLCH and `getComputedStyle().backgroundColor` can
+     * serialise to `oklch(...)` / `oklab(...)` / `color(...)`, which older
+     * canvas engines (and any engine fed `var(--brand)` directly) reject.
+     * That would leave the previous pixel in place and yield a bogus
+     * luminance. We prime the context with a sentinel, assign the colour,
+     * then confirm `fillStyle` actually changed (or legitimately equals the
+     * sentinel) before trusting the readback.
+     */
+    function readSRGB(color: string): [number, number, number] | null {
+      if (!ctx) return null;
+      const SENTINEL = "#010203"; // unlikely real value; lets us detect no-ops
+      ctx.fillStyle = SENTINEL;
       ctx.fillStyle = color;
+      const accepted =
+        ctx.fillStyle !== SENTINEL ||
+        color.replace(/\s+/g, "").toLowerCase() === SENTINEL;
+      if (!accepted) return null;
+
       ctx.fillRect(0, 0, 1, 1);
       const [r, g, b] = ctx.getImageData(0, 0, 1, 1).data;
+      return [r, g, b];
+    }
 
-      // sRGB to linear
+    // Relative luminance (WCAG 2.1) from sRGB bytes.
+    function luminanceFromSRGB(r: number, g: number, b: number): number {
       const toLinear = (c: number) => {
         const v = c / 255;
         return v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
       };
-
-      // Relative luminance (WCAG formula)
       return 0.2126 * toLinear(r) + 0.7152 * toLinear(g) + 0.0722 * toLinear(b);
+    }
+
+    /**
+     * Robustly resolve a CSS colour (possibly OKLCH, possibly a `var()`, or a
+     * computed `oklch()`/`oklab()` serialisation) to a luminance value.
+     * Strategy:
+     *   1. Try the canvas directly (fast path for hex / rgb / named colours).
+     *   2. If that fails, hand the string to the CSSOM via a probe element so
+     *      the engine resolves it — then read the computed colour back, which
+     *      every engine serialises in a form its own canvas can parse.
+     * Returns null only if the colour is genuinely unresolvable.
+     */
+    function resolveLuminance(color: string): number | null {
+      const direct = readSRGB(color);
+      if (direct) return luminanceFromSRGB(direct[0], direct[1], direct[2]);
+
+      // Fallback: force the engine to resolve the colour into the sRGB space
+      // via color-mix, then read it back. color-mix serialises to an
+      // rgb()/color(srgb …) string that even canvas engines lacking direct
+      // OKLCH parsing will accept. This covers the case where computed
+      // background-color comes back as oklch()/oklab()/color() that the canvas
+      // silently refused above.
+      const probe = document.createElement("div");
+      probe.style.color = `color-mix(in srgb, ${color} 100%, transparent)`;
+      if (!probe.style.color) return null; // engine rejected it outright
+      document.body.appendChild(probe);
+      const resolved = getComputedStyle(probe).color;
+      probe.remove();
+
+      const viaCSSOM = readSRGB(resolved);
+      if (viaCSSOM)
+        return luminanceFromSRGB(viaCSSOM[0], viaCSSOM[1], viaCSSOM[2]);
+      return null;
     }
 
     function updateContrast(el: HTMLElement) {
       const bg = getComputedStyle(el).backgroundColor;
       const threshold = parseFloat(el.dataset.threshold || "0.5");
-      const luminance = getLuminance(bg);
+      const luminance = resolveLuminance(bg);
+
+      // If the colour could not be resolved, leave the CSS fallback default
+      // (--dark-text) in place rather than guessing wrong.
+      if (luminance === null) return;
 
       el.style.setProperty(
         "--text-color",

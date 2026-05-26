@@ -6,20 +6,16 @@ import IntroSection from "@components/intro/IntroSection.astro";
 import Icono from "@svgs/radio.svg";
 
 // Page metadata
-const overtitle_line1 = "Your business, simplified.";
-const overtitle_line2 = "Your life, upgraded. ";
+const overtitle_line1 = "Your business, simplified. Your life, upgraded.";
+const overtitle_line2 = "";
 const overtitle_line3 = "Trade grunt-work for free time!";
 
 const title_start = "Junglestar ";
 const title_end = " Sustainable Web Design";
 const title = title_start + " | " + title_end;
+const h1= 'One-stop-shop for small companies communication needs.';
 
-const onScroll_line1 = "Hello! Welcome.";
-const onScroll_line2 = "Let us briefly introduce";
-const onScroll_line3 = "WHAT WE CAN DO FOR YOU";
-const onScroll_line4 = "WHY YOU MIGHT NEED US";
-const onScroll_line5 = "";
-const onScroll_line6 = "Keep on scrolling...";
+const onScroll_line1 = "Let us briefly introduce what we can do for you and why you might need us...";
 const description =
   "Sustainable Web Design to help fight climate change. We help small enterprises with websites, apps, and marketing communication.";
 // const subtitle = "";
@@ -27,10 +23,6 @@ const description =
 ---
 
 <style>
-  .brand_name {
-    padding-top: calc(var(--space_block) * 3);
-  }
-
   /* Homepage main is dark: the intro SVGs are drawn for a black canvas.
      Scoped to the home page only — the rest of the site keeps the
      near-white main from the region ramp. */
@@ -50,18 +42,11 @@ const description =
 
   <Fragment slot="inside_header">
     <LandingScreen
-      title={title_start}
+      title={h1}
       overtitle_line1={overtitle_line1}
       overtitle_line2={overtitle_line2}
       overtitle_line3={overtitle_line3}
-
       onScroll_line1={onScroll_line1}
-      onScroll_line2={onScroll_line2}
-      onScroll_line3={onScroll_line3}
-      onScroll_line4={onScroll_line4}
-
-      onScroll_line5={onScroll_line5}
-      onScroll_line6={onScroll_line6}
     >
       <Icono width={133} height={133} fill="currentColor" />
     </LandingScreen>

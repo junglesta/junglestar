@@ -2,7 +2,7 @@
 // src/pages/showcase.astro
 import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
-import Icono from "@svgs/paperclip.svg";
+import Icono from "@svgs/junglestar_awards.svg";
 import WorksCard from "@components/brand/WorksCard.astro";
 import projectsData from "@data/works.json";
 
@@ -12,14 +12,11 @@ import projectsData from "@data/works.json";
 
 const title_start = "Junglestar Showcase ";
 const title_end = " About us";
-const overtitle_line1 = "We built these from zero to launched.";
-const overtitle_line2 = "then maintained, updated, refactored 'em... ";
+const overtitle_line1 = "We built these from zero to launched. Then maintained, updated, refactored 'em...";
+const overtitle_line2 = " ";
 const title = title_start + " | " + title_end;
-
-const onScroll_line1 = "Have a look... ";
-const onScroll_line2 = "real-world productions of ours.";
-const onScroll_line3 = "";
-const onScroll_line4 = " Let inspiration come to you.";
+const h1 = 'Junglestar showcase'
+const onScroll_line1 = "Have a look. Real-world productions of ours. See what we can do. Let inspiration come to you. ";
 const description =
   "SHOWCASE: We helped these small enterprises with websites, apps, and marketing communication.";
 
@@ -45,19 +42,18 @@ const projects = projectsData.sort(
 >
   <Fragment slot="inside_header">
     <LandingScreen
-      title={title_start}
+      title={h1}
       overtitle_line1={overtitle_line1}
       overtitle_line2={overtitle_line2}
       onScroll_line1={onScroll_line1}
-      onScroll_line2={onScroll_line2}
-      onScroll_line4={onScroll_line4}
+
     >
       <Icono width={133} height={133} fill="currentColor" />
     </LandingScreen>
   </Fragment>
 
   <div class="wrap vpad">
-    <h2 class="center">Live Projects Showcase</h2>
+    <h1 class="center">Live Projects Showcase</h1>
     <br />
     <p class="center">Check them out! Please scroll down.</p>
 

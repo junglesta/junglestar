@@ -2,24 +2,20 @@
 // src/pages/about.astro
 import Layout from "@layouts/Layout.astro";
 import LandingScreen from "@components/UI/LandingScreen.astro";
-import Icono from "@svgs/paperclip.svg";
-import Award from "@svgs/svg_pages/award.svg";
-
-// import type { ImageMetadata } from "astro";
+import Icono from "@svgs/junglestar_people.svg";
 
 // Page metadata
-const overtitle_line1 = "Expertise you can trust.";
+const overtitle_line1 = "Over 30 years of proven communication expertise.";
 
 const title_start = "Junglestar Agency ";
 const title_end = " About us";
 const title = title_start + " | " + title_end;
 
-const onScroll_line1 = "So you wanna know about us huh? ";
-const onScroll_line2 = "Like who we really, really are, maybe?!";
-const onScroll_line3 = "Or even get to know us personally.";
-const onScroll_line4 = "Or meet in person... via videochat?!";
-const onScroll_line5 =
-  "Well, find some answers here. For everything else, write us.";
+const onScroll_line1 = "";
+const onScroll_line2 = "";
+const onScroll_line3 = "A small communication agency.";
+const onScroll_line4 = "TLDR: ";
+const onScroll_line5 = "We help small biz dealing with the online jungle. Find painpoints in your workflow, research and develop solutions, make websites, apps, strategies and narratives. We grow relationships with clients.";
 const description =
   "SHOWCASE: We helped these small enterprises with websites, apps, and marketing communication.";
 ---
@@ -41,35 +37,6 @@ const description =
   }
   .intro_block > p:first-child {
     color: var(--brand);
-  }
-
-  .expertise_badge {
-    display: flex;
-    align-items: center;
-    gap: var(--space_inline);
-    margin-top: calc(var(--space_block) * 0.5);
-    padding-top: var(--space_block);
-    border-top: 1px solid var(--blackT10);
-    color: var(--brand);
-  }
-  .expertise_icon {
-    display: grid;
-    place-items: center;
-    flex: 0 0 auto;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    border: 1.5px solid var(--brand);
-    color: var(--brand);
-  }
-  .expertise_icon :global(svg) {
-    width: 28px;
-    height: 28px;
-    stroke-width: 1.5;
-  }
-  .expertise_text {
-    font-size: var(--font_rem);
-    line-height: 1.25;
   }
 </style>
 
@@ -94,27 +61,30 @@ const description =
   </Fragment>
 
   <div class="wrap vpad">
-    <section class="intro_block">
-      <p class="h3"><strong>At Junglestar we help small biz.</strong></p>
-      <p class="h4">
-        We find and develop solutions, make websites and apps, grow
-        relationships with clients.
-      </p>
-      <div class="expertise_badge">
-        <span class="expertise_icon"><Award /></span>
-        <span class="expertise_text">
-          Over <strong>25 years</strong> of communication expertise.
-        </span>
-      </div>
-    </section>
+
     <h2 class="center">FAQ</h2>
+
+
+    <details class="works">
+      <summary class="center">
+        <strong>Where are your LIVE Projects?</strong>
+      </summary>
+      <p class="wrap pretty">
+        Glad you open me, here: <br /><a href="/showcase">
+          <strong>Showcase</strong>
+        </a>
+        .
+      </p>
+    </details>
 
     <details class="who">
       <summary class="center">
-        <strong>Who are we?</strong><small> TLDR: A bunch of geeks.</small>
+        <strong>Who are we?</strong>
       </summary>
       <p class="wrap pretty">
-        <br />
+          <strong> TLDR:</strong> A bunch of geeks.
+      </p>
+      <p class="wrap pretty">
         Yes, geeks. Starting with the founder, 'Old Boy'
         <a title="Junglestar founder" href="https://tldr.rokma.com"
           ><strong>Rokma</strong></a
@@ -131,7 +101,7 @@ const description =
       </p>
       <p class="wrap pretty">
         When a project calls for it, we bring in consultants or freelancers on
-        a one-shot basis. It depends on what's needed.
+        a one-shot basis. It depends on what's needed. That's what experience has taught us.
       </p>
       <br />
     </details>
@@ -153,17 +123,6 @@ const description =
       </p>
     </details>
 
-    <details class="works">
-      <summary class="center">
-        <strong>Where are your LIVE Projects?</strong>
-      </summary>
-      <p class="wrap pretty">
-        Glad you open me, here: <br /><a href="/showcase">
-          <strong>Showcase</strong>
-        </a>
-        .
-      </p>
-    </details>
 
     <details open class="">
       <summary class="center">

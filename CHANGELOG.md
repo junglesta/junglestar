@@ -1,5 +1,16 @@
 # Changelog
 
+## 3.13.0
+
+- **Dynamic Open Graph cards**: every page now gets its own 1200×630 social card, generated at build time via `astro-og-canvas` (`src/pages/og/[...route].ts`) — page title set BIG, uppercase, heavy-weight, in the site font (Source Sans 3, vendored), on a brand-blue gradient with the logo. Replaces the old static-image map (home/services/showcase had been falling back to a cropped square logo). `Head.astro` derives each page's card URL from its pathname.
+- **OG / head meta fixes**: `og:type` is now `website` by default and `article` only on blog posts (was `article` everywhere); added `og:image:width`/`height` (1200/630) and `og:image:alt`/`twitter:image:alt`; `description` falls back to the site description when a page (e.g. a subtitle-less article) passes none. Moved `<meta charset>` to the very top of `<head>` (it was being pushed past the byte limit by the font-preload links). Collapsed the double space in the site-wide `title_start | title_end` pattern at the source.
+- **Section bands**: new shared `.section_band` component (`styles/layers/compo/bands.css`) — a full-width band behind each page's intro heading, coloured `var(--brand)` to match the post-card borders, with white heading text. Applied to design, content, showcase, about, and offer. Content keeps dark heading text (its orange master is light); offer uses a lighter blue tint so the band stands out on that darker page.
+- **Per-page colour diversification (luma only)**: each page now sits at a distinct lightness of the same brand blue — discoverability (deepest) → showcase → offer → design → about (lightest) — while content stays orange. Footers are intentionally left uniform (the footer tier uses an absolute lightness and only the unchanged chroma/hue of `--brand`).
+- **Hero icons** now take the page colour: the big landing icon is tinted via `currentColor` (`color: var(--brand)`), recolouring both fill- and stroke-based icons; home uses the footer tint instead.
+- **Header**: the JUNGLESTAR wordmark hides in the tablet band (601–900px) to give the scrolling nav room (logo icon stays; phones/desktop unchanged); nav chips are now vertically centred against the brand mark (were defaulting to top-aligned).
+- **Footer modal** fixed: its trigger is now wired on `astro:page-load`, so it survives View-Transitions navigations (previously it stopped working after the first client-side navigation).
+- **Offer page**: pricing grid switches to 3 columns at `> 820px` (so landscape phones get the 3-up layout); minor copy tweaks.
+
 ## 3.12.1
 
 - **CTA buttons tied to the page palette**: `.cta` now derives from the per-page region ramp — fill = `--region_foot` (the footer's light tier), text = `--fg_foot`, outline = black — so every CTA matches its page's footer and re-tunes automatically when a page's master colour changes. Hover inverts to a white fill with brand-coloured text **and** a matching brand-coloured outline, which "lights up" while staying AA-accessible on any background (the previous `--brand-600`/`--brand-400` hovers either darkened or broke white-text contrast). Fixes the content page's CTA blending into its deep-orange section (fill no longer equals the section background) and the design page's too-dark blue.

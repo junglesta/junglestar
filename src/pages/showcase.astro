@@ -34,6 +34,19 @@ const projects = projectsData.sort(
   }
 </style>
 
+<style is:global>
+  /* Showcase palette: one tone darker than the default blue ramp — applied to
+     every region/element EXCEPT the footer. The footer is left untouched:
+     --region_foot uses an absolute lightness (0.9) and only the chroma/hue of
+     --brand (both unchanged here), so it resolves identically. Page-level
+     palette override; only loads on / matches body.showcase. */
+  body.showcase {
+    --brand: oklch(0.44 0.24 255); /* default 0.57 → two tones darker */
+    --region_head: oklch(from var(--brand) 0.33 c h); /* hero/header, default 0.45 */
+    --region_main: oklch(from var(--brand) 0.91 calc(c * 0.18) h); /* main, default 0.97 */
+  }
+</style>
+
 <Layout
   title={title}
   description={description}
@@ -52,9 +65,11 @@ const projects = projectsData.sort(
     </LandingScreen>
   </Fragment>
 
+  <div class="section_band">
+    <h1 class="center wrap">Live Projects Showcase</h1>
+  </div>
+
   <div class="wrap vpad">
-    <h1 class="center">Live Projects Showcase</h1>
-    <br />
     <p class="center">Check them out! Please scroll down.</p>
 
     <div class="grid_projects">

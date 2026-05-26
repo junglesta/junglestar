@@ -48,23 +48,32 @@ const { id } = Astro.props;
 </style>
 
 <script>
-  document.querySelectorAll(".modal_trigger[data-modal]").forEach((trigger) => {
-    const modalId = (trigger as HTMLElement).dataset.modal;
-    const dialog = document.getElementById(modalId!) as HTMLDialogElement;
-    const closeBtn = dialog?.querySelector(".close_modal");
+  function initModals() {
+    document.querySelectorAll(".modal_trigger[data-modal]").forEach((trigger) => {
+      const el = trigger as HTMLElement;
+      // Avoid re-binding listeners when astro:page-load fires on persisted nodes.
+      if (el.dataset.modalWired === "true") return;
+      el.dataset.modalWired = "true";
 
-    trigger.addEventListener("click", (e) => {
-      e.preventDefault();
-      dialog?.showModal();
-    });
+      const modalId = el.dataset.modal;
+      const dialog = document.getElementById(modalId!) as HTMLDialogElement;
+      const closeBtn = dialog?.querySelector(".close_modal");
 
-    closeBtn?.addEventListener("click", (e) => {
-      e.preventDefault();
-      dialog.close();
-    });
+      trigger.addEventListener("click", (e) => {
+        e.preventDefault();
+        dialog?.showModal();
+      });
 
-    dialog?.addEventListener("click", (e) => {
-      if (e.target === dialog) dialog.close();
+      closeBtn?.addEventListener("click", (e) => {
+        e.preventDefault();
+        dialog.close();
+      });
+
+      dialog?.addEventListener("click", (e) => {
+        if (e.target === dialog) dialog.close();
+      });
     });
-  });
+  }
+
+  document.addEventListener("astro:page-load", initModals);
 </script>

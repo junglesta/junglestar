@@ -1,0 +1,23 @@
+/*🐸 SECTION BAND
+   Full-width tinted band behind a section's intro heading. Uses a mid-toned
+   tier of the page master — bridges the deep header (--region_head ≈ L0.45)
+   and the near-white main (--region_main ≈ L0.97). Derived from --brand, so it
+   auto-tunes per page (blue on most pages, orange on /content, etc.).
+
+   Usage:  <div class="section_band"><h1 class="center wrap">Title</h1></div>
+   The band is a full-width child of <main>; the inner heading keeps .wrap so
+   its text lines up with the page content below.
+
+   Background = the page master itself (--brand), matching the post-card borders
+   (border: 1px solid var(--brand)). White heading text reads on it; pages whose
+   master is a light tone (e.g. /content's orange) override the text to dark. */
+.section_band {
+	background-color: var(--brand);
+	padding-block: calc(var(--space_block) * 2);
+	margin-block-end: calc(var(--space_block) * 2);
+}
+
+.section_band > :where(h1, h2, h3) {
+	margin: 0;
+	color: var(--white);
+}

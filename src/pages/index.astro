@@ -32,6 +32,12 @@ const description =
     background-color: var(--black);
     color: var(--white);
   }
+
+  /* Home has no banded h1, so its hero icon uses the footer tint
+     (--region_foot) instead of the page master — light on the deep hero. */
+  :global(body.index .landing_screen svg) {
+    color: var(--region_foot);
+  }
 </style>
 
 <Layout

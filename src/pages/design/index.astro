@@ -44,12 +44,25 @@ const description =
     </LandingScreen>
   </Fragment>
 
-  <div class="wrap">
-    <h1 class="center">What is communication design?</h1>
+  <div class="section_band">
+    <h1 class="center wrap">What is communication design?</h1>
+  </div>
 
+  <div class="wrap">
     <PostsGridMDX posts={posts} basePath="design" />
   </div>
   <div class="banner_wrap">
     <CTAMailBanner />
   </div>
 </Layout>
+
+<style is:global>
+  /* Page tone — luma only, same brand hue/chroma. One notch darker than the
+     default blue; footer untouched (--region_foot uses absolute L + unchanged
+     chroma/hue). See showcase/offer for the rest of the per-page ramp. */
+  body.design {
+    --brand: oklch(0.52 0.24 255);
+    --region_head: oklch(from var(--brand) 0.41 c h);
+    --region_main: oklch(from var(--brand) 0.96 calc(c * 0.18) h);
+  }
+</style>

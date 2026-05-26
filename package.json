@@ -1,7 +1,7 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "3.12.1",
+  "version": "3.13.0",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
@@ -25,6 +25,8 @@
     "@astrojs/ts-plugin": "^1.10.9",
     "@biomejs/biome": "^2.4.15",
     "astro": "^6.3.7",
+    "astro-og-canvas": "^0.11.1",
+    "canvaskit-wasm": "^0.41.1",
     "prettier": "3.7.4",
     "prettier-plugin-astro": "0.14.1",
     "sharp": "^0.34.5",

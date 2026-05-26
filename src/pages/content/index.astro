@@ -11,20 +11,20 @@ import { getMDXPosts } from "@utils/getMDXPosts";
 const posts = await getMDXPosts("productionConcepts");
 
 // Page metadata
-const overtitle_line1 = "Marketing";
-const overtitle_line2 = "Communication.";
-const overtitle_line3 = "Simplified.";
+const overtitle_line1 = "";
+const overtitle_line2 = "";
+const overtitle_line3 = "Marketing Communication Simplified.";
 
 const title_start = "Junglestar ";
 const title_end = " Content Production";
 const title = title_start + " | " + title_end;
 const h1= 'YOUR BRAND NARRATIVE?';
 
-const onScroll_line1 = "Competing for attention. OK, how?";
-const onScroll_line2 = "Your paid ads are converting very little?";
-const onScroll_line3 = "Drowning in sticky-notes and to-do-lists?";
-const onScroll_line4 = "Know what to do but don't know how to do it? ";
-const onScroll_line5 = "Keep on scrolling, we got answers!";
+const onScroll_line1 = "";
+const onScroll_line2 = "";
+const onScroll_line3 = "Competing for attention. OK, how? Your paid ads are converting very little? Drowning in sticky-notes and to-do-lists?";
+const onScroll_line4 = "";
+const onScroll_line5 = "";
 const onScroll_line6 = "";
 //
 const description =
@@ -32,6 +32,13 @@ const description =
 ---
 
 <style>
+  /* The shared .section_band background is var(--brand) (= the card borders),
+     which on /content is the light orange — so keep the heading text dark
+     (the shared white default would be unreadable on it). */
+  .section_band h1 {
+    color: var(--fg_main);
+  }
+
   /* Second "mean" banner: a deeper orange tier for emphasis. */
   body.content :global(.mean_title.mean_title--second) {
     --brand: var(--jorange_dark);
@@ -63,10 +70,13 @@ const description =
     </LandingScreen>
   </Fragment>
 
-  <div class="wrap">
-    <h1 class="center">
+  <div class="section_band">
+    <h1 class="center wrap">
       What people remember you for. Brand narrative is that. The whole thing.
     </h1>
+  </div>
+
+  <div class="wrap">
     <PostsGridMDX posts={posts} basePath="content" />
   </div>
 

@@ -168,6 +168,7 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 		min-width: 0;
 		margin-left: auto;
 		display: flex;
+		align-items: center;
 		gap: calc(var(--space_inline) / 1.5);
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
@@ -315,6 +316,18 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 		}
 		.nav_toggle {
 			display: grid;
+		}
+	}
+
+	/* ───────────────────────── TABLET ───────────────────────── */
+	/* In the mid band the inline nav chips (six of them) and the wordmark
+	   both show and crowd each other, squeezing the scrolling chips. Hide
+	   only the wordmark here so the six chips get the full row; the logo
+	   icon (.brand_icon) stays. Above 900px both fit again, below 601px the
+	   chips collapse to the hamburger so the wordmark keeps its room. */
+	@media (min-width: 601px) and (max-width: 900px) {
+		.brand_wordmark {
+			display: none;
 		}
 	}
 

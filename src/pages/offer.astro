@@ -21,21 +21,21 @@ const offers = allOffers.sort((a, b) => {
 });
 
 // Page metadata
-const overtitle_line1 = "Pricing, simplified.";
-const overtitle_line2 = "You need a new website! ";
-const overtitle_line3 = "We design, code, deploy & mantain it.";
+const overtitle_line1 = "Pricing, simplified. You need a new website! We design, code, deploy & mantain it for a monthly fee. End of worries!";
+const overtitle_line2 = "";
+const overtitle_line3 = "";
 
 const title_start = "Junglestar ";
 const title_end = " Pricing";
 const title_page = "packaged websites & custom designs";
 const title = title_start + " | " + title_end;
 
-const onScroll_line1 = "Junglestar offers";
-const onScroll_line2 = "All-included solutions.";
-const onScroll_line3 = "We are a flexible one-stop web agency.";
-const onScroll_line4 = "We make websites, webstores & web apps.";
-const onScroll_line5 = "Visual Menus for Bars & Restaurants!";
-const onScroll_line6 = "Packed Solutions & Custom Designs.";
+const onScroll_line1 = "";
+const onScroll_line2 = "";
+const onScroll_line3 = "";
+const onScroll_line4 = "";
+const onScroll_line5 = "";
+const onScroll_line6 = "Junglestar offers All-included solutions. We make websites, webstores & web apps. Visual Menus for Bars & Restaurants! Packed Solutions & Custom Designs.";
 const description =
   "Flexible one-stop web agency. We make webstores & web apps. Packed solutions & custom designs for great user experiences.";
 ---
@@ -48,6 +48,17 @@ const description =
   .offer_content :is(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6) {
     color: var(--brand);
 
+  }
+
+  /* Section band over the pricing grid. This page is the dark end of the blue
+     ramp, so the default brand-coloured band blends into its surroundings —
+     use a LIGHT blue tint here so it stands out, with the heading in the dark
+     brand colour (readable on the light band). */
+  .section_band {
+    background-color: oklch(from var(--brand) 0.88 calc(c * 0.45) h);
+  }
+  .section_band .offers_title {
+    color: var(--brand);
   }
   .grid_offer_color {
     background-color: rgba(0, 0, 0, 0.15);
@@ -70,7 +81,7 @@ const description =
     }
   }
 
-  @media (width > 850px) {
+  @media (width > 820px) {
     .grid_offer {
       max-width: 1200px;
       padding-inline: var(--space_inline);
@@ -157,7 +168,7 @@ const description =
     border: 1.5px solid var(--brand-300);
   }
 
-  @media (width > 850px) {
+  @media (width > 820px) {
     .grid_offer_card.bestseller {
       transform: scale(1.04);
       z-index: 1;
@@ -275,8 +286,10 @@ const description =
   <div class="offer_content grid_offer_color">
     <SlowWebsite />
 
-    <div class="h3 offers_title">
-      We offer all-inclusive packages for any budget!
+    <div class="section_band">
+      <div class="h3 offers_title center wrap">
+        We offer all-inclusive packages for any budget!
+      </div>
     </div>
     <div class="grid_offer">
       {
@@ -354,3 +367,13 @@ const description =
     </div>
   </div>
 </Layout>
+
+<style is:global>
+  /* Page tone — luma only, same brand hue/chroma. Two notches darker than the
+     default blue (between showcase and design). Footer untouched. */
+  body.offer {
+    --brand: oklch(0.48 0.24 255);
+    --region_head: oklch(from var(--brand) 0.37 c h);
+    --region_main: oklch(from var(--brand) 0.94 calc(c * 0.18) h);
+  }
+</style>

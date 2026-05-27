@@ -42,7 +42,7 @@ const {
   <body class={bodyClass} style={master ? `--brand: var(${master})` : undefined}>
     {!hideNav && <Header />}
     <div class="page_intro">
-      <slot name="inside_header" />
+      <slot name="page_intro" />
     </div>
 
     <main class:list={["scrolling_body_wrap clickScrollTarget", mainClass]}>

@@ -1,5 +1,15 @@
 [junglestar.org](https://junglestar.org) — static Astro site, hosted on Cloudflare Workers (static assets).
 
+[![Live](https://img.shields.io/website?url=https%3A%2F%2Fjunglestar.org&label=junglestar.org&up_message=online&down_message=down)](https://junglestar.org)
+[![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
+![Astro](https://img.shields.io/badge/Astro-6-BC52EE?logo=astro&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Biome](https://img.shields.io/badge/Biome-60A5FA?logo=biome&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-10-F69220?logo=pnpm&logoColor=white)
+![Node](https://img.shields.io/badge/Node-24.15.0-5FA04E?logo=nodedotjs&logoColor=white)
+![PWA](https://img.shields.io/badge/PWA-ready-5A0FC8?logo=pwa&logoColor=white)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey?logo=creativecommons&logoColor=white)](#warning)
+
 ---
 
 ## Warning

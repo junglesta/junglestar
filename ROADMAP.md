@@ -1,97 +1,47 @@
-# 🗺️ ROADMAP — Header & Hero refactor (paused 2026-05-25)
+# 🗺️ ROADMAP — Header / Hero / Colour / Social-card redesign
 
-Working state of the header + landing-hero restyle. Build passes (34 pages),
-lint clean. **Nothing committed** — per project rule we stop before commit for
-human review. A version bump (~`3.12.0`) + changelog is pending.
-
----
-
-## ✅ Done this session
-
-### Header (`src/components/header/Header.astro`)
-- New site header: outlined **logo mark** (`logo_stroke.svg`, `--logo-stroke: 22`) + **JUNGLESTAR wordmark** on the left, nav chips pushed **far right**, single line.
-- **Mobile (≤600px):** nav collapses to a **hamburger** → opens a **full-page `<dialog>`** (`showModal()`). The dialog has a **replica top bar** (reuses `.top_nav`) so the header "stays present" and the hamburger slot shows the **X** in place. Wired on `astro:page-load` (survives view transitions); closes on link tap / Esc / backdrop / resize-to-desktop.
-- **Token-based sizing:** `--header_text_size` / `--header_text_spacing` on `.top_nav` — wordmark + chips share one source (no `em`).
-- Wordmark mirrors the big brand-name style (`--h1-weight`, uppercase, no tracking).
-- Renamed `shared/NavScroll.astro` → `header/Header.astro` (git mv); wraps a semantic `<header class="site_header">`. `Layout.astro`'s old hero `<header>` is now `<div class="page_intro">` (one banner landmark).
-
-### Hero / `LandingScreen` (`src/components/UI/LandingScreen.astro`)
-- Removed `<Logo>` + the big `h1.brand_name` from the hero.
-- **Single `<h1>` per page**, declared by what's passed: pages that want a hero h1 pass `title`; pages whose h1 is in the body don't. (Dropped the `titleAsH1` boolean — now just `{title && <h1>…}`.)
-  - Hero-title h1: `index`, `about`, `offer`, `discoverability`.
-  - Body `h2→h1`: `showcase`, `design/index`, `content/index`.
-- **Killed the onscroll effect:** removed the `.animatio` scroll-timeline fade and the tall ~200svh scroll region. Cleaned dead grid machinery.
-- **Normalized DOM** to plain, classless elements inside one `.landing_screen` hook (+ `.landing_height` wrapper). `.landing_height`: `100svh` portrait / `188svh` landscape.
-- Baseline hero styling added (flex column, centered, token spacing, fluid h1/p, slotted-icon sizing via `:global(svg)`).
-
-### Discoverability lists (`src/components/brand/Gmap.astro`)
-- `WHAT WE DO / WHAT YOU GET / THEN YOU CAN` → real `<h4>` headings (centered).
-- Lists: equal width (full-width blocks of a centered 34rem column), left-aligned items, even rhythm. Removed the `margin-left: 15dvw` shift.
-
-### Icons (all stroke = `currentColor`)
-- `design` → `island.svg` · `showcase` → `pen-tool.svg` · `discoverability` → `gmap_pin.svg` ⚠️ (see below).
-- `delivery_truck.svg` paths changed `#000000` → `currentColor` (no longer used on a page, but fixed).
-
-### Cross-cutting (via subagents)
-- **`COLOR.md`** written — documents the single-`--brand` → region-luma colour system.
-- **`em` units purged sitewide** → `rem` / spacing tokens (a few legit `em` kept).
-- **AutoContrast OKLCH bug fixed** (`AutoContrast.astro`) — canvas luminance fallback no longer silently returns black for `oklch()` colours; **styleguide `sty.astro` refreshed** to the new palette (brand scale + harmonizer ramps).
+**Status: ✅ SHIPPED.** This arc began as a paused header + landing-hero
+restyle (2026-05-25) and grew into the full redesign milestone. Everything
+tracked here is now committed, tagged, and deployed across **`3.12.0` → `4.1.0`**.
+Kept as a record of where each piece landed.
 
 ---
 
-## 🔜 TODO — next session
+## ✅ Shipped
 
-### 0. ▶ RESUME HERE — finish page colours + top landing icons
-**(a) Page colours** — make each page's `master` colour deliberate (the
-`<Layout master="--brand|--jgreen|--jorange">` knob → region ramp, see
-`COLOR.md`). Currently only `content/*` uses `--jorange`; the rest default to
-blue. Decide per page and apply.
+### Header (`src/components/header/Header.astro`) — `3.12.0`
+- Outlined **logo mark** + **JUNGLESTAR wordmark** left, nav chips far right, single line.
+- **Mobile (≤600px):** hamburger → full-page `<dialog>` (`showModal()`) with replica top bar; wired on `astro:page-load`, closes on tap / Esc / backdrop / resize.
+- Token-based sizing (`--header_text_size` / `--header_text_spacing`).
+- Renamed `shared/NavScroll.astro` → `header/Header.astro`; semantic `<header class="site_header">`, hero now `<div class="page_intro">`.
+- `4.0.1`: header sized to fit logo; `3.13.0`: tablet wordmark hide + nav vertical-align.
 
-**(b) Top landing icons** — the `<Icono>` passed to `LandingScreen` per page.
-Make them consistent (all `stroke="currentColor"`, matching visual stroke
-weight, 24-viewBox where possible). Current state:
+### Hero / `LandingScreen` (`src/components/UI/LandingScreen.astro`) — `3.12.0`
+- Dropped `<Logo>` + big `h1.brand_name` from hero; **single `<h1>` per page** (pages pass `title`, or promote a body `h2→h1`).
+- Killed the onscroll scroll-timeline fade + tall scroll region; normalized to plain elements in `.landing_screen` (+ `.landing_height`).
+- Landing-icon restyle finalized in the `4.0.0` redesign milestone.
 
-| Page | icon | status |
-|---|---|---|
-| index | `radio.svg` | review |
-| about | `paperclip.svg` | review |
-| showcase | `junglestar_awards.svg` | ✅ recoloured (Illustrator keeps re-hardcoding `#000` on re-export — flip `stroke:#000000`→`currentColor`) |
-| design/index | `island.svg` | ✅ |
-| content/index | `what.svg` | review |
-| discoverability | `gmap_pin.svg` | ✅ (path `stroke-width="6.2"` to match) |
-| offer | `radio.svg`? | review |
+### Page colour system — `3.11.0`, `3.13.0`
+- Single `master` colour per page → luma-derived head/main/footer (`COLOR.md`).
+- `content/*` use `--jorange`; rest default `--brand`. `4.0.1`: tag pages off-white (no blue/orange clash). `3.12.1`: CTA buttons tied to per-page region ramp.
 
-> Note: hero rule `.landing_screen :global(svg){ stroke-width: 0.37 }` assumes
-> 24-viewBox icons. Non-24 icons (gmap_pin=400) need their own path
-> stroke-width to match. Considered: a build step to auto-rewrite
-> `stroke:#000000`→`currentColor` in `src/assets/svgs/*.svg` (offered, not yet
-> done).
+### Landing icons (stroke = `currentColor`)
+- index `radio` · about `junglestar_people` · offer `feather` · discoverability `gmap_pin` (path `stroke-width="6.2"`) · showcase `junglestar_awards` · design `island` · content `what`.
 
-### 1. Finish the `.landing_screen` restyle (main task)
-Current styling is a **baseline**, not final. Refine:
-- **Visual hierarchy between overtitle vs onScroll lines** — they're all identical `<p>` right now (classless by design). Decide whether to add 1–2 small class hooks to differentiate, or keep uniform.
-- **Slotted-icon size** — `.landing_screen :global(svg)` is `width: clamp(255px, 40svw, 660px)` (very large) — review per page.
-- Spacing/`justify-content: space-around`, `188svh` landscape value — confirm these feel right across pages.
-- Re-add casing if wanted (the old `onScroll_line1.toUpperCase()` was dropped).
+### Social cards + design system
+- `3.13.0`–`4.0.0`: dynamic OG cards (big uppercase site-font title, brand-blue thin bg-less logo, "Tip tagged" tag cards); `/sty` hidden from crawlers.
+- `4.1.0`: `/sty` rebuilt — click-to-copy tokens, oklch values, grids, aspect/print/AutoContrast docs, new lightest tokens.
 
-### 2. ~~Resolve `gmap_pin.svg` stroke-width~~ ✅ DONE
-`gmap_pin` is 400-viewBox; the hero forces `~0.37` → was hairline. Fixed by
-setting the pin **path** `stroke-width="6.2"` (= `0.37 × 400/24`), which
-overrides the inherited value and matches the other icons' visual weight.
-Side effect: the Gmap content-section pin (in `Gmap.astro`) also went `5 → 6.2`
-— minor; add a scoped `stroke-width: 5` override there if it bothers.
+### Cross-cutting — `3.12.0`
+- `COLOR.md` written; `em` units purged sitewide → `rem`/tokens; AutoContrast OKLCH luminance bug fixed.
 
-### 3. Loose ends / decisions
-- `.site_header` and `.page_intro` are **unstyled class hooks** — keep for future styling or drop to bare tags?
-- `<h4>` for the Gmap group labels — confirm size, or drop to `<h5>`.
-- Slot name `inside_header` now feeds a `<div>` (mildly stale) — optional rename across the 7 pages that use it.
-- Footer still uses `Logo.astro` (`variant="bottom"`) — intentional, leave.
+---
 
-### 4. Ship
-- Run **`/preflight`** (format → lint → build → version bump → changelog → STOP).
-- Suggested commit message:
-  `3.12.0 | Header: logo+wordmark, mobile hamburger modal, token sizing; static hero (kill onscroll), single h1 per page; fix AutoContrast OKLCH; COLOR.md; purge em units`
-- New untracked files to include: `COLOR.md`, `ROADMAP.md`.
+## ✅ Polish — resolved 2026-05-27
+- **`.site_header` / `.page_intro`** → **kept.** `.site_header` is referenced by `print.css` (not bare); `.page_intro` is the deliberate wrapper that demotes the old hero `<header>` to a `<div>` (single banner landmark). Both stay as styling hooks.
+- **`<h4>` Gmap group labels** → **kept as `<h4>`.** They follow the section's `<h3>`, so `<h4>` is the correct document outline (visual size is handled by the scoped CSS, independent of level).
+- **`inside_header` slot** → **renamed `page_intro`** across `Layout.astro` + the 7 pages, matching the `<div class="page_intro">` it feeds.
+- **Illustrator re-hardcoding `#000`** → **build-step shipped.** A custom svgo plugin (`black-to-currentcolor`) in `astro.config.mjs`'s `experimental.svgOptimizer` rewrites black `stroke`/`fill` → `currentColor` at build, on the **output only** (source SVGs stay as-exported). A re-export that re-hardcodes `#000` is normalised every build — no manual flip needed.
 
 ---
 
@@ -99,7 +49,8 @@ Side effect: the Gmap content-section pin (in `Gmap.astro`) also went `5 → 6.2
 | File | What |
 |---|---|
 | `src/components/header/Header.astro` | Header + mobile hamburger/modal |
-| `src/components/UI/LandingScreen.astro` | Hero — **restyle in progress** |
-| `src/layouts/Layout.astro` | `<Header/>` + `.page_intro` wrapper |
+| `src/components/UI/LandingScreen.astro` | Hero |
+| `src/layouts/Layout.astro` | `<Header/>` + `.page_intro` wrapper, `master` colour knob |
 | `src/components/brand/Gmap.astro` | Discoverability lists |
+| `src/pages/sty.astro` | Design-system / styleguide page |
 | `COLOR.md` | Colour-system docs |

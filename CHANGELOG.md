@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.1.1
+
+- **Docs**: `ROADMAP.md` synced to reality (the header/hero/colour/social-card/design-system arc shipped across `3.12.0`→`4.1.0`; status now SHIPPED). Added repo `DEPLOY.md` — architecture TL;DR (host/CDN, DNS, email, Node, pnpm) + step-by-step deploy one-liners.
+- **Netlify decommissioned**: Cloudflare Workers is now the sole production host. Docs updated — pushing `master` deploys nothing; only `pnpm deploy:cf` ships.
+- **SVG build-step**: a custom `black-to-currentcolor` svgo plugin (`astro.config.mjs`) rewrites black `stroke`/`fill` → `currentColor` at build (output only), so a re-exported icon that re-hardcodes `#000` can't regress the page-luma colour inheritance.
+- **Slot rename**: the hero slot `inside_header` → `page_intro` (matches the `<div class="page_intro">` it feeds) across `Layout.astro` + 7 pages.
+- **README**: added status/tech badges (Live, Cloudflare Workers, Astro, TypeScript, Biome, pnpm, Node, PWA, license).
+
 ## 4.1.0
 
 - **Style guide rebuilt (`/sty`)** as a DX-focused design-system reference on the Layout template (nav assured, kept `noindex`). Every token is a **click-to-copy** chip (copies its `var()` / class). Sections, tokens-first then elements:

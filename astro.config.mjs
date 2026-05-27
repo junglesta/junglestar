@@ -37,6 +37,31 @@ export default defineConfig({
 				{ name: 'removeViewBox', active: false },
 				// @ts-expect-error Astro experimental svgo types incomplete
 				{ name: 'removeMetadata', active: true },
+				// Force black stroke/fill → currentColor so icons inherit the page
+				// luma colour. Runs at build on the *output* only (source SVGs stay
+				// as Illustrator exports), so a re-export that re-hardcodes #000
+				// can't regress — it's normalised every build. preset-default runs
+				// first and collapses black/#000000 → #000, which this then catches.
+				{
+					name: 'black-to-currentcolor',
+					fn: () => ({
+						element: {
+							enter: (node) => {
+								for (const attr of ['stroke', 'fill']) {
+									if (/^(#0{3,6}|black)$/i.test(node.attributes[attr] ?? '')) {
+										node.attributes[attr] = 'currentColor';
+									}
+								}
+								if (node.attributes.style) {
+									node.attributes.style = node.attributes.style.replace(
+										/\b(stroke|fill)\s*:\s*(#0{3,6}\b|black)/gi,
+										'$1:currentColor',
+									);
+								}
+							},
+						},
+					}),
+				},
 			],
 		}),
 	},

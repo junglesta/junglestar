@@ -1,25 +1,58 @@
 # PLAN — Make BAOBAB third-party consumable, then wire it into junglestar `/books`
 
-> **✅ STATUS 2026-06-04 — Phase 1 & Phase 3 DONE & verified. Phase 2 (npm publish) NOT done.**
-> Both repos under `/Users/admi/Sites/0/` (bookbat was formerly `books-freedom`).
-> - **Phase 1 (bookbat):** `packages/baobab` created (`@bookbat/baobab`; exports `.` +
->   `./BookBatClient.astro`; astro = peerDep; library-core = workspace:* dep). Component + config
->   `git mv`'d in. Decoupled from the editor app — deleted the `apps/bookbat/package.json` version
->   import; `bookbatVersion` is now an optional prop. Old `apps/baobab` renamed `@bookbat/baobab-demo`
->   and now consumes the package; root scripts' baobab filters updated. Demo build is green.
-> - **Phase 3 (junglestar):** linked both pkgs via `link:../bookbat/packages/*`; copied sample
->   `library.json` → `src/data/`; created `src/pages/books.astro`. `pnpm build` green, `/books`
->   renders the grid. (4 pre-existing `astro check` errors in `og` route + `sty.astro` are unrelated.)
-> - **Decisions:** library-core ships raw TS · junglestar uses local `library.json` · no `background_frama`.
-> - **Remaining = Phase 2 below** (needs npm scope + 2FA): changesets → publish, then swap junglestar's
->   `link:` deps for published versions. `styles.css` extraction was deferred (inline scoped styles +
->   the `unstyled` override hook remain the contract).
-
-> **Handoff note:** This plan spans **two repos** — `bookbat` (the open-source monorepo,
-> github.com/junglesta/bookbat) and `junglestar25` (this site). It was written from inside
-> `junglestar25` alone. Next session, relaunch from a **parent directory that contains both
-> repos** so all paths below are reachable. Adjust the leading path segments to match wherever
-> the two repos sit relative to your new cwd.
+> ## ✅ STATUS 2026-06-05 — SHIPPED & LIVE. Only npm publish remains.
+>
+> Both repos under `/Users/admi/Sites/0/` (`bookbat` + `junglestar25`). bookbat
+> `feat/baobab-package` is **merged to `main`**; junglestar work is on `master`.
+> Everything below (Phases 1 & 3) is done **and deployed to production**.
+>
+> **Live:**
+> - `https://junglestar.org/books` — full library (~222 books).
+> - `https://baobab.junglestar.org` — the `@bookbat/baobab-demo` (curated 12-title showcase).
+>
+> ### Done since the original plan
+> - **Package extraction (Phase 1):** `packages/baobab` = `@bookbat/baobab` (exports `.` +
+>   `./BookBatClient.astro`, astro peerDep, library-core dep). Decoupled from the editor app
+>   (`bookbatVersion` is an optional prop). `apps/baobab` is now `@bookbat/baobab-demo`.
+> - **junglestar `/books` (Phase 3):** `src/pages/books/index.astro` consumes the linked
+>   packages (`link:../bookbat/packages/*`) + the site `Layout`.
+> - **Component hardening:** IIFE-wrapped inline script (view-transition safe); `coverUrl()`
+>   accepts root-relative paths; configurable default `sort`/`sortDirection`; keyed card-node
+>   reuse so covers don't reload on filter/sort.
+> - **The whole `/books` design** now lives **in the component** (the "Baobab = junglestar look"
+>   port): dark theme, sticky one-line control bar, sliding view toggle, collapsible search,
+>   synopsis clamp+expand, full-row expanded card, even-height cards w/ pinned footer,
+>   min-width card grid (300px). junglestar's page is a thin consumer (region palette + a couple
+>   of counters for the site's global CSS).
+> - **Build-time cover cache** (junglestar only): `scripts/cache-covers.mjs` (`pnpm covers`,
+>   runs as prebuild) downloads/upscales/sharpens covers → `public/book-covers/<title-slug>.webp`,
+>   writes `src/data/library.generated.json`. **ADD-ONLY — never delete** (see `CLAUDE.md`).
+> - **Demo light-on-lime theme** (`apps/baobab/src/pages/index.astro`, `is:global` token overrides;
+>   component untouched). BOOK BAT version shown via the `bookbatVersion` prop.
+> - **Perf/SEO:** `/og/books.png` share card; long-cache `_headers` for hashed assets/covers.
+>
+> ### ⏳ Only remaining = Phase 2 (npm publish) — needs the `@bookbat` npm scope + 2FA
+> Changesets are already set up in bookbat. To finish:
+> 1. `npm login`; ensure the `@bookbat` scope exists.
+> 2. In bookbat: `pnpm changeset version` (bumps + rewrites `workspace:*` → real ranges) →
+>    `pnpm changeset publish --access public`.
+> 3. In junglestar: swap the two `link:../bookbat/packages/*` deps for the published `^` versions,
+>    `pnpm install`, rebuild, deploy.
+>
+> Until then junglestar builds locally against the sibling repo via `link:` — fine for the
+> machine-based deploy (`pnpm deploy:cf`), but a fresh clone elsewhere needs both repos side-by-side.
+> Note: `library-core` ships raw TS, so consumers need `vite.ssr.noExternal` for those pkgs
+> (junglestar already has it).
+>
+> ### Related docs
+> - `CLAUDE.md` — 🛑 covers are add-only; covers/data pipeline; deploy.
+> - `BOOKS-TODO.md` — leftover idea: custom sort dropdown matching the bat app (currently a native
+>   `<select>` with a dark color-scheme; the bat app uses a custom dropdown — see the file for the recipe).
+> - `SYNOPSYS.md` — deferred build-time synopsis enrichment (needs a free Google Books API key).
+>
+> ---
+>
+> *The original extraction plan is preserved below for historical context — Phases 1 & 3 are done.*
 
 ---
 

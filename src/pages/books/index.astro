@@ -166,6 +166,12 @@ const books = parseLibraryPayload(library);
     border-top: 0;
   }
 
+  /* Card (grid) view: an expanded card spans the whole row so its detail
+     (publisher / synopsis / etc.) is readable instead of crammed in one column. */
+  .books .bfc_list:not(.bfc_list--compact) .bfc_item[open] {
+    grid-column: 1 / -1;
+  }
+
   /* Outer list column flush within the panel (card text keeps its padding —
      .bfc_main is reused for both the list column and each card's text block). */
   .books .bfc_body > .bfc_main {

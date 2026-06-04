@@ -14,19 +14,46 @@ const books = parseLibraryPayload(library);
 
 <Layout title={pageTitle} description={description} bodyClass="books">
   <main class="wrap">
-    <h1>Books</h1>
-    <BookBatClient books={books} config={{ showHeader: false }} />
+    <BookBatClient books={books} />
   </main>
 </Layout>
 
 <style is:global>
-  /* Neutral palette — same region ramp as the single tag pages
-     (src/pages/tag/[tag].astro): light/dirty-white regions, dark text. */
+  /* Dark palette — dark regions, light text, across head / main / footer. */
   .books {
-    --region_head: var(--whiteOFF);
-    --fg_head: var(--text_color);
-    --region_main: var(--whiteDIRTY);
-    --fg_main: var(--text_color);
-    --region_foot: var(--whiteOFF);
+    --region_head: var(--black);
+    --fg_head: var(--white);
+    --region_main: var(--black);
+    --fg_main: var(--white);
+    --region_foot: var(--black);
+    --fg_foot: var(--white);
+  }
+
+  /* BAOBAB ships its own <details> styling. Stop junglestar's global
+     details/summary rules (the injected "+" marker, centered summary,
+     top borders, vertical offset) from bleeding into the embedded
+     component so it keeps its OG look and the titles read left-aligned. */
+  .books .bfc details,
+  .books .bfc details[open] {
+    text-align: left;
+    padding-bottom: 0;
+    border-radius: 0;
+  }
+  .books .bfc .bfc_summary {
+    top: 0;
+    min-height: 0;
+    height: auto;
+    padding-top: 0;
+    border-top: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .books .bfc .bfc_summary::after,
+  .books .bfc details[open] .bfc_summary::after {
+    content: none;
+  }
+  .books .bfc details[open] .bfc_summary {
+    margin-bottom: 0;
+    border-top: 0;
   }
 </style>

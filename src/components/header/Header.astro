@@ -5,13 +5,15 @@ import site from "@data/site.json";
 import BrandIcon from "@svgs/logo_stroke.svg";
 
 const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
+// The /books page re-brands the wordmark to "books" (the BAOBAB library view).
+const wordmark = currentPath === "/books" ? "books" : site.brand;
 ---
 
 <header class="site_header">
 	<nav class="top_nav">
 		<a class="brand_mark" href="/" title={`${site.brand} — home`}>
 			<BrandIcon class="brand_icon" width={40} height={40} fill="currentColor" />
-			<span class="brand_wordmark">{site.brand}</span>
+			<span class="brand_wordmark">{wordmark}</span>
 		</a>
 
 		<!-- Desktop: inline scrolling chips -->
@@ -64,7 +66,7 @@ const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 	<div class="top_nav nav_modal_bar">
 		<a class="brand_mark" href="/" title={`${site.brand} — home`}>
 			<BrandIcon class="brand_icon" width={40} height={40} fill="currentColor" />
-			<span class="brand_wordmark">{site.brand}</span>
+			<span class="brand_wordmark">{wordmark}</span>
 		</a>
 
 		<button type="button" class="nav_modal_close" aria-label="Close menu">

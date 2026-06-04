@@ -59,6 +59,45 @@ const books = parseLibraryPayload(library);
     border: 1px solid var(--brand-100);
   }
 
+  /* Search: a collapsed magnifier button that expands to the right on focus
+     (and stays open while it holds a query). Replaces the always-open input. */
+  .books .bfc_control--search {
+    display: inline-flex;
+  }
+  .books .bfc_control--search > span {
+    display: none;
+  }
+  .books .bfc_control--search input {
+    width: 46px;
+    padding-inline: 0;
+    color: transparent;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9c3b4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.6-3.6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    transition:
+      width 0.25s ease,
+      padding 0.25s ease;
+  }
+  .books .bfc_control--search input::placeholder {
+    color: transparent;
+  }
+  .books .bfc_control--search:focus-within input,
+  .books .bfc_control--search:has(input:not(:placeholder-shown)) input {
+    width: min(100%, 16rem);
+    padding-inline: 40px calc(var(--padding) - 4px);
+    color: var(--text);
+    cursor: text;
+    background-position: 12px center;
+  }
+  .books .bfc_control--search:focus-within input::placeholder,
+  .books .bfc_control--search:has(input:not(:placeholder-shown)) input::placeholder {
+    color: var(--text-muted);
+  }
+
   /* BAOBAB ships its own <details> styling. Stop junglestar's global
      details/summary rules (the injected "+" marker, centered summary,
      top borders, vertical offset) from bleeding into the embedded
@@ -67,7 +106,7 @@ const books = parseLibraryPayload(library);
   .books .bfc details[open] {
     text-align: left;
     padding-bottom: 0;
-    border-radius: 0;
+    border-radius: var(--radius);
   }
   .books .bfc .bfc_summary {
     top: 0;

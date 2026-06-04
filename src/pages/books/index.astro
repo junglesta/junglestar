@@ -56,7 +56,7 @@ const books = parseLibraryPayload(library);
   .books .bfc_status_tab,
   .books .bfc_view_switch,
   .books .bfc_expand_toggle {
-    border: 1px solid var(--brand-100);
+    border: 1px solid var(--whiteDIRTY);
   }
 
   /* Search: a collapsed magnifier button that expands to the right on focus
@@ -96,6 +96,46 @@ const books = parseLibraryPayload(library);
   .books .bfc_control--search:focus-within input::placeholder,
   .books .bfc_control--search:has(input:not(:placeholder-shown)) input::placeholder {
     color: var(--text-muted);
+  }
+
+  /* View switch: a slick sliding toggle — grid icon left, list icon right,
+     with a knob that slides under the active one (CSS :has, no JS). */
+  .books .bfc_view_switch {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 3px;
+    background: var(--bg-input);
+    border-radius: 999px;
+  }
+  .books .bfc_view_switch::before {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    width: calc(50% - 3px);
+    border-radius: 999px;
+    background: var(--whiteDIRTY);
+    transition: transform 0.22s ease;
+    z-index: 0;
+  }
+  .books .bfc_view_switch:has([data-bfc-view="list"].bfc_view_seg--active)::before {
+    transform: translateX(100%);
+  }
+  .books .bfc_view_seg {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    height: 30px;
+    padding-inline: 16px;
+    background: transparent;
+    color: var(--text-muted);
+    transition: color 0.22s ease;
+  }
+  .books .bfc_view_seg--active,
+  .books .bfc_view_seg--active:hover {
+    background: transparent;
+    color: var(--black);
   }
 
   /* BAOBAB ships its own <details> styling. Stop junglestar's global

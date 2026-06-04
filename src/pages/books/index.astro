@@ -23,7 +23,14 @@ const books = parseLibraryPayload(library);
 </Layout>
 
 <style is:global>
-  /* Dark palette — dark regions, light text, across head / main / footer. */
+  /*
+   * Most of the books styling now lives inside the Baobab component itself
+   * (@bookbat/baobab) — accent, borders, radius, no green frame, collapsible
+   * search, sliding view toggle, synopsis clamp, dark <select>, etc. This page
+   * only sets the page-level chrome + counters the site's global CSS.
+   */
+
+  /* Dark region palette for the page chrome (head / main / footer). */
   .books {
     --region_head: var(--black);
     --fg_head: var(--white);
@@ -31,125 +38,15 @@ const books = parseLibraryPayload(library);
     --fg_main: var(--white);
     --region_foot: var(--black);
     --fg_foot: var(--white);
-    /* Capture the system radius here (where --radius is the global token, not
-       yet shadowed by the component) so we can feed it into .bfc below. */
-    --bfc_radius: var(--radius);
   }
 
-  /* Recolor the component's lime accent (year/Read text, stars, active tab,
-     chips, focus) to dirty-white, and adopt the system corner radius for all
-     its cards / buttons / inputs. One var override each cascades everywhere. */
-  .books .bfc {
-    --accent: var(--whiteDIRTY);
-    --radius: var(--bfc_radius);
-  }
-
-  /* Kill the dark-green panel frame + its inline padding (sit on the page). */
-  .books .bfc_body {
-    background: none;
-    padding-inline: 0;
-  }
-
-  /* 1px brand-tint border on cards and the controls (inputs / selects /
-     buttons / tabs / view switch). */
-  .books .bfc_item,
-  .books .bfc_control input,
-  .books .bfc_control select,
-  .books .bfc_sort_direction,
-  .books .bfc_status_tab,
-  .books .bfc_view_switch,
-  .books .bfc_expand_toggle {
-    border: 1px solid var(--whiteT25);
-  }
-
-  /* Search: a collapsed magnifier button that expands to the right on focus
-     (and stays open while it holds a query). Replaces the always-open input. */
-  .books .bfc_control--search {
-    display: inline-flex;
-  }
-  .books .bfc_control--search > span {
-    display: none;
-  }
-  .books .bfc_control--search input {
-    width: 46px;
-    padding-inline: 0;
-    color: transparent;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9c3b4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.6-3.6'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
-    transition:
-      width 0.25s ease,
-      padding 0.25s ease;
-  }
-  .books .bfc_control--search input::placeholder {
-    color: transparent;
-  }
-  .books .bfc_control--search:focus-within input,
-  .books .bfc_control--search:has(input:not(:placeholder-shown)) input {
-    width: min(100%, 16rem);
-    padding-inline: 40px calc(var(--padding) - 4px);
-    color: var(--text);
-    cursor: text;
-    background-position: 12px center;
-  }
-  .books .bfc_control--search:focus-within input::placeholder,
-  .books .bfc_control--search:has(input:not(:placeholder-shown)) input::placeholder {
-    color: var(--text-muted);
-  }
-
-  /* View switch: a slick sliding toggle — grid icon left, list icon right,
-     with a knob that slides under the active one (CSS :has, no JS). */
-  .books .bfc_view_switch {
-    position: relative;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    padding: 3px;
-    background: var(--bg-input);
-    border-radius: 999px;
-  }
-  .books .bfc_view_switch::before {
-    content: "";
-    position: absolute;
-    inset: 3px;
-    width: calc(50% - 3px);
-    border-radius: 999px;
-    background: var(--whiteDIRTY);
-    transition: transform 0.22s ease;
-    z-index: 0;
-  }
-  .books .bfc_view_switch:has([data-bfc-view="list"].bfc_view_seg--active)::before {
-    transform: translateX(100%);
-  }
-  .books .bfc_view_seg {
-    position: relative;
-    z-index: 1;
-    width: auto;
-    height: 30px;
-    padding-inline: 16px;
-    background: transparent;
-    color: var(--text-muted);
-    transition: color 0.22s ease;
-  }
-  .books .bfc_view_seg--active,
-  .books .bfc_view_seg--active:hover {
-    background: transparent;
-    color: var(--black);
-  }
-
-  /* BAOBAB ships its own <details> styling. Stop junglestar's global
-     details/summary rules (the injected "+" marker, centered summary,
-     top borders, vertical offset) from bleeding into the embedded
-     component so it keeps its OG look and the titles read left-aligned. */
+  /* Stop junglestar's GLOBAL details/summary rules (the injected "+" marker,
+     centered summary, top borders, vertical offset) from bleeding into the
+     embedded component. This counters the site's layout layer, not Baobab. */
   .books .bfc details,
   .books .bfc details[open] {
     text-align: left;
     padding-bottom: 0;
-    border-radius: var(--radius);
   }
   .books .bfc .bfc_summary {
     top: 0;
@@ -169,48 +66,13 @@ const books = parseLibraryPayload(library);
     border-top: 0;
   }
 
-  /* Card (grid) view: an expanded card spans the whole row so its detail
-     (publisher / synopsis / etc.) is readable instead of crammed in one column. */
-  .books .bfc_list:not(.bfc_list--compact) .bfc_item[open] {
-    grid-column: 1 / -1;
-  }
-
-  /* Native <select> dropdown: declare a dark color-scheme so the browser
-     renders the popup correctly on the dark page (instead of the cramped,
-     mis-placed light-mode menu), and set explicit option colors. */
-  .books .bfc_control select {
-    color-scheme: dark;
-  }
-  .books .bfc_control select option {
-    background: var(--bg-input);
-    color: var(--text);
-  }
-
-  /* Outer list column flush within the panel (card text keeps its padding —
-     .bfc_main is reused for both the list column and each card's text block). */
-  .books .bfc_body > .bfc_main {
-    padding-inline: 0;
-  }
-
-  /* Expand all / Collapse all: label only, drop the icon. */
-  .books .bfc_expand_toggle_icon {
+  /* Hide the in-sidebar divider. */
+  .books .bfc_sidebar hr {
     display: none;
   }
 
-  /* Hide the language filter (native select, looked off). */
-  .books .bfc_lang_filter {
-    display: none;
-  }
-  .bfc_control--search span {
-      user-select: none;
-  }
-
-  .bfc_sidebar hr {display: none;}
-
-  /* Sticky search on mobile. The component already pins the whole sidebar on
-     desktop (>=1100px). On phones the controls stack above the list, so flatten
-     the sidebar + controls wrappers (display:contents) to make .bfc_body the
-     search's containing block, then pin only the search row to the top. */
+  /* Sticky search on mobile: flatten the sidebar/controls wrappers so .bfc_body
+     becomes the search's containing block, then pin the search row to the top. */
   @media (max-width: 767px) {
     .books .bfc_sidebar,
     .books .bfc_controls {
@@ -220,37 +82,7 @@ const books = parseLibraryPayload(library);
       position: sticky;
       top: 0;
       z-index: 10;
-      /*background: var(--bg-body);*/
       padding-block: 10px;
     }
   }
-
-  /* Synopsis: clamp to a short teaser (the … appears automatically); click to
-     expand to the full text. Toggled by the delegated script below. */
-  .books .bfc_synopsis p {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  .books .bfc_synopsis.is-open p {
-    -webkit-line-clamp: unset;
-    display: block;
-  }
 </style>
-
-<script>
-  // Synopsis accordion: clicking a clamped synopsis toggles the full text.
-  // Delegated on .books so it survives the component re-rendering the cards.
-  function initSynopsisToggle() {
-    const root = document.querySelector<HTMLElement>(".books");
-    if (!root || root.dataset.synopsisBound) return;
-    root.dataset.synopsisBound = "true";
-    root.addEventListener("click", (e) => {
-      const syn = (e.target as HTMLElement)?.closest(".bfc_synopsis");
-      if (syn) syn.classList.toggle("is-open");
-    });
-  }
-  document.addEventListener("astro:page-load", initSynopsisToggle);
-</script>

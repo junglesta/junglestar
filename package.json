@@ -7,6 +7,8 @@
     "format": "biome format --write ./src",
     "lint": "biome lint ./src",
     "clean": "rm -rf .astro dist node_modules/.vite",
+    "covers": "node scripts/cache-covers.mjs",
+    "prebuild": "node scripts/cache-covers.mjs",
     "dev": "astro dev --open",
     "dev:clean": "pnpm clean && astro dev --open",
     "check": "astro check --watch & astro dev",

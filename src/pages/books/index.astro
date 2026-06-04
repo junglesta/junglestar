@@ -3,7 +3,10 @@
 import Layout from "@layouts/Layout.astro";
 import BookBatClient from "@bookbat/baobab/BookBatClient.astro";
 import { parseLibraryPayload } from "@bookbat/library-core";
-import library from "@data/library.json";
+// library.generated.json is produced by scripts/cache-covers.mjs (pnpm covers /
+// prebuild): same data as library.json but with coverUrl pointing at the local
+// build-time-cached covers under /book-covers/.
+import library from "@data/library.generated.json";
 
 // Page metadata
 const pageTitle = "Junglestar | Books";
@@ -79,7 +82,7 @@ const books = parseLibraryPayload(library);
       position: sticky;
       top: 0;
       z-index: 10;
-      background: var(--bg-body);
+      /*background: var(--bg-body);*/
       padding-block: 10px;
     }
   }

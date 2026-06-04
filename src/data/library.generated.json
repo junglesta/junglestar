@@ -1,0 +1,5051 @@
+{
+  "version": 1,
+  "books": [
+    {
+      "id": "312a088d-cea2-46d8-a5bd-d7e65f6a1690",
+      "isbn13": "9780316057905",
+      "title": "Blink",
+      "authors": [
+        "Malcolm Gladwell"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-02T20:14:13.702Z",
+      "source": "openlibrary",
+      "isbn10": "0316010669",
+      "publisher": "Back Bay Books",
+      "publishDate": "April 3, 2007",
+      "publishYear": 2007,
+      "pageCount": 320,
+      "language": "eng",
+      "subjects": [
+        "Intuition",
+        "Education",
+        "Recovery",
+        "Business",
+        "Intuïtie",
+        "Prise de décision (Psychologie)",
+        "Open Library Staff Picks",
+        "Besluitvorming",
+        "Jugement (Logique)",
+        "History"
+      ],
+      "synopsis": "Intuition is not some magical property that arises unbidden from the depths of our mind. It is a product of long hours and intelligent design, of meaningful work environments and particular rules and principles. This book shows us how we can hone our instinctive ability to know in an instant, helping us to bring out the best in our thinking and become better decision-makers in our homes, offices and in everyday life. Just as he did with his revolutionary theory of the tipping point, Gladwell reveals how the power of 'blink' could fundamentally transform our relationships, the way we consume, create and communicate, how we run our businesses and even our societies.You'll never think about thinking in the same way again.",
+      "coverUrl": "/book-covers/9780316057905.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:07:20.475Z"
+    },
+    {
+      "id": "54f2eeb6-f397-4f6e-a383-5b36b5b3c326",
+      "isbn13": "9788807700811",
+      "title": "Il campo di nessuno",
+      "authors": [
+        "Daniel Picouly"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:24:13.392Z",
+      "source": "googlebooks",
+      "isbn10": "8807700816",
+      "publisher": "Feltrinelli Editore",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 278,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788807700811.webp"
+    },
+    {
+      "id": "c65cdce6-b316-4407-8533-e05149979086",
+      "isbn13": "9788807806629",
+      "title": "Stato e anarchia",
+      "authors": [
+        "Michail Bakunin"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T08:24:36.164Z",
+      "source": "googlebooks",
+      "isbn10": "8807806622",
+      "publisher": "Feltrinelli Editore",
+      "publishDate": "2000",
+      "publishYear": 2000,
+      "pageCount": 268,
+      "language": "it",
+      "subjects": [
+        "Political Science"
+      ],
+      "coverUrl": "/book-covers/9788807806629.webp",
+      "rating": 3
+    },
+    {
+      "id": "cd82267d-134d-42d9-ad8a-3df7fcbd9e6b",
+      "isbn13": "9788842060093",
+      "title": "Prima lezione di antropologia",
+      "authors": [
+        "Francesco Remotti"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T08:25:14.100Z",
+      "source": "openlibrary",
+      "publisher": "Laterza",
+      "publishDate": "2000",
+      "publishYear": 2000,
+      "language": "ita",
+      "subjects": [],
+      "rating": 5
+    },
+    {
+      "id": "d5b1098c-c616-4812-9a5b-9bea05ba34ad",
+      "isbn13": "9788869188367",
+      "title": "Hawk. Professione skater",
+      "authors": [
+        "Tony Hawk"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T08:25:52.824Z",
+      "source": "googlebooks",
+      "isbn10": "8869188361",
+      "publishDate": "2017-03-02",
+      "publishYear": 2017,
+      "pageCount": 429,
+      "language": "it",
+      "subjects": [
+        "Biography & Autobiography"
+      ],
+      "coverUrl": "/book-covers/9788869188367.webp",
+      "rating": 3
+    },
+    {
+      "id": "e96f5c21-70a0-401c-888a-8e770b8c8cd3",
+      "isbn13": "9788807810596",
+      "title": "Ecologi e scimmie di Dio",
+      "authors": [
+        "Giorgio Celli"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T08:26:06.215Z",
+      "source": "googlebooks",
+      "isbn10": "880781059X",
+      "publishDate": "1989",
+      "publishYear": 1989,
+      "pageCount": 112,
+      "language": "it",
+      "subjects": [
+        "Nature"
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:07:36.292Z"
+    },
+    {
+      "id": "cba4bc4d-82e7-4f10-8913-ffd8d0ebe07f",
+      "isbn13": "9788804169994",
+      "title": "Bar Sport",
+      "authors": [
+        "Stefano Benni"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T08:26:15.943Z",
+      "source": "googlebooks",
+      "isbn10": "8804169990",
+      "publishDate": "1991",
+      "publishYear": 1991,
+      "pageCount": 134,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "rating": 5,
+      "dateRead": "2026-05-17T14:07:42.518Z"
+    },
+    {
+      "id": "be9d2d07-9ef0-427a-bb10-a556fe3c5543",
+      "isbn13": "9788806144456",
+      "title": "Sorgo rosso",
+      "authors": [
+        "Yan Mo"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T08:26:33.730Z",
+      "source": "googlebooks",
+      "isbn10": "8806144456",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 496,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788806144456.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:06:47.476Z"
+    },
+    {
+      "id": "2cee4c4a-4f74-4373-a763-b5f74f8fd1b0",
+      "isbn13": "9788807810244",
+      "title": "Odile",
+      "authors": [
+        "Raymond Queneau"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T08:26:59.615Z",
+      "source": "googlebooks",
+      "isbn10": "8807810247",
+      "publishDate": "2000",
+      "publishYear": 2000,
+      "pageCount": 144,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "rating": 5,
+      "dateRead": "2026-05-17T14:07:48.847Z"
+    },
+    {
+      "id": "c9773c7a-7669-4d9a-9b52-77a824ae7d8d",
+      "isbn13": "9788843800834",
+      "title": "Memoria Polaroid",
+      "authors": [
+        "Douglas Coupland"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T08:27:13.820Z",
+      "source": "googlebooks",
+      "isbn10": "8843800833",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 204,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788843800834.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:07:57.308Z"
+    },
+    {
+      "id": "5588045e-2642-4b1e-a5d4-d59e3f396c46",
+      "isbn13": "9788873059042",
+      "title": "Tantra yoga",
+      "authors": [
+        "Daniel Odier"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T08:27:24.039Z",
+      "source": "googlebooks",
+      "isbn10": "887305904X",
+      "publishDate": "2003",
+      "publishYear": 2003,
+      "pageCount": 126,
+      "language": "it",
+      "subjects": [
+        "Religion"
+      ],
+      "coverUrl": "/book-covers/9788873059042.webp",
+      "rating": 5
+    },
+    {
+      "id": "cc7436f7-74c1-498b-a6a0-43eb8d018862",
+      "isbn13": "9788827201350",
+      "title": "MYAMOTO MUSASHI - IL LIBRO DEI",
+      "authors": [
+        "Miyamoto Musashi"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:27:39.473Z",
+      "source": "openlibrary",
+      "isbn10": "8827201351",
+      "publisher": "Edizioni Mediterranee",
+      "publishDate": "Oct 27, 1984",
+      "publishYear": 1984,
+      "subjects": [
+        "Biography",
+        "Bushido",
+        "Ciencia militar",
+        "Early works to 1800",
+        "Kendo",
+        "Management",
+        "Martial arts",
+        "Military art and science",
+        "Military science",
+        "Obras anteriores a 1800"
+      ],
+      "synopsis": "A psychological guide to strategy applicable to business, philosophy, or martial arts, written by sixteenth-century warrior Miyamoto Musashi as a means of explaining his success as a practitioner of Japanese swordfighting, or Kendo.",
+      "coverUrl": "/book-covers/9788827201350.webp"
+    },
+    {
+      "id": "a464ff21-f34d-4b7a-b5e0-9a4a626a5d3d",
+      "isbn13": "9788811739708",
+      "title": "Io, venditore di elefanti",
+      "authors": [
+        "Pap Khouma"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:27:59.634Z",
+      "source": "openlibrary",
+      "isbn10": "8811739705",
+      "publisher": "Garzanti",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 143,
+      "language": "ita",
+      "subjects": [
+        "Biography",
+        "Immigrants",
+        "Senegalese"
+      ]
+    },
+    {
+      "id": "5fe59cdb-9e5a-4d45-ab3e-9104eb416bda",
+      "isbn13": "9788895470023",
+      "title": "Rumore di carta. Storia delle fanzine punk e hardcore italiane 1977-2007",
+      "authors": [
+        "Diego Curcio"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T08:28:56.243Z",
+      "source": "googlebooks",
+      "isbn10": "8895470028",
+      "publishDate": "2007",
+      "publishYear": 2007,
+      "pageCount": 164,
+      "language": "it",
+      "subjects": [
+        "Social Science"
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:08:22.993Z"
+    },
+    {
+      "id": "e9ed6aa1-1992-4600-a29e-9b6c5194e475",
+      "isbn13": "9788871840000",
+      "title": "Artefatti",
+      "authors": [
+        "Ezio Manzini"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:31:16.209Z",
+      "source": "openlibrary",
+      "isbn10": "8871840003",
+      "publisher": "Edizioni DA",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 192,
+      "language": "ita",
+      "subjects": [
+        "Commercial products",
+        "Environmental aspects",
+        "Environmental aspects of Commercial products",
+        "Environmental aspects of Industries",
+        "Industries",
+        "Management",
+        "Pollution"
+      ]
+    },
+    {
+      "id": "5e0cb79a-fbe1-4b83-b0fb-4794438917da",
+      "isbn13": "9788871081120",
+      "title": "Indigeno straniero. Il viaggio africano di un nero d'America",
+      "authors": [
+        "Eddy L. Harris"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:31:23.339Z",
+      "source": "googlebooks",
+      "isbn10": "8871081129",
+      "publishDate": "1994",
+      "publishYear": 1994,
+      "pageCount": 315,
+      "language": "it",
+      "subjects": [
+        "Travel"
+      ]
+    },
+    {
+      "id": "f52c0580-258c-4023-bc77-c53c66492ede",
+      "isbn13": "9788807700798",
+      "title": "Microservi",
+      "authors": [
+        "Douglas Coupland"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T08:31:45.977Z",
+      "source": "openlibrary",
+      "isbn10": "8807700794",
+      "publisher": "Feltrinelli",
+      "publishDate": "1996",
+      "publishYear": 1996,
+      "pageCount": 429,
+      "language": "ita",
+      "subjects": [
+        "Computer software industry",
+        "Employees",
+        "Fiction",
+        "Microsoft Corporation",
+        "Young adults",
+        "Computer programmers",
+        "Humorous stories",
+        "Computer industry",
+        "Romans",
+        "Romans, nouvelles"
+      ],
+      "synopsis": "Microserfs is an epistolary novel by Douglas Coupland. It first appeared in short story form as the cover article for the January 1994 issue of Wired magazine and was subsequently expanded to full novel length. Set in the early 1990s, it captures the state of the technology industry before Windows 95, and anticipates the dot-com bubble of the late 1990s.\r\nThe novel is presented in the form of diary entries maintained on a PowerBook by the narrator, Daniel. Because of this, as well as its formatting and usage of emoticons, this novel is similar to what emerged a decade later as the blog format.",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:08:39.470Z"
+    },
+    {
+      "id": "f9919845-6baa-4a80-bd93-f0b13cec31de",
+      "isbn13": "9788850202225",
+      "title": "Nutrire il cervello",
+      "authors": [
+        "Eva Campo"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T08:31:57.126Z",
+      "source": "googlebooks",
+      "isbn10": "8850202229",
+      "publishDate": "2002",
+      "publishYear": 2002,
+      "pageCount": 116,
+      "language": "it",
+      "subjects": [
+        "Health & Fitness"
+      ],
+      "coverUrl": "/book-covers/9788850202225.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:06:41.706Z"
+    },
+    {
+      "id": "3dbd225e-322b-4856-82d5-6349910e840c",
+      "isbn13": "9788807815829",
+      "title": "Avventure in Africa (Italian Edition)",
+      "authors": [
+        "Gianni Celati"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:32:05.367Z",
+      "source": "openlibrary",
+      "isbn10": "8807815826",
+      "publisher": "Feltrinelli Traveller",
+      "publishDate": "2000-07-14",
+      "publishYear": 2000,
+      "subjects": []
+    },
+    {
+      "id": "a2922249-ffab-4761-93c2-16a755c11bd1",
+      "isbn13": "9788897458487",
+      "title": "Credevo d'aver piantato un baobab",
+      "authors": [
+        "Alessandro Chelo"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:32:16.811Z",
+      "source": "googlebooks",
+      "isbn10": "8897458483",
+      "publishDate": "2020",
+      "publishYear": 2020,
+      "pageCount": 0,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788897458487.webp"
+    },
+    {
+      "id": "7b62f39e-8d6c-4c93-b33d-c4286427d489",
+      "isbn13": "9788807811074",
+      "title": "Il giudice e il suo boia",
+      "authors": [
+        "F Durrenmatt"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:32:30.617Z",
+      "source": "openlibrary",
+      "isbn10": "8807811073",
+      "publisher": "Feltrinelli",
+      "publishDate": "2012",
+      "publishYear": 2012,
+      "language": "ita",
+      "subjects": [
+        "German language",
+        "Readers",
+        "German language materials",
+        "Police",
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788807811074.webp"
+    },
+    {
+      "id": "b9311642-689b-47af-8953-9bdb4989f13b",
+      "isbn13": "9788807809873",
+      "title": "La danza immobile",
+      "authors": [
+        "Manuel Scorza"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:33:53.462Z",
+      "source": "googlebooks",
+      "isbn10": "8807809877",
+      "publisher": "Feltrinelli Editore",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "pageCount": 230,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788807809873.webp"
+    },
+    {
+      "id": "31c97cc3-a2be-43c2-8af4-ba76defa6c36",
+      "isbn13": "9788838941948",
+      "title": "Alabama",
+      "authors": [
+        "Alessandro Barbero"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:34:00.935Z",
+      "source": "openlibrary",
+      "publisher": "Sellerio editore",
+      "publishDate": "2021",
+      "publishYear": 2021,
+      "pageCount": 262,
+      "language": "ita",
+      "subjects": [
+        "Fiction",
+        "History"
+      ]
+    },
+    {
+      "id": "8edc4cc2-76c5-4132-a44d-ab13bc411163",
+      "isbn13": "9788843301423",
+      "title": "Montale, Ungaretti, Quasimodo, Saba",
+      "authors": [
+        "Alfredo Menetti"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:34:09.382Z",
+      "source": "googlebooks",
+      "isbn10": "884330142X",
+      "publishDate": "2003",
+      "publishYear": 2003,
+      "pageCount": 208,
+      "language": "it",
+      "subjects": [
+        "Juvenile Nonfiction"
+      ],
+      "coverUrl": "/book-covers/9788843301423.webp"
+    },
+    {
+      "id": "d87071e7-eec7-421f-8aae-362ff3c3ebb9",
+      "isbn13": "9788843301430",
+      "title": "Verga, Pirandello, Svevo",
+      "authors": [
+        "A. Menetti"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:34:21.387Z",
+      "source": "openlibrary",
+      "isbn10": "8843301438",
+      "publisher": "Bignami",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "pageCount": 303,
+      "language": "ita",
+      "subjects": [],
+      "coverUrl": "/book-covers/9788843301430.webp"
+    },
+    {
+      "id": "55472b8d-afd5-4581-bc61-4d7fce26b8f6",
+      "isbn13": "9788872264867",
+      "title": "Un oceano di mezzo",
+      "authors": [],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:34:32.263Z",
+      "source": "googlebooks",
+      "isbn10": "8872264863",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 192,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ]
+    },
+    {
+      "id": "73fbfa4a-6df5-4a91-8364-a426bb934e3e",
+      "isbn13": "9788804370857",
+      "title": "Il Barone Rampante",
+      "authors": [
+        "Italo Calvino"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T08:35:35.761Z",
+      "source": "openlibrary",
+      "isbn10": "8804370858",
+      "publisher": "Oscar Italian",
+      "publishDate": "1995",
+      "publishYear": 1995,
+      "pageCount": 263,
+      "language": "it",
+      "subjects": [
+        "History",
+        "Fiction",
+        "Continental european fiction (fictional works by one author)",
+        "Historical fiction",
+        "Italian language",
+        "Readers",
+        "Adel",
+        "Baum",
+        "Entscheidung",
+        "Familie"
+      ],
+      "synopsis": "Il romanzo racconta le vicende di Cosimo di Rondò, vissuto nella seconda metà del XVIII secolo in piccolo paese della Liguria. Cosimo, per sfuggire ad un punizione, decide di salire su un albero e non scenderne mai più: si costruisce un mondo aereo dove diversi personaggi della cultura e della politica (Napoleone compreso) lo vanno a trovare, testimoniandogli la loro ammirazione. Vive anche una tormentata storia d'amore con la volubile Viola. Cosimo muore vecchio, senza mai discendere in terra: ammalato, in punto di morte, si aggrappa alla fune di una mongolfiera e scompare mentre attraversa, così appeso, il mare.",
+      "coverUrl": "/book-covers/9788804370857.webp"
+    },
+    {
+      "id": "5cece7e7-df37-4326-9241-2d6623c9bf01",
+      "isbn13": "9788871981246",
+      "title": "Il pasto nudo",
+      "authors": [],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:34:20.526Z",
+      "source": "openlibrary",
+      "isbn10": "8871981243",
+      "publisher": "sugar Co edizioni",
+      "publishDate": "1994",
+      "publishYear": 1994,
+      "language": "ita",
+      "subjects": [],
+      "coverUrl": "/book-covers/9788871981246.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:08:53.393Z"
+    },
+    {
+      "id": "03d2a527-6388-4e08-b5fc-8b740d9b86a7",
+      "isbn13": "9788885838505",
+      "title": "Avete 30 secondi",
+      "authors": [
+        "Barry Day"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:34:46.234Z",
+      "source": "googlebooks",
+      "isbn10": "8885838502",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 230,
+      "language": "it",
+      "subjects": [
+        "Business & Economics"
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:12:11.738Z"
+    },
+    {
+      "id": "d847115d-7d80-4596-b8f4-6f24aadcb9b7",
+      "isbn13": "9788884839831",
+      "title": "Non ero il solo",
+      "authors": [
+        "Fabrizio Marchi"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:38:02.276Z",
+      "source": "openlibrary",
+      "publisher": "Mimesis",
+      "publishDate": "2009",
+      "publishYear": 2009,
+      "pageCount": 140,
+      "language": "ita",
+      "subjects": []
+    },
+    {
+      "id": "068302a0-41fb-4f50-aae4-d0061ff1e659",
+      "isbn13": "9788876481017",
+      "title": "La Città senza luoghi",
+      "authors": [],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:38:30.773Z",
+      "source": "openlibrary",
+      "isbn10": "887648101X",
+      "publisher": "Costa & Nolan",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 201,
+      "language": "ita",
+      "subjects": [
+        "Urban Sociology",
+        "Metropolitan areas",
+        "City and town life",
+        "Urban economics"
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:12:27.506Z"
+    },
+    {
+      "id": "deeb3ed1-dfc1-4486-958b-2a7be8825f97",
+      "isbn13": "9788838446979",
+      "title": "Storia di Ani-la",
+      "authors": [
+        "Ani Pachen",
+        "Adelaide Donnelley"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:39:06.294Z",
+      "source": "googlebooks",
+      "isbn10": "8838446970",
+      "publishDate": "2000",
+      "publishYear": 2000,
+      "pageCount": 312,
+      "language": "it",
+      "subjects": [
+        "Biography & Autobiography"
+      ],
+      "coverUrl": "/book-covers/9788838446979.webp"
+    },
+    {
+      "id": "b661c396-7951-4898-a7d1-27c73ef1abf9",
+      "isbn13": "9788820312893",
+      "title": "Fotoricettario",
+      "authors": [
+        "Oscar Fedele Ghedina"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:47:56.955Z",
+      "source": "googlebooks",
+      "isbn10": "8820312891",
+      "publishDate": "1982",
+      "publishYear": 1982,
+      "pageCount": 640,
+      "language": "it",
+      "subjects": [
+        "Photography"
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:06:30.424Z"
+    },
+    {
+      "id": "27df0d4c-85ff-46da-9743-826ad82a8910",
+      "isbn13": "9788885772366",
+      "title": "Nessuna regola. 40 anni di skateboard in Italia",
+      "authors": [
+        "Lele Lutteri"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:26.088Z",
+      "source": "googlebooks",
+      "isbn10": "8885772366",
+      "publishDate": "2023",
+      "publishYear": 2023,
+      "pageCount": 0,
+      "language": "it",
+      "subjects": [
+        "Sports & Recreation"
+      ],
+      "coverUrl": "/book-covers/9788885772366.webp",
+      "rating": 1,
+      "dateRead": "2026-05-17T14:12:38.909Z"
+    },
+    {
+      "id": "f6e92591-355b-4e73-8ec1-1e8cea7c71e7",
+      "isbn13": "9781841880716",
+      "title": "Loft living",
+      "authors": [
+        "Peggy Vance"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.907Z",
+      "source": "openlibrary",
+      "isbn10": "184188071X",
+      "publisher": "Seven Dials",
+      "publishDate": "2000",
+      "publishYear": 2000,
+      "pageCount": 160,
+      "language": "eng",
+      "subjects": [
+        "Remodeling for other use",
+        "Attics",
+        "Lofts",
+        "Greniers (Etages)",
+        "Design, decorative",
+        "Interior decoration",
+        "Designs and plans",
+        "Decoration"
+      ],
+      "coverUrl": "/book-covers/9781841880716.webp"
+    },
+    {
+      "id": "36477e33-036a-4b6d-a888-ed0e2dcb8315",
+      "isbn13": "9780155008366",
+      "title": "Sociology",
+      "authors": [
+        "William Kornblum"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.908Z",
+      "source": "openlibrary",
+      "isbn10": "0155008366",
+      "publisher": "Harcourt Brace College Publishers",
+      "publishDate": "1998",
+      "publishYear": 1998,
+      "pageCount": 455,
+      "language": "eng",
+      "subjects": [
+        "Sociology",
+        "Sociologie",
+        "Problèmes et exercices"
+      ],
+      "coverUrl": "/book-covers/9780155008366.webp",
+      "rating": 4
+    },
+    {
+      "id": "29fd6764-173c-4179-a614-0b5cb4dd227d",
+      "isbn13": "9784805307212",
+      "title": "Chaina modan = China modern",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.908Z",
+      "source": "openlibrary",
+      "isbn10": "4805307218",
+      "subjects": []
+    },
+    {
+      "id": "a7bc41fe-2cd3-4a9a-9c48-3dbcd82256e7",
+      "isbn13": "9780867193770",
+      "title": "Visual Addiction",
+      "authors": [
+        "Robert Williams",
+        "Lydia Lynch"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.908Z",
+      "source": "openlibrary",
+      "isbn10": "0867193778",
+      "publisher": "Last Gasp",
+      "publishDate": "October 1992",
+      "publishYear": 1992,
+      "pageCount": 94,
+      "language": "eng",
+      "subjects": [
+        "Painting",
+        "Comic book & cartoon art",
+        "Individual artists",
+        "Painting & paintings",
+        "Individual Artist",
+        "Art & Art Instruction",
+        "Art",
+        "Techniques - Drawing",
+        "Drawing"
+      ],
+      "coverUrl": "/book-covers/9780867193770.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:12:02.069Z"
+    },
+    {
+      "id": "cac387c0-e917-4f61-a6e8-8d4a413e708f",
+      "isbn13": "9780864425836",
+      "title": "Lonely Planet Hong Kong (City Guides Series)",
+      "authors": [
+        "Damian Harper"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.909Z",
+      "source": "openlibrary",
+      "isbn10": "086442583X",
+      "publisher": "Lonely Planet Publications",
+      "publishDate": "August 1998",
+      "publishYear": 1998,
+      "pageCount": 224,
+      "language": "eng",
+      "subjects": [
+        "Guidebooks"
+      ],
+      "coverUrl": "/book-covers/9780864425836.webp"
+    },
+    {
+      "id": "c56952ae-a224-4598-a73f-03fec4ac2203",
+      "isbn13": "9780140256338",
+      "title": "Child of All Nations (Buru Quartet)",
+      "authors": [
+        "Pramoedya Ananta Toer"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.909Z",
+      "source": "openlibrary",
+      "isbn10": "0140256334",
+      "publisher": "Penguin (Non-Classics)",
+      "publishDate": "May 1, 1996",
+      "publishYear": 1996,
+      "pageCount": 352,
+      "language": "eng",
+      "subjects": [
+        "Fiction, general",
+        "History",
+        "Fiction",
+        "Indonesia, fiction",
+        "Anti-imperialist movements"
+      ],
+      "coverUrl": "/book-covers/9780140256338.webp"
+    },
+    {
+      "id": "3e3287b1-dce8-4e37-adeb-f1fb81a17977",
+      "isbn13": "9780465097197",
+      "title": "Interpretation of Cultures",
+      "authors": [
+        "Clifford Geertz"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.909Z",
+      "source": "openlibrary",
+      "isbn10": "0465097197",
+      "publisher": "Basic Books",
+      "publishYear": 2000,
+      "pageCount": 480,
+      "language": "eng",
+      "coverUrl": "/book-covers/9780465097197.webp",
+      "rating": 5,
+      "dateRead": "2026-02-26T00:54:36.169Z"
+    },
+    {
+      "id": "b2ba55c1-c6ef-425c-b504-798ade735f72",
+      "isbn13": "9788807900822",
+      "title": "Discorso della servitù volontaria",
+      "authors": [
+        "Etienne de La Boëtie",
+        "E. Donaggio"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.910Z",
+      "source": "openlibrary",
+      "isbn10": "8807900823",
+      "publisher": "Feltrinelli",
+      "publishYear": 2014,
+      "pageCount": 128,
+      "language": "it",
+      "synopsis": "The **Discourse on Voluntary Servitude** (French: *Discours de la servitude volontaire*) is a work attributed to Étienne de La Boétie by Montaigne. The text was published clandestinely in 1577.\r\n\r\nThe date of preparation of the *Discourse on Voluntary Servitude* is uncertain: according to recent studies it was composed by Étienne de La Boétie during his university education. According to his closest friend Michel de Montaigne, the speech was written when La Boétie was about 18 years old.\r\n\r\n(Source: [Wikipedia](https://en.wikipedia.org/wiki/Discourse_on_Voluntary_Servitude))",
+      "coverUrl": "/book-covers/9788807900822.webp",
+      "rating": 4
+    },
+    {
+      "id": "da67b34a-429e-4c5a-91a1-d3acb3b8f503",
+      "isbn13": "9789881806659",
+      "title": "Bumbling through Borneo",
+      "authors": [
+        "Tom Schmidt"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.911Z",
+      "source": "openlibrary",
+      "isbn10": "9881806658",
+      "publisher": "Kakibubu Media Limited",
+      "publishYear": 2009,
+      "pageCount": 111,
+      "language": "eng",
+      "rating": 5,
+      "dateRead": "2026-02-26T00:54:16.498Z"
+    },
+    {
+      "id": "37299cc9-2435-49cd-ade6-c103a388ad67",
+      "isbn13": "9780099908401",
+      "title": "The Old Man and the Sea",
+      "authors": [
+        "Ernest Hemingway"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.911Z",
+      "source": "openlibrary",
+      "isbn10": "0099908409",
+      "publisher": "Arrow Books",
+      "publishYear": 1993,
+      "pageCount": 112,
+      "language": "eng",
+      "coverUrl": "/book-covers/9780099908401.webp",
+      "rating": 5,
+      "dateRead": "2026-02-26T00:54:10.534Z"
+    },
+    {
+      "id": "158d0e4e-ab9c-46a7-825d-4ddf25b73f24",
+      "isbn13": "9781905379422",
+      "title": "Farang",
+      "authors": [
+        "Iain Corness"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.912Z",
+      "source": "openlibrary",
+      "publisher": "Maverick House",
+      "publishYear": 2007,
+      "pageCount": 306,
+      "language": "eng",
+      "coverUrl": "/book-covers/9781905379422.webp",
+      "rating": 3,
+      "dateRead": "2026-02-26T00:54:05.686Z"
+    },
+    {
+      "id": "6d3b8906-374d-41a5-aa6e-2064564e634b",
+      "isbn13": "9781581154979",
+      "title": "ASMP professional business practices in photography",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.912Z",
+      "source": "openlibrary",
+      "isbn10": "1581154976",
+      "publisher": "Allworth Pres",
+      "publishYear": 2008,
+      "pageCount": 480,
+      "language": "eng",
+      "coverUrl": "/book-covers/9781581154979.webp",
+      "rating": 4,
+      "dateRead": "2026-02-26T00:55:03.702Z"
+    },
+    {
+      "id": "07532208-95ca-4680-82aa-ad96f1046f36",
+      "isbn13": "9780816025183",
+      "title": "Survival",
+      "authors": [
+        "Xavier Maniguet"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.913Z",
+      "source": "openlibrary",
+      "isbn10": "0816025185",
+      "publisher": "Facts on File",
+      "publishYear": 1994,
+      "pageCount": 454,
+      "language": "eng",
+      "coverUrl": "/book-covers/9780816025183.webp",
+      "rating": 4
+    },
+    {
+      "id": "449acf0f-20f8-481c-ad93-48986dc4c720",
+      "isbn13": "9780850319927",
+      "title": "Post Office",
+      "authors": [
+        "Charles Bukowski"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.913Z",
+      "source": "googlebooks",
+      "isbn10": "0850319927",
+      "publishYear": 1988,
+      "pageCount": 160,
+      "language": "en",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:11:55.774Z"
+    },
+    {
+      "id": "38757307-8c57-4c19-88f6-a103c0a4b827",
+      "isbn13": "9780141024530",
+      "title": "The shock doctrine",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.914Z",
+      "source": "openlibrary",
+      "publisher": "Penguin",
+      "publishYear": 2008,
+      "pageCount": 576,
+      "language": "eng",
+      "coverUrl": "/book-covers/9780141024530.webp",
+      "rating": 4,
+      "dateRead": "2026-02-26T15:06:46.695Z"
+    },
+    {
+      "id": "dfe110cb-6221-47bb-9909-5a50e85401db",
+      "isbn13": "9780207188183",
+      "title": "Us mob",
+      "authors": [
+        "Mudrooroo"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.914Z",
+      "source": "openlibrary",
+      "isbn10": "0207188181",
+      "publisher": "Angus & Robertson",
+      "publishYear": 1995,
+      "pageCount": 242,
+      "language": "eng",
+      "coverUrl": "/book-covers/9780207188183.webp"
+    },
+    {
+      "id": "77065694-6de2-47d0-a846-6cf5fcc38f97",
+      "isbn13": "9780868405469",
+      "title": "Contemporary Melbourne architecture",
+      "authors": [
+        "Joe Rollo"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.915Z",
+      "source": "openlibrary",
+      "isbn10": "0868405469",
+      "publisher": "UNSW Press",
+      "publishYear": 1999,
+      "pageCount": 192,
+      "language": "eng",
+      "coverUrl": "/book-covers/9780868405469.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:06:14.204Z"
+    },
+    {
+      "id": "db3da98b-0c2f-460d-b53a-9c64acc7a182",
+      "isbn13": "9780006547136",
+      "title": "Fuzzy thinking",
+      "authors": [
+        "Bart Kosko"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.915Z",
+      "source": "openlibrary",
+      "isbn10": "0006547133",
+      "publisher": "Flamingo",
+      "publishDate": "1994",
+      "publishYear": 1994,
+      "pageCount": 318,
+      "language": "eng",
+      "subjects": [
+        "Fuzzy logic",
+        "Fuzzy systems",
+        "Logic",
+        "Philosophy",
+        "Philosophy and science",
+        "Fuzzy theorie",
+        "Logica",
+        "Systèmes flous",
+        "Logique floue",
+        "Philosophie et sciences"
+      ],
+      "synopsis": "Fuzzy Thinking is the first popular book to explain clearly and provocatively how fuzzy logic is changing our lives - and how it will revolutionize the world in the decades ahead. Fuzzy thinking is the wave of the future, and the leading exponent of fuzzy logic, philosopher-scientist Dr. Bart Kosko, explains it better than anyone else can. Invented in America, fuzzy logic has broad implications for the way we think. What is the fuzzy principle? Everything is a matter of degree - nothing is absolute. In this mind-bending book, Kosko argues that for centuries the West has been locked into the concept of black or white, right or wrong, all or nothing. Consequently Western scientists have largely resisted fuzzy logic. Eastern philosophy, however, emphasizes yin and yang, unity, and the need to consider the universe from several different perspectives at once - so Asia has been more open than the West to concepts such as fuzzy logic.^\n\nKosko suggests that in order to compete we in the West will have to open ourselves to new ways of thinking - fuzzy ways of thinking. Fuzzy logic mimics the working of the human brain and is used in machines so they will think more like human beings. Japanese and Korean companies already apply fuzzy technology to the tune of billions of dollars a year in such products as air conditioners (instead of producing an all-or-nothing blast of cold air, fuzzy air conditioners constantly adjust to the precise temperature in the room and emit a corresponding degree of cooling air); computers; cameras and camcorders; auto engines, brakes, transmissions, and cruise controls; dishwashers; elevators; washing machines and dryers; microwave ovens; and televisions. Fuzzy logic is used in palmtop computers that recognize and translate handwritten characters. On tap are \"smarter\" computers and such medical advances as smart artificial body parts. Fuzzy logic even applies to ethical questions.^\n\nFor example, when does life begin? At fertilization? When the fetus is six months old? At the time of birth? Fuzzy thinking says that life begins at all of these times - to a certain degree. It is the challenge of juggling apparently conflicting concepts, several seemingly different truths, that makes fuzzy logic so controversial - and so potentially rewarding in all areas of life from the bedroom to the boardroom. The first antiscience science book, Fuzzy Thinking is a truly important book that can forever change the way you look at the world.",
+      "coverUrl": "/book-covers/9780006547136.webp",
+      "rating": 4
+    },
+    {
+      "id": "398e7233-56ba-449b-b2f2-41bacaab47cd",
+      "isbn13": "9781887521482",
+      "title": "Thailand Fever",
+      "authors": [
+        "Chris Pirazzi",
+        "Vitida Vasant"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.916Z",
+      "source": "openlibrary",
+      "isbn10": "1887521488",
+      "publisher": "Paiboon Publishing",
+      "publishDate": "November 2004",
+      "publishYear": 2004,
+      "pageCount": 258,
+      "language": "eng",
+      "subjects": [
+        "Interracial dating",
+        "Man-woman relationships",
+        "Dating (Social customs)"
+      ],
+      "coverUrl": "/book-covers/9781887521482.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:11:49.355Z"
+    },
+    {
+      "id": "6729e536-0671-4d34-8a0d-5be1a5ea39b9",
+      "isbn13": "9781905379439",
+      "title": "Miss Bangkok Memoirs Of A Thai Prostitute",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.916Z",
+      "source": "openlibrary",
+      "publisher": "Maverick House",
+      "publishDate": "2007",
+      "publishYear": 2007,
+      "pageCount": 243,
+      "language": "en",
+      "subjects": [
+        "Biography",
+        "Sex-oriented businesses",
+        "Prostitutes",
+        "Prostitution, asia",
+        "Sex-oriented business",
+        "Thailand, biography"
+      ],
+      "coverUrl": "/book-covers/9781905379439.webp"
+    },
+    {
+      "id": "db863531-8c45-46be-b851-5d7b2e486214",
+      "isbn13": "9781741797053",
+      "title": "Hong Kong",
+      "authors": [
+        "Piera Chen"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.916Z",
+      "source": "openlibrary",
+      "publisher": "Lonely Planet Publications",
+      "publishDate": "2011",
+      "publishYear": 2011,
+      "language": "eng",
+      "subjects": [
+        "Guidebooks",
+        "Hong kong (china), description and travel"
+      ]
+    },
+    {
+      "id": "e71ff72a-d200-430e-be7a-4ce652794e50",
+      "isbn13": "9781741792256",
+      "title": "Hong Kong & Macau",
+      "authors": [
+        "Andrew Stone"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.919Z",
+      "source": "openlibrary",
+      "isbn10": "1741792258",
+      "publisher": "Lonely Planet",
+      "publishDate": "2010",
+      "publishYear": 2010,
+      "pageCount": 388,
+      "language": "eng",
+      "subjects": [
+        "Guidebooks"
+      ],
+      "coverUrl": "/book-covers/9781741792256.webp"
+    },
+    {
+      "id": "a11d2550-0beb-4690-9568-eef8ba9abbe9",
+      "isbn13": "9780864422880",
+      "title": "Lonely Planet Africa (Lonely Planet Africa on a Shoestring)",
+      "authors": [
+        "Geoff Crowther",
+        "Hugh Finlay",
+        "Geert Cole"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.920Z",
+      "source": "openlibrary",
+      "isbn10": "0864422881",
+      "publisher": "Lonely Planet",
+      "publishDate": "April 1995",
+      "publishYear": 1995,
+      "pageCount": 1024,
+      "language": "eng",
+      "subjects": [],
+      "coverUrl": "/book-covers/9780864422880.webp"
+    },
+    {
+      "id": "1e733214-291e-4c9c-9793-2be06bcbd6c3",
+      "isbn13": "9781566910736",
+      "title": "Moon Handbooks",
+      "authors": [
+        "Bill Dalton"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.920Z",
+      "source": "openlibrary",
+      "isbn10": "1566910730",
+      "publisher": "Avalon Travel Publishing",
+      "publishDate": "June 1997",
+      "publishYear": 1997,
+      "pageCount": 735,
+      "language": "eng",
+      "subjects": [],
+      "coverUrl": "/book-covers/9781566910736.webp"
+    },
+    {
+      "id": "c255196d-5191-4f6b-9efa-94aaaa2edabd",
+      "isbn13": "9780864426062",
+      "title": "Lonely Planet Bali & Lombok (7th ed)",
+      "authors": [
+        "Paul Greenway",
+        "James Lyon",
+        "Tony Wheeler"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.921Z",
+      "source": "openlibrary",
+      "isbn10": "0864426062",
+      "publisher": "Lonely Planet",
+      "publishDate": "February 1999",
+      "publishYear": 1999,
+      "pageCount": 432,
+      "language": "eng",
+      "subjects": [
+        "Guidebooks",
+        "Travel & holiday guides",
+        "Australia/Oceania - South Pacific",
+        "Travel - Foreign",
+        "Travel",
+        "ASIA",
+        "Bali",
+        "Asia - Southeast"
+      ],
+      "coverUrl": "/book-covers/9780864426062.webp"
+    },
+    {
+      "id": "cb99ae7e-6d86-4c7d-8c90-8c2a6e89b3e5",
+      "isbn13": "9780864425140",
+      "title": "Lonely Planet Venezuela",
+      "authors": [
+        "Krzysztof Dydynski"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.921Z",
+      "source": "openlibrary",
+      "isbn10": "0864425147",
+      "publisher": "Lonely Planet Publications",
+      "publishDate": "May 1998",
+      "publishYear": 1998,
+      "pageCount": 400,
+      "language": "eng",
+      "subjects": [
+        "Guidebooks",
+        "Venezuela, description and travel",
+        "Travel and tourism",
+        "Reference"
+      ],
+      "coverUrl": "/book-covers/9780864425140.webp"
+    },
+    {
+      "id": "c716b215-b8fe-4dc7-88fd-43b925f715b4",
+      "isbn13": "9780864424181",
+      "title": "Lonely Planet Central America on a Shoestring",
+      "authors": [
+        "Tom Brosnahan",
+        "Barbara Reioux",
+        "Carolyn Hubbard"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.921Z",
+      "source": "openlibrary",
+      "isbn10": "0864424183",
+      "publisher": "Lonely Planet",
+      "publishDate": "September 1997",
+      "publishYear": 1997,
+      "pageCount": 832,
+      "language": "eng",
+      "subjects": [
+        "Guidebooks"
+      ],
+      "coverUrl": "/book-covers/9780864424181.webp"
+    },
+    {
+      "id": "a0ca0763-67c6-4992-aab6-33ad2866cc3c",
+      "isbn13": "9780864424228",
+      "title": "Lonely Planet Eastern Caribbean (2nd ed)",
+      "authors": [
+        "Glenda Bendure",
+        "Ned Friary"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.922Z",
+      "source": "openlibrary",
+      "isbn10": "0864424221",
+      "publisher": "Lonely Planet Publications",
+      "publishDate": "November 1998",
+      "publishYear": 1998,
+      "pageCount": 560,
+      "language": "eng",
+      "subjects": [
+        "Travel & holiday guides"
+      ],
+      "coverUrl": "/book-covers/9780864424228.webp"
+    },
+    {
+      "id": "7873b961-cdc6-4007-a229-4d64067691a0",
+      "isbn13": "9780844249476",
+      "title": "Venezuela Handbook (Venezuela Handbook 1998)",
+      "authors": [
+        "Ben Box"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.922Z",
+      "source": "openlibrary",
+      "isbn10": "0844249475",
+      "publisher": "Ntc Pub Group",
+      "publishDate": "May 1998",
+      "publishYear": 1998,
+      "pageCount": 384,
+      "language": "eng",
+      "subjects": [
+        "Guidebooks",
+        "Descripción y viajes"
+      ],
+      "coverUrl": "/book-covers/9780844249476.webp"
+    },
+    {
+      "id": "413ea4ac-6717-4b09-9a3d-5c45f93bafff",
+      "isbn13": "9780690000115",
+      "title": "Roget's International Thesaurus (Harper Colophon Books)",
+      "authors": [
+        "Peter Mark Roget",
+        "Peter M. Chapman"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.924Z",
+      "source": "openlibrary",
+      "isbn10": "0690000111",
+      "publisher": "HarperCollins Publishers",
+      "publishDate": "September 1977",
+      "publishYear": 1977,
+      "pageCount": 1316,
+      "language": "eng",
+      "subjects": [
+        "English language",
+        "Synonyms and antonyms",
+        "Dictionaries - Synonyms/Antonyms",
+        "Reference",
+        "English language, synonyms and antonyms",
+        "Dictionaries as Topic",
+        "Dictionaries",
+        "Language",
+        "English",
+        "Vocabulary"
+      ],
+      "synopsis": "An updated, expanded edition of the thesaursus includes more than a auarter of a million words, arranged according to their meanings.",
+      "coverUrl": "/book-covers/9780690000115.webp",
+      "rating": 4
+    },
+    {
+      "id": "e732d165-dae8-42a7-88be-ba1128313a57",
+      "isbn13": "9780002151627",
+      "title": "A Day in the life of California",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.924Z",
+      "source": "openlibrary",
+      "isbn10": "0002151626",
+      "publisher": "Collins Publishers",
+      "publishDate": "1988",
+      "publishYear": 1988,
+      "pageCount": 236,
+      "language": "eng",
+      "subjects": [
+        "Social life and customs",
+        "Manners and customs",
+        "Pictorial works",
+        "Vida social y costumbres",
+        "General",
+        "United States - State & Local",
+        "Photography",
+        "Large type books",
+        "Photography, artistic",
+        "California, description and travel"
+      ],
+      "coverUrl": "/book-covers/9780002151627.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:09:36.083Z"
+    },
+    {
+      "id": "fc1e2fd1-d6c1-47ea-b488-dd3b36eea023",
+      "isbn13": "9781894020541",
+      "title": "The Concrete Wave",
+      "authors": [
+        "Michael Brooke"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.924Z",
+      "source": "openlibrary",
+      "isbn10": "1894020545",
+      "publisher": "Warwick House Publishing",
+      "publishDate": "April 1999",
+      "publishYear": 1999,
+      "pageCount": 200,
+      "language": "eng",
+      "subjects": [
+        "Skateboarding",
+        "Skateboarders",
+        "Fiction, general"
+      ],
+      "synopsis": "Traces the development of the sport and its equipment, and includes profiles and photographs of top-notch skaters through the years.",
+      "coverUrl": "/book-covers/9781894020541.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:09:48.729Z"
+    },
+    {
+      "id": "6f85385a-be3c-4a28-a95d-754d276030c3",
+      "isbn13": "9780751504835",
+      "title": "Something under the bed is drooling",
+      "authors": [
+        "Bill Watterson"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.924Z",
+      "source": "openlibrary",
+      "isbn10": "0751504831",
+      "publisher": "Warner",
+      "publishDate": "1992",
+      "publishYear": 1992,
+      "pageCount": 127,
+      "language": "eng",
+      "subjects": [
+        "Drooling",
+        "Comic books, strips",
+        "Humor, form, comic strips & cartoons",
+        "Comic strip",
+        "Humor",
+        "Children's literature",
+        "Fantasy",
+        "Monsters",
+        "Fear",
+        "Imagination"
+      ],
+      "synopsis": "\"Be good to yourself: Buy a copy of this Calvin and Hobbes cartoon book. If you don't laugh out loud at every third strip, check your pulse. You may be dead.\" —Phil Musick, Pittsburgh Press\r\n\r\nCalvin is a rambunctious six-year-old whose manic antics threaten world peace. Hobbes is his stuffed tiger who comes alive when adults aren\"t around. The saga of their daily exploits won cartoonist Bill Watterson the coveted Reuben Award for \"Outstanding Cartoonist of the Year.\" Something Under the Bed Is Drooling is a jewel.",
+      "coverUrl": "/book-covers/9780751504835.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:06:04.918Z"
+    },
+    {
+      "id": "649861df-17ae-4099-a456-f8f08456946e",
+      "isbn13": "9780451530400",
+      "title": "Tao Te Ching (Signet Classics)",
+      "authors": [
+        "老子"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.925Z",
+      "source": "openlibrary",
+      "isbn10": "0451530403",
+      "publisher": "Signet Classics",
+      "publishDate": "January 2, 2007",
+      "publishYear": 2007,
+      "pageCount": 170,
+      "language": "eng",
+      "subjects": [
+        "Chinese Philosophy",
+        "Chinese language materials",
+        "Peace",
+        "Tao",
+        "Taoism",
+        "Ouvrages avant 1800",
+        "Taoïsme",
+        "Religion",
+        "Asian Philosophy",
+        "Philosophy"
+      ],
+      "synopsis": "\"Within ancient Chinese, a sole character possesses a broad, and sometimes contradictory, range of meanings. Moreover, the Tao Te Ching is rife with terms and expressions that have no exact counterpart in English. So while the Tao Te Ching ranks behind only the Bible as the most widely translated book in the world, it remains one of the least understood.\".\r\n\r\n\"Jonathan Star's Tao Te Ching: The Definitive Edition helps remedy this situation. The distinction of this new edition is that it supplies readers with the first comprehensive verbatim translation, which can be used to explore the multiple meanings contained in the Chinese characters. This unique tool gives readers direct access to the text and a way to understand the different interpretations put forth by modern-day translators.\r\n\r\nPerhaps most important, the verbatim translation gives each reader the ability to penetrate the inner meaning of the text and come up with his or her own personal interpretation.\"--BOOK JACKET.",
+      "coverUrl": "/book-covers/9780451530400.webp",
+      "rating": 5
+    },
+    {
+      "id": "4739f357-d672-4afa-8b3e-380016c7af25",
+      "isbn13": "9780060969288",
+      "title": "Mondo 2000",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.926Z",
+      "source": "openlibrary",
+      "isbn10": "0060969288",
+      "publisher": "HarperPerennial",
+      "publishDate": "1992",
+      "publishYear": 1992,
+      "pageCount": 317,
+      "language": "eng",
+      "subjects": [
+        "Industrial Design",
+        "New Age movement",
+        "Periodicals",
+        "Popular culture"
+      ],
+      "synopsis": "Mondo 2000 will introduce you to your tomorrow - and show you how to buy it today! From the creators of America's most exciting new magazine, Mondo 2000 will help you surf the bleeding edge of the coming revolution in art, technology, media, chemistry, science, and music - the New World Disorder. Rope the Internet worm with digital outlaws...Boost your brain and body with amino chemistry... eat the quantum sandwich of nanotechnology... and immerse yourself in high-tech paganism, teledildonics, homebrew multimedia pranking, cyberpunk jockeying, and pleasure-pulse implants. With contributions from the experts - such as William Gibson, Brian Eno, William Burroughs, Bruce Sterling, Timothy Leary, Diamanda Galas, and Frank Zappa - and including more than 300 illustrations, Mondo 2000 will explain everything you need to know about the future, and how you can see, hear, and buy much of it today. -- from back cover.",
+      "coverUrl": "/book-covers/9780060969288.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:10:09.954Z"
+    },
+    {
+      "id": "f7c784ff-f8e8-46dd-87e7-380127529503",
+      "isbn13": "9788880300823",
+      "title": "Shunga",
+      "authors": [
+        "Marco Fagioli"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.926Z",
+      "source": "openlibrary",
+      "isbn10": "8880300822",
+      "publisher": "Octavo",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 174,
+      "language": "ita",
+      "subjects": [
+        "Catalogs",
+        "Color prints",
+        "Erotic prints",
+        "Japanese",
+        "Japanese Color prints",
+        "Japanese Erotic prints",
+        "Ukiyoe",
+        "Erotic art",
+        "Art, japanese",
+        "Edo period"
+      ],
+      "synopsis": "\"Shunga, or \"images of spring,\" are erotic polychrome engravings produced for the pleasure-loving society of Japan. Painted by the masters of the Ukiyo-e school during the 17th, 18th, and 19th centuries, the Shunga served a number of purposes: illustrations for love novels, instructive albums for young wives, or even lucky charms for warriors.\"--BOOK JACKET.\n\n\"This book offers readers a collection of rare prints never before published, enriched by succinct, highly informative captions, as well as text introducing the various periods and defining characteristics of the genre.\"--BOOK JACKET.",
+      "coverUrl": "/book-covers/9788880300823.webp",
+      "rating": 4
+    },
+    {
+      "id": "4ec29f70-871b-4213-9388-dab4a52406fc",
+      "isbn13": "9781569711248",
+      "title": "Bettie Page",
+      "authors": [
+        "Jim Silke"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.926Z",
+      "source": "openlibrary",
+      "isbn10": "1569711240",
+      "publisher": "Dark Horse",
+      "publishDate": "November 1, 1995",
+      "publishYear": 1995,
+      "pageCount": 96,
+      "language": "eng",
+      "subjects": [
+        "Models (Persons)",
+        "Pinup art",
+        "Glamour photography",
+        "Models (Person)"
+      ],
+      "synopsis": "\"Join author/artist Jim Silke as he explores Bettie Page's influence on popular culture, from dime-store novels to paperbacks, and from painting to advertising.\"--Cover.",
+      "coverUrl": "/book-covers/9781569711248.webp",
+      "rating": 4
+    },
+    {
+      "id": "27844fa9-11ea-42fe-9028-929ebe2a3efc",
+      "isbn13": "9788880293019",
+      "title": "The red sea",
+      "authors": [
+        "Andrea Ghisotti"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.927Z",
+      "source": "openlibrary",
+      "isbn10": "888029301X",
+      "publisher": "Casa Editrice Bonechi",
+      "publishDate": "1995",
+      "publishYear": 1995,
+      "pageCount": 127,
+      "language": "eng",
+      "subjects": [
+        "Red sea",
+        "Description and travel",
+        "Pictorial works",
+        "Marine biology",
+        "Coral reef ecology",
+        "Underwater photography",
+        "Descriptions et voyages",
+        "Ouvrages illustrés",
+        "Biologie marine",
+        "Écologie des récifs coralliens"
+      ]
+    },
+    {
+      "id": "4a038548-1ff3-4c02-acb8-d31ae06f780c",
+      "isbn13": "9780821211311",
+      "title": "The negative",
+      "authors": [
+        "Ansel Adams"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.927Z",
+      "source": "openlibrary",
+      "isbn10": "0821211315",
+      "publisher": "New York Graphic Society",
+      "publishDate": "1981",
+      "publishYear": 1981,
+      "pageCount": 272,
+      "language": "eng",
+      "subjects": [
+        "Developing and developers",
+        "Negatives",
+        "Photography",
+        "Zone system (Photography)",
+        "Négatifs (Photographie)",
+        "Zone système (Photographie)",
+        "Photography, negatives",
+        "Photography--negatives",
+        "Tr145 .a38 bk.2",
+        "Tr591"
+      ],
+      "synopsis": "\"This handbook ... has taught ... how to use film and the film development process creatively ... Anchored by a detailed discussion of Adams' Zone System and his seminal concept of visualization ... Beautifully illustrated with photographs by Adams as well as instructive line drawings\"--Back cover.",
+      "coverUrl": "/book-covers/9780821211311.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:05:57.102Z"
+    },
+    {
+      "id": "12ac815d-a4f7-489b-b9f4-4104d66b91f2",
+      "isbn13": "9782800121208",
+      "title": "Le Petit Spirou - Tome 5 - \"Merci\" qui ?",
+      "authors": [
+        "Tome",
+        "Janry"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.928Z",
+      "source": "openlibrary",
+      "isbn10": "2800121203",
+      "publisher": "DUPUIS",
+      "publishDate": "Jul 13, 1994",
+      "publishYear": 1994,
+      "pageCount": 48,
+      "subjects": [
+        "Comic ab 8 Jahren",
+        "Junge",
+        "Kindheit",
+        "Erlebnisse",
+        "Freunde",
+        "Mädchen",
+        "Streiche",
+        "Unsinn",
+        "Quatsch",
+        "lustig"
+      ],
+      "synopsis": "German-language description:\r\nAlle kennen den großen Spirou und die spannenden Abenteuer, die er mit seinem Freund, dem Reporter Fantasio, erlebt. Aber wie war das, als Spirou noch ein kleiner Junge war?",
+      "coverUrl": "/book-covers/9782800121208.webp",
+      "rating": 4,
+      "dateRead": "2026-05-03T17:34:28.338Z"
+    },
+    {
+      "id": "8105f346-eb77-4c61-83d8-5d71cd0165e8",
+      "isbn13": "9780867193817",
+      "title": "Zombie Mystery Paintings",
+      "authors": [
+        "Robert Williams",
+        "Robert Crumb"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.930Z",
+      "source": "openlibrary",
+      "isbn10": "0867193816",
+      "publisher": "Last Gasp",
+      "publishDate": "January 1993",
+      "publishYear": 1993,
+      "language": "eng",
+      "subjects": [
+        "Painting, catalogs",
+        "Grotesque in art",
+        "Comic books, strips",
+        "Painting"
+      ],
+      "coverUrl": "/book-covers/9780867193817.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:11:22.801Z"
+    },
+    {
+      "id": "d418305c-d1a4-4c1f-9288-228da680404a",
+      "isbn13": "9783927789302",
+      "title": "I'm not the girl who misses much",
+      "authors": [
+        "Pipilotti Rist"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.930Z",
+      "source": "openlibrary",
+      "isbn10": "3927789305",
+      "publisher": "Oktagon Stuttgart",
+      "publishDate": "1994",
+      "publishYear": 1994,
+      "language": "ger",
+      "subjects": [
+        "Exhibitions"
+      ],
+      "coverUrl": "/book-covers/9783927789302.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:09:16.633Z"
+    },
+    {
+      "id": "92db5d7a-1ffd-4992-8640-72a6c1b60afc",
+      "isbn13": "9781855014756",
+      "title": "Australia (Countries)",
+      "authors": [
+        "Kelvin Aitken"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.931Z",
+      "source": "openlibrary",
+      "isbn10": "1855014750",
+      "publisher": "Tiger Books",
+      "publishDate": "March 1, 1996",
+      "publishYear": 1996,
+      "pageCount": 128,
+      "subjects": [
+        "Australia, pictorial works",
+        "Australia, description and travel"
+      ],
+      "coverUrl": "/book-covers/9781855014756.webp"
+    },
+    {
+      "id": "7a4f640b-beb3-4162-a77f-45d5ea51cba3",
+      "isbn13": "9781000107456",
+      "title": "Modern Britain",
+      "authors": [
+        "Sean Glynn",
+        "Alan Booth"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.931Z",
+      "source": "openlibrary",
+      "isbn10": "1000107450",
+      "publisher": "Taylor & Francis Group",
+      "publishDate": "2020",
+      "publishYear": 2020,
+      "language": "eng",
+      "subjects": [
+        "Economic policy",
+        "Social conditions",
+        "Politics and government",
+        "Economic conditions",
+        "Social policy",
+        "Gesellschaft",
+        "Conditions sociales",
+        "Wirtschaft",
+        "Politique sociale",
+        "Conditions economiques"
+      ]
+    },
+    {
+      "id": "d49e21f5-ae32-4979-a340-cb397ea3f9c5",
+      "isbn13": "9780500273203",
+      "title": "Subway Art",
+      "authors": [
+        "Martha Cooper"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.933Z",
+      "source": "openlibrary",
+      "isbn10": "0500273200",
+      "publisher": "Thames and Hudson",
+      "publishDate": "1984",
+      "publishYear": 1984,
+      "pageCount": 104,
+      "language": "eng",
+      "subjects": [
+        "Graffiti",
+        "Pictorial works",
+        "Art, american",
+        "Street art",
+        "Subways",
+        "Social life and customs",
+        "Art"
+      ],
+      "synopsis": "New afterwords continue the story, tracing the decline of the subway and graffiti scene in the late 1980s to its unexpected rebirth as a global art movement.",
+      "coverUrl": "/book-covers/9780500273203.webp",
+      "rating": 5,
+      "dateRead": "2026-05-03T17:33:42.097Z"
+    },
+    {
+      "id": "4b308525-45f9-48dc-ba86-dbaeb01e3d2e",
+      "isbn13": "9780500274699",
+      "title": "Spraycan art",
+      "authors": [
+        "Henry Chalfant"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.933Z",
+      "source": "openlibrary",
+      "isbn10": "050027469X",
+      "publisher": "Thames and Hudson",
+      "publishDate": "1987",
+      "publishYear": 1987,
+      "pageCount": 96,
+      "language": "eng",
+      "subjects": [
+        "Mural painting and decoration",
+        "Street art",
+        "Themes, motives"
+      ],
+      "synopsis": "A selection of spectacular photographs and thought-provoking quotes of spraycan art from more than twenty cities scattered across three continents.",
+      "coverUrl": "/book-covers/9780500274699.webp",
+      "rating": 4,
+      "dateRead": "2026-05-03T17:34:09.353Z"
+    },
+    {
+      "id": "3d3930d6-3114-47ad-925a-5e47525ad029",
+      "isbn13": "9783822802106",
+      "title": "Dali - Taschen Serie Menor -",
+      "authors": [
+        "Maddox"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.934Z",
+      "source": "openlibrary",
+      "isbn10": "3822802107",
+      "publisher": "Taschen",
+      "publishDate": "February 1995",
+      "publishYear": 1995,
+      "language": "spa",
+      "subjects": [
+        "Artists",
+        "Artistas",
+        "Biography",
+        "Biografía",
+        "Dalí, Salvador, -- 1904-1989.",
+        "Artists -- Spain -- Biography.",
+        "Artistas -- España -- Biografía."
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:11:03.986Z"
+    },
+    {
+      "id": "80db9e71-0e3c-4989-b9a6-afa0c0d6a26d",
+      "isbn13": "9780858358218",
+      "title": "Dangerous Australians, the complete guide to Australia's most deadly creatures",
+      "authors": [
+        "Benn Cropp"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.935Z",
+      "source": "openlibrary",
+      "isbn10": "0858358212",
+      "publisher": "Bay Books",
+      "publishDate": "1985",
+      "publishYear": 1985,
+      "pageCount": 124,
+      "language": "eng",
+      "subjects": [
+        "Poisonous animals",
+        "Poisonous animals - Australia"
+      ],
+      "coverUrl": "/book-covers/9780858358218.webp",
+      "rating": 3
+    },
+    {
+      "id": "9d098fd1-9d44-46cc-93ce-5a3785a0ccb8",
+      "isbn13": "9780794600723",
+      "title": "Between the Tides",
+      "authors": [
+        "David Pickell"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.935Z",
+      "source": "openlibrary",
+      "isbn10": "0794600727",
+      "publisher": "Tuttle Publishing",
+      "publishDate": "April 2003",
+      "publishYear": 2003,
+      "pageCount": 256,
+      "language": "eng",
+      "subjects": [
+        "Social life and customs",
+        "Ethnology",
+        "Papuans",
+        "Papua (indonesia)",
+        "Indonesia, description and travel",
+        "Description and travel",
+        "Mimika (Indonesian people)"
+      ],
+      "coverUrl": "/book-covers/9780794600723.webp",
+      "rating": 5
+    },
+    {
+      "id": "a67d5e38-2d4d-4961-b19c-f216dc390c1f",
+      "isbn13": "9784568501025",
+      "title": "Sorayama Hyper Illustrations",
+      "authors": [
+        "Hajime Sorayama"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.936Z",
+      "source": "openlibrary",
+      "isbn10": "4568501024",
+      "publisher": "Books Nippan",
+      "publishDate": "October 1989",
+      "publishYear": 1989,
+      "pageCount": 1,
+      "language": "eng",
+      "subjects": [],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:10:24.379Z"
+    },
+    {
+      "id": "8df2b8b9-e3ce-4b0d-b091-944ba9d848ae",
+      "isbn13": "9780062086440",
+      "title": "The Upside of Irrationality",
+      "authors": [
+        "Dan Ariely"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.936Z",
+      "source": "openlibrary",
+      "isbn10": "0062086448",
+      "publisher": "Harper",
+      "publishDate": "May 31, 2011",
+      "publishYear": 2011,
+      "pageCount": 368,
+      "subjects": [],
+      "coverUrl": "/book-covers/9780062086440.webp",
+      "rating": 3,
+      "dateRead": "2026-05-03T17:34:01.656Z"
+    },
+    {
+      "id": "e9be1a9f-ebe5-4deb-a3a5-7197a4c92f3c",
+      "isbn13": "9780062018205",
+      "title": "Predictably Irrational",
+      "authors": [
+        "Dan Ariely"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.937Z",
+      "source": "openlibrary",
+      "isbn10": "0062018205",
+      "publisher": "Harper",
+      "publishDate": "May 11, 2010",
+      "publishYear": 2010,
+      "pageCount": 400,
+      "subjects": [
+        "Psychological aspects of Economics",
+        "Economics",
+        "Psychological aspects",
+        "Decision making",
+        "Consumer behavior",
+        "Consumers",
+        "Thought and thinking",
+        "Reasoning",
+        "Business",
+        "Nonfiction"
+      ],
+      "synopsis": "How do we think about money?What caused bankers to lose sight of the economy?What caused individuals to take on mortgages that were not within their means?What irrational forces guided our decisions?And how can we recover from an economic crisis? In this revised and expanded edition of the New York Times and Wall Street Journal bestseller Predictably Irrational, Duke University's behavioral economist Dan Ariely explores the hidden forces that shape our decisions, including some of the causes responsible for the current economic crisis. Bringing a much-needed dose of sophisticated psychological study to the realm of public policy, Ariely offers his own insights into the irrationalities of everyday life, the decisions that led us to the financial meltdown of 2008, and the general ways we get ourselves into trouble.Blending common experiences and clever experiments with groundbreaking analysis, Ariely demonstrates how expectations, emotions, social norms, and other invisible, seemingly illogical forces skew our reasoning abilities. As he explains, our reliance on standard economic theory to design personal, national, and global policies may, in fact, be dangerous. The mistakes that we make as individuals and institutions are not random, and they can aggregate in the market—with devastating results. In light of our current economic crisis, the consequences of these systematic and predictable mistakes have never been clearer.Packed with new studies and thought-provoking responses to readers' questions and comments, this revised and expanded edition of Predictably Irrational will change the way we interact with the world—from the small decisions we make in our own lives to the individual and collective choices that shape our economy.",
+      "coverUrl": "/book-covers/9780062018205.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:14:13.181Z"
+    },
+    {
+      "id": "22942e6a-b877-4993-8d66-fbd7df2e4e6b",
+      "isbn13": "9780061956270",
+      "title": "Freakonomics",
+      "authors": [
+        "Steven D. Levitt",
+        "Stephen J. Dubner"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.937Z",
+      "source": "openlibrary",
+      "isbn10": "0061956279",
+      "publisher": "Harper",
+      "publishDate": "Sep 01, 2009",
+      "publishYear": 2009,
+      "pageCount": 336,
+      "subjects": [
+        "Economics",
+        "Economics -- Psychological aspects",
+        "Economics -- Sociological aspects",
+        "Finance",
+        "Nonfiction",
+        "Sociology",
+        "nyt:paperback_business_books=2012-02-25",
+        "New York Times bestseller",
+        "Popular Culture",
+        "business & economics"
+      ],
+      "synopsis": "*A Rogue Economist Explores the Hidden Side of Everything*\r\n\r\nWhich is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? Why do drug dealers still live with their moms? How much do parents really matter? How did the legalization of abortion affect the rate of violent crime?\r\n\r\nThese may not sound like typical questions for an economist to ask. But Steven D. Levitt is not a typical economist. He is a much-heralded scholar who studies the riddles of everyday life—from cheating and crime to sports and child-rearing—and whose conclusions turn the conventional wisdom on its head.\r\n\r\nFreakonomics is a ground-breaking collaboration between Levitt and Stephen J. Dubner, an award-winning author and journalist. They usually begin with a mountain of data and a simple, unasked question. Some of these questions concern life-and-death issues; others have an admittedly freakish quality. Thus the new field of study contained in this book: Freakonomics.\r\n\r\nThrough forceful storytelling and wry insight, Levitt and Dubner show that economics is, at root, the study of incentives—how people get what they want, or need, especially when other people want or need the same thing. In Freakonomics, they explore the hidden side of … well, everything. The inner workings of a crack gang. The truth about real-estate agents. The myths of campaign finance. The telltale marks of a cheating schoolteacher. The secrets of the Ku Klux Klan.\r\n\r\nWhat unites all these stories is a belief that the modern world, despite a great deal of complexity and downright deceit, is not impenetrable, is not unknowable, and—if the right questions are asked—is even more intriguing than we think. All it takes is a new way of looking at things.\r\n\r\nFreakonomics establishes this unconventional premise: If morality represents how we would like the world to work, then economics represents how it actually does work. It is true that readers of this book will be armed with enough riddles and stories to last a thousand cocktail parties. ButFreakonomics can provide more than that. It will literally redefine the way we view the modern world.\r\n\r\nFirst published in the U.S. in 2005, Freakonomics went on to sell more than 4 million copies around the world, in 35 languages. It also inspired a follow-up book, SuperFreakonomics; a high-profile documentary film; a radio program, and an award-winning blog, which has been called “the most readable economics blog in the universe.”\r\n\r\n([source][1])\r\n\r\n\r\n  [1]: http://freakonomics.com/books/",
+      "coverUrl": "/book-covers/9780061956270.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:13:20.423Z"
+    },
+    {
+      "id": "f7f63357-4c02-4ee7-8ba9-2b785cd1f30b",
+      "isbn13": "9786162070853",
+      "title": "Change your view, change your life",
+      "authors": [
+        "Thoon Khippapanyo"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.938Z",
+      "source": "openlibrary",
+      "publisher": "Amarin Publishing",
+      "publishDate": "2012",
+      "publishYear": 2012,
+      "pageCount": 187,
+      "language": "eng",
+      "subjects": []
+    },
+    {
+      "id": "153300f6-1a31-42ce-958e-9b8f7fca3dfe",
+      "isbn13": "9780140032192",
+      "title": "A Clockwork Orange",
+      "authors": [
+        "Anthony Burgess"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.939Z",
+      "source": "openlibrary",
+      "isbn10": "0140032193",
+      "publisher": "Penguin Books",
+      "publishDate": "1987",
+      "publishYear": 1987,
+      "pageCount": 149,
+      "language": "eng",
+      "subjects": [
+        "bible",
+        "aversion therapy",
+        "unintended consequences",
+        "Beethoven's Fifth Symphony",
+        "gang rape",
+        "psychiatric hospitals",
+        "maturity",
+        "metanoia",
+        "assault",
+        "joyriding"
+      ],
+      "synopsis": "A Clockwork Orange is a dystopian satirical black comedy novel by English writer Anthony Burgess, published in 1962. It is set in a near-future society that has a youth subculture of extreme violence. The teenage protagonist, Alex, narrates his violent exploits and his experiences with state authorities intent on reforming him. The book is partially written in a Russian-influenced argot called \"Nadsat\", which takes its name from the Russian suffix that is equivalent to '-teen' in English. According to Burgess, it was a jeu d'esprit written in just three weeks.\r\n\r\nIn 2005, A Clockwork Orange was included on Time magazine's list of the 100 best English-language novels written since 1923, and it was named by Modern Library and its readers as one of the 100 best English-language novels of the 20th century. The original manuscript of the book has been kept at McMaster University's William Ready Division of Archives and Research Collections in Hamilton, Ontario, Canada since the institution purchased the documents in 1971. It is considered one of the most influential dystopian books.\r\n\r\n----------\t\t\r\nAlso contained in:\t\t\r\n\r\n[A Clockwork Orange and Honey for the Bears](https://openlibrary.org/works/OL23787405W)\r\n[A Clockwork Orange / The Wanting Seed](https://openlibrary.org/works/OL17306508W)",
+      "coverUrl": "/book-covers/9780140032192.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:10:32.864Z"
+    },
+    {
+      "id": "742d6bdd-a559-4a94-8904-db5e451c0e37",
+      "isbn13": "9788807811937",
+      "title": "Hollywood, Hollywood!.",
+      "authors": [
+        "Charles Bukowski"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.939Z",
+      "source": "openlibrary",
+      "isbn10": "8807811936",
+      "publisher": "Feltrinelli",
+      "publishDate": "1992",
+      "publishYear": 1992,
+      "language": "ita",
+      "subjects": [],
+      "synopsis": "Bukowski's alter ego, Henry Chinaski, returns, revelling in his eternal penchant for booze, women and horse-racing as he makes the precarious journey from poet to screenwriter. Based on Bukowski's experiences when working on the film Barfly, the absurdity and egotism of the film industry are laid bare in this deadpan, touching and funny glimpse into the endless negotiations and back-stabbings of La-la land. Hollywood is an irreverent roman - clef that serves up the beating heart of Hollywood with razor-sharp humour.",
+      "coverUrl": "/book-covers/9788807811937.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:05:35.223Z"
+    },
+    {
+      "id": "2fccbbde-91e7-4cc7-9005-cebaa3b9d37f",
+      "isbn13": "9780747528302",
+      "title": "Emotional intelligence",
+      "authors": [
+        "Daniel Goleman"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.940Z",
+      "source": "openlibrary",
+      "isbn10": "0747528306",
+      "publisher": "Bloomsbury",
+      "publishDate": "1996",
+      "publishYear": 1996,
+      "pageCount": 352,
+      "language": "eng",
+      "subjects": [
+        "Emotions and cognition",
+        "Intellect",
+        "Success, psychological aspects",
+        "Self-actualization (psychology)",
+        "Emotions",
+        "Social aspects",
+        "Emociones",
+        "Emociones y cognición",
+        "Aspectos sociales",
+        "Emociones y percepción"
+      ],
+      "synopsis": "¿Por qué algunas personas parecen dotadas de un don especial que les permite vivir bien, aunque no sean las que más se destacan por su inteligencia? ¿Por qué no siempre el alumno más inteligente termina siendo el más exitoso? ¿Por qué unos son más capaces que otros para enfrentar contratiempos, superar obstáculos y ver las dificultades bajo una óptica distinta?\r\n\r\nEl libro demuestra cómo la inteligencia emocional puede ser fomentada y fortalecida en todos nosotros, y cómo la falta de la misma puede influir en el intelecto o arruinar una carrera.\r\n\r\nLa inteligencia emocional nos permite tomar conciencia de nuestras emociones, comprender los sentimientos de los demás, tolerar las presiones y frustraciones que soportamos en el trabajo, acentuar nuestra capacidad de trabajar en equipo y adoptar una actitud empática y social, que nos brindará mayores posibilidades de desarrollo personal.",
+      "coverUrl": "/book-covers/9780747528302.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:13:49.303Z"
+    },
+    {
+      "id": "15615edd-4025-4b0b-bea8-5df18ef3ecb8",
+      "isbn13": "9780140279511",
+      "title": "Collapse: How Societies Choose to Fail or Survive",
+      "authors": [
+        "Jared M. Diamond"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.941Z",
+      "source": "openlibrary",
+      "isbn10": "0140279512",
+      "publisher": "Penguin Books",
+      "publishDate": "Jan 01, 2005",
+      "publishYear": 2005,
+      "pageCount": 592,
+      "subjects": [
+        "Sociology",
+        "Culturen",
+        "Environnement",
+        "Changement social",
+        "Verval (geschiedenis)",
+        "Environment",
+        "Historia social",
+        "Social Conditions",
+        "Nature",
+        "Effect of human beings on"
+      ],
+      "synopsis": "\"In his Pulitzer Prize-winning bestseller Guns, Germs, and Steel, Jared Diamond examined how and why Western civilizations developed the technologies and immunities that allowed them to dominate much of the world. Now, Diamond probes the other side of the equation: What caused some of the great civilizations of the past to collapse into ruin, and what can we learn from their fates?\" \"As in Guns, Germs, and Steel, Diamond weaves an all-encompassing global thesis through a series of historical-cultural narratives. Moving from the prehistoric Polynesian culture on Easter Island to the formerly flourishing Native American civilizations of the Anasazi and the Maya, the doomed medieval Viking colony on Greenland, and finally to the modern world, Diamond traces a fundamental pattern of catastrophe, spelling out what happens when we squander our resources, when we ignore the signals our environment gives us, and when we reproduce too fast or cut down too many trees. Environmental damage, climate change, rapid population growth, unstable trade partners, and pressure from enemies were all factors in the demise of the doomed societies, but other societies found solutions to those same problems and persisted.\"--BOOK JACKET",
+      "coverUrl": "/book-covers/9780140279511.webp"
+    },
+    {
+      "id": "c159eea4-d55c-4baa-94c2-8944c54d342e",
+      "isbn13": "9780449908587",
+      "title": "Happy Isles of Oceania",
+      "authors": [
+        "Paul Theroux"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.941Z",
+      "source": "openlibrary",
+      "isbn10": "0449908585",
+      "publisher": "Ballantine Books",
+      "publishDate": "October 19, 1993",
+      "publishYear": 1993,
+      "pageCount": 528,
+      "language": "eng",
+      "subjects": [
+        "Travel",
+        "Description and travel",
+        "Local History",
+        "Sea kayaking",
+        "Oceania, description and travel",
+        "Theroux, paul, 1941-",
+        "Pacific area, description and travel",
+        "Travel and tourism",
+        "Autobiography and memoir",
+        "Journeys"
+      ],
+      "synopsis": "Beginning in New Zealand and coming to shore in Hawaii, the author explores fifty-one islands along the way in a collapsible kayak.",
+      "coverUrl": "/book-covers/9780449908587.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:14:06.139Z"
+    },
+    {
+      "id": "e9d50dba-9cbf-4293-9cf1-3dbd8ebed44b",
+      "isbn13": "9789793019024",
+      "title": "Abracadabra",
+      "authors": [
+        "Danarto"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.941Z",
+      "source": "openlibrary",
+      "isbn10": "9793019026",
+      "publisher": "Metafor Pub.",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "pageCount": 160,
+      "language": "eng",
+      "subjects": [
+        "Short stories, indonesian",
+        "Fiction, short stories (single author)"
+      ],
+      "coverUrl": "/book-covers/9789793019024.webp"
+    },
+    {
+      "id": "208fea8c-78b3-4d13-a84c-5a606151911d",
+      "isbn13": "9784770015648",
+      "title": "Color image scale",
+      "authors": [
+        "Shigenobu Kobayashi"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.942Z",
+      "source": "openlibrary",
+      "isbn10": "477001564X",
+      "publisher": "Kosdansha International",
+      "publishDate": "1991",
+      "publishYear": 1991,
+      "pageCount": 159,
+      "language": "eng",
+      "subjects": [
+        "Color",
+        "Psychological aspects of Color",
+        "Psychological aspects",
+        "Couleur",
+        "Aspect psychologique"
+      ],
+      "coverUrl": "/book-covers/9784770015648.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:13:41.335Z"
+    },
+    {
+      "id": "e6ca71e4-738e-4b34-96a4-0c83e40cfd83",
+      "isbn13": "9780877013174",
+      "title": "Designer's Guide to Color",
+      "authors": [
+        "James Stockton"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.942Z",
+      "source": "openlibrary",
+      "isbn10": "0877013179",
+      "publisher": "Chronicle Books",
+      "publishDate": "December 1, 1984",
+      "publishYear": 1984,
+      "pageCount": 136,
+      "language": "eng",
+      "subjects": [
+        "Color in design",
+        "Art"
+      ],
+      "coverUrl": "/book-covers/9780877013174.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:14:25.435Z"
+    },
+    {
+      "id": "3960c678-9461-4cee-bd92-7eafe92431c6",
+      "isbn13": "9788838001772",
+      "title": "Karingana ua karingana",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.943Z",
+      "source": "googlebooks",
+      "isbn10": "8838001774",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 160,
+      "language": "it",
+      "subjects": [
+        "Photography"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:05:28.021Z"
+    },
+    {
+      "id": "9f6bf82c-6fcc-4dba-a5ad-f9fb392c31f3",
+      "isbn13": "9781844006090",
+      "title": "The Genius of Photography",
+      "authors": [
+        "Gerry Badger"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.943Z",
+      "source": "openlibrary",
+      "publisher": "Quadrille Publishing",
+      "publishDate": "2011",
+      "publishYear": 2011,
+      "pageCount": 256,
+      "language": "eng",
+      "subjects": [
+        "Photography",
+        "History",
+        "Philosophy",
+        "Political aspects",
+        "Social aspects",
+        "Photography--history",
+        "Photography--philosophy",
+        "Photography--political aspects",
+        "Photography--social aspects",
+        "Tr15 .b33 2007"
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:14:42.565Z"
+    },
+    {
+      "id": "d7f6a805-862c-44c7-9693-75aa6e3f4d4d",
+      "isbn13": "9780646139678",
+      "title": "Trip to Town",
+      "authors": [
+        "Jeff Raglus"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.943Z",
+      "source": "googlebooks",
+      "isbn10": "0646139673",
+      "publishDate": "1993",
+      "publishYear": 1993,
+      "pageCount": 25,
+      "language": "en",
+      "subjects": [
+        "Cities and towns"
+      ],
+      "synopsis": "Georgia and King find the trip to town is much more exciting by train than in the car. The things you see!",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:14:34.275Z"
+    },
+    {
+      "id": "eaf93a64-2b9a-4312-b116-992bae6dca67",
+      "isbn13": "9780877018308",
+      "title": "Spin again",
+      "authors": [
+        "Rick Polizzi"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.944Z",
+      "source": "openlibrary",
+      "isbn10": "0877018308",
+      "publisher": "Chronicle Books",
+      "publishDate": "1991",
+      "publishYear": 1991,
+      "pageCount": 119,
+      "language": "eng",
+      "subjects": [
+        "Board games",
+        "History"
+      ],
+      "coverUrl": "/book-covers/9780877018308.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:14:50.080Z"
+    },
+    {
+      "id": "9117698e-320a-4da9-814a-89eb86cf87ab",
+      "isbn13": "9781863026246",
+      "title": "Australian beaches",
+      "authors": [
+        "Anne Matthews"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.944Z",
+      "source": "openlibrary",
+      "isbn10": "186302624X",
+      "publisher": "Lansdowne",
+      "publishDate": "1998",
+      "publishYear": 1998,
+      "pageCount": 128,
+      "language": "eng",
+      "subjects": [
+        "Beaches",
+        "Pictorial works"
+      ],
+      "coverUrl": "/book-covers/9781863026246.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:15:07.602Z"
+    },
+    {
+      "id": "10d13bb8-46dc-422d-8aeb-15d381c3dd4e",
+      "isbn13": "9789060053317",
+      "title": "Wij denken niet in kleur",
+      "authors": [
+        "Daniel Koning"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.944Z",
+      "source": "openlibrary",
+      "isbn10": "9060053311",
+      "publisher": "Th. Rap",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 106,
+      "language": "dut",
+      "subjects": [
+        "Pictorial works",
+        "Politics and government",
+        "Race relations"
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:14:56.972Z"
+    },
+    {
+      "id": "1fe8a36a-eac7-45d7-bb54-0d63d0529427",
+      "isbn13": "9780821211229",
+      "title": "The portfolios of Ansel Adams",
+      "authors": [
+        "Ansel Adams"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.945Z",
+      "source": "openlibrary",
+      "isbn10": "0821211226",
+      "publisher": "Little, Brown and Company",
+      "publishDate": "1977",
+      "publishYear": 1977,
+      "pageCount": 136,
+      "language": "eng",
+      "subjects": [
+        "Photographs",
+        "Photographers",
+        "Photography",
+        "Artistic Photography",
+        "Adams, ansel, 1902-1984"
+      ],
+      "synopsis": "A collection of ninety photographs by Ansel Adams that were originally presented in seven limited edition portfolios produced between 1948 and 1976.",
+      "coverUrl": "/book-covers/9780821211229.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:13:33.587Z"
+    },
+    {
+      "id": "1013d5e5-35dc-4a88-b624-89be73ce9acf",
+      "isbn13": "9781558592094",
+      "title": "Signs of our time",
+      "authors": [
+        "John Margolies"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.947Z",
+      "source": "openlibrary",
+      "isbn10": "1558592091",
+      "publisher": "Abbeville Press",
+      "publishDate": "1993",
+      "publishYear": 1993,
+      "pageCount": 95,
+      "language": "eng",
+      "subjects": [
+        "Social life and customs",
+        "Outdoor Advertising",
+        "Automobile travel",
+        "Advertising, Outdoor",
+        "History",
+        "Publicité extérieure",
+        "Histoire",
+        "Voyages en automobile",
+        "Mœurs et coutumes",
+        "Werbegraphik"
+      ],
+      "synopsis": "A collection of photographs of the commercial advertising which has decorated America's roadsides.",
+      "coverUrl": "/book-covers/9781558592094.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:15:29.700Z"
+    },
+    {
+      "id": "9ba74949-3fc1-4e62-90f8-3a9226353f0d",
+      "isbn13": "9786167277028",
+      "title": "Living with Spirits",
+      "authors": [
+        "Ben Davies"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.947Z",
+      "source": "googlebooks",
+      "isbn10": "6167277028",
+      "publishDate": "2009",
+      "publishYear": 2009,
+      "pageCount": 130,
+      "language": "en",
+      "subjects": [
+        "Thailand"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:15:14.503Z"
+    },
+    {
+      "id": "4a85ad72-f2a6-41c8-89fa-85e2caa30cb4",
+      "isbn13": "9780312054366",
+      "title": "Generation X",
+      "authors": [
+        "Douglas Coupland"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.948Z",
+      "source": "openlibrary",
+      "isbn10": "031205436X",
+      "publisher": "St. Martin's Press",
+      "publishDate": "1991",
+      "publishYear": 1991,
+      "pageCount": 183,
+      "language": "eng",
+      "subjects": [
+        "Fiction",
+        "Generation X",
+        "Young adults",
+        "Social life and customs",
+        "Dertigers",
+        "Humorous stories",
+        "Jeunes adultes",
+        "Humorous stories 7",
+        "Romans",
+        "Twintigers"
+      ],
+      "synopsis": "Three twenty-something young adults, working at low-paying, no-future jobs, tell one another modern tales of love and death.",
+      "coverUrl": "/book-covers/9780312054366.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:05:13.707Z"
+    },
+    {
+      "id": "d91d9f01-7fb8-4ca6-a79e-dac8d02e7fab",
+      "isbn13": "9788872263730",
+      "title": "Zap comix",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.948Z",
+      "source": "googlebooks",
+      "isbn10": "8872263735",
+      "publisher": "Stampa Alternativa",
+      "publishDate": "1998",
+      "publishYear": 1998,
+      "pageCount": 240,
+      "language": "it",
+      "subjects": [
+        "Humor"
+      ],
+      "synopsis": "There was scarcely an underground comics world before Robert Crumb's classic solo first issue of Zap. By Zap #2, he had begun assembling a Seven Samurai of the best, the fiercest, and the most stylistically diversified cartoonists to come out of the countercultural kiln. All of them were extremists of one sort or another, from biker-gang member Rodriguez to Christian surfer Griffin, but somehow they produced a decades-long collaboration: a mind-blowing anthology of abstract hallucination, throat-slashing social satire, and shocking sexual excess, that made possible the ongoing wave of alternative cartoonists like Daniel Clowes, Chris Ware, and Charles Burns. The Complete Zap Comix collects every issue of Zap - every cover and every story, and even the Zam mini comic jam among the Zap artists - in a five-volume, slipcased hardcover set. It will also include the 17th unpublished issue with work by Crumb, Moscoco, Wilson, Rodriguez, Shelton, Mavrides, and Williams. Plus, an introduction by founder R. Crumb and an oral history of Zap by Patrick Rosenkranz. Zap is the most historically and aesthetically important comics series ever published. Also included exclusively in this boxed set is a portfolio of Zap covers by the eight artists, replicated from high resolution scans and proofs, and specially printed for this edition on acid-free, 100% cotton fine-art paper utilizing archival pigment inks.",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:15:20.220Z"
+    },
+    {
+      "id": "38e0a1e3-d1ca-4d9d-aaa3-6171246732ef",
+      "isbn13": "9786167469027",
+      "title": "Trial Puck artwork 2005-2010",
+      "authors": [
+        "Tripuck Tripuck Suphavattana; Suphavattana",
+        "ไตรัภค ุสภัวฒนา"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.949Z",
+      "source": "googlebooks",
+      "isbn10": "6167469024",
+      "publishDate": "1468",
+      "publishYear": 1468,
+      "pageCount": 351,
+      "language": "th",
+      "subjects": [],
+      "rating": 5
+    },
+    {
+      "id": "f3ebd61d-1a54-419f-9b9e-a7eb5aa7120b",
+      "isbn13": "9780312228095",
+      "title": "Ahab's Trade",
+      "authors": [
+        "G. Allen Mawer"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.949Z",
+      "source": "googlebooks",
+      "isbn10": "0312228090",
+      "publisher": "Palgrave Macmillan",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 393,
+      "language": "en",
+      "subjects": [
+        "History"
+      ],
+      "synopsis": "The good, the mad, and the ugly tell their tales of high-seas excitement, focusing on the history of South Sea whalers known as the Nantucketers. Illustrations.",
+      "coverUrl": "/book-covers/9780312228095.webp"
+    },
+    {
+      "id": "b232f9f7-f91f-493e-9037-3962f66cddb1",
+      "isbn13": "9780451207012",
+      "title": "Jews, God and History",
+      "authors": [
+        "Max I. Dimont"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.950Z",
+      "source": "openlibrary",
+      "isbn10": "0451207017",
+      "publisher": "NAL Trade",
+      "publishDate": "March 4, 2003",
+      "publishYear": 2003,
+      "pageCount": 560,
+      "language": "eng",
+      "subjects": [
+        "Classic Literature",
+        "Fiction",
+        "History",
+        "Jews",
+        "Judaism",
+        "Historia",
+        "Judentum",
+        "Judaismo",
+        "Jews, history",
+        "God"
+      ],
+      "synopsis": "The author tells us that twenty years of reading went into the creation of Jews, God and History. Conscientious scholarship is evident in this informative record of Jewish history from its inception 4000 years ago to the present. Mr. Dimont traces the nomadic Jewish tribes from their settlement in the \"\"Promised Land\"\" to their ultimate dispersion. He describes the Jewish \"\"age of reason\"\" under the Islamic Empire in the eighth century, and the \"\"dark ages\"\" which followed. The rise of European nationalism, initially a blessing for Jewry, ultimately sowed the seeds of anti-Semitism. After the holocaust of Hitler's Germany and World War II, the Zionist dream of re-establishing a Jewish state became a fact. The author speculates on Jewish survival through the vicissitudes of history. He suggests that the teachings of the prophets and of the Talmud were above all responsible for the endurance of Jews as a distinctive group. Here he unfolds the many-patterned tapestry of Jewish culture against the broader background of world history. The writing has vitality and humor and should appeal to the lay reader as well as to the historian.",
+      "coverUrl": "/book-covers/9780451207012.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:15:50.047Z"
+    },
+    {
+      "id": "8b043065-35db-4aa7-857a-93e8120a0205",
+      "isbn13": "9780922233175",
+      "title": "Ken's Guide to the Bible",
+      "authors": [
+        "Ken Smith"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.951Z",
+      "source": "openlibrary",
+      "isbn10": "0922233179",
+      "publisher": "Blast Books",
+      "publishDate": "September 18, 1995",
+      "publishYear": 1995,
+      "pageCount": 143,
+      "language": "eng",
+      "subjects": [
+        "Bible, handbooks, manuals, etc."
+      ],
+      "synopsis": "One atheists hilarious line by line critique of the bible.",
+      "coverUrl": "/book-covers/9780922233175.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:16:32.494Z"
+    },
+    {
+      "id": "63d4b063-86da-4a70-b815-2fca540f1aed",
+      "isbn13": "9788889431498",
+      "title": "Alex Fakso",
+      "authors": [
+        "Jamel Shabazz"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.952Z",
+      "source": "openlibrary",
+      "isbn10": "8889431490",
+      "publisher": "Damiani",
+      "publishDate": "March 1, 2007",
+      "publishYear": 2007,
+      "pageCount": 164,
+      "language": "eng",
+      "subjects": [
+        "Graffiti",
+        "Art, european",
+        "Photography of art",
+        "Artistic Photography",
+        "Pictorial works"
+      ],
+      "coverUrl": "/book-covers/9788889431498.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:16:17.939Z"
+    },
+    {
+      "id": "4b7c03b4-fd4f-4f04-93d0-14d344953f14",
+      "isbn13": "9788886982269",
+      "title": "World Press Photo 2001",
+      "authors": [
+        "M. Astrologo"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.952Z",
+      "source": "googlebooks",
+      "isbn10": "8886982267",
+      "publisher": "Contrasto",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "pageCount": 152,
+      "language": "en",
+      "subjects": [
+        "Photography"
+      ],
+      "coverUrl": "/book-covers/9788886982269.webp"
+    },
+    {
+      "id": "3a9ddace-df5c-4fff-b6ec-b4087730d7a7",
+      "isbn13": "9780205191550",
+      "title": "Sociology",
+      "authors": [
+        "George J. Bryjak"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.953Z",
+      "source": "openlibrary",
+      "isbn10": "020519155X",
+      "publisher": "Allyn and Bacon",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 574,
+      "language": "eng",
+      "subjects": [
+        "Sociology"
+      ],
+      "coverUrl": "/book-covers/9780205191550.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:05:06.224Z"
+    },
+    {
+      "id": "b00da792-3b86-4aa5-9b8d-e2ba2dd50c38",
+      "isbn13": "9781591844594",
+      "title": "Blah blah blah",
+      "authors": [
+        "Dan Roam"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.953Z",
+      "source": "openlibrary",
+      "isbn10": "1591844592",
+      "publisher": "Portfolio/Penguin",
+      "publishDate": "2011",
+      "publishYear": 2011,
+      "pageCount": 350,
+      "language": "eng",
+      "subjects": [
+        "Thought and thinking",
+        "Art",
+        "Visual communication",
+        "Communication"
+      ],
+      "synopsis": "Outlines effective strategies for preventing vocabulary misuse and overuse, explaining how to apply the author's \"vivid thinking\" principles to improve learning, share ideas, and overcome specific obstacles to productivity.",
+      "coverUrl": "/book-covers/9781591844594.webp",
+      "rating": 4
+    },
+    {
+      "id": "9eafd1f5-98a5-44e1-b190-7b9e7d9a6aa2",
+      "isbn13": "9783796518737",
+      "title": "Bali",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.954Z",
+      "source": "openlibrary",
+      "isbn10": "3796518737",
+      "publisher": "Museum der Kulturen Basel",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "pageCount": 194,
+      "language": "eng",
+      "subjects": [
+        "Geschichte & Geografie",
+        "OUR Brockhaus selection",
+        "Civilization",
+        "Ethnology",
+        "Social life and customs"
+      ],
+      "synopsis": "Gael had easily been won by Leo Kane's handsome looks and savoir faire. She eagerly accepted his marriage proposal and looked forward to the adventure of living in Indonesia.\r\n\r\nBut her bridal hopes were quickly shattered when she discovered Leo had staged their marriage for revenge. He wanted to make her pay for a wrongdoing he thought she'd committed.\r\n\r\nUnfortunately, Gael couldn't prove her innocence. All she wanted to do was escape the husband she now despised. She must find a way to avoid being part of his crazy scheme!"
+    },
+    {
+      "id": "9a1fdb97-13c4-4e46-836d-fa1276eaffe8",
+      "isbn13": "9781861540867",
+      "title": "The journey is the destination",
+      "authors": [
+        "Dan Eldon"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.955Z",
+      "source": "openlibrary",
+      "isbn10": "1861540868",
+      "publisher": "Booth-Clibborn Edns.",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "language": "eng",
+      "subjects": [
+        "Photojournalists",
+        "Biography",
+        "Journalists, biography",
+        "Photojournalism",
+        "Photographers, biography",
+        "Great britain, biography",
+        "Diaries",
+        "ART / Mixed Media"
+      ],
+      "synopsis": "\"The bestselling and critically acclaimed book The Journey Is the Destination is now available in this revised hardcover edition. Featuring a selection of over 200 pages from the journals of photojournalist Dan Eldon, it is the legacy of a young artist killed just as his creative powers were beginning to be recognized by himself and others. Dan's life sets an admirable example of how to be young, human, and alive--and will continue to inspire future generations as it has for the past decade\"--",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:16:43.306Z"
+    },
+    {
+      "id": "6c14731a-6e8d-4152-8838-348aa78d1c18",
+      "isbn13": "9789768001214",
+      "title": "How to Speak Jamaican?",
+      "authors": [
+        "Ken Maxwell"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.955Z",
+      "source": "googlebooks",
+      "publisher": "Humor Us Publications, Incorporated",
+      "publishDate": "1981",
+      "publishYear": 1981,
+      "pageCount": 56,
+      "language": "en",
+      "subjects": [
+        "Humor"
+      ],
+      "coverUrl": "/book-covers/9789768001214.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:16:07.938Z"
+    },
+    {
+      "id": "7e530074-da6d-472d-a045-6b45127cc3bb",
+      "isbn13": "9783893112678",
+      "title": "Flip sing sing song",
+      "authors": [
+        "Eric Cartier"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.956Z",
+      "source": "googlebooks",
+      "isbn10": "3893112677",
+      "publishDate": "1994",
+      "publishYear": 1994,
+      "pageCount": 56,
+      "language": "de",
+      "subjects": [
+        "Comic books, strips, etc"
+      ]
+    },
+    {
+      "id": "26ecb43d-eb1b-450c-ae44-78c7f5e1d8f7",
+      "isbn13": "9783895935404",
+      "title": "Hollywood Kid is a Story of the Kid",
+      "authors": [
+        "Qwak"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.957Z",
+      "source": "googlebooks",
+      "isbn10": "3895935409",
+      "publishDate": "1996",
+      "publishYear": 1996,
+      "pageCount": 54,
+      "language": "en",
+      "subjects": []
+    },
+    {
+      "id": "2078ff4e-0171-4da6-bce0-f3cda847064b",
+      "isbn13": "9781876142346",
+      "title": "Great Train Disasters",
+      "authors": [
+        "Keith Eastlake"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.957Z",
+      "source": "googlebooks",
+      "isbn10": "1876142340",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 96,
+      "language": "en",
+      "subjects": [
+        "Railroad accidents"
+      ],
+      "synopsis": "Includes photographs and discusses the causes of over 50 of this century's worst train crashes. -- Adapted from back cover.",
+      "rating": 2,
+      "dateRead": "2026-05-17T14:18:05.983Z"
+    },
+    {
+      "id": "a1e4656f-0ce7-4a49-818b-1b613fdcdb7f",
+      "isbn13": "9783892680123",
+      "title": "Abenteuer mit unmöglichen Figuren",
+      "authors": [
+        "Bruno Ernst"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.958Z",
+      "source": "openlibrary",
+      "isbn10": "3892680124",
+      "publisher": "Berlin : Taco c,",
+      "publishDate": "1991-01-01",
+      "publishYear": 1991,
+      "language": "de",
+      "subjects": []
+    },
+    {
+      "id": "98310089-f1ac-4f03-b3c0-210187b4ffef",
+      "isbn13": "9788871795379",
+      "title": "Werner Bischof",
+      "authors": [
+        "Marco Bischof",
+        "Simon Maurer",
+        "Peter Zimmermann"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.959Z",
+      "source": "openlibrary",
+      "publisher": "F. Motta",
+      "publishDate": "2007",
+      "publishYear": 2007,
+      "pageCount": 462,
+      "language": "ita",
+      "subjects": [
+        "Documentary photography",
+        "Photojournalism",
+        "Exhibitions"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:04:58.042Z"
+    },
+    {
+      "id": "18aa642c-1059-4068-9404-ac911eb435e5",
+      "isbn13": "9783894501860",
+      "title": "HR Giger ARh",
+      "authors": [
+        "Hans Ruedi Giger"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.959Z",
+      "source": "googlebooks",
+      "isbn10": "3894501863",
+      "publishDate": "1991",
+      "publishYear": 1991,
+      "pageCount": 95,
+      "language": "it",
+      "subjects": [],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:16:59.175Z"
+    },
+    {
+      "id": "7689b65e-c2a4-4369-aa35-1d07e6b10245",
+      "isbn13": "9781584237655",
+      "title": "Push",
+      "authors": [
+        "Grant Brittain"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.964Z",
+      "source": "openlibrary",
+      "publisher": "Gingko Press, Incorporated",
+      "publishDate": "2021",
+      "publishYear": 2021,
+      "pageCount": 224,
+      "language": "eng",
+      "subjects": [],
+      "coverUrl": "/book-covers/9781584237655.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:17:24.332Z"
+    },
+    {
+      "id": "7dbd56ec-e045-47dc-9f51-526787b1f713",
+      "isbn13": "9780860916208",
+      "title": "It's Not About a Salary... Rap, Race and Resistance in Los Angeles",
+      "authors": [
+        "Brian Cross"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.965Z",
+      "source": "openlibrary",
+      "isbn10": "0860916200",
+      "publisher": "Verso Books",
+      "publishDate": "October 1993",
+      "publishYear": 1993,
+      "pageCount": 335,
+      "language": "eng",
+      "subjects": [],
+      "coverUrl": "/book-covers/9780860916208.webp",
+      "rating": 4
+    },
+    {
+      "id": "eda55e64-aaae-4192-adc1-159d08282d6b",
+      "isbn13": "9783931126162",
+      "title": "Lodown",
+      "authors": [
+        "Thomas Marecki"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.965Z",
+      "source": "openlibrary",
+      "isbn10": "3931126161",
+      "publisher": "Gestalten Verlag",
+      "publishDate": "October 1998",
+      "publishYear": 1998,
+      "pageCount": 176,
+      "language": "ger",
+      "subjects": [
+        "Artistic Photography",
+        "Graphic arts",
+        "Pictorial works",
+        "Popular culture",
+        "Rave culture",
+        "Engineering graphics"
+      ],
+      "coverUrl": "/book-covers/9783931126162.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:17:12.772Z"
+    },
+    {
+      "id": "43851b88-c203-4d72-8d80-e80f30053845",
+      "isbn13": "9783822870211",
+      "title": "Pop art",
+      "authors": [
+        "Tilman Osterwold"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.966Z",
+      "source": "openlibrary",
+      "isbn10": "3822870218",
+      "publisher": "Taschen",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 239,
+      "language": "eng",
+      "subjects": [
+        "American Art",
+        "Pop art"
+      ],
+      "coverUrl": "/book-covers/9783822870211.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:18:32.498Z"
+    },
+    {
+      "id": "292484ae-e51e-4912-a8e2-b20b9f27e002",
+      "isbn13": "9780747505440",
+      "title": "Who said what when",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.967Z",
+      "source": "openlibrary",
+      "isbn10": "0747505446",
+      "publisher": "Bloomsbury",
+      "publishDate": "1989",
+      "publishYear": 1989,
+      "pageCount": 437,
+      "language": "eng",
+      "subjects": [
+        "Historical Chronology",
+        "History",
+        "Miscellanea",
+        "Quotations",
+        "English Quotations",
+        "History, miscellanea",
+        "Chronology, historical"
+      ],
+      "coverUrl": "/book-covers/9780747505440.webp"
+    },
+    {
+      "id": "0dfc2047-92ac-4334-bf24-8fd3854a99b3",
+      "isbn13": "9780949225597",
+      "title": "Machel of Mozambique",
+      "authors": [
+        "Iain Christie"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.968Z",
+      "source": "openlibrary",
+      "isbn10": "0949225592",
+      "publisher": "Zimbabwe Pub. House",
+      "publishDate": "1988",
+      "publishYear": 1988,
+      "pageCount": 181,
+      "language": "eng",
+      "subjects": [
+        "Politics and government",
+        "Presidents",
+        "Biography"
+      ],
+      "coverUrl": "/book-covers/9780949225597.webp"
+    },
+    {
+      "id": "3c2fb478-731c-4cd3-b086-efa3af69995d",
+      "isbn13": "9780792272168",
+      "title": "National Geographic Satellite Atlas Of The World",
+      "authors": [
+        "National Geographic Society"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.969Z",
+      "source": "openlibrary",
+      "isbn10": "0792272161",
+      "publisher": "National Geographic",
+      "publishDate": "November 1, 1998",
+      "publishYear": 1998,
+      "pageCount": 224,
+      "language": "eng",
+      "subjects": [],
+      "coverUrl": "/book-covers/9780792272168.webp"
+    },
+    {
+      "id": "bf4f6b3e-b3ed-4bed-9077-9646f6fa06ac",
+      "isbn13": "9781740210485",
+      "title": "Growing Up in Kakadu Australia",
+      "authors": [
+        "Stan Breeden",
+        "Belinda Wright"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.969Z",
+      "source": "openlibrary",
+      "publisher": "Privately Published",
+      "publishDate": "1995",
+      "publishYear": 1995,
+      "pageCount": 48,
+      "language": "eng",
+      "subjects": [
+        "Aboriginal Australians",
+        "Social life and customs",
+        "Juvenile literature",
+        "Aboriginal Australian Children",
+        "Natural history"
+      ],
+      "coverUrl": "/book-covers/9781740210485.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:17:55.178Z"
+    },
+    {
+      "id": "801ffd72-e462-422c-8b3c-08224939f105",
+      "isbn13": "9780953984008",
+      "title": "The World Stormrider Guide Volume 1",
+      "authors": [
+        "Bruce Sutherland"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.970Z",
+      "source": "openlibrary",
+      "isbn10": "0953984001",
+      "publisher": "Low Pressure Publications",
+      "publishDate": "June 2001",
+      "publishYear": 2001,
+      "pageCount": 240,
+      "language": "eng",
+      "subjects": [
+        "Surfing",
+        "Guidebooks",
+        "Coasts"
+      ],
+      "coverUrl": "/book-covers/9780953984008.webp",
+      "rating": 5
+    },
+    {
+      "id": "911818c2-aca6-4288-b8f3-43257b755225",
+      "isbn13": "9786160000142",
+      "title": "Eastern corner",
+      "authors": [
+        "Sēksan Prasœ̄tkun."
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.970Z",
+      "source": "openlibrary",
+      "publisher": "Praphansarn",
+      "publishDate": "2010",
+      "publishYear": 2010,
+      "pageCount": 124,
+      "language": "eng",
+      "subjects": [
+        "Pictorial works",
+        "Artistic Photography"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:17:06.695Z"
+    },
+    {
+      "id": "da9b2fb6-96c6-4155-8e2e-30c5d59ec5f6",
+      "isbn13": "9780886876753",
+      "title": "Confessions of a rat fink",
+      "authors": [
+        "Ed Roth"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.971Z",
+      "source": "openlibrary",
+      "isbn10": "0886876753",
+      "publisher": "Pharos Books",
+      "publishDate": "1992",
+      "publishYear": 1992,
+      "pageCount": 169,
+      "language": "eng",
+      "subjects": [
+        "Biography",
+        "Automobile engineers",
+        "Rat Fink (Fictitious character)",
+        "Artists"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:17:34.558Z"
+    },
+    {
+      "id": "1c920ded-66c3-40e1-9fcd-6b619b96f59a",
+      "isbn13": "9780330333351",
+      "title": "Photographs and Notebooks",
+      "authors": [
+        "Bruce Chatwin"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.972Z",
+      "source": "openlibrary",
+      "isbn10": "0330333356",
+      "publisher": "Pan Macmillan",
+      "publishDate": "January 10, 1997",
+      "publishYear": 1997,
+      "pageCount": 160,
+      "subjects": [],
+      "coverUrl": "/book-covers/9780330333351.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:18:43.575Z"
+    },
+    {
+      "id": "06ab4d76-5ffa-4583-b4a3-301fc548ab5a",
+      "isbn13": "9780646279688",
+      "title": "World heritage rainforest",
+      "authors": [
+        "Peter Lik"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.972Z",
+      "source": "openlibrary",
+      "isbn10": "0646279688",
+      "publisher": "Wilderness Press",
+      "publishDate": "1996",
+      "publishYear": 1996,
+      "pageCount": 61,
+      "language": "eng",
+      "subjects": [
+        "Natural areas",
+        "Pictorial works",
+        "Rain forests"
+      ],
+      "coverUrl": "/book-covers/9780646279688.webp"
+    },
+    {
+      "id": "45c195e2-d235-4ff2-a8f9-1b0ce06da9e3",
+      "isbn13": "9780958700207",
+      "title": "A Panoramic Journey Through Australia",
+      "authors": [
+        "Unknown Author"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.973Z",
+      "source": "openlibrary",
+      "isbn10": "0958700206",
+      "publisher": "Wilderness Press",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 64,
+      "language": "eng",
+      "subjects": [
+        "Deserts",
+        "Coasts",
+        "Description and travel",
+        "Pictorial works",
+        "Travel"
+      ],
+      "synopsis": "Panoramic format of photographs allows for a wider field of view as seen by the human eye.",
+      "coverUrl": "/book-covers/9780958700207.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:17:50.567Z"
+    },
+    {
+      "id": "527a2948-9778-4fe4-8baa-d4b42c97e8c8",
+      "isbn13": "9780500275214",
+      "title": "Art of the South African townships",
+      "authors": [
+        "Gavin Younge"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.973Z",
+      "source": "openlibrary",
+      "isbn10": "0500275211",
+      "publisher": "Thames and Hudson",
+      "publishDate": "1988",
+      "publishYear": 1988,
+      "pageCount": 96,
+      "language": "eng",
+      "subjects": [
+        "Black Art",
+        "Eclecticism in art",
+        "Art, african",
+        "South African Art",
+        "Artists",
+        "Biography"
+      ],
+      "coverUrl": "/book-covers/9780500275214.webp"
+    },
+    {
+      "id": "84be2a9f-a8f5-4f58-969b-51bc3f4553ff",
+      "isbn13": "9780794602321",
+      "title": "Singapore Architecture",
+      "authors": [
+        "Robert Powell"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:48:51.974Z",
+      "source": "openlibrary",
+      "isbn10": "0794602320",
+      "publisher": "Periplus Editions",
+      "publishDate": "August 15, 2004",
+      "publishYear": 2004,
+      "pageCount": 144,
+      "language": "eng",
+      "subjects": [
+        "Architecture"
+      ],
+      "coverUrl": "/book-covers/9780794602321.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:18:51.436Z"
+    },
+    {
+      "id": "87df34eb-85e5-431c-a91e-b7b867169b40",
+      "isbn13": "9789625931548",
+      "title": "Strange Foods: Bush Meat, Bats, and Butterflies",
+      "authors": [
+        "Jerry Hopkins"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:48:51.974Z",
+      "source": "openlibrary",
+      "isbn10": "9625931546",
+      "publisher": "Periplus Editions (Hk)",
+      "publishDate": "November 1999",
+      "publishYear": 1999,
+      "pageCount": 232,
+      "language": "eng",
+      "subjects": [
+        "Gastronomy",
+        "Cooking",
+        "Food"
+      ],
+      "coverUrl": "/book-covers/9789625931548.webp"
+    },
+    {
+      "id": "b0825df4-0b2b-4f3a-ab6e-a3e2750b055b",
+      "isbn13": "9789793780139",
+      "title": "Made in Indonesia",
+      "authors": [
+        "Warwick Purser"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.975Z",
+      "source": "openlibrary",
+      "isbn10": "9793780134",
+      "publisher": "Equinox Publishing",
+      "publishDate": "September 25, 2005",
+      "publishYear": 2005,
+      "pageCount": 160,
+      "language": "eng",
+      "subjects": [
+        "Decorative arts"
+      ],
+      "coverUrl": "/book-covers/9789793780139.webp",
+      "rating": 4
+    },
+    {
+      "id": "0db60404-0ef5-4ac6-9f02-6f2c0ef13f86",
+      "isbn13": "9788878133358",
+      "title": "COLORS Cacas",
+      "authors": [
+        "Oliviero Toscani",
+        "Marirosa Toscani Ballo",
+        "COLORS Magazine"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T12:48:51.976Z",
+      "source": "openlibrary",
+      "isbn10": "8878133353",
+      "publisher": "Art Books Intl Ltd",
+      "publishDate": "December 1, 1998",
+      "publishYear": 1998,
+      "pageCount": 122,
+      "coverUrl": "/book-covers/9788878133358.webp",
+      "rating": 4
+    },
+    {
+      "id": "7b7851b6-d433-4e45-afdf-62e3ead5b349",
+      "isbn13": "9788804321071",
+      "title": "I versi satanici",
+      "authors": [],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:50:27.863Z",
+      "source": "openlibrary",
+      "isbn10": "8804321075",
+      "publisher": "Arnoldo Mondadori",
+      "publishDate": "1989 March",
+      "publishYear": 1989,
+      "language": "ita",
+      "subjects": [
+        "General & Literary Fiction",
+        "East Indians",
+        "Didactic fiction",
+        "literary fiction",
+        "families",
+        "Islam",
+        "Fiction",
+        "Survival after airplane accidents, shipwrecks",
+        "Survival",
+        "open_syllabus_project"
+      ],
+      "synopsis": "The Satanic Verses is Salman Rushdie's fourth novel, first published September 26, 1988 and inspired in part by the life of the Islamic prophet Muhammad. As with his previous books, Rushdie used magical realism and relied on contemporary events and people to create his characters. The title refers to the satanic verses, a group of Quranic verses that refer to three pagan Meccan goddesses: Allāt, Uzza, and Manāt. The part of the story that deals with the \"satanic verses\" was based on accounts from the historians al-Waqidi and al-Tabari.\r\n\r\nIn the United Kingdom, The Satanic Verses received positive reviews, was a 1988 Booker Prize finalist (losing to Peter Carey's Oscar and Lucinda) and won the 1988 Whitbread Award for novel of the year.",
+      "coverUrl": "/book-covers/9788804321071.webp"
+    },
+    {
+      "id": "be0e1b39-f391-45cc-8d87-c678570d1be2",
+      "isbn13": "9788887999013",
+      "title": "Funghi allucinogeni",
+      "authors": [
+        "Giorgio Samorini"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:50:42.127Z",
+      "source": "openlibrary",
+      "isbn10": "8887999015",
+      "publisher": "Telesterion",
+      "publishDate": "2002",
+      "publishYear": 2002,
+      "pageCount": 247,
+      "language": "ita",
+      "subjects": [
+        "Agaricales",
+        "Chemically induced",
+        "Chemistry",
+        "Hallucinations",
+        "Hallucinogenic Mushrooms",
+        "History",
+        "Traditional medicine"
+      ]
+    },
+    {
+      "id": "5909d988-ab90-40a3-8975-be86c695f05a",
+      "isbn13": "9788885989252",
+      "title": "Sadoma e Camorra",
+      "authors": [
+        "Paola Costa"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:51:00.076Z",
+      "source": "openlibrary",
+      "isbn10": "888598925X",
+      "publisher": "Baldini & Castoldi",
+      "publishDate": "1993",
+      "publishYear": 1993,
+      "pageCount": 199,
+      "language": "ita",
+      "subjects": [
+        "Biography",
+        "Mai dire TV",
+        "Television personalities"
+      ],
+      "rating": 5,
+      "dateRead": "2026-05-17T14:17:44.576Z"
+    },
+    {
+      "id": "e0a9eec3-02fb-4ee2-be01-b623d490606f",
+      "isbn13": "9788842068013",
+      "title": "Maschile e femminile. Il pensiero della differenza",
+      "authors": [
+        "Françoise Héritier"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:51:26.199Z",
+      "source": "googlebooks",
+      "isbn10": "8842068012",
+      "publishDate": "2006-01",
+      "publishYear": 2006,
+      "pageCount": 232,
+      "language": "it",
+      "subjects": [
+        "Psychology"
+      ],
+      "coverUrl": "/book-covers/9788842068013.webp"
+    },
+    {
+      "id": "e8dc0ad7-e394-4869-aec0-c5622359f74d",
+      "isbn13": "9788807460081",
+      "title": "Electric geisha. Tra cultura pop e tradizione in Giappone",
+      "authors": [
+        "篤·上田"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:51:40.632Z",
+      "source": "googlebooks",
+      "isbn10": "8807460084",
+      "publisher": "Feltrinelli Editore",
+      "publishDate": "1996",
+      "publishYear": 1996,
+      "pageCount": 198,
+      "language": "it",
+      "subjects": [
+        "Social Science"
+      ],
+      "coverUrl": "/book-covers/9788807460081.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:19:17.029Z"
+    },
+    {
+      "id": "40d827f7-5330-4a15-bba4-fa33c590b3e3",
+      "isbn13": "9788807816529",
+      "title": "Non sono obiettivo",
+      "authors": [
+        "Oliviero Toscani"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:51:57.229Z",
+      "source": "openlibrary",
+      "isbn10": "8807816520",
+      "publisher": "Feltrinelli",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "pageCount": 191,
+      "language": "ita",
+      "subjects": [],
+      "coverUrl": "/book-covers/9788807816529.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:04:31.769Z"
+    },
+    {
+      "id": "632cf432-dcf6-48ca-b9b5-b7735efaa8dc",
+      "isbn13": "9788806149147",
+      "title": "Troppo buoni con le donne",
+      "authors": [
+        "Raymond Queneau"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:52:11.669Z",
+      "source": "googlebooks",
+      "isbn10": "8806149148",
+      "publishDate": "1998",
+      "publishYear": 1998,
+      "pageCount": 185,
+      "language": "en",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788806149147.webp"
+    },
+    {
+      "id": "ef5f5d1d-f2c5-4ffe-a60e-5bd6b90c91bb",
+      "isbn13": "9788817862172",
+      "title": "La masai bianca",
+      "authors": [
+        "Corinne Hofmann"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:52:46.322Z",
+      "source": "googlebooks",
+      "isbn10": "8817862177",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 309,
+      "language": "it",
+      "subjects": [
+        "Maasai (African people)"
+      ]
+    },
+    {
+      "id": "329de143-e23c-4cb8-9345-6adf2047e8de",
+      "isbn13": "9788870194043",
+      "title": "India. Guida turistica",
+      "authors": [
+        "Vasco Dimatore"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:53:09.564Z",
+      "source": "googlebooks",
+      "isbn10": "8870194043",
+      "publishDate": "1989",
+      "publishYear": 1989,
+      "pageCount": 388,
+      "language": "it",
+      "subjects": [
+        "Travel"
+      ]
+    },
+    {
+      "id": "3477d601-f580-4941-819b-02cb50fb167b",
+      "isbn13": "9788886926447",
+      "title": "Bad attitude. Conflitto e rifiuto del lavoro nel postfordismo",
+      "authors": [
+        "S. Dazieri",
+        "R. Scelsi"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:53:26.328Z",
+      "source": "googlebooks",
+      "isbn10": "8886926448",
+      "publishDate": "1998",
+      "publishYear": 1998,
+      "pageCount": 192,
+      "language": "it",
+      "subjects": [
+        "Business & Economics"
+      ]
+    },
+    {
+      "id": "e50b25c3-c7bc-478e-9cee-b7a310a65beb",
+      "isbn13": "9788806134792",
+      "title": "Miti d'oggi",
+      "authors": [
+        "Roland Barthes"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:53:51.130Z",
+      "source": "googlebooks",
+      "isbn10": "8806134795",
+      "publishDate": "1994",
+      "publishYear": 1994,
+      "pageCount": 238,
+      "language": "it",
+      "subjects": [
+        "Business & Economics"
+      ],
+      "coverUrl": "/book-covers/9788806134792.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:19:08.799Z"
+    },
+    {
+      "id": "6a8b4663-3076-4726-bd11-fa35e0b7639d",
+      "isbn13": "9788806143855",
+      "title": "Le pareti della solitudine",
+      "authors": [
+        "Tahar Ben Jelloun"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:53:58.869Z",
+      "source": "googlebooks",
+      "isbn10": "8806143859",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 116,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788806143855.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:04:12.169Z"
+    },
+    {
+      "id": "2927fca3-2a8d-407b-9c1f-efe10c461028",
+      "isbn13": "9788807811319",
+      "title": "Zelig",
+      "authors": [
+        "Woody Allen"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T12:54:42.122Z",
+      "source": "googlebooks",
+      "isbn10": "8807811316",
+      "publishDate": "1991",
+      "publishYear": 1991,
+      "pageCount": 104,
+      "language": "it",
+      "subjects": [
+        "Performing Arts"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:04:24.988Z"
+    },
+    {
+      "id": "92a09334-ee28-4633-b5dc-e34cbf3fed2a",
+      "isbn13": "9788807811012",
+      "title": "Via etere",
+      "authors": [
+        "Massimo Cirri",
+        "Sergio Ferrentino"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:57:26.832Z",
+      "source": "googlebooks",
+      "isbn10": "8807811014",
+      "publishDate": "1989",
+      "publishYear": 1989,
+      "pageCount": 144,
+      "language": "it",
+      "subjects": [
+        "Performing Arts"
+      ]
+    },
+    {
+      "id": "73a16de7-90a7-4596-b94a-57f0c30e244f",
+      "isbn13": "9788807723469",
+      "title": "Un viaggio chiamato vita",
+      "authors": [
+        "Banana Yoshimoto"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:57:41.069Z",
+      "source": "googlebooks",
+      "isbn10": "8807723468",
+      "publishDate": "2012",
+      "publishYear": 2012,
+      "pageCount": 187,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788807723469.webp"
+    },
+    {
+      "id": "676eeacf-02a1-4322-b47c-aa3151343a45",
+      "isbn13": "9788870059182",
+      "title": "Indonesia",
+      "authors": [
+        "Pietro Tarallo"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:58:07.208Z",
+      "source": "googlebooks",
+      "isbn10": "8870059189",
+      "publishDate": "1991",
+      "publishYear": 1991,
+      "pageCount": 464,
+      "language": "it",
+      "subjects": [
+        "Travel"
+      ]
+    },
+    {
+      "id": "0d1e3d7c-a910-4c60-8795-a00f2492a12b",
+      "isbn13": "9788828000778",
+      "title": "Civililtà della Parola",
+      "authors": [
+        "Italo Bertoni"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T12:59:30.197Z",
+      "source": "googlebooks",
+      "isbn10": "8828000775",
+      "publishDate": "1989",
+      "publishYear": 1989,
+      "pageCount": 221,
+      "language": "it",
+      "subjects": [
+        "Authors, Italian"
+      ]
+    },
+    {
+      "id": "9106f705-7077-40af-ada9-4b8db44807e0",
+      "isbn13": "9788886926058",
+      "title": "Traveller e raver. Racconti orali dei nomadi della nuova era. Ediz. illustrata",
+      "authors": [
+        "Richard Lowe",
+        "William Shaw"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:01:50.766Z",
+      "source": "googlebooks",
+      "isbn10": "8886926057",
+      "publishDate": "1996",
+      "publishYear": 1996,
+      "pageCount": 224,
+      "language": "it",
+      "subjects": []
+    },
+    {
+      "id": "d886ccc0-266a-4fd2-b12f-4a1ca4de8970",
+      "isbn13": "9788886926331",
+      "title": "Millennium. Dalle TAZ alla rivoluzione",
+      "authors": [
+        "Hakim Bey"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:02:42.405Z",
+      "source": "googlebooks",
+      "isbn10": "8886926332",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 96,
+      "language": "it",
+      "subjects": [
+        "Social Science"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:04:03.141Z"
+    },
+    {
+      "id": "79f5d635-6da8-4cfd-a649-aefd179bba26",
+      "isbn13": "9788807810787",
+      "title": "Comici spaventati guerrieri",
+      "authors": [
+        "Stefano Benni"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:03:08.807Z",
+      "source": "openlibrary",
+      "isbn10": "8807810786",
+      "publisher": "Feltrinelli",
+      "publishDate": "1989",
+      "publishYear": 1989,
+      "pageCount": 199,
+      "language": "ita",
+      "subjects": [],
+      "coverUrl": "/book-covers/9788807810787.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:19:34.008Z"
+    },
+    {
+      "id": "f2abf9ca-932b-456b-be77-db5540240132",
+      "isbn13": "9788878193253",
+      "title": "La croce buddista",
+      "authors": [
+        "Junichirō Tanizaki"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:05:12.009Z",
+      "source": "googlebooks",
+      "isbn10": "8878193259",
+      "publishDate": "1992",
+      "publishYear": 1992,
+      "pageCount": 149,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ]
+    },
+    {
+      "id": "816b9686-106a-4851-87fa-b20ec7fe94f1",
+      "isbn13": "9788872262177",
+      "title": "Stato e Chiesa. Il potere clericale in Italia dopo il nuovo concordato del 1984 tra Craxi e Wojtyla",
+      "authors": [
+        "Marcello Vigli"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:07:20.019Z",
+      "source": "googlebooks",
+      "isbn10": "8872262178",
+      "publishDate": "1994",
+      "publishYear": 1994,
+      "pageCount": 64,
+      "language": "it",
+      "subjects": [
+        "Political Science"
+      ]
+    },
+    {
+      "id": "059fdf45-9f12-465b-a05c-d20380d74666",
+      "isbn13": "9788872260807",
+      "title": "Perché dovrei affliggermi ora",
+      "authors": [],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:07:35.917Z",
+      "source": "openlibrary",
+      "isbn10": "8872260809",
+      "publisher": "Stampa Alternativa",
+      "language": "it",
+      "subjects": []
+    },
+    {
+      "id": "43b9a297-da55-4c64-8f1a-1f69e44d995e",
+      "isbn13": "9788807910159",
+      "title": "La gemella buona e la gemella cattiva",
+      "authors": [
+        "Rossana Campo"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:07:44.139Z",
+      "source": "googlebooks",
+      "isbn10": "8807910152",
+      "publisher": "Feltrinelli Editore",
+      "publishDate": "2000",
+      "publishYear": 2000,
+      "pageCount": 52,
+      "language": "it",
+      "subjects": [
+        "Juvenile Fiction"
+      ],
+      "coverUrl": "/book-covers/9788807910159.webp"
+    },
+    {
+      "id": "3458ca42-1021-4f42-b492-b7224cab39e6",
+      "isbn13": "9788834012642",
+      "title": "Veleno per il cuore. Commento zen al Sutra del cuore",
+      "authors": [
+        "Zenji Hakuin Ekaku"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:08:36.262Z",
+      "source": "googlebooks",
+      "isbn10": "883401264X",
+      "publishDate": "1998",
+      "publishYear": 1998,
+      "pageCount": 148,
+      "language": "it",
+      "subjects": [
+        "Religion"
+      ],
+      "rating": 5,
+      "dateRead": "2026-05-17T14:19:51.570Z"
+    },
+    {
+      "id": "cd4c695d-a653-43cb-91eb-63fbb099047b",
+      "isbn13": "9788870059809",
+      "title": "Isole del Pacifico",
+      "authors": [
+        "Marco Moretti"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:09:08.559Z",
+      "source": "googlebooks",
+      "isbn10": "8870059804",
+      "publisher": "Clupguide",
+      "publishDate": "1998",
+      "publishYear": 1998,
+      "pageCount": 350,
+      "language": "it",
+      "subjects": [
+        "Travel"
+      ],
+      "coverUrl": "/book-covers/9788870059809.webp"
+    },
+    {
+      "id": "4a334ec9-5dd7-4697-aca5-49b2711cd646",
+      "isbn13": "9788845224768",
+      "title": "Ecco perché mi odiano",
+      "authors": [
+        "Takeshi Kitano"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:09:21.252Z",
+      "source": "googlebooks",
+      "isbn10": "8845224767",
+      "publishDate": "1995",
+      "publishYear": 1995,
+      "pageCount": 224,
+      "language": "it",
+      "subjects": [
+        "Performing Arts"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:03:53.993Z"
+    },
+    {
+      "id": "e39be7c9-f1b8-4e59-a74f-4b48eeaf8ea5",
+      "isbn13": "9788843800117",
+      "title": "La vita dopo Dio",
+      "authors": [
+        "Douglas Coupland"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:09:46.181Z",
+      "source": "openlibrary",
+      "isbn10": "8843800116",
+      "publisher": "M. Tropea",
+      "publishDate": "1996",
+      "publishYear": 1996,
+      "pageCount": 256,
+      "language": "ita",
+      "subjects": [
+        "American Short stories",
+        "Fiction, short stories (single author)",
+        "Fiction, general",
+        "Civilization, Western, in literature",
+        "Popular Culture - Canada - Fiction",
+        "Young Adults - Conduct Of Life - Fiction"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:19:58.775Z"
+    },
+    {
+      "id": "73e2a135-0cb7-43ca-9d33-aed93276144b",
+      "isbn13": "9788807809903",
+      "title": "Terra! (Universale Economica)",
+      "authors": [
+        "Stefano Benni"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:09:54.064Z",
+      "source": "openlibrary",
+      "isbn10": "8807809907",
+      "publisher": "Feltrinelli",
+      "publishDate": "February 1990",
+      "publishYear": 1990,
+      "language": "ita",
+      "subjects": [],
+      "coverUrl": "/book-covers/9788807809903.webp"
+    },
+    {
+      "id": "9b429ece-63f2-40b8-8fad-1e94b4889f30",
+      "isbn13": "9788807814884",
+      "title": "Camminando",
+      "authors": [
+        "Pino Cacucci"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:13:25.639Z",
+      "source": "googlebooks",
+      "isbn10": "8807814889",
+      "publisher": "Feltrinelli Editore",
+      "publishDate": "1998",
+      "publishYear": 1998,
+      "pageCount": 132,
+      "language": "it",
+      "subjects": [
+        "Travel"
+      ],
+      "coverUrl": "/book-covers/9788807814884.webp"
+    },
+    {
+      "id": "7a595823-a1d0-497c-9bf7-933aebf2c698",
+      "isbn13": "9788880898597",
+      "title": "Mimmo Jodice negli anni Settanta",
+      "authors": [
+        "Mimmo Jodice"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:13:41.616Z",
+      "source": "openlibrary",
+      "isbn10": "8880898590",
+      "publisher": "Baldini & Castoldi",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "language": "ita",
+      "subjects": [
+        "Artistic Photography"
+      ]
+    },
+    {
+      "id": "ca7d7992-af3d-434e-92f3-dbbfc5d615ba",
+      "isbn13": "9788845905766",
+      "title": "Matrimoni indoeuropei",
+      "authors": [
+        "Georges Dumézil"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:16:01.691Z",
+      "source": "googlebooks",
+      "isbn10": "8845905764",
+      "publishDate": "1984",
+      "publishYear": 1984,
+      "pageCount": 0,
+      "language": "it",
+      "subjects": [
+        "Family & Relationships"
+      ],
+      "coverUrl": "/book-covers/9788845905766.webp",
+      "rating": 2,
+      "dateRead": "2026-05-17T14:03:41.097Z"
+    },
+    {
+      "id": "e9f8c59c-8273-4a91-9f36-8d4c34c502ef",
+      "isbn13": "9788870170023",
+      "title": "La contestazione '67-'69",
+      "authors": [
+        "Edgardo Pellegrini",
+        "Ermanno Rea"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:20:08.825Z",
+      "source": "googlebooks",
+      "isbn10": "8870170020",
+      "publisher": "Idea Books (Milano)",
+      "publishDate": "1978",
+      "publishYear": 1978,
+      "pageCount": 96,
+      "language": "it",
+      "subjects": [
+        "Photography"
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:20:12.297Z"
+    },
+    {
+      "id": "90f0213d-86b5-4bd9-ae29-08ec46f869c4",
+      "isbn13": "9788876481130",
+      "title": "Graffiti metropolitani",
+      "authors": [
+        "Ivo Balderi"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:20:28.602Z",
+      "source": "openlibrary",
+      "isbn10": "8876481133",
+      "publisher": "Costa & Nolan",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 119,
+      "language": "ita",
+      "subjects": [
+        "Mural painting and decoration",
+        "Street art",
+        "Themes, motives"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:20:21.125Z"
+    },
+    {
+      "id": "1c2c3223-7f95-4d1e-8772-fa8404a56bc1",
+      "isbn13": "9788808159861",
+      "title": "Antropologia culturale",
+      "authors": [
+        "Emily A. Schultz",
+        "Robert H. Lavenda"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:20:44.957Z",
+      "source": "googlebooks",
+      "isbn10": "8808159868",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 376,
+      "language": "it",
+      "subjects": [
+        "Social Science"
+      ],
+      "coverUrl": "/book-covers/9788808159861.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:20:30.908Z"
+    },
+    {
+      "id": "fd48df6d-50ab-4f76-82f1-23ec99d9e00f",
+      "isbn13": "9788879842099",
+      "title": "Horiyoshi III",
+      "authors": [
+        "Gian Maurizio Fercioni"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:21:40.850Z",
+      "source": "googlebooks",
+      "isbn10": "8879842099",
+      "publisher": "Luni Editrice",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 142,
+      "language": "en",
+      "subjects": [
+        "Art"
+      ]
+    },
+    {
+      "id": "a4d0a0b2-aeb2-4a32-9031-c5f080700202",
+      "isbn13": "9788897165361",
+      "title": "La disperazione della scimmia",
+      "authors": [
+        "Alfred"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T13:22:06.290Z",
+      "source": "googlebooks",
+      "isbn10": "8897165362",
+      "publishDate": "2012-01",
+      "publishYear": 2012,
+      "pageCount": 160,
+      "language": "it",
+      "subjects": [
+        "Comics & Graphic Novels"
+      ],
+      "coverUrl": "/book-covers/9788897165361.webp"
+    },
+    {
+      "id": "c431ba50-e031-4cd6-907b-2b51bbaf059d",
+      "isbn13": "9788838100864",
+      "title": "Tatuaggi urbani",
+      "authors": [
+        "Dario Lanzardo"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:23:45.634Z",
+      "source": "googlebooks",
+      "isbn10": "8838100861",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 156,
+      "language": "it",
+      "subjects": [
+        "Photography"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:21:04.273Z"
+    },
+    {
+      "id": "9850f0ce-306c-4ca1-93a7-6cecb7c66ca2",
+      "isbn13": "9781876622046",
+      "title": "Aboriginal Voices",
+      "authors": [
+        "Liz Thompson"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T13:28:28.918Z",
+      "source": "googlebooks",
+      "isbn10": "1876622040",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 176,
+      "language": "en",
+      "subjects": [
+        "Aboriginal Australians"
+      ],
+      "coverUrl": "/book-covers/9781876622046.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:20:55.876Z"
+    },
+    {
+      "id": "a967a287-d3e0-4217-9969-e391529fae4c",
+      "isbn13": "9788804606819",
+      "title": "Marcovaldo",
+      "authors": [],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:09:51.875Z",
+      "source": "openlibrary",
+      "isbn10": "8804606819",
+      "publisher": "Mondadori",
+      "language": "it",
+      "subjects": [],
+      "synopsis": "A collection of stories about an Italian peasant's struggle to reconcile country habits with urban life. Oblivious to the garish attractions of the town, Marcovaldo is the attentive recorder of natural phenomena but, at every turn, the city is there to thwart his inclinations.",
+      "coverUrl": "/book-covers/9788804606819.webp"
+    },
+    {
+      "id": "edfbd739-6e58-4086-ae40-03f3a8461442",
+      "isbn13": "9788896317099",
+      "title": "Le donne di Saman",
+      "authors": [
+        "Ayu Utami"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:10:20.112Z",
+      "source": "googlebooks",
+      "isbn10": "8896317096",
+      "publishDate": "2010",
+      "publishYear": 2010,
+      "pageCount": 224,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788896317099.webp"
+    },
+    {
+      "id": "990c7628-4acb-44f0-875f-68d9e91d72f2",
+      "isbn13": "9788871443126",
+      "title": "Giornale di un antropologo",
+      "authors": [
+        "Bronislaw Malinowski"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:10:36.999Z",
+      "source": "googlebooks",
+      "isbn10": "8871443128",
+      "publisher": "Armando Editore",
+      "publishDate": "1992",
+      "publishYear": 1992,
+      "pageCount": 224,
+      "language": "it",
+      "subjects": [
+        "Social Science"
+      ],
+      "coverUrl": "/book-covers/9788871443126.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:20:41.373Z"
+    },
+    {
+      "id": "e38af184-6695-4640-833a-2e4799599488",
+      "isbn13": "9788899912628",
+      "title": "Bankster. Come un gruppo di banchieri ha conquistato il mondo. Storia, tecnologie segrete e crimini della finanza globale, dall'antichità a oggi",
+      "authors": [
+        "Joseph P. Farrell"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:11:02.844Z",
+      "source": "googlebooks",
+      "isbn10": "8899912629",
+      "publishDate": "2017",
+      "publishYear": 2017,
+      "language": "it",
+      "subjects": [
+        "Business & Economics"
+      ],
+      "coverUrl": "/book-covers/9788899912628.webp"
+    },
+    {
+      "id": "d85e4b56-4773-40e5-a34b-a65ee3e6d5b9",
+      "isbn13": "9788845907654",
+      "title": "Che ci faccio qui?",
+      "authors": [
+        "Bruce Chatwin"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:11:15.147Z",
+      "source": "googlebooks",
+      "isbn10": "8845907651",
+      "publisher": "Adelphi",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 444,
+      "language": "it",
+      "subjects": [
+        "Travel"
+      ],
+      "coverUrl": "/book-covers/9788845907654.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:03:28.881Z"
+    },
+    {
+      "id": "8dd31591-17b1-49e4-8518-7f9eb3249e05",
+      "isbn13": "9788890008573",
+      "title": "Altrove, il settimo senso. Antropologia del viaggio",
+      "authors": [
+        "Franck Michel"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:11:28.107Z",
+      "source": "googlebooks",
+      "isbn10": "8890008571",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "pageCount": 256,
+      "language": "it",
+      "subjects": [
+        "Social Science"
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:20:49.683Z"
+    },
+    {
+      "id": "59cef2e3-ecc5-423b-8ec7-61922247691b",
+      "isbn13": "9788811581666",
+      "title": "Il Ritratto di Dorian Gray",
+      "authors": [
+        "Oscar Wilde"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:11:46.724Z",
+      "source": "openlibrary",
+      "isbn10": "8811581664",
+      "publisher": "Garzanti",
+      "publishDate": "1981",
+      "publishYear": 1981,
+      "pageCount": 304,
+      "language": "ita",
+      "subjects": [
+        "British and irish fiction (fictional works by one author)",
+        "Conduct of life, fiction",
+        "Fantasy fiction",
+        "Appearance (Philosophy)",
+        "Fiction",
+        "Conduct of life",
+        "Youthfulness",
+        "Portraits",
+        "Apparence (Philosophie)",
+        "Romans, nouvelles"
+      ],
+      "synopsis": "**The Picture of Dorian Gray** is a philosophical novel by Irish writer Oscar Wilde. A shorter novella-length version was published in the July 1890 issue of the American periodical *Lippincott’s Monthly Magazine*. The novel-length version was published in April 1891.\r\n\r\n(Source: [Wikipedia](https://en.wikipedia.org/wiki/The_Picture_of_Dorian_Gray))"
+    },
+    {
+      "id": "5325676b-97a0-43e2-92f1-e52d46be9523",
+      "isbn13": "9788870216271",
+      "title": "Nei mari del sud",
+      "authors": [
+        "Robert L. Stevenson"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T16:11:53.418Z",
+      "source": "googlebooks",
+      "isbn10": "8870216276",
+      "publishDate": "1992",
+      "publishYear": 1992,
+      "pageCount": 364,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "rating": 4
+    },
+    {
+      "id": "0a016e8b-200c-40fa-9028-96b447668520",
+      "isbn13": "9788807815836",
+      "title": "Il banchiere dei poveri",
+      "authors": [
+        "Muhammad Yunus",
+        "Alan Jolis"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:12:58.367Z",
+      "source": "googlebooks",
+      "isbn10": "8807815834",
+      "publisher": "Feltrinelli Editore",
+      "publishDate": "2003",
+      "publishYear": 2003,
+      "pageCount": 284,
+      "language": "it",
+      "subjects": [
+        "Business & Economics"
+      ],
+      "coverUrl": "/book-covers/9788807815836.webp"
+    },
+    {
+      "id": "6f7eb5cc-9d3e-4cd9-b6c5-f3cac8782860",
+      "isbn13": "9788845221514",
+      "title": "Mirrorshades. L'antologia della fantascienza Cyberpunk",
+      "authors": [
+        "Bruce Sterling"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:13:10.801Z",
+      "source": "openlibrary",
+      "isbn10": "8845221512",
+      "publisher": "Bompiani",
+      "publishDate": "Aug 28, 1994",
+      "publishYear": 1994,
+      "language": "it",
+      "subjects": [
+        "cyberpunk",
+        "American Science fiction",
+        "American Short stories",
+        "Science fiction, american",
+        "Short stories, american",
+        "Fiction, science fiction, general"
+      ],
+      "synopsis": "\"The definitive cyberpunk short fiction collection.\"",
+      "coverUrl": "/book-covers/9788845221514.webp"
+    },
+    {
+      "id": "680b25e8-1c56-4df4-ae6c-afbc177bd385",
+      "isbn13": "9788807811494",
+      "title": "Moha il folle, Moha il saggio",
+      "authors": [
+        "Tahar Ben Jelloun"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:13:20.067Z",
+      "source": "googlebooks",
+      "isbn10": "8807811499",
+      "publishDate": "1991",
+      "publishYear": 1991,
+      "pageCount": 170,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "rating": 5,
+      "dateRead": "2026-05-17T14:03:21.631Z"
+    },
+    {
+      "id": "ecdfce41-e5b0-467e-8cb5-85566fb370cd",
+      "isbn13": "9788879660877",
+      "title": "Fuga. Dall'LSD a Internet",
+      "authors": [
+        "Timothy Leary"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:13:58.336Z",
+      "source": "googlebooks",
+      "isbn10": "887966087X",
+      "publishDate": "1996",
+      "publishYear": 1996,
+      "pageCount": 206,
+      "language": "it",
+      "subjects": [
+        "Social Science"
+      ]
+    },
+    {
+      "id": "28034a28-1ff6-44c2-893a-6d1b38fdde07",
+      "isbn13": "9788804394716",
+      "title": "Monna Lisa Cyberpunk",
+      "authors": [],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:14:21.366Z",
+      "source": "openlibrary",
+      "isbn10": "8804394714",
+      "language": "it",
+      "subjects": [],
+      "coverUrl": "/book-covers/9788804394716.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:21:40.387Z"
+    },
+    {
+      "id": "d501f014-ead7-4a5d-bbb2-1f2b8c35ceac",
+      "isbn13": "9788845206924",
+      "title": "Saperla lunga",
+      "authors": [
+        "Woody Allen"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:14:35.107Z",
+      "source": "googlebooks",
+      "isbn10": "8845206920",
+      "publishDate": "1984",
+      "publishYear": 1984,
+      "pageCount": 132,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:21:32.749Z"
+    },
+    {
+      "id": "23650b82-238a-425c-9848-c7a6b723156f",
+      "isbn13": "9788830408623",
+      "title": "Il secondo libro di Murphy",
+      "authors": [
+        "Arthur Bloch"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:14:43.397Z",
+      "source": "googlebooks",
+      "isbn10": "883040862X",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 124,
+      "language": "it",
+      "subjects": [
+        "Humor"
+      ],
+      "coverUrl": "/book-covers/9788830408623.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:21:52.832Z"
+    },
+    {
+      "id": "1d1d954d-01b8-46e8-a36f-f8860045cfeb",
+      "isbn13": "9788867315192",
+      "title": "Il magico potere del riordino. Il metodo giapponese che trasforma i vostri spazi e la vostra vita",
+      "authors": [
+        "Marie Kondo"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:15:04.441Z",
+      "source": "openlibrary",
+      "isbn10": "8867315196",
+      "publisher": "Vallardi A.",
+      "publishDate": "2014",
+      "publishYear": 2014,
+      "language": "it",
+      "subjects": []
+    },
+    {
+      "id": "a496adff-c8ef-4fe6-ba11-3b416ff99b4d",
+      "isbn13": "9788887028157",
+      "title": "Impazienti. La crisi del rapporto tra dottori e malati",
+      "authors": [],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:15:21.413Z",
+      "source": "googlebooks",
+      "isbn10": "888702815X",
+      "publishDate": "2000",
+      "publishYear": 2000,
+      "pageCount": 96,
+      "language": "it",
+      "subjects": [
+        "Medical"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:22:04.784Z"
+    },
+    {
+      "id": "56bc3253-271e-4e76-a217-b661448f0dcc",
+      "isbn13": "9788807814433",
+      "title": "Non c'è problema",
+      "authors": [
+        "Filippo La Porta"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:15:38.067Z",
+      "source": "openlibrary",
+      "isbn10": "8807814439",
+      "publisher": "Feltrinelli",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 121,
+      "language": "ita",
+      "subjects": [
+        "Idioms",
+        "Italian language",
+        "Social aspects",
+        "Social aspects of Italian language",
+        "Terms and phrases"
+      ]
+    },
+    {
+      "id": "ca7e203a-cd64-4cd6-bab6-0c470c3bc420",
+      "isbn13": "9788806510374",
+      "title": "La camera chiara. Nota sulla fotografia.",
+      "authors": [],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:15:50.981Z",
+      "source": "openlibrary",
+      "isbn10": "8806510371",
+      "language": "it",
+      "subjects": [],
+      "rating": 5,
+      "dateRead": "2026-05-17T14:22:16.005Z"
+    },
+    {
+      "id": "c0c36449-c038-4093-b5c3-e161898d88d2",
+      "isbn13": "9788806141660",
+      "title": "Fuori tutti",
+      "authors": [
+        "Carlo Antonelli",
+        "Marco Delogu",
+        "Fabio De Luca"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:16:01.191Z",
+      "source": "openlibrary",
+      "isbn10": "880614166X",
+      "publisher": "Einaudi",
+      "publishDate": "1996",
+      "publishYear": 1996,
+      "pageCount": 119,
+      "language": "ita",
+      "subjects": [
+        "Youth",
+        "Attitudes",
+        "Dwellings"
+      ],
+      "rating": 2,
+      "dateRead": "2026-05-17T14:03:14.585Z"
+    },
+    {
+      "id": "5e8cfa38-2753-48cc-950a-4a4866b62070",
+      "isbn13": "9788807090073",
+      "title": "America, istruzioni per l'uso",
+      "authors": [
+        "Paul Watzlawick"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:16:13.540Z",
+      "source": "googlebooks",
+      "isbn10": "8807090074",
+      "publishDate": "1993",
+      "publishYear": 1993,
+      "pageCount": 112,
+      "language": "it",
+      "subjects": [
+        "Social Science"
+      ]
+    },
+    {
+      "id": "010177ac-d14c-442d-b7e5-3d5fd5c958b2",
+      "isbn13": "9788881761531",
+      "title": "Salento Salento",
+      "authors": [
+        "Piero Manni"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:16:28.960Z",
+      "source": "openlibrary",
+      "isbn10": "888176153X",
+      "publisher": "P. Manni",
+      "publishDate": "2000",
+      "publishYear": 2000,
+      "pageCount": 73,
+      "language": "ita",
+      "subjects": []
+    },
+    {
+      "id": "f79bba4b-3c93-4a0c-b348-4644a68e5867",
+      "isbn13": "9788807811135",
+      "title": "La politica dell'esperienza-L'uccello del paradiso",
+      "authors": [
+        "Ronald David Laing"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:16:34.986Z",
+      "source": "googlebooks",
+      "isbn10": "8807811138",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 192,
+      "language": "it",
+      "subjects": [
+        "Medical"
+      ]
+    },
+    {
+      "id": "a967acaa-2224-4c84-a15a-fb9a5362f5fd",
+      "isbn13": "9788872260609",
+      "title": "Lettera sulla felicità",
+      "authors": [
+        "Epicurus"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:16:47.619Z",
+      "source": "googlebooks",
+      "isbn10": "8872260604",
+      "publishDate": "1992",
+      "publishYear": 1992,
+      "pageCount": 32,
+      "language": "it",
+      "subjects": [
+        "Philosophy"
+      ]
+    },
+    {
+      "id": "2ab5a2da-67f9-4f5d-898c-10a0411cfb06",
+      "isbn13": "9788872261637",
+      "title": "Cinema e cinema",
+      "authors": [
+        "Vladimir Vladimirovič Majakovskij"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:17:03.906Z",
+      "source": "googlebooks",
+      "isbn10": "8872261635",
+      "publisher": "Stampa Alternativa",
+      "publishDate": "1993",
+      "publishYear": 1993,
+      "pageCount": 64,
+      "language": "it",
+      "subjects": [
+        "Performing Arts"
+      ]
+    },
+    {
+      "id": "08245180-f324-45ef-bfd7-bd73c51f1544",
+      "isbn13": "9788871681221",
+      "title": "La confraternita del Chianti",
+      "authors": [
+        "John Fante"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T16:18:03.788Z",
+      "source": "googlebooks",
+      "isbn10": "8871681223",
+      "publishDate": "1995",
+      "publishYear": 1995,
+      "pageCount": 192,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ]
+    },
+    {
+      "id": "67109968-bb1e-4f2c-b3d0-4beaa47216fc",
+      "isbn13": "9788846100092",
+      "title": "Baburu. I figli della Grande Bolla",
+      "authors": [
+        "Karl Taro Greenfeld",
+        "Shin Takamatsu"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T16:18:29.104Z",
+      "source": "googlebooks",
+      "isbn10": "8846100093",
+      "publishDate": "1995",
+      "publishYear": 1995,
+      "pageCount": 352,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788846100092.webp",
+      "rating": 3,
+      "dateRead": "2026-05-17T14:22:38.100Z"
+    },
+    {
+      "id": "4b343c6a-e38d-43ae-a9e2-f9580d83b241",
+      "isbn13": "9788804471240",
+      "title": "Storia dell'Europa medievale",
+      "authors": [
+        "Maurice Keen"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T17:21:15.380Z",
+      "source": "googlebooks",
+      "isbn10": "8804471247",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 355,
+      "language": "it",
+      "subjects": [
+        "History"
+      ]
+    },
+    {
+      "id": "679e76b9-f96c-4949-b56f-85375b7c5dca",
+      "isbn13": "9788807015533",
+      "title": "L'albergo delle donne tristi",
+      "authors": [
+        "Marcela Serrano"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T17:21:34.854Z",
+      "source": "googlebooks",
+      "isbn10": "8807015536",
+      "publishDate": "2000",
+      "publishYear": 2000,
+      "pageCount": 280,
+      "language": "it",
+      "subjects": [
+        "Fiction"
+      ],
+      "coverUrl": "/book-covers/9788807015533.webp"
+    },
+    {
+      "id": "1fce00b7-0789-432e-a783-07a5b4de8966",
+      "isbn13": "9788817007566",
+      "title": "Gli insegnamenti di don Juan",
+      "authors": [
+        "Carlos Castaneda"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-05-03T17:21:47.672Z",
+      "source": "googlebooks",
+      "isbn10": "8817007560",
+      "publishDate": "2005",
+      "publishYear": 2005,
+      "pageCount": 322,
+      "language": "it",
+      "subjects": [
+        "Literary Collections"
+      ],
+      "coverUrl": "/book-covers/9788817007566.webp"
+    },
+    {
+      "id": "cac7cac8-f05d-4b5a-97d5-e5a0d3c0223d",
+      "isbn13": "9788807812323",
+      "title": "QUENEAU RAYMOND - DIARIO INTIM",
+      "authors": [
+        "Raymond Queneau"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T17:22:03.136Z",
+      "source": "openlibrary",
+      "isbn10": "8807812320",
+      "publisher": "Feltrinelli",
+      "publishDate": "Mar 16, 2009",
+      "publishYear": 2009,
+      "pageCount": 168,
+      "language": "ita",
+      "subjects": [],
+      "coverUrl": "/book-covers/9788807812323.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:02:49.836Z"
+    },
+    {
+      "id": "6fe23721-b0a8-49f6-b155-4f075035ce7d",
+      "isbn13": "9788886568777",
+      "title": "Leggere, scrivere, disobbedire",
+      "authors": [
+        "Stefano Benni"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T17:22:17.495Z",
+      "source": "openlibrary",
+      "isbn10": "8886568770",
+      "publisher": "Minimum fax",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 110,
+      "language": "ita",
+      "subjects": [
+        "Interviews",
+        "Italian Authors"
+      ],
+      "rating": 5,
+      "dateRead": "2026-05-17T14:02:13.397Z"
+    },
+    {
+      "id": "9ea4ab10-141d-45f1-b30c-556638e01d95",
+      "isbn13": "9788833914879",
+      "title": "Argonauti del Pacifico occidentale. Riti magici e vita quotidiana nella società primitiva",
+      "authors": [
+        "Bronislaw Malinowski"
+      ],
+      "status": "reading",
+      "dateAdded": "2026-05-03T17:22:47.074Z",
+      "source": "googlebooks",
+      "isbn10": "8833914879",
+      "publishDate": "2004",
+      "publishYear": 2004,
+      "pageCount": 602,
+      "language": "it",
+      "subjects": [
+        "Social Science"
+      ],
+      "coverUrl": "/book-covers/9788833914879.webp",
+      "rating": 5
+    },
+    {
+      "id": "5e53d9d2-9862-4f96-92ca-e1b96b59a537",
+      "isbn13": "9788817029193",
+      "title": "Taglia e cuci",
+      "authors": [
+        "Marjane Satrapi"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T17:24:04.849Z",
+      "source": "googlebooks",
+      "isbn10": "881702919X",
+      "publishDate": "2009",
+      "publishYear": 2009,
+      "pageCount": 0,
+      "language": "it",
+      "subjects": [
+        "Biography & Autobiography"
+      ],
+      "coverUrl": "/book-covers/9788817029193.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:22:53.833Z"
+    },
+    {
+      "id": "9e16c8e7-c8d4-4a9f-8c4f-9d1c59182f4c",
+      "isbn13": "9788827210963",
+      "title": "Il Tao del Sesso",
+      "authors": [
+        "Stephen Thomas Chang"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-03T17:34:59.890Z",
+      "source": "openlibrary",
+      "isbn10": "8827210962",
+      "publisher": "Edizioni Mediterranee",
+      "publishDate": "1997",
+      "publishYear": 1997,
+      "pageCount": 221,
+      "language": "ita",
+      "subjects": [
+        "Relazioni sessuali",
+        "* Laozi. \"Daodejing\"",
+        "Sessualità"
+      ],
+      "coverUrl": "/book-covers/9788827210963.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:23:02.054Z"
+    },
+    {
+      "id": "65031782-b136-4d06-b3bf-6d5d7b2c73b8",
+      "isbn13": "9780345341846",
+      "title": "Finite and infinite games",
+      "authors": [
+        "James P. Carse"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-16T22:01:20.518Z",
+      "source": "openlibrary",
+      "isbn10": "0345341848",
+      "publisher": "Ballantine Books",
+      "publishDate": "1987",
+      "publishYear": 1987,
+      "pageCount": 180,
+      "language": "eng",
+      "subjects": [
+        "Games",
+        "Life",
+        "Ontology",
+        "Philosophy",
+        "Religion",
+        "Symbolic aspects",
+        "Symbolic aspects of Games",
+        "Lebenssinn",
+        "Games -- Symbolic aspects",
+        "Long Now Manual for Civilization"
+      ],
+      "synopsis": "Finite games are the familiar contests of everyday life, the games we play in business and politics, in the bedroom and on the battlefield — games with winners and losers, a beginning and an end. Infinite games are the more mysterious — and ultimately more rewarding. They are unscripted and unpredictable; they are the source of true freedom. \r\n\r\n-- from the back cover of the 1986 edition.",
+      "coverUrl": "/book-covers/9780345341846.webp",
+      "rating": 5,
+      "dateRead": "2026-05-17T14:23:09.377Z"
+    },
+    {
+      "id": "a39ed46d-0532-43a5-92ea-ddb6514b3e29",
+      "isbn13": "9780810913110",
+      "title": "Manhattan",
+      "authors": [],
+      "status": "read",
+      "dateAdded": "2026-05-17T13:36:56.643Z",
+      "source": "openlibrary",
+      "isbn10": "0810913119",
+      "publisher": "H.N. Abrams",
+      "publishDate": "1981",
+      "publishYear": 1981,
+      "pageCount": 253,
+      "language": "eng",
+      "subjects": [
+        "Pictorial works"
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-17T14:23:16.720Z"
+    },
+    {
+      "id": "49011551-e724-4052-9af7-1397391cec5f",
+      "isbn13": "9781855852662",
+      "title": "Techno Style",
+      "authors": [
+        "Martin Pesch",
+        "Markus Weisbeck"
+      ],
+      "status": "read",
+      "dateAdded": "2026-05-17T13:37:43.685Z",
+      "source": "openlibrary",
+      "isbn10": "1855852667",
+      "publisher": "Collins & Brown",
+      "publishDate": "May 1, 1996",
+      "publishYear": 1996,
+      "pageCount": 132,
+      "subjects": [],
+      "rating": 3,
+      "dateRead": "2026-05-17T14:23:22.911Z"
+    },
+    {
+      "id": "125be5e8-1dbb-451c-9ee8-8e31a0390777",
+      "isbn13": "9780002177344",
+      "title": "A Day in the life of America",
+      "authors": [],
+      "status": "read",
+      "dateAdded": "2026-05-17T13:43:34.109Z",
+      "source": "openlibrary",
+      "isbn10": "0002177056",
+      "publisher": "Collins Publishers",
+      "publishDate": "1986",
+      "publishYear": 1986,
+      "pageCount": 268,
+      "language": "eng",
+      "subjects": [
+        "Pictorial works",
+        "Social life and customs",
+        "Photojournalism",
+        "United states",
+        "United states, pictorial works",
+        "United states, social life and customs",
+        "Aerial views"
+      ],
+      "coverUrl": "/book-covers/9780002177344.webp",
+      "rating": 4,
+      "dateRead": "2026-05-17T14:02:35.337Z"
+    }
+  ]
+}

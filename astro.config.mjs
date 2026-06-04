@@ -115,6 +115,13 @@ export default defineConfig({
 
 	// Sourcemaps in production builds
 	vite: {
+		// @bookbat/* are linked source packages that ship raw TS (extensionless
+		// relative imports). Force Vite to process them through its own resolver
+		// instead of externalising to Node's ESM loader, which can't resolve
+		// `./books` without an extension. Build bundles them already; this fixes dev.
+		ssr: {
+			noExternal: ['@bookbat/baobab', '@bookbat/library-core'],
+		},
 		build: { sourcemap: true }, // JS sourcemaps
 		css: { devSourcemap: true }, // CSS sourcemaps in dev (optional)
 		resolve: {

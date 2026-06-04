@@ -15,6 +15,6 @@ const books = parseLibraryPayload(library);
 <Layout title={pageTitle} description={description} bodyClass="books">
   <main class="wrap">
     <h1>Books</h1>
-    <BookBatClient books={books} config={{ unstyled: true }} />
+    <BookBatClient books={books} config={{ showHeader: false }} />
   </main>
 </Layout>

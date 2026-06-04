@@ -66,23 +66,4 @@ const books = parseLibraryPayload(library);
     border-top: 0;
   }
 
-  /* Hide the in-sidebar divider. */
-  .books .bfc_sidebar hr {
-    display: none;
-  }
-
-  /* Sticky search on mobile: flatten the sidebar/controls wrappers so .bfc_body
-     becomes the search's containing block, then pin the search row to the top. */
-  @media (max-width: 767px) {
-    .books .bfc_sidebar,
-    .books .bfc_controls {
-      display: contents;
-    }
-    .books .bfc_control--search {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      padding-block: 10px;
-    }
-  }
 </style>

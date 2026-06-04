@@ -16,7 +16,10 @@ const books = parseLibraryPayload(library);
 ---
 
 <Layout title={pageTitle} description={description} bodyClass="books">
-  <BookBatClient books={books} config={{ showHeader: false }} />
+  <BookBatClient
+    books={books}
+    config={{ showHeader: false, sort: "rating", sortDirection: "desc" }}
+  />
 </Layout>
 
 <style is:global>
@@ -216,4 +219,33 @@ const books = parseLibraryPayload(library);
       padding-block: 10px;
     }
   }
+
+  /* Synopsis: clamp to a short teaser (the … appears automatically); click to
+     expand to the full text. Toggled by the delegated script below. */
+  .books .bfc_synopsis p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .books .bfc_synopsis.is-open p {
+    -webkit-line-clamp: unset;
+    display: block;
+  }
 </style>
+
+<script>
+  // Synopsis accordion: clicking a clamped synopsis toggles the full text.
+  // Delegated on .books so it survives the component re-rendering the cards.
+  function initSynopsisToggle() {
+    const root = document.querySelector<HTMLElement>(".books");
+    if (!root || root.dataset.synopsisBound) return;
+    root.dataset.synopsisBound = "true";
+    root.addEventListener("click", (e) => {
+      const syn = (e.target as HTMLElement)?.closest(".bfc_synopsis");
+      if (syn) syn.classList.toggle("is-open");
+    });
+  }
+  document.addEventListener("astro:page-load", initSynopsisToggle);
+</script>

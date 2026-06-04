@@ -13,9 +13,7 @@ const books = parseLibraryPayload(library);
 ---
 
 <Layout title={pageTitle} description={description} bodyClass="books">
-  <main class="wrap">
-    <BookBatClient books={books} />
-  </main>
+  <BookBatClient books={books} />
 </Layout>
 
 <style is:global>

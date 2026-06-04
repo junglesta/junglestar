@@ -172,6 +172,17 @@ const books = parseLibraryPayload(library);
     grid-column: 1 / -1;
   }
 
+  /* Native <select> dropdown: declare a dark color-scheme so the browser
+     renders the popup correctly on the dark page (instead of the cramped,
+     mis-placed light-mode menu), and set explicit option colors. */
+  .books .bfc_control select {
+    color-scheme: dark;
+  }
+  .books .bfc_control select option {
+    background: var(--bg-input);
+    color: var(--text);
+  }
+
   /* Outer list column flush within the panel (card text keeps its padding —
      .bfc_main is reused for both the list column and each card's text block). */
   .books .bfc_body > .bfc_main {

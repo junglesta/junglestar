@@ -1,5 +1,5 @@
 ---
-// src/pages/books.astro
+// src/pages/books/index.astro
 import Layout from "@layouts/Layout.astro";
 import BookBatClient from "@bookbat/baobab/BookBatClient.astro";
 import { parseLibraryPayload } from "@bookbat/library-core";
@@ -18,3 +18,15 @@ const books = parseLibraryPayload(library);
     <BookBatClient books={books} config={{ showHeader: false }} />
   </main>
 </Layout>
+
+<style is:global>
+  /* Neutral palette — same region ramp as the single tag pages
+     (src/pages/tag/[tag].astro): light/dirty-white regions, dark text. */
+  .books {
+    --region_head: var(--whiteOFF);
+    --fg_head: var(--text_color);
+    --region_main: var(--whiteDIRTY);
+    --fg_main: var(--text_color);
+    --region_foot: var(--whiteOFF);
+  }
+</style>

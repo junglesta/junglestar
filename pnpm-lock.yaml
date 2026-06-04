@@ -14,6 +14,12 @@ importers:
       '@astro-community/astro-embed-link-preview':
         specifier: ^0.3.1
         version: 0.3.1
+      '@bookbat/baobab':
+        specifier: link:../bookbat/packages/baobab
+        version: link:../bookbat/packages/baobab
+      '@bookbat/library-core':
+        specifier: link:../bookbat/packages/library-core
+        version: link:../bookbat/packages/library-core
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.9

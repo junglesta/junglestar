@@ -40,6 +40,8 @@
     }
   },
   "dependencies": {
-    "@astro-community/astro-embed-link-preview": "^0.3.1"
+    "@astro-community/astro-embed-link-preview": "^0.3.1",
+    "@bookbat/baobab": "link:../bookbat/packages/baobab",
+    "@bookbat/library-core": "link:../bookbat/packages/library-core"
   }
 }

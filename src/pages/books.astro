@@ -1,0 +1,20 @@
+---
+// src/pages/books.astro
+import Layout from "@layouts/Layout.astro";
+import BookBatClient from "@bookbat/baobab/BookBatClient.astro";
+import { parseLibraryPayload } from "@bookbat/library-core";
+import library from "@data/library.json";
+
+// Page metadata
+const pageTitle = "Junglestar | Books";
+const description = "Books we track and recommend.";
+
+const books = parseLibraryPayload(library);
+---
+
+<Layout title={pageTitle} description={description} bodyClass="books">
+  <main class="wrap">
+    <h1>Books</h1>
+    <BookBatClient books={books} config={{ unstyled: true }} />
+  </main>
+</Layout>

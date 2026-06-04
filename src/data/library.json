@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "books": [
+    {
+      "id": "ffb86aae-96c6-47d4-95d6-5735258b9982",
+      "isbn13": "9780465097197",
+      "isbn10": "0465097197",
+      "title": "Interpretation of Cultures",
+      "authors": [
+        "Clifford Geertz"
+      ],
+      "publisher": "Basic Books",
+      "publishDate": "January 2000",
+      "publishYear": 2000,
+      "pageCount": 480,
+      "language": "eng",
+      "subjects": [
+        "Culturele antropologie",
+        "Culture",
+        "Ethnology",
+        "Ethnologie",
+        "Ethnolo",
+        "Mudanca Social",
+        "Kulturphilosophie",
+        "Kulturanthropologie",
+        "Antropologia cult social",
+        "Anthropologie"
+      ],
+      "coverUrl": "https://covers.openlibrary.org/b/id/299356-L.jpg",
+      "status": "read",
+      "dateAdded": "2026-02-25T18:38:42.229Z",
+      "source": "openlibrary",
+      "rating": 5,
+      "dateRead": "2026-02-26T00:54:36.169Z"
+    },
+    {
+      "id": "73459295-69da-4444-ac56-9896ee9dd1ae",
+      "isbn13": "9788807900822",
+      "isbn10": "8807900823",
+      "title": "Discorso della servitù volontaria",
+      "authors": [
+        "Etienne de La Boëtie",
+        "E. Donaggio"
+      ],
+      "publisher": "Feltrinelli",
+      "publishDate": "Feb 26, 2014",
+      "publishYear": 2014,
+      "pageCount": 128,
+      "language": "it",
+      "subjects": [
+        "Politics",
+        "Liberty",
+        "Early works to 1800",
+        "Political science",
+        "Despotism",
+        "Obedience",
+        "Political science, early works to 1800",
+        "Allegiance",
+        "Liberty.\u001e 0",
+        "Criticism and interpretation"
+      ],
+      "coverUrl": "https://covers.openlibrary.org/b/id/11193233-L.jpg",
+      "status": "to-read",
+      "dateAdded": "2026-02-25T20:03:46.118Z",
+      "source": "openlibrary",
+      "rating": 3
+    },
+    {
+      "id": "bbc3c20a-ddb5-4352-8ed7-8c2279b9a967",
+      "isbn13": "9780099908401",
+      "isbn10": "0099908409",
+      "title": "The Old Man and the Sea",
+      "authors": [
+        "Ernest Hemingway"
+      ],
+      "publisher": "Arrow Books",
+      "publishDate": "1993",
+      "publishYear": 1993,
+      "pageCount": 112,
+      "language": "eng",
+      "subjects": [
+        "American Sea stories",
+        "Male friendship",
+        "Fishers",
+        "Fiction",
+        "Ameriška književnost",
+        "American fiction",
+        "Ancianos",
+        "Open Library Staff Picks",
+        "Fishing stories",
+        "Pescadores"
+      ],
+      "coverUrl": "https://covers.openlibrary.org/b/id/12840558-L.jpg",
+      "status": "read",
+      "dateAdded": "2026-02-25T20:06:52.059Z",
+      "source": "openlibrary",
+      "rating": 5,
+      "dateRead": "2026-02-26T00:54:10.534Z"
+    },
+    {
+      "id": "ec5e3e05-c4ac-4df1-affa-4a7ffee3e729",
+      "isbn13": "9781905379422",
+      "title": "Farang",
+      "authors": [
+        "Iain Corness"
+      ],
+      "publisher": "Maverick House",
+      "publishDate": "2007",
+      "publishYear": 2007,
+      "pageCount": 306,
+      "language": "eng",
+      "subjects": [
+        "British, foreign countries",
+        "Thailand, social life and customs",
+        "Thailand, description and travel",
+        "Homes and haunts",
+        "British",
+        "Social life and customs",
+        "Description and travel",
+        "Homes",
+        "Manners and customs",
+        "Travel"
+      ],
+      "coverUrl": "https://covers.openlibrary.org/b/id/12179393-L.jpg",
+      "status": "read",
+      "dateAdded": "2026-02-25T20:07:21.048Z",
+      "source": "openlibrary",
+      "dateRead": "2026-02-26T00:54:05.686Z",
+      "rating": 3
+    },
+    {
+      "id": "1a99e989-fb95-42c5-8b2f-9a8fddb02abf",
+      "isbn13": "9781581154979",
+      "isbn10": "1581154976",
+      "title": "ASMP professional business practices in photography",
+      "authors": [],
+      "publisher": "Allworth Pres",
+      "publishDate": "2008",
+      "publishYear": 2008,
+      "pageCount": 480,
+      "language": "eng",
+      "subjects": [
+        "Business methods",
+        "Commercial photography",
+        "Photography",
+        "Photography, business methods"
+      ],
+      "status": "read",
+      "dateAdded": "2026-02-25T20:07:57.587Z",
+      "source": "openlibrary",
+      "rating": 4,
+      "dateRead": "2026-02-26T00:55:03.702Z"
+    },
+    {
+      "id": "293ad134-a379-4e3d-bee5-67d352e61206",
+      "isbn13": "9780816025183",
+      "isbn10": "0816025185",
+      "title": "Survival",
+      "authors": [
+        "Xavier Maniguet"
+      ],
+      "publisher": "Facts on File",
+      "publishDate": "1994",
+      "publishYear": 1994,
+      "pageCount": 454,
+      "language": "eng",
+      "subjects": [
+        "Wilderness survival"
+      ],
+      "coverUrl": "https://covers.openlibrary.org/b/id/614065-L.jpg",
+      "status": "reading",
+      "dateAdded": "2026-02-25T20:08:58.475Z",
+      "source": "openlibrary",
+      "rating": 4
+    },
+    {
+      "id": "580283e8-0b21-4663-9a1f-b5f8eb3cee16",
+      "isbn13": "9780141024530",
+      "title": "The shock doctrine",
+      "authors": [],
+      "publisher": "Penguin",
+      "publishDate": "2008",
+      "publishYear": 2008,
+      "pageCount": 576,
+      "language": "eng",
+      "subjects": [
+        "Financial crises",
+        "Capitalism",
+        "Free enterprise",
+        "Corporate power",
+        "Disasters",
+        "Economic history",
+        "International economic relations",
+        "Violence",
+        "World politics",
+        "Foreign relations"
+      ],
+      "coverUrl": "https://covers.openlibrary.org/b/id/12586592-L.jpg",
+      "rating": 4,
+      "status": "read",
+      "dateAdded": "2026-02-26T15:05:45.226Z",
+      "dateRead": "2026-02-26T15:06:46.695Z",
+      "source": "openlibrary"
+    },
+    {
+      "id": "a62c88e4-70d8-4f6d-8ec6-fb78ae8cee9b",
+      "isbn13": "9780207188183",
+      "isbn10": "0207188181",
+      "title": "Us mob",
+      "authors": [
+        "Mudrooroo"
+      ],
+      "publisher": "Angus & Robertson",
+      "publishDate": "1995",
+      "publishYear": 1995,
+      "pageCount": 242,
+      "language": "eng",
+      "subjects": [
+        "Politics and government",
+        "Social life and customs",
+        "Aboriginal Australians",
+        "History",
+        "Australian indigenous studies"
+      ],
+      "coverUrl": "https://covers.openlibrary.org/b/id/13215662-L.jpg",
+      "status": "to-read",
+      "dateAdded": "2026-02-26T15:07:30.194Z",
+      "source": "openlibrary"
+    },
+    {
+      "id": "18dbe921-f68d-4888-bca1-bb2007d9adc5",
+      "isbn13": "9780868405469",
+      "isbn10": "0868405469",
+      "title": "Contemporary Melbourne architecture",
+      "authors": [
+        "Joe Rollo"
+      ],
+      "publisher": "UNSW Press",
+      "publishDate": "1999",
+      "publishYear": 1999,
+      "pageCount": 192,
+      "language": "eng",
+      "subjects": [
+        "Age (Melbourne, Vic.)",
+        "Architecture",
+        "Australian newspapers",
+        "Buildings, structures",
+        "Sections, columns",
+        "History",
+        "Buildings",
+        "Australian Architecture",
+        "Modern Architecture"
+      ],
+      "coverUrl": "https://covers.openlibrary.org/b/id/1616207-L.jpg",
+      "status": "to-read",
+      "dateAdded": "2026-02-26T15:08:54.676Z",
+      "source": "openlibrary"
+    }
+  ]
+}

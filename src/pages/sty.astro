@@ -191,10 +191,13 @@ const sections = [
         Live reference for Junglestar's tokens, type scale and components.
         <strong>Click any chip to copy its <code>var()</code> reference.</strong>
       </p>
-      <nav class="sg_nav" aria-label="Sections">
-        {sections.map(([id, label]) => <a href={`#${id}`}>{label}</a>)}
-      </nav>
     </header>
+
+    <!-- Sibling of <main>'s sections (not nested in the short header) so the
+         sticky travels the whole page on desktop instead of releasing at once. -->
+    <nav class="sg_nav" aria-label="Sections">
+      {sections.map(([id, label]) => <a href={`#${id}`}>{label}</a>)}
+    </nav>
 
     <!-- ══ COLOUR ══════════════════════════════════════════════════════ -->
     <section id="colour" class="sg_section">

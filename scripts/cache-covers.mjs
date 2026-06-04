@@ -22,8 +22,8 @@ const OUT_DATA = path.join(ROOT, "src/data/library.generated.json");
 const COVERS_DIR = path.join(ROOT, "public/book-covers");
 const PUBLIC_PREFIX = "/book-covers";
 
-const WIDTH = 320; // cover renders ~140-200px; 320 covers retina
-const QUALITY = 80;
+const WIDTH = 400; // cards render covers at ~350px; upscale small sources to fit
+const QUALITY = 82;
 const CONCURRENCY = 8;
 const MIN_BYTES = 1000; // smaller responses are openlibrary's blank placeholder
 const TIMEOUT_MS = 15000;
@@ -73,7 +73,8 @@ async function processBook(book) {
 			return book; // blank placeholder → no real cover
 		}
 		await sharp(buf)
-			.resize({ width: WIDTH, withoutEnlargement: true })
+			.resize({ width: WIDTH, kernel: "lanczos3" })
+			.sharpen()
 			.webp({ quality: QUALITY })
 			.toFile(dest);
 		stats.downloaded++;

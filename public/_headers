@@ -1,0 +1,17 @@
+# Cloudflare Workers static-assets headers.
+# Browser caching for immutable / rarely-changing assets (Lighthouse:
+# "use efficient cache lifetimes"). Cloudflare's default for these was
+# `max-age=0, must-revalidate`, forcing a revalidation every visit.
+
+# Content-hashed build output — the filename changes when the content does,
+# so it's safe to cache forever.
+/_JSTAR/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Build-time-cached book covers (keyed by ISBN, effectively static).
+/book-covers/*
+  Cache-Control: public, max-age=2592000
+
+# Generated OG share cards.
+/og/*
+  Cache-Control: public, max-age=2592000

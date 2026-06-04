@@ -30,6 +30,30 @@ const books = parseLibraryPayload(library);
     --fg_foot: var(--white);
   }
 
+  /* Recolor the component's lime accent (year/Read text, stars, active tab,
+     chips, focus) to dirty-white. One var override cascades everywhere. */
+  .books .bfc {
+    --accent: var(--whiteDIRTY);
+  }
+
+  /* Kill the dark-green panel frame + its inline padding (sit on the page). */
+  .books .bfc_body {
+    background: none;
+    padding-inline: 0;
+  }
+
+  /* 1px brand-tint border on cards and the controls (inputs / selects /
+     buttons / tabs / view switch). */
+  .books .bfc_item,
+  .books .bfc_control input,
+  .books .bfc_control select,
+  .books .bfc_sort_direction,
+  .books .bfc_status_tab,
+  .books .bfc_view_switch,
+  .books .bfc_expand_toggle {
+    border: 1px solid var(--brandT25);
+  }
+
   /* BAOBAB ships its own <details> styling. Stop junglestar's global
      details/summary rules (the injected "+" marker, centered summary,
      top borders, vertical offset) from bleeding into the embedded

@@ -41,11 +41,23 @@ function sourceUrl(book) {
 
 const stats = { cached: 0, downloaded: 0, missing: 0 };
 
-async function processBook(book) {
-	const key = book.isbn13 || book.id;
-	if (!key) return book;
-	const dest = path.join(COVERS_DIR, `${key}.webp`);
-	const localUrl = `${PUBLIC_PREFIX}/${key}.webp`;
+// Human-friendly file name from the book title (so covers are easy to find on
+// disk). Strips accents, lowercases, dashes. Falls back to the id when a title
+// has no latin characters (e.g. CJK); collisions get an isbn suffix (see main).
+function slugify(value) {
+	return String(value || "")
+		.normalize("NFKD")
+		.replace(/[̀-ͯ]/g, "")
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, "-")
+		.replace(/^-+|-+$/g, "")
+		.slice(0, 80);
+}
+
+async function processBook(book, name) {
+	if (!name) return book;
+	const dest = path.join(COVERS_DIR, `${name}.webp`);
+	const localUrl = `${PUBLIC_PREFIX}/${name}.webp`;
 
 	if (existsSync(dest)) {
 		stats.cached++;
@@ -90,12 +102,24 @@ async function main() {
 	const books = Array.isArray(data) ? data : data.books || [];
 	await mkdir(COVERS_DIR, { recursive: true });
 
+	// Precompute file names once, in stable array order, so they don't shift
+	// between runs. Title slug; falls back to id; isbn suffix on collision.
+	const seen = new Set();
+	const names = books.map((b) => {
+		const id = b.isbn13 || b.id || "";
+		let name = slugify(b.title) || id;
+		if (!name) return "";
+		if (seen.has(name)) name = `${name}-${id}`;
+		seen.add(name);
+		return name;
+	});
+
 	const out = new Array(books.length);
 	let next = 0;
 	async function worker() {
 		while (next < books.length) {
 			const idx = next++;
-			out[idx] = await processBook(books[idx]);
+			out[idx] = await processBook(books[idx], names[idx]);
 		}
 	}
 	await Promise.all(Array.from({ length: CONCURRENCY }, worker));

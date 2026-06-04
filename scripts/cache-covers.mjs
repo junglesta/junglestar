@@ -1,14 +1,23 @@
 // Build-time book-cover cache for the /books page.
 //
-// Reads src/data/library.json (the source of truth, with remote cover URLs),
-// downloads each cover ONCE into public/book-covers/<isbn>.webp (resized +
-// recompressed via sharp), and writes src/data/library.generated.json with
-// coverUrl rewritten to the local /book-covers/<isbn>.webp path. Books whose
-// cover can't be fetched keep their original remote URL as a graceful fallback.
+// Reads src/data/library.json (the source of truth), downloads each cover ONCE
+// into public/book-covers/<title-slug>.webp (resized + sharpened via sharp), and
+// writes src/data/library.generated.json with coverUrl rewritten to the local
+// /book-covers/<title-slug>.webp path. Books whose cover can't be fetched keep
+// their original remote URL as a graceful fallback.
 //
-// Idempotent + cached: a cover already on disk is skipped (no network). Delete
-// public/book-covers to force a full refresh. Run via `pnpm covers`, and it
-// runs automatically before `pnpm build` (see package.json prebuild).
+// ┌─────────────────────────────────────────────────────────────────────────┐
+// │ ADD-ONLY — NEVER DELETE COVERS.                                          │
+// │ This script ONLY adds covers (it skips any file already on disk) and     │
+// │ NEVER removes one. Hand-placed covers are sacred: to fill a missing      │
+// │ cover, drop a webp at public/book-covers/<title-slug>.webp (~400px wide) │
+// │ and run `pnpm covers` — it's preserved as-is and wired into the data.    │
+// │ Do NOT `rm -rf public/book-covers` (you'd wipe hand-uploaded covers).    │
+// │ To refresh ONE cover, delete just that single file, then `pnpm covers`.  │
+// └─────────────────────────────────────────────────────────────────────────┘
+//
+// Idempotent: a cover already on disk is used as-is (no network). Run via
+// `pnpm covers`; also runs automatically before `pnpm build` (prebuild).
 
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -59,6 +68,8 @@ async function processBook(book, name) {
 	const dest = path.join(COVERS_DIR, `${name}.webp`);
 	const localUrl = `${PUBLIC_PREFIX}/${name}.webp`;
 
+	// Any cover already on disk wins — downloaded earlier OR hand-placed by the
+	// maintainer for a book openlibrary has no cover for. Never re-fetch/replace.
 	if (existsSync(dest)) {
 		stats.cached++;
 		return { ...book, coverUrl: localUrl };

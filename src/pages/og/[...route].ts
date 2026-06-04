@@ -49,6 +49,10 @@ const staticPages: Record<string, Card> = {
 		title: 'Style Guide',
 		description: 'Junglestar design system & palette.',
 	},
+	books: {
+		title: 'Books',
+		description: 'Books we track and recommend.',
+	},
 };
 
 // Collection posts + tag pages → drift-free, built from the same path utils

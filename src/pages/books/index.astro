@@ -61,6 +61,11 @@ const books = parseLibraryPayload(library);
     padding-inline: 0;
   }
 
+  /* Expand all / Collapse all: label only, drop the icon. */
+  .books .bfc_expand_toggle_icon {
+    display: none;
+  }
+
   /* Sticky search on mobile. The component already pins the whole sidebar on
      desktop (>=1100px). On phones the controls stack above the list, so flatten
      the sidebar + controls wrappers (display:contents) to make .bfc_body the

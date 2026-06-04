@@ -41,7 +41,7 @@
       "authors": [
         "Daniel Picouly"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T08:24:13.392Z",
       "source": "googlebooks",
       "isbn10": "8807700816",
@@ -53,7 +53,8 @@
       "subjects": [
         "Fiction"
       ],
-      "coverUrl": "/book-covers/il-campo-di-nessuno.webp"
+      "coverUrl": "/book-covers/il-campo-di-nessuno.webp",
+      "rating": 3
     },
     {
       "id": "c65cdce6-b316-4407-8533-e05149979086",
@@ -250,7 +251,7 @@
       "authors": [
         "Miyamoto Musashi"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T08:27:39.473Z",
       "source": "openlibrary",
       "isbn10": "8827201351",
@@ -270,7 +271,8 @@
         "Obras anteriores a 1800"
       ],
       "synopsis": "A psychological guide to strategy applicable to business, philosophy, or martial arts, written by sixteenth-century warrior Miyamoto Musashi as a means of explaining his success as a practitioner of Japanese swordfighting, or Kendo.",
-      "coverUrl": "/book-covers/myamoto-musashi-il-libro-dei.webp"
+      "coverUrl": "/book-covers/myamoto-musashi-il-libro-dei.webp",
+      "rating": 3
     },
     {
       "id": "a464ff21-f34d-4b7a-b5e0-9a4a626a5d3d",
@@ -279,7 +281,7 @@
       "authors": [
         "Pap Khouma"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T08:27:59.634Z",
       "source": "openlibrary",
       "isbn10": "8811739705",
@@ -292,7 +294,8 @@
         "Biography",
         "Immigrants",
         "Senegalese"
-      ]
+      ],
+      "rating": 2
     },
     {
       "id": "5fe59cdb-9e5a-4d45-ab3e-9104eb416bda",
@@ -348,7 +351,7 @@
       "authors": [
         "Eddy L. Harris"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T08:31:23.339Z",
       "source": "googlebooks",
       "isbn10": "8871081129",
@@ -358,7 +361,9 @@
       "language": "it",
       "subjects": [
         "Travel"
-      ]
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-27T23:52:22.206Z"
     },
     {
       "id": "f52c0580-258c-4023-bc77-c53c66492ede",
@@ -421,14 +426,15 @@
       "authors": [
         "Gianni Celati"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T08:32:05.367Z",
       "source": "openlibrary",
       "isbn10": "8807815826",
       "publisher": "Feltrinelli Traveller",
       "publishDate": "2000-07-14",
       "publishYear": 2000,
-      "subjects": []
+      "subjects": [],
+      "rating": 2
     },
     {
       "id": "a2922249-ffab-4761-93c2-16a755c11bd1",
@@ -437,7 +443,7 @@
       "authors": [
         "Alessandro Chelo"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T08:32:16.811Z",
       "source": "googlebooks",
       "isbn10": "8897458483",
@@ -448,7 +454,8 @@
       "subjects": [
         "Fiction"
       ],
-      "coverUrl": "/book-covers/credevo-d-aver-piantato-un-baobab.webp"
+      "coverUrl": "/book-covers/credevo-d-aver-piantato-un-baobab.webp",
+      "rating": 3
     },
     {
       "id": "7b62f39e-8d6c-4c93-b33d-c4286427d489",
@@ -481,7 +488,7 @@
       "authors": [
         "Manuel Scorza"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T08:33:53.462Z",
       "source": "googlebooks",
       "isbn10": "8807809877",
@@ -578,7 +585,7 @@
       "authors": [
         "Italo Calvino"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T08:35:35.761Z",
       "source": "openlibrary",
       "isbn10": "8804370858",
@@ -752,7 +759,7 @@
       "authors": [
         "Peggy Vance"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.907Z",
       "source": "openlibrary",
       "isbn10": "184188071X",
@@ -771,7 +778,9 @@
         "Designs and plans",
         "Decoration"
       ],
-      "coverUrl": "/book-covers/loft-living.webp"
+      "coverUrl": "/book-covers/loft-living.webp",
+      "rating": 4,
+      "dateRead": "2026-05-27T23:51:41.007Z"
     },
     {
       "id": "36477e33-036a-4b6d-a888-ed0e2dcb8315",
@@ -849,7 +858,7 @@
       "authors": [
         "Damian Harper"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.909Z",
       "source": "openlibrary",
       "isbn10": "086442583X",
@@ -861,7 +870,8 @@
       "subjects": [
         "Guidebooks"
       ],
-      "coverUrl": "/book-covers/lonely-planet-hong-kong-city-guides-series.webp"
+      "coverUrl": "/book-covers/lonely-planet-hong-kong-city-guides-series.webp",
+      "rating": 3
     },
     {
       "id": "c56952ae-a224-4598-a73f-03fec4ac2203",
@@ -870,7 +880,7 @@
       "authors": [
         "Pramoedya Ananta Toer"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.909Z",
       "source": "openlibrary",
       "isbn10": "0140256334",
@@ -886,7 +896,9 @@
         "Indonesia, fiction",
         "Anti-imperialist movements"
       ],
-      "coverUrl": "/book-covers/child-of-all-nations-buru-quartet.webp"
+      "synopsis": "\"Coming to grips with the oppression and injustice of the European regime in his country, Minke, [the Dutch-educated javaese writer] struggles to assert his voice and the voices of his people - but he is met at every turn by the corruption of those he trusted and by the tragedies that befall those he loves most.\"--Back cover.",
+      "coverUrl": "/book-covers/child-of-all-nations-buru-quartet.webp",
+      "rating": 3
     },
     {
       "id": "3e3287b1-dce8-4e37-adeb-f1fb81a17977",
@@ -1061,7 +1073,7 @@
       "authors": [
         "Mudrooroo"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.914Z",
       "source": "openlibrary",
       "isbn10": "0207188181",
@@ -1069,7 +1081,9 @@
       "publishYear": 1995,
       "pageCount": 242,
       "language": "eng",
-      "coverUrl": "/book-covers/us-mob.webp"
+      "coverUrl": "/book-covers/us-mob.webp",
+      "rating": 4,
+      "dateRead": "2026-05-27T23:53:11.844Z"
     },
     {
       "id": "77065694-6de2-47d0-a846-6cf5fcc38f97",
@@ -1097,7 +1111,7 @@
       "authors": [
         "Bart Kosko"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.915Z",
       "source": "openlibrary",
       "isbn10": "0006547133",
@@ -1120,7 +1134,8 @@
       ],
       "synopsis": "Fuzzy Thinking is the first popular book to explain clearly and provocatively how fuzzy logic is changing our lives - and how it will revolutionize the world in the decades ahead. Fuzzy thinking is the wave of the future, and the leading exponent of fuzzy logic, philosopher-scientist Dr. Bart Kosko, explains it better than anyone else can. Invented in America, fuzzy logic has broad implications for the way we think. What is the fuzzy principle? Everything is a matter of degree - nothing is absolute. In this mind-bending book, Kosko argues that for centuries the West has been locked into the concept of black or white, right or wrong, all or nothing. Consequently Western scientists have largely resisted fuzzy logic. Eastern philosophy, however, emphasizes yin and yang, unity, and the need to consider the universe from several different perspectives at once - so Asia has been more open than the West to concepts such as fuzzy logic.^\n\nKosko suggests that in order to compete we in the West will have to open ourselves to new ways of thinking - fuzzy ways of thinking. Fuzzy logic mimics the working of the human brain and is used in machines so they will think more like human beings. Japanese and Korean companies already apply fuzzy technology to the tune of billions of dollars a year in such products as air conditioners (instead of producing an all-or-nothing blast of cold air, fuzzy air conditioners constantly adjust to the precise temperature in the room and emit a corresponding degree of cooling air); computers; cameras and camcorders; auto engines, brakes, transmissions, and cruise controls; dishwashers; elevators; washing machines and dryers; microwave ovens; and televisions. Fuzzy logic is used in palmtop computers that recognize and translate handwritten characters. On tap are \"smarter\" computers and such medical advances as smart artificial body parts. Fuzzy logic even applies to ethical questions.^\n\nFor example, when does life begin? At fertilization? When the fetus is six months old? At the time of birth? Fuzzy thinking says that life begins at all of these times - to a certain degree. It is the challenge of juggling apparently conflicting concepts, several seemingly different truths, that makes fuzzy logic so controversial - and so potentially rewarding in all areas of life from the bedroom to the boardroom. The first antiscience science book, Fuzzy Thinking is a truly important book that can forever change the way you look at the world.",
       "coverUrl": "/book-covers/fuzzy-thinking.webp",
-      "rating": 4
+      "rating": 4,
+      "dateRead": "2026-05-27T23:51:18.498Z"
     },
     {
       "id": "398e7233-56ba-449b-b2f2-41bacaab47cd",
@@ -1155,7 +1170,7 @@
       "authors": [
         "Unknown Author"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.916Z",
       "source": "openlibrary",
       "publisher": "Maverick House",
@@ -1171,7 +1186,8 @@
         "Sex-oriented business",
         "Thailand, biography"
       ],
-      "coverUrl": "/book-covers/miss-bangkok-memoirs-of-a-thai-prostitute.webp"
+      "coverUrl": "/book-covers/miss-bangkok-memoirs-of-a-thai-prostitute.webp",
+      "rating": 3
     },
     {
       "id": "db863531-8c45-46be-b851-5d7b2e486214",
@@ -1199,7 +1215,7 @@
       "authors": [
         "Andrew Stone"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.919Z",
       "source": "openlibrary",
       "isbn10": "1741792258",
@@ -1211,7 +1227,8 @@
       "subjects": [
         "Guidebooks"
       ],
-      "coverUrl": "/book-covers/hong-kong-macau.webp"
+      "coverUrl": "/book-covers/hong-kong-macau.webp",
+      "rating": 3
     },
     {
       "id": "a11d2550-0beb-4690-9568-eef8ba9abbe9",
@@ -1222,7 +1239,7 @@
         "Hugh Finlay",
         "Geert Cole"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.920Z",
       "source": "openlibrary",
       "isbn10": "0864422881",
@@ -1232,7 +1249,8 @@
       "pageCount": 1024,
       "language": "eng",
       "subjects": [],
-      "coverUrl": "/book-covers/lonely-planet-africa-lonely-planet-africa-on-a-shoestring.webp"
+      "coverUrl": "/book-covers/lonely-planet-africa-lonely-planet-africa-on-a-shoestring.webp",
+      "rating": 4
     },
     {
       "id": "1e733214-291e-4c9c-9793-2be06bcbd6c3",
@@ -1241,7 +1259,7 @@
       "authors": [
         "Bill Dalton"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.920Z",
       "source": "openlibrary",
       "isbn10": "1566910730",
@@ -1251,7 +1269,9 @@
       "pageCount": 735,
       "language": "eng",
       "subjects": [],
-      "coverUrl": "/book-covers/moon-handbooks.webp"
+      "coverUrl": "/book-covers/moon-handbooks.webp",
+      "rating": 4,
+      "dateRead": "2026-05-27T23:50:58.548Z"
     },
     {
       "id": "c255196d-5191-4f6b-9efa-94aaaa2edabd",
@@ -1262,7 +1282,7 @@
         "James Lyon",
         "Tony Wheeler"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.921Z",
       "source": "openlibrary",
       "isbn10": "0864426062",
@@ -1281,7 +1301,9 @@
         "Bali",
         "Asia - Southeast"
       ],
-      "coverUrl": "/book-covers/lonely-planet-bali-lombok-7th-ed.webp"
+      "coverUrl": "/book-covers/lonely-planet-bali-lombok-7th-ed.webp",
+      "rating": 4,
+      "dateRead": "2026-05-27T23:50:40.340Z"
     },
     {
       "id": "cb99ae7e-6d86-4c7d-8c90-8c2a6e89b3e5",
@@ -1290,7 +1312,7 @@
       "authors": [
         "Krzysztof Dydynski"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.921Z",
       "source": "openlibrary",
       "isbn10": "0864425147",
@@ -1316,7 +1338,7 @@
         "Barbara Reioux",
         "Carolyn Hubbard"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.921Z",
       "source": "openlibrary",
       "isbn10": "0864424183",
@@ -1338,7 +1360,7 @@
         "Glenda Bendure",
         "Ned Friary"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.922Z",
       "source": "openlibrary",
       "isbn10": "0864424221",
@@ -1350,7 +1372,9 @@
       "subjects": [
         "Travel & holiday guides"
       ],
-      "coverUrl": "/book-covers/lonely-planet-eastern-caribbean-2nd-ed.webp"
+      "coverUrl": "/book-covers/lonely-planet-eastern-caribbean-2nd-ed.webp",
+      "rating": 3,
+      "dateRead": "2026-05-27T23:53:23.279Z"
     },
     {
       "id": "7873b961-cdc6-4007-a229-4d64067691a0",
@@ -1505,7 +1529,7 @@
       "authors": [
         "老子"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.925Z",
       "source": "openlibrary",
       "isbn10": "0451530403",
@@ -1528,7 +1552,8 @@
       ],
       "synopsis": "\"Within ancient Chinese, a sole character possesses a broad, and sometimes contradictory, range of meanings. Moreover, the Tao Te Ching is rife with terms and expressions that have no exact counterpart in English. So while the Tao Te Ching ranks behind only the Bible as the most widely translated book in the world, it remains one of the least understood.\".\r\n\r\n\"Jonathan Star's Tao Te Ching: The Definitive Edition helps remedy this situation. The distinction of this new edition is that it supplies readers with the first comprehensive verbatim translation, which can be used to explore the multiple meanings contained in the Chinese characters. This unique tool gives readers direct access to the text and a way to understand the different interpretations put forth by modern-day translators.\r\n\r\nPerhaps most important, the verbatim translation gives each reader the ability to penetrate the inner meaning of the text and come up with his or her own personal interpretation.\"--BOOK JACKET.",
       "coverUrl": "/book-covers/tao-te-ching-signet-classics.webp",
-      "rating": 5
+      "rating": 5,
+      "dateRead": "2026-05-27T23:50:29.030Z"
     },
     {
       "id": "4739f357-d672-4afa-8b3e-380016c7af25",
@@ -1596,7 +1621,7 @@
       "authors": [
         "Jim Silke"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.926Z",
       "source": "openlibrary",
       "isbn10": "1569711240",
@@ -1613,7 +1638,8 @@
       ],
       "synopsis": "\"Join author/artist Jim Silke as he explores Bettie Page's influence on popular culture, from dime-store novels to paperbacks, and from painting to advertising.\"--Cover.",
       "coverUrl": "/book-covers/bettie-page.webp",
-      "rating": 4
+      "rating": 4,
+      "dateRead": "2026-05-27T23:50:18.657Z"
     },
     {
       "id": "27844fa9-11ea-42fe-9028-929ebe2a3efc",
@@ -1765,7 +1791,7 @@
       "authors": [
         "Kelvin Aitken"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.931Z",
       "source": "openlibrary",
       "isbn10": "1855014750",
@@ -1777,7 +1803,8 @@
         "Australia, pictorial works",
         "Australia, description and travel"
       ],
-      "coverUrl": "/book-covers/australia-countries.webp"
+      "coverUrl": "/book-covers/australia-countries.webp",
+      "rating": 3
     },
     {
       "id": "7a4f640b-beb3-4162-a77f-45d5ea51cba3",
@@ -1787,7 +1814,7 @@
         "Sean Glynn",
         "Alan Booth"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.931Z",
       "source": "openlibrary",
       "isbn10": "1000107450",
@@ -1806,7 +1833,9 @@
         "Wirtschaft",
         "Politique sociale",
         "Conditions economiques"
-      ]
+      ],
+      "synopsis": "This volume focuses on two major periods of British history: the interwar period and postwar Britain. The authors compare and contrast developments in growth, welfare, industry, labor, social policy, and the economy during these two distinct periods. The book provides an end-of-century review of both progress and decline, while outlining the background essential to understand current polemics and areas of major concern. Invaluable for students of twentieth-century British history.",
+      "rating": 3
     },
     {
       "id": "d49e21f5-ae32-4979-a340-cb397ea3f9c5",
@@ -2054,7 +2083,7 @@
       "authors": [
         "Thoon Khippapanyo"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.938Z",
       "source": "openlibrary",
       "publisher": "Amarin Publishing",
@@ -2062,7 +2091,8 @@
       "publishYear": 2012,
       "pageCount": 187,
       "language": "eng",
-      "subjects": []
+      "subjects": [],
+      "rating": 3
     },
     {
       "id": "153300f6-1a31-42ce-958e-9b8f7fca3dfe",
@@ -2158,7 +2188,7 @@
       "authors": [
         "Jared M. Diamond"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.941Z",
       "source": "openlibrary",
       "isbn10": "0140279512",
@@ -2179,7 +2209,9 @@
         "Effect of human beings on"
       ],
       "synopsis": "\"In his Pulitzer Prize-winning bestseller Guns, Germs, and Steel, Jared Diamond examined how and why Western civilizations developed the technologies and immunities that allowed them to dominate much of the world. Now, Diamond probes the other side of the equation: What caused some of the great civilizations of the past to collapse into ruin, and what can we learn from their fates?\" \"As in Guns, Germs, and Steel, Diamond weaves an all-encompassing global thesis through a series of historical-cultural narratives. Moving from the prehistoric Polynesian culture on Easter Island to the formerly flourishing Native American civilizations of the Anasazi and the Maya, the doomed medieval Viking colony on Greenland, and finally to the modern world, Diamond traces a fundamental pattern of catastrophe, spelling out what happens when we squander our resources, when we ignore the signals our environment gives us, and when we reproduce too fast or cut down too many trees. Environmental damage, climate change, rapid population growth, unstable trade partners, and pressure from enemies were all factors in the demise of the doomed societies, but other societies found solutions to those same problems and persisted.\"--BOOK JACKET",
-      "coverUrl": "/book-covers/collapse-how-societies-choose-to-fail-or-survive.webp"
+      "coverUrl": "/book-covers/collapse-how-societies-choose-to-fail-or-survive.webp",
+      "rating": 4,
+      "dateRead": "2026-06-04T22:23:52.179Z"
     },
     {
       "id": "c159eea4-d55c-4baa-94c2-8944c54d342e",
@@ -2221,7 +2253,7 @@
       "authors": [
         "Danarto"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.941Z",
       "source": "openlibrary",
       "isbn10": "9793019026",
@@ -2234,7 +2266,8 @@
         "Short stories, indonesian",
         "Fiction, short stories (single author)"
       ],
-      "coverUrl": "/book-covers/abracadabra.webp"
+      "coverUrl": "/book-covers/abracadabra.webp",
+      "rating": 3
     },
     {
       "id": "208fea8c-78b3-4d13-a84c-5a606151911d",
@@ -2596,7 +2629,7 @@
       "authors": [
         "G. Allen Mawer"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.949Z",
       "source": "googlebooks",
       "isbn10": "0312228090",
@@ -2702,7 +2735,7 @@
       "authors": [
         "M. Astrologo"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.952Z",
       "source": "googlebooks",
       "isbn10": "8886982267",
@@ -2714,7 +2747,9 @@
       "subjects": [
         "Photography"
       ],
-      "coverUrl": "/book-covers/world-press-photo-2001.webp"
+      "coverUrl": "/book-covers/world-press-photo-2001.webp",
+      "rating": 3,
+      "dateRead": "2026-05-27T23:49:58.454Z"
     },
     {
       "id": "3a9ddace-df5c-4fff-b6ec-b4087730d7a7",
@@ -2848,7 +2883,7 @@
       "authors": [
         "Eric Cartier"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.956Z",
       "source": "googlebooks",
       "isbn10": "3893112677",
@@ -2858,7 +2893,9 @@
       "language": "de",
       "subjects": [
         "Comic books, strips, etc"
-      ]
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-27T23:49:49.548Z"
     },
     {
       "id": "26ecb43d-eb1b-450c-ae44-78c7f5e1d8f7",
@@ -2867,7 +2904,7 @@
       "authors": [
         "Qwak"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.957Z",
       "source": "googlebooks",
       "isbn10": "3895935409",
@@ -2875,7 +2912,9 @@
       "publishYear": 1996,
       "pageCount": 54,
       "language": "en",
-      "subjects": []
+      "subjects": [],
+      "rating": 3,
+      "dateRead": "2026-05-27T23:49:44.700Z"
     },
     {
       "id": "2078ff4e-0171-4da6-bce0-f3cda847064b",
@@ -3059,7 +3098,7 @@
       "authors": [
         "Unknown Author"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.967Z",
       "source": "openlibrary",
       "isbn10": "0747505446",
@@ -3077,7 +3116,8 @@
         "History, miscellanea",
         "Chronology, historical"
       ],
-      "coverUrl": "/book-covers/who-said-what-when.webp"
+      "coverUrl": "/book-covers/who-said-what-when.webp",
+      "rating": 1
     },
     {
       "id": "0dfc2047-92ac-4334-bf24-8fd3854a99b3",
@@ -3086,7 +3126,7 @@
       "authors": [
         "Iain Christie"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:48:51.968Z",
       "source": "openlibrary",
       "isbn10": "0949225592",
@@ -3100,7 +3140,9 @@
         "Presidents",
         "Biography"
       ],
-      "coverUrl": "/book-covers/machel-of-mozambique.webp"
+      "coverUrl": "/book-covers/machel-of-mozambique.webp",
+      "rating": 4,
+      "dateRead": "2026-05-27T23:49:30.816Z"
     },
     {
       "id": "3c2fb478-731c-4cd3-b086-efa3af69995d",
@@ -3109,7 +3151,7 @@
       "authors": [
         "National Geographic Society"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.969Z",
       "source": "openlibrary",
       "isbn10": "0792272161",
@@ -3119,7 +3161,8 @@
       "pageCount": 224,
       "language": "eng",
       "subjects": [],
-      "coverUrl": "/book-covers/national-geographic-satellite-atlas-of-the-world.webp"
+      "coverUrl": "/book-covers/national-geographic-satellite-atlas-of-the-world.webp",
+      "rating": 4
     },
     {
       "id": "bf4f6b3e-b3ed-4bed-9077-9646f6fa06ac",
@@ -3246,7 +3289,7 @@
       "authors": [
         "Peter Lik"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.972Z",
       "source": "openlibrary",
       "isbn10": "0646279688",
@@ -3260,7 +3303,8 @@
         "Pictorial works",
         "Rain forests"
       ],
-      "coverUrl": "/book-covers/world-heritage-rainforest.webp"
+      "coverUrl": "/book-covers/world-heritage-rainforest.webp",
+      "rating": 4
     },
     {
       "id": "45c195e2-d235-4ff2-a8f9-1b0ce06da9e3",
@@ -3297,7 +3341,7 @@
       "authors": [
         "Gavin Younge"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.973Z",
       "source": "openlibrary",
       "isbn10": "0500275211",
@@ -3314,7 +3358,8 @@
         "Artists",
         "Biography"
       ],
-      "coverUrl": "/book-covers/art-of-the-south-african-townships.webp"
+      "coverUrl": "/book-covers/art-of-the-south-african-townships.webp",
+      "rating": 4
     },
     {
       "id": "84be2a9f-a8f5-4f58-969b-51bc3f4553ff",
@@ -3346,7 +3391,7 @@
       "authors": [
         "Jerry Hopkins"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.974Z",
       "source": "openlibrary",
       "isbn10": "9625931546",
@@ -3360,7 +3405,8 @@
         "Cooking",
         "Food"
       ],
-      "coverUrl": "/book-covers/strange-foods-bush-meat-bats-and-butterflies.webp"
+      "coverUrl": "/book-covers/strange-foods-bush-meat-bats-and-butterflies.webp",
+      "rating": 3
     },
     {
       "id": "b0825df4-0b2b-4f3a-ab6e-a3e2750b055b",
@@ -3409,7 +3455,7 @@
       "isbn13": "9788804321071",
       "title": "I versi satanici",
       "authors": [],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:50:27.863Z",
       "source": "openlibrary",
       "isbn10": "8804321075",
@@ -3430,7 +3476,8 @@
         "open_syllabus_project"
       ],
       "synopsis": "The Satanic Verses is Salman Rushdie's fourth novel, first published September 26, 1988 and inspired in part by the life of the Islamic prophet Muhammad. As with his previous books, Rushdie used magical realism and relied on contemporary events and people to create his characters. The title refers to the satanic verses, a group of Quranic verses that refer to three pagan Meccan goddesses: Allāt, Uzza, and Manāt. The part of the story that deals with the \"satanic verses\" was based on accounts from the historians al-Waqidi and al-Tabari.\r\n\r\nIn the United Kingdom, The Satanic Verses received positive reviews, was a 1988 Booker Prize finalist (losing to Peter Carey's Oscar and Lucinda) and won the 1988 Whitbread Award for novel of the year.",
-      "coverUrl": "/book-covers/i-versi-satanici.webp"
+      "coverUrl": "/book-covers/i-versi-satanici.webp",
+      "rating": 3
     },
     {
       "id": "be0e1b39-f391-45cc-8d87-c678570d1be2",
@@ -3439,7 +3486,7 @@
       "authors": [
         "Giorgio Samorini"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:50:42.127Z",
       "source": "openlibrary",
       "isbn10": "8887999015",
@@ -3456,7 +3503,9 @@
         "Hallucinogenic Mushrooms",
         "History",
         "Traditional medicine"
-      ]
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-27T23:48:21.650Z"
     },
     {
       "id": "5909d988-ab90-40a3-8975-be86c695f05a",
@@ -3489,7 +3538,7 @@
       "authors": [
         "Françoise Héritier"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:51:26.199Z",
       "source": "googlebooks",
       "isbn10": "8842068012",
@@ -3553,7 +3602,7 @@
       "authors": [
         "Raymond Queneau"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:52:11.669Z",
       "source": "googlebooks",
       "isbn10": "8806149148",
@@ -3564,7 +3613,9 @@
       "subjects": [
         "Fiction"
       ],
-      "coverUrl": "/book-covers/troppo-buoni-con-le-donne.webp"
+      "coverUrl": "/book-covers/troppo-buoni-con-le-donne.webp",
+      "rating": 4,
+      "dateRead": "2026-05-27T23:48:10.155Z"
     },
     {
       "id": "ef5f5d1d-f2c5-4ffe-a60e-5bd6b90c91bb",
@@ -3612,7 +3663,7 @@
         "S. Dazieri",
         "R. Scelsi"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:53:26.328Z",
       "source": "googlebooks",
       "isbn10": "8886926448",
@@ -3622,7 +3673,9 @@
       "language": "it",
       "subjects": [
         "Business & Economics"
-      ]
+      ],
+      "rating": 3,
+      "dateRead": "2026-06-04T22:27:19.539Z"
     },
     {
       "id": "e50b25c3-c7bc-478e-9cee-b7a310a65beb",
@@ -3697,7 +3750,7 @@
         "Massimo Cirri",
         "Sergio Ferrentino"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T12:57:26.832Z",
       "source": "googlebooks",
       "isbn10": "8807811014",
@@ -3707,7 +3760,9 @@
       "language": "it",
       "subjects": [
         "Performing Arts"
-      ]
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-27T23:47:58.369Z"
     },
     {
       "id": "73a16de7-90a7-4596-b94a-57f0c30e244f",
@@ -3716,7 +3771,7 @@
       "authors": [
         "Banana Yoshimoto"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:57:41.069Z",
       "source": "googlebooks",
       "isbn10": "8807723468",
@@ -3727,7 +3782,8 @@
       "subjects": [
         "Fiction"
       ],
-      "coverUrl": "/book-covers/un-viaggio-chiamato-vita.webp"
+      "coverUrl": "/book-covers/un-viaggio-chiamato-vita.webp",
+      "rating": 2
     },
     {
       "id": "676eeacf-02a1-4322-b47c-aa3151343a45",
@@ -3755,7 +3811,7 @@
       "authors": [
         "Italo Bertoni"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T12:59:30.197Z",
       "source": "googlebooks",
       "isbn10": "8828000775",
@@ -3765,7 +3821,8 @@
       "language": "it",
       "subjects": [
         "Authors, Italian"
-      ]
+      ],
+      "rating": 3
     },
     {
       "id": "9106f705-7077-40af-ada9-4b8db44807e0",
@@ -3775,7 +3832,7 @@
         "Richard Lowe",
         "William Shaw"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T13:01:50.766Z",
       "source": "googlebooks",
       "isbn10": "8886926057",
@@ -3783,7 +3840,9 @@
       "publishYear": 1996,
       "pageCount": 224,
       "language": "it",
-      "subjects": []
+      "subjects": [],
+      "rating": 3,
+      "dateRead": "2026-05-27T23:47:47.267Z"
     },
     {
       "id": "d886ccc0-266a-4fd2-b12f-4a1ca4de8970",
@@ -3834,7 +3893,7 @@
       "authors": [
         "Junichirō Tanizaki"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T13:05:12.009Z",
       "source": "googlebooks",
       "isbn10": "8878193259",
@@ -3870,13 +3929,15 @@
       "isbn13": "9788872260807",
       "title": "Perché dovrei affliggermi ora",
       "authors": [],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T13:07:35.917Z",
       "source": "openlibrary",
       "isbn10": "8872260809",
       "publisher": "Stampa Alternativa",
       "language": "it",
-      "subjects": []
+      "subjects": [],
+      "rating": 3,
+      "dateRead": "2026-06-04T22:23:11.396Z"
     },
     {
       "id": "43b9a297-da55-4c64-8f1a-1f69e44d995e",
@@ -3885,7 +3946,7 @@
       "authors": [
         "Rossana Campo"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T13:07:44.139Z",
       "source": "googlebooks",
       "isbn10": "8807910152",
@@ -3897,7 +3958,9 @@
       "subjects": [
         "Juvenile Fiction"
       ],
-      "coverUrl": "/book-covers/la-gemella-buona-e-la-gemella-cattiva.webp"
+      "coverUrl": "/book-covers/la-gemella-buona-e-la-gemella-cattiva.webp",
+      "rating": 3,
+      "dateRead": "2026-06-04T22:23:00.146Z"
     },
     {
       "id": "3458ca42-1021-4f42-b492-b7224cab39e6",
@@ -3927,7 +3990,7 @@
       "authors": [
         "Marco Moretti"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T13:09:08.559Z",
       "source": "googlebooks",
       "isbn10": "8870059804",
@@ -3996,7 +4059,7 @@
       "authors": [
         "Stefano Benni"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T13:09:54.064Z",
       "source": "openlibrary",
       "isbn10": "8807809907",
@@ -4005,7 +4068,9 @@
       "publishYear": 1990,
       "language": "ita",
       "subjects": [],
-      "coverUrl": "/book-covers/terra-universale-economica.webp"
+      "coverUrl": "/book-covers/terra-universale-economica.webp",
+      "rating": 4,
+      "dateRead": "2026-06-04T22:22:48.729Z"
     },
     {
       "id": "9b429ece-63f2-40b8-8fad-1e94b4889f30",
@@ -4014,7 +4079,7 @@
       "authors": [
         "Pino Cacucci"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T13:13:25.639Z",
       "source": "googlebooks",
       "isbn10": "8807814889",
@@ -4146,7 +4211,7 @@
       "authors": [
         "Gian Maurizio Fercioni"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T13:21:40.850Z",
       "source": "googlebooks",
       "isbn10": "8879842099",
@@ -4157,7 +4222,8 @@
       "language": "en",
       "subjects": [
         "Art"
-      ]
+      ],
+      "rating": 3
     },
     {
       "id": "a4d0a0b2-aeb2-4a32-9031-c5f080700202",
@@ -4166,7 +4232,7 @@
       "authors": [
         "Alfred"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T13:22:06.290Z",
       "source": "googlebooks",
       "isbn10": "8897165362",
@@ -4227,7 +4293,7 @@
       "isbn13": "9788804606819",
       "title": "Marcovaldo",
       "authors": [],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T16:09:51.875Z",
       "source": "openlibrary",
       "isbn10": "8804606819",
@@ -4287,7 +4353,7 @@
       "authors": [
         "Joseph P. Farrell"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T16:11:02.844Z",
       "source": "googlebooks",
       "isbn10": "8899912629",
@@ -4350,7 +4416,7 @@
       "authors": [
         "Oscar Wilde"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T16:11:46.724Z",
       "source": "openlibrary",
       "isbn10": "8811581664",
@@ -4401,7 +4467,7 @@
         "Muhammad Yunus",
         "Alan Jolis"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T16:12:58.367Z",
       "source": "googlebooks",
       "isbn10": "8807815834",
@@ -4413,7 +4479,9 @@
       "subjects": [
         "Business & Economics"
       ],
-      "coverUrl": "/book-covers/il-banchiere-dei-poveri.webp"
+      "coverUrl": "/book-covers/il-banchiere-dei-poveri.webp",
+      "rating": 5,
+      "dateRead": "2026-05-27T23:53:55.502Z"
     },
     {
       "id": "6f7eb5cc-9d3e-4cd9-b6c5-f3cac8782860",
@@ -4422,7 +4490,7 @@
       "authors": [
         "Bruce Sterling"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T16:13:10.801Z",
       "source": "openlibrary",
       "isbn10": "8845221512",
@@ -4439,7 +4507,9 @@
         "Fiction, science fiction, general"
       ],
       "synopsis": "\"The definitive cyberpunk short fiction collection.\"",
-      "coverUrl": "/book-covers/mirrorshades-l-antologia-della-fantascienza-cyberpunk.webp"
+      "coverUrl": "/book-covers/mirrorshades-l-antologia-della-fantascienza-cyberpunk.webp",
+      "rating": 4,
+      "dateRead": "2026-05-27T23:54:58.445Z"
     },
     {
       "id": "680b25e8-1c56-4df4-ae6c-afbc177bd385",
@@ -4469,7 +4539,7 @@
       "authors": [
         "Timothy Leary"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T16:13:58.336Z",
       "source": "googlebooks",
       "isbn10": "887966087X",
@@ -4479,7 +4549,9 @@
       "language": "it",
       "subjects": [
         "Social Science"
-      ]
+      ],
+      "rating": 4,
+      "dateRead": "2026-05-27T23:54:40.821Z"
     },
     {
       "id": "28034a28-1ff6-44c2-893a-6d1b38fdde07",
@@ -4582,7 +4654,7 @@
       "authors": [
         "Filippo La Porta"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T16:15:38.067Z",
       "source": "openlibrary",
       "isbn10": "8807814439",
@@ -4597,7 +4669,9 @@
         "Social aspects",
         "Social aspects of Italian language",
         "Terms and phrases"
-      ]
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-27T23:54:05.729Z"
     },
     {
       "id": "ca7e203a-cd64-4cd6-bab6-0c470c3bc420",
@@ -4646,7 +4720,7 @@
       "authors": [
         "Paul Watzlawick"
       ],
-      "status": "to-read",
+      "status": "read",
       "dateAdded": "2026-05-03T16:16:13.540Z",
       "source": "googlebooks",
       "isbn10": "8807090074",
@@ -4656,7 +4730,9 @@
       "language": "it",
       "subjects": [
         "Social Science"
-      ]
+      ],
+      "rating": 3,
+      "dateRead": "2026-05-27T23:54:32.705Z"
     },
     {
       "id": "010177ac-d14c-442d-b7e5-3d5fd5c958b2",
@@ -4665,7 +4741,7 @@
       "authors": [
         "Piero Manni"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T16:16:28.960Z",
       "source": "openlibrary",
       "isbn10": "888176153X",
@@ -4674,7 +4750,8 @@
       "publishYear": 2000,
       "pageCount": 73,
       "language": "ita",
-      "subjects": []
+      "subjects": [],
+      "rating": 3
     },
     {
       "id": "f79bba4b-3c93-4a0c-b348-4644a68e5867",
@@ -4702,7 +4779,7 @@
       "authors": [
         "Epicurus"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T16:16:47.619Z",
       "source": "googlebooks",
       "isbn10": "8872260604",
@@ -4712,7 +4789,8 @@
       "language": "it",
       "subjects": [
         "Philosophy"
-      ]
+      ],
+      "rating": 3
     },
     {
       "id": "2ab5a2da-67f9-4f5d-898c-10a0411cfb06",
@@ -4741,7 +4819,7 @@
       "authors": [
         "John Fante"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T16:18:03.788Z",
       "source": "googlebooks",
       "isbn10": "8871681223",
@@ -4783,7 +4861,7 @@
       "authors": [
         "Maurice Keen"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T17:21:15.380Z",
       "source": "googlebooks",
       "isbn10": "8804471247",
@@ -4802,7 +4880,7 @@
       "authors": [
         "Marcela Serrano"
       ],
-      "status": "to-read",
+      "status": "reading",
       "dateAdded": "2026-05-03T17:21:34.854Z",
       "source": "googlebooks",
       "isbn10": "8807015536",
@@ -4813,7 +4891,8 @@
       "subjects": [
         "Fiction"
       ],
-      "coverUrl": "/book-covers/l-albergo-delle-donne-tristi.webp"
+      "coverUrl": "/book-covers/l-albergo-delle-donne-tristi.webp",
+      "rating": 2
     },
     {
       "id": "1fce00b7-0789-432e-a783-07a5b4de8966",
@@ -5046,6 +5125,38 @@
       "coverUrl": "/book-covers/a-day-in-the-life-of-america.webp",
       "rating": 4,
       "dateRead": "2026-05-17T14:02:35.337Z"
+    },
+    {
+      "id": "c1baccb4-fef1-4906-a2a0-ad0ff420ed66",
+      "isbn13": "9780295974361",
+      "title": "To sing with pigs is human",
+      "authors": [
+        "Jane C. Goodale"
+      ],
+      "status": "read",
+      "dateAdded": "2026-06-02T20:46:42.248Z",
+      "source": "openlibrary",
+      "isbn10": "0295974540",
+      "publisher": "University of Washington Press",
+      "publishDate": "1995",
+      "publishYear": 1995,
+      "pageCount": 269,
+      "language": "eng",
+      "subjects": [
+        "Social life and customs",
+        "Kaulong (Papua New Guinea people)",
+        "Psychology",
+        "Self-perception",
+        "Big man (Melanesia)",
+        "Gender identity",
+        "Identity (Psychology)",
+        "Kaulong (Papua New Guinean people)",
+        "Texts",
+        "Interaktion"
+      ],
+      "coverUrl": "/book-covers/to-sing-with-pigs-is-human.webp",
+      "rating": 4,
+      "dateRead": "2026-06-02T20:46:54.053Z"
     }
   ]
 }

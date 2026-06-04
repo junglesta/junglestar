@@ -541,10 +541,9 @@ const sections = [
     font-size: 0.9em;
   }
 
-  /* In-page section nav */
+  /* In-page section nav — sticky on desktop only (not mobile). */
   .sg_nav {
-    position: sticky;
-    top: 0;
+    position: static;
     z-index: 5;
     display: flex;
     flex-wrap: wrap;
@@ -552,6 +551,12 @@ const sections = [
     margin-top: var(--space_block);
     padding-block: calc(var(--space_block) / 2);
     background: var(--region_main);
+  }
+  @media (min-width: 601px) {
+    .sg_nav {
+      position: sticky;
+      top: 0;
+    }
   }
   .sg_nav a {
     font-size: calc(var(--font_rem) * 0.8);

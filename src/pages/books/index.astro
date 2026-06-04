@@ -13,7 +13,7 @@ const books = parseLibraryPayload(library);
 ---
 
 <Layout title={pageTitle} description={description} bodyClass="books">
-  <BookBatClient books={books} />
+  <BookBatClient books={books} config={{ showHeader: false }} />
 </Layout>
 
 <style is:global>
@@ -53,5 +53,28 @@ const books = parseLibraryPayload(library);
   .books .bfc details[open] .bfc_summary {
     margin-bottom: 0;
     border-top: 0;
+  }
+
+  /* bfc_main: no inline padding (flush within the panel). */
+  .books .bfc_main {
+    padding-inline: 0;
+  }
+
+  /* Sticky search on mobile. The component already pins the whole sidebar on
+     desktop (>=1100px). On phones the controls stack above the list, so flatten
+     the sidebar + controls wrappers (display:contents) to make .bfc_body the
+     search's containing block, then pin only the search row to the top. */
+  @media (max-width: 767px) {
+    .books .bfc_sidebar,
+    .books .bfc_controls {
+      display: contents;
+    }
+    .books .bfc_control--search {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg-body);
+      padding-block: 10px;
+    }
   }
 </style>

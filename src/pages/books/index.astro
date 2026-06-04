@@ -28,12 +28,17 @@ const books = parseLibraryPayload(library);
     --fg_main: var(--white);
     --region_foot: var(--black);
     --fg_foot: var(--white);
+    /* Capture the system radius here (where --radius is the global token, not
+       yet shadowed by the component) so we can feed it into .bfc below. */
+    --bfc_radius: var(--radius);
   }
 
   /* Recolor the component's lime accent (year/Read text, stars, active tab,
-     chips, focus) to dirty-white. One var override cascades everywhere. */
+     chips, focus) to dirty-white, and adopt the system corner radius for all
+     its cards / buttons / inputs. One var override each cascades everywhere. */
   .books .bfc {
     --accent: var(--whiteDIRTY);
+    --radius: var(--bfc_radius);
   }
 
   /* Kill the dark-green panel frame + its inline padding (sit on the page). */

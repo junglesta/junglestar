@@ -55,8 +55,9 @@ const books = parseLibraryPayload(library);
     border-top: 0;
   }
 
-  /* bfc_main: no inline padding (flush within the panel). */
-  .books .bfc_main {
+  /* Outer list column flush within the panel (card text keeps its padding —
+     .bfc_main is reused for both the list column and each card's text block). */
+  .books .bfc_body > .bfc_main {
     padding-inline: 0;
   }
 

@@ -90,11 +90,6 @@
 	--brand-800: oklch(from var(--brand) 0.32 calc(c * 0.9) h);
 	--brand-900: oklch(from var(--brand) 0.24 calc(c * 0.7) h);
 
-	/*🐸 LEGACY ALIASES → mapped onto the scale (keep older usages working) */
-	--brand_lighter: var(--brand-200);
-	--brand_light: var(--brand-400);
-	--brand_dark: var(--brand-700);
-	--brand_darker: var(--brand-800);
 	/*-------------------------GREEN------------------------------------------*/
 	--jgreen_lightest: oklch(0.98 0.12 144);
 	--jgreen_light: oklch(0.96 0.31 144);

@@ -1,7 +1,7 @@
 {
   "name": "junglestar",
   "type": "module",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "private": true,
   "scripts": {
     "format": "biome format --write ./src",
@@ -9,7 +9,7 @@
     "clean": "rm -rf .astro dist node_modules/.vite",
     "covers": "node scripts/cache-covers.mjs",
     "prebuild": "node scripts/cache-covers.mjs",
-    "dev": "astro dev --open",
+    "dev": "rm -rf .astro && astro dev --open",
     "dev:clean": "pnpm clean && astro dev --open",
     "check": "astro check --watch & astro dev",
     "build": "find public -name '.DS_Store' -delete && astro build --force",
@@ -23,24 +23,19 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
-    "@astrojs/mdx": "^5.0.6",
+    "@astrojs/mdx": "^6.0.3",
     "@astrojs/ts-plugin": "^1.10.9",
-    "@biomejs/biome": "^2.4.15",
-    "astro": "^6.3.7",
+    "@biomejs/biome": "^2.4.16",
+    "astro": "^6.4.6",
     "astro-og-canvas": "^0.11.1",
     "canvaskit-wasm": "^0.41.1",
     "prettier": "3.7.4",
     "prettier-plugin-astro": "0.14.1",
     "sharp": "^0.34.5",
     "typescript": "^5.9.3",
-    "wrangler": "^4.94.0"
+    "wrangler": "^4.99.0"
   },
   "packageManager": "pnpm@10.28.2",
-  "pnpm": {
-    "overrides": {
-      "lodash": ">=4.17.23"
-    }
-  },
   "dependencies": {
     "@astro-community/astro-embed-link-preview": "^0.3.1",
     "@bookbat/baobab": "link:../bookbat/packages/baobab",

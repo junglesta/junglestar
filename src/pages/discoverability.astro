@@ -51,12 +51,7 @@ const description =
 </Layout>
 
 <style is:global>
-  /* Page tone — luma only, same brand hue/chroma. One step darker than
-     showcase (the previous deepest), making this the darkest blue page.
-     Footer untouched. NB: bodyClass is "discoverablity" (existing spelling). */
   body.discoverablity {
-    --brand: oklch(0.4 0.24 255);
-    --region_head: oklch(from var(--brand) 0.29 c h);
-    --region_main: oklch(from var(--brand) 0.89 calc(c * 0.18) h);
+    --brand: oklch(0.29 0.24 255);
   }
 </style>

@@ -98,7 +98,7 @@ const {
     width: clamp(255px, 40svw, 660px);
     height: auto;
     margin-block: var(--space_block);
-    color: var(--brand);
+    color: oklch(from var(--brand) calc(l + 0.13) c h);
     stroke: currentColor;
     stroke-width: var(--logo-stroke-icon, 0.37);
   }

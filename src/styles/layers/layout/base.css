@@ -23,7 +23,7 @@ html {
    all three. Change the master, the whole page re-tunes.
    =========================================================== */
 body {
-	--region_head: oklch(from var(--brand) 0.45 c h);
+	--region_head: var(--brand);
 	--region_main: oklch(from var(--brand) 0.97 calc(c * 0.18) h);
 	--region_foot: oklch(from var(--brand) 0.9 calc(c * 0.4) h);
 
@@ -31,16 +31,12 @@ body {
 	--fg_main: var(--text_color);
 	--fg_foot: var(--black);
 
-	/* legacy aliases — body sits in the head region */
-	--bg: var(--region_head);
-	--fg: var(--fg_head);
-
 	font-family: var(--font_family);
 	font-size: var(--font_clamp);
 	line-height: var(--line_height);
 	font-weight: var(--weight);
 	color: var(--fg_head);
-	background-color: var(--region_head);
+	background-color: var(--brand);
 	-webkit-text-size-adjust: 100%;
 }
 
@@ -51,8 +47,6 @@ body {
 
 /*🐸MAIN — near-white tier of the master */
 main {
-	--bg: var(--region_main);
-	--fg: var(--fg_main);
 	color: var(--fg_main);
 	background-color: var(--region_main);
 }

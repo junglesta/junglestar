@@ -70,6 +70,4 @@
 	isolation: isolate;
 	background-color: var(--region_foot);
 	color: var(--fg_foot);
-	--bg: var(--region_foot);
-	--fg: var(--fg_foot);
 }

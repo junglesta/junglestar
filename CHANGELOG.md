@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.1.2
+
+- **Colour system simplified**: per-page colour management radically reduced — each page now sets a single `--brand` token; all region colours (`--region_head`, `--region_main`, `--region_foot`) derive automatically. Removed legacy `--bg`/`--fg` aliases and the unused `awesome_colours.css` import.
+- **Two-blues scroll bug fixed** on `/discoverability`: `page_intro` wrapper now carries an opaque `background-color: var(--brand)` so `main`'s light region doesn't bleed through during sticky scroll. Removed the redundant background from `.landing_screen`.
+- **Landing screen icon** restored: icon colour shifted `+0.13 L` above the brand background via relative OKLCH so it's visible against any `--brand` value.
+- **Service cards** (showcase page): subtitle, description, and date text now render white on the brand-blue card background.
+- **Dev script** now wipes `.astro` cache before every start (`rm -rf .astro && astro dev`).
+- **pnpm lodash override** moved to `pnpm-workspace.yaml` (was silently ignored in `package.json`).
+- **WorksCard hover** replaced removed `--brand_dark` alias with inline relative OKLCH (`calc(l - 0.06)`).
+
 ## 4.1.1
 
 - **Docs**: `ROADMAP.md` synced to reality (the header/hero/colour/social-card/design-system arc shipped across `3.12.0`→`4.1.0`; status now SHIPPED). Added repo `DEPLOY.md` — architecture TL;DR (host/CDN, DNS, email, Node, pnpm) + step-by-step deploy one-liners.

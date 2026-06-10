@@ -41,7 +41,7 @@ const {
   <LastPub />
   <body class={bodyClass} style={master ? `--brand: var(${master})` : undefined}>
     {!hideNav && <Header />}
-    <div class="page_intro">
+    <div class="page_intro" style="background-color: var(--brand)">
       <slot name="page_intro" />
     </div>
 

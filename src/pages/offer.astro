@@ -369,11 +369,7 @@ const description =
 </Layout>
 
 <style is:global>
-  /* Page tone — luma only, same brand hue/chroma. Two notches darker than the
-     default blue (between showcase and design). Footer untouched. */
   body.offer {
-    --brand: oklch(0.48 0.24 255);
-    --region_head: oklch(from var(--brand) 0.37 c h);
-    --region_main: oklch(from var(--brand) 0.94 calc(c * 0.18) h);
+    --brand: oklch(0.37 0.24 255);
   }
 </style>

@@ -57,12 +57,7 @@ const description =
 </Layout>
 
 <style is:global>
-  /* Page tone — luma only, same brand hue/chroma. One notch darker than the
-     default blue; footer untouched (--region_foot uses absolute L + unchanged
-     chroma/hue). See showcase/offer for the rest of the per-page ramp. */
   body.design {
-    --brand: oklch(0.52 0.24 255);
-    --region_head: oklch(from var(--brand) 0.41 c h);
-    --region_main: oklch(from var(--brand) 0.96 calc(c * 0.18) h);
+    --brand: oklch(0.41 0.24 255);
   }
 </style>

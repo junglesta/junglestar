@@ -156,13 +156,19 @@ const tag = tags?.[0] || "";
     .title_works {
       color: var(--white);
     }
+    .subtitle_works,
+    .meta_works,
+    .date_works,
+    .description_works {
+      color: var(--white);
+    }
     .service:before {
       border-color: var(--white);
       color: var(--white);
     }
   }
   a.service:hover {
-    background-color: var(--brand_dark);
+    background-color: oklch(from var(--brand) calc(l - 0.06) c h);
   }
   a:has(.service) {
     .date_works {

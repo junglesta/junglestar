@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.2.0
+
+- **Astro 7 upgrade**: moved to Astro 7 and `@astrojs/mdx` 7. Pinned the Vite CSS minifier back to esbuild (`vite.build.cssMinify`) — Vite 8 (bundled with Astro 7) switched the default to lightningcss, which rejected some of this project's CSS.
+- **Library data reformatted**: `library.json` single-element arrays collapsed onto one line (Biome) — pure compaction, no data changes.
+- **BackgroundFrame component**: new shared component drawing a centered full-viewport frame with light/dark-aware side borders. Not wired into any page yet.
+
 ## 4.1.2
 
 - **Colour system simplified**: per-page colour management radically reduced — each page now sets a single `--brand` token; all region colours (`--region_head`, `--region_main`, `--region_foot`) derive automatically. Removed legacy `--bg`/`--fg` aliases and the unused `awesome_colours.css` import.

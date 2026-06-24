@@ -1,0 +1,49 @@
+---
+// BackgroundFrame.astro
+//
+// USAGE:
+// <BackgroundFrame />
+// <!-- or customize -->
+// <BackgroundFrame maxWidth="1200px" lightBorder="rgb(0 0 0 / 0.15)" />
+
+interface Props {
+  maxWidth?: string;        // any CSS length
+  lightBorder?: string;     // border color in light mode
+  darkBorder?: string;      // border color in dark mode
+}
+
+const {
+  maxWidth = "85rem",
+  lightBorder = "rgb(0 0 0 / 0.1)",
+  darkBorder = "rgb(120 113 108 / 0.2)",
+} = Astro.props;
+---
+
+<div class="bg-frame">
+  <div class="bg-frame__inner"></div>
+</div>
+
+<style define:vars={{ maxWidth, lightBorder, darkBorder }}>
+  .bg-frame {
+    position: fixed;
+    inset: 0 auto auto 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+  }
+
+  .bg-frame__inner {
+    height: 100%;
+    width: 100%;
+    max-width: var(--maxWidth);
+    margin-inline: auto;
+    border-left: 1px solid var(--lightBorder);
+    border-right: 1px solid var(--lightBorder);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .bg-frame__inner {
+      border-color: var(--darkBorder);
+    }
+  }
+</style>

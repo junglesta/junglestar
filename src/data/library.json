@@ -5,9 +5,7 @@
       "id": "312a088d-cea2-46d8-a5bd-d7e65f6a1690",
       "isbn13": "9780316057905",
       "title": "Blink",
-      "authors": [
-        "Malcolm Gladwell"
-      ],
+      "authors": ["Malcolm Gladwell"],
       "status": "read",
       "dateAdded": "2026-05-02T20:14:13.702Z",
       "source": "openlibrary",
@@ -38,9 +36,7 @@
       "id": "54f2eeb6-f397-4f6e-a383-5b36b5b3c326",
       "isbn13": "9788807700811",
       "title": "Il campo di nessuno",
-      "authors": [
-        "Daniel Picouly"
-      ],
+      "authors": ["Daniel Picouly"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:24:13.392Z",
       "source": "googlebooks",
@@ -50,9 +46,7 @@
       "publishYear": 1997,
       "pageCount": 278,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=myUlkigS_UsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "rating": 3
     },
@@ -60,9 +54,7 @@
       "id": "c65cdce6-b316-4407-8533-e05149979086",
       "isbn13": "9788807806629",
       "title": "Stato e anarchia",
-      "authors": [
-        "Michail Bakunin"
-      ],
+      "authors": ["Michail Bakunin"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:24:36.164Z",
       "source": "googlebooks",
@@ -72,9 +64,7 @@
       "publishYear": 2000,
       "pageCount": 268,
       "language": "it",
-      "subjects": [
-        "Political Science"
-      ],
+      "subjects": ["Political Science"],
       "coverUrl": "https://books.google.com/books/content?id=iryZoLQHYaUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "rating": 3
     },
@@ -82,9 +72,7 @@
       "id": "cd82267d-134d-42d9-ad8a-3df7fcbd9e6b",
       "isbn13": "9788842060093",
       "title": "Prima lezione di antropologia",
-      "authors": [
-        "Francesco Remotti"
-      ],
+      "authors": ["Francesco Remotti"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:25:14.100Z",
       "source": "openlibrary",
@@ -99,9 +87,7 @@
       "id": "d5b1098c-c616-4812-9a5b-9bea05ba34ad",
       "isbn13": "9788869188367",
       "title": "Hawk. Professione skater",
-      "authors": [
-        "Tony Hawk"
-      ],
+      "authors": ["Tony Hawk"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:25:52.824Z",
       "source": "googlebooks",
@@ -110,9 +96,7 @@
       "publishYear": 2017,
       "pageCount": 429,
       "language": "it",
-      "subjects": [
-        "Biography & Autobiography"
-      ],
+      "subjects": ["Biography & Autobiography"],
       "coverUrl": "https://books.google.com/books/content?id=zKMCkAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 3
     },
@@ -120,9 +104,7 @@
       "id": "e96f5c21-70a0-401c-888a-8e770b8c8cd3",
       "isbn13": "9788807810596",
       "title": "Ecologi e scimmie di Dio",
-      "authors": [
-        "Giorgio Celli"
-      ],
+      "authors": ["Giorgio Celli"],
       "status": "read",
       "dateAdded": "2026-05-03T08:26:06.215Z",
       "source": "googlebooks",
@@ -131,9 +113,7 @@
       "publishYear": 1989,
       "pageCount": 112,
       "language": "it",
-      "subjects": [
-        "Nature"
-      ],
+      "subjects": ["Nature"],
       "rating": 3,
       "dateRead": "2026-05-17T14:07:36.292Z"
     },
@@ -141,9 +121,7 @@
       "id": "cba4bc4d-82e7-4f10-8913-ffd8d0ebe07f",
       "isbn13": "9788804169994",
       "title": "Bar Sport",
-      "authors": [
-        "Stefano Benni"
-      ],
+      "authors": ["Stefano Benni"],
       "status": "read",
       "dateAdded": "2026-05-03T08:26:15.943Z",
       "source": "googlebooks",
@@ -152,9 +130,7 @@
       "publishYear": 1991,
       "pageCount": 134,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "rating": 5,
       "dateRead": "2026-05-17T14:07:42.518Z"
     },
@@ -162,9 +138,7 @@
       "id": "be9d2d07-9ef0-427a-bb10-a556fe3c5543",
       "isbn13": "9788806144456",
       "title": "Sorgo rosso",
-      "authors": [
-        "Yan Mo"
-      ],
+      "authors": ["Yan Mo"],
       "status": "read",
       "dateAdded": "2026-05-03T08:26:33.730Z",
       "source": "googlebooks",
@@ -173,9 +147,7 @@
       "publishYear": 1997,
       "pageCount": 496,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=TVI1AAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 4,
       "dateRead": "2026-05-17T14:06:47.476Z"
@@ -184,9 +156,7 @@
       "id": "2cee4c4a-4f74-4373-a763-b5f74f8fd1b0",
       "isbn13": "9788807810244",
       "title": "Odile",
-      "authors": [
-        "Raymond Queneau"
-      ],
+      "authors": ["Raymond Queneau"],
       "status": "read",
       "dateAdded": "2026-05-03T08:26:59.615Z",
       "source": "googlebooks",
@@ -195,9 +165,7 @@
       "publishYear": 2000,
       "pageCount": 144,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "rating": 5,
       "dateRead": "2026-05-17T14:07:48.847Z"
     },
@@ -205,9 +173,7 @@
       "id": "c9773c7a-7669-4d9a-9b52-77a824ae7d8d",
       "isbn13": "9788843800834",
       "title": "Memoria Polaroid",
-      "authors": [
-        "Douglas Coupland"
-      ],
+      "authors": ["Douglas Coupland"],
       "status": "read",
       "dateAdded": "2026-05-03T08:27:13.820Z",
       "source": "googlebooks",
@@ -216,9 +182,7 @@
       "publishYear": 1997,
       "pageCount": 204,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=rpAwAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 4,
       "dateRead": "2026-05-17T14:07:57.308Z"
@@ -227,9 +191,7 @@
       "id": "5588045e-2642-4b1e-a5d4-d59e3f396c46",
       "isbn13": "9788873059042",
       "title": "Tantra yoga",
-      "authors": [
-        "Daniel Odier"
-      ],
+      "authors": ["Daniel Odier"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:27:24.039Z",
       "source": "googlebooks",
@@ -238,9 +200,7 @@
       "publishYear": 2003,
       "pageCount": 126,
       "language": "it",
-      "subjects": [
-        "Religion"
-      ],
+      "subjects": ["Religion"],
       "coverUrl": "https://books.google.com/books/content?id=5AByAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 5
     },
@@ -248,9 +208,7 @@
       "id": "cc7436f7-74c1-498b-a6a0-43eb8d018862",
       "isbn13": "9788827201350",
       "title": "MYAMOTO MUSASHI - IL LIBRO DEI",
-      "authors": [
-        "Miyamoto Musashi"
-      ],
+      "authors": ["Miyamoto Musashi"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:27:39.473Z",
       "source": "openlibrary",
@@ -278,9 +236,7 @@
       "id": "a464ff21-f34d-4b7a-b5e0-9a4a626a5d3d",
       "isbn13": "9788811739708",
       "title": "Io, venditore di elefanti",
-      "authors": [
-        "Pap Khouma"
-      ],
+      "authors": ["Pap Khouma"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:27:59.634Z",
       "source": "openlibrary",
@@ -290,20 +246,14 @@
       "publishYear": 1990,
       "pageCount": 143,
       "language": "ita",
-      "subjects": [
-        "Biography",
-        "Immigrants",
-        "Senegalese"
-      ],
+      "subjects": ["Biography", "Immigrants", "Senegalese"],
       "rating": 2
     },
     {
       "id": "5fe59cdb-9e5a-4d45-ab3e-9104eb416bda",
       "isbn13": "9788895470023",
       "title": "Rumore di carta. Storia delle fanzine punk e hardcore italiane 1977-2007",
-      "authors": [
-        "Diego Curcio"
-      ],
+      "authors": ["Diego Curcio"],
       "status": "read",
       "dateAdded": "2026-05-03T08:28:56.243Z",
       "source": "googlebooks",
@@ -312,9 +262,7 @@
       "publishYear": 2007,
       "pageCount": 164,
       "language": "it",
-      "subjects": [
-        "Social Science"
-      ],
+      "subjects": ["Social Science"],
       "rating": 3,
       "dateRead": "2026-05-17T14:08:22.993Z"
     },
@@ -322,9 +270,7 @@
       "id": "e9ed6aa1-1992-4600-a29e-9b6c5194e475",
       "isbn13": "9788871840000",
       "title": "Artefatti",
-      "authors": [
-        "Ezio Manzini"
-      ],
+      "authors": ["Ezio Manzini"],
       "status": "to-read",
       "dateAdded": "2026-05-03T08:31:16.209Z",
       "source": "openlibrary",
@@ -348,9 +294,7 @@
       "id": "5e0cb79a-fbe1-4b83-b0fb-4794438917da",
       "isbn13": "9788871081120",
       "title": "Indigeno straniero. Il viaggio africano di un nero d'America",
-      "authors": [
-        "Eddy L. Harris"
-      ],
+      "authors": ["Eddy L. Harris"],
       "status": "read",
       "dateAdded": "2026-05-03T08:31:23.339Z",
       "source": "googlebooks",
@@ -359,9 +303,7 @@
       "publishYear": 1994,
       "pageCount": 315,
       "language": "it",
-      "subjects": [
-        "Travel"
-      ],
+      "subjects": ["Travel"],
       "rating": 4,
       "dateRead": "2026-05-27T23:52:22.206Z"
     },
@@ -369,9 +311,7 @@
       "id": "f52c0580-258c-4023-bc77-c53c66492ede",
       "isbn13": "9788807700798",
       "title": "Microservi",
-      "authors": [
-        "Douglas Coupland"
-      ],
+      "authors": ["Douglas Coupland"],
       "status": "read",
       "dateAdded": "2026-05-03T08:31:45.977Z",
       "source": "openlibrary",
@@ -401,9 +341,7 @@
       "id": "f9919845-6baa-4a80-bd93-f0b13cec31de",
       "isbn13": "9788850202225",
       "title": "Nutrire il cervello",
-      "authors": [
-        "Eva Campo"
-      ],
+      "authors": ["Eva Campo"],
       "status": "read",
       "dateAdded": "2026-05-03T08:31:57.126Z",
       "source": "googlebooks",
@@ -412,9 +350,7 @@
       "publishYear": 2002,
       "pageCount": 116,
       "language": "it",
-      "subjects": [
-        "Health & Fitness"
-      ],
+      "subjects": ["Health & Fitness"],
       "coverUrl": "https://books.google.com/books/content?id=YeLpAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 3,
       "dateRead": "2026-05-17T14:06:41.706Z"
@@ -423,9 +359,7 @@
       "id": "3dbd225e-322b-4856-82d5-6349910e840c",
       "isbn13": "9788807815829",
       "title": "Avventure in Africa (Italian Edition)",
-      "authors": [
-        "Gianni Celati"
-      ],
+      "authors": ["Gianni Celati"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:32:05.367Z",
       "source": "openlibrary",
@@ -440,9 +374,7 @@
       "id": "a2922249-ffab-4761-93c2-16a755c11bd1",
       "isbn13": "9788897458487",
       "title": "Credevo d'aver piantato un baobab",
-      "authors": [
-        "Alessandro Chelo"
-      ],
+      "authors": ["Alessandro Chelo"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:32:16.811Z",
       "source": "googlebooks",
@@ -451,9 +383,7 @@
       "publishYear": 2020,
       "pageCount": 0,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=5sCqzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 3
     },
@@ -461,9 +391,7 @@
       "id": "7b62f39e-8d6c-4c93-b33d-c4286427d489",
       "isbn13": "9788807811074",
       "title": "Il giudice e il suo boia",
-      "authors": [
-        "F Durrenmatt"
-      ],
+      "authors": ["F Durrenmatt"],
       "status": "to-read",
       "dateAdded": "2026-05-03T08:32:30.617Z",
       "source": "openlibrary",
@@ -472,22 +400,14 @@
       "publishDate": "2012",
       "publishYear": 2012,
       "language": "ita",
-      "subjects": [
-        "German language",
-        "Readers",
-        "German language materials",
-        "Police",
-        "Fiction"
-      ],
+      "subjects": ["German language", "Readers", "German language materials", "Police", "Fiction"],
       "coverUrl": "https://covers.openlibrary.org/b/id/4925874-L.jpg?default=false"
     },
     {
       "id": "b9311642-689b-47af-8953-9bdb4989f13b",
       "isbn13": "9788807809873",
       "title": "La danza immobile",
-      "authors": [
-        "Manuel Scorza"
-      ],
+      "authors": ["Manuel Scorza"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:33:53.462Z",
       "source": "googlebooks",
@@ -497,18 +417,14 @@
       "publishYear": 2001,
       "pageCount": 230,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=qCzUKBX_cB0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
     {
       "id": "31c97cc3-a2be-43c2-8af4-ba76defa6c36",
       "isbn13": "9788838941948",
       "title": "Alabama",
-      "authors": [
-        "Alessandro Barbero"
-      ],
+      "authors": ["Alessandro Barbero"],
       "status": "to-read",
       "dateAdded": "2026-05-03T08:34:00.935Z",
       "source": "openlibrary",
@@ -517,18 +433,13 @@
       "publishYear": 2021,
       "pageCount": 262,
       "language": "ita",
-      "subjects": [
-        "Fiction",
-        "History"
-      ]
+      "subjects": ["Fiction", "History"]
     },
     {
       "id": "8edc4cc2-76c5-4132-a44d-ab13bc411163",
       "isbn13": "9788843301423",
       "title": "Montale, Ungaretti, Quasimodo, Saba",
-      "authors": [
-        "Alfredo Menetti"
-      ],
+      "authors": ["Alfredo Menetti"],
       "status": "to-read",
       "dateAdded": "2026-05-03T08:34:09.382Z",
       "source": "googlebooks",
@@ -537,18 +448,14 @@
       "publishYear": 2003,
       "pageCount": 208,
       "language": "it",
-      "subjects": [
-        "Juvenile Nonfiction"
-      ],
+      "subjects": ["Juvenile Nonfiction"],
       "coverUrl": "https://books.google.com/books/content?id=gVOTPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
     {
       "id": "d87071e7-eec7-421f-8aae-362ff3c3ebb9",
       "isbn13": "9788843301430",
       "title": "Verga, Pirandello, Svevo",
-      "authors": [
-        "A. Menetti"
-      ],
+      "authors": ["A. Menetti"],
       "status": "to-read",
       "dateAdded": "2026-05-03T08:34:21.387Z",
       "source": "openlibrary",
@@ -574,17 +481,13 @@
       "publishYear": 1999,
       "pageCount": 192,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ]
+      "subjects": ["Fiction"]
     },
     {
       "id": "73fbfa4a-6df5-4a91-8364-a426bb934e3e",
       "isbn13": "9788804370857",
       "title": "Il Barone Rampante",
-      "authors": [
-        "Italo Calvino"
-      ],
+      "authors": ["Italo Calvino"],
       "status": "reading",
       "dateAdded": "2026-05-03T08:35:35.761Z",
       "source": "openlibrary",
@@ -631,9 +534,7 @@
       "id": "03d2a527-6388-4e08-b5fc-8b740d9b86a7",
       "isbn13": "9788885838505",
       "title": "Avete 30 secondi",
-      "authors": [
-        "Barry Day"
-      ],
+      "authors": ["Barry Day"],
       "status": "read",
       "dateAdded": "2026-05-03T12:34:46.234Z",
       "source": "googlebooks",
@@ -642,9 +543,7 @@
       "publishYear": 1990,
       "pageCount": 230,
       "language": "it",
-      "subjects": [
-        "Business & Economics"
-      ],
+      "subjects": ["Business & Economics"],
       "rating": 3,
       "dateRead": "2026-05-17T14:12:11.738Z"
     },
@@ -652,9 +551,7 @@
       "id": "d847115d-7d80-4596-b8f4-6f24aadcb9b7",
       "isbn13": "9788884839831",
       "title": "Non ero il solo",
-      "authors": [
-        "Fabrizio Marchi"
-      ],
+      "authors": ["Fabrizio Marchi"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:38:02.276Z",
       "source": "openlibrary",
@@ -692,10 +589,7 @@
       "id": "deeb3ed1-dfc1-4486-958b-2a7be8825f97",
       "isbn13": "9788838446979",
       "title": "Storia di Ani-la",
-      "authors": [
-        "Ani Pachen",
-        "Adelaide Donnelley"
-      ],
+      "authors": ["Ani Pachen", "Adelaide Donnelley"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:39:06.294Z",
       "source": "googlebooks",
@@ -704,18 +598,14 @@
       "publishYear": 2000,
       "pageCount": 312,
       "language": "it",
-      "subjects": [
-        "Biography & Autobiography"
-      ],
+      "subjects": ["Biography & Autobiography"],
       "coverUrl": "https://books.google.com/books/content?id=JL6TAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
     {
       "id": "b661c396-7951-4898-a7d1-27c73ef1abf9",
       "isbn13": "9788820312893",
       "title": "Fotoricettario",
-      "authors": [
-        "Oscar Fedele Ghedina"
-      ],
+      "authors": ["Oscar Fedele Ghedina"],
       "status": "read",
       "dateAdded": "2026-05-03T12:47:56.955Z",
       "source": "googlebooks",
@@ -724,9 +614,7 @@
       "publishYear": 1982,
       "pageCount": 640,
       "language": "it",
-      "subjects": [
-        "Photography"
-      ],
+      "subjects": ["Photography"],
       "rating": 3,
       "dateRead": "2026-05-17T14:06:30.424Z"
     },
@@ -734,9 +622,7 @@
       "id": "27df0d4c-85ff-46da-9743-826ad82a8910",
       "isbn13": "9788885772366",
       "title": "Nessuna regola. 40 anni di skateboard in Italia",
-      "authors": [
-        "Lele Lutteri"
-      ],
+      "authors": ["Lele Lutteri"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:26.088Z",
       "source": "googlebooks",
@@ -745,9 +631,7 @@
       "publishYear": 2023,
       "pageCount": 0,
       "language": "it",
-      "subjects": [
-        "Sports & Recreation"
-      ],
+      "subjects": ["Sports & Recreation"],
       "coverUrl": "https://books.google.com/books/content?id=uKdV0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 1,
       "dateRead": "2026-05-17T14:12:38.909Z"
@@ -756,9 +640,7 @@
       "id": "f6e92591-355b-4e73-8ec1-1e8cea7c71e7",
       "isbn13": "9781841880716",
       "title": "Loft living",
-      "authors": [
-        "Peggy Vance"
-      ],
+      "authors": ["Peggy Vance"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.907Z",
       "source": "openlibrary",
@@ -786,9 +668,7 @@
       "id": "36477e33-036a-4b6d-a888-ed0e2dcb8315",
       "isbn13": "9780155008366",
       "title": "Sociology",
-      "authors": [
-        "William Kornblum"
-      ],
+      "authors": ["William Kornblum"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.908Z",
       "source": "openlibrary",
@@ -798,11 +678,7 @@
       "publishYear": 1998,
       "pageCount": 455,
       "language": "eng",
-      "subjects": [
-        "Sociology",
-        "Sociologie",
-        "Problèmes et exercices"
-      ],
+      "subjects": ["Sociology", "Sociologie", "Problèmes et exercices"],
       "coverUrl": "https://covers.openlibrary.org/b/id/4575527-L.jpg?default=false",
       "rating": 4
     },
@@ -810,9 +686,7 @@
       "id": "29fd6764-173c-4179-a614-0b5cb4dd227d",
       "isbn13": "9784805307212",
       "title": "Chaina modan = China modern",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:48:51.908Z",
       "source": "openlibrary",
@@ -823,10 +697,7 @@
       "id": "a7bc41fe-2cd3-4a9a-9c48-3dbcd82256e7",
       "isbn13": "9780867193770",
       "title": "Visual Addiction",
-      "authors": [
-        "Robert Williams",
-        "Lydia Lynch"
-      ],
+      "authors": ["Robert Williams", "Lydia Lynch"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.908Z",
       "source": "openlibrary",
@@ -855,9 +726,7 @@
       "id": "cac387c0-e917-4f61-a6e8-8d4a413e708f",
       "isbn13": "9780864425836",
       "title": "Lonely Planet Hong Kong (City Guides Series)",
-      "authors": [
-        "Damian Harper"
-      ],
+      "authors": ["Damian Harper"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.909Z",
       "source": "openlibrary",
@@ -867,9 +736,7 @@
       "publishYear": 1998,
       "pageCount": 224,
       "language": "eng",
-      "subjects": [
-        "Guidebooks"
-      ],
+      "subjects": ["Guidebooks"],
       "coverUrl": "https://covers.openlibrary.org/b/id/11577126-L.jpg?default=false",
       "rating": 3
     },
@@ -877,9 +744,7 @@
       "id": "c56952ae-a224-4598-a73f-03fec4ac2203",
       "isbn13": "9780140256338",
       "title": "Child of All Nations (Buru Quartet)",
-      "authors": [
-        "Pramoedya Ananta Toer"
-      ],
+      "authors": ["Pramoedya Ananta Toer"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.909Z",
       "source": "openlibrary",
@@ -904,9 +769,7 @@
       "id": "3e3287b1-dce8-4e37-adeb-f1fb81a17977",
       "isbn13": "9780465097197",
       "title": "Interpretation of Cultures",
-      "authors": [
-        "Clifford Geertz"
-      ],
+      "authors": ["Clifford Geertz"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.909Z",
       "source": "openlibrary",
@@ -923,10 +786,7 @@
       "id": "b2ba55c1-c6ef-425c-b504-798ade735f72",
       "isbn13": "9788807900822",
       "title": "Discorso della servitù volontaria",
-      "authors": [
-        "Etienne de La Boëtie",
-        "E. Donaggio"
-      ],
+      "authors": ["Etienne de La Boëtie", "E. Donaggio"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.910Z",
       "source": "openlibrary",
@@ -943,9 +803,7 @@
       "id": "da67b34a-429e-4c5a-91a1-d3acb3b8f503",
       "isbn13": "9789881806659",
       "title": "Bumbling through Borneo",
-      "authors": [
-        "Tom Schmidt"
-      ],
+      "authors": ["Tom Schmidt"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.911Z",
       "source": "openlibrary",
@@ -961,9 +819,7 @@
       "id": "37299cc9-2435-49cd-ade6-c103a388ad67",
       "isbn13": "9780099908401",
       "title": "The Old Man and the Sea",
-      "authors": [
-        "Ernest Hemingway"
-      ],
+      "authors": ["Ernest Hemingway"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.911Z",
       "source": "openlibrary",
@@ -980,9 +836,7 @@
       "id": "158d0e4e-ab9c-46a7-825d-4ddf25b73f24",
       "isbn13": "9781905379422",
       "title": "Farang",
-      "authors": [
-        "Iain Corness"
-      ],
+      "authors": ["Iain Corness"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.912Z",
       "source": "openlibrary",
@@ -998,9 +852,7 @@
       "id": "6d3b8906-374d-41a5-aa6e-2064564e634b",
       "isbn13": "9781581154979",
       "title": "ASMP professional business practices in photography",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.912Z",
       "source": "openlibrary",
@@ -1017,9 +869,7 @@
       "id": "07532208-95ca-4680-82aa-ad96f1046f36",
       "isbn13": "9780816025183",
       "title": "Survival",
-      "authors": [
-        "Xavier Maniguet"
-      ],
+      "authors": ["Xavier Maniguet"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.913Z",
       "source": "openlibrary",
@@ -1035,9 +885,7 @@
       "id": "449acf0f-20f8-481c-ad93-48986dc4c720",
       "isbn13": "9780850319927",
       "title": "Post Office",
-      "authors": [
-        "Charles Bukowski"
-      ],
+      "authors": ["Charles Bukowski"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.913Z",
       "source": "googlebooks",
@@ -1052,9 +900,7 @@
       "id": "38757307-8c57-4c19-88f6-a103c0a4b827",
       "isbn13": "9780141024530",
       "title": "The shock doctrine",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.914Z",
       "source": "openlibrary",
@@ -1070,9 +916,7 @@
       "id": "dfe110cb-6221-47bb-9909-5a50e85401db",
       "isbn13": "9780207188183",
       "title": "Us mob",
-      "authors": [
-        "Mudrooroo"
-      ],
+      "authors": ["Mudrooroo"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.914Z",
       "source": "openlibrary",
@@ -1089,9 +933,7 @@
       "id": "77065694-6de2-47d0-a846-6cf5fcc38f97",
       "isbn13": "9780868405469",
       "title": "Contemporary Melbourne architecture",
-      "authors": [
-        "Joe Rollo"
-      ],
+      "authors": ["Joe Rollo"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.915Z",
       "source": "openlibrary",
@@ -1108,9 +950,7 @@
       "id": "db3da98b-0c2f-460d-b53a-9c64acc7a182",
       "isbn13": "9780006547136",
       "title": "Fuzzy thinking",
-      "authors": [
-        "Bart Kosko"
-      ],
+      "authors": ["Bart Kosko"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.915Z",
       "source": "openlibrary",
@@ -1141,10 +981,7 @@
       "id": "398e7233-56ba-449b-b2f2-41bacaab47cd",
       "isbn13": "9781887521482",
       "title": "Thailand Fever",
-      "authors": [
-        "Chris Pirazzi",
-        "Vitida Vasant"
-      ],
+      "authors": ["Chris Pirazzi", "Vitida Vasant"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.916Z",
       "source": "openlibrary",
@@ -1154,11 +991,7 @@
       "publishYear": 2004,
       "pageCount": 258,
       "language": "eng",
-      "subjects": [
-        "Interracial dating",
-        "Man-woman relationships",
-        "Dating (Social customs)"
-      ],
+      "subjects": ["Interracial dating", "Man-woman relationships", "Dating (Social customs)"],
       "coverUrl": "https://covers.openlibrary.org/b/id/2089460-L.jpg?default=false",
       "rating": 3,
       "dateRead": "2026-05-17T14:11:49.355Z"
@@ -1167,9 +1000,7 @@
       "id": "6729e536-0671-4d34-8a0d-5be1a5ea39b9",
       "isbn13": "9781905379439",
       "title": "Miss Bangkok Memoirs Of A Thai Prostitute",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.916Z",
       "source": "openlibrary",
@@ -1193,9 +1024,7 @@
       "id": "db863531-8c45-46be-b851-5d7b2e486214",
       "isbn13": "9781741797053",
       "title": "Hong Kong",
-      "authors": [
-        "Piera Chen"
-      ],
+      "authors": ["Piera Chen"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:48:51.916Z",
       "source": "openlibrary",
@@ -1203,18 +1032,13 @@
       "publishDate": "2011",
       "publishYear": 2011,
       "language": "eng",
-      "subjects": [
-        "Guidebooks",
-        "Hong kong (china), description and travel"
-      ]
+      "subjects": ["Guidebooks", "Hong kong (china), description and travel"]
     },
     {
       "id": "e71ff72a-d200-430e-be7a-4ce652794e50",
       "isbn13": "9781741792256",
       "title": "Hong Kong & Macau",
-      "authors": [
-        "Andrew Stone"
-      ],
+      "authors": ["Andrew Stone"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.919Z",
       "source": "openlibrary",
@@ -1224,9 +1048,7 @@
       "publishYear": 2010,
       "pageCount": 388,
       "language": "eng",
-      "subjects": [
-        "Guidebooks"
-      ],
+      "subjects": ["Guidebooks"],
       "coverUrl": "https://covers.openlibrary.org/b/id/10344672-L.jpg?default=false",
       "rating": 3
     },
@@ -1234,11 +1056,7 @@
       "id": "a11d2550-0beb-4690-9568-eef8ba9abbe9",
       "isbn13": "9780864422880",
       "title": "Lonely Planet Africa (Lonely Planet Africa on a Shoestring)",
-      "authors": [
-        "Geoff Crowther",
-        "Hugh Finlay",
-        "Geert Cole"
-      ],
+      "authors": ["Geoff Crowther", "Hugh Finlay", "Geert Cole"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.920Z",
       "source": "openlibrary",
@@ -1256,9 +1074,7 @@
       "id": "1e733214-291e-4c9c-9793-2be06bcbd6c3",
       "isbn13": "9781566910736",
       "title": "Moon Handbooks",
-      "authors": [
-        "Bill Dalton"
-      ],
+      "authors": ["Bill Dalton"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.920Z",
       "source": "openlibrary",
@@ -1277,11 +1093,7 @@
       "id": "c255196d-5191-4f6b-9efa-94aaaa2edabd",
       "isbn13": "9780864426062",
       "title": "Lonely Planet Bali & Lombok (7th ed)",
-      "authors": [
-        "Paul Greenway",
-        "James Lyon",
-        "Tony Wheeler"
-      ],
+      "authors": ["Paul Greenway", "James Lyon", "Tony Wheeler"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.921Z",
       "source": "openlibrary",
@@ -1309,9 +1121,7 @@
       "id": "cb99ae7e-6d86-4c7d-8c90-8c2a6e89b3e5",
       "isbn13": "9780864425140",
       "title": "Lonely Planet Venezuela",
-      "authors": [
-        "Krzysztof Dydynski"
-      ],
+      "authors": ["Krzysztof Dydynski"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.921Z",
       "source": "openlibrary",
@@ -1333,11 +1143,7 @@
       "id": "c716b215-b8fe-4dc7-88fd-43b925f715b4",
       "isbn13": "9780864424181",
       "title": "Lonely Planet Central America on a Shoestring",
-      "authors": [
-        "Tom Brosnahan",
-        "Barbara Reioux",
-        "Carolyn Hubbard"
-      ],
+      "authors": ["Tom Brosnahan", "Barbara Reioux", "Carolyn Hubbard"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.921Z",
       "source": "openlibrary",
@@ -1347,19 +1153,14 @@
       "publishYear": 1997,
       "pageCount": 832,
       "language": "eng",
-      "subjects": [
-        "Guidebooks"
-      ],
+      "subjects": ["Guidebooks"],
       "coverUrl": "https://covers.openlibrary.org/b/id/654824-L.jpg?default=false"
     },
     {
       "id": "a0ca0763-67c6-4992-aab6-33ad2866cc3c",
       "isbn13": "9780864424228",
       "title": "Lonely Planet Eastern Caribbean (2nd ed)",
-      "authors": [
-        "Glenda Bendure",
-        "Ned Friary"
-      ],
+      "authors": ["Glenda Bendure", "Ned Friary"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.922Z",
       "source": "openlibrary",
@@ -1369,9 +1170,7 @@
       "publishYear": 1998,
       "pageCount": 560,
       "language": "eng",
-      "subjects": [
-        "Travel & holiday guides"
-      ],
+      "subjects": ["Travel & holiday guides"],
       "coverUrl": "https://covers.openlibrary.org/b/id/654828-L.jpg?default=false",
       "rating": 3,
       "dateRead": "2026-05-27T23:53:23.279Z"
@@ -1380,9 +1179,7 @@
       "id": "7873b961-cdc6-4007-a229-4d64067691a0",
       "isbn13": "9780844249476",
       "title": "Venezuela Handbook (Venezuela Handbook 1998)",
-      "authors": [
-        "Ben Box"
-      ],
+      "authors": ["Ben Box"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:48:51.922Z",
       "source": "openlibrary",
@@ -1392,20 +1189,14 @@
       "publishYear": 1998,
       "pageCount": 384,
       "language": "eng",
-      "subjects": [
-        "Guidebooks",
-        "Descripción y viajes"
-      ],
+      "subjects": ["Guidebooks", "Descripción y viajes"],
       "coverUrl": "https://covers.openlibrary.org/b/id/1592915-L.jpg?default=false"
     },
     {
       "id": "413ea4ac-6717-4b09-9a3d-5c45f93bafff",
       "isbn13": "9780690000115",
       "title": "Roget's International Thesaurus (Harper Colophon Books)",
-      "authors": [
-        "Peter Mark Roget",
-        "Peter M. Chapman"
-      ],
+      "authors": ["Peter Mark Roget", "Peter M. Chapman"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.924Z",
       "source": "openlibrary",
@@ -1435,9 +1226,7 @@
       "id": "e732d165-dae8-42a7-88be-ba1128313a57",
       "isbn13": "9780002151627",
       "title": "A Day in the life of California",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.924Z",
       "source": "openlibrary",
@@ -1467,9 +1256,7 @@
       "id": "fc1e2fd1-d6c1-47ea-b488-dd3b36eea023",
       "isbn13": "9781894020541",
       "title": "The Concrete Wave",
-      "authors": [
-        "Michael Brooke"
-      ],
+      "authors": ["Michael Brooke"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.924Z",
       "source": "openlibrary",
@@ -1479,11 +1266,7 @@
       "publishYear": 1999,
       "pageCount": 200,
       "language": "eng",
-      "subjects": [
-        "Skateboarding",
-        "Skateboarders",
-        "Fiction, general"
-      ],
+      "subjects": ["Skateboarding", "Skateboarders", "Fiction, general"],
       "synopsis": "Traces the development of the sport and its equipment, and includes profiles and photographs of top-notch skaters through the years.",
       "coverUrl": "https://covers.openlibrary.org/b/id/943227-L.jpg?default=false",
       "rating": 4,
@@ -1493,9 +1276,7 @@
       "id": "6f85385a-be3c-4a28-a95d-754d276030c3",
       "isbn13": "9780751504835",
       "title": "Something under the bed is drooling",
-      "authors": [
-        "Bill Watterson"
-      ],
+      "authors": ["Bill Watterson"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.924Z",
       "source": "openlibrary",
@@ -1526,9 +1307,7 @@
       "id": "649861df-17ae-4099-a456-f8f08456946e",
       "isbn13": "9780451530400",
       "title": "Tao Te Ching (Signet Classics)",
-      "authors": [
-        "老子"
-      ],
+      "authors": ["老子"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.925Z",
       "source": "openlibrary",
@@ -1559,9 +1338,7 @@
       "id": "4739f357-d672-4afa-8b3e-380016c7af25",
       "isbn13": "9780060969288",
       "title": "Mondo 2000",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.926Z",
       "source": "openlibrary",
@@ -1571,12 +1348,7 @@
       "publishYear": 1992,
       "pageCount": 317,
       "language": "eng",
-      "subjects": [
-        "Industrial Design",
-        "New Age movement",
-        "Periodicals",
-        "Popular culture"
-      ],
+      "subjects": ["Industrial Design", "New Age movement", "Periodicals", "Popular culture"],
       "synopsis": "Mondo 2000 will introduce you to your tomorrow - and show you how to buy it today! From the creators of America's most exciting new magazine, Mondo 2000 will help you surf the bleeding edge of the coming revolution in art, technology, media, chemistry, science, and music - the New World Disorder. Rope the Internet worm with digital outlaws...Boost your brain and body with amino chemistry... eat the quantum sandwich of nanotechnology... and immerse yourself in high-tech paganism, teledildonics, homebrew multimedia pranking, cyberpunk jockeying, and pleasure-pulse implants. With contributions from the experts - such as William Gibson, Brian Eno, William Burroughs, Bruce Sterling, Timothy Leary, Diamanda Galas, and Frank Zappa - and including more than 300 illustrations, Mondo 2000 will explain everything you need to know about the future, and how you can see, hear, and buy much of it today. -- from back cover.",
       "coverUrl": "https://covers.openlibrary.org/b/id/13411592-L.jpg?default=false",
       "rating": 4,
@@ -1586,9 +1358,7 @@
       "id": "f7c784ff-f8e8-46dd-87e7-380127529503",
       "isbn13": "9788880300823",
       "title": "Shunga",
-      "authors": [
-        "Marco Fagioli"
-      ],
+      "authors": ["Marco Fagioli"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.926Z",
       "source": "openlibrary",
@@ -1618,9 +1388,7 @@
       "id": "4ec29f70-871b-4213-9388-dab4a52406fc",
       "isbn13": "9781569711248",
       "title": "Bettie Page",
-      "authors": [
-        "Jim Silke"
-      ],
+      "authors": ["Jim Silke"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.926Z",
       "source": "openlibrary",
@@ -1630,12 +1398,7 @@
       "publishYear": 1995,
       "pageCount": 96,
       "language": "eng",
-      "subjects": [
-        "Models (Persons)",
-        "Pinup art",
-        "Glamour photography",
-        "Models (Person)"
-      ],
+      "subjects": ["Models (Persons)", "Pinup art", "Glamour photography", "Models (Person)"],
       "synopsis": "\"Join author/artist Jim Silke as he explores Bettie Page's influence on popular culture, from dime-store novels to paperbacks, and from painting to advertising.\"--Cover.",
       "coverUrl": "https://covers.openlibrary.org/b/id/814673-L.jpg?default=false",
       "rating": 4,
@@ -1645,9 +1408,7 @@
       "id": "27844fa9-11ea-42fe-9028-929ebe2a3efc",
       "isbn13": "9788880293019",
       "title": "The red sea",
-      "authors": [
-        "Andrea Ghisotti"
-      ],
+      "authors": ["Andrea Ghisotti"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:48:51.927Z",
       "source": "openlibrary",
@@ -1674,9 +1435,7 @@
       "id": "4a038548-1ff3-4c02-acb8-d31ae06f780c",
       "isbn13": "9780821211311",
       "title": "The negative",
-      "authors": [
-        "Ansel Adams"
-      ],
+      "authors": ["Ansel Adams"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.927Z",
       "source": "openlibrary",
@@ -1707,10 +1466,7 @@
       "id": "12ac815d-a4f7-489b-b9f4-4104d66b91f2",
       "isbn13": "9782800121208",
       "title": "Le Petit Spirou - Tome 5 - \"Merci\" qui ?",
-      "authors": [
-        "Tome",
-        "Janry"
-      ],
+      "authors": ["Tome", "Janry"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.928Z",
       "source": "openlibrary",
@@ -1740,10 +1496,7 @@
       "id": "8105f346-eb77-4c61-83d8-5d71cd0165e8",
       "isbn13": "9780867193817",
       "title": "Zombie Mystery Paintings",
-      "authors": [
-        "Robert Williams",
-        "Robert Crumb"
-      ],
+      "authors": ["Robert Williams", "Robert Crumb"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.930Z",
       "source": "openlibrary",
@@ -1752,12 +1505,7 @@
       "publishDate": "January 1993",
       "publishYear": 1993,
       "language": "eng",
-      "subjects": [
-        "Painting, catalogs",
-        "Grotesque in art",
-        "Comic books, strips",
-        "Painting"
-      ],
+      "subjects": ["Painting, catalogs", "Grotesque in art", "Comic books, strips", "Painting"],
       "coverUrl": "https://covers.openlibrary.org/b/isbn/9780867193817-L.jpg?default=false",
       "rating": 4,
       "dateRead": "2026-05-17T14:11:22.801Z"
@@ -1766,9 +1514,7 @@
       "id": "d418305c-d1a4-4c1f-9288-228da680404a",
       "isbn13": "9783927789302",
       "title": "I'm not the girl who misses much",
-      "authors": [
-        "Pipilotti Rist"
-      ],
+      "authors": ["Pipilotti Rist"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.930Z",
       "source": "openlibrary",
@@ -1777,9 +1523,7 @@
       "publishDate": "1994",
       "publishYear": 1994,
       "language": "ger",
-      "subjects": [
-        "Exhibitions"
-      ],
+      "subjects": ["Exhibitions"],
       "coverUrl": "https://covers.openlibrary.org/b/isbn/9783927789302-L.jpg?default=false",
       "rating": 4,
       "dateRead": "2026-05-17T14:09:16.633Z"
@@ -1788,9 +1532,7 @@
       "id": "92db5d7a-1ffd-4992-8640-72a6c1b60afc",
       "isbn13": "9781855014756",
       "title": "Australia (Countries)",
-      "authors": [
-        "Kelvin Aitken"
-      ],
+      "authors": ["Kelvin Aitken"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.931Z",
       "source": "openlibrary",
@@ -1799,10 +1541,7 @@
       "publishDate": "March 1, 1996",
       "publishYear": 1996,
       "pageCount": 128,
-      "subjects": [
-        "Australia, pictorial works",
-        "Australia, description and travel"
-      ],
+      "subjects": ["Australia, pictorial works", "Australia, description and travel"],
       "coverUrl": "https://covers.openlibrary.org/b/id/3005154-L.jpg?default=false",
       "rating": 3
     },
@@ -1810,10 +1549,7 @@
       "id": "7a4f640b-beb3-4162-a77f-45d5ea51cba3",
       "isbn13": "9781000107456",
       "title": "Modern Britain",
-      "authors": [
-        "Sean Glynn",
-        "Alan Booth"
-      ],
+      "authors": ["Sean Glynn", "Alan Booth"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.931Z",
       "source": "openlibrary",
@@ -1841,9 +1577,7 @@
       "id": "d49e21f5-ae32-4979-a340-cb397ea3f9c5",
       "isbn13": "9780500273203",
       "title": "Subway Art",
-      "authors": [
-        "Martha Cooper"
-      ],
+      "authors": ["Martha Cooper"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.933Z",
       "source": "openlibrary",
@@ -1871,9 +1605,7 @@
       "id": "4b308525-45f9-48dc-ba86-dbaeb01e3d2e",
       "isbn13": "9780500274699",
       "title": "Spraycan art",
-      "authors": [
-        "Henry Chalfant"
-      ],
+      "authors": ["Henry Chalfant"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.933Z",
       "source": "openlibrary",
@@ -1883,11 +1615,7 @@
       "publishYear": 1987,
       "pageCount": 96,
       "language": "eng",
-      "subjects": [
-        "Mural painting and decoration",
-        "Street art",
-        "Themes, motives"
-      ],
+      "subjects": ["Mural painting and decoration", "Street art", "Themes, motives"],
       "synopsis": "A selection of spectacular photographs and thought-provoking quotes of spraycan art from more than twenty cities scattered across three continents.",
       "coverUrl": "https://covers.openlibrary.org/b/id/316331-L.jpg?default=false",
       "rating": 4,
@@ -1897,9 +1625,7 @@
       "id": "3d3930d6-3114-47ad-925a-5e47525ad029",
       "isbn13": "9783822802106",
       "title": "Dali - Taschen Serie Menor -",
-      "authors": [
-        "Maddox"
-      ],
+      "authors": ["Maddox"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.934Z",
       "source": "openlibrary",
@@ -1924,9 +1650,7 @@
       "id": "80db9e71-0e3c-4989-b9a6-afa0c0d6a26d",
       "isbn13": "9780858358218",
       "title": "Dangerous Australians, the complete guide to Australia's most deadly creatures",
-      "authors": [
-        "Benn Cropp"
-      ],
+      "authors": ["Benn Cropp"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.935Z",
       "source": "openlibrary",
@@ -1936,10 +1660,7 @@
       "publishYear": 1985,
       "pageCount": 124,
       "language": "eng",
-      "subjects": [
-        "Poisonous animals",
-        "Poisonous animals - Australia"
-      ],
+      "subjects": ["Poisonous animals", "Poisonous animals - Australia"],
       "coverUrl": "https://covers.openlibrary.org/b/id/11574166-L.jpg?default=false",
       "rating": 3
     },
@@ -1947,9 +1668,7 @@
       "id": "9d098fd1-9d44-46cc-93ce-5a3785a0ccb8",
       "isbn13": "9780794600723",
       "title": "Between the Tides",
-      "authors": [
-        "David Pickell"
-      ],
+      "authors": ["David Pickell"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.935Z",
       "source": "openlibrary",
@@ -1975,9 +1694,7 @@
       "id": "a67d5e38-2d4d-4961-b19c-f216dc390c1f",
       "isbn13": "9784568501025",
       "title": "Sorayama Hyper Illustrations",
-      "authors": [
-        "Hajime Sorayama"
-      ],
+      "authors": ["Hajime Sorayama"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.936Z",
       "source": "openlibrary",
@@ -1995,9 +1712,7 @@
       "id": "8df2b8b9-e3ce-4b0d-b091-944ba9d848ae",
       "isbn13": "9780062086440",
       "title": "The Upside of Irrationality",
-      "authors": [
-        "Dan Ariely"
-      ],
+      "authors": ["Dan Ariely"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.936Z",
       "source": "openlibrary",
@@ -2015,9 +1730,7 @@
       "id": "e9be1a9f-ebe5-4deb-a3a5-7197a4c92f3c",
       "isbn13": "9780062018205",
       "title": "Predictably Irrational",
-      "authors": [
-        "Dan Ariely"
-      ],
+      "authors": ["Dan Ariely"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.937Z",
       "source": "openlibrary",
@@ -2047,10 +1760,7 @@
       "id": "22942e6a-b877-4993-8d66-fbd7df2e4e6b",
       "isbn13": "9780061956270",
       "title": "Freakonomics",
-      "authors": [
-        "Steven D. Levitt",
-        "Stephen J. Dubner"
-      ],
+      "authors": ["Steven D. Levitt", "Stephen J. Dubner"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.937Z",
       "source": "openlibrary",
@@ -2080,9 +1790,7 @@
       "id": "f7f63357-4c02-4ee7-8ba9-2b785cd1f30b",
       "isbn13": "9786162070853",
       "title": "Change your view, change your life",
-      "authors": [
-        "Thoon Khippapanyo"
-      ],
+      "authors": ["Thoon Khippapanyo"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.938Z",
       "source": "openlibrary",
@@ -2098,9 +1806,7 @@
       "id": "153300f6-1a31-42ce-958e-9b8f7fca3dfe",
       "isbn13": "9780140032192",
       "title": "A Clockwork Orange",
-      "authors": [
-        "Anthony Burgess"
-      ],
+      "authors": ["Anthony Burgess"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.939Z",
       "source": "openlibrary",
@@ -2131,9 +1837,7 @@
       "id": "742d6bdd-a559-4a94-8904-db5e451c0e37",
       "isbn13": "9788807811937",
       "title": "Hollywood, Hollywood!.",
-      "authors": [
-        "Charles Bukowski"
-      ],
+      "authors": ["Charles Bukowski"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.939Z",
       "source": "openlibrary",
@@ -2152,9 +1856,7 @@
       "id": "2fccbbde-91e7-4cc7-9005-cebaa3b9d37f",
       "isbn13": "9780747528302",
       "title": "Emotional intelligence",
-      "authors": [
-        "Daniel Goleman"
-      ],
+      "authors": ["Daniel Goleman"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.940Z",
       "source": "openlibrary",
@@ -2185,9 +1887,7 @@
       "id": "15615edd-4025-4b0b-bea8-5df18ef3ecb8",
       "isbn13": "9780140279511",
       "title": "Collapse: How Societies Choose to Fail or Survive",
-      "authors": [
-        "Jared M. Diamond"
-      ],
+      "authors": ["Jared M. Diamond"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.941Z",
       "source": "openlibrary",
@@ -2217,9 +1917,7 @@
       "id": "c159eea4-d55c-4baa-94c2-8944c54d342e",
       "isbn13": "9780449908587",
       "title": "Happy Isles of Oceania",
-      "authors": [
-        "Paul Theroux"
-      ],
+      "authors": ["Paul Theroux"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.941Z",
       "source": "openlibrary",
@@ -2250,9 +1948,7 @@
       "id": "e9d50dba-9cbf-4293-9cf1-3dbd8ebed44b",
       "isbn13": "9789793019024",
       "title": "Abracadabra",
-      "authors": [
-        "Danarto"
-      ],
+      "authors": ["Danarto"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.941Z",
       "source": "openlibrary",
@@ -2262,10 +1958,7 @@
       "publishYear": 2001,
       "pageCount": 160,
       "language": "eng",
-      "subjects": [
-        "Short stories, indonesian",
-        "Fiction, short stories (single author)"
-      ],
+      "subjects": ["Short stories, indonesian", "Fiction, short stories (single author)"],
       "coverUrl": "https://covers.openlibrary.org/b/id/10565648-L.jpg?default=false",
       "rating": 3
     },
@@ -2273,9 +1966,7 @@
       "id": "208fea8c-78b3-4d13-a84c-5a606151911d",
       "isbn13": "9784770015648",
       "title": "Color image scale",
-      "authors": [
-        "Shigenobu Kobayashi"
-      ],
+      "authors": ["Shigenobu Kobayashi"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.942Z",
       "source": "openlibrary",
@@ -2300,9 +1991,7 @@
       "id": "e6ca71e4-738e-4b34-96a4-0c83e40cfd83",
       "isbn13": "9780877013174",
       "title": "Designer's Guide to Color",
-      "authors": [
-        "James Stockton"
-      ],
+      "authors": ["James Stockton"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.942Z",
       "source": "openlibrary",
@@ -2312,10 +2001,7 @@
       "publishYear": 1984,
       "pageCount": 136,
       "language": "eng",
-      "subjects": [
-        "Color in design",
-        "Art"
-      ],
+      "subjects": ["Color in design", "Art"],
       "coverUrl": "https://covers.openlibrary.org/b/id/1629770-L.jpg?default=false",
       "rating": 3,
       "dateRead": "2026-05-17T14:14:25.435Z"
@@ -2324,9 +2010,7 @@
       "id": "3960c678-9461-4cee-bd92-7eafe92431c6",
       "isbn13": "9788838001772",
       "title": "Karingana ua karingana",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.943Z",
       "source": "googlebooks",
@@ -2335,9 +2019,7 @@
       "publishYear": 1990,
       "pageCount": 160,
       "language": "it",
-      "subjects": [
-        "Photography"
-      ],
+      "subjects": ["Photography"],
       "rating": 4,
       "dateRead": "2026-05-17T14:05:28.021Z"
     },
@@ -2345,9 +2027,7 @@
       "id": "9f6bf82c-6fcc-4dba-a5ad-f9fb392c31f3",
       "isbn13": "9781844006090",
       "title": "The Genius of Photography",
-      "authors": [
-        "Gerry Badger"
-      ],
+      "authors": ["Gerry Badger"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.943Z",
       "source": "openlibrary",
@@ -2375,9 +2055,7 @@
       "id": "d7f6a805-862c-44c7-9693-75aa6e3f4d4d",
       "isbn13": "9780646139678",
       "title": "Trip to Town",
-      "authors": [
-        "Jeff Raglus"
-      ],
+      "authors": ["Jeff Raglus"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.943Z",
       "source": "googlebooks",
@@ -2386,9 +2064,7 @@
       "publishYear": 1993,
       "pageCount": 25,
       "language": "en",
-      "subjects": [
-        "Cities and towns"
-      ],
+      "subjects": ["Cities and towns"],
       "synopsis": "Georgia and King find the trip to town is much more exciting by train than in the car. The things you see!",
       "rating": 3,
       "dateRead": "2026-05-17T14:14:34.275Z"
@@ -2397,9 +2073,7 @@
       "id": "eaf93a64-2b9a-4312-b116-992bae6dca67",
       "isbn13": "9780877018308",
       "title": "Spin again",
-      "authors": [
-        "Rick Polizzi"
-      ],
+      "authors": ["Rick Polizzi"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.944Z",
       "source": "openlibrary",
@@ -2409,10 +2083,7 @@
       "publishYear": 1991,
       "pageCount": 119,
       "language": "eng",
-      "subjects": [
-        "Board games",
-        "History"
-      ],
+      "subjects": ["Board games", "History"],
       "coverUrl": "https://covers.openlibrary.org/b/id/8554249-L.jpg?default=false",
       "rating": 3,
       "dateRead": "2026-05-17T14:14:50.080Z"
@@ -2421,9 +2092,7 @@
       "id": "9117698e-320a-4da9-814a-89eb86cf87ab",
       "isbn13": "9781863026246",
       "title": "Australian beaches",
-      "authors": [
-        "Anne Matthews"
-      ],
+      "authors": ["Anne Matthews"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.944Z",
       "source": "openlibrary",
@@ -2433,10 +2102,7 @@
       "publishYear": 1998,
       "pageCount": 128,
       "language": "eng",
-      "subjects": [
-        "Beaches",
-        "Pictorial works"
-      ],
+      "subjects": ["Beaches", "Pictorial works"],
       "coverUrl": "https://covers.openlibrary.org/b/id/12674043-L.jpg?default=false",
       "rating": 4,
       "dateRead": "2026-05-17T14:15:07.602Z"
@@ -2445,9 +2111,7 @@
       "id": "10d13bb8-46dc-422d-8aeb-15d381c3dd4e",
       "isbn13": "9789060053317",
       "title": "Wij denken niet in kleur",
-      "authors": [
-        "Daniel Koning"
-      ],
+      "authors": ["Daniel Koning"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.944Z",
       "source": "openlibrary",
@@ -2457,11 +2121,7 @@
       "publishYear": 1990,
       "pageCount": 106,
       "language": "dut",
-      "subjects": [
-        "Pictorial works",
-        "Politics and government",
-        "Race relations"
-      ],
+      "subjects": ["Pictorial works", "Politics and government", "Race relations"],
       "rating": 3,
       "dateRead": "2026-05-17T14:14:56.972Z"
     },
@@ -2469,9 +2129,7 @@
       "id": "1fe8a36a-eac7-45d7-bb54-0d63d0529427",
       "isbn13": "9780821211229",
       "title": "The portfolios of Ansel Adams",
-      "authors": [
-        "Ansel Adams"
-      ],
+      "authors": ["Ansel Adams"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.945Z",
       "source": "openlibrary",
@@ -2497,9 +2155,7 @@
       "id": "1013d5e5-35dc-4a88-b624-89be73ce9acf",
       "isbn13": "9781558592094",
       "title": "Signs of our time",
-      "authors": [
-        "John Margolies"
-      ],
+      "authors": ["John Margolies"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.947Z",
       "source": "openlibrary",
@@ -2530,9 +2186,7 @@
       "id": "9ba74949-3fc1-4e62-90f8-3a9226353f0d",
       "isbn13": "9786167277028",
       "title": "Living with Spirits",
-      "authors": [
-        "Ben Davies"
-      ],
+      "authors": ["Ben Davies"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.947Z",
       "source": "googlebooks",
@@ -2541,9 +2195,7 @@
       "publishYear": 2009,
       "pageCount": 130,
       "language": "en",
-      "subjects": [
-        "Thailand"
-      ],
+      "subjects": ["Thailand"],
       "rating": 4,
       "dateRead": "2026-05-17T14:15:14.503Z"
     },
@@ -2551,9 +2203,7 @@
       "id": "4a85ad72-f2a6-41c8-89fa-85e2caa30cb4",
       "isbn13": "9780312054366",
       "title": "Generation X",
-      "authors": [
-        "Douglas Coupland"
-      ],
+      "authors": ["Douglas Coupland"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.948Z",
       "source": "openlibrary",
@@ -2584,9 +2234,7 @@
       "id": "d91d9f01-7fb8-4ca6-a79e-dac8d02e7fab",
       "isbn13": "9788872263730",
       "title": "Zap comix",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.948Z",
       "source": "googlebooks",
@@ -2596,9 +2244,7 @@
       "publishYear": 1998,
       "pageCount": 240,
       "language": "it",
-      "subjects": [
-        "Humor"
-      ],
+      "subjects": ["Humor"],
       "synopsis": "There was scarcely an underground comics world before Robert Crumb's classic solo first issue of Zap. By Zap #2, he had begun assembling a Seven Samurai of the best, the fiercest, and the most stylistically diversified cartoonists to come out of the countercultural kiln. All of them were extremists of one sort or another, from biker-gang member Rodriguez to Christian surfer Griffin, but somehow they produced a decades-long collaboration: a mind-blowing anthology of abstract hallucination, throat-slashing social satire, and shocking sexual excess, that made possible the ongoing wave of alternative cartoonists like Daniel Clowes, Chris Ware, and Charles Burns. The Complete Zap Comix collects every issue of Zap - every cover and every story, and even the Zam mini comic jam among the Zap artists - in a five-volume, slipcased hardcover set. It will also include the 17th unpublished issue with work by Crumb, Moscoco, Wilson, Rodriguez, Shelton, Mavrides, and Williams. Plus, an introduction by founder R. Crumb and an oral history of Zap by Patrick Rosenkranz. Zap is the most historically and aesthetically important comics series ever published. Also included exclusively in this boxed set is a portfolio of Zap covers by the eight artists, replicated from high resolution scans and proofs, and specially printed for this edition on acid-free, 100% cotton fine-art paper utilizing archival pigment inks.",
       "rating": 4,
       "dateRead": "2026-05-17T14:15:20.220Z"
@@ -2607,10 +2253,7 @@
       "id": "38e0a1e3-d1ca-4d9d-aaa3-6171246732ef",
       "isbn13": "9786167469027",
       "title": "Trial Puck artwork 2005-2010",
-      "authors": [
-        "Tripuck Tripuck Suphavattana; Suphavattana",
-        "ไตรัภค ุสภัวฒนา"
-      ],
+      "authors": ["Tripuck Tripuck Suphavattana; Suphavattana", "ไตรัภค ุสภัวฒนา"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.949Z",
       "source": "googlebooks",
@@ -2626,9 +2269,7 @@
       "id": "f3ebd61d-1a54-419f-9b9e-a7eb5aa7120b",
       "isbn13": "9780312228095",
       "title": "Ahab's Trade",
-      "authors": [
-        "G. Allen Mawer"
-      ],
+      "authors": ["G. Allen Mawer"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.949Z",
       "source": "googlebooks",
@@ -2638,9 +2279,7 @@
       "publishYear": 1999,
       "pageCount": 393,
       "language": "en",
-      "subjects": [
-        "History"
-      ],
+      "subjects": ["History"],
       "synopsis": "The good, the mad, and the ugly tell their tales of high-seas excitement, focusing on the history of South Sea whalers known as the Nantucketers. Illustrations.",
       "coverUrl": "https://books.google.com/books/content?id=ZDyVQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
@@ -2648,9 +2287,7 @@
       "id": "b232f9f7-f91f-493e-9037-3962f66cddb1",
       "isbn13": "9780451207012",
       "title": "Jews, God and History",
-      "authors": [
-        "Max I. Dimont"
-      ],
+      "authors": ["Max I. Dimont"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.950Z",
       "source": "openlibrary",
@@ -2681,9 +2318,7 @@
       "id": "8b043065-35db-4aa7-857a-93e8120a0205",
       "isbn13": "9780922233175",
       "title": "Ken's Guide to the Bible",
-      "authors": [
-        "Ken Smith"
-      ],
+      "authors": ["Ken Smith"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.951Z",
       "source": "openlibrary",
@@ -2693,9 +2328,7 @@
       "publishYear": 1995,
       "pageCount": 143,
       "language": "eng",
-      "subjects": [
-        "Bible, handbooks, manuals, etc."
-      ],
+      "subjects": ["Bible, handbooks, manuals, etc."],
       "synopsis": "One atheists hilarious line by line critique of the bible.",
       "coverUrl": "https://covers.openlibrary.org/b/id/708607-L.jpg?default=false",
       "rating": 5,
@@ -2705,9 +2338,7 @@
       "id": "63d4b063-86da-4a70-b815-2fca540f1aed",
       "isbn13": "9788889431498",
       "title": "Alex Fakso",
-      "authors": [
-        "Jamel Shabazz"
-      ],
+      "authors": ["Jamel Shabazz"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.952Z",
       "source": "openlibrary",
@@ -2732,9 +2363,7 @@
       "id": "4b7c03b4-fd4f-4f04-93d0-14d344953f14",
       "isbn13": "9788886982269",
       "title": "World Press Photo 2001",
-      "authors": [
-        "M. Astrologo"
-      ],
+      "authors": ["M. Astrologo"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.952Z",
       "source": "googlebooks",
@@ -2744,9 +2373,7 @@
       "publishYear": 2001,
       "pageCount": 152,
       "language": "en",
-      "subjects": [
-        "Photography"
-      ],
+      "subjects": ["Photography"],
       "coverUrl": "https://books.google.com/books/content?id=wOvNAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 3,
       "dateRead": "2026-05-27T23:49:58.454Z"
@@ -2755,9 +2382,7 @@
       "id": "3a9ddace-df5c-4fff-b6ec-b4087730d7a7",
       "isbn13": "9780205191550",
       "title": "Sociology",
-      "authors": [
-        "George J. Bryjak"
-      ],
+      "authors": ["George J. Bryjak"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.953Z",
       "source": "openlibrary",
@@ -2767,9 +2392,7 @@
       "publishYear": 1997,
       "pageCount": 574,
       "language": "eng",
-      "subjects": [
-        "Sociology"
-      ],
+      "subjects": ["Sociology"],
       "coverUrl": "https://covers.openlibrary.org/b/id/136927-L.jpg?default=false",
       "rating": 5,
       "dateRead": "2026-05-17T14:05:06.224Z"
@@ -2778,9 +2401,7 @@
       "id": "b00da792-3b86-4aa5-9b8d-e2ba2dd50c38",
       "isbn13": "9781591844594",
       "title": "Blah blah blah",
-      "authors": [
-        "Dan Roam"
-      ],
+      "authors": ["Dan Roam"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.953Z",
       "source": "openlibrary",
@@ -2790,12 +2411,7 @@
       "publishYear": 2011,
       "pageCount": 350,
       "language": "eng",
-      "subjects": [
-        "Thought and thinking",
-        "Art",
-        "Visual communication",
-        "Communication"
-      ],
+      "subjects": ["Thought and thinking", "Art", "Visual communication", "Communication"],
       "synopsis": "Outlines effective strategies for preventing vocabulary misuse and overuse, explaining how to apply the author's \"vivid thinking\" principles to improve learning, share ideas, and overcome specific obstacles to productivity.",
       "coverUrl": "https://covers.openlibrary.org/b/id/8049217-L.jpg?default=false",
       "rating": 4
@@ -2804,9 +2420,7 @@
       "id": "9eafd1f5-98a5-44e1-b190-7b9e7d9a6aa2",
       "isbn13": "9783796518737",
       "title": "Bali",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:48:51.954Z",
       "source": "openlibrary",
@@ -2829,9 +2443,7 @@
       "id": "9a1fdb97-13c4-4e46-836d-fa1276eaffe8",
       "isbn13": "9781861540867",
       "title": "The journey is the destination",
-      "authors": [
-        "Dan Eldon"
-      ],
+      "authors": ["Dan Eldon"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.955Z",
       "source": "openlibrary",
@@ -2858,9 +2470,7 @@
       "id": "6c14731a-6e8d-4152-8838-348aa78d1c18",
       "isbn13": "9789768001214",
       "title": "How to Speak Jamaican?",
-      "authors": [
-        "Ken Maxwell"
-      ],
+      "authors": ["Ken Maxwell"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.955Z",
       "source": "googlebooks",
@@ -2869,9 +2479,7 @@
       "publishYear": 1981,
       "pageCount": 56,
       "language": "en",
-      "subjects": [
-        "Humor"
-      ],
+      "subjects": ["Humor"],
       "coverUrl": "https://books.google.com/books/content?id=NdUIAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 4,
       "dateRead": "2026-05-17T14:16:07.938Z"
@@ -2880,9 +2488,7 @@
       "id": "7e530074-da6d-472d-a045-6b45127cc3bb",
       "isbn13": "9783893112678",
       "title": "Flip sing sing song",
-      "authors": [
-        "Eric Cartier"
-      ],
+      "authors": ["Eric Cartier"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.956Z",
       "source": "googlebooks",
@@ -2891,9 +2497,7 @@
       "publishYear": 1994,
       "pageCount": 56,
       "language": "de",
-      "subjects": [
-        "Comic books, strips, etc"
-      ],
+      "subjects": ["Comic books, strips, etc"],
       "rating": 4,
       "dateRead": "2026-05-27T23:49:49.548Z"
     },
@@ -2901,9 +2505,7 @@
       "id": "26ecb43d-eb1b-450c-ae44-78c7f5e1d8f7",
       "isbn13": "9783895935404",
       "title": "Hollywood Kid is a Story of the Kid",
-      "authors": [
-        "Qwak"
-      ],
+      "authors": ["Qwak"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.957Z",
       "source": "googlebooks",
@@ -2920,9 +2522,7 @@
       "id": "2078ff4e-0171-4da6-bce0-f3cda847064b",
       "isbn13": "9781876142346",
       "title": "Great Train Disasters",
-      "authors": [
-        "Keith Eastlake"
-      ],
+      "authors": ["Keith Eastlake"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.957Z",
       "source": "googlebooks",
@@ -2931,9 +2531,7 @@
       "publishYear": 1997,
       "pageCount": 96,
       "language": "en",
-      "subjects": [
-        "Railroad accidents"
-      ],
+      "subjects": ["Railroad accidents"],
       "synopsis": "Includes photographs and discusses the causes of over 50 of this century's worst train crashes. -- Adapted from back cover.",
       "rating": 2,
       "dateRead": "2026-05-17T14:18:05.983Z"
@@ -2942,9 +2540,7 @@
       "id": "a1e4656f-0ce7-4a49-818b-1b613fdcdb7f",
       "isbn13": "9783892680123",
       "title": "Abenteuer mit unmöglichen Figuren",
-      "authors": [
-        "Bruno Ernst"
-      ],
+      "authors": ["Bruno Ernst"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:48:51.958Z",
       "source": "openlibrary",
@@ -2959,11 +2555,7 @@
       "id": "98310089-f1ac-4f03-b3c0-210187b4ffef",
       "isbn13": "9788871795379",
       "title": "Werner Bischof",
-      "authors": [
-        "Marco Bischof",
-        "Simon Maurer",
-        "Peter Zimmermann"
-      ],
+      "authors": ["Marco Bischof", "Simon Maurer", "Peter Zimmermann"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.959Z",
       "source": "openlibrary",
@@ -2972,11 +2564,7 @@
       "publishYear": 2007,
       "pageCount": 462,
       "language": "ita",
-      "subjects": [
-        "Documentary photography",
-        "Photojournalism",
-        "Exhibitions"
-      ],
+      "subjects": ["Documentary photography", "Photojournalism", "Exhibitions"],
       "rating": 4,
       "dateRead": "2026-05-17T14:04:58.042Z"
     },
@@ -2984,9 +2572,7 @@
       "id": "18aa642c-1059-4068-9404-ac911eb435e5",
       "isbn13": "9783894501860",
       "title": "HR Giger ARh",
-      "authors": [
-        "Hans Ruedi Giger"
-      ],
+      "authors": ["Hans Ruedi Giger"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.959Z",
       "source": "googlebooks",
@@ -3003,9 +2589,7 @@
       "id": "7689b65e-c2a4-4369-aa35-1d07e6b10245",
       "isbn13": "9781584237655",
       "title": "Push",
-      "authors": [
-        "Grant Brittain"
-      ],
+      "authors": ["Grant Brittain"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.964Z",
       "source": "openlibrary",
@@ -3023,9 +2607,7 @@
       "id": "7dbd56ec-e045-47dc-9f51-526787b1f713",
       "isbn13": "9780860916208",
       "title": "It's Not About a Salary... Rap, Race and Resistance in Los Angeles",
-      "authors": [
-        "Brian Cross"
-      ],
+      "authors": ["Brian Cross"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.965Z",
       "source": "openlibrary",
@@ -3043,9 +2625,7 @@
       "id": "eda55e64-aaae-4192-adc1-159d08282d6b",
       "isbn13": "9783931126162",
       "title": "Lodown",
-      "authors": [
-        "Thomas Marecki"
-      ],
+      "authors": ["Thomas Marecki"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.965Z",
       "source": "openlibrary",
@@ -3071,9 +2651,7 @@
       "id": "43851b88-c203-4d72-8d80-e80f30053845",
       "isbn13": "9783822870211",
       "title": "Pop art",
-      "authors": [
-        "Tilman Osterwold"
-      ],
+      "authors": ["Tilman Osterwold"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.966Z",
       "source": "openlibrary",
@@ -3083,10 +2661,7 @@
       "publishYear": 1999,
       "pageCount": 239,
       "language": "eng",
-      "subjects": [
-        "American Art",
-        "Pop art"
-      ],
+      "subjects": ["American Art", "Pop art"],
       "coverUrl": "https://covers.openlibrary.org/b/id/1030309-L.jpg?default=false",
       "rating": 3,
       "dateRead": "2026-05-17T14:18:32.498Z"
@@ -3095,9 +2670,7 @@
       "id": "292484ae-e51e-4912-a8e2-b20b9f27e002",
       "isbn13": "9780747505440",
       "title": "Who said what when",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.967Z",
       "source": "openlibrary",
@@ -3123,9 +2696,7 @@
       "id": "0dfc2047-92ac-4334-bf24-8fd3854a99b3",
       "isbn13": "9780949225597",
       "title": "Machel of Mozambique",
-      "authors": [
-        "Iain Christie"
-      ],
+      "authors": ["Iain Christie"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.968Z",
       "source": "openlibrary",
@@ -3135,11 +2706,7 @@
       "publishYear": 1988,
       "pageCount": 181,
       "language": "eng",
-      "subjects": [
-        "Politics and government",
-        "Presidents",
-        "Biography"
-      ],
+      "subjects": ["Politics and government", "Presidents", "Biography"],
       "coverUrl": "https://covers.openlibrary.org/b/id/9478360-L.jpg?default=false",
       "rating": 4,
       "dateRead": "2026-05-27T23:49:30.816Z"
@@ -3148,9 +2715,7 @@
       "id": "3c2fb478-731c-4cd3-b086-efa3af69995d",
       "isbn13": "9780792272168",
       "title": "National Geographic Satellite Atlas Of The World",
-      "authors": [
-        "National Geographic Society"
-      ],
+      "authors": ["National Geographic Society"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.969Z",
       "source": "openlibrary",
@@ -3168,10 +2733,7 @@
       "id": "bf4f6b3e-b3ed-4bed-9077-9646f6fa06ac",
       "isbn13": "9781740210485",
       "title": "Growing Up in Kakadu Australia",
-      "authors": [
-        "Stan Breeden",
-        "Belinda Wright"
-      ],
+      "authors": ["Stan Breeden", "Belinda Wright"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.969Z",
       "source": "openlibrary",
@@ -3195,9 +2757,7 @@
       "id": "801ffd72-e462-422c-8b3c-08224939f105",
       "isbn13": "9780953984008",
       "title": "The World Stormrider Guide Volume 1",
-      "authors": [
-        "Bruce Sutherland"
-      ],
+      "authors": ["Bruce Sutherland"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.970Z",
       "source": "openlibrary",
@@ -3207,11 +2767,7 @@
       "publishYear": 2001,
       "pageCount": 240,
       "language": "eng",
-      "subjects": [
-        "Surfing",
-        "Guidebooks",
-        "Coasts"
-      ],
+      "subjects": ["Surfing", "Guidebooks", "Coasts"],
       "coverUrl": "https://covers.openlibrary.org/b/id/1688126-L.jpg?default=false",
       "rating": 5
     },
@@ -3219,9 +2775,7 @@
       "id": "911818c2-aca6-4288-b8f3-43257b755225",
       "isbn13": "9786160000142",
       "title": "Eastern corner",
-      "authors": [
-        "Sēksan Prasœ̄tkun."
-      ],
+      "authors": ["Sēksan Prasœ̄tkun."],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.970Z",
       "source": "openlibrary",
@@ -3230,10 +2784,7 @@
       "publishYear": 2010,
       "pageCount": 124,
       "language": "eng",
-      "subjects": [
-        "Pictorial works",
-        "Artistic Photography"
-      ],
+      "subjects": ["Pictorial works", "Artistic Photography"],
       "rating": 4,
       "dateRead": "2026-05-17T14:17:06.695Z"
     },
@@ -3241,9 +2792,7 @@
       "id": "da9b2fb6-96c6-4155-8e2e-30c5d59ec5f6",
       "isbn13": "9780886876753",
       "title": "Confessions of a rat fink",
-      "authors": [
-        "Ed Roth"
-      ],
+      "authors": ["Ed Roth"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.971Z",
       "source": "openlibrary",
@@ -3266,9 +2815,7 @@
       "id": "1c920ded-66c3-40e1-9fcd-6b619b96f59a",
       "isbn13": "9780330333351",
       "title": "Photographs and Notebooks",
-      "authors": [
-        "Bruce Chatwin"
-      ],
+      "authors": ["Bruce Chatwin"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.972Z",
       "source": "openlibrary",
@@ -3286,9 +2833,7 @@
       "id": "06ab4d76-5ffa-4583-b4a3-301fc548ab5a",
       "isbn13": "9780646279688",
       "title": "World heritage rainforest",
-      "authors": [
-        "Peter Lik"
-      ],
+      "authors": ["Peter Lik"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.972Z",
       "source": "openlibrary",
@@ -3298,11 +2843,7 @@
       "publishYear": 1996,
       "pageCount": 61,
       "language": "eng",
-      "subjects": [
-        "Natural areas",
-        "Pictorial works",
-        "Rain forests"
-      ],
+      "subjects": ["Natural areas", "Pictorial works", "Rain forests"],
       "coverUrl": "https://covers.openlibrary.org/b/isbn/9780646279688-L.jpg?default=false",
       "rating": 4
     },
@@ -3310,9 +2851,7 @@
       "id": "45c195e2-d235-4ff2-a8f9-1b0ce06da9e3",
       "isbn13": "9780958700207",
       "title": "A Panoramic Journey Through Australia",
-      "authors": [
-        "Unknown Author"
-      ],
+      "authors": ["Unknown Author"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.973Z",
       "source": "openlibrary",
@@ -3322,13 +2861,7 @@
       "publishYear": 1997,
       "pageCount": 64,
       "language": "eng",
-      "subjects": [
-        "Deserts",
-        "Coasts",
-        "Description and travel",
-        "Pictorial works",
-        "Travel"
-      ],
+      "subjects": ["Deserts", "Coasts", "Description and travel", "Pictorial works", "Travel"],
       "synopsis": "Panoramic format of photographs allows for a wider field of view as seen by the human eye.",
       "coverUrl": "https://covers.openlibrary.org/b/id/11399576-L.jpg?default=false",
       "rating": 4,
@@ -3338,9 +2871,7 @@
       "id": "527a2948-9778-4fe4-8baa-d4b42c97e8c8",
       "isbn13": "9780500275214",
       "title": "Art of the South African townships",
-      "authors": [
-        "Gavin Younge"
-      ],
+      "authors": ["Gavin Younge"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.973Z",
       "source": "openlibrary",
@@ -3365,9 +2896,7 @@
       "id": "84be2a9f-a8f5-4f58-969b-51bc3f4553ff",
       "isbn13": "9780794602321",
       "title": "Singapore Architecture",
-      "authors": [
-        "Robert Powell"
-      ],
+      "authors": ["Robert Powell"],
       "status": "read",
       "dateAdded": "2026-05-03T12:48:51.974Z",
       "source": "openlibrary",
@@ -3377,9 +2906,7 @@
       "publishYear": 2004,
       "pageCount": 144,
       "language": "eng",
-      "subjects": [
-        "Architecture"
-      ],
+      "subjects": ["Architecture"],
       "coverUrl": "https://covers.openlibrary.org/b/id/1505578-L.jpg?default=false",
       "rating": 3,
       "dateRead": "2026-05-17T14:18:51.436Z"
@@ -3388,9 +2915,7 @@
       "id": "87df34eb-85e5-431c-a91e-b7b867169b40",
       "isbn13": "9789625931548",
       "title": "Strange Foods: Bush Meat, Bats, and Butterflies",
-      "authors": [
-        "Jerry Hopkins"
-      ],
+      "authors": ["Jerry Hopkins"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.974Z",
       "source": "openlibrary",
@@ -3400,11 +2925,7 @@
       "publishYear": 1999,
       "pageCount": 232,
       "language": "eng",
-      "subjects": [
-        "Gastronomy",
-        "Cooking",
-        "Food"
-      ],
+      "subjects": ["Gastronomy", "Cooking", "Food"],
       "coverUrl": "https://covers.openlibrary.org/b/id/1052867-L.jpg?default=false",
       "rating": 3
     },
@@ -3412,9 +2933,7 @@
       "id": "b0825df4-0b2b-4f3a-ab6e-a3e2750b055b",
       "isbn13": "9789793780139",
       "title": "Made in Indonesia",
-      "authors": [
-        "Warwick Purser"
-      ],
+      "authors": ["Warwick Purser"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.975Z",
       "source": "openlibrary",
@@ -3424,9 +2943,7 @@
       "publishYear": 2005,
       "pageCount": 160,
       "language": "eng",
-      "subjects": [
-        "Decorative arts"
-      ],
+      "subjects": ["Decorative arts"],
       "coverUrl": "https://covers.openlibrary.org/b/id/3357052-L.jpg?default=false",
       "rating": 4
     },
@@ -3434,11 +2951,7 @@
       "id": "0db60404-0ef5-4ac6-9f02-6f2c0ef13f86",
       "isbn13": "9788878133358",
       "title": "COLORS Cacas",
-      "authors": [
-        "Oliviero Toscani",
-        "Marirosa Toscani Ballo",
-        "COLORS Magazine"
-      ],
+      "authors": ["Oliviero Toscani", "Marirosa Toscani Ballo", "COLORS Magazine"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:48:51.976Z",
       "source": "openlibrary",
@@ -3483,9 +2996,7 @@
       "id": "be0e1b39-f391-45cc-8d87-c678570d1be2",
       "isbn13": "9788887999013",
       "title": "Funghi allucinogeni",
-      "authors": [
-        "Giorgio Samorini"
-      ],
+      "authors": ["Giorgio Samorini"],
       "status": "read",
       "dateAdded": "2026-05-03T12:50:42.127Z",
       "source": "openlibrary",
@@ -3511,9 +3022,7 @@
       "id": "5909d988-ab90-40a3-8975-be86c695f05a",
       "isbn13": "9788885989252",
       "title": "Sadoma e Camorra",
-      "authors": [
-        "Paola Costa"
-      ],
+      "authors": ["Paola Costa"],
       "status": "read",
       "dateAdded": "2026-05-03T12:51:00.076Z",
       "source": "openlibrary",
@@ -3523,11 +3032,7 @@
       "publishYear": 1993,
       "pageCount": 199,
       "language": "ita",
-      "subjects": [
-        "Biography",
-        "Mai dire TV",
-        "Television personalities"
-      ],
+      "subjects": ["Biography", "Mai dire TV", "Television personalities"],
       "rating": 5,
       "dateRead": "2026-05-17T14:17:44.576Z"
     },
@@ -3535,9 +3040,7 @@
       "id": "e0a9eec3-02fb-4ee2-be01-b623d490606f",
       "isbn13": "9788842068013",
       "title": "Maschile e femminile. Il pensiero della differenza",
-      "authors": [
-        "Françoise Héritier"
-      ],
+      "authors": ["Françoise Héritier"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:51:26.199Z",
       "source": "googlebooks",
@@ -3546,18 +3049,14 @@
       "publishYear": 2006,
       "pageCount": 232,
       "language": "it",
-      "subjects": [
-        "Psychology"
-      ],
+      "subjects": ["Psychology"],
       "coverUrl": "https://books.google.com/books/content?id=-tE0AAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
     {
       "id": "e8dc0ad7-e394-4869-aec0-c5622359f74d",
       "isbn13": "9788807460081",
       "title": "Electric geisha. Tra cultura pop e tradizione in Giappone",
-      "authors": [
-        "篤·上田"
-      ],
+      "authors": ["篤·上田"],
       "status": "read",
       "dateAdded": "2026-05-03T12:51:40.632Z",
       "source": "googlebooks",
@@ -3567,9 +3066,7 @@
       "publishYear": 1996,
       "pageCount": 198,
       "language": "it",
-      "subjects": [
-        "Social Science"
-      ],
+      "subjects": ["Social Science"],
       "coverUrl": "https://books.google.com/books/content?id=O6qLx68VuTUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "rating": 3,
       "dateRead": "2026-05-17T14:19:17.029Z"
@@ -3578,9 +3075,7 @@
       "id": "40d827f7-5330-4a15-bba4-fa33c590b3e3",
       "isbn13": "9788807816529",
       "title": "Non sono obiettivo",
-      "authors": [
-        "Oliviero Toscani"
-      ],
+      "authors": ["Oliviero Toscani"],
       "status": "read",
       "dateAdded": "2026-05-03T12:51:57.229Z",
       "source": "openlibrary",
@@ -3599,9 +3094,7 @@
       "id": "632cf432-dcf6-48ca-b9b5-b7735efaa8dc",
       "isbn13": "9788806149147",
       "title": "Troppo buoni con le donne",
-      "authors": [
-        "Raymond Queneau"
-      ],
+      "authors": ["Raymond Queneau"],
       "status": "read",
       "dateAdded": "2026-05-03T12:52:11.669Z",
       "source": "googlebooks",
@@ -3610,9 +3103,7 @@
       "publishYear": 1998,
       "pageCount": 185,
       "language": "en",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=oDFwAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 4,
       "dateRead": "2026-05-27T23:48:10.155Z"
@@ -3621,9 +3112,7 @@
       "id": "ef5f5d1d-f2c5-4ffe-a60e-5bd6b90c91bb",
       "isbn13": "9788817862172",
       "title": "La masai bianca",
-      "authors": [
-        "Corinne Hofmann"
-      ],
+      "authors": ["Corinne Hofmann"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:52:46.322Z",
       "source": "googlebooks",
@@ -3632,17 +3121,13 @@
       "publishYear": 1999,
       "pageCount": 309,
       "language": "it",
-      "subjects": [
-        "Maasai (African people)"
-      ]
+      "subjects": ["Maasai (African people)"]
     },
     {
       "id": "329de143-e23c-4cb8-9345-6adf2047e8de",
       "isbn13": "9788870194043",
       "title": "India. Guida turistica",
-      "authors": [
-        "Vasco Dimatore"
-      ],
+      "authors": ["Vasco Dimatore"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:53:09.564Z",
       "source": "googlebooks",
@@ -3651,18 +3136,13 @@
       "publishYear": 1989,
       "pageCount": 388,
       "language": "it",
-      "subjects": [
-        "Travel"
-      ]
+      "subjects": ["Travel"]
     },
     {
       "id": "3477d601-f580-4941-819b-02cb50fb167b",
       "isbn13": "9788886926447",
       "title": "Bad attitude. Conflitto e rifiuto del lavoro nel postfordismo",
-      "authors": [
-        "S. Dazieri",
-        "R. Scelsi"
-      ],
+      "authors": ["S. Dazieri", "R. Scelsi"],
       "status": "read",
       "dateAdded": "2026-05-03T12:53:26.328Z",
       "source": "googlebooks",
@@ -3671,9 +3151,7 @@
       "publishYear": 1998,
       "pageCount": 192,
       "language": "it",
-      "subjects": [
-        "Business & Economics"
-      ],
+      "subjects": ["Business & Economics"],
       "rating": 3,
       "dateRead": "2026-06-04T22:27:19.539Z"
     },
@@ -3681,9 +3159,7 @@
       "id": "e50b25c3-c7bc-478e-9cee-b7a310a65beb",
       "isbn13": "9788806134792",
       "title": "Miti d'oggi",
-      "authors": [
-        "Roland Barthes"
-      ],
+      "authors": ["Roland Barthes"],
       "status": "read",
       "dateAdded": "2026-05-03T12:53:51.130Z",
       "source": "googlebooks",
@@ -3692,9 +3168,7 @@
       "publishYear": 1994,
       "pageCount": 238,
       "language": "it",
-      "subjects": [
-        "Business & Economics"
-      ],
+      "subjects": ["Business & Economics"],
       "coverUrl": "https://books.google.com/books/content?id=ZAwtPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 4,
       "dateRead": "2026-05-17T14:19:08.799Z"
@@ -3703,9 +3177,7 @@
       "id": "6a8b4663-3076-4726-bd11-fa35e0b7639d",
       "isbn13": "9788806143855",
       "title": "Le pareti della solitudine",
-      "authors": [
-        "Tahar Ben Jelloun"
-      ],
+      "authors": ["Tahar Ben Jelloun"],
       "status": "read",
       "dateAdded": "2026-05-03T12:53:58.869Z",
       "source": "googlebooks",
@@ -3714,9 +3186,7 @@
       "publishYear": 1997,
       "pageCount": 116,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=2HgmAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 5,
       "dateRead": "2026-05-17T14:04:12.169Z"
@@ -3725,9 +3195,7 @@
       "id": "2927fca3-2a8d-407b-9c1f-efe10c461028",
       "isbn13": "9788807811319",
       "title": "Zelig",
-      "authors": [
-        "Woody Allen"
-      ],
+      "authors": ["Woody Allen"],
       "status": "read",
       "dateAdded": "2026-05-03T12:54:42.122Z",
       "source": "googlebooks",
@@ -3736,9 +3204,7 @@
       "publishYear": 1991,
       "pageCount": 104,
       "language": "it",
-      "subjects": [
-        "Performing Arts"
-      ],
+      "subjects": ["Performing Arts"],
       "rating": 4,
       "dateRead": "2026-05-17T14:04:24.988Z"
     },
@@ -3746,10 +3212,7 @@
       "id": "92a09334-ee28-4633-b5dc-e34cbf3fed2a",
       "isbn13": "9788807811012",
       "title": "Via etere",
-      "authors": [
-        "Massimo Cirri",
-        "Sergio Ferrentino"
-      ],
+      "authors": ["Massimo Cirri", "Sergio Ferrentino"],
       "status": "read",
       "dateAdded": "2026-05-03T12:57:26.832Z",
       "source": "googlebooks",
@@ -3758,9 +3221,7 @@
       "publishYear": 1989,
       "pageCount": 144,
       "language": "it",
-      "subjects": [
-        "Performing Arts"
-      ],
+      "subjects": ["Performing Arts"],
       "rating": 4,
       "dateRead": "2026-05-27T23:47:58.369Z"
     },
@@ -3768,9 +3229,7 @@
       "id": "73a16de7-90a7-4596-b94a-57f0c30e244f",
       "isbn13": "9788807723469",
       "title": "Un viaggio chiamato vita",
-      "authors": [
-        "Banana Yoshimoto"
-      ],
+      "authors": ["Banana Yoshimoto"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:57:41.069Z",
       "source": "googlebooks",
@@ -3779,9 +3238,7 @@
       "publishYear": 2012,
       "pageCount": 187,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=aMgSuAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 2
     },
@@ -3789,9 +3246,7 @@
       "id": "676eeacf-02a1-4322-b47c-aa3151343a45",
       "isbn13": "9788870059182",
       "title": "Indonesia",
-      "authors": [
-        "Pietro Tarallo"
-      ],
+      "authors": ["Pietro Tarallo"],
       "status": "to-read",
       "dateAdded": "2026-05-03T12:58:07.208Z",
       "source": "googlebooks",
@@ -3800,17 +3255,13 @@
       "publishYear": 1991,
       "pageCount": 464,
       "language": "it",
-      "subjects": [
-        "Travel"
-      ]
+      "subjects": ["Travel"]
     },
     {
       "id": "0d1e3d7c-a910-4c60-8795-a00f2492a12b",
       "isbn13": "9788828000778",
       "title": "Civililtà della Parola",
-      "authors": [
-        "Italo Bertoni"
-      ],
+      "authors": ["Italo Bertoni"],
       "status": "reading",
       "dateAdded": "2026-05-03T12:59:30.197Z",
       "source": "googlebooks",
@@ -3819,19 +3270,14 @@
       "publishYear": 1989,
       "pageCount": 221,
       "language": "it",
-      "subjects": [
-        "Authors, Italian"
-      ],
+      "subjects": ["Authors, Italian"],
       "rating": 3
     },
     {
       "id": "9106f705-7077-40af-ada9-4b8db44807e0",
       "isbn13": "9788886926058",
       "title": "Traveller e raver. Racconti orali dei nomadi della nuova era. Ediz. illustrata",
-      "authors": [
-        "Richard Lowe",
-        "William Shaw"
-      ],
+      "authors": ["Richard Lowe", "William Shaw"],
       "status": "read",
       "dateAdded": "2026-05-03T13:01:50.766Z",
       "source": "googlebooks",
@@ -3848,9 +3294,7 @@
       "id": "d886ccc0-266a-4fd2-b12f-4a1ca4de8970",
       "isbn13": "9788886926331",
       "title": "Millennium. Dalle TAZ alla rivoluzione",
-      "authors": [
-        "Hakim Bey"
-      ],
+      "authors": ["Hakim Bey"],
       "status": "read",
       "dateAdded": "2026-05-03T13:02:42.405Z",
       "source": "googlebooks",
@@ -3859,9 +3303,7 @@
       "publishYear": 1997,
       "pageCount": 96,
       "language": "it",
-      "subjects": [
-        "Social Science"
-      ],
+      "subjects": ["Social Science"],
       "rating": 4,
       "dateRead": "2026-05-17T14:04:03.141Z"
     },
@@ -3869,9 +3311,7 @@
       "id": "79f5d635-6da8-4cfd-a649-aefd179bba26",
       "isbn13": "9788807810787",
       "title": "Comici spaventati guerrieri",
-      "authors": [
-        "Stefano Benni"
-      ],
+      "authors": ["Stefano Benni"],
       "status": "read",
       "dateAdded": "2026-05-03T13:03:08.807Z",
       "source": "openlibrary",
@@ -3890,9 +3330,7 @@
       "id": "f2abf9ca-932b-456b-be77-db5540240132",
       "isbn13": "9788878193253",
       "title": "La croce buddista",
-      "authors": [
-        "Junichirō Tanizaki"
-      ],
+      "authors": ["Junichirō Tanizaki"],
       "status": "reading",
       "dateAdded": "2026-05-03T13:05:12.009Z",
       "source": "googlebooks",
@@ -3901,17 +3339,13 @@
       "publishYear": 1992,
       "pageCount": 149,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ]
+      "subjects": ["Fiction"]
     },
     {
       "id": "816b9686-106a-4851-87fa-b20ec7fe94f1",
       "isbn13": "9788872262177",
       "title": "Stato e Chiesa. Il potere clericale in Italia dopo il nuovo concordato del 1984 tra Craxi e Wojtyla",
-      "authors": [
-        "Marcello Vigli"
-      ],
+      "authors": ["Marcello Vigli"],
       "status": "to-read",
       "dateAdded": "2026-05-03T13:07:20.019Z",
       "source": "googlebooks",
@@ -3920,9 +3354,7 @@
       "publishYear": 1994,
       "pageCount": 64,
       "language": "it",
-      "subjects": [
-        "Political Science"
-      ]
+      "subjects": ["Political Science"]
     },
     {
       "id": "059fdf45-9f12-465b-a05c-d20380d74666",
@@ -3943,9 +3375,7 @@
       "id": "43b9a297-da55-4c64-8f1a-1f69e44d995e",
       "isbn13": "9788807910159",
       "title": "La gemella buona e la gemella cattiva",
-      "authors": [
-        "Rossana Campo"
-      ],
+      "authors": ["Rossana Campo"],
       "status": "read",
       "dateAdded": "2026-05-03T13:07:44.139Z",
       "source": "googlebooks",
@@ -3955,9 +3385,7 @@
       "publishYear": 2000,
       "pageCount": 52,
       "language": "it",
-      "subjects": [
-        "Juvenile Fiction"
-      ],
+      "subjects": ["Juvenile Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=i4dpskHvv94C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "rating": 3,
       "dateRead": "2026-06-04T22:23:00.146Z"
@@ -3966,9 +3394,7 @@
       "id": "3458ca42-1021-4f42-b492-b7224cab39e6",
       "isbn13": "9788834012642",
       "title": "Veleno per il cuore. Commento zen al Sutra del cuore",
-      "authors": [
-        "Zenji Hakuin Ekaku"
-      ],
+      "authors": ["Zenji Hakuin Ekaku"],
       "status": "read",
       "dateAdded": "2026-05-03T13:08:36.262Z",
       "source": "googlebooks",
@@ -3977,9 +3403,7 @@
       "publishYear": 1998,
       "pageCount": 148,
       "language": "it",
-      "subjects": [
-        "Religion"
-      ],
+      "subjects": ["Religion"],
       "rating": 5,
       "dateRead": "2026-05-17T14:19:51.570Z"
     },
@@ -3987,9 +3411,7 @@
       "id": "cd4c695d-a653-43cb-91eb-63fbb099047b",
       "isbn13": "9788870059809",
       "title": "Isole del Pacifico",
-      "authors": [
-        "Marco Moretti"
-      ],
+      "authors": ["Marco Moretti"],
       "status": "reading",
       "dateAdded": "2026-05-03T13:09:08.559Z",
       "source": "googlebooks",
@@ -3999,18 +3421,14 @@
       "publishYear": 1998,
       "pageCount": 350,
       "language": "it",
-      "subjects": [
-        "Travel"
-      ],
+      "subjects": ["Travel"],
       "coverUrl": "https://books.google.com/books/content?id=1GHbPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
     {
       "id": "4a334ec9-5dd7-4697-aca5-49b2711cd646",
       "isbn13": "9788845224768",
       "title": "Ecco perché mi odiano",
-      "authors": [
-        "Takeshi Kitano"
-      ],
+      "authors": ["Takeshi Kitano"],
       "status": "read",
       "dateAdded": "2026-05-03T13:09:21.252Z",
       "source": "googlebooks",
@@ -4019,9 +3437,7 @@
       "publishYear": 1995,
       "pageCount": 224,
       "language": "it",
-      "subjects": [
-        "Performing Arts"
-      ],
+      "subjects": ["Performing Arts"],
       "rating": 4,
       "dateRead": "2026-05-17T14:03:53.993Z"
     },
@@ -4029,9 +3445,7 @@
       "id": "e39be7c9-f1b8-4e59-a74f-4b48eeaf8ea5",
       "isbn13": "9788843800117",
       "title": "La vita dopo Dio",
-      "authors": [
-        "Douglas Coupland"
-      ],
+      "authors": ["Douglas Coupland"],
       "status": "read",
       "dateAdded": "2026-05-03T13:09:46.181Z",
       "source": "openlibrary",
@@ -4056,9 +3470,7 @@
       "id": "73e2a135-0cb7-43ca-9d33-aed93276144b",
       "isbn13": "9788807809903",
       "title": "Terra! (Universale Economica)",
-      "authors": [
-        "Stefano Benni"
-      ],
+      "authors": ["Stefano Benni"],
       "status": "read",
       "dateAdded": "2026-05-03T13:09:54.064Z",
       "source": "openlibrary",
@@ -4076,9 +3488,7 @@
       "id": "9b429ece-63f2-40b8-8fad-1e94b4889f30",
       "isbn13": "9788807814884",
       "title": "Camminando",
-      "authors": [
-        "Pino Cacucci"
-      ],
+      "authors": ["Pino Cacucci"],
       "status": "reading",
       "dateAdded": "2026-05-03T13:13:25.639Z",
       "source": "googlebooks",
@@ -4088,18 +3498,14 @@
       "publishYear": 1998,
       "pageCount": 132,
       "language": "it",
-      "subjects": [
-        "Travel"
-      ],
+      "subjects": ["Travel"],
       "coverUrl": "https://books.google.com/books/content?id=XnxIyQ8-3lYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
     },
     {
       "id": "7a595823-a1d0-497c-9bf7-933aebf2c698",
       "isbn13": "9788880898597",
       "title": "Mimmo Jodice negli anni Settanta",
-      "authors": [
-        "Mimmo Jodice"
-      ],
+      "authors": ["Mimmo Jodice"],
       "status": "to-read",
       "dateAdded": "2026-05-03T13:13:41.616Z",
       "source": "openlibrary",
@@ -4108,17 +3514,13 @@
       "publishDate": "2001",
       "publishYear": 2001,
       "language": "ita",
-      "subjects": [
-        "Artistic Photography"
-      ]
+      "subjects": ["Artistic Photography"]
     },
     {
       "id": "ca7d7992-af3d-434e-92f3-dbbfc5d615ba",
       "isbn13": "9788845905766",
       "title": "Matrimoni indoeuropei",
-      "authors": [
-        "Georges Dumézil"
-      ],
+      "authors": ["Georges Dumézil"],
       "status": "read",
       "dateAdded": "2026-05-03T13:16:01.691Z",
       "source": "googlebooks",
@@ -4127,9 +3529,7 @@
       "publishYear": 1984,
       "pageCount": 0,
       "language": "it",
-      "subjects": [
-        "Family & Relationships"
-      ],
+      "subjects": ["Family & Relationships"],
       "coverUrl": "https://books.google.com/books/content?id=sqQiOgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 2,
       "dateRead": "2026-05-17T14:03:41.097Z"
@@ -4138,10 +3538,7 @@
       "id": "e9f8c59c-8273-4a91-9f36-8d4c34c502ef",
       "isbn13": "9788870170023",
       "title": "La contestazione '67-'69",
-      "authors": [
-        "Edgardo Pellegrini",
-        "Ermanno Rea"
-      ],
+      "authors": ["Edgardo Pellegrini", "Ermanno Rea"],
       "status": "read",
       "dateAdded": "2026-05-03T13:20:08.825Z",
       "source": "googlebooks",
@@ -4151,9 +3548,7 @@
       "publishYear": 1978,
       "pageCount": 96,
       "language": "it",
-      "subjects": [
-        "Photography"
-      ],
+      "subjects": ["Photography"],
       "rating": 3,
       "dateRead": "2026-05-17T14:20:12.297Z"
     },
@@ -4161,9 +3556,7 @@
       "id": "90f0213d-86b5-4bd9-ae29-08ec46f869c4",
       "isbn13": "9788876481130",
       "title": "Graffiti metropolitani",
-      "authors": [
-        "Ivo Balderi"
-      ],
+      "authors": ["Ivo Balderi"],
       "status": "read",
       "dateAdded": "2026-05-03T13:20:28.602Z",
       "source": "openlibrary",
@@ -4173,11 +3566,7 @@
       "publishYear": 1990,
       "pageCount": 119,
       "language": "ita",
-      "subjects": [
-        "Mural painting and decoration",
-        "Street art",
-        "Themes, motives"
-      ],
+      "subjects": ["Mural painting and decoration", "Street art", "Themes, motives"],
       "rating": 4,
       "dateRead": "2026-05-17T14:20:21.125Z"
     },
@@ -4185,10 +3574,7 @@
       "id": "1c2c3223-7f95-4d1e-8772-fa8404a56bc1",
       "isbn13": "9788808159861",
       "title": "Antropologia culturale",
-      "authors": [
-        "Emily A. Schultz",
-        "Robert H. Lavenda"
-      ],
+      "authors": ["Emily A. Schultz", "Robert H. Lavenda"],
       "status": "read",
       "dateAdded": "2026-05-03T13:20:44.957Z",
       "source": "googlebooks",
@@ -4197,9 +3583,7 @@
       "publishYear": 1999,
       "pageCount": 376,
       "language": "it",
-      "subjects": [
-        "Social Science"
-      ],
+      "subjects": ["Social Science"],
       "coverUrl": "https://books.google.com/books/content?id=uJY1AAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 5,
       "dateRead": "2026-05-17T14:20:30.908Z"
@@ -4208,9 +3592,7 @@
       "id": "fd48df6d-50ab-4f76-82f1-23ec99d9e00f",
       "isbn13": "9788879842099",
       "title": "Horiyoshi III",
-      "authors": [
-        "Gian Maurizio Fercioni"
-      ],
+      "authors": ["Gian Maurizio Fercioni"],
       "status": "reading",
       "dateAdded": "2026-05-03T13:21:40.850Z",
       "source": "googlebooks",
@@ -4220,18 +3602,14 @@
       "publishYear": 1999,
       "pageCount": 142,
       "language": "en",
-      "subjects": [
-        "Art"
-      ],
+      "subjects": ["Art"],
       "rating": 3
     },
     {
       "id": "a4d0a0b2-aeb2-4a32-9031-c5f080700202",
       "isbn13": "9788897165361",
       "title": "La disperazione della scimmia",
-      "authors": [
-        "Alfred"
-      ],
+      "authors": ["Alfred"],
       "status": "reading",
       "dateAdded": "2026-05-03T13:22:06.290Z",
       "source": "googlebooks",
@@ -4240,18 +3618,14 @@
       "publishYear": 2012,
       "pageCount": 160,
       "language": "it",
-      "subjects": [
-        "Comics & Graphic Novels"
-      ],
+      "subjects": ["Comics & Graphic Novels"],
       "coverUrl": "https://books.google.com/books/content?id=UWKBtgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
     {
       "id": "c431ba50-e031-4cd6-907b-2b51bbaf059d",
       "isbn13": "9788838100864",
       "title": "Tatuaggi urbani",
-      "authors": [
-        "Dario Lanzardo"
-      ],
+      "authors": ["Dario Lanzardo"],
       "status": "read",
       "dateAdded": "2026-05-03T13:23:45.634Z",
       "source": "googlebooks",
@@ -4260,9 +3634,7 @@
       "publishYear": 1990,
       "pageCount": 156,
       "language": "it",
-      "subjects": [
-        "Photography"
-      ],
+      "subjects": ["Photography"],
       "rating": 4,
       "dateRead": "2026-05-17T14:21:04.273Z"
     },
@@ -4270,9 +3642,7 @@
       "id": "9850f0ce-306c-4ca1-93a7-6cecb7c66ca2",
       "isbn13": "9781876622046",
       "title": "Aboriginal Voices",
-      "authors": [
-        "Liz Thompson"
-      ],
+      "authors": ["Liz Thompson"],
       "status": "read",
       "dateAdded": "2026-05-03T13:28:28.918Z",
       "source": "googlebooks",
@@ -4281,9 +3651,7 @@
       "publishYear": 1999,
       "pageCount": 176,
       "language": "en",
-      "subjects": [
-        "Aboriginal Australians"
-      ],
+      "subjects": ["Aboriginal Australians"],
       "coverUrl": "https://books.google.com/books/content?id=yy9SPQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 4,
       "dateRead": "2026-05-17T14:20:55.876Z"
@@ -4307,9 +3675,7 @@
       "id": "edfbd739-6e58-4086-ae40-03f3a8461442",
       "isbn13": "9788896317099",
       "title": "Le donne di Saman",
-      "authors": [
-        "Ayu Utami"
-      ],
+      "authors": ["Ayu Utami"],
       "status": "to-read",
       "dateAdded": "2026-05-03T16:10:20.112Z",
       "source": "googlebooks",
@@ -4318,18 +3684,14 @@
       "publishYear": 2010,
       "pageCount": 224,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=TcPGSAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
     {
       "id": "990c7628-4acb-44f0-875f-68d9e91d72f2",
       "isbn13": "9788871443126",
       "title": "Giornale di un antropologo",
-      "authors": [
-        "Bronislaw Malinowski"
-      ],
+      "authors": ["Bronislaw Malinowski"],
       "status": "read",
       "dateAdded": "2026-05-03T16:10:36.999Z",
       "source": "googlebooks",
@@ -4339,9 +3701,7 @@
       "publishYear": 1992,
       "pageCount": 224,
       "language": "it",
-      "subjects": [
-        "Social Science"
-      ],
+      "subjects": ["Social Science"],
       "coverUrl": "https://books.google.com/books/content?id=_cq8wAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 4,
       "dateRead": "2026-05-17T14:20:41.373Z"
@@ -4350,9 +3710,7 @@
       "id": "e38af184-6695-4640-833a-2e4799599488",
       "isbn13": "9788899912628",
       "title": "Bankster. Come un gruppo di banchieri ha conquistato il mondo. Storia, tecnologie segrete e crimini della finanza globale, dall'antichità a oggi",
-      "authors": [
-        "Joseph P. Farrell"
-      ],
+      "authors": ["Joseph P. Farrell"],
       "status": "reading",
       "dateAdded": "2026-05-03T16:11:02.844Z",
       "source": "googlebooks",
@@ -4360,18 +3718,14 @@
       "publishDate": "2017",
       "publishYear": 2017,
       "language": "it",
-      "subjects": [
-        "Business & Economics"
-      ],
+      "subjects": ["Business & Economics"],
       "coverUrl": "https://books.google.com/books/content?id=OaUBtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
     {
       "id": "d85e4b56-4773-40e5-a34b-a65ee3e6d5b9",
       "isbn13": "9788845907654",
       "title": "Che ci faccio qui?",
-      "authors": [
-        "Bruce Chatwin"
-      ],
+      "authors": ["Bruce Chatwin"],
       "status": "read",
       "dateAdded": "2026-05-03T16:11:15.147Z",
       "source": "googlebooks",
@@ -4381,9 +3735,7 @@
       "publishYear": 1990,
       "pageCount": 444,
       "language": "it",
-      "subjects": [
-        "Travel"
-      ],
+      "subjects": ["Travel"],
       "coverUrl": "https://books.google.com/books/content?id=Nt97AAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 5,
       "dateRead": "2026-05-17T14:03:28.881Z"
@@ -4392,9 +3744,7 @@
       "id": "8dd31591-17b1-49e4-8518-7f9eb3249e05",
       "isbn13": "9788890008573",
       "title": "Altrove, il settimo senso. Antropologia del viaggio",
-      "authors": [
-        "Franck Michel"
-      ],
+      "authors": ["Franck Michel"],
       "status": "read",
       "dateAdded": "2026-05-03T16:11:28.107Z",
       "source": "googlebooks",
@@ -4403,9 +3753,7 @@
       "publishYear": 2001,
       "pageCount": 256,
       "language": "it",
-      "subjects": [
-        "Social Science"
-      ],
+      "subjects": ["Social Science"],
       "rating": 3,
       "dateRead": "2026-05-17T14:20:49.683Z"
     },
@@ -4413,9 +3761,7 @@
       "id": "59cef2e3-ecc5-423b-8ec7-61922247691b",
       "isbn13": "9788811581666",
       "title": "Il Ritratto di Dorian Gray",
-      "authors": [
-        "Oscar Wilde"
-      ],
+      "authors": ["Oscar Wilde"],
       "status": "reading",
       "dateAdded": "2026-05-03T16:11:46.724Z",
       "source": "openlibrary",
@@ -4443,9 +3789,7 @@
       "id": "5325676b-97a0-43e2-92f1-e52d46be9523",
       "isbn13": "9788870216271",
       "title": "Nei mari del sud",
-      "authors": [
-        "Robert L. Stevenson"
-      ],
+      "authors": ["Robert L. Stevenson"],
       "status": "reading",
       "dateAdded": "2026-05-03T16:11:53.418Z",
       "source": "googlebooks",
@@ -4454,19 +3798,14 @@
       "publishYear": 1992,
       "pageCount": 364,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "rating": 4
     },
     {
       "id": "0a016e8b-200c-40fa-9028-96b447668520",
       "isbn13": "9788807815836",
       "title": "Il banchiere dei poveri",
-      "authors": [
-        "Muhammad Yunus",
-        "Alan Jolis"
-      ],
+      "authors": ["Muhammad Yunus", "Alan Jolis"],
       "status": "read",
       "dateAdded": "2026-05-03T16:12:58.367Z",
       "source": "googlebooks",
@@ -4476,9 +3815,7 @@
       "publishYear": 2003,
       "pageCount": 284,
       "language": "it",
-      "subjects": [
-        "Business & Economics"
-      ],
+      "subjects": ["Business & Economics"],
       "coverUrl": "https://books.google.com/books/content?id=knLIsQVW5YoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "rating": 5,
       "dateRead": "2026-05-27T23:53:55.502Z"
@@ -4487,9 +3824,7 @@
       "id": "6f7eb5cc-9d3e-4cd9-b6c5-f3cac8782860",
       "isbn13": "9788845221514",
       "title": "Mirrorshades. L'antologia della fantascienza Cyberpunk",
-      "authors": [
-        "Bruce Sterling"
-      ],
+      "authors": ["Bruce Sterling"],
       "status": "read",
       "dateAdded": "2026-05-03T16:13:10.801Z",
       "source": "openlibrary",
@@ -4515,9 +3850,7 @@
       "id": "680b25e8-1c56-4df4-ae6c-afbc177bd385",
       "isbn13": "9788807811494",
       "title": "Moha il folle, Moha il saggio",
-      "authors": [
-        "Tahar Ben Jelloun"
-      ],
+      "authors": ["Tahar Ben Jelloun"],
       "status": "read",
       "dateAdded": "2026-05-03T16:13:20.067Z",
       "source": "googlebooks",
@@ -4526,9 +3859,7 @@
       "publishYear": 1991,
       "pageCount": 170,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "rating": 5,
       "dateRead": "2026-05-17T14:03:21.631Z"
     },
@@ -4536,9 +3867,7 @@
       "id": "ecdfce41-e5b0-467e-8cb5-85566fb370cd",
       "isbn13": "9788879660877",
       "title": "Fuga. Dall'LSD a Internet",
-      "authors": [
-        "Timothy Leary"
-      ],
+      "authors": ["Timothy Leary"],
       "status": "read",
       "dateAdded": "2026-05-03T16:13:58.336Z",
       "source": "googlebooks",
@@ -4547,9 +3876,7 @@
       "publishYear": 1996,
       "pageCount": 206,
       "language": "it",
-      "subjects": [
-        "Social Science"
-      ],
+      "subjects": ["Social Science"],
       "rating": 4,
       "dateRead": "2026-05-27T23:54:40.821Z"
     },
@@ -4572,9 +3899,7 @@
       "id": "d501f014-ead7-4a5d-bbb2-1f2b8c35ceac",
       "isbn13": "9788845206924",
       "title": "Saperla lunga",
-      "authors": [
-        "Woody Allen"
-      ],
+      "authors": ["Woody Allen"],
       "status": "read",
       "dateAdded": "2026-05-03T16:14:35.107Z",
       "source": "googlebooks",
@@ -4583,9 +3908,7 @@
       "publishYear": 1984,
       "pageCount": 132,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "rating": 4,
       "dateRead": "2026-05-17T14:21:32.749Z"
     },
@@ -4593,9 +3916,7 @@
       "id": "23650b82-238a-425c-9848-c7a6b723156f",
       "isbn13": "9788830408623",
       "title": "Il secondo libro di Murphy",
-      "authors": [
-        "Arthur Bloch"
-      ],
+      "authors": ["Arthur Bloch"],
       "status": "read",
       "dateAdded": "2026-05-03T16:14:43.397Z",
       "source": "googlebooks",
@@ -4604,9 +3925,7 @@
       "publishYear": 1999,
       "pageCount": 124,
       "language": "it",
-      "subjects": [
-        "Humor"
-      ],
+      "subjects": ["Humor"],
       "coverUrl": "https://books.google.com/books/content?id=aqPUAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 3,
       "dateRead": "2026-05-17T14:21:52.832Z"
@@ -4615,9 +3934,7 @@
       "id": "1d1d954d-01b8-46e8-a36f-f8860045cfeb",
       "isbn13": "9788867315192",
       "title": "Il magico potere del riordino. Il metodo giapponese che trasforma i vostri spazi e la vostra vita",
-      "authors": [
-        "Marie Kondo"
-      ],
+      "authors": ["Marie Kondo"],
       "status": "to-read",
       "dateAdded": "2026-05-03T16:15:04.441Z",
       "source": "openlibrary",
@@ -4641,9 +3958,7 @@
       "publishYear": 2000,
       "pageCount": 96,
       "language": "it",
-      "subjects": [
-        "Medical"
-      ],
+      "subjects": ["Medical"],
       "rating": 4,
       "dateRead": "2026-05-17T14:22:04.784Z"
     },
@@ -4651,9 +3966,7 @@
       "id": "56bc3253-271e-4e76-a217-b661448f0dcc",
       "isbn13": "9788807814433",
       "title": "Non c'è problema",
-      "authors": [
-        "Filippo La Porta"
-      ],
+      "authors": ["Filippo La Porta"],
       "status": "read",
       "dateAdded": "2026-05-03T16:15:38.067Z",
       "source": "openlibrary",
@@ -4691,11 +4004,7 @@
       "id": "c0c36449-c038-4093-b5c3-e161898d88d2",
       "isbn13": "9788806141660",
       "title": "Fuori tutti",
-      "authors": [
-        "Carlo Antonelli",
-        "Marco Delogu",
-        "Fabio De Luca"
-      ],
+      "authors": ["Carlo Antonelli", "Marco Delogu", "Fabio De Luca"],
       "status": "read",
       "dateAdded": "2026-05-03T16:16:01.191Z",
       "source": "openlibrary",
@@ -4705,11 +4014,7 @@
       "publishYear": 1996,
       "pageCount": 119,
       "language": "ita",
-      "subjects": [
-        "Youth",
-        "Attitudes",
-        "Dwellings"
-      ],
+      "subjects": ["Youth", "Attitudes", "Dwellings"],
       "rating": 2,
       "dateRead": "2026-05-17T14:03:14.585Z"
     },
@@ -4717,9 +4022,7 @@
       "id": "5e8cfa38-2753-48cc-950a-4a4866b62070",
       "isbn13": "9788807090073",
       "title": "America, istruzioni per l'uso",
-      "authors": [
-        "Paul Watzlawick"
-      ],
+      "authors": ["Paul Watzlawick"],
       "status": "read",
       "dateAdded": "2026-05-03T16:16:13.540Z",
       "source": "googlebooks",
@@ -4728,9 +4031,7 @@
       "publishYear": 1993,
       "pageCount": 112,
       "language": "it",
-      "subjects": [
-        "Social Science"
-      ],
+      "subjects": ["Social Science"],
       "rating": 3,
       "dateRead": "2026-05-27T23:54:32.705Z"
     },
@@ -4738,9 +4039,7 @@
       "id": "010177ac-d14c-442d-b7e5-3d5fd5c958b2",
       "isbn13": "9788881761531",
       "title": "Salento Salento",
-      "authors": [
-        "Piero Manni"
-      ],
+      "authors": ["Piero Manni"],
       "status": "reading",
       "dateAdded": "2026-05-03T16:16:28.960Z",
       "source": "openlibrary",
@@ -4757,9 +4056,7 @@
       "id": "f79bba4b-3c93-4a0c-b348-4644a68e5867",
       "isbn13": "9788807811135",
       "title": "La politica dell'esperienza-L'uccello del paradiso",
-      "authors": [
-        "Ronald David Laing"
-      ],
+      "authors": ["Ronald David Laing"],
       "status": "to-read",
       "dateAdded": "2026-05-03T16:16:34.986Z",
       "source": "googlebooks",
@@ -4768,17 +4065,13 @@
       "publishYear": 1990,
       "pageCount": 192,
       "language": "it",
-      "subjects": [
-        "Medical"
-      ]
+      "subjects": ["Medical"]
     },
     {
       "id": "a967acaa-2224-4c84-a15a-fb9a5362f5fd",
       "isbn13": "9788872260609",
       "title": "Lettera sulla felicità",
-      "authors": [
-        "Epicurus"
-      ],
+      "authors": ["Epicurus"],
       "status": "reading",
       "dateAdded": "2026-05-03T16:16:47.619Z",
       "source": "googlebooks",
@@ -4787,18 +4080,14 @@
       "publishYear": 1992,
       "pageCount": 32,
       "language": "it",
-      "subjects": [
-        "Philosophy"
-      ],
+      "subjects": ["Philosophy"],
       "rating": 3
     },
     {
       "id": "2ab5a2da-67f9-4f5d-898c-10a0411cfb06",
       "isbn13": "9788872261637",
       "title": "Cinema e cinema",
-      "authors": [
-        "Vladimir Vladimirovič Majakovskij"
-      ],
+      "authors": ["Vladimir Vladimirovič Majakovskij"],
       "status": "to-read",
       "dateAdded": "2026-05-03T16:17:03.906Z",
       "source": "googlebooks",
@@ -4808,17 +4097,13 @@
       "publishYear": 1993,
       "pageCount": 64,
       "language": "it",
-      "subjects": [
-        "Performing Arts"
-      ]
+      "subjects": ["Performing Arts"]
     },
     {
       "id": "08245180-f324-45ef-bfd7-bd73c51f1544",
       "isbn13": "9788871681221",
       "title": "La confraternita del Chianti",
-      "authors": [
-        "John Fante"
-      ],
+      "authors": ["John Fante"],
       "status": "reading",
       "dateAdded": "2026-05-03T16:18:03.788Z",
       "source": "googlebooks",
@@ -4827,18 +4112,13 @@
       "publishYear": 1995,
       "pageCount": 192,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ]
+      "subjects": ["Fiction"]
     },
     {
       "id": "67109968-bb1e-4f2c-b3d0-4beaa47216fc",
       "isbn13": "9788846100092",
       "title": "Baburu. I figli della Grande Bolla",
-      "authors": [
-        "Karl Taro Greenfeld",
-        "Shin Takamatsu"
-      ],
+      "authors": ["Karl Taro Greenfeld", "Shin Takamatsu"],
       "status": "read",
       "dateAdded": "2026-05-03T16:18:29.104Z",
       "source": "googlebooks",
@@ -4847,9 +4127,7 @@
       "publishYear": 1995,
       "pageCount": 352,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=025rAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 3,
       "dateRead": "2026-05-17T14:22:38.100Z"
@@ -4858,9 +4136,7 @@
       "id": "4b343c6a-e38d-43ae-a9e2-f9580d83b241",
       "isbn13": "9788804471240",
       "title": "Storia dell'Europa medievale",
-      "authors": [
-        "Maurice Keen"
-      ],
+      "authors": ["Maurice Keen"],
       "status": "reading",
       "dateAdded": "2026-05-03T17:21:15.380Z",
       "source": "googlebooks",
@@ -4869,17 +4145,13 @@
       "publishYear": 1999,
       "pageCount": 355,
       "language": "it",
-      "subjects": [
-        "History"
-      ]
+      "subjects": ["History"]
     },
     {
       "id": "679e76b9-f96c-4949-b56f-85375b7c5dca",
       "isbn13": "9788807015533",
       "title": "L'albergo delle donne tristi",
-      "authors": [
-        "Marcela Serrano"
-      ],
+      "authors": ["Marcela Serrano"],
       "status": "reading",
       "dateAdded": "2026-05-03T17:21:34.854Z",
       "source": "googlebooks",
@@ -4888,9 +4160,7 @@
       "publishYear": 2000,
       "pageCount": 280,
       "language": "it",
-      "subjects": [
-        "Fiction"
-      ],
+      "subjects": ["Fiction"],
       "coverUrl": "https://books.google.com/books/content?id=qOVaPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 2
     },
@@ -4898,9 +4168,7 @@
       "id": "1fce00b7-0789-432e-a783-07a5b4de8966",
       "isbn13": "9788817007566",
       "title": "Gli insegnamenti di don Juan",
-      "authors": [
-        "Carlos Castaneda"
-      ],
+      "authors": ["Carlos Castaneda"],
       "status": "to-read",
       "dateAdded": "2026-05-03T17:21:47.672Z",
       "source": "googlebooks",
@@ -4909,18 +4177,14 @@
       "publishYear": 2005,
       "pageCount": 322,
       "language": "it",
-      "subjects": [
-        "Literary Collections"
-      ],
+      "subjects": ["Literary Collections"],
       "coverUrl": "https://books.google.com/books/content?id=HJNvOgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
     },
     {
       "id": "cac7cac8-f05d-4b5a-97d5-e5a0d3c0223d",
       "isbn13": "9788807812323",
       "title": "QUENEAU RAYMOND - DIARIO INTIM",
-      "authors": [
-        "Raymond Queneau"
-      ],
+      "authors": ["Raymond Queneau"],
       "status": "read",
       "dateAdded": "2026-05-03T17:22:03.136Z",
       "source": "openlibrary",
@@ -4939,9 +4203,7 @@
       "id": "6fe23721-b0a8-49f6-b155-4f075035ce7d",
       "isbn13": "9788886568777",
       "title": "Leggere, scrivere, disobbedire",
-      "authors": [
-        "Stefano Benni"
-      ],
+      "authors": ["Stefano Benni"],
       "status": "read",
       "dateAdded": "2026-05-03T17:22:17.495Z",
       "source": "openlibrary",
@@ -4951,10 +4213,7 @@
       "publishYear": 1999,
       "pageCount": 110,
       "language": "ita",
-      "subjects": [
-        "Interviews",
-        "Italian Authors"
-      ],
+      "subjects": ["Interviews", "Italian Authors"],
       "rating": 5,
       "dateRead": "2026-05-17T14:02:13.397Z"
     },
@@ -4962,9 +4221,7 @@
       "id": "9ea4ab10-141d-45f1-b30c-556638e01d95",
       "isbn13": "9788833914879",
       "title": "Argonauti del Pacifico occidentale. Riti magici e vita quotidiana nella società primitiva",
-      "authors": [
-        "Bronislaw Malinowski"
-      ],
+      "authors": ["Bronislaw Malinowski"],
       "status": "reading",
       "dateAdded": "2026-05-03T17:22:47.074Z",
       "source": "googlebooks",
@@ -4973,9 +4230,7 @@
       "publishYear": 2004,
       "pageCount": 602,
       "language": "it",
-      "subjects": [
-        "Social Science"
-      ],
+      "subjects": ["Social Science"],
       "coverUrl": "https://books.google.com/books/content?id=Ph3XAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 5
     },
@@ -4983,9 +4238,7 @@
       "id": "5e53d9d2-9862-4f96-92ca-e1b96b59a537",
       "isbn13": "9788817029193",
       "title": "Taglia e cuci",
-      "authors": [
-        "Marjane Satrapi"
-      ],
+      "authors": ["Marjane Satrapi"],
       "status": "read",
       "dateAdded": "2026-05-03T17:24:04.849Z",
       "source": "googlebooks",
@@ -4994,9 +4247,7 @@
       "publishYear": 2009,
       "pageCount": 0,
       "language": "it",
-      "subjects": [
-        "Biography & Autobiography"
-      ],
+      "subjects": ["Biography & Autobiography"],
       "coverUrl": "https://books.google.com/books/content?id=nBi9OwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
       "rating": 5,
       "dateRead": "2026-05-17T14:22:53.833Z"
@@ -5005,9 +4256,7 @@
       "id": "9e16c8e7-c8d4-4a9f-8c4f-9d1c59182f4c",
       "isbn13": "9788827210963",
       "title": "Il Tao del Sesso",
-      "authors": [
-        "Stephen Thomas Chang"
-      ],
+      "authors": ["Stephen Thomas Chang"],
       "status": "read",
       "dateAdded": "2026-05-03T17:34:59.890Z",
       "source": "openlibrary",
@@ -5017,11 +4266,7 @@
       "publishYear": 1997,
       "pageCount": 221,
       "language": "ita",
-      "subjects": [
-        "Relazioni sessuali",
-        "* Laozi. \"Daodejing\"",
-        "Sessualità"
-      ],
+      "subjects": ["Relazioni sessuali", "* Laozi. \"Daodejing\"", "Sessualità"],
       "coverUrl": "https://covers.openlibrary.org/b/id/8661466-L.jpg?default=false",
       "rating": 5,
       "dateRead": "2026-05-17T14:23:02.054Z"
@@ -5030,9 +4275,7 @@
       "id": "65031782-b136-4d06-b3bf-6d5d7b2c73b8",
       "isbn13": "9780345341846",
       "title": "Finite and infinite games",
-      "authors": [
-        "James P. Carse"
-      ],
+      "authors": ["James P. Carse"],
       "status": "read",
       "dateAdded": "2026-05-16T22:01:20.518Z",
       "source": "openlibrary",
@@ -5073,9 +4316,7 @@
       "publishYear": 1981,
       "pageCount": 253,
       "language": "eng",
-      "subjects": [
-        "Pictorial works"
-      ],
+      "subjects": ["Pictorial works"],
       "rating": 4,
       "dateRead": "2026-05-17T14:23:16.720Z"
     },
@@ -5083,10 +4324,7 @@
       "id": "49011551-e724-4052-9af7-1397391cec5f",
       "isbn13": "9781855852662",
       "title": "Techno Style",
-      "authors": [
-        "Martin Pesch",
-        "Markus Weisbeck"
-      ],
+      "authors": ["Martin Pesch", "Markus Weisbeck"],
       "status": "read",
       "dateAdded": "2026-05-17T13:37:43.685Z",
       "source": "openlibrary",
@@ -5130,9 +4368,7 @@
       "id": "c1baccb4-fef1-4906-a2a0-ad0ff420ed66",
       "isbn13": "9780295974361",
       "title": "To sing with pigs is human",
-      "authors": [
-        "Jane C. Goodale"
-      ],
+      "authors": ["Jane C. Goodale"],
       "status": "read",
       "dateAdded": "2026-06-02T20:46:42.248Z",
       "source": "openlibrary",

@@ -122,7 +122,13 @@ export default defineConfig({
 		ssr: {
 			noExternal: ['@bookbat/baobab', '@bookbat/library-core'],
 		},
-		build: { sourcemap: true }, // JS sourcemaps
+		build: {
+			sourcemap: true, // JS sourcemaps
+			// Vite 8 (Astro 7) switched the default CSS minifier to lightningcss,
+			// which chokes on some of this project's CSS ("Unexpected token
+			// Ident"). Pin back to esbuild — the Astro 6 / Vite <8 default.
+			cssMinify: 'esbuild',
+		},
 		css: { devSourcemap: true }, // CSS sourcemaps in dev (optional)
 		resolve: {
 			alias: {

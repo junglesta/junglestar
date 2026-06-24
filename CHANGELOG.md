@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.2.1
+
+- **Dev tooling bumped**: `typescript` → 6.0.3, `prettier` → 3.8.4, `sharp` → 0.35.2. Build stays green. (4 pre-existing `astro check` type errors remain — unrelated to the TS bump; present at 5.9.3 too.)
+- **README**: Astro badge corrected 6 → 7.
+
 ## 4.2.0
 
 - **Astro 7 upgrade**: moved to Astro 7 and `@astrojs/mdx` 7. Pinned the Vite CSS minifier back to esbuild (`vite.build.cssMinify`) — Vite 8 (bundled with Astro 7) switched the default to lightningcss, which rejected some of this project's CSS.

@@ -4,6 +4,9 @@ Icon
 # build output
 dist/
 
+# Astro generated cache (types, content collections, font cache, settings)
+.astro/
+
 # dependencies
 node_modules/
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.3.0
+
+- **Library grows by 53 books** (222 → 275): appended the `rokindobooks-54` batch — an Indonesia/Bali/Asian-art themed set (Soul spirit and mountain, Ring of fire, Artists on Bali, Hanga, Birds of Bali, and more). One exact duplicate ("Bali", isbn 9783796518737) was skipped. Merged into `library.json` (source of truth) and regenerated `library.generated.json`.
+- **27 new cached covers** added under `public/book-covers/` via `pnpm covers` (add-only; existing covers untouched).
+
 ## 4.2.1
 
 - **Dev tooling bumped**: `typescript` → 6.0.3, `prettier` → 3.8.4, `sharp` → 0.35.2. Build stays green. (4 pre-existing `astro check` type errors remain — unrelated to the TS bump; present at 5.9.3 too.)

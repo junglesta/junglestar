@@ -5157,6 +5157,1228 @@
       "coverUrl": "/book-covers/to-sing-with-pigs-is-human.webp",
       "rating": 4,
       "dateRead": "2026-06-02T20:46:54.053Z"
+    },
+    {
+      "id": "ead82fe9-3148-4073-a75c-9ad8e4480313",
+      "isbn13": "9789676530424",
+      "title": "Soul, spirit, and mountain",
+      "authors": [
+        "Astri Wright"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T04:54:42.533Z",
+      "source": "openlibrary",
+      "isbn10": "9676530425",
+      "publisher": "Oxford University Press",
+      "publishDate": "1994",
+      "publishYear": 1994,
+      "pageCount": 270,
+      "language": "eng",
+      "subjects": [
+        "Painters",
+        "Painting, Indonesian",
+        "Mountains in art",
+        "Spirituality in art",
+        "Psychology",
+        "Indonesian Painting",
+        "Art, asian"
+      ],
+      "coverUrl": "/book-covers/soul-spirit-and-mountain.webp"
+    },
+    {
+      "id": "78d2acfa-7564-47fc-8b78-99bc06ec645a",
+      "isbn13": "9780892814305",
+      "title": "Ring of fire",
+      "authors": [
+        "Blair, Lawrence Dr."
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T04:55:19.648Z",
+      "source": "openlibrary",
+      "isbn10": "0892814306",
+      "publisher": "Park Street Press",
+      "publishDate": "1991",
+      "publishYear": 1991,
+      "pageCount": 272,
+      "language": "eng",
+      "subjects": [
+        "Description and travel",
+        "Ethnology",
+        "Blair, Lawrence, Dr",
+        "Blair, Lorne",
+        "Ethnology -- Indonesia",
+        "Indonesia -- Description and travel"
+      ],
+      "synopsis": "272 p. : 27 cm",
+      "coverUrl": "/book-covers/ring-of-fire.webp"
+    },
+    {
+      "id": "fdb0df56-d8a4-4b72-a073-bede2a606bb0",
+      "isbn13": "9789054960188",
+      "title": "Artists on Bali",
+      "authors": [
+        "Ruud Spruit"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:00:00.329Z",
+      "source": "openlibrary",
+      "isbn10": "9054960183",
+      "publisher": "Tuttle Pub",
+      "publishDate": "September 1997",
+      "publishYear": 1997,
+      "pageCount": 160,
+      "subjects": [
+        "Indonesian Art",
+        "In art",
+        "Colonial Art"
+      ],
+      "coverUrl": "/book-covers/artists-on-bali.webp"
+    },
+    {
+      "id": "5d3541fd-99ff-45a3-9fe0-c3d2071ae1ba",
+      "isbn13": "9780734763136",
+      "title": "Hanga",
+      "authors": [
+        "Chiaki Ajioka",
+        "Noriko Kuwahara",
+        "Junko Nishiyama"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:01:48.529Z",
+      "source": "openlibrary",
+      "isbn10": "0734763131",
+      "publisher": "Art Media Resources",
+      "publishDate": "March 2001",
+      "publishYear": 2001,
+      "pageCount": 111,
+      "language": "eng",
+      "subjects": [
+        "Japanese Color prints",
+        "Ukiyoe",
+        "Exhibitions",
+        "Japanese Prints",
+        "European influences",
+        "Art, japanese",
+        "Art",
+        "Painting and drawing"
+      ],
+      "coverUrl": "/book-covers/hanga.webp"
+    },
+    {
+      "id": "2126599e-5a4f-4288-8008-808061946fcb",
+      "isbn13": "9780713650365",
+      "title": "Relief Printmaking",
+      "authors": [
+        "Ann Westley"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:03:07.881Z",
+      "source": "openlibrary",
+      "publisher": "Bloomsbury Publishing Plc",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "pageCount": 128,
+      "language": "eng",
+      "subjects": [
+        "Technique",
+        "Relief printing"
+      ]
+    },
+    {
+      "id": "b969fb9c-2bba-44a6-8018-1b1ab2d3bca8",
+      "isbn13": "9780500201664",
+      "title": "Art of Tantra",
+      "authors": [
+        "Philip S. Rawson"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:03:20.055Z",
+      "source": "openlibrary",
+      "isbn10": "0500201668",
+      "publisher": "Thames & Hudson",
+      "publishDate": "February 1985",
+      "publishYear": 1985,
+      "pageCount": 216,
+      "language": "eng",
+      "subjects": [],
+      "coverUrl": "/book-covers/art-of-tantra.webp"
+    },
+    {
+      "id": "c6a04d95-421a-42dc-b5ea-47b410c7fa9f",
+      "isbn13": "9780945971047",
+      "title": "Birds of Bali",
+      "authors": [
+        "Victor Mason"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:06:25.445Z",
+      "source": "openlibrary",
+      "isbn10": "0945971044",
+      "publisher": "Periplus Editions",
+      "publishDate": "1989",
+      "publishYear": 1989,
+      "pageCount": 80,
+      "language": "eng",
+      "subjects": [
+        "Birds",
+        "Identification",
+        "Pictorial works",
+        "Birds, islands of the pacific"
+      ],
+      "coverUrl": "/book-covers/birds-of-bali.webp"
+    },
+    {
+      "id": "29c13e56-a7ef-45f3-947d-eaccb120b1e5",
+      "isbn13": "9789793019017",
+      "title": "The rites of the Bali Aga",
+      "authors": [
+        "Sitor Situmorang"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:08:41.683Z",
+      "source": "openlibrary",
+      "isbn10": "9793019018",
+      "publisher": "Metafor Intermedia Indonesia",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "pageCount": 55,
+      "language": "eng",
+      "subjects": [
+        "Indonesian poetry"
+      ]
+    },
+    {
+      "id": "7d853f94-438c-4c8d-bc0c-8d30a671cde8",
+      "isbn13": "9781440308567",
+      "title": "Personal Geographies",
+      "authors": [
+        "Jill K. Berry"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:09:50.234Z",
+      "source": "openlibrary",
+      "isbn10": "144030856X",
+      "publisher": "North Light Books",
+      "publishDate": "Nov 30, 2011",
+      "publishYear": 2011,
+      "pageCount": 144,
+      "subjects": [
+        "Mixed media painting",
+        "Handicraft",
+        "Cartography",
+        "Mixed media (Art)",
+        "Thematic maps"
+      ],
+      "coverUrl": "/book-covers/personal-geographies.webp"
+    },
+    {
+      "id": "fa82bdb0-61f5-463a-a66b-d8be9bfe1bfb",
+      "isbn13": "9783822801147",
+      "title": "Paul Gauguin 1848-1903 The Primitive Sophisticate (Art Books from Benedikt Taschen)",
+      "authors": [],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:10:35.007Z",
+      "source": "openlibrary",
+      "isbn10": "3822801143",
+      "publisher": "Benedikt Taschen Verlag GmbH & Co. KG",
+      "publishDate": "1988",
+      "publishYear": 1988,
+      "language": "eng",
+      "subjects": [
+        "Painters",
+        "Biography"
+      ],
+      "synopsis": "A Beautiful collection of plates and text depicting Gauguin's work from 1848-1903.",
+      "coverUrl": "/book-covers/paul-gauguin-1848-1903-the-primitive-sophisticate-art-books-from-benedikt-tasche.webp"
+    },
+    {
+      "id": "59d797b8-767b-478c-b613-aab4aa415095",
+      "isbn13": "9780060256654",
+      "title": "The Giving Tree",
+      "authors": [
+        "Shel Silverstein"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:11:42.989Z",
+      "source": "openlibrary",
+      "isbn10": "0060256656",
+      "publisher": "Harper & Row",
+      "publishDate": "1964",
+      "publishYear": 1964,
+      "pageCount": 57,
+      "language": "eng",
+      "subjects": [
+        "Children's poetry, American",
+        "Fiction",
+        "Humorous poetry",
+        "Juvenile fiction",
+        "Latin language materials",
+        "Trees",
+        "Generosity",
+        "Boys",
+        "Love",
+        "Sacrifice"
+      ],
+      "synopsis": "From Shel Silverstein, New York Times bestselling author of Where the Sidewalk Ends and A Light in the Attic, comes a poignant picture book about love and acceptance, cherished for over fifty years. This classic is perfect for both young readers and lifelong fans.\r\n\r\n\"Once there was a tree...and she loved a little boy.\"\r\n\r\nSo begins a story of unforgettable perception, beautifully written and illustrated by the gifted and versatile Shel Silverstein. This moving parable for all ages offers a touching interpretation of the gift of giving and a serene acceptance of another's capacity to love in return.\r\n\r\nEvery day the boy would come to the tree to eat her apples, swing from her branches, or slide down her trunk...and the tree was happy. But as the boy grew older he began to want more from the tree, and the tree gave and gave and gave. This is a tender story, touched with sadness, aglow with consolation.\r\n\r\nThe Giving Tree is a meaningful gift for milestone events such as graduations, birthdays, and baby showers.\r\n\r\nShel Silverstein's incomparable career as a bestselling children's book author and illustrator began with Lafcadio, the Lion Who Shot Back. He is also the creator of picture books including A Giraffe and a Half, Who Wants a Cheap Rhinoceros?, The Missing Piece, The Missing Piece Meets the Big O, and the perennial favorite The Giving Tree, and of classic poetry collections such as Where the Sidewalk Ends, A Light in the Attic, Falling Up, Every Thing On It, Don't Bump the Glump!, and Runny Babbit plus Runny Babbit Returns.",
+      "coverUrl": "/book-covers/the-giving-tree.webp"
+    },
+    {
+      "id": "fa2ab460-21b3-481d-aa69-ae80018707bf",
+      "isbn13": "9781933045306",
+      "title": "Beautiful Losers",
+      "authors": [
+        "Alexis Lykiard",
+        "Victoria Lynn",
+        "Mark Gonzales",
+        "Haring, Keith.",
+        "Chris Johanson",
+        "Jorge Macchi",
+        "Barry McGee",
+        "Raymond Pettibon",
+        "Alexander Rodchenko",
+        "Jean Michel Basquiat"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:12:46.322Z",
+      "source": "openlibrary",
+      "isbn10": "1933045302",
+      "publisher": "D.A.P./Iconoclast",
+      "publishDate": "October 15, 2005",
+      "publishYear": 2005,
+      "pageCount": 288,
+      "language": "eng",
+      "subjects": [],
+      "coverUrl": "/book-covers/beautiful-losers.webp"
+    },
+    {
+      "id": "470d2999-f883-4bf0-950e-262828627889",
+      "isbn13": "9780810946149",
+      "title": "Egon Schiele",
+      "authors": [
+        "Kallir, Jane."
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:13:19.887Z",
+      "source": "openlibrary",
+      "isbn10": "0810946149",
+      "publisher": "Harry N. Abrams",
+      "publishDate": "October 1, 2003",
+      "publishYear": 2003,
+      "pageCount": 256,
+      "language": "eng",
+      "subjects": [
+        "Artists",
+        "Austrian Painting",
+        "Biography",
+        "Catalogs",
+        "Exhibitions",
+        "Painting, Austrian",
+        "Austrian Drawing",
+        "Criticism and interpretation",
+        "Austrian Watercolor painting",
+        "Schiele, egon, 1890-1918"
+      ],
+      "synopsis": "Egon Schiele: 27 Masterworks brings together a group of the artist's most significant works, including a cross-section of his major paintings and many of his most beautiful watercolors and drawings. A thorough overview of the oils enables the reader to understand the artist's overriding creative ambitions, but it is in his works on paper that Schiele truly stands out.\n\nAs evidenced by the numerous oversize and superbly printed reproductions in this book, Schiele deserves to be counted among the foremost draftsmen of all time, ranking alongside Albrecht Durer and Hans Holbein.\n\nEgon Schiele: 27 Masterworks follows the entire trajectory of the artist's career, beginning with his early Gustav Klimt-influenced paintings and his startling Expressionist breakthrough in 1910 at the tender age of 20, to his more serene late works, completed shortly before his untimely death at the age of 28.",
+      "coverUrl": "/book-covers/egon-schiele.webp"
+    },
+    {
+      "id": "137338df-718e-40ca-8679-7850ae709074",
+      "isbn13": "9783791346489",
+      "title": "Egon Schiele's women",
+      "authors": [
+        "Kallir, Jane."
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:16:16.272Z",
+      "source": "openlibrary",
+      "publisher": "Prestel",
+      "publishDate": "2012",
+      "publishYear": 2012,
+      "pageCount": 303,
+      "language": "eng",
+      "subjects": [
+        "Women in art",
+        "ART / Individual Artists / General",
+        "Criticism and interpretation",
+        "Schiele, egon, 1890-1918",
+        "Art criticism"
+      ],
+      "synopsis": "\"During his brief yet prolific career, Egon Schiele created hundreds of drawings, watercolors, and oil paintings of the women in his life. His work is generally regarded as expressionistic, emotional, intense, autobiographical, and highly sexual. In this elegant and beautifully illustrated book, Jane Kallir examines Schiele's depictions of women to argue that there is more to these images than we realize. Drawing from the latest research as well as her own exhaustive familiarity with Schiele's entire oeuvre, Kallir explores four distinct periods, each characterized by a single figure or series of women: the artist's mother and sisters; the often anonymous models of the \"breakthrough\" years, 1910-11; his lover, Wally Neuzil; and his wife, Edith, and her sister, Adele. Weaving together historical context, biographical information, and observations of the works, Kallir demonstrates how these women relate not only to Schiele's development but to the larger issue of feminine representation. Kallir offers a panoply of significant insights into a central aspect of the artist's achievement, which has never before been the subject of a focused study. Schiele's fans will treasure this beautiful and groundbreaking addition to the literature on this important artist\"--\n\n\"In this authoritative and lavishly illustrated volume, the renowned Schiele authority Jane Kallir focuses on the artist's images of women, offering fresh insight into a central aspect of Schiele's achievement that has never before been the subject of a focused study. Drawing on the latest scholarship as well as her own exhaustive familiarity with Schiele's oeuvre, Kallir begins with a general overview of gender and culture in early twentieth-century Austria. Subsequent chapters focus on the women who dominated Schiele's life and art: the artist's mother and sisters; his early girlfriends; his first serious partner, Wally Neuzil; and his wife, Edith. Deftly weaving together cultural context, biography, and commentary on the artworks, Kallir reveals how Schiele's women reflect the artist's shifting views of female sexuality as well as changing representations of the female nude in the age of Expressionism\"--"
+    },
+    {
+      "id": "a087a2b8-dbd4-498c-910c-620ad6fb7e52",
+      "isbn13": "9789811598883",
+      "title": "Butterfly Effect in China's Economic Growth",
+      "authors": [
+        "Wei-Bin Zhang"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:29:52.217Z",
+      "source": "openlibrary",
+      "publisher": "Springer Singapore Pte. Limited",
+      "publishDate": "2020",
+      "publishYear": 2020,
+      "language": "eng",
+      "subjects": []
+    },
+    {
+      "id": "02b43f56-2d77-46ca-aa8a-a59908acb28d",
+      "isbn13": "9786029797190",
+      "title": "Myth, magic, and mystery in Bali",
+      "authors": [],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:30:55.358Z",
+      "source": "openlibrary",
+      "isbn10": "6029797190",
+      "publisher": "P.T. Phoenix Communications",
+      "publishDate": "2017",
+      "publishYear": 2017,
+      "pageCount": 120,
+      "language": "eng",
+      "subjects": []
+    },
+    {
+      "id": "d873aa41-e736-4a70-861d-73f62b872223",
+      "isbn13": "9789799500304",
+      "title": "STRANGER IN PARADISE; THE DIARY OF AN EXPATRIATE IN BALI, 1979-80",
+      "authors": [
+        "Made Wijaya"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:32:01.180Z",
+      "source": "openlibrary",
+      "isbn10": "9799500303",
+      "publisher": "Wijaya Words Jakarta",
+      "publishDate": "1995",
+      "publishYear": 1995,
+      "subjects": [
+        "Social life and customs",
+        "Description and travel",
+        "Diaries"
+      ],
+      "coverUrl": "/book-covers/stranger-in-paradise-the-diary-of-an-expatriate-in-bali-1979-80.webp"
+    },
+    {
+      "id": "f7df7007-6cc7-4de2-9c73-973e6f17efd7",
+      "isbn13": "9780730569299",
+      "title": "Donald Friend, 1915-1989",
+      "authors": [
+        "Barry Pearce"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:33:53.487Z",
+      "source": "openlibrary",
+      "isbn10": "0730569292",
+      "publisher": "Art Gallery of New South Wales",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 160,
+      "language": "eng",
+      "subjects": [
+        "Exhibitions"
+      ]
+    },
+    {
+      "id": "91be0ac9-b1dd-41c4-8ebf-c8723f7abc3b",
+      "isbn13": "9780500275337",
+      "title": "The end of the game",
+      "authors": [],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:34:07.542Z",
+      "source": "openlibrary",
+      "isbn10": "0500275335",
+      "publisher": "Thames and Hudson",
+      "publishDate": "1988",
+      "publishYear": 1988,
+      "pageCount": 230,
+      "language": "eng",
+      "subjects": [
+        "Game and game-birds",
+        "Big game animals",
+        "Description and travel",
+        "Big game hunting",
+        "Africa, east, description and travel",
+        "Game and game-birds, africa",
+        "Travel",
+        "Hunting, africa",
+        "Tsavo national park (kenya)",
+        "Kenya, description and travel"
+      ],
+      "synopsis": "Pictorial documentation of the history and future of African wildlife, focusing on the widespread destruction of the African elephant, and exploring the complex relationship between man and animals.",
+      "coverUrl": "/book-covers/the-end-of-the-game.webp"
+    },
+    {
+      "id": "f37634f1-6572-4db5-aee1-19743dea3109",
+      "isbn13": "9789625933184",
+      "title": "W.O.J. Nieuwenkamp",
+      "authors": [
+        "Bruce W. Carpenter"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:34:47.414Z",
+      "source": "openlibrary",
+      "isbn10": "9625933182",
+      "publisher": "Tuttle Publishing,US",
+      "publishDate": "April 1998",
+      "publishYear": 1998,
+      "pageCount": 208,
+      "language": "eng",
+      "subjects": [
+        "In art",
+        "Artists, biography"
+      ]
+    },
+    {
+      "id": "15df4c00-fd90-4854-a99e-6d00bb68f19a",
+      "isbn13": "9780714844572",
+      "title": "Hokusai",
+      "authors": [
+        "Gian Carlo Calza"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:35:50.764Z",
+      "source": "openlibrary",
+      "isbn10": "0714844578",
+      "publisher": "Phaidon",
+      "publishDate": "2004",
+      "publishYear": 2004,
+      "pageCount": 520,
+      "language": "eng",
+      "subjects": [
+        "Japanese woodblock prints",
+        "Ukiyo-e",
+        "Criticism and interpretation",
+        "Exhibitions",
+        "Hokusai, katsushika, 1760-1849",
+        "Prints",
+        "Painting, japanese",
+        "Painting"
+      ],
+      "synopsis": "This big and beautiful book presents a comprehensive survey of the work of one of Japan's greatest and most influential artists, together with a collection of essays that focus on a key aspects of the master's career. The book opens with an introductory essay by Gian Carlo Calza presenting an overview of the changing world into which Hokusai was born and through which he lived. This is followed by a series of essays, composed by distinguished Western and Japanese scholars, that present new research on a range of crucial areas of interest in Hokusai studies.\r\n\r\nThese form a context for the core of the book, which embodies a retrospective of Hokusai's entire career, divided into seven chapters. Each chapter provides a succinct account of a phase in Hokusai's life, followed by a series of the finest and most representative works of that period. Great care has been taken throughout to choose for reproduction the best-preserved original prints that reveal Hokusai's mastery of line and colour to full advantage.\r\n\r\nThis magnificent pictorial survey of Hokusai's prints, paintings and drawings is the first publication in English to make such a rich selection widely available, and to demonstrate the extraordinary range and quality of Hokusai's achievement. The final component of the book is a detailed scholarly commentary on each illustration that provides not only the necessary technical information but also a revealing analysis of style, color, composition and motif.",
+      "coverUrl": "/book-covers/hokusai.webp"
+    },
+    {
+      "id": "d1043b4b-9a21-4ff2-8d04-75486026281c",
+      "isbn13": "9789625934709",
+      "title": "Early Mapping of Southeast Asia",
+      "authors": [
+        "Thomas Suárez"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:36:03.854Z",
+      "source": "openlibrary",
+      "isbn10": "9625934707",
+      "publisher": "Periplus Editions",
+      "publishDate": "December 1999",
+      "publishYear": 1999,
+      "pageCount": 280,
+      "language": "eng",
+      "subjects": [
+        "Cartography, history",
+        "Southeast asia, history",
+        "Cartography",
+        "History",
+        "Maps",
+        "Historical geography",
+        "Cartographie",
+        "Histoire",
+        "Kartografie",
+        "Karte"
+      ],
+      "coverUrl": "/book-covers/early-mapping-of-southeast-asia.webp"
+    },
+    {
+      "id": "cda9f732-60d5-4e2f-b7cd-606247fe6837",
+      "isbn13": "9780810934757",
+      "title": "Desert eves",
+      "authors": [
+        "Hans Silvester",
+        "Hans Silvester"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:38:13.090Z",
+      "source": "openlibrary",
+      "isbn10": "0810934752",
+      "publisher": "Harry N. Abrams",
+      "publishDate": "2002",
+      "publishYear": 2002,
+      "pageCount": 227,
+      "language": "eng",
+      "subjects": [
+        "Photography of women",
+        "Pictorial works",
+        "Portrait photography",
+        "Portraits",
+        "Women",
+        "India, pictorial works",
+        "India, description and travel"
+      ],
+      "coverUrl": "/book-covers/desert-eves.webp"
+    },
+    {
+      "id": "a389a56a-5a25-4cbe-a28c-a20c67ad7254",
+      "isbn13": "9789054960201",
+      "title": "Indonesian Ornamental Design (Design Book)",
+      "authors": [
+        "Pepin Van Roojen"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:38:52.658Z",
+      "source": "openlibrary",
+      "isbn10": "9054960205",
+      "publisher": "Knickerbocker Press",
+      "publishDate": "September 1999",
+      "publishYear": 1999,
+      "pageCount": 448,
+      "language": "eng",
+      "subjects": [
+        "Decorative arts",
+        "Decoration and ornament",
+        "Pictorial works",
+        "Design, decorative"
+      ],
+      "coverUrl": "/book-covers/indonesian-ornamental-design-design-book.webp"
+    },
+    {
+      "id": "eea6a71b-f7f8-46e0-91a7-f9d1907cf77e",
+      "isbn13": "9780450048197",
+      "title": "Ritual and Seduction",
+      "authors": [
+        "Andre Virel"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:49:55.737Z",
+      "source": "openlibrary",
+      "isbn10": "0450048195",
+      "publisher": "New English Library",
+      "publishDate": "July 1, 1980",
+      "publishYear": 1980,
+      "pageCount": 192,
+      "subjects": [
+        "Body-marking",
+        "Cosmetics",
+        "Personal Beauty",
+        "Body marking",
+        "Costume"
+      ]
+    },
+    {
+      "id": "e2285d34-2af5-4e30-b130-e3d57ce07054",
+      "isbn13": "9780500275313",
+      "title": "The colours of India",
+      "authors": [
+        "Lloyd, Barbara."
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T05:51:27.649Z",
+      "source": "openlibrary",
+      "isbn10": "0500275319",
+      "publisher": "Thames and Hudson",
+      "publishDate": "1989",
+      "publishYear": 1989,
+      "pageCount": 159,
+      "language": "eng",
+      "subjects": [
+        "Description and travel",
+        "Views",
+        "Pictorial works"
+      ],
+      "coverUrl": "/book-covers/the-colours-of-india.webp"
+    },
+    {
+      "id": "c7affd7f-4420-4df2-8618-ee676161101a",
+      "isbn13": "9788192091259",
+      "title": "Jaipur quilts",
+      "authors": [
+        "Krystyna Hellström"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T06:55:35.269Z",
+      "source": "openlibrary",
+      "isbn10": "8192091252",
+      "publisher": "Niyogi Books",
+      "publishDate": "2012",
+      "publishYear": 2012,
+      "pageCount": 203,
+      "language": "eng",
+      "subjects": [
+        "Quilts",
+        "Pictorial works",
+        "Arts, india"
+      ]
+    },
+    {
+      "id": "c747f6f3-6716-4447-9886-18f1e1942e16",
+      "isbn13": "9786021800270",
+      "title": "Linkage",
+      "authors": [
+        "Hong Djien Oei",
+        "Suwarno Wisetrotomo"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T06:56:08.403Z",
+      "source": "openlibrary",
+      "isbn10": "6021800273",
+      "publisher": "OHD Museum",
+      "publishDate": "2017",
+      "publishYear": 2017,
+      "pageCount": 170,
+      "language": "ind",
+      "subjects": [
+        "Indonesian Art",
+        "Exhibitions"
+      ]
+    },
+    {
+      "id": "c6f579a7-c88d-4b74-8117-a90a27f13a6b",
+      "isbn13": "9780804841207",
+      "title": "The Living House",
+      "authors": [
+        "Roxana Waterson"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T06:56:38.165Z",
+      "source": "openlibrary",
+      "isbn10": "0804841209",
+      "publisher": "Tuttle Publishing",
+      "publishDate": "Mar 10, 2010",
+      "publishYear": 2010,
+      "pageCount": 300,
+      "subjects": [
+        "Dwellings",
+        "Social life and customs",
+        "Vernacular architecture",
+        "Architecture, asia",
+        "Indonesia, social life and customs",
+        "Southeast asia, social life and customs",
+        "Architecture, pacific area"
+      ],
+      "synopsis": "Anthropological study of the house in Southeast Asia with the focus on the house is various cultures in Indonesia.",
+      "coverUrl": "/book-covers/the-living-house.webp"
+    },
+    {
+      "id": "cf876f6a-0915-46d5-bb1c-f54884f02f5f",
+      "isbn13": "9789799104403",
+      "title": "Art and collecting art",
+      "authors": [
+        "Hong Djien Oei"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:15:11.079Z",
+      "source": "openlibrary",
+      "publisher": "Kepustakaan Populer Gramedia in cooperation with OHD Museum and Djarum Foundation",
+      "publishDate": "2012",
+      "publishYear": 2012,
+      "pageCount": 509,
+      "language": "eng",
+      "subjects": [
+        "Indonesian Arts",
+        "Art collections"
+      ]
+    },
+    {
+      "id": "066e6d3d-035f-4060-9376-1d60e8a07fe8",
+      "isbn13": "9788809831360",
+      "title": "Plant revolution",
+      "authors": [
+        "Stefano Mancuso"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:19:35.455Z",
+      "source": "openlibrary",
+      "publisher": "Giunti",
+      "publishDate": "2017",
+      "publishYear": 2017,
+      "pageCount": 262,
+      "language": "ita",
+      "subjects": [
+        "Plant physiology",
+        "Popular works",
+        "Plants"
+      ]
+    },
+    {
+      "id": "df2d319c-d035-40b1-9143-8717f8a47339",
+      "isbn13": "9780141983912",
+      "title": "Ai Weiwei Speaks",
+      "authors": [
+        "Hans Ulrich Obrist",
+        "Ai Weiwei"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:22:34.491Z",
+      "source": "openlibrary",
+      "publisher": "Penguin Books, Limited",
+      "publishDate": "2016",
+      "publishYear": 2016,
+      "pageCount": 176,
+      "language": "eng",
+      "subjects": [
+        "Interviews",
+        "Artistic Dissenters",
+        "Artists, biography",
+        "Artists, china",
+        "Art, chinese",
+        "Artists"
+      ],
+      "coverUrl": "/book-covers/ai-weiwei-speaks.webp"
+    },
+    {
+      "id": "b1988ff0-ddbf-4041-891a-26e91c06d846",
+      "isbn13": "9780099464921",
+      "title": "Social Intelligence",
+      "authors": [
+        "Daniel Goleman"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:23:37.236Z",
+      "source": "openlibrary",
+      "publisher": "Penguin Random House",
+      "publishDate": "2007",
+      "publishYear": 2007,
+      "pageCount": 416,
+      "language": "eng",
+      "subjects": [
+        "Emotional intelligence",
+        "Social intelligence",
+        "Emotions",
+        "Empathy",
+        "Intelligence",
+        "Interpersonal Relations",
+        "Family & relationships",
+        "Développement d'aptitudes",
+        "Relations humaines",
+        "Psychologie sociale"
+      ],
+      "synopsis": "Explores the nature of human relationships, finding that humans are \"wired to connect,\" and bringing together the latest research in biology and neuroscience to reveal how one's daily encounters shape the brain and affect the body. \"Humans have a built-in bias toward empathy, cooperation and altruism, provided we develop the social intelligence to nurure these capabilities in ourselves and others.",
+      "coverUrl": "/book-covers/social-intelligence.webp"
+    },
+    {
+      "id": "d909bef2-98c3-440b-a7e8-115607313332",
+      "isbn13": "9789813018297",
+      "title": "Plants",
+      "authors": [],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:24:01.336Z",
+      "source": "openlibrary",
+      "isbn10": "9813018291",
+      "publisher": "Archipelago Press",
+      "publishDate": "1996",
+      "publishYear": 1996,
+      "language": "eng",
+      "subjects": [
+        "Indonesia, history"
+      ],
+      "synopsis": "A mother and child plant a rainbow of flowers in the family garden."
+    },
+    {
+      "id": "d532cd98-9fb4-4b85-a61f-91b22e2dc00e",
+      "isbn13": "9789796921843",
+      "title": "Sundanese architecture",
+      "authors": [
+        "Purnama Salura"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:25:28.622Z",
+      "source": "openlibrary",
+      "publisher": "Rosda International",
+      "publishDate": "2015",
+      "publishYear": 2015,
+      "pageCount": 244,
+      "language": "eng",
+      "subjects": [
+        "Vernacular architecture",
+        "Dwellings",
+        "Sundanese (Indonesian people)"
+      ]
+    },
+    {
+      "id": "9b981c3f-1d6e-4fb7-a8bb-ae79c05f51ce",
+      "isbn13": "9780847811670",
+      "title": "The spirited earth",
+      "authors": [
+        "Victoria Ginn"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:25:59.208Z",
+      "source": "openlibrary",
+      "isbn10": "0847811670",
+      "publisher": "Rizzoli",
+      "publishDate": "1990",
+      "publishYear": 1990,
+      "pageCount": 191,
+      "language": "eng",
+      "subjects": [
+        "Anthropological aspects",
+        "Anthropological aspects of Dance",
+        "Dance",
+        "Social life and customs",
+        "Dance, asia",
+        "Pictorial works"
+      ]
+    },
+    {
+      "id": "74dce951-735c-45de-8640-09a27ed46e40",
+      "isbn13": "9783952506905",
+      "title": "The Little Book of Stoicism",
+      "authors": [
+        "Jonas Salzgeber",
+        "Nils Salzgeber"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:28:48.048Z",
+      "source": "openlibrary",
+      "isbn10": "3952506907",
+      "publisher": "Jonas Salzgeber",
+      "publishDate": "Jan 19, 2019",
+      "publishYear": 2019,
+      "pageCount": 285,
+      "subjects": [],
+      "coverUrl": "/book-covers/the-little-book-of-stoicism.webp"
+    },
+    {
+      "id": "cd734e56-2a93-44c5-81ec-30409280a953",
+      "isbn13": "9780945971566",
+      "title": "Bahasa Indonesia: Book 1 ",
+      "authors": [
+        "Yohanni Johns",
+        "Robyn Stokes"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:29:17.286Z",
+      "source": "openlibrary",
+      "isbn10": "0945971567",
+      "publisher": "Periplus Editions",
+      "publishDate": "January 1995",
+      "publishYear": 1995,
+      "pageCount": 362,
+      "language": "eng",
+      "subjects": [
+        "Indonesian language",
+        "Indonesia, social life and customs"
+      ],
+      "coverUrl": "/book-covers/bahasa-indonesia-book-1.webp"
+    },
+    {
+      "id": "b29329b5-b539-43c7-a09d-d9e3232e25d4",
+      "isbn13": "9780794604219",
+      "title": "Periplus Bali Street Atlas",
+      "authors": [
+        "Periplus"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:30:02.839Z",
+      "source": "openlibrary",
+      "isbn10": "0794604218",
+      "publisher": "Periplus Editions",
+      "publishDate": "June 15, 2008",
+      "publishYear": 2008,
+      "pageCount": 160,
+      "language": "eng",
+      "subjects": [
+        "Indonesia, maps"
+      ],
+      "coverUrl": "/book-covers/periplus-bali-street-atlas.webp"
+    },
+    {
+      "id": "0d778816-f046-4634-b40a-12b5fd0f6fab",
+      "isbn13": "9789799654700",
+      "title": "Property of the Artist",
+      "authors": [
+        "Philip Cornwel-Smith"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:33:48.060Z",
+      "source": "openlibrary",
+      "isbn10": "979965470X",
+      "publisher": "P.T. Sang Yan Seni",
+      "publishDate": "2001",
+      "publishYear": 2001,
+      "subjects": []
+    },
+    {
+      "id": "df8ee3fb-a4f3-4be9-a574-f1b472bdce3b",
+      "isbn13": "9789791795326",
+      "title": "Sciascia - Untoro",
+      "authors": [
+        "Filippo Sciascia"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:35:37.545Z",
+      "source": "openlibrary",
+      "publisher": "Biasa Artspace",
+      "publishDate": "2008",
+      "publishYear": 2008,
+      "pageCount": 49,
+      "language": "eng",
+      "subjects": []
+    },
+    {
+      "id": "5a7c549f-0559-45c9-9db3-aeb31e4b5e18",
+      "isbn13": "9780821206850",
+      "title": "Art of Andrew Wyeth",
+      "authors": [
+        "Wanda M. Corn",
+        "Brian O'Doherty",
+        "Richard Meryman",
+        "Edgar P. Richardson"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:36:10.603Z",
+      "source": "openlibrary",
+      "isbn10": "0821206850",
+      "publisher": "Little, Brown Book Group Limited",
+      "publishDate": "1981",
+      "publishYear": 1981,
+      "pageCount": 176,
+      "language": "eng",
+      "subjects": [
+        "American Painting",
+        "Wyeth, andrew, 1917-2009"
+      ]
+    },
+    {
+      "id": "5907c4f9-e0bc-4caa-943e-46b78d9d11ca",
+      "isbn13": "9788851002374",
+      "title": "Anselm Kiefer",
+      "authors": [
+        "Anselm Kiefer"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:37:19.758Z",
+      "source": "openlibrary",
+      "isbn10": "8851002371",
+      "publisher": "Electa Napoli",
+      "publishDate": "2004",
+      "publishYear": 2004,
+      "pageCount": 230,
+      "language": "eng",
+      "subjects": [
+        "Exhibitions",
+        "Kiefer, anselm, 1945-",
+        "Plants in art",
+        "Photography, artistic",
+        "Art, exhibitions",
+        "Painting, german",
+        "Artists, germany",
+        "Art and Design",
+        "Artists",
+        "Expressionism (Art)"
+      ],
+      "synopsis": "Publié à l'occasion de l'exposition présentée du 19 mai au 26 juin 2010 à la galerie Yvon Lambert à Paris. La présente publication présente un ensemble de 83 oeuvres historiques des années 1960 d'Anselm Kiefer - des livres d'artiste composés de collages, dessins, aquarelles et peintures - jamais montrées ni reproduites à ce jour. Si les travaux de jeunesse de l'artiste, réalisés de manière artisanale avec des moyens modestes et des matériaux ordinaires, tranchent, sous leur aspect minimaliste, fragile et intimiste, avec le gigantisme, le grandiose et la maîtrise technique qui deviendront la marque de l'artiste, ils semblent pourtant annoncer la plupart des grands thèmes kieferiens développés dans les oeuvres postérieures. Ils constituent aussi une entreprise singulière qui interroge les relations entre l'art, la mémoire et les formes. Textes en français et en anglais."
+    },
+    {
+      "id": "4ff5bc49-aa3d-4070-9093-1fb7806bb8d5",
+      "isbn13": "9780959839531",
+      "title": "Lloyd Rees drawings",
+      "authors": [
+        "Lloyd Frederic Rees"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:38:34.095Z",
+      "source": "openlibrary",
+      "isbn10": "0959839534",
+      "publisher": "Australian Artist Editions",
+      "publishDate": "1978",
+      "publishYear": 1978,
+      "pageCount": 128,
+      "language": "eng",
+      "subjects": [
+        "Catalogs"
+      ]
+    },
+    {
+      "id": "15b46f6f-51d5-4a82-b8f1-9e7389cb1b7f",
+      "isbn13": "9781408712719",
+      "title": "At Any Cost",
+      "authors": [
+        "Sheera Frenkel",
+        "Ce Kang"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:43:02.012Z",
+      "source": "openlibrary",
+      "publisher": "Little, Brown Book Group Limited",
+      "publishDate": "2021",
+      "publishYear": 2021,
+      "language": "eng",
+      "subjects": [
+        "Sociology"
+      ]
+    },
+    {
+      "id": "0c715cd6-1401-4a3b-ae7f-2473e1602e6f",
+      "isbn13": "9781592538492",
+      "title": "The interior design reference + specification book",
+      "authors": [
+        "Chris Grimley"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:44:27.048Z",
+      "source": "openlibrary",
+      "isbn10": "1592538495",
+      "publisher": "Rockport Publishers",
+      "publishDate": "2013",
+      "publishYear": 2013,
+      "pageCount": 287,
+      "language": "eng",
+      "subjects": [
+        "Interior decoration",
+        "Handbooks, manuals"
+      ],
+      "coverUrl": "/book-covers/the-interior-design-reference-specification-book.webp"
+    },
+    {
+      "id": "7848b020-628d-4b59-8eed-e3540f0d90e0",
+      "isbn13": "9788843020881",
+      "title": "Antropologia Della Visione",
+      "authors": [],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:44:36.869Z",
+      "source": "openlibrary",
+      "isbn10": "8843020889",
+      "publisher": "Carocci",
+      "publishDate": "January 2002",
+      "publishYear": 2002,
+      "pageCount": 176,
+      "language": "ita",
+      "subjects": [
+        "Visual anthropology",
+        "Photography in ethnology",
+        "Video recording in ethnology"
+      ]
+    },
+    {
+      "id": "d2d10eeb-7f7e-428c-898e-65286a68b726",
+      "isbn13": "9780731050031",
+      "title": "Brett Whiteley",
+      "authors": [
+        "Barry Pearce"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:45:22.225Z",
+      "source": "openlibrary",
+      "isbn10": "0731050037",
+      "publisher": "Art Gallery of New South Wales",
+      "publishDate": "1995",
+      "publishYear": 1995,
+      "pageCount": 240,
+      "language": "eng",
+      "subjects": [
+        "Exhibitions",
+        "Expositions",
+        "Art",
+        "Biography"
+      ],
+      "synopsis": "Brett Whiteley died in 1992 at the age of fifty-three, ending one of the most prodigious careers in the history of Australian art. He attended Julian Ashton's school in Sydney during the late 1950s while working at the advertising agency Lintas, and then made an impact on the Australian art world just as it was receiving unprecedented international attention.\n\nWhiteley achieved wide recognition, spending a long period abroad, exhibiting paintings, drawings and sculpture in Britain, Europe and the United States, before returning to Sydney permanently at the end of 1969. His years in London were particularly formative, when he came into contact with many of the art world's most influential figures, including members of the Abstract Expressionist and Pop Art movements.\n\n. Whiteley's early paintings startled critics and fellow artists with their sensuality of color and erotic under-drawing. At the root of all Whiteley's work was a draftsmanship of stunning virtuosity, capable of capturing all the poetic arabesque of a river in a single sweeping line of brush and ink, or the erotic curves of the human body in a few searching strokes of charcoal.\n\nThis book, published to coincide with an exhibition at The Art Gallery of New South Wales - the first major retrospective of the artist's work - presents an illuminating evaluation of Whiteley's achievement. Works dating from the 1950s until the last years of his life, illustrated in 180 color plates, allow Whiteley's fascinating career to be surveyed in its entirety."
+    },
+    {
+      "id": "459ae018-b844-47f5-bff5-da16a03bb582",
+      "isbn13": "9781862055193",
+      "title": "Kama Sutra",
+      "authors": [
+        "Andrea Marion Pinkney"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:48:22.571Z",
+      "source": "openlibrary",
+      "isbn10": "186205519X",
+      "publisher": "Pavilion Books",
+      "publishDate": "October 18, 2002",
+      "publishYear": 2002,
+      "pageCount": 256,
+      "subjects": [],
+      "coverUrl": "/book-covers/kama-sutra.webp"
+    },
+    {
+      "id": "9f875379-eb1c-422f-acad-dbeba5243419",
+      "isbn13": "9789078203032",
+      "title": "De meeloper",
+      "authors": [
+        "Mella Jaarsma"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:49:37.125Z",
+      "source": "openlibrary",
+      "isbn10": "907820303X",
+      "publisher": "Artoteek",
+      "publishDate": "2006",
+      "publishYear": 2006,
+      "pageCount": 119,
+      "language": "dut",
+      "subjects": [
+        "Modern Art",
+        "Catalogs"
+      ],
+      "synopsis": "Development of contemporary visual arts in Indonesia."
+    },
+    {
+      "id": "3f835aeb-68c0-4c7f-bf46-80cf6a6edc05",
+      "isbn13": "9781597112147",
+      "title": "David Levi Strauss : Between the Eyes",
+      "authors": [
+        "David Levi Strauss",
+        "John Berger"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:52:12.927Z",
+      "source": "openlibrary",
+      "publisher": "Aperture Foundation, Incorporated",
+      "publishDate": "2012",
+      "publishYear": 2012,
+      "pageCount": 207,
+      "language": "eng",
+      "subjects": [
+        "Photography"
+      ]
+    },
+    {
+      "id": "63144543-828e-4354-b957-a852961f6616",
+      "isbn13": "9788190699419",
+      "title": "Amit Ambalal",
+      "authors": [
+        "Gayatri Sinha"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T07:57:13.568Z",
+      "source": "openlibrary",
+      "isbn10": "8190699415",
+      "publisher": "Gallery Espace Art",
+      "publishDate": "2008",
+      "publishYear": 2008,
+      "pageCount": 120,
+      "language": "eng",
+      "subjects": [
+        "Painters",
+        "Indic Painting",
+        "Biography"
+      ],
+      "synopsis": "On the life and works of Amit Ambalal, b. 1943, Indian satirist painter; includes reproduction of some paintings."
+    },
+    {
+      "id": "d3456976-647e-49d1-95f0-538682d0a21a",
+      "isbn13": "9788120827608",
+      "title": "Leaves of a Pipal Tree Aesthetic Reflections on Some Hindu Myths and Symbols",
+      "authors": [
+        "Harsha V. Dehejia"
+      ],
+      "status": "to-read",
+      "dateAdded": "2026-07-05T08:00:05.951Z",
+      "source": "openlibrary",
+      "isbn10": "8120827600",
+      "publisher": "Motilal Banarsidass",
+      "publishDate": "August 1, 2005",
+      "publishYear": 2005,
+      "pageCount": 186,
+      "language": "eng",
+      "subjects": [
+        "Hindu mythology",
+        "Hindu art",
+        "Aesthetics",
+        "Hindu symbolism",
+        "Symbolism"
+      ],
+      "coverUrl": "/book-covers/leaves-of-a-pipal-tree-aesthetic-reflections-on-some-hindu-myths-and-symbols.webp"
     }
   ]
 }

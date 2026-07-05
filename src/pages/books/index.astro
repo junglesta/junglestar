@@ -66,4 +66,25 @@ const books = parseLibraryPayload(library);
     border-top: 0;
   }
 
+  /* Search box: always-expanded + wider, at EVERY width. Baobab collapses the
+     search to a magnifier-only icon that opens on focus — easy to miss. With
+     275 titles we pin the expanded state so the input is visible by default.
+     The collapse rules are unmediated in the component, so this override must
+     be too (an earlier min-width:768px-only version left mobile collapsed).
+     Give search its own full-width row above the sort/filter controls. */
+  .books .bfc .bfc_control--search {
+    flex: 1 1 100%;
+  }
+  .books .bfc .bfc_control--search input {
+    width: 100%;
+    max-width: 30rem;
+    padding-inline: 40px calc(var(--padding) - 4px);
+    color: var(--text);
+    cursor: text;
+    background-position: 12px center;
+  }
+  .books .bfc .bfc_control--search input::placeholder {
+    color: var(--text-muted);
+  }
+
 </style>

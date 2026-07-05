@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.1
+
+- **Books search always-expanded**: the `/books` search (from the Baobab component) previously collapsed to a magnifier-only icon that opened on focus — easy to miss on both mobile and desktop. Page-level CSS override now pins it open as a full-width row (up to 30rem) above the sort/filter controls, at every width. Shared `@bookbat/baobab` package untouched.
+
 ## 4.3.0
 
 - **Library grows by 53 books** (222 → 275): appended the `rokindobooks-54` batch — an Indonesia/Bali/Asian-art themed set (Soul spirit and mountain, Ring of fire, Artists on Bali, Hanga, Birds of Bali, and more). One exact duplicate ("Bali", isbn 9783796518737) was skipped. Merged into `library.json` (source of truth) and regenerated `library.generated.json`.

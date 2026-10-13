@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.4.2
+
+- **License unified to CC BY-NC-SA 4.0 everywhere**: footer label (was "CC BY-SA 4.0"), `site.json` `license_url` (pointed at BY-NC-ND 3.0) and README wording now all agree.
+- **Footer CC icons**: added the missing NC icon (`src/assets/svgs/cc_icon_nc.svg`, same 20×20 ring style) → CC · BY · NC · SA.
+
 ## 4.4.1
 
 - **Security (lockfile only)**: cleared all 9 open Dependabot alerts (all high, all transitive dev/build-time deps — nothing ships to the static site): `fast-uri` 3.1.2 → 3.1.8 (7 alerts, via `@astrojs/check` → yaml-language-server → ajv), `source-map-js` 1.2.1 → 1.2.2 and `http-cache-semantics` 4.2.0 → 4.3.0 (via astro).

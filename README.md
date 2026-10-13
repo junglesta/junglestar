@@ -14,7 +14,7 @@
 
 ## Warning
 
-Despite this repo being public, it doesn't mean that all these assets, nor the concept, are open-source and/or copyright free, or even that you may use any of them. In fact they are released under CC-BY-NC-SA [Creative Commons License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Despite this repo being public, it doesn't mean that all these assets, nor the concept, are open-source and/or copyright free, or even that you may use any of them. In fact they are released under the [Creative Commons CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 We answer you, please, ask for permission first by contacting us: info@junglestar.org
 All photos & videos © 2025–2026 Rokma. All rights reserved.
 Thanks,

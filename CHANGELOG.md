@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.4.1
+
+- **Security (lockfile only)**: cleared all 9 open Dependabot alerts (all high, all transitive dev/build-time deps — nothing ships to the static site): `fast-uri` 3.1.2 → 3.1.8 (7 alerts, via `@astrojs/check` → yaml-language-server → ajv), `source-map-js` 1.2.1 → 1.2.2 and `http-cache-semantics` 4.2.0 → 4.3.0 (via astro).
+- Known leftover: `yaml@2.7.1` (moderate, `pnpm audit` only) is exact-pinned by `yaml-language-server` inside `@astrojs/check` — editor/type-check tooling only; waits on upstream.
+
 ## 4.4.0
 
 - **FAQ → data + component**: the 24 hardcoded `<details>` on `/about` now live in `src/data/faq.json` (a `faq` content collection, `file()` loader + zod schema; array order = display order) and render via `src/components/UI/Faq.astro`. Markup normalised (dropped unused `works`/`who` classes and the `center` on the first four summaries). Visible copy unchanged — except "'Old Boy' Rokma" now has its missing space.

@@ -1,0 +1,174 @@
+[
+  {
+    "id": "where-are-your-live-projects",
+    "question": "Where are your LIVE Projects?",
+    "answer": ["Glad you open me, here: <br /><a href=\"/showcase\"><strong>Showcase</strong></a>."]
+  },
+  {
+    "id": "who-are-we",
+    "question": "Who are we?",
+    "answer": [
+      "<strong> TLDR:</strong> A bunch of geeks.",
+      "Yes, geeks. Starting with the founder, 'Old Boy' <a title=\"Junglestar founder\" href=\"https://tldr.rokma.com\"><strong>Rokma</strong></a> — and plenty of collabs over the years. Facts define labels.",
+      "We're a group of professional coders with complementary skills. Not all of us are particularly geeky, though.",
+      "People work together and pay bills over the net, in 2026. If they wanna think we're in pajamas playing around — let 'em! 'Who the cap fits, let them wear it.'",
+      "When a project calls for it, we bring in consultants or freelancers on a one-shot basis. It depends on what's needed. That's what experience has taught us."
+    ]
+  },
+  {
+    "id": "where-can-i-see-your-work-s-history",
+    "question": "Where can I see your work's history?",
+    "answer": [
+      "Looking at old work risks normalizing past mistakes and outdated styles — or worse, drawing inspiration from expired interfaces.",
+      "That's why we only show current projects, not a complete history. See them here: <a href=\"/showcase\"><strong>Showcase</strong></a>"
+    ]
+  },
+  {
+    "id": "where-we-stand",
+    "question": "Where we stand?",
+    "answer": [
+      "We stand for <strong>Actions & Productions.</strong> We think real-world speak louder than lingo & memes concoctions. No algo-speak ✌🏼 just juicy craftcakes."
+    ],
+    "open": true
+  },
+  {
+    "id": "can-you-automate-my-social-media-posting",
+    "question": "Can you automate my social media posting?",
+    "answer": [
+      "Yes. We build systems that schedule and publish your content automatically. You plan once, posts go out on time — no daily babysitting. You focus on your business, we handle the rhythm."
+    ]
+  },
+  {
+    "id": "i-have-no-content-strategy-where-do-i-start",
+    "question": "I have no content strategy. Where do I start?",
+    "answer": [
+      "With us. We help you find the right message, the right tone, and the right channels. We figure out what makes you different and turn that into content that actually connects with your audience."
+    ]
+  },
+  {
+    "id": "do-you-manage-social-media-accounts",
+    "question": "Do you manage social media accounts?",
+    "answer": [
+      "We do. Content calendar, scheduling, publishing — we keep your channels active and consistent so your audience doesn't forget you exist. You delegate, we deliver."
+    ]
+  },
+  {
+    "id": "can-i-just-get-guidance-without-hiring-you-for-the-full-job",
+    "question": "Can I just get guidance without hiring you for the full job?",
+    "answer": [
+      "Of course. We offer consulting and guidance sessions. We'll show you shortcuts, help you avoid expensive mistakes, and point you in the right direction. Planning is cheaper than undoing."
+    ]
+  },
+  {
+    "id": "do-you-build-custom-websites-or-use-templates",
+    "question": "Do you build custom websites or use templates?",
+    "answer": [
+      "Custom. Tailored to how your business actually works — by human beings, not a platform or chatbot. We use modern open-source tools and frameworks, built around your workflow, not a generic template."
+    ]
+  },
+  {
+    "id": "will-i-be-able-to-update-the-site-myself",
+    "question": "Will I be able to update the site myself?",
+    "answer": [
+      "We can show you how — but let's be frank, when you're already busy running your business, one more thing to manage won't help. That's why we offer fully-managed subscriptions: we handle all updates for you. When you need a change, just reach out — email or a scheduled call, real person, no ticket queue."
+    ]
+  },
+  {
+    "id": "why-open-source-instead-of-wix-squarespace-etc",
+    "question": "Why open source instead of Wix, Squarespace, etc.?",
+    "answer": [
+      "No vendor lock-in, no surprise price hikes, no monthly subscriptions holding your site hostage. Open source means you own your tools. Your site survives even if a supplier changes its policies or prices."
+    ]
+  },
+  {
+    "id": "is-my-website-going-to-work-well-on-phones",
+    "question": "Is my website going to work well on phones?",
+    "answer": [
+      "We build mobile-first. Over 60% of web traffic is on phones. Our sites load fast, look clean, and work on a 6-inch screen without pinch-zooming or treasure hunts."
+    ]
+  },
+  {
+    "id": "do-i-really-need-a-website-if-i-already-have-instagram",
+    "question": "Do I really need a website if I already have Instagram?",
+    "answer": [
+      "Social platforms are rented land. The algorithm decides who sees you. Your competitors' ads sit next to your content. A website is yours — your message, your brand, your rules, no distractions."
+    ]
+  },
+  {
+    "id": "do-you-handle-everything-from-design-to-launch",
+    "question": "Do you handle everything from design to launch?",
+    "answer": [
+      "Design, code, testing, hosting, security, launch. One team, one plan, no vendor ping-pong. You have one conversation, one contract, one delivery."
+    ]
+  },
+  {
+    "id": "subscription-or-a-one-time-cost",
+    "question": "Subscription or a one-time cost?",
+    "answer": [
+      "We offer both types of agreements, depending on project's spex and client's needs. Worrie-free subscriptions are recurring costs, billed in advance, where all infastructure maintenance and responsability is on us. | We sometimes do also one time contracts. Usually for take-away. You pay once, you own it. Hosting and domain renewal services are yearly subscriptions for a tiny fee (€55/yr). We do not charge any platform fees."
+    ]
+  },
+  {
+    "id": "how-long-does-a-project-take",
+    "question": "How long does a project take?",
+    "answer": [
+      "It depends on scope. A packaged website can be ready in a week. Custom projects take longer. We define the timeline together upfront — no surprises."
+    ]
+  },
+  {
+    "id": "what-if-i-already-have-a-website-but-it-s-slow-or-outdated",
+    "question": "What if I already have a website but it's slow or outdated?",
+    "answer": [
+      "We can rebuild it. Maybe it's faster than fixing it. Speed, modern design, mobile-friendly, proper SEO — we bring it up to current standards. Or we assess what's worth keeping and build from there."
+    ]
+  },
+  {
+    "id": "do-you-do-branding-and-visual-identity",
+    "question": "Do you do branding and visual identity?",
+    "answer": [
+      "We help you develop your brand voice and visual consistency across all channels. One message, one look, everywhere. Your audience recognizes you instantly."
+    ]
+  },
+  {
+    "id": "what-industries-do-you-work-with",
+    "question": "What industries do you work with?",
+    "answer": [
+      "Small businesses, freelancers, restaurants, local shops, creative professionals. If you're a small enterprise that needs to communicate clearly online, we're a good fit."
+    ]
+  },
+  {
+    "id": "can-you-help-with-seo",
+    "question": "Can you help with SEO?",
+    "answer": [
+      "SEO is built into how we build sites — fast loading, clean markup, proper structure, mobile-first. We don't sell SEO tricks. We build sites that search engines & LLMs naturally favor."
+    ]
+  },
+  {
+    "id": "what-languages-do-you-work-in",
+    "question": "What languages do you work in?",
+    "answer": [
+      "We work in English, the internet language! Sometimes our customers also need Italian, Spanish, French, German, Indonesian, Malay. We understand that culture matters — what works in one market doesn't always work in another. We adapt the message, not just translate it."
+    ]
+  },
+  {
+    "id": "do-i-need-to-know-anything-technical",
+    "question": "Do I need to know anything technical?",
+    "answer": [
+      "No. We handle the technical side. You tell us what your business needs, we figure out how to build it. When it's ready, we teach you how to use it in plain language."
+    ]
+  },
+  {
+    "id": "what-happens-after-launch-do-you-disappear",
+    "question": "What happens after launch? Do you disappear?",
+    "answer": [
+      "We don't. We assist you personally via email and, if needed, chat & video appointments. Need a change? Contact us. We're here for our customers — real people, not an automated support queue."
+    ]
+  },
+  {
+    "id": "why-junglestar-instead-of-a-big-agency",
+    "question": "Why Junglestar instead of a big agency?",
+    "answer": [
+      "We're small on purpose. You talk to the people who actually build your project. No account managers, no middlemen. Flexible, fast, and 30 years of real-world experience making things that work."
+    ]
+  }
+]

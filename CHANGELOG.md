@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.4.0
+
+- **FAQ → data + component**: the 24 hardcoded `<details>` on `/about` now live in `src/data/faq.json` (a `faq` content collection, `file()` loader + zod schema; array order = display order) and render via `src/components/UI/Faq.astro`. Markup normalised (dropped unused `works`/`who` classes and the `center` on the first four summaries). Visible copy unchanged — except "'Old Boy' Rokma" now has its missing space.
+- **FAQPage JSON-LD**: emitted from the same data (tag-stripped answers) for search/LLM rich results.
+- **Footer tweaks** (manual): Carbon note split onto lines; License line reworded — "This website source code is owned by … and it's licensed under CC…", contribute line folded in, heading 111%.
+
 ## 4.3.2
 
 - **Deps refresh**: astro 7.0.2 → 7.3.8, wrangler 4.104 → 4.149, biome 2.5.15, sharp 0.35.5, prettier 3.9.10, @astrojs/check 0.9.10, ts-plugin 1.10.12.

@@ -86,8 +86,23 @@ const introJ = defineCollection({
 	}),
 });
 
+// FAQ (about page + FAQPage JSON-LD). Array order = display order: the parser
+// stamps each entry's index, since getCollection() doesn't preserve file order.
+const faq = defineCollection({
+	loader: file('src/data/faq.json', {
+		parser: (text) => JSON.parse(text).map((entry: object, order: number) => ({ ...entry, order })),
+	}),
+	schema: z.object({
+		order: z.number(),
+		question: z.string(),
+		answer: z.array(z.string()), // HTML paragraphs
+		open: z.boolean().optional().default(false),
+	}),
+});
+
 export const collections = {
 	offers,
+	faq,
 	introJ,
 	designConcepts,
 	productionConcepts,

@@ -1,0 +1,41 @@
+---
+// FAQ accordion + FAQPage JSON-LD, both from the `faq` collection (src/data/faq.json).
+import { getCollection } from "astro:content";
+
+const entries = (await getCollection("faq")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+
+const stripTags = (html: string) =>
+  html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: entries.map(({ data }) => ({
+    "@type": "Question",
+    name: data.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: data.answer.map(stripTags).join(" "),
+    },
+  })),
+};
+// Escape "<" so answer text can never close the script tag.
+const jsonLdText = JSON.stringify(jsonLd).replace(/</g, "\\u003c");
+---
+
+{
+  entries.map(({ data }) => (
+    <details open={data.open}>
+      <summary>
+        <strong>{data.question}</strong>
+      </summary>
+      {data.answer.map((html) => (
+        <p class="wrap pretty" set:html={html} />
+      ))}
+    </details>
+  ))
+}
+
+<script type="application/ld+json" set:html={jsonLdText} />

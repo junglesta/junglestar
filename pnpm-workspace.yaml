@@ -3,9 +3,4 @@ ignoredBuiltDependencies:
 
 onlyBuiltDependencies:
   - esbuild
-  - protobufjs
-  - swup
   - workerd
-
-overrides:
-  lodash: '>=4.17.23'

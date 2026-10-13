@@ -63,7 +63,7 @@ const [designPosts, contentPosts, tagPaths] = await Promise.all([
 	getTagPaths(),
 ]);
 
-const postCard = (slug: string, title: string, subtitle?: string): [string, Card] => [
+const postCard = (slug: string, title: string, subtitle?: string | null): [string, Card] => [
 	slug,
 	{ title, description: subtitle?.trim() || siteData.description },
 ];
@@ -89,7 +89,6 @@ const pages: Record<string, Card> = {
 };
 
 export const { getStaticPaths, GET } = await OGImageRoute({
-	param: 'route',
 	pages,
 	getImageOptions: (_path, page: Card) => ({
 		// Uppercase the rendered title (FontConfig has no text-transform option).

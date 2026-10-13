@@ -14,9 +14,9 @@
 
 ## Warning
 
-Despite this repo being public, it doesn't mean that all these assets, nor the concept, are open-source and/or copyright free, or even that you may use any of them. In fact they are relased under CC-BY-NC-SA [Creative Common License](http).
+Despite this repo being public, it doesn't mean that all these assets, nor the concept, are open-source and/or copyright free, or even that you may use any of them. In fact they are released under CC-BY-NC-SA [Creative Commons License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 We answer you, please, ask for permission first by contacting us: info@junglestar.org
-All photos & videos © 2025 Rokma. All rights reserved.
+All photos & videos © 2025–2026 Rokma. All rights reserved.
 Thanks,
 Junglestar team.
 
@@ -29,16 +29,18 @@ Including all the icons used here and the respective [creators](https://thenounp
 
 1.ASTRO FRAMEWORK
 
-Astro Basics
+Commands (pnpm only, Node 24.15.0)
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+| Command          | Action                                                         |
+| :--------------- | :------------------------------------------------------------- |
+| `pnpm install`   | Install dependencies (needs sibling `../bookbat` repo)         |
+| `pnpm dev`       | Dev server at `localhost:4321`                                 |
+| `pnpm covers`    | Cache `/books` covers → `public/book-covers/` (add-only)       |
+| `pnpm build`     | Production build to `./dist/` (runs `covers` first)            |
+| `pnpm preview`   | Preview the build locally                                      |
+| `pnpm format`    | Biome format `src`                                             |
+| `pnpm lint`      | Biome lint `src`                                               |
+| `pnpm deploy:cf` | Build + `wrangler deploy` to Cloudflare — see [DEPLOY.md](DEPLOY.md) |
 
 👀 Learn more? Feel free to check [Astro documentation](https://docs.astro.build) or jump into Astro [Discord server](https://astro.build/chat).
 

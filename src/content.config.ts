@@ -25,7 +25,7 @@ const offerSchema = z.object({
 		agent_gets: z.string(),
 		demo_url: z.string().url(),
 	}),
-	selling_points: z.record(z.string()),
+	selling_points: z.record(z.string(), z.string()),
 });
 
 // Define the collections with loaders

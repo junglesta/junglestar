@@ -4,6 +4,7 @@
     "includes": [
       "**",
       "!**/vendor",
+      "!!**/*.generated.json",
       "!!**/smoke",
       "!!**/fixtures",
       "!!**/fixture",

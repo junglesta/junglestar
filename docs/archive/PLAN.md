@@ -48,7 +48,7 @@
 > - `CLAUDE.md` — 🛑 covers are add-only; covers/data pipeline; deploy.
 > - `BOOKS-TODO.md` — leftover idea: custom sort dropdown matching the bat app (currently a native
 >   `<select>` with a dark color-scheme; the bat app uses a custom dropdown — see the file for the recipe).
-> - `SYNOPSYS.md` — deferred build-time synopsis enrichment (needs a free Google Books API key).
+> - `docs/SYNOPSYS.md` — deferred build-time synopsis enrichment (needs a free Google Books API key).
 >
 > ---
 >

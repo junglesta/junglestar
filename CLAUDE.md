@@ -1,5 +1,28 @@
 # junglestar — agent notes
 
+## Stack & conventions
+
+- Astro 7, `output: 'static'` → `./dist`, served by Cloudflare Workers static assets.
+- **pnpm only** (`pnpm@10.28.2`), Node `24.15.0` (`.node-version`).
+- **Biome** formats/lints `src` (`pnpm format`, `pnpm lint`); Prettier +
+  `prettier-plugin-astro` only for `.astro` files in the editor.
+- Type check: `npx astro check` (TypeScript stays on 6.x until `@astrojs/check`
+  supports 7).
+- CSS: follow the global `css-conventions` skill; colour system in `COLOR.md`.
+- `@bookbat/*` deps are `link:` to the sibling repo `../bookbat` — it must exist
+  next to this one for install/build.
+
+## Docs map
+
+- `DEPLOY.md` — deploy runbook · `COLOR.md` — colour system
+- `BOOKS-TODO.md` — open `/books` work · `docs/SYNOPSYS.md` — deferred synopsis plan
+- `docs/archive/` — shipped plans (`PLAN.md` baobab extraction, `ROADMAP.md` redesign)
+
+## Release flow
+
+Use the global `/preflight` skill (changelog first → version bump → build → stop
+for review). Commit format: `X.Y.Z | short description`. Deploy command below.
+
 ## 🛑 Book covers are ADD-ONLY — never delete them
 
 The `/books` page caches covers under **`public/book-covers/<title-slug>.webp`**.

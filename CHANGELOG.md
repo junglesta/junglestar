@@ -1,5 +1,14 @@
 # Changelog
 
+## 4.3.2
+
+- **Deps refresh**: astro 7.0.2 → 7.3.8, wrangler 4.104 → 4.149, biome 2.5.15, sharp 0.35.5, prettier 3.9.10, @astrojs/check 0.9.10, ts-plugin 1.10.12.
+- **Major bumps** (each verified — built HTML and OG cards byte-identical to before): `@astrojs/mdx` 7 → 8, `astro-og-canvas` 0.11 → 0.13 (+ `canvaskit-wasm` 0.42; drops the removed `param` option), `prettier-plugin-astro` 0.14 → 1.1.
+- TypeScript held at 6.x — `@astrojs/check` doesn't support 7 yet.
+- **Removed** unused `@astro-community/astro-embed-link-preview`; dropped stale `swup`/`protobufjs` build allowlist and `lodash` override from `pnpm-workspace.yaml`.
+- **`astro check` now clean (0 errors)**: zod-4 `z.record(key, value)`, nullable `subtitle` in OG route, typed `sty` heading tags.
+- **Repo/docs cleanup**: removed conflicting `.nvmrc` (22) — `.node-version` 24.15.0 is canonical; removed Netlify leftovers (`.netlify/`, `quick-netlify-deploy.sh`, Jekyll-era `quick-deploy-guide.md`, gitignore entries); shipped plans moved to `docs/archive/` (`PLAN.md`, `ROADMAP.md`), `SYNOPSYS.md` → `docs/`; `CLAUDE.md` gains stack/docs-map/release-flow sections; README license link, year, and command table fixed; `*.generated.json` excluded from Biome.
+
 ## 4.3.1
 
 - **Books search always-expanded**: the `/books` search (from the Baobab component) previously collapsed to a magnifier-only icon that opened on focus — easy to miss on both mobile and desktop. Page-level CSS override now pins it open as a full-width row (up to 30rem) above the sort/filter controls, at every width. Shared `@bookbat/baobab` package untouched.

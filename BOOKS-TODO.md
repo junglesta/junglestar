@@ -9,7 +9,7 @@ The `/books` design lives in the component (`@bookbat/baobab` `BookBatClient.ast
 dark theme, sticky one-line control bar, sliding view toggle, collapsible search,
 synopsis clamp+expand, even-height cards w/ pinned footer, min-width card grid,
 keyed node-reuse (no cover reload on filter/sort), build-time cover cache,
-configurable default sort (rating/desc on junglestar). See `PLAN.md` for the full
+configurable default sort (rating/desc on junglestar). See `docs/archive/PLAN.md` for the full
 "done" list and the one remaining infra item (npm publish).
 
 ---
@@ -74,8 +74,8 @@ together**, then build + click-test.
 
 ## Other open items
 - **npm publish (Phase 2)** — `@bookbat/baobab` + `@bookbat/library-core` are still
-  consumed via `link:` from the sibling bookbat repo; not published. See `PLAN.md`.
-- **Synopsis enrichment** — deferred; full plan in `SYNOPSYS.md` (needs a free
+  consumed via `link:` from the sibling bookbat repo; not published. See `docs/archive/PLAN.md`.
+- **Synopsis enrichment** — deferred; full plan in `docs/SYNOPSYS.md` (needs a free
   Google Books API key). 44/222 books have a synopsis.
 
 ## Resolved since this file was written
